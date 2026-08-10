@@ -1,0 +1,339 @@
+{
+  "antenatal": {
+    "first_trimester": {
+      "title": {
+        "en": "First Trimester Danger Signs (0-13 weeks)",
+        "hi": "पहली तिमाही के ख़तरे के संकेत (0-13 सप्ताह)",
+        "gu": "પ્રથમ ત્રિમાસિક જોખમ ચિહ્નો (0-13 અઠવાડિયા)"
+      },
+      "signs": [
+        {
+          "id": "vaginal_bleeding",
+          "label": {
+            "en": "Vaginal bleeding or spotting",
+            "hi": "योनि से रक्तस्राव या धब्बे आना",
+            "gu": "યોનિમાર્ગ રક્તસ્રાવ અથવા લોહીના ધાબા"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "severe_abdominal_pain",
+          "label": {
+            "en": "Severe pelvic or lower abdominal pain",
+            "hi": "पेट के निचले हिस्से में तेज़ दर्द",
+            "gu": "પેલ્વિક અથવા પેટમાં તીવ્ર દુખાવો"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "persistent_vomiting",
+          "label": {
+            "en": "Severe persistent vomiting and inability to keep fluids down",
+            "hi": "अत्यधिक उल्टी होना और पानी भी न पचना",
+            "gu": "સતત ઉલટી થવી અને પ્રવાહી પણ ન પચવું"
+          },
+          "action": "urgent"
+        },
+        {
+          "id": "high_fever_chills",
+          "label": {
+            "en": "High fever with chills (>38°C / 100.4°F)",
+            "hi": "ठंड लगकर तेज़ बुखार आना",
+            "gu": "ઠંડી સાથે તીવ્ર તાવ આવવો"
+          },
+          "action": "urgent"
+        },
+        {
+          "id": "severe_dizziness_fainting",
+          "label": {
+            "en": "Severe dizziness, fainting, or extreme weakness",
+            "hi": "चक्कर आना, बेहोशी या अत्यधिक कमजोरी",
+            "gu": "ચક્કર આવવા, બેભાન થવું અથવા અતિશય અશક્તિ"
+          },
+          "action": "urgent"
+        },
+        {
+          "id": "burning_urination",
+          "label": {
+            "en": "Pain or burning sensation during urination",
+            "hi": "पेशाब के दौरान जलन या दर्द",
+            "gu": "પેશાબ કરતી વખતે બળતરા અથવા દુખાવો"
+          },
+          "action": "routine"
+        }
+      ]
+    },
+    "second_trimester": {
+      "title": {
+        "en": "Second Trimester Danger Signs (14-26 weeks)",
+        "hi": "दूसरी तिमाही के ख़तरे के संकेत (14-26 सप्ताह)",
+        "gu": "બીજી ત્રિમાસિક જોખમ ચિહ્નો (14-26 અઠવાડિયા)"
+      },
+      "signs": [
+        {
+          "id": "vaginal_bleeding_fluid",
+          "label": {
+            "en": "Vaginal bleeding or sudden leakage of fluid",
+            "hi": "योनि से खून बहना या अचानक पानी का स्राव",
+            "gu": "યોનિમાર્ગ રક્તસ્રાવ અથવા અચાનક પ્રવાહીનું વહાવ"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "severe_abdominal_cramps",
+          "label": {
+            "en": "Severe abdominal cramping or contraction-like pain",
+            "hi": "पेट में मरोड़ या संकुचन जैसा तेज़ दर्द",
+            "gu": "પેટમાં મરડ અથવા દુખાવો થવો"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "reduced_fetal_movement",
+          "label": {
+            "en": "Absence or sudden reduction in baby's movements",
+            "hi": "गर्भ में शिशु की हलचल बंद होना या अचानक कम होना",
+            "gu": "ગર્ભમાં બાળકની હલચલ બંધ થવી કે ઘટી જવી"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "preeclampsia_symptoms",
+          "label": {
+            "en": "Severe swelling of face/hands with severe headache & blurred vision",
+            "hi": "चेहरे व हाथों पर सूजन, तेज़ सिरदर्द और धुंधला दिखाई देना",
+            "gu": "ચહેરા અને હાથ પર સૂજો, ભારે માથાનો દુખાવો અને ઝાંખી દ્રષ્ટિ"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "foul_discharge",
+          "label": {
+            "en": "Foul-smelling vaginal discharge or severe itching",
+            "hi": "योनि से बदबूदार स्राव या तेज़ खुजली",
+            "gu": "યોનિમાંથી દુર્ગંધયુક્ત સ્રાવ કે બળતરા"
+          },
+          "action": "urgent"
+        }
+      ]
+    },
+    "third_trimester": {
+      "title": {
+        "en": "Third Trimester Danger Signs (27-40+ weeks)",
+        "hi": "तीसरी तिमाही के ख़तरे के संकेत (27-40+ सप्ताह)",
+        "gu": "ત્રીજી ત્રિમાસિક જોખમ ચિહ્નો (27-40+ અઠવાડિયા)"
+      },
+      "signs": [
+        {
+          "id": "heavy_bleeding_third",
+          "label": {
+            "en": "Bright red vaginal bleeding or blood clots",
+            "hi": "योनि से लाल खून बहना या थक्के निकलना",
+            "gu": "યોનિમાર્ગે થી ઘાટું કે લાલ લોહી વહેવું"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "prom_water_break",
+          "label": {
+            "en": "Sudden gush or continuous leaking of watery fluid (Water broke)",
+            "hi": "अचानक थैली फटना या लगातार पानी का स्राव होना",
+            "gu": "અચાનક પાણીની પોટલી તૂટવી અથવા સતત પાણી વહેવું"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "severe_headache_epigastric",
+          "label": {
+            "en": "Persistent headache, visual disturbances, upper abdominal pain (Eclampsia risk)",
+            "hi": "लगातार तेज़ सिरदर्द, आंखों के आगे अंधेरा, पेट के ऊपरी हिस्से में दर्द",
+            "gu": "સતત તીવ્ર માથાનો દુખાવો, ઝાંખપ, પેટના ઉપરના ભાગમાં તીવ્ર દુખાવો"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "absent_fetal_kick",
+          "label": {
+            "en": "Fewer than 10 kicks/movements in 12 hours",
+            "hi": "12 घंटे में 10 से कम बार शिशु की हलचल",
+            "gu": "12 કલાકમાં 10 થી ઓછી વાર બાળકની હલચલ"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "preterm_labor_contractions",
+          "label": {
+            "en": "Regular painful contractions before 37 completed weeks",
+            "hi": "37 सप्ताह से पहले लगातार दर्दनाक प्रसव पीड़ा संकुचन",
+            "gu": "37 અઠવાડિયા પહેલા નિયમિત પ્રસુતિનો દુખાવો"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "fever_shortness_breath",
+          "label": {
+            "en": "High fever, chills, or difficulty breathing",
+            "hi": "तेज़ बुखार, सांस लेने में तकलीफ",
+            "gu": "તીવ્ર તાવ, શ્વાસ લેવામાં તકલીફ"
+          },
+          "action": "emergency"
+        }
+      ]
+    }
+  },
+  "postnatal": {
+    "mother": {
+      "title": {
+        "en": "Postnatal Danger Signs - Mother (0-6 weeks postpartum)",
+        "hi": "प्रसवोत्तर माँ के ख़तरे के संकेत (प्रसव के 0-6 सप्ताह)",
+        "gu": "પ્રસવ પછી માતાના જોખમ ચિહ્નો (0-6 અઠવાડિયા)"
+      },
+      "signs": [
+        {
+          "id": "postpartum_hemorrhage",
+          "label": {
+            "en": "Heavy vaginal bleeding (soaking >2 large pads in 1 hour)",
+            "hi": "अत्यधिक रक्तस्राव (1 घंटे में 2 से अधिक पैड भीगना)",
+            "gu": "અતિશય રક્તસ્રાવ (1 કલાકમાં 2 થી વધુ પેડ પલળી જવા)"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "postpartum_fever_foul_lochia",
+          "label": {
+            "en": "High fever with chills or foul-smelling discharge (Puerperal sepsis)",
+            "hi": "तेज़ बुखार, ठंड लगना या बदबूदार स्राव होना",
+            "gu": "તીવ્ર તાવ, ઠંડી લાગવી અથવા દુર્ગંધયુક્ત લોહીનો સ્ત્રાવ"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "severe_headache_bp",
+          "label": {
+            "en": "Severe headache, blurred vision, or high blood pressure fits",
+            "hi": "तेज़ सिरदर्द, धुंधला दिखना या दौरे पड़ना",
+            "gu": "તીવ્ર માથાનો દુખાવો, ઝાંખપ અથવા ખેંચ આવવી"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "chest_pain_breathless",
+          "label": {
+            "en": "Severe chest pain or acute shortness of breath",
+            "hi": "छाती में तेज़ दर्द या सांस फूलना",
+            "gu": "છાતીમાં તીવ્ર દુખાવો કે શ્વાસ ચડવો"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "calf_swelling_pain",
+          "label": {
+            "en": "Pain, swelling, or redness in one calf muscle (DVT risk)",
+            "hi": "एक पैर की पिंडली में दर्द, सूजन या लाली",
+            "gu": "એક પગની પિંડીમાં દુખાવો, સોજો કે લાલાશ"
+          },
+          "action": "urgent"
+        },
+        {
+          "id": "mastitis_breast_pain",
+          "label": {
+            "en": "Severe breast pain, red swollen hot area, or cracked nipples",
+            "hi": "स्तन में तेज़ दर्द, लाल गर्म सूजन या गांठ होना",
+            "gu": "સ્તનમાં તીવ્ર દુખાવો, લાલાશ, ગરમી અથવા ગાંઠ"
+          },
+          "action": "urgent"
+        },
+        {
+          "id": "postpartum_depression",
+          "label": {
+            "en": "Extreme sadness, anxiety, thoughts of self-harm or harming baby",
+            "hi": "अत्यधिक उदासी, घबराहट या बच्चे से अलगाव की भावना",
+            "gu": "અતિશય ઉદાસી, ચિંતા અથવા બાળક તરફ અણગમો"
+          },
+          "action": "urgent"
+        }
+      ]
+    },
+    "newborn": {
+      "title": {
+        "en": "Newborn Danger Signs (0-28 days)",
+        "hi": "नवजात शिशु के ख़तरे के संकेत (0-28 दिन)",
+        "gu": "નવજાત શિશુના જોખમ ચિહ્નો (0-28 દિવસ)"
+      },
+      "signs": [
+        {
+          "id": "poor_sucking_feeding",
+          "label": {
+            "en": "Inability to feed or suck milk / stops drinking",
+            "hi": "दूध न पी पाना या चुसने में असमर्थता",
+            "gu": "ધાવણ ન લઈ શકવું અથવા દૂધ પીવાનું બંધ કરવું"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "newborn_convulsions",
+          "label": {
+            "en": "Convulsions, fits, or abnormal body movements",
+            "hi": "झटके या दौरे पड़ना",
+            "gu": "આંચકી આવવી કે શરીર ખેંચાવું"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "fast_breathing_chest_indrawing",
+          "label": {
+            "en": "Fast breathing (>60 breaths/min) or severe chest indrawing",
+            "hi": "तेज़ सांस चलना (60/मिनट से अधिक) या पसली धंसना",
+            "gu": "ઝડપી શ્વાસ (૬૦ થી વધુ) અથવા છાતી બેસી જવી"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "newborn_fever_hypothermia",
+          "label": {
+            "en": "High fever (>37.5°C) or abnormally cold to touch (<35.5°C)",
+            "hi": "तेज़ बुखार (>37.5°C) या शरीर अत्यधिक ठंडा पड़ना",
+            "gu": "તીવ્ર તાવ (>૩૭.૫°C) અથવા શરીર એકદમ ઠંડુ પડી જવું"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "lethargy_unconscious",
+          "label": {
+            "en": "Lethargic, unconscious, or no movement unless stimulated",
+            "hi": "अत्यधिक सुस्ती, बेहोशी या हिलाने पर भी प्रतिक्रिया न देना",
+            "gu": "અતિશય સુસ્તી, ગંભીર આળસ અથવા હલાવવા છતાં કોઈ પ્રતિક્રિયા નહીં"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "severe_jaundice_palms_soles",
+          "label": {
+            "en": "Yellow skin on palms and soles / jaundice on day 1",
+            "hi": "हथेलियों और तलवों का पीला पड़ना / पहले दिन पीलिया",
+            "gu": "હથેળી અને તળિયા પીળા પડી જવા / પ્રથમ દિવસે કમળો"
+          },
+          "action": "emergency"
+        },
+        {
+          "id": "umbilical_pus_redness",
+          "label": {
+            "en": "Redness, pus discharge, or foul smell around umbilical cord",
+            "hi": "नाभिक्रम (नाल) के आसपास लाली, मवाद या बदबू",
+            "gu": "ડૂંટીની આસપાસ લાલાશ, પરુ થવું અથવા દુર્ગંધ"
+          },
+          "action": "urgent"
+        },
+        {
+          "id": "skin_pustules",
+          "label": {
+            "en": "Multiple skin pustules or boils with fever",
+            "hi": "त्वचा पर कई मवाद वाले फोड़े या फुंसियां",
+            "gu": "ચામડી પર પરુ ભરેલા ફોડલા કે ગુમડાં"
+          },
+          "action": "urgent"
+        }
+      ]
+    }
+  }
+}

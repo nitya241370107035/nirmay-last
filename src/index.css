@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface-base: #F3F7F6;
+  --color-surface-card: #FFFFFF;
+  --color-surface-muted: #EBF2F0;
+
+  --color-brand-deep: #0F3835;
+  --color-brand-mid: #1E6B63;
+  --color-brand-emerald: #2E7D73;
+  --color-brand-soft: #B2DFD8;
+  --color-brand-accent: #38A394;
+  --color-brand-mint: #E6F6F4;
+
+  --color-alert-critical: #D32F2F;
+  --color-alert-urgent: #D97706;
+  --color-alert-stable: #1E6B63;
+
+  --color-text-primary: #112222;
+  --color-text-secondary: #4A6360;
+  --color-border-light: #D5E2DF;
+
+  --font-display: 'Plus Jakarta Sans', 'Manrope', 'Noto Sans Gujarati', 'Noto Sans Devanagari', system-ui, sans-serif;
+  --font-sans: 'Inter', 'Noto Sans Gujarati', 'Noto Sans Devanagari', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  body {
+    background-color: #F3F7F6;
+    color: #112222;
+    font-family: 'Inter', 'Noto Sans Gujarati', 'Noto Sans Devanagari', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Plus Jakarta Sans', 'Manrope', 'Noto Sans Gujarati', 'Noto Sans Devanagari', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  /* Custom Smooth Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #EBF2F0;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #A0C8C2;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2E7D73;
+  }
+}
+
+/* Glass Card styling */
+.glass-card {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  border: 1px solid #DCE7E4;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 20px -2px rgba(15, 56, 53, 0.05);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: #A0C8C2;
+  box-shadow: 0 10px 30px -4px rgba(15, 56, 53, 0.1);
+}
+
+/* Elevated Interactive Card */
+.interactive-card {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.interactive-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px -4px rgba(15, 56, 53, 0.12);
+}
+.interactive-card:active {
+  transform: translateY(0);
+}
+
+/* Pulse Line SVG Animation */
+@keyframes drawPulse {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -100;
+  }
+}
+
+.animate-pulse-line {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: drawPulse 2.5s ease-in-out infinite;
+}
+
+/* Subtle Breathing Animation */
+@keyframes gentlePulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.95;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 1;
+  }
+}
+
+.animate-gentle-pulse {
+  animation: gentlePulse 3s ease-in-out infinite;
+}
+
+/* Soft Radial Glow background helper */
+.ambient-glow {
+  background: radial-gradient(circle at 50% 30%, rgba(178, 223, 216, 0.35) 0%, rgba(243, 247, 246, 0) 70%);
+}

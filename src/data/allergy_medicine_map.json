@@ -1,0 +1,63 @@
+{
+  "penicillin": {
+    "allergy_name": {
+      "en": "Penicillin & Beta-Lactam Allergy",
+      "hi": "पेनिसिलिन एवं अमोक्सिसिलिन एलर्जी",
+      "gu": "પેનિસિલિન અને એન્ટિબાયોટિક એલર્જી"
+    },
+    "contraindicated_medicines": ["amoxicillin", "ampicillin", "penicillin_v", "piperacillin", "augmentin"]
+  },
+  "sulfa": {
+    "allergy_name": {
+      "en": "Sulfa Drug Allergy",
+      "hi": "सल्फा दवा एलर्जी",
+      "gu": "સલ્ફા દવાની એલર્જી"
+    },
+    "contraindicated_medicines": ["sulfamethoxazole", "cotrimoxazole", "sulfasalazine", "dapsone"]
+  },
+  "nsaid": {
+    "allergy_name": {
+      "en": "NSAID & Painkiller Allergy (Ibuprofen / Aspirin)",
+      "hi": "NSAID और दर्द निवारक दवा एलर्जी",
+      "gu": "એનએસએઆઇડી અને દર્દશામક એલર્જી"
+    },
+    "contraindicated_medicines": ["ibuprofen_400", "aspirin_75", "diclofenac", "naproxen"]
+  },
+  "paracetamol": {
+    "allergy_name": {
+      "en": "Paracetamol / Acetaminophen Hypersensitivity",
+      "hi": "पैरासिटामोल एलर्जिक संवेदनशीलता",
+      "gu": "પેરાસિટામોલ એલર્જીક સંવેદનશીલતા"
+    },
+    "contraindicated_medicines": [
+      "paracetamol_500",
+      "paracetamol_tepid_sponge",
+      "paracetamol_fluid_rest",
+      "paracetamol_strict_ors"
+    ]
+  },
+  "citrate": {
+    "allergy_name": {
+      "en": "Citrate / Alkaline Antacid Intolerance",
+      "hi": "साइट्रेट / अल्कलाइन सिरप एलर्जिक प्रतिक्रिया",
+      "gu": "સાઇટ્રેટ / અલ્કલાઇન સિરપ એલર્જી"
+    },
+    "contraindicated_medicines": ["alkaline_citrate_syrup"]
+  },
+  "aspirin": {
+    "allergy_name": {
+      "en": "Aspirin & Salicylate Sensitivity",
+      "hi": "एस्पिरिन एवं सैलिसिलेट संवेदनशीलता",
+      "gu": "એસ્પિરિન સંવેદનશીલતા"
+    },
+    "contraindicated_medicines": ["aspirin_75", "ibuprofen_400"]
+  },
+  "ayurvedic_herbal": {
+    "allergy_name": {
+      "en": "Herbal Extracts / Honey / Herbal Jam Allergy",
+      "hi": "जड़ी-बूटी / शहद एलर्जिक प्रतिक्रिया",
+      "gu": "જડીબુટ્ટી / મધ એલર્જી"
+    },
+    "contraindicated_medicines": ["sitopaladi_churna", "vasavaleha", "papaya_leaf_extract"]
+  }
+}

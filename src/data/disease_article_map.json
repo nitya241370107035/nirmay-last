@@ -1,0 +1,23 @@
+{
+  "gastroenteritis": ["ors_preparation", "handwashing_technique", "water_purification"],
+  "diarrhoea": ["ors_preparation", "handwashing_technique", "water_purification"],
+  "pneumonia": ["pneumonia_ari_care", "newborn_danger_signs", "immunization_importance"],
+  "acute_bronchitis": ["pneumonia_ari_care", "tb_symptoms_care"],
+  "malaria": ["mosquito_disease_prevention", "water_purification"],
+  "dengue": ["mosquito_disease_prevention", "water_purification"],
+  "chikungunya": ["mosquito_disease_prevention"],
+  "tuberculosis": ["tb_symptoms_care", "handwashing_technique"],
+  "tb": ["tb_symptoms_care", "handwashing_technique"],
+  "anemia": ["anemia_prevention", "worm_infestation", "breastfeeding_nutrition"],
+  "iron_deficiency": ["anemia_prevention", "worm_infestation"],
+  "hypertension": ["hypertension_salt_reduction", "diabetes_management"],
+  "high_bp": ["hypertension_salt_reduction"],
+  "diabetes": ["diabetes_management", "hypertension_salt_reduction"],
+  "rabies": ["rabies_first_aid", "immunization_importance"],
+  "dog_bite": ["rabies_first_aid"],
+  "heatstroke": ["heatstroke_prevention", "water_purification"],
+  "sunstroke": ["heatstroke_prevention"],
+  "worm_infection": ["worm_infestation", "handwashing_technique", "anemia_prevention"],
+  "infant_care": ["newborn_danger_signs", "breastfeeding_nutrition", "immunization_importance"],
+  "viral_fever": ["mosquito_disease_prevention", "water_purification", "handwashing_technique"]
+}

@@ -1,0 +1,21 @@
+{
+  "fever": ["fever", "high temperature", "bukhar", "taav", "jwar", "temperature", "bukhār", "તાવ", "બુખાર", "ગુજરાતી તાવ", "તવ", "ગરમી"],
+  "cough": ["cough", "coughing", "khansi", "khānsī", "udharas", "khasra", "ઉધરસ", "ખાંસી", "ખાસી", "ખસી", "खांसी"],
+  "cold": ["cold", "runny nose", "sardi", "chhinak", "sardī", "સર્દી", "શરદી", "છિંક", "सर्दी", "छींक", "नाक बहना", "ચોક-અપ"],
+  "sore_throat": ["sore throat", "throat pain", "throat irritation", "gala dard", "galama dukhavo", "ગળામાં દુખાવો", "गले में खराश", "गला खराब", "ગળું છોલાવું"],
+  "breathing_difficulty": ["breathing difficulty", "shortness of breath", "breathless", "saans lene mein takleef", "saans phoolna", "shvas chadvo", "શ્વાસ લેવામાં તકલીફ", "સાંસ ફૂલના", "શ્વાસ ચડવો", "सांस फूलना", "દમ"],
+  "chest_pain": ["chest pain", "pain in chest", "chhati ma dard", "chhātīmāṁ dukhāvo", "seene mein dard", "છાતીમાં દુખાવો", "छाती में दर्द", "છાતીમાં બળતરા", "सीना दर्द"],
+  "vomiting": ["vomiting", "nausea", "ulti", "ūlṭī", "vomit", "ઉલટી", "ઉલ્ટી", "उल्टी", "मिचली", "ઉબકા"],
+  "diarrhoea": ["diarrhoea", "diarrhea", "loose motion", "dast", "jhada", "pātalā jhāḍā", "ઝાડા", "દસ્ત", "दस्त", "पतले दस्त", "ઝાડા ઉલટી"],
+  "abdominal_pain": ["abdominal pain", "stomach pain", "stomach ache", "pet dard", "pet ma dukhavo", "પેટમાં દુખાવો", "पेट दर्द", "પેટનો દુખાવો", "પેટ માં ચૂક"],
+  "headache": ["headache", "head pain", "sir dard", "sar dard", "māthā no dukhavo", "cephalalgia", "માથાનો દુખાવો", "सिर दर्द", "માથું દુખવું", "સર દર્દ"],
+  "bodyache": ["body ache", "bodyache", "muscle pain", "badan dard", "sarir no dukhavo", "શરીરનો દુખાવો", "बदन दर्द", "અંગ દુખવા", "માંસપેશી નો દુખાવો"],
+  "fatigue": ["fatigue", "weakness", "tiredness", "kamzori", "ashaktipana", "thakan", "થકાન", "અશક્તિ", "कमजोरी", "थकान", "શરીરમાં તાકાત નથી", "સુસ્તી"],
+  "skin_rash": ["skin rash", "rash", "itching", "khujli", "chamdi no rog", "દાદર", "ખંજવાળ", "ચામડી પર લાલ નિશાન", "खुजली", "चकत्ते", "દાદર ખંજવાળ"],
+  "dizziness": ["dizziness", "giddiness", "chakkar", "માથું ઘૂમવું", "ચક્કર", "चक्कर", "ચક્કર આવવા"],
+  "burning_urination": ["burning urination", "painful urine", "urine pain", "peshab me jalan", "peshab ma balatara", "પેશાબમાં બળતરા", "पेशाब में जलन", "પેશાબ ઓછો થવો"],
+  "joint_pain": ["joint pain", "joints pain", "sandhi sudha", "jodo me dard", "sandha no dukhavo", "સાંધાનો દુખાવો", "જોડો નો દુખાવો", "जोड़ों का दर्द", "ગોઠણ નો દુખાવો"],
+  "unconscious": ["unconscious", "fainting", "behosh", "befan", "બેભાન", "बेहोश", "ભાન ભૂલવું"],
+  "bleeding": ["bleeding", "blood", "khun", "rakt", "lohi", "લોહી", "खून", "रक्त", "લોહી નીકળવું"],
+  "seizure": ["seizure", "fits", "mirgi", "tān", "તાંણ", "મિર્ગી", "दौरा", "मिर्गी", "ખેંચ"]
+}

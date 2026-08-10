@@ -1,0 +1,457 @@
+[
+  {
+    "id": "iron_deficiency",
+    "deficiency_name": {
+      "en": "Iron Deficiency (Anaemia)",
+      "hi": "आयरन की कमी (एनीमिया)",
+      "gu": "આયર્નની ઉણપ (એનીમિયા)"
+    },
+    "signs": [
+      {
+        "id": "pale_conjunctiva",
+        "label": {
+          "en": "Pale inner eyelids (conjunctival pallor)",
+          "hi": "आँखों की भीतरी पलकें पीली पड़ना",
+          "gu": "આંખોની અંદરની પોપચાં પીળી પડવી"
+        },
+        "body_part": "Eyes"
+      },
+      {
+        "id": "koilonychia",
+        "label": {
+          "en": "Spoon-shaped nails (koilonychia)",
+          "hi": "चम्मच जैसे नाखून",
+          "gu": "ચમચી જેવા નખ"
+        },
+        "body_part": "Nails/Skin"
+      },
+      {
+        "id": "brittle_nails",
+        "label": {
+          "en": "Pale, brittle nails with vertical ridges",
+          "hi": "कमजोर और पीले नाखून",
+          "gu": "નબળા અને ફીકા નખ"
+        },
+        "body_part": "Nails/Skin"
+      },
+      {
+        "id": "pale_tongue_palms",
+        "label": {
+          "en": "Pale tongue and pale palm creases",
+          "hi": "जीभ और हथेली की लकीरें पीली दिखना",
+          "gu": "જીભ અને હથેળીની રેખાઓ ફીકી પડો"
+        },
+        "body_part": "Mouth"
+      }
+    ],
+    "confirmation_threshold": 1,
+    "diet_advice": [
+      {
+        "en": "Green leafy vegetables (spinach, fenugreek, drumstick leaves), jaggery (gud), dates, roasted chana, sesame, and iron-fortified flour.",
+        "hi": "हरी पत्तेदार सब्जियाँ (पालक, मेथी, सहजन की पत्तियाँ), गुड़, खजूर, भुना चना, तिल और आयरन युक्त आटा।",
+        "gu": "લીલા પાંદડાવાળા શાકભાજી (પાલક, મેથી, સરગવાના પાન), ગોળ, ખજૂર, શેકેલા ચણા, તલ અને આયર્નયુક્ત અનાજ."
+      },
+      {
+        "en": "Consume vitamin C rich foods (lemon juice, amla) with iron meals to enhance iron absorption. Avoid tea or coffee immediately after meals.",
+        "hi": "भोजन के साथ नींबू या आँवला लें जिससे आयरन अच्छे से सोखे। खाने के तुरंत बाद चाय या कॉफी न पीएं।",
+        "gu": "આયર્નના શોષણ માટે જમતી વખતે લીંબુ કે આમળા લો. જમ્યા પછી તરત ચા કે કોફી પીવાનું ટાળો."
+      }
+    ],
+    "supplements": [
+      {
+        "en": "Iron Folic Acid (IFA) tablets as per national health protocol. Take after food with water or lemon water. Do not give with milk or tea.",
+        "hi": "राष्ट्रीय दिशानिर्देशों के अनुसार आयरन फोलिक एसिड (IFA) की गोलियाँ। खाने के बाद पानी या नींबू पानी के साथ लें। दूध या चाय के साथ न दें।",
+        "gu": "રાષ્ટ્રીય માર્ગદર્શિકા મુજબ આયર્ન ફોલિક એસિડ (IFA) ની ગોળીઓ. જમ્યા પછી પાણી કે લીંબુ પાણી સાથે આપો. દૂધ કે ચા સાથે ન આપો."
+      }
+    ],
+    "related_articles": ["iron_rich_diet", "anaemia_prevention"],
+    "severity": "moderate"
+  },
+  {
+    "id": "vitamin_a_deficiency",
+    "deficiency_name": {
+      "en": "Vitamin A Deficiency (Xerophthalmia)",
+      "hi": "विटामिन ए की कमी (रतौंधी व सूखापन)",
+      "gu": "વિટામિન એ ની ઉણપ (રતાંધળાપણું)"
+    },
+    "signs": [
+      {
+        "id": "bitots_spots",
+        "label": {
+          "en": "Foamy triangular white patches on conjunctiva (Bitot's spots)",
+          "hi": "आँख के सफेद भाग पर त्रिकोणीय झागदार धब्बे (बिटोट्स स्पॉट्स)",
+          "gu": "આંખના સફેદ ભાગ પર ત્રિકોણાકાર ફીણ જેવા ડાઘા (બિટોટ્સ સ્પોટ્સ)"
+        },
+        "body_part": "Eyes"
+      },
+      {
+        "id": "night_blindness",
+        "label": {
+          "en": "Inability to see in dim light or dusk (night blindness)",
+          "hi": "शाम के समय या कम रोशनी में धुंधला दिखना (रतौंधी)",
+          "gu": "સાંજના સમયે કે ઓછાં અજવાળામાં ન દેખાવું (રતાંધળાપણું)"
+        },
+        "body_part": "Eyes"
+      },
+      {
+        "id": "dry_cornea",
+        "label": {
+          "en": "Dry, hazy, or non-lustrous cornea (corneal xerosis)",
+          "hi": "आँख की पुतली का सूखापन और चमक खत्म होना",
+          "gu": "આંખની કીકી સુકાઈ જવી અને ચમક ઘટવી"
+        },
+        "body_part": "Eyes"
+      }
+    ],
+    "confirmation_threshold": 1,
+    "diet_advice": [
+      {
+        "en": "Yellow/orange fruits and vegetables (papaya, mango, carrots, pumpkin), dark green leafy vegetables, milk, ghee, and eggs.",
+        "hi": "पीले और नारंगी फल व सब्जियाँ (पपीता, आम, गाजर, कद्दू), हरी पत्तेदार सब्जियाँ, दूध, घी और अंडे।",
+        "gu": "પીળા અને નારંગી ફળો-શાકભાજી (પપૈયું, કેરી, ગાજર, કોળું), લીલા પાંદડાવાળા શાકભાજી, દૂધ અને ઘી."
+      }
+    ],
+    "supplements": [
+      {
+        "en": "High-dose Vitamin A syrup solution (1 lakh IU for 6-11 months, 2 lakh IU for 12-59 months) under ANM/AWH supervision.",
+        "hi": "स्वास्थ्य कार्यकर्ता की देखरेख में आयु अनुसार उच्च खुराक वाली विटामिन ए की खुराक (6-11 माह: 1 लाख IU, 12-59 माह: 2 लाख IU)।",
+        "gu": "આરોગ્ય કાર્યકરની દેખરેખ હેઠળ ઉંમર મુજબ વિટામિન એ સિરપનો ડોઝ (૬-૧૧ મહિના: ૧ લાખ IU, ૧૨-૫૯ મહિના: ૨ લાખ IU)."
+      }
+    ],
+    "related_articles": ["vitamin_a_nutrition", "child_eye_care"],
+    "severity": "severe"
+  },
+  {
+    "id": "iodine_deficiency",
+    "deficiency_name": {
+      "en": "Iodine Deficiency (Goitre & Hypothyroidism)",
+      "hi": "आयोडीन की कमी (घेंघा रोग)",
+      "gu": "આયોડિનની ઉણપ (ગલગંડ / ગાઇટર)"
+    },
+    "signs": [
+      {
+        "id": "visible_goitre",
+        "label": {
+          "en": "Swelling or enlargement at front of neck (Goitre)",
+          "hi": "गर्दन के सामने वाले हिस्से में सूजन (घेंघा)",
+          "gu": "ગરદનના આગળના ભાગમાં સોજો (ગાઇટર)"
+        },
+        "body_part": "Neck"
+      },
+      {
+        "id": "sluggish_growth",
+        "label": {
+          "en": "Stunted physical growth and mental sluggishness in children",
+          "hi": "बच्चों में शारीरिक व मानसिक विकास में धीमापन",
+          "gu": "બાળકોમાં શારીરિક અને માનસિક વિકાસ ધીમો થવો"
+        },
+        "body_part": "General"
+      },
+      {
+        "id": "dry_coarse_skin",
+        "label": {
+          "en": "Dry, coarse skin accompanied by cold intolerance",
+          "hi": "त्वचा का रूखापन और अधिक ठंड लगना",
+          "gu": "ચામડીનું રુક્ષ થવું અને વધારે ઠંડી લાગવી"
+        },
+        "body_part": "Nails/Skin"
+      }
+    ],
+    "confirmation_threshold": 1,
+    "diet_advice": [
+      {
+        "en": "Always cook using double-fortified or iodised salt (check 'Smiling Sun' logo on pack). Store salt in airtight containers away from heat and moisture.",
+        "hi": "हमेशा केवल आयोडीन युक्त नमक का उपयोग करें। नमक को वायुरुद्ध डिब्बे में बंद रखें ताकि आयोडीन नष्ट न हो।",
+        "gu": "હંમેશા આયોડિનયુક્ત મીઠાનો જ ઉપયોગ કરો. મીઠાને હવાચુસ્ત ડબ્બામાં ભેજથી દૂર રાખો."
+      }
+    ],
+    "supplements": [
+      {
+        "en": "If goitre is detected, refer patient to PHC Medical Officer for thyroid evaluation (TSH testing) and iodised oil or thyroxine if indicated.",
+        "hi": "घेंघा रोग दिखने पर मरीज को थायरॉयड जांच (TSH) के लिए निकटतम प्राथमिक स्वास्थ्य केंद्र भेजें।",
+        "gu": "ગાઇટરના લક્ષણ જણાય તો દર્દીને થાઇરોઇડ તપાસ માટે સરકારી પ્રાથમિક આરોગ્ય કેન્દ્ર પર રિફર કરો."
+      }
+    ],
+    "related_articles": ["iodine_health_guide"],
+    "severity": "moderate"
+  },
+  {
+    "id": "b_complex_deficiency",
+    "deficiency_name": {
+      "en": "Vitamin B-Complex Deficiency (Stomatitis)",
+      "hi": "विटामिन बी-कॉम्प्लेक्स की कमी (मुँह के छाले)",
+      "gu": "વિટામિન બી-કોમ્પ્લેક્સની ઉણપ (મોંના ચાંદા)"
+    },
+    "signs": [
+      {
+        "id": "angular_stomatitis",
+        "label": {
+          "en": "Painful cracks/sores at corners of the mouth (angular stomatitis)",
+          "hi": "होठों के कोनों में दर्दभरे कट और छाले",
+          "gu": "હોઠના ખૂણામાં દુખાવાવાળા ચીરા પડવા"
+        },
+        "body_part": "Mouth"
+      },
+      {
+        "id": "swollen_red_tongue",
+        "label": {
+          "en": "Smooth, magenta-red or swollen painful tongue (glossitis)",
+          "hi": "जीभ का लाल, सूजा हुआ और चमकदार होना (ग्लोसाइटिस)",
+          "gu": "જીભ લાલ, સોજેલી અને સળગતી હોવી"
+        },
+        "body_part": "Mouth"
+      },
+      {
+        "id": "cheilitis",
+        "label": {
+          "en": "Dry, peeling, bleeding lip margins (cheilitis)",
+          "hi": "होठों का पपड़ीदार होना और खून निकलना",
+          "gu": "હોઠ પર ચમડી ઉખડવી અને રક્તસ્રાવ થવો"
+        },
+        "body_part": "Mouth"
+      }
+    ],
+    "confirmation_threshold": 1,
+    "diet_advice": [
+      {
+        "en": "Whole grains (unpolished rice, wheat bran), pulses, milk, curd, groundnuts, sprouted grams, and green leafy vegetables.",
+        "hi": "साबुत अनाज (अंकुरित अनाज), दालें, दूध, दही, मूंगफली और हरी सब्जियाँ।",
+        "gu": "અંકુરિત કઠોળ, દૂધ, દહીં, સીંગદાણા, મોગરેલા કઠોળ અને લીલા શાકભાજી."
+      }
+    ],
+    "supplements": [
+      {
+        "en": "Vitamin B-complex syrup or tablets for 7-10 days as per medical dosage. Avoid spicy and excessively hot food.",
+        "hi": "7-10 दिनों के लिए विटामिन बी-कॉम्प्लेक्स सिरप या गोली। ज्यादा तीखे व गरम खाने से बचें।",
+        "gu": "૭-૧૦ દિવસ માટે વિટામિન બી-કોમ્પ્લેક્સ ગોળી કે સિરપ. તીખો અને ગરમ ખોરાક ન આપો."
+      }
+    ],
+    "related_articles": ["b_complex_care"],
+    "severity": "moderate"
+  },
+  {
+    "id": "protein_energy_malnutrition",
+    "deficiency_name": {
+      "en": "Severe Protein-Energy Malnutrition (PEM / SAM)",
+      "hi": "गंभीर कुपोषण (प्रोटीन-ऊर्जा कुपोषण)",
+      "gu": "ગંભીર કુપોષણ (પ્રોટીન અને ઉર્જાની કમી)"
+    },
+    "signs": [
+      {
+        "id": "bilateral_pedal_oedema",
+        "label": {
+          "en": "Bilateral swelling on top of both feet (pedal oedema)",
+          "hi": "दोनों पैरों के पंजों पर सूजन (दबाने पर गड्ढा बनना)",
+          "gu": "બંને પગના પંજા પર સોજો આવવો"
+        },
+        "body_part": "Limbs/Bones"
+      },
+      {
+        "id": "severe_muscle_wasting",
+        "label": {
+          "en": "Severe muscle wasting in arms, buttocks, and thighs ('old man face')",
+          "hi": "मांसपेशियों का अत्यधिक सूखना (वृद्ध जैसा चेहरा)",
+          "gu": "સ્નાયુઓનું ગંભીરપણે ગળી જવું"
+        },
+        "body_part": "Limbs/Bones"
+      },
+      {
+        "id": "thin_discolored_hair",
+        "label": {
+          "en": "Sparse, thin, easily pluckable reddish/blonde hair",
+          "hi": "बालों का पतला, भूरा या लाल होकर आसानी से टूटना",
+          "gu": "વાળ આછા, લાલાશ પડતા અને સહેલાઈથી તૂટી જવા"
+        },
+        "body_part": "General"
+      },
+      {
+        "id": "flaky_skin_lesions",
+        "label": {
+          "en": "Dark flaky skin patches resembling baked enamel",
+          "hi": "त्वचा पर काले पपड़ीदार धब्बे",
+          "gu": "ચામડી પર કાળા પોપડા જેવા ડાઘ"
+        },
+        "body_part": "Nails/Skin"
+      }
+    ],
+    "confirmation_threshold": 2,
+    "diet_advice": [
+      {
+        "en": "Energy-dense, protein-rich soft meals: Khichdi with ghee, pulses (moong dal), boiled eggs, peanuts, energy-dense nutritious paste (EDNP/Take Home Ration). Frequent small meals 5-6 times daily.",
+        "hi": "प्रोटीन और ऊर्जा से भरपूर आहार: घी वाली खिचड़ी, मूंग दाल, उबला अंडा, मूंगफली और टेक होम राशन (THR)। दिन में 5-6 बार थोड़ा-थोड़ा खाना दें।",
+        "gu": "પ્રોટીન અને ઉર્જાથી ભરપૂર નરમ ખોરાક: ઘીવાળી ખીચડી, મગની દાળ, બાફેલું ઈંડું, સીંગદાણા અને બાલભોગ. દિવસમાં ૫-૬ વાર નાનું ભોજન આપો."
+      }
+    ],
+    "supplements": [
+      {
+        "en": "Immediate referral to Nutritional Rehabilitation Centre (NRC) or Medical Officer if SAM with medical complications or edema present.",
+        "hi": "यदि पैर में सूजन या अन्य गंभीर लक्षण हों, तो बच्चे को तुरंत पोषण पुनर्वास केंद्र (NRC) या नजदीकी अस्पताल भेजें।",
+        "gu": "જો બંને પગે સોજો હોય કે બાળક અતિ નબળું હોય, તો તાત્કાલિક એનઆરસી (NRC) સેન્ટર પર રિફર કરો."
+      }
+    ],
+    "related_articles": ["sam_child_care", "malnutrition_management"],
+    "severity": "severe"
+  },
+  {
+    "id": "vitamin_d_deficiency",
+    "deficiency_name": {
+      "en": "Vitamin D & Calcium Deficiency (Rickets)",
+      "hi": "विटामिन डी व कैल्शियम की कमी (रिकेट्स)",
+      "gu": "વિટામિન ડી અને કેલ્શિયમની ઉણપ (રિકેટ્સ)"
+    },
+    "signs": [
+      {
+        "id": "bow_legs",
+        "label": {
+          "en": "Outward bending of leg bones in young children (bow legs)",
+          "hi": "छोटे बच्चों की टांगों की हड्डियों का बाहर की ओर मुड़ना (धनुषाकार टांगें)",
+          "gu": "બાળકોના પગના હાડકાં બહારની તરફ વળી જવા"
+        },
+        "body_part": "Limbs/Bones"
+      },
+      {
+        "id": "widened_wrists",
+        "label": {
+          "en": "Swelling or widening at wrist joints and ankles",
+          "hi": "कलाई और टखनों के जोड़ों का चौड़ा व सूजा होना",
+          "gu": "કાંડા અને ઘૂંટીના સાંધા પહોળા અને સોજેલા હોવા"
+        },
+        "body_part": "Limbs/Bones"
+      },
+      {
+        "id": "bone_pain",
+        "label": {
+          "en": "Persistent bone and joint aches with muscle weakness",
+          "hi": "हड्डियों और जोड़ों में लगातार दर्द व कमजोरी",
+          "gu": "હાડકાં અને સાંધામાં સતત દુખાવો રહેવો"
+        },
+        "body_part": "Limbs/Bones"
+      }
+    ],
+    "confirmation_threshold": 1,
+    "diet_advice": [
+      {
+        "en": "Daily morning sunlight exposure for 20-30 minutes before 10 AM. Consume milk, curd, paneer, ragi (finger millet), and sesame seeds.",
+        "hi": "रोजाना सुबह 10 बजे से पहले 20-30 मिनट धूप में रहें। दूध, दही, पनीर, रागी और तिल का सेवन करें।",
+        "gu": "દરરોજ સવારે ૧૦ વાગ્યા પહેલાં ૨૦-૩૦ મિનિટ તડકામાં બેસો. દૂધ, દહીં, રાગી અને તલનો ઉપયોગ કરો."
+      }
+    ],
+    "supplements": [
+      {
+        "en": "Pediatric Vitamin D3 drops or Calcium + Vitamin D3 syrup as prescribed by Medical Officer.",
+        "hi": "डॉक्टर की सलाह अनुसार विटामिन डी3 ड्रॉप्स या कैल्शियम सिरप।",
+        "gu": "ડૉક્ટરની સલાહ મુજબ વિટામિન ડી૩ ડ્રોપ્સ અથવા કેલ્શિયમ સિરપ."
+      }
+    ],
+    "related_articles": ["bone_health_rickets"],
+    "severity": "moderate"
+  },
+  {
+    "id": "vitamin_c_deficiency",
+    "deficiency_name": {
+      "en": "Vitamin C Deficiency (Scurvy)",
+      "hi": "विटामिन सी की कमी (स्कर्वी)",
+      "gu": "વિટામિન સી ની ઉણપ (સ્કર્વી)"
+    },
+    "signs": [
+      {
+        "id": "bleeding_gums",
+        "label": {
+          "en": "Swollen, spongy, bleeding gums upon light touch",
+          "hi": "मसूड़ों में सूजन और आसानी से खून निकलना",
+          "gu": "પેઢાં સોજી જવા અને સહેજ અડતાં લોહી નીકળવું"
+        },
+        "body_part": "Mouth"
+      },
+      {
+        "id": "skin_petechiae",
+        "label": {
+          "en": "Small red/purple skin dots around hair follicles (petechiae)",
+          "hi": "त्वचा पर बालों की जड़ों के पास लाल-बैंगनी छोटे धब्बे",
+          "gu": "ચામડી પર વાળના મૂળ પાસે ઝીણા લાલ ડાઘ"
+        },
+        "body_part": "Nails/Skin"
+      },
+      {
+        "id": "delayed_healing",
+        "label": {
+          "en": "Very slow healing of small cuts and wounds",
+          "hi": "छोटे घावों और चोटों का बहुत देरी से भरना",
+          "gu": "નાના વાગેલા કે ઘા રુઝાવવામાં ખૂબ વાર લાગવી"
+        },
+        "body_part": "Nails/Skin"
+      }
+    ],
+    "confirmation_threshold": 1,
+    "diet_advice": [
+      {
+        "en": "Fresh citrus fruits (lemon, amla, guava, oranges), green chillies, tomatoes, and sprouted pulses. Do not overcook vegetables.",
+        "hi": "ताजे खट्टे फल (नींबू, आँवला, अमरूद, संतरा), टमाटर, हरी मिर्च और अंकुरित दालें। सब्जियों को बहुत ज्यादा न उबालें।",
+        "gu": "તાજાં ખાટાં ફળો (લીંબુ, આમળાં, જામફળ, સંતરા), ટામેટાં અને અંકુરિત કઠોળ. શાકભાજીને વધારે પડતાં ન બાફો."
+      }
+    ],
+    "supplements": [
+      {
+        "en": "Vitamin C chewable tablets (100mg - 500mg daily) for 2-3 weeks under healthcare supervision.",
+        "hi": "स्वास्थ्य कार्यकर्ता की सलाह से 2-3 हफ्ते के लिए विटामिन सी की गोली।",
+        "gu": "આરોગ્ય કાર્યકરની સલાહ મુજબ ૨-૩ અઠવાડિયા માટે વિટામિન સી ની ગોળી."
+      }
+    ],
+    "related_articles": ["scurvy_vitamin_c"],
+    "severity": "moderate"
+  },
+  {
+    "id": "zinc_deficiency",
+    "deficiency_name": {
+      "en": "Zinc Deficiency",
+      "hi": "जिंक की कमी",
+      "gu": "ઝીંકની ઉણપ"
+    },
+    "signs": [
+      {
+        "id": "impaired_wound_healing",
+        "label": {
+          "en": "Impaired wound healing and frequent skin rashes",
+          "hi": "घाव न भरना और बार-बार त्वचा पर चकत्ते पड़ना",
+          "gu": "ઘા રૂઝાવવામાં તકલીફ અને ચામડી પર ખંજવાળ કે ફોટલીઓ"
+        },
+        "body_part": "Nails/Skin"
+      },
+      {
+        "id": "loss_of_taste",
+        "label": {
+          "en": "Reduced sense of taste and poor appetite in children",
+          "hi": "स्वाद न आना और बच्चों को भूख बहुत कम लगना",
+          "gu": "સ્વાદ ન પરખાવો અને બાળકોમાં ભૂખ મરી જવી"
+        },
+        "body_part": "Mouth"
+      },
+      {
+        "id": "recurrent_diarrhea",
+        "label": {
+          "en": "Recurrent or prolonged diarrheal episodes in infants",
+          "hi": "शिशुओं में बार-बार या लंबे समय तक दस्त होना",
+          "gu": "બાળકોમાં વારંવાર કે લાંબા સમય સુધી ઝાડા થવા"
+        },
+        "body_part": "General"
+      }
+    ],
+    "confirmation_threshold": 1,
+    "diet_advice": [
+      {
+        "en": "Whole grain cereals, pulses, legumes, pumpkin seeds, sesame seeds, nuts, curd, and milk.",
+        "hi": "साबुत अनाज, दालें, कद्दू के बीज, तिल, मूंगफली, दही और दूध।",
+        "gu": "અનાજ, દાળો, કઠોળ, કોળાના બી, તલ, બદામ-સીંગ અને દહીં."
+      }
+    ],
+    "supplements": [
+      {
+        "en": "Zinc dispersible tablets (20mg daily for 14 days during diarrhea treatment protocol) for infants and young children.",
+        "hi": "दस्त के इलाज के दौरान 14 दिनों तक रोजाना जिंक की गोली (20mg)।",
+        "gu": "ઝાડાની સારવાર દરમિયાન ૧૪ દિવસ માટે દરરોજ ઝીંકની ગોળી (૨૦mg)."
+      }
+    ],
+    "related_articles": ["zinc_health_importance"],
+    "severity": "moderate"
+  }
+]

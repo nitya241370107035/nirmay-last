@@ -1,0 +1,32 @@
+{
+  "glucose_rising": {
+    "en": "Your morning fasting glucose has shown an upward trend over the past 7 days. Please maintain strict low-glycemic dietary adherence and consult your medical officer.",
+    "hi": "पिछले 7 दिनों में आपका सुबह का खाली पेट ग्लूकोज लगातार बढ़ रहा है। कृपया कम मीठा आहार लें और डॉक्टर से परामर्श करें।",
+    "gu": "છેલ્લા ૭ દિવસમાં તમારું સવારનું ભૂખ્યા પેટેનું ગ્લુકોઝ વધી રહ્યું છે. કૃપા કરીને ઓછી ખાંડવાળો ખોરાક લો અને આરોગ્ય અધિકારીનો સંપર્ક કરો."
+  },
+  "glucose_high": {
+    "en": "Current blood glucose readings exceed normal therapeutic targets (>180 mg/dL). Ensure prescribed insulin/metformin doses are taken on schedule and hydrate with water.",
+    "hi": "रक्त शर्करा रीडिंग सामान्य लक्ष्य (>180 mg/dL) से अधिक है। निर्धारित दवाएं समय पर लें और पर्याप्त पानी पिएं।",
+    "gu": "બ્લડ ગ્લુકોઝ સામાન્ય લક્ષ્યાંક (>૧૮૦ mg/dL) કરતાં વધુ છે. નિયમિત દવાઓ સમયસર લો અને પૂરતું પાણી પીવો."
+  },
+  "adherence_low": {
+    "en": "Medication adherence is below 70% this week. Consistent daily doses are critical to preventing long-term diabetic retinopathy and neuropathy complications.",
+    "hi": "इस सप्ताह दवा लेने की नियमितता 70% से कम है। जटिलताओं से बचने के लिए प्रतिदिन समय पर दवा लेना अत्यंत आवश्यक है।",
+    "gu": "આ અઠવાડિયે દવા લેવાની નિયમિતતા ૭૦% થી ઓછી છે. કાયમી સ્વાસ્થ્ય સમસ્યાઓથી બચવા દરરોજ સમયસર દવા લેવી જરૂરી છે."
+  },
+  "good_control": {
+    "en": "Excellent glycemic control and healthy lifestyle adherence! Your moving average glucose and habits remain within target range.",
+    "hi": "उत्कृष्ट ग्लूकोज नियंत्रण एवं स्वस्थ जीवनशैली! आपकी औसत शर्करा और दिनचर्या लक्ष्य सीमा में है।",
+    "gu": "ઉત્કૃષ્ટ ગ્લુકોઝ નિયંત્રણ અને તંદુરસ્ત આદતો! તમારું સરેરાશ સુગર અને દવા પાલન યોગ્ય સ્તરે છે."
+  },
+  "low_activity": {
+    "en": "Physical activity has been below 20 minutes daily. A brisk 20-30 min morning walk improves insulin sensitivity significantly.",
+    "hi": "शारीरिक गतिविधि प्रतिदिन 20 मिनट से कम है। 20-30 मिनट की सुबह की सैर से इंसुलिन संवेदनशीलता में सुधार होता है।",
+    "gu": "શારીરિક વ્યાયામ ૨૦ મિનિટથી ઓછો છે. દરરોજ સવારે ૨૦-૩૦ મિનિટ ઝડપી ચાલવાથી સુગર નિયંત્રણમાં રહે છે."
+  },
+  "low_water": {
+    "en": "Water intake is below recommended hydration levels (<6 glasses). Proper hydration assists renal clearance of excess glucose.",
+    "hi": "पानी का सेवन अनुशंसित स्तर (<6 गिलास) से कम है। पर्याप्त पानी पीने से किडनी स्वास्थ्य और शर्करा संतुलन में मदद मिलती है।",
+    "gu": "પાણીનું પ્રમાણ ઓછું છે (<૬ ગ્લાસ). પૂરતું પાણી પીવાથી કિડની સ્વસ્થ રહે છે અને સુગર સંતુલિત રહે છે."
+  }
+}

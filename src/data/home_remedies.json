@@ -1,0 +1,822 @@
+[
+  {
+    "id": "tulsi_ginger_tea_fever",
+    "replaces_medicine_id": "sudarshan_ghan_vati",
+    "recipe_name": {
+      "en": "Fresh Tulsi & Ginger Decoction (Kada)",
+      "hi": "ताजा तुलसी और अदरक का काढ़ा",
+      "gu": "તાજી તુલસી અને આદુનો ઉકાળો"
+    },
+    "description": {
+      "en": "Traditional fever-reducing, sweating-inducing herbal tea made with fresh garden tulsi and ginger.",
+      "hi": "ताजा तुलसी और अदरक से बना पारंपरिक बुखार निवारक और स्वेदनकारी काढ़ा।",
+      "gu": "તાજી તુલસી અને આદુમાંથી બનાવેલો પરંપરાગત તાવ શામક ઉકાળો."
+    },
+    "required_plants": [
+      { "plantId": "tulsi", "quantity": 10, "unit": "leaves" },
+      { "plantId": "ginger", "quantity": 1, "unit": "inch piece" }
+    ],
+    "other_ingredients": [
+      {
+        "item": "honey",
+        "quantity": "1 tsp",
+        "multilingual": { "en": "Pure Honey", "hi": "शुद्ध शहद", "gu": "શુદ્ધ મધ" }
+      },
+      {
+        "item": "water",
+        "quantity": "2 cups",
+        "multilingual": { "en": "Clean Water", "hi": "साफ पानी", "gu": "સ્વચ્છ પાણી" }
+      }
+    ],
+    "preparation_steps": [
+      {
+        "en": "Wash 10 fresh tulsi leaves and crush 1 inch piece of ginger.",
+        "hi": "10 ताजी तुलसी की पत्तियों को धोएं और 1 इंच अदरक का टुकड़ा कुचलें।",
+        "gu": "10 તાજી તુલસીના પાન ધોવો અને 1 ઇંચ આદુનો ટુકડો ખાંડો."
+      },
+      {
+        "en": "Add both to 2 cups of clean water in a saucepan.",
+        "hi": "दोनों को एक बर्तन में 2 कप साफ पानी में मिलाएं।",
+        "gu": "બંનેને વાસણમાં 2 કપ સ્વચ્છ પાણીમાં ઉમેરો."
+      },
+      {
+        "en": "Boil gently until the water reduces to 1 cup.",
+        "hi": "पानी आधा (1 कप) रहने तक धीमी आंच पर उबालें।",
+        "gu": "પાણી અડધું (1 કપ) રહે ત્યાં સુધી ધીમા તાપે ઉકાળો."
+      },
+      {
+        "en": "Strain into a clean cup and stir in 1 tsp honey once warm.",
+        "hi": "छान लें और गुनगुना होने पर 1 चम्मच शहद मिलाएं।",
+        "gu": "ગાળી લો અને નવશેકું થાય ત્યારે 1 ચમચી મધ ઉમેરો."
+      }
+    ],
+    "dosage": {
+      "en": "Drink 1 cup twice daily after food while fever persists.",
+      "hi": "बुखार रहने तक भोजन के बाद दिन में दो बार 1 कप पिएं।",
+      "gu": "તાવ રહે ત્યાં સુધી જમ્યા પછી દિવસમાં બે વાર 1 કપ પીવો."
+    },
+    "shelf_life": {
+      "en": "Prepare fresh each time. Do not store overnight.",
+      "hi": "हर बार ताजा बनाएं। रात भर न रखें।",
+      "gu": "દર વખતે તાજો જ બનાવો. રાત્રિ વાસી ન રાખવો."
+    },
+    "contraindications": {
+      "en": "Do not add honey for children under 1 year.",
+      "hi": "1 वर्ष से कम उम्र के बच्चों के लिए शहद न मिलाएं।",
+      "gu": "1 વર્ષથી નાના બાળકો માટે મધ ન ઉમેરવું."
+    }
+  },
+  {
+    "id": "fresh_giloy_juice",
+    "replaces_medicine_id": "giloy_kwath",
+    "recipe_name": {
+      "en": "Fresh Giloy Stem Juice",
+      "hi": "ताजा गिलोय स्वरस",
+      "gu": "તાજો ગિલોય રસ"
+    },
+    "description": {
+      "en": "Pure immunomodulatory stem extract for chronic fever, weakness, and dengue recovery.",
+      "hi": "दीर्घकालिक बुखार, कमजोरी और रिकवरी के लिए शुद्ध गिलोय तने का रस।",
+      "gu": "જૂના તાવ, નબળાઈ અને સુધારા માટે શુદ્ધ ગિલોય રસ."
+    },
+    "required_plants": [
+      { "plantId": "giloy", "quantity": 1, "unit": "6-inch stem" }
+    ],
+    "other_ingredients": [
+      {
+        "item": "water",
+        "quantity": "50 ml",
+        "multilingual": { "en": "Lukewarm Water", "hi": "गुनगुना पानी", "gu": "નવશેકું પાણી" }
+      }
+    ],
+    "preparation_steps": [
+      {
+        "en": "Cut a fresh green Giloy stem of pencil thickness (about 6 inches).",
+        "hi": "पेंसिल जैसी मोटाई की 6 इंच ताजी हरी गिलोय की टहनी काटें।",
+        "gu": "પેન્સિલ જેવી જાડાઈની 6 ઇંચ તાજી લીલી ગિલોયની ડાળી કાપો."
+      },
+      {
+        "en": "Peel the thin outer skin and crush thoroughly with a mortar.",
+        "hi": "ऊपरी पतली छाल छीलें और सिलबट्टे पर अच्छी तरह कूटें।",
+        "gu": "ઉપરની પાતળી છાલ ઉતારી ખાંડણીમાં બરાબર ખાંડો."
+      },
+      {
+        "en": "Add 50 ml water, squeeze through a clean muslin cloth, and extract juice.",
+        "hi": "50 मिली पानी मिलाकर साफ कपड़े से छानकर रस निकालें।",
+        "gu": "50 મિલી પાણી ઉમેરી સ્વચ્છ કપડા વડે ગાળીને રસ કાઢો."
+      }
+    ],
+    "dosage": {
+      "en": "Take 20 ml diluted juice in the morning on an empty stomach.",
+      "hi": "सुबह खाली पेट 20 मिली रस गुनगुने पानी के साथ लें।",
+      "gu": "સવારે નયણે કોઠે 20 મિલી રસ નવશેકા પાણી સાથે લો."
+    },
+    "shelf_life": {
+      "en": "Consume immediately upon extraction.",
+      "hi": "निकालने के तुरंत बाद सेवन करें।",
+      "gu": "રસ કાઢ્યા પછી તરત જ પીવો."
+    },
+    "contraindications": {
+      "en": "Diabetic patients should monitor blood glucose as Giloy can lower blood sugar.",
+      "hi": "डायबिटीज के मरीज ब्लड शुगर की जांच करते रहें।",
+      "gu": "ડાયાબિટીસના દર્દીઓએ શુગર તપાસતા રહેવું."
+    }
+  },
+  {
+    "id": "tulsi_pepper_cold_syrup",
+    "replaces_medicine_id": "sitopaladi_churna",
+    "recipe_name": {
+      "en": "Tulsi, Black Pepper & Honey Linctus",
+      "hi": "तुलसी, काली मिर्च और शहद का चाटन",
+      "gu": "તુલસી, મરી અને મધનું ચાટણ"
+    },
+    "description": {
+      "en": "Natural chest congestion and cough remedy substituting Sitopaladi Churna.",
+      "hi": "छाती के कफ और खांसी के लिए प्राकृतिक चाटन।",
+      "gu": "છાતીના કફ અને ખાંસી માટે કુદરતી ચાટણ."
+    },
+    "required_plants": [
+      { "plantId": "tulsi", "quantity": 15, "unit": "leaves" },
+      { "plantId": "ginger", "quantity": 1, "unit": "half inch piece" }
+    ],
+    "other_ingredients": [
+      {
+        "item": "black_pepper",
+        "quantity": "3 crushed grains",
+        "multilingual": { "en": "Crushed Black Pepper", "hi": "कुटी काली मिर्च", "gu": "ખાંડેલા મરી" }
+      },
+      {
+        "item": "honey",
+        "quantity": "1 tbsp",
+        "multilingual": { "en": "Pure Honey", "hi": "शुद्ध शहद", "gu": "શુદ્ધ મધ" }
+      }
+    ],
+    "preparation_steps": [
+      {
+        "en": "Crush fresh tulsi leaves and ginger to extract 1 teaspoon fresh juice.",
+        "hi": "ताजी तुलसी और अदरक कूटकर 1 चम्मच रस निकालें।",
+        "gu": "તાજી તુલસી અને આદુ ખાંડીને 1 ચમચી રસ કાઢો."
+      },
+      {
+        "en": "Mix with 3 freshly crushed black pepper grains.",
+        "hi": "3 कुटी हुई काली मिर्च मिलाएं।",
+        "gu": "3 ખાંડેલા મરી ઉમેરો."
+      },
+      {
+        "en": "Blend thoroughly into 1 tbsp pure honey.",
+        "hi": "1 बड़े चम्मच शुद्ध शहद में अच्छी तरह मिलाएं।",
+        "gu": "1 મોટી ચમચી મધમાં બરાબર ભેળવો."
+      }
+    ],
+    "dosage": {
+      "en": "Lick 1 teaspoon 3 times daily for throat relief and cold.",
+      "hi": "गले की खराश और सर्दी के लिए दिन में 3 बार 1 चम्मच चाटें।",
+      "gu": "ગળાની ખારાશ અને શરદી માટે દિવસમાં 3 વાર 1 ચમચી ચાટો."
+    },
+    "shelf_life": {
+      "en": "Make fresh daily batch for 1 day.",
+      "hi": "एक दिन का ताजा मिश्रण बनाएं।",
+      "gu": "એક દિવસ માટે તાજું મિશ્રણ બનાવો."
+    }
+  },
+  {
+    "id": "vasaka_leaf_decoction",
+    "replaces_medicine_id": "vasavaleha",
+    "recipe_name": {
+      "en": "Fresh Vasaka (Adulsa) Mucolytic Kwath",
+      "hi": "ताजा अड़ूसा कफ निस्सारक क्वाथ",
+      "gu": "તાજી અરડૂસીનો કફહર ઉકાળો"
+    },
+    "description": {
+      "en": "Potent home decoction for deep bronchial cough, asthma tightness, and thick chest mucus.",
+      "hi": "गंभीर खांसी, सांस फूलने और छाती के जमाव के लिए शक्तिशाली काढ़ा।",
+      "gu": "ગંભીર ખાંસી, શ્વાસ ચડવા અને છાતીના જાડા કફ માટે ઉત્તમ ઉકાળો."
+    },
+    "required_plants": [
+      { "plantId": "vasaka", "quantity": 5, "unit": "leaves" },
+      { "plantId": "ginger", "quantity": 1, "unit": "inch piece" }
+    ],
+    "other_ingredients": [
+      {
+        "item": "jaggery",
+        "quantity": "1 tsp",
+        "multilingual": { "en": "Organic Jaggery", "hi": "देसी गुड़", "gu": "દેશી ગોળ" }
+      },
+      {
+        "item": "water",
+        "quantity": "2 cups",
+        "multilingual": { "en": "Water", "hi": "पानी", "gu": "પાણી" }
+      }
+    ],
+    "preparation_steps": [
+      {
+        "en": "Wash 5 dark green Vasaka (Adulsa) leaves thoroughly and shred them.",
+        "hi": "5 हरे अड़ूसा के पत्तों को धोकर छोटे टुकड़े करें।",
+        "gu": "5 લીલા અરડૂસીના પાન ધોઈ ઝીણા ટુકડા કરો."
+      },
+      {
+        "en": "Boil shredded leaves and crushed ginger in 2 cups water until reduced to half cup.",
+        "hi": "अदरक और पत्तों को 2 कप पानी में आधा कप रहने तक उबालें।",
+        "gu": "આદુ અને પાંદડાને 2 કપ પાણીમાં અડધો કપ રહે ત્યાં સુધી ઉકાળો."
+      },
+      {
+        "en": "Add 1 tsp jaggery while warm and strain.",
+        "hi": "छानकर गुनगुने काढ़े में 1 चम्मच गुड़ मिलाएं।",
+        "gu": "ગાળીને નવશેકા ઉકાળામાં 1 ચમચી ગોળ ઉમેરો."
+      }
+    ],
+    "dosage": {
+      "en": "Take 30 ml twice daily after meals for severe cough.",
+      "hi": "गंभीर खांसी में भोजन के बाद दिन में दो बार 30 मिली लें।",
+      "gu": "ગંભીર ખાંસીમાં જમ્યા પછી દિવસમાં બે વાર 30 મિલી લો."
+    },
+    "shelf_life": {
+      "en": "Prepare fresh twice a day.",
+      "hi": "दिन में दो बार ताजा तैयार करें।",
+      "gu": "દિવસમાં બે વાર તાજો જ બનાવો."
+    }
+  },
+  {
+    "id": "guava_kutaja_diarrhea_tea",
+    "replaces_medicine_id": "kutajghan_vati",
+    "recipe_name": {
+      "en": "Guava Leaf & Kutaja Astringent Tea",
+      "hi": "अमरूद पत्ते और कुटज का दस्त रोधी काढ़ा",
+      "gu": "જામફળના પાન અને કુટજનો ઝાડા શામક ઉકાળો"
+    },
+    "description": {
+      "en": "Natural astringent formula to control loose watery diarrhea and cramps.",
+      "hi": "पतले दस्त और पेट के मरोड़ को रोकने वाला प्राकृतिक कसैला काढ़ा।",
+      "gu": "પાણી જેવા ઝાડા અને પેટની ચૂંક રોકવા માટે કુદરતી ઉકાળો."
+    },
+    "required_plants": [
+      { "plantId": "guava_leaves", "quantity": 6, "unit": "tender leaves" },
+      { "plantId": "kutaja", "quantity": 1, "unit": "small bark strip" }
+    ],
+    "other_ingredients": [
+      {
+        "item": "cumin",
+        "quantity": "1/2 tsp",
+        "multilingual": { "en": "Cumin Seeds (Jeera)", "hi": "जीरा", "gu": "જીરું" }
+      },
+      {
+        "item": "water",
+        "quantity": "2 cups",
+        "multilingual": { "en": "Water", "hi": "पानी", "gu": "પાણી" }
+      }
+    ],
+    "preparation_steps": [
+      {
+        "en": "Crush 6 young guava leaves, Kutaja bark strip, and 1/2 tsp cumin seeds.",
+        "hi": "6 अमरूद के कोमल पत्ते, कुटज की छाल और आधा चम्मच जीरा कूटें।",
+        "gu": "6 જામફળના કૂણા પાન, કુટજની છાલ અને અડધી ચમચી જીરું ખાંડો."
+      },
+      {
+        "en": "Boil in 2 cups of water for 8-10 minutes until water turns light golden-brown.",
+        "hi": "2 कप पानी में 8-10 मिनट तक पानी का रंग बदलने तक उबालें।",
+        "gu": "2 કપ પાણીમાં 8-10 મિનિટ સુધી ઉકાળો."
+      },
+      {
+        "en": "Strain and sip warm with a pinch of rock salt.",
+        "hi": "छानकर चुटकी भर सेंधा नमक मिलाकर गुनगुना पिएं।",
+        "gu": "ગાળીને ચપટી સંચળ ઉમેરી નવશેકું પીવો."
+      }
+    ],
+    "dosage": {
+      "en": "Take 50 ml after every loose bowel movement.",
+      "hi": "हर पतले दस्त के बाद 50 मिली पिएं।",
+      "gu": "દરેક ઝાડા પછી 50 મિલી પીવો."
+    },
+    "shelf_life": {
+      "en": "Prepare fresh daily.",
+      "hi": "रोजाना ताजा बनाएं।",
+      "gu": "દરરોજ તાજો જ બનાવો."
+    }
+  },
+  {
+    "id": "papaya_leaf_dengue_juice",
+    "replaces_medicine_id": "papaya_leaf_extract",
+    "recipe_name": {
+      "en": "Fresh Papaya Leaf Juice for Dengue",
+      "hi": "डेंगू के लिए ताज़ा पपीता पत्ता रस",
+      "gu": "ડેન્ગ્યુ માટે તાજો પપૈયાના પાનનો રસ"
+    },
+    "description": {
+      "en": "Fresh leaf extract proven to help maintain platelet counts during Dengue fever.",
+      "hi": "डेंगू बुखार में प्लेटलेट काउंट बनाए रखने में सहायक ताज़ा स्वरस।",
+      "gu": "ડેન્ગ્યુ તાવમાં પ્લેટલેટ કાઉન્ટ જાળવી રાખવા માટે અત્યંત મદદરૂપ રસ."
+    },
+    "required_plants": [
+      { "plantId": "papaya", "quantity": 2, "unit": "medium leaves" }
+    ],
+    "other_ingredients": [
+      {
+        "item": "water",
+        "quantity": "1 tbsp",
+        "multilingual": { "en": "Boiled Cooled Water", "hi": "उबला ठंडा पानी", "gu": "ઉકાળેલું ઠંડુ પાણી" }
+      }
+    ],
+    "preparation_steps": [
+      {
+        "en": "Wash 2 fresh medium papaya leaves (remove main tough central stalk).",
+        "hi": "2 ताजे पपीते के पत्ते धोएं और बीच की सख्त डंडी हटा दें।",
+        "gu": "2 તાજા પપૈયાના પાન ધોઈ વચ્ચેની કડક નસ કાઢી નાખો."
+      },
+      {
+        "en": "Chop finely and crush in a clean wooden mortar or blender with 1 tbsp water.",
+        "hi": "बारीक काटकर 1 चम्मच पानी के साथ साफ सिलबट्टे में पीसें।",
+        "gu": "ઝીણું સમારી 1 ચમચી પાણી સાથે ખાંડણીમાં વાટો."
+      },
+      {
+        "en": "Squeeze through a clean cloth to extract raw dark green juice.",
+        "hi": "कपड़े से निचोड़कर गहरा हरा रस निकालें।",
+        "gu": "કપડા વડે નીચોવીને ઘાટો લીલો રસ કાઢો."
+      }
+    ],
+    "dosage": {
+      "en": "Take 10 to 20 ml twice daily for adults, 5 to 10 ml for children.",
+      "hi": "वयस्क 10-20 मिली और बच्चे 5-10 मिली दिन में दो बार लें।",
+      "gu": "મોટાઓ 10-20 મિલી અને બાળકો 5-10 મિલી દિવસમાં બે વાર લે."
+    },
+    "shelf_life": {
+      "en": "Must be consumed fresh within 30 minutes of extraction.",
+      "hi": "निकालने के 30 मिनट के भीतर ही पिएं।",
+      "gu": "રસ કાઢ્યા પછી 30 મિનિટમાં જ પીવો."
+    }
+  },
+  {
+    "id": "gokshura_coriander_uti_alkalizer",
+    "replaces_medicine_id": "gokshuradi_guggulu",
+    "recipe_name": {
+      "en": "Gokshura & Fresh Coriander UTI Infusion",
+      "hi": "गोखरू और हरा धनिया मूत्र शोधक पेय",
+      "gu": "ગોખરૂ અને તાજા ધાણાનું પેશાબ સાફ કરનાર પેય"
+    },
+    "description": {
+      "en": "Diuretic and cooling herbal brew that relieves burning urination and clears urinary infection.",
+      "hi": "पेशाब की जलन दूर करने और मूत्र मार्ग की सफाई के लिए शीतल काढ़ा।",
+      "gu": "પેશાબની બળતરા શમાવતો અને ઇન્ફેક્શન સાફ કરતો ઠંડો ઉકાળો."
+    },
+    "required_plants": [
+      { "plantId": "gokshura", "quantity": 1, "unit": "tsp dried fruit or whole herb" },
+      { "plantId": "coriander", "quantity": 10, "unit": "sprigs" }
+    ],
+    "other_ingredients": [
+      {
+        "item": "rock_sugar",
+        "quantity": "1/2 tsp",
+        "multilingual": { "en": "Misri (Rock Sugar)", "hi": "धागे वाली मिश्री", "gu": "સાકર" }
+      },
+      {
+        "item": "water",
+        "quantity": "2 cups",
+        "multilingual": { "en": "Water", "hi": "पानी", "gu": "પાણી" }
+      }
+    ],
+    "preparation_steps": [
+      {
+        "en": "Coarsely crush Gokshura fruit and 10 sprigs of fresh coriander.",
+        "hi": "गोखरू और 10 ताजी धनिया की पत्तियां दरदरी कूटें।",
+        "gu": "ગોખરૂ અને 10 તાજી ધાણાની ડાળીઓ અધકચરી ખાંડો."
+      },
+      {
+        "en": "Soak overnight or boil gently in 2 cups of water for 5 minutes.",
+        "hi": "रात भर भिगोएं या 2 कप पानी में 5 मिनट धीमी आंच पर उबालें।",
+        "gu": "રાત્રે પલાળો અથવા 2 કપ પાણીમાં 5 મિનિટ ધીમેથી ઉકાળો."
+      },
+      {
+        "en": "Strain, add a pinch of rock sugar, and drink cool.",
+        "hi": "छानकर थोड़ी मिश्री मिलाकर ठंडा करके पिएं।",
+        "gu": "ગાળીને થોડી સાકર ઉમેરી ઠંડુ કરીને પીવો."
+      }
+    ],
+    "dosage": {
+      "en": "Drink 1 cup twice daily until burning stops.",
+      "hi": "जलन शांत होने तक दिन में दो बार 1 कप पिएं।",
+      "gu": "બળતરા શાંત થાય ત્યાં સુધી દિવસમાં બે વાર 1 કપ પીવો."
+    },
+    "shelf_life": {
+      "en": "Prepare fresh morning and evening.",
+      "hi": "सुबह-शाम ताजा बनाएं।",
+      "gu": "સવાર-સાંજ તાજો જ બનાવો."
+    }
+  },
+  {
+    "id": "triphala_fresh_cleanser",
+    "replaces_medicine_id": "triphala_churna",
+    "recipe_name": {
+      "en": "Fresh Amla, Haritaki & Baheda Digestive Tonic",
+      "hi": "ताजा आंवला, हरड़ व बहेड़ा पाचक पेय",
+      "gu": "તાજા આંબળા, હરડે અને બહેડાનું પાચક પેય"
+    },
+    "description": {
+      "en": "Fresh garden alternative to Triphala for bowel regulation, constipation, and detox.",
+      "hi": "कब्ज, पेट की सफाई और पाचन सुधारने के लिए त्रिफला का ताजा विकल्प।",
+      "gu": "કબજિયાત, પેટ સાફ કરવા અને પાચન સુધારવા માટે તાજો વિકલ્પ."
+    },
+    "required_plants": [
+      { "plantId": "amla", "quantity": 1, "unit": "fresh fruit" },
+      { "plantId": "haritaki", "quantity": 1, "unit": "dried fruit" },
+      { "plantId": "bibhitaki", "quantity": 1, "unit": "dried fruit" }
+    ],
+    "other_ingredients": [
+      {
+        "item": "water",
+        "quantity": "1 glass",
+        "multilingual": { "en": "Warm Water", "hi": "गुनगुना पानी", "gu": "નવશેકું પાણી" }
+      }
+    ],
+    "preparation_steps": [
+      {
+        "en": "Grate 1 fresh Amla, de-seed Haritaki and Bibhitaki fruit shells.",
+        "hi": "1 ताजा आंवला कद्दूकस करें, हरड़ और बहेड़ा के बीज निकालें।",
+        "gu": "1 તાજું આંબળું છીણો, હરડે અને બહેડાના ઠળિયા કાઢી નાખો."
+      },
+      {
+        "en": "Pound into a coarse paste and steep in a glass of warm water for 2 hours.",
+        "hi": "पेस्ट बनाकर 1 गिलास गुनगुने पानी में 2 घंटे भिगोएं।",
+        "gu": "પેસ્ટ બનાવી 1 ગ્લાસ નવશેકા પાણીમાં 2 કલાક પલાળો."
+      },
+      {
+        "en": "Filter through strainer before sleeping.",
+        "hi": "सोने से पहले छान लें।",
+        "gu": "સૂતા પહેલા ગાળી લો."
+      }
+    ],
+    "dosage": {
+      "en": "Drink 1 glass warm at bedtime for smooth constipation relief.",
+      "hi": "सोते समय 1 गिलास गुनगुना पिएं।",
+      "gu": "રાત્રે સૂતી વખતે 1 ગ્લાસ નવશેકું પીવો."
+    },
+    "shelf_life": {
+      "en": "Steep fresh every evening.",
+      "hi": "हर शाम ताजा भिगोएं।",
+      "gu": "દર સાંજે તાજું જ પલાળો."
+    }
+  },
+  {
+    "id": "arjuna_bark_heart_decoction",
+    "replaces_medicine_id": "arjuna_kwath",
+    "recipe_name": {
+      "en": "Fresh Arjuna Bark & Cinnamon Milk Tea",
+      "hi": "ताजा अर्जुन छाल व दालचीनी हृदय क्षीरपाक",
+      "gu": "તાજી અર્જુન છાલ અને તજનો હૃદયક્ષીર પાક"
+    },
+    "description": {
+      "en": "Traditional cardiac tonic infusion for high blood pressure and vascular strength.",
+      "hi": "उच्च रक्तचाप और हृदय क्षमता बढ़ाने के लिए पारंपरिक क्षीरपाक।",
+      "gu": "હાઈ બ્લડ પ્રેશર અને હૃદયની તાકાત વધારવા માટે પરંપરાગત ક્ષીરપાક."
+    },
+    "required_plants": [
+      { "plantId": "arjuna", "quantity": 1, "unit": "thumb-sized fresh bark strip" }
+    ],
+    "other_ingredients": [
+      {
+        "item": "milk",
+        "quantity": "1/2 cup",
+        "multilingual": { "en": "Cow Milk", "hi": "गाय का दूध", "gu": "ગાયનું દૂધ" }
+      },
+      {
+        "item": "water",
+        "quantity": "1/2 cup",
+        "multilingual": { "en": "Water", "hi": "पानी", "gu": "પાણી" }
+      }
+    ],
+    "preparation_steps": [
+      {
+        "en": "Crush 1 fresh Arjuna tree bark strip with a stone.",
+        "hi": "1 ताजा अर्जुन छाल के टुकड़े को पत्थर पर कूटें।",
+        "gu": "1 તાજી અર્જુન છાલના ટુકડાને પથ્થર પર ખાંડો."
+      },
+      {
+        "en": "Boil together with 1/2 cup milk and 1/2 cup water until only milk remains.",
+        "hi": "आधा कप दूध और आधा कप पानी मिलाकर केवल दूध रहने तक उबालें।",
+        "gu": "અડધો કપ દૂધ અને અડધો કપ પાણી ઉમેરી માત્ર દૂધ બાકી રહે ત્યાં સુધી ઉકાળો."
+      },
+      {
+        "en": "Strain and sip warm.",
+        "hi": "छानकर गुनगुना पिएं।",
+        "gu": "ગાળીને નવશેકું પીવો."
+      }
+    ],
+    "dosage": {
+      "en": "Drink 1 cup warm every morning for blood pressure support.",
+      "hi": "ब्लड प्रेशर नियंत्रण के लिए रोज सुबह 1 कप पिएं।",
+      "gu": "બ્લડ પ્રેશર નિયંત્રણ માટે રોજ સવારે 1 કપ પીવો."
+    },
+    "shelf_life": {
+      "en": "Prepare fresh every morning.",
+      "hi": "रोज सुबह ताजा बनाएं।",
+      "gu": "દરરોજ સવારે તાજું જ બનાવો."
+    }
+  },
+  {
+    "id": "neem_leaf_blood_purifier",
+    "replaces_medicine_id": "neem_patra_juice",
+    "recipe_name": {
+      "en": "Fresh Neem Leaf Juice & Skin Poultice",
+      "hi": "ताजा नीम पत्ता स्वरस व त्वचा लेप",
+      "gu": "તાજો લીમડાના પાનનો રસ અને લેપ"
+    },
+    "description": {
+      "en": "Blood purifier and anti-fungal application substituting Neem Patra Juice.",
+      "hi": "रक्त शोधक और त्वचा के संक्रमण के लिए नीम का लेप व रस।",
+      "gu": "લોહી શુદ્ધિકર્તા અને ચામડીના ઇન્ફેક્શન માટે લીમડાનો રસ અને લેપ."
+    },
+    "required_plants": [
+      { "plantId": "neem", "quantity": 10, "unit": "tender leaves" }
+    ],
+    "other_ingredients": [
+      {
+        "item": "water",
+        "quantity": "2 tbsp",
+        "multilingual": { "en": "Clean Water", "hi": "साफ पानी", "gu": "સ્વચ્છ પાણી" }
+      }
+    ],
+    "preparation_steps": [
+      {
+        "en": "Wash 10 tender green neem leaves.",
+        "hi": "10 कोमल नीम की पत्तियां धोएं।",
+        "gu": "10 કૂણા લીમડાના પાન ધોવો."
+      },
+      {
+        "en": "Grind with 2 tbsp water into a fine paste.",
+        "hi": "2 चम्मच पानी मिलाकर महीन पेस्ट बनाएं।",
+        "gu": "2 ચમચી પાણી ઉમેરી ઝીણી પેસ્ટ બનાવો."
+      },
+      {
+        "en": "Drink 1 tbsp paste diluted in water, or apply paste directly on scabies / skin itch.",
+        "hi": "1 चम्मच पानी में मिलाकर पिएं, या खुजली वाली त्वचा पर लेप लगाएं।",
+        "gu": "1 ચમચી પાણીમાં મેળવી પીવો, અથવા ખંજવાળવાળી જગ્યાએ લેપ કરો."
+      }
+    ],
+    "dosage": {
+      "en": "Take 15 ml once daily for 7 days for skin purification.",
+      "hi": "त्वचा शुद्धि के लिए 7 दिनों तक दिन में एक बार 15 मिली लें।",
+      "gu": "ચામડીની શુદ્ધિ માટે 7 દિવસ સુધી દિવસમાં એક વાર 15 મિલી લો."
+    },
+    "shelf_life": {
+      "en": "Prepare fresh for immediate use.",
+      "hi": "तत्काल उपयोग के लिए ताजा बनाएं।",
+      "gu": "તરત વાપરવા માટે તાજું બનાવો."
+    }
+  },
+  {
+    "id": "turmeric_ginger_rhinitis_milk",
+    "replaces_medicine_id": "haridra_khanda",
+    "recipe_name": {
+      "en": "Fresh Raw Turmeric & Ginger Milk",
+      "hi": "कच्ची हल्दी और अदरक का दूध",
+      "gu": "લીલી હળદર અને આદુનું દૂધ"
+    },
+    "description": {
+      "en": "Anti-allergic warming remedy for allergic rhinitis, frequent sneezing, and runny nose.",
+      "hi": "एलर्जी, छींकने और बहती नाक के लिए हल्दी और अदरक का दूध।",
+      "gu": "એલર્જી, છીંકો અને વહેતા નાક માટે હળદર-આદુનું દૂધ."
+    },
+    "required_plants": [
+      { "plantId": "turmeric", "quantity": 1, "unit": "half inch raw rhizome piece" },
+      { "plantId": "ginger", "quantity": 1, "unit": "half inch piece" }
+    ],
+    "other_ingredients": [
+      {
+        "item": "milk",
+        "quantity": "1 cup",
+        "multilingual": { "en": "Warm Milk", "hi": "गर्म दूध", "gu": "ગરમ દૂધ" }
+      }
+    ],
+    "preparation_steps": [
+      {
+        "en": "Grate 1/2 inch fresh raw turmeric and 1/2 inch ginger.",
+        "hi": "आधा इंच कच्ची हल्दी और आधा इंच अदरक कद्दूकस करें।",
+        "gu": "અડધો ઇંચ લીલી હળદર અને અડધો ઇંચ આદુ છીણો."
+      },
+      {
+        "en": "Simmer in 1 cup milk for 5 minutes.",
+        "hi": "1 कप दूध में 5 मिनट धीमी आंच पर उबालें।",
+        "gu": "1 કપ દૂધમાં 5 મિનિટ ઉકાળો."
+      },
+      {
+        "en": "Strain and sip warm before bed.",
+        "hi": "छानकर रात को सोते समय गुनगुना पिएं।",
+        "gu": "ગાળીને રાત્રે સૂતા પહેલા નવશેકું પીવો."
+      }
+    ],
+    "dosage": {
+      "en": "1 cup at bedtime during allergic flare-ups.",
+      "hi": "एलर्जी के दौरान सोते समय 1 कप लें।",
+      "gu": "એલર્જી વધે ત્યારે રાત્રે 1 કપ લેવો."
+    },
+    "shelf_life": {
+      "en": "Boil fresh daily.",
+      "hi": "रोज ताजा उबालें।",
+      "gu": "દરરોજ તાજું ઉકાળો."
+    }
+  },
+  {
+    "id": "mint_ajwain_digestive_drop",
+    "replaces_medicine_id": "hingwashtak_churna",
+    "recipe_name": {
+      "en": "Fresh Mint & Ajwain Leaf Digestive Ark",
+      "hi": "पुदीना और अजवायन पत्ता पाचक अर्क",
+      "gu": "ફુદીનો અને અજમાના પાનનો પાચક અર્ક"
+    },
+    "description": {
+      "en": "Instant stomach gas, bloating, nausea, and indigestion relief.",
+      "hi": "गैस, पेट फूलने, मिचली और अपच से तुरंत राहत।",
+      "gu": "ગેસ, આફરો, ઉબકા અને અપાચામાંથી તુરંત આરામ."
+    },
+    "required_plants": [
+      { "plantId": "mint", "quantity": 10, "unit": "leaves" },
+      { "plantId": "ajwain", "quantity": 4, "unit": "leaves" }
+    ],
+    "other_ingredients": [
+      {
+        "item": "black_salt",
+        "quantity": "1 pinch",
+        "multilingual": { "en": "Black Salt (Kala Namak)", "hi": "काला नमक", "gu": "સંચળ" }
+      },
+      {
+        "item": "water",
+        "quantity": "1/2 cup",
+        "multilingual": { "en": "Water", "hi": "पानी", "gu": "પાણી" }
+      }
+    ],
+    "preparation_steps": [
+      {
+        "en": "Crush fresh mint leaves and ajwain leaves together.",
+        "hi": "ताजा पुदीना और अजवायन की पत्तियों को कूटें।",
+        "gu": "તાજો ફુદીનો અને અજમાના પાંદડા ભેગા ખાંડો."
+      },
+      {
+        "en": "Extract juice using a strainer, mix with 1/2 cup warm water and 1 pinch black salt.",
+        "hi": "रस निकालकर आधा कप पानी और चुटकी भर काला नमक मिलाएं।",
+        "gu": "રસ કાઢી અડધો કપ પાણી અને ચપટી સંચળ ઉમેરો."
+      }
+    ],
+    "dosage": {
+      "en": "Take 30 ml immediately after heavy meals or when gas builds up.",
+      "hi": "भारी भोजन के बाद या गैस बनने पर 30 मिली पिएं।",
+      "gu": "ભારે ખોરાક પછી કે ગેસ થાય ત્યારે 30 મિલી પીવો."
+    },
+    "shelf_life": {
+      "en": "Extract fresh on demand.",
+      "hi": "आवश्यकतानुसार ताजा बनाएं।",
+      "gu": "જરૂર પડે ત્યારે તાજું જ બનાવવું."
+    }
+  },
+  {
+    "id": "punarnava_curry_anemia_soup",
+    "replaces_medicine_id": "punarnavadi_mandur",
+    "recipe_name": {
+      "en": "Punarnava & Curry Leaf Iron Boosting Soup",
+      "hi": "पुनर्नवा और मीठा नीम हीमोग्लोबिन वर्धक सूप",
+      "gu": "પુનર્નવા અને મીઠા લીમડાનો હીમોગ્લોબિન વર્ધક સૂપ"
+    },
+    "description": {
+      "en": "Herbal soup rich in natural iron for anemia, facial swelling, and fluid retention.",
+      "hi": "एनीमिया, चेहरे की सूजन और कमजोरी दूर करने के लिए प्राकृतिक आयरन सूप।",
+      "gu": "એનિમીયા, મોંના સોજા અને નબળાઈ દૂર કરતો કુદરતી આયર્ન સૂપ."
+    },
+    "required_plants": [
+      { "plantId": "punarnava", "quantity": 1, "unit": "small clean plant/root" },
+      { "plantId": "curry_leaves", "quantity": 15, "unit": "leaves" }
+    ],
+    "other_ingredients": [
+      {
+        "item": "lemon_juice",
+        "quantity": "1/2 tsp",
+        "multilingual": { "en": "Fresh Lemon Juice", "hi": "नींबू का रस", "gu": "લીંબુનો રસ" }
+      },
+      {
+        "item": "water",
+        "quantity": "2 cups",
+        "multilingual": { "en": "Water", "hi": "पानी", "gu": "પાણી" }
+      }
+    ],
+    "preparation_steps": [
+      {
+        "en": "Wash Punarnava herb thoroughly and chop along with curry leaves.",
+        "hi": "पुनर्नवा को अच्छी तरह धोकर मीठे नीम की पत्तियों के साथ काटें।",
+        "gu": "પુનર્નવા બરાબર ધોઈ મીઠા લીમડાના પાન સાથે સમારો."
+      },
+      {
+        "en": "Simmer in 2 cups of water for 10 minutes until 1 cup soup remains.",
+        "hi": "2 कप पानी में 10 मिनट उबालकर 1 कप सूप बनाएं।",
+        "gu": "2 કપ પાણીમાં 10 મિનિટ ઉકાળી 1 કપ સૂપ બનાવો."
+      },
+      {
+        "en": "Strain, add 1/2 tsp fresh lemon juice for iron absorption, and drink warm.",
+        "hi": "छानकर आधा चम्मच नींबू का रस मिलाकर गुनगुना पिएं।",
+        "gu": "ગાળીને અડધી ચમચી લીંબુનો રસ ઉમેરી નવશેકું પીવો."
+      }
+    ],
+    "dosage": {
+      "en": "Drink 1 cup daily at mid-morning for 3 weeks.",
+      "hi": "3 सप्ताह तक रोज दोपहर से पहले 1 कप पिएं।",
+      "gu": "3 અઠવાડિયા સુધી રોજ બપોર પહેલા 1 કપ પીવો."
+    },
+    "shelf_life": {
+      "en": "Cook fresh every morning.",
+      "hi": "रोज सुबह ताजा पकाएं।",
+      "gu": "દરરોજ સવારે તાજું જ બનાવવું."
+    }
+  },
+  {
+    "id": "nirgundi_parijat_joint_poultice",
+    "replaces_medicine_id": "yograj_guggulu",
+    "recipe_name": {
+      "en": "Nirgundi & Parijat Anti-Arthritic Fomentation",
+      "hi": "निर्गुंडी व पारिजात जोड़ों का सेक व लेप",
+      "gu": "નિરગુંડી અને પારીજાત સાંધાનો શેક અને લેપ"
+    },
+    "description": {
+      "en": "External joint pain, arthritis stiffness, and sciatica pain relieving steam/poultice.",
+      "hi": "जोड़ों के दर्द, गठिया की जकड़न और साइटिका में राहत देने वाला पत्तों का सेक।",
+      "gu": "સાંધાના દુખાવા, ગઠિયાની અકડન અને સાયટિકામાં આરામ આપતો પાંદડાનો શેક."
+    },
+    "required_plants": [
+      { "plantId": "nirgundi", "quantity": 10, "unit": "leaves" },
+      { "plantId": "parijat", "quantity": 5, "unit": "leaves" }
+    ],
+    "other_ingredients": [
+      {
+        "item": "mustard_oil",
+        "quantity": "2 tbsp",
+        "multilingual": { "en": "Warm Mustard Oil", "hi": "सरसों का तेल", "gu": "રાઈનું તેલ" }
+      }
+    ],
+    "preparation_steps": [
+      {
+        "en": "Coarsely crush fresh Nirgundi and Parijat leaves.",
+        "hi": "ताजे निर्गुंडी और पारिजात के पत्तों को दरदरा कूटें।",
+        "gu": "તાજા નિરગુંડી અને પારિજાતના પાંદડા અધકચરા ખાંડો."
+      },
+      {
+        "en": "Warm in 2 tbsp mustard oil in a pan until leaves turn soft.",
+        "hi": "2 बड़े चम्मच सरसों के तेल में पत्तियां नरम होने तक गर्म करें।",
+        "gu": "2 મોટી ચમચી રાઈના તેલમાં પાંદડા નરમ થાય ત્યાં સુધી ગરમ કરો."
+      },
+      {
+        "en": "Tie in a clean cotton cloth and gently compress painful joints, or apply warm paste.",
+        "hi": "सूती कपड़े में बांधकर दर्द वाले जोड़ों पर सेक करें या लेप लगाएं।",
+        "gu": "સૂતરાઉ કપડામાં બાંધી દુખાવાવાળા સાંધા પર શેક કરો અથવા લેપ લગાવો."
+      }
+    ],
+    "dosage": {
+      "en": "Foment painful joints for 15 minutes twice daily.",
+      "hi": "दिन में दो बार 15 मिनट तक जोड़ों की सिकाई करें।",
+      "gu": "દિવસમાં બે વાર 15 મિનિટ સાંધા પર શેક કરો."
+    },
+    "shelf_life": {
+      "en": "Poultice can be warmed up to 2 times.",
+      "hi": "एक पोटली को 2 बार गर्म किया जा सकता है।",
+      "gu": "પોટલીને 2 વાર ગરમ કરી શકાય."
+    }
+  },
+  {
+    "id": "aloe_gel_soothing_burn",
+    "replaces_medicine_id": "aloe_vera_gel",
+    "recipe_name": {
+      "en": "Pure Fresh Aloe Gel Skin Ointment",
+      "hi": "शुद्ध ताज़ा एलोवेरा जेल लेप",
+      "gu": "શુદ્ધ તાજો કુંવારપાઠાનો જેલ"
+    },
+    "description": {
+      "en": "Direct fresh leaf pulp application for minor burns, sunburns, rashes, and wound healing.",
+      "hi": "हल्के जलने, धूप के चकत्तों और घाव भरने के लिए ताज़ा गुदा।",
+      "gu": "હળવા દાઝ્યા પર, તડકાની બળતરા અને વાગેલું રુઝવવા માટે તાજો ગર્ભ."
+    },
+    "required_plants": [
+      { "plantId": "aloe_vera", "quantity": 1, "unit": "fresh leaf cut" }
+    ],
+    "other_ingredients": [],
+    "preparation_steps": [
+      {
+        "en": "Cut 1 fresh plump outer Aloe Vera leaf from base.",
+        "hi": "पौधे से 1 ताजा गुदेदार एलोवेरा पत्ता काटें।",
+        "gu": "છોડ પરથી 1 તાજું ઘાટું પાન કાપો."
+      },
+      {
+        "en": "Wash yellow sap away thoroughly under clean running water.",
+        "hi": "पीले चिपचिपे रस को साफ पानी से पूरी तरह धो लें।",
+        "gu": "પીળો ચોંટતો પ્રવાહી સ્વચ્છ પાણીથી બરાબર ધોઈ નાખો."
+      },
+      {
+        "en": "Slice spiny edges and scoop out clear inner jelly with a clean spoon.",
+        "hi": "कांटेदार किनारे काटकर साफ चम्मच से पारदर्शी जेल निकालें।",
+        "gu": "કાંટા વાળી કિનારી કાપી ચમચી વડે અંદરનો ચોખ્ખો જેલ કાઢો."
+      }
+    ],
+    "dosage": {
+      "en": "Apply clear gel directly onto affected skin 3 times daily.",
+      "hi": "दिन में 3 बार प्रभावित त्वचा पर सीधे जेल लगाएं।",
+      "gu": "દિવસમાં 3 વાર અસરગ્રસ્ત જગ્યાએ સીધો જેલ લગાવો."
+    },
+    "shelf_life": {
+      "en": "Use immediately or store covered in cool place for max 24 hrs.",
+      "hi": "तुरंत प्रयोग करें या अधिकतम 24 घंटे ठंडी जगह ढक कर रखें।",
+      "gu": "તરત વાપરો અથવા મહત્તમ 24 કલાક ઠંડી જગ્યાએ રાખો."
+    }
+  }
+]

@@ -1,0 +1,183 @@
+[
+  {
+    "id": "pmjay",
+    "name": {
+      "en": "Ayushman Bharat – PM-JAY",
+      "hi": "आयुष्मान भारत – प्रधानमंत्री जन आरोग्य योजना",
+      "gu": "આયુષ્યમાન ભારત – પ્રધાનમંત્રી જન આરોગ્ય યોજના"
+    },
+    "description": {
+      "en": "Free hospitalization and secondary/tertiary medical treatment up to ₹5 lakh per family per year for low-income and vulnerable households.",
+      "hi": "कम आय और कमजोर परिवारों के लिए प्रति वर्ष प्रति परिवार ₹5 लाख तक का मुफ्त इलाज और अस्पताल में भर्ती।",
+      "gu": "ગરીબ અને નબળા પરિવારો માટે પ્રતિ વર્ષ પ્રતિ કુટુંબ ₹5 લાખ સુધીની મફત હોસ્પિટલ સારવાર."
+    },
+    "benefits": [
+      {
+        "en": "Covers up to ₹5,00,000 per family annually for cash-free in-patient care.",
+        "hi": "प्रति परिवार प्रति वर्ष ₹5 लाख तक कैशलेस अस्पताल में भर्ती का लाभ।",
+        "gu": "વાર્ષિક ₹5,00,000 સુધીની મફત અને કૅશલેસ સારવારની સુવિધા."
+      },
+      {
+        "en": "Over 1,950 medical & surgical procedures covered with no cap on family size.",
+        "hi": "1,950 से अधिक मेडिकल और सर्जिकल प्रक्रियाएं शामिल, परिवार के आकार की कोई सीमा नहीं।",
+        "gu": "1,950 થી વધુ તબીબી અને સર્જિકલ ઉપચારો સમર્થિત, કુટુંબની સંખ્યા પર કોઈ મર્યાદા નહીં."
+      },
+      {
+        "en": "Pre-existing diseases covered from day one of enrollment across India.",
+        "hi": "नामांकन के पहले दिन से ही पुरानी बीमारियों का इलाज देश भर में मुफ्त।",
+        "gu": "અગાઉથી હયાત રોગોની સારવાર પ્રથમ દિવસથી જ સમગ્ર ભારતમાં માન્ય."
+      }
+    ],
+    "eligibility": {
+      "age_min": 0,
+      "age_max": 120,
+      "income_criteria": [
+        { "source": "ration_card", "values": ["BPL", "Antyodaya"] },
+        { "source": "occupation", "values": ["landless_labourer", "small_farmer", "domestic_worker", "construction_worker", "street_vendor"] },
+        { "source": "vulnerable_group", "values": ["transgender", "disabled", "elderly_no_income", "widow", "orphan"] }
+      ],
+      "disease_criteria": ["cancer", "kidney_failure", "heart_disease", "dengue", "severe_malaria", "typhoid", "cholera"],
+      "family_size_max": null
+    },
+    "state": null,
+    "empanelment_type": "PMJAY"
+  },
+  {
+    "id": "ma_vatsalya",
+    "name": {
+      "en": "Mukhyamantri Amrutam (MA & MA Vatsalya) Gujarat",
+      "hi": "मुख्यमंत्री अमृतम (एमए और एमए वात्सल्य) गुजरात",
+      "gu": "મુખ્યમંત્રી અમૃતમ (MA & MA વાત્સલ્ય) ગુજરાત યોજના"
+    },
+    "description": {
+      "en": "Gujarat State health coverage scheme providing up to ₹5 lakh cashless medical care to BPL, lower-middle-class, and ASHA/Anganwadi workers.",
+      "hi": "गुजरात राज्य स्वास्थ्य बीमा योजना जो BPL और निम्न-मध्यम वर्गीय परिवारों को ₹5 लाख तक की मुफ्त इलाज सुविधा देती है।",
+      "gu": "ગુજરાત સરકારની યોજના જે BPL, મધ્યમ વર્ગ અને આશા/આંગણવાડી બહેનોને ₹5 લાખ સુધીની મફત સારવાર આપે છે."
+    },
+    "benefits": [
+      {
+        "en": "Free treatment up to ₹5,00,000 for catastrophic illnesses (cardiovascular, neuro, renal, oncology).",
+        "hi": "गंभीर बीमारियों (हृदय, कैंसर, किडनी) के लिए ₹5,00,000 तक का मुफ्त इलाज।",
+        "gu": "ગંભીર બીમારીઓ (હૃદયરોગ, કેન્સર, કિડની) માટે ₹5,00,000 સુધીની નિઃશુલ્ક સારવાર."
+      },
+      {
+        "en": "Includes transport allowance of ₹300 per hospital visit for rural beneficiaries.",
+        "hi": "ग्रामीण लाभार्थियों के लिए प्रति अस्पताल यात्रा ₹300 का परिवहन भत्ता भी शामिल।",
+        "gu": "ગ્રામીણ વિસ્તારના દર્દીઓ માટે હોસ્પિટલ ભાડા પેટે ₹300 નો વાહન ભથ્થું."
+      }
+    ],
+    "eligibility": {
+      "age_min": 0,
+      "age_max": 120,
+      "income_criteria": [
+        { "source": "ration_card", "values": ["BPL", "Antyodaya"] },
+        { "source": "occupation", "values": ["landless_labourer", "small_farmer", "domestic_worker", "asha_worker", "anganwadi_worker"] },
+        { "source": "vulnerable_group", "values": ["widow", "disabled", "elderly_no_income"] }
+      ],
+      "disease_criteria": ["cancer", "kidney_failure", "heart_disease"],
+      "family_size_max": 5
+    },
+    "state": "Gujarat",
+    "empanelment_type": "MA_MA_Vatsalya"
+  },
+  {
+    "id": "ntep_tb",
+    "name": {
+      "en": "Nikshay Poshan & National TB Elimination Program (NTEP)",
+      "hi": "निक्षय पोषण एवं राष्ट्रीय क्षय रोग उन्मूलन कार्यक्रम (NTEP)",
+      "gu": "નિક્ષય પોષણ અને રાષ્ટ્રીય ક્ષય રોગ નાબૂદી કાર્યક્રમ (NTEP)"
+    },
+    "description": {
+      "en": "Free anti-TB diagnostic test, medicines, and ₹500/month financial nutritional support for all diagnosed Tuberculosis patients in India.",
+      "hi": "सभी टीबी मरीजों के लिए मुफ्त जांच, दवाइयां और पोषण के लिए ₹500 प्रतिमाह वित्तीय सहायता।",
+      "gu": "તમામ ટીબી દર્દીઓ માટે મફત તબીબી તપાસ, દવાઓ અને પોષણ માટે દર મહિને ₹500 ની સીધી આર્થિક સહાય."
+    },
+    "benefits": [
+      {
+        "en": "100% Free daily DOTS regimen medication and Molecular Sputum (CBNAAT) testing.",
+        "hi": "100% मुफ्त दैनिक डीओटीएस दवाएं और आधुनिक बलगम जांच।",
+        "gu": "100% મફત દૈનિક DOTS સારવાર અને મોલેક્યુલર ટીબી તપાસ."
+      },
+      {
+        "en": "Direct Benefit Transfer (DBT) of ₹500 every month directly to patient's bank account for nutrition.",
+        "hi": "पोषण के लिए मरीज के बैंक खाते में प्रतिमाह ₹500 का सीधा ट्रांसफर।",
+        "gu": "પોષણ સહાય તરીકે દર્દીના બેંક ખાતામાં દર મહિને ₹500 ની સીધી જમા રકમ."
+      }
+    ],
+    "eligibility": {
+      "age_min": 0,
+      "age_max": 120,
+      "income_criteria": [
+        { "source": "ration_card", "values": ["BPL", "Antyodaya", "APL", "None"] },
+        { "source": "occupation", "values": ["landless_labourer", "small_farmer", "domestic_worker", "construction_worker", "street_vendor", "salaried", "self_employed"] }
+      ],
+      "disease_criteria": ["tb", "tuberculosis"],
+      "family_size_max": null
+    },
+    "state": null,
+    "empanelment_type": "NTEP"
+  },
+  {
+    "id": "ran_scheme",
+    "name": {
+      "en": "Rashtriya Arogya Nidhi (RAN) Financial Assistance",
+      "hi": "राष्ट्रीय आरोग्य निधि (RAN) वित्तीय सहायता योजना",
+      "gu": "રાષ્ટ્રીય આરોગ્ય નિધિ (RAN) આર્થિક સહાય યોજના"
+    },
+    "description": {
+      "en": "One-time financial grant up to ₹15 lakh for patients living below poverty line suffering from major life-threatening diseases at apex super-specialty hospitals.",
+      "hi": "अति गंभीर जानलेवा बीमारियों से पीड़ित बीपीएल परिवारों के लिए शीर्ष अस्पतालों में ₹15 लाख तक की एकमुश्त वित्तीय सहायता।",
+      "gu": "ગંભીર બીમારીથી પીડાતા BPL દર્દીઓ માટે સરકારી સુપર સ્પેશિયાલિટી હોસ્પિટલમાં ₹15 લાખ સુધીની નાણાકીય સહાય."
+    },
+    "benefits": [
+      {
+        "en": "Financial grant up to ₹15,00,000 directly sanctioned to super-specialty government hospitals.",
+        "hi": "सुपर-स्पेशियलिटी सरकारी अस्पतालों को सीधे ₹15,00,000 तक का वित्तीय अनुदान प्रदान किया जाता है।",
+        "gu": "સુપર સ્પેશિયાલિટી સરકારી હોસ્પિટલને સીધી ₹15,00,000 સુધીની અનુદાન રકમ સ્વીકૃત."
+      }
+    ],
+    "eligibility": {
+      "age_min": 0,
+      "age_max": 120,
+      "income_criteria": [
+        { "source": "ration_card", "values": ["BPL", "Antyodaya"] }
+      ],
+      "disease_criteria": ["cancer", "kidney_failure", "heart_disease"],
+      "family_size_max": null
+    },
+    "state": null,
+    "empanelment_type": "RAN"
+  },
+  {
+    "id": "pmndp_dialysis",
+    "name": {
+      "en": "Pradhan Mantri National Dialysis Programme (PMNDP)",
+      "hi": "प्रधानमंत्री राष्ट्रीय डायलिसिस कार्यक्रम (PMNDP)",
+      "gu": "પ્રધાનમંત્રી રાષ્ટ્રીય ડાયાલિસિસ કાર્યક્રમ"
+    },
+    "description": {
+      "en": "Free hemodialysis & peritoneal dialysis services at all district hospitals and CHCs for BPL patients.",
+      "hi": "सभी जिला अस्पतालों और सामुदायिक स्वास्थ्य केंद्रों में बीपीएल मरीजों के लिए मुफ्त डायलिसिस सेवाएं।",
+      "gu": "તમામ જિલ્લા હોસ્પિટલો અને CHC માં BPL દર્દીઓ માટે તદ્દન મફત ડાયાલિસિસ સારવાર."
+    },
+    "benefits": [
+      {
+        "en": "100% Free dialysis sessions at empanelled government district hospitals.",
+        "hi": "एमपैनल वाले सरकारी जिला अस्पतालों में 100% मुफ्त डायलिसिस सत्र।",
+        "gu": "સરકારી હોસ્પિટલોમાં 100% મફત ડાયાલિસિસ સત્રો."
+      }
+    ],
+    "eligibility": {
+      "age_min": 0,
+      "age_max": 120,
+      "income_criteria": [
+        { "source": "ration_card", "values": ["BPL", "Antyodaya"] },
+        { "source": "vulnerable_group", "values": ["disabled", "elderly_no_income"] }
+      ],
+      "disease_criteria": ["kidney_failure"],
+      "family_size_max": null
+    },
+    "state": null,
+    "empanelment_type": "PMNDP"
+  }
+]

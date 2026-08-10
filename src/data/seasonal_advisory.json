@@ -1,0 +1,455 @@
+[
+  {
+    "month": 1,
+    "month_name": { "en": "January", "hi": "जनवरी", "gu": "જાન્યુઆરી" },
+    "season": "Winter",
+    "advisories": [
+      {
+        "disease_id": "pneumonia",
+        "disease_name": { "en": "Pneumonia & Chest Infections", "hi": "निमोनिया व सीने का संक्रमण", "gu": "ન્યુમોનિયા અને છાતીનું ઈન્ફેક્શન" },
+        "risk_level": "high",
+        "summary": {
+          "en": "Cold winter temperatures increase severe lower respiratory infections in infants and elderly.",
+          "hi": "कड़ाके की ठंड में शिशुओं और बुजुर्गों में फेफड़ों का संक्रमण बढ़ जाता है।",
+          "gu": "શિયાળાની તીવ્ર ઠંડીમાં બાળકો અને વૃદ્ધોમાં ફેફસાંનું ગંભીર ઈન્ફેક્શન વધી જાય છે."
+        },
+        "precautions": [
+          { "en": "Keep newborns and elderly wrapped in warm layers", "hi": "नवजात शिशुओं और बुजुर्गों को पर्याप्त गर्म कपड़ों में ढककर रखें", "gu": "નવજાત શિશુઓ અને વૃદ્ધોને ગરમ વસ્ત્રોમાં ઢાંકીને રાખો" },
+          { "en": "Ensure early pneumococcal and flu vaccinations", "hi": "समय पर निमोनिया और फ्लू का टीका लगवाएं", "gu": "સમયસર ન્યુમોનિયા અને ફ્લૂની રસી અપાવો" },
+          { "en": "Seek immediate medical aid if fast breathing or chest in-drawing appears", "hi": "सांस तेज चलने या छाती धंसने पर तुरंत डॉक्टर को दिखाएं", "gu": "ઝડપી શ્વાસોશ્વાસ કે છાતી ખાડા પડે તો તાત્કાલિક ડૉક્ટરની સલાહ લો" }
+        ]
+      },
+      {
+        "disease_id": "common_cold",
+        "disease_name": { "en": "Common Cold & Flu", "hi": "सामान्य जुकाम और फ्लू", "gu": "સામાન્ય શરદી અને ફ્લૂ" },
+        "risk_level": "moderate",
+        "summary": {
+          "en": "Upper respiratory viral infections spread easily during cold dry winter weather.",
+          "hi": "शुष्क ठंड के मौसम में सांस की नली का वायरस तेजी से फैलता है।",
+          "gu": "સૂકી ઠંડીની ઋતુમાં શ્વસનતંત્રનું વાયરસ ઝડપથી ફેલાય છે."
+        },
+        "precautions": [
+          { "en": "Wash hands frequently with soap and clean water", "hi": "साबुन और पानी से बार-बार हाथ धोएं", "gu": "સાબુ અને પાણીથી વારંવાર હાથ ધુઓ" },
+          { "en": "Drink warm fluids and steam inhalation", "hi": "गुनगुना पानी पीएं और भाप लें", "gu": "હૂંફાળું પાણી પીઓ અને વરાળ (સ્ટીમ) લો" },
+          { "en": "Cover mouth and nose when coughing or sneezing", "hi": "खांसते या छींकते समय मुंह और नाक ढकें", "gu": "ઉધરસ કે છીંક આવતી વખતે મોં અને નાક ઢાંકો" }
+        ]
+      }
+    ]
+  },
+  {
+    "month": 2,
+    "month_name": { "en": "February", "hi": "फरवरी", "gu": "ફેબ્રુઆરી" },
+    "season": "Late Winter",
+    "advisories": [
+      {
+        "disease_id": "chickenpox",
+        "disease_name": { "en": "Chickenpox & Viral Exanthem", "hi": "चिकनपॉक्स (छोटी माता)", "gu": "અછબડા (ચિકનપોક્સ)" },
+        "risk_level": "high",
+        "summary": {
+          "en": "Seasonal transition into spring causes spikes in Varicella chickenpox and contagious skin rashes.",
+          "hi": "मौसम बदलने के साथ चिकनपॉक्स और त्वचा के संक्रामक चकत्ते बढ़ जाते हैं।",
+          "gu": "ઋતુ પરિવર્તન સાથે અછબડા અને ચામડી પર લાલ ચકામાંનો ઉપદ્રવ વધે છે."
+        },
+        "precautions": [
+          { "en": "Isolate infected individuals until all blisters dry up", "hi": "पपड़ी सूखने तक मरीज को अलग कमरे में रखें", "gu": "પોપડા સુકાઈ જાય ત્યાં સુધી દર્દીને અલગ રૂમમાં રાખો" },
+          { "en": "Do not scratch blisters; apply neem/calamine lotion", "hi": "फोड़ों को न खरोंचें; नीम की पत्तियां या कैलामाइन लोशन लगाएं", "gu": "ફોલ્લાને ખંજવાળશો નહીં; કડવા લીમડાના પાન અથવા કેલેમાઇન લોશન વાપરો" },
+          { "en": "Maintain strict personal hygiene and wash clothes separately", "hi": "मरीज के कपड़े और बर्तन अलग धोएं", "gu": "દર્દીના કપડાં અને વાસણો અલગથી ધુઓ" }
+        ]
+      },
+      {
+        "disease_id": "viral_fever",
+        "disease_name": { "en": "Seasonal Viral Fever", "hi": "मौसमी वायरल बुखार", "gu": "વાયરલ તાવ" },
+        "risk_level": "moderate",
+        "summary": {
+          "en": "Day-night temperature fluctuations trigger widespread viral fever and body aches.",
+          "hi": "दिन-रात के तापमान में बदलाव से वायरल बुखार और शरीर दर्द के मामले बढ़ते हैं।",
+          "gu": "દિવસ અને રાત્રિના તાપમાનમાં ફેરફારથી વાયરલ તાવ અને શારીરિક દુખાવો વધે છે."
+        },
+        "precautions": [
+          { "en": "Take adequate rest and drink plenty of fluids", "hi": "पर्याप्त आराम करें और तरल पदार्थों का सेवन बढ़ाएं", "gu": "પૂરતો આરામ કરો અને પ્રવાહી પદાર્થોનું પ્રમાણ વધારો" },
+          { "en": "Avoid self-medication with antibiotics", "hi": "बिना डॉक्टर की सलाह के एंटीबायोटिक न लें", "gu": "ડૉક્ટરની સલાહ વગર એન્ટિબાયોટિક દવાઓ લેશો નહીં" }
+        ]
+      }
+    ]
+  },
+  {
+    "month": 3,
+    "month_name": { "en": "March", "hi": "मार्च", "gu": "માર્ચ" },
+    "season": "Spring Transition",
+    "advisories": [
+      {
+        "disease_id": "conjunctivitis",
+        "disease_name": { "en": "Acute Conjunctivitis (Pink Eye)", "hi": "कंजंक्टिवाइटिस (आंख आना)", "gu": "આંખ આવવી (કંજંકટિવાઇટિસ)" },
+        "risk_level": "high",
+        "summary": {
+          "en": "Pollen dust and rising spring heat lead to contagious conjunctivitis and eye allergies.",
+          "hi": "धूल-मिट्टी और बढ़ती गर्मी से आंख आने (कंजंक्टिवाइटिस) के मामले बढ़ते हैं।",
+          "gu": "ધૂળ-માટી અને વધતી ગરમીથી આંખ આવવા (કંજંકટિવાઇટિસ)ના કેસો વધે છે."
+        },
+        "precautions": [
+          { "en": "Do not touch or rub eyes with unwashed hands", "hi": "बिना हाथ धोए आंखों को न छुएं या मलें", "gu": "હાથ ધોયા વગર આંખોને સ્પર્શ કરશો નહીં કે ચોળશો નહીં" },
+          { "en": "Use separate towels, napkins, and pillows for infected person", "hi": "संक्रमित व्यक्ति के तौलिये और रुमाल का अलग इस्तेमाल करें", "gu": "સંક્રમિત વ્યક્તિના રૂમાલ અને ટુવાલનો ઉપયોગ અલગથી કરો" },
+          { "en": "Clean eyes with cool sterile water", "hi": "आंखों को साफ ठंडे पानी से धोएं", "gu": "આંખોને સાફ ઠંડા પાણીથી ધુઓ" }
+        ]
+      },
+      {
+        "disease_id": "chickenpox",
+        "disease_name": { "en": "Chickenpox & Measles Surge", "hi": "चिकनपॉक्स और खसरा", "gu": "અછબડા અને ઓરી" },
+        "risk_level": "moderate",
+        "summary": {
+          "en": "Spike in viral exanthems among unvaccinated children during early spring.",
+          "hi": "वसंत ऋतु में बच्चों में चिकनपॉक्स और खसरा फैलने का खतरा रहता है।",
+          "gu": "વસંત ઋતુમાં બાળકોમાં અછબડા અને ઓરી ફેલાવાનું જોખમ રહે છે."
+        },
+        "precautions": [
+          { "en": "Ensure complete childhood immunization (MR vaccine)", "hi": "बच्चों को खसरे और रूबेला (MR) का टीका लगवाएं", "gu": "બાળકોને ઓરી અને રૂબેલા (MR) રસી સમયસર અપાવો" },
+          { "en": "Report cluster cases to local health worker / ANM", "hi": "एक साथ कई मामले दिखने पर एएनएम या आशा वर्कर को सूचित करें", "gu": "એકસાથે વધુ કેસો દેખાય તો આશા કે ANMને જાણ કરો" }
+        ]
+      }
+    ]
+  },
+  {
+    "month": 4,
+    "month_name": { "en": "April", "hi": "अप्रैल", "gu": "એપ્રિલ" },
+    "season": "Summer Onset",
+    "advisories": [
+      {
+        "disease_id": "heat_exhaustion",
+        "disease_name": { "en": "Heat Exhaustion & Dehydration", "hi": "हीट स्ट्रोक व निर्जलीकरण (लू)", "gu": "લૂ લાગવી અને ડિહાઇડ્રેશન" },
+        "risk_level": "high",
+        "summary": {
+          "en": "Rising summer temperatures above 40°C trigger severe heat exhaustion, fainting, and dehydration.",
+          "hi": "तापमान 40°C पार होने पर लू लगने, चक्कर आने और डिहाइड्रेशन की समस्या बढ़ती है।",
+          "gu": "તાપમાન 40°Cથી ઉપર જતાં લૂ લાગવી, ચક્કર આવવા અને ડિહાઇડ્રેશનનું જોખમ વધી જાય છે."
+        },
+        "precautions": [
+          { "en": "Drink ORS solution, buttermilk, lemon water, and coconut water frequently", "hi": "ओआरएस, छाछ, नींबू पानी और नारियल पानी पर्याप्त मात्रा में लें", "gu": "ORSનું દ્રાવણ, છાશ, લીંબુ પાણી અને નાળિયેર પાણી પુષ્કળ પીઓ" },
+          { "en": "Avoid direct sunlight between 12 PM and 4 PM", "hi": "दोपहर 12 बजे से 4 बजे के बीच सीधी धूप में बाहर निकलने से बचें", "gu": "બપોરે ૧૨ થી ૪ વાગ્યા વચ્ચે સીધા તડકામાં જવાનું ટાળો" },
+          { "en": "Wear loose, light-colored cotton clothing and cover head", "hi": "सूती और हल्के रंग के कपड़े पहनें तथा सिर ढककर रखें", "gu": "સુતરાઉ અને આછા રંગના કપડાં પહેરો તેમજ માથું ઢાંકીને રાખો" }
+        ]
+      },
+      {
+        "disease_id": "gastroenteritis",
+        "disease_name": { "en": "Acute Gastroenteritis & Food Poisoning", "hi": "फूड पॉइज़निंग व उल्टी-दस्त", "gu": "ઝાડા-ઉલટી અને ફૂડ પોઇઝનિંગ" },
+        "risk_level": "high",
+        "summary": {
+          "en": "Heat causes rapid spoilage of cooked food and bacterial growth in stored water.",
+          "hi": "गर्मी में खाना जल्दी खराब होता है और दूषित पानी से उल्टी-दस्त फैलते हैं।",
+          "gu": "ગરમીમાં ખોરાક ઝડપથી બગડે છે અને દૂષિત પાણીથી ઝાડા-ઉલટી ફેલાય છે."
+        },
+        "precautions": [
+          { "en": "Eat freshly cooked meals; avoid uncovered road-side food", "hi": "ताजा पका भोजन खाएं; सड़क किनारे ढके न हुए खाने से बचें", "gu": "તાજો રાંધેલો ખોરાક ખાઓ; ખુલ્લો ખોરાક ખાવાનું ટાળો" },
+          { "en": "Boil drinking water or treat with chlorine drops", "hi": "पीने का पानी उबालकर या क्लोरीन मिलाकर इस्तेमाल करें", "gu": "પીવાનું પાણી ઉકાળીને અથવા ક્લોરિન ટીપાં ઉમેરીને વાપરો" }
+        ]
+      }
+    ]
+  },
+  {
+    "month": 5,
+    "month_name": { "en": "May", "hi": "मई", "gu": "મે" },
+    "season": "Peak Summer",
+    "advisories": [
+      {
+        "disease_id": "heat_exhaustion",
+        "disease_name": { "en": "Severe Heat Stroke & Sunstroke", "hi": "भीषण लू व सनस्ट्रोक", "gu": "અતિશય ગરમી, લૂ અને સનસ્ટ્રોક" },
+        "risk_level": "high",
+        "summary": {
+          "en": "Extreme heatwave conditions pose life-threatening heat stroke risks for outdoor laborers and children.",
+          "hi": "भीषण गर्मी में खेत-मजदूरों और बच्चों को जानलेवा सनस्ट्रोक का खतरा रहता है।",
+          "gu": "અતિશય ગરમીમાં મજૂરો અને બાળકો માટે પ્રાણઘાતક સનસ્ટ્રોકનું જોખમ રહે છે."
+        },
+        "precautions": [
+          { "en": "Carry water bottles and ORS at all times when outdoors", "hi": "घर से बाहर निकलते समय पानी और ओआरएस घोल साथ रखें", "gu": "બહાર નીકળતી વખતે હંમેશા પીવાનું પાણી અને ORS સાથે રાખો" },
+          { "en": "If someone faints, move them to shade, loosen clothing, and apply cool wet cloth", "hi": "बेहोशी की स्थिति में मरीज को छाया में ले जाएं और ठंडी पट्टी करें", "gu": "બેભાન થવાની સ્થિતિમાં દર્દીને છાંયડામાં લઈ જઈ ઠંડા પાણીના પટ્ટા મૂકો" },
+          { "en": "Monitor urine color; dark yellow indicates severe dehydration", "hi": "पेशाब के रंग पर ध्यान दें; गहरा पीला रंग डिहाइड्रेशन दर्शाता है", "gu": "પેશાબના રંગ પર ધ્યાન આપો; ઘાટો પીળો રંગ ડિહાઇડ્રેશન દર્શાવે છે" }
+        ]
+      },
+      {
+        "disease_id": "jaundice",
+        "disease_name": { "en": "Viral Hepatitis & Jaundice", "hi": "पीलिया और हेपेटाइटिस-ए", "gu": "કમળો અને વાયરલ હેપેટાઇટિસ" },
+        "risk_level": "high",
+        "summary": {
+          "en": "Water scarcity leads to consumption of unsafe contaminated water sources causing Jaundice.",
+          "hi": "जल संकट के कारण दूषित पानी पीने से पीलिया और हेपेटाइटिस तेजी से फैलता है।",
+          "gu": "પાણીની અછતને લીધે દૂષિત પાણી વાપરવાથી કમળાનો ઉપદ્રવ થાય છે."
+        },
+        "precautions": [
+          { "en": "Always drink boiled or RO filtered water", "hi": "हमेशा उबला हुआ या आरओ का साफ पानी पीएं", "gu": "હંમેશા ઉકાળેલું અથવા ફિલ્ટર કરેલું ચોખ્ખું પાણી પીઓ" },
+          { "en": "Wash hands thoroughly before meals and after toilet use", "hi": "खाना खाने से पहले और शौचालय के बाद साबुन से हाथ धोएं", "gu": "જમતા પહેલા અને શૌચાલય બાદ સાબુથી હાથ બરાબર સાફ કરો" }
+        ]
+      }
+    ]
+  },
+  {
+    "month": 6,
+    "month_name": { "en": "June", "hi": "जून", "gu": "જૂન" },
+    "season": "Monsoon Onset",
+    "advisories": [
+      {
+        "disease_id": "dengue",
+        "disease_name": { "en": "Dengue Fever", "hi": "डेंगू बुखार", "gu": "ડેન્ગ્યુ તાવ" },
+        "risk_level": "high",
+        "summary": {
+          "en": "Dengue cases typically rise with monsoon onset. Stagnant water increases Aedes mosquito breeding.",
+          "hi": "मानसून के साथ डेंगू के मामले बढ़ते हैं। रुका हुआ पानी मच्छरों का प्रजनन बढ़ाता है।",
+          "gu": "ચોમાસાની શરૂઆત સાથે ડેન્ગ્યુના કેસો વધે છે. ભરાયેલું પાણી મચ્છરોનું પ્રજનન વધારે છે."
+        },
+        "precautions": [
+          { "en": "Eliminate standing water in coolers, tires, and pots around homes", "hi": "घरों के आसपास जमा पानी, कूलर और पुराने टायरों को खाली करें", "gu": "ઘરની આસપાસ ભરાયેલું પાણી, કૂલર અને તૂટેલા વાસણો સાફ કરો" },
+          { "en": "Use mosquito nets and neem or chemical repellents", "hi": "मच्छरदानी और मच्छर भगाने वाली क्रीम का उपयोग करें", "gu": "મચ્છરદાની અને મચ્છર ભગાડવાની દવાનો ઉપયોગ કરો" },
+          { "en": "Wear full-sleeved clothing during daytime", "hi": "दिन के समय पूरी बांह के कपड़े पहनें", "gu": "દિવસના સમયે પૂરી બાંયના કપડાં પહેરો" }
+        ]
+      },
+      {
+        "disease_id": "malaria",
+        "disease_name": { "en": "Malaria", "hi": "मलेरिया", "gu": "મલેરિયા" },
+        "risk_level": "high",
+        "summary": {
+          "en": "First monsoon rains lead to puddles where Anopheles mosquitoes multiply rapidly.",
+          "hi": "शुरुआती बारिश में जगह-जगह पानी जमा होने से मलेरिया के मच्छर बढ़ते हैं।",
+          "gu": "ચોમાસાના પ્રારંભિક વરસાદથી ખબડાચિયાં ભરાતાં મલેરિયાના મચ્છર વ્યાપક બને છે."
+        },
+        "precautions": [
+          { "en": "Get rapid blood test (RDT) done for any fever with chills", "hi": "कंपकंपी के साथ बुखार आने पर तुरंत मलेरिया जांच (RDT) कराएं", "gu": "ઠંડી સાથે તાવ આવે તો તરત જ મલેરિયાની લોહી તપાસ (RDT) કરાવો" },
+          { "en": "Spray mosquito repellents and put kerosene/oil on standing puddles", "hi": "जमे हुए पानी में केरोसिन तेल या एंटी-लार्वा दवा डालें", "gu": "ભરાયેલા પાણી પર કેરોસીન અથવા પોરાનાશક દવાનો છંટકાવ કરો" }
+        ]
+      },
+      {
+        "disease_id": "gastroenteritis",
+        "disease_name": { "en": "Waterborne Gastroenteritis", "hi": "दूषित पानी से उल्टी-दस्त", "gu": "ચોમાસાના દૂષિત પાણીથી ઝાડા-ઉલટી" },
+        "risk_level": "high",
+        "summary": {
+          "en": "Rain runoff contaminates open wells and village pipelines causing diarrheal clusters.",
+          "hi": "बारिश का पानी कुओं और पाइपलाइनों को दूषित कर दस्त का कारण बनता है।",
+          "gu": "વરસાદનું પાણી કૂવા અને પાઇપલાઇનમાં ભળવાથી ઝાડા-ઉલટીના કેસો વધે છે."
+        },
+        "precautions": [
+          { "en": "Boil drinking water for at least 10 minutes", "hi": "पीने का पानी कम से कम 10 मिनट तक उबालें", "gu": "પીવાનું પાણી ઓછામાં ઓછું ૧૦ મિનિટ ઉકાળીને જ વાપરો" },
+          { "en": "Start ORS and zinc tablets immediately at home upon diarrhea onset", "hi": "दस्त शुरू होते ही घर पर ओआरएस और जिंक की गोली लें", "gu": "ઝાડા શરૂ થતાં જ ઘરેથી ORS અને ઝીંકની ગોળી શરૂ કરો" }
+        ]
+      }
+    ]
+  },
+  {
+    "month": 7,
+    "month_name": { "en": "July", "hi": "जुलाई", "gu": "જુલાઈ" },
+    "season": "Peak Monsoon",
+    "advisories": [
+      {
+        "disease_id": "dengue",
+        "disease_name": { "en": "Dengue Hemorrhagic Threat", "hi": "डेंगू बुखार का प्रकोप", "gu": "ડેન્ગ્યુ અને પ્લેટલેટ ઘટવાનું જોખમ" },
+        "risk_level": "high",
+        "summary": {
+          "en": "Peak monsoon leads to widespread Aedes breeding. Watch closely for warning signs like bleeding or low platelets.",
+          "hi": "चरम मानसून में डेंगू सबसे अधिक फैलता है। प्लेटलेट्स घटने और रक्तस्राव के लक्षणों पर नजर रखें।",
+          "gu": "ચોમાસાના મધ્યમાં ડેન્ગ્યુ વ્યાપક બને છે. પ્લેટલેટ ઘટવા અને રક્તસ્રાવના લક્ષણો પર નજર રાખો."
+        },
+        "precautions": [
+          { "en": "Observe weekly 'Dry Day': empty all water storage vessels on Sundays", "hi": "हर रविवार 'ड्राई डे' मनाएं; कुलर और बर्तन पूरी तरह सुखाएं", "gu": "દર રવિવારે 'ડ્રાય ડે' ઉજવો; ટાંકી અને પાત્રો પૂરેપૂરા સૂકવો" },
+          { "en": "Do not give Aspirin or Brufen during fever; use Paracetamol only", "hi": "बुखार में एस्पिरिन न दें; केवल पैरासिटामोल का उपयोग करें", "gu": "તાવમાં એસ્પિરિન કે બ્રુફેન ન આપો; માત્ર પેરાસિટામોલ જ વાપરો" }
+        ]
+      },
+      {
+        "disease_id": "chikungunya",
+        "disease_name": { "en": "Chikungunya & Joint Fever", "hi": "चिकनगुनिया और जोड़ों का दर्द", "gu": "ચિકનગુનિયા અને સાંધાનો તાવ" },
+        "risk_level": "high",
+        "summary": {
+          "en": "High humidity accelerates Chikungunya virus transmission leading to crippling joint pain.",
+          "hi": "नमी वाले मौसम में चिकनगुनिया वायरस तेजी से फैलता है जिससे जोड़ों में तेज दर्द होता है।",
+          "gu": "ભેજવાળા વાતાવરણમાં ચિકનગુનિયા વાયરસથી સાંધામાં અસહ્ય દુખાવો થાય છે."
+        },
+        "precautions": [
+          { "en": "Protect vulnerable family members with mosquito nets", "hi": "घर के सभी सदस्यों को मच्छरदानी में सोने की आदत डालें", "gu": "ઘરના તમામ સભ્યોને મચ્છરદાનીમાં ઊંઘવાની ટેવ પાડો" },
+          { "en": "Take warm compresses for swollen joints under medical guidance", "hi": "चिकित्सकीय देखरेख में जोड़ों पर गर्म सिकाई करें", "gu": "ડૉક્ટરની સલાહ મુજબ સાંધા પર હૂંફાળો શેક કરો" }
+        ]
+      },
+      {
+        "disease_id": "conjunctivitis",
+        "disease_name": { "en": "Epidemic Conjunctivitis", "hi": "कंजंक्टिवाइटिस महामारी", "gu": "આંખ આવવાનો વ્યાપક ઉપદ્રવ" },
+        "risk_level": "moderate",
+        "summary": {
+          "en": "High humidity during July rains promotes explosive viral eye infection clusters.",
+          "hi": "जुलाई की नमी में आंखों का संक्रामक फ्लू तेजी से फैलता है।",
+          "gu": "જુલાઈના ભેજવાળા હવામાનમાં આંખોનું ઈન્ફેક્શન ઝડપથી ફેલાય છે."
+        },
+        "precautions": [
+          { "en": "Wash hands with soap immediately after touch", "hi": "आंखों या चेहरे को छूने के बाद तुरंत साबुन से हाथ धोएं", "gu": "આંખ કે ચહેરાને અડ્યા પછી તરત જ સાબુથી હાથ ધુઓ" },
+          { "en": "Avoid swimming in stagnant village ponds", "hi": "गांव के तालाबों या भरे हुए पानी में नहाने से बचें", "gu": "ગામના તળાવ કે ભરાયેલા પાણીમાં નાહવાનું ટાળો" }
+        ]
+      }
+    ]
+  },
+  {
+    "month": 8,
+    "month_name": { "en": "August", "hi": "अगस्त", "gu": "ઑગસ્ટ" },
+    "season": "Mid-Monsoon Flooding",
+    "advisories": [
+      {
+        "disease_id": "malaria",
+        "disease_name": { "en": "Falciparum & Vivax Malaria", "hi": "मलेरिया (फाल्सीपेरम व वाइवैक्स)", "gu": "મલેરિયા (ફાલ્સીપેરમ અને વાઇવેક્સ)" },
+        "risk_level": "high",
+        "summary": {
+          "en": "August floods and stagnant water pools lead to a peak in dangerous Falciparum malaria cases.",
+          "hi": "अगस्त में जगह-जगह पानी भरने से गंभीर फाल्सीपेरम मलेरिया का प्रकोप बढ़ता है।",
+          "gu": "ઑગસ્ટમાં પાણી ભરાઈ રહેવાથી ગંભીર ફાલ્સીપેરમ મલેરિયાના કેસો વધે છે."
+        },
+        "precautions": [
+          { "en": "Contact ANM / ASHA worker immediately for blood smear examination", "hi": "बुखार आते ही आशा या एएनएम से खून की जांच करवाएं", "gu": "તાવ આવતાં જ આશા કે ANM પાસે લોહીની તપાસ કરાવો" },
+          { "en": "Complete the full radical treatment course of Primaquine if prescribed", "hi": "डॉक्टर द्वारा दी गई मलेरिया की पूरी दवा का कोर्स पूरा करें", "gu": "ડૉક્ટર દ્વારા આપવામાં આવેલ મલેરિયાનો પૂરો કોર્સ પૂરો કરો" }
+        ]
+      },
+      {
+        "disease_id": "typhoid",
+        "disease_name": { "en": "Typhoid Fever", "hi": "टाइफाइड (मियादी बुखार)", "gu": "ટાઇફોઇડ તાવ" },
+        "risk_level": "high",
+        "summary": {
+          "en": "Persistent rain contamination in drinking water sources causes step-ladder typhoid fevers.",
+          "hi": "लगातार बारिश से जल स्रोतों के दूषित होने से टाइफाइड का खतरा रहता है।",
+          "gu": "સતત વરસાદને કારણે પાણીના સ્રોત દૂષિત થતાં ટાઇફોઇડનો ભય રહે છે."
+        },
+        "precautions": [
+          { "en": "Drink halogen/chlorine treated or boiled water", "hi": "क्लोरीन की गोली मिला हुआ या उबला पानी ही पीएं", "gu": "ક્લોરિન કે ઉકાળેલું પાણી જ પીવાનો આગ્રહ રાખો" },
+          { "en": "Avoid eating raw cut fruits or open salads", "hi": "कटे हुए खुले फल और बासी खाना न खाएं", "gu": "કાપેલા ખુલ્લા ફળો કે વાસી ખોરાક ખાઓ નહીં" }
+        ]
+      }
+    ]
+  },
+  {
+    "month": 9,
+    "month_name": { "en": "September", "hi": "सितंबर", "gu": "સપ્ટેમ્બર" },
+    "season": "Late Monsoon / Post-Rain",
+    "advisories": [
+      {
+        "disease_id": "dengue",
+        "disease_name": { "en": "Post-Monsoon Dengue Vector Spike", "hi": "पोस्ट-मानसून डेंगू प्रकोप", "gu": "ચોમાસા બાદ ડેન્ગ્યુનો ઉપદ્રવ" },
+        "risk_level": "high",
+        "summary": {
+          "en": "Receding rains leave clear standing water puddles ideal for vector breeding.",
+          "hi": "बारिश रुकने के बाद जमा साफ पानी में डेंगू के मच्छर अत्यधिक पनपते हैं।",
+          "gu": "વરસાદ રોકાયા બાદ ભરાયેલા ચોખ્ખા પાણીમાં ડેન્ગ્યુના મચ્છર ખૂબ થાય છે."
+        },
+        "precautions": [
+          { "en": "Check rooftops and overhead tanks for trapped rainwater", "hi": "छतों और पानी की टंकियों में जमा पानी साफ करें", "gu": "અગાશી અને પાણીની ટાંકીમાં ભરાયેલું પાણી સાફ કરો" },
+          { "en": "Report unexplained red spots or nosebleeds to medical officer", "hi": "शरीर पर लाल चकत्ते या नाक से खून आने पर तुरंत डॉक्टर को दिखाएं", "gu": "શરીર પર ચકામાં કે નાકમાંથી લોહી આવે તો તરત ડૉક્ટરને બતાવો" }
+        ]
+      },
+      {
+        "disease_id": "jaundice",
+        "disease_name": { "en": "Viral Hepatitis / Jaundice", "hi": "पीलिया / हेपेटाइटिस", "gu": "કમળો / વાયરલ હેપેટાઇટિસ" },
+        "risk_level": "moderate",
+        "summary": {
+          "en": "Post-monsoon water contamination leads to jaundice with loss of appetite and yellow eyes.",
+          "hi": "मानसून के बाद दूषित पानी से पीलिया, आंखों में पीलापन और भूख न लगने की शिकायत होती है।",
+          "gu": "ચોમાસા પછી દૂષિત પાણીથી કમળો, આંખો પીળી થવી અને ભૂખ ન લાગવી જેવી તકલીફ થાય છે."
+        },
+        "precautions": [
+          { "en": "Avoid oily foods and alcohol; take light nutritious bland diet", "hi": "तला-भुना खाना न खाएं; सुपाच्य और हल्का भोजन लें", "gu": "તળેલું-તીખું ન ખાઓ; હળવો અને પૌષ્ટિક ખોરાક લેવો" },
+          { "en": "Maintain strict hand washing before food handling", "hi": "भोजन बनाने और खाने से पहले हाथ अच्छे से धोएं", "gu": "રસોઈ બનાવતા અને જમતા પહેલા હાથ બરાબર સાફ કરો" }
+        ]
+      }
+    ]
+  },
+  {
+    "month": 10,
+    "month_name": { "en": "October", "hi": "अक्टूबर", "gu": "ઓક્ટોબર" },
+    "season": "Post-Monsoon Heat",
+    "advisories": [
+      {
+        "disease_id": "skin_infection",
+        "disease_name": { "en": "Fungal Skin Infection & Scabies", "hi": "दाद, खाज-खुजली व फंगल इंफेक्शन", "gu": "દાદર, ખંજવાળ અને ફંગલ ઈન્ફેક્શન" },
+        "risk_level": "moderate",
+        "summary": {
+          "en": "'October Heat' and high skin moisture trigger widespread ringworm fungal rashes.",
+          "hi": "अक्टूबर की गर्मी और पसीने से दाद-खाज और फंगल इन्फेक्शन का प्रकोप बढ़ता है।",
+          "gu": "ઓક્ટોબરની બફારાવાળી ગર્મી અને પરસેવાથી દાદર-ખંજવાળ વધે છે."
+        },
+        "precautions": [
+          { "en": "Keep skin folds dry and wear breathable cotton clothes", "hi": "त्वचा को सूखा रखें और सूती कपड़े पहनें", "gu": "ચામડીને કોરી રાખો અને સુતરાઉ કપડાં જ પહેરો" },
+          { "en": "Do not share towels, combs, or bedsheets with infected family members", "hi": "मरीज के तौलिये, कंघी या बिस्तर का उपयोग न करें", "gu": "દર્દીના ટુવાલ, કાંસકો કે પથારીનો ઉપયોગ સાથે ન કરો" }
+        ]
+      },
+      {
+        "disease_id": "viral_fever",
+        "disease_name": { "en": "Seasonal Viral Fever", "hi": "मौसम परिवर्तन बुखार", "gu": "હવામાન બદલાવનો વાયરલ તાવ" },
+        "risk_level": "moderate",
+        "summary": {
+          "en": "Hot days and cool nights during October climate transition cause viral fevers.",
+          "hi": "दिन में गर्मी और रात में ठंड के कारण मौसमी बुखार के मामले बढ़ते हैं।",
+          "gu": "બપોરે ગરમી અને રાત્રે ઠંડીના કારણે વાયરલ તાવનું પ્રમાણ વધે છે."
+        },
+        "precautions": [
+          { "en": "Avoid sudden exposure to cold water or AC right after hot sun", "hi": "धूप से आकर तुरंत ठंडा पानी न पीएं", "gu": "તડકામાંથી આવ્યા તરત જ ફ્રિજનું ઠંડું પાણી પીશો નહીં" }
+        ]
+      }
+    ]
+  },
+  {
+    "month": 11,
+    "month_name": { "en": "November", "hi": "नवंबर", "gu": "નવેમ્બર" },
+    "season": "Autumn / Winter Onset",
+    "advisories": [
+      {
+        "disease_id": "acute_bronchitis",
+        "disease_name": { "en": "Acute Bronchitis & Smog Respiratory Distress", "hi": "तीव्र ब्रोंकाइटिस व सांस की तकलीफ", "gu": "એક્યુટ બ્રોન્કાઇટિસ અને શ્વાસની તકલીફ" },
+        "risk_level": "high",
+        "summary": {
+          "en": "Dropping temperatures and winter smog aggravate airway inflammation and coughing.",
+          "hi": "ठंड और धुंध के कारण सांस की नली में सूजन और लगातार खांसी की समस्या बढ़ती है।",
+          "gu": "ઠંડી અને ધુમ્મસના કારણે શ્વાસનળીમાં સોજો અને સતત કફ-ખાંસી વધી જાય છે."
+        },
+        "precautions": [
+          { "en": "Cover nose and mouth with scarf or mask in early morning chill", "hi": "सुबह की ठंड में मुंह और नाक को मफलर या मास्क से ढकें", "gu": "વહેલી સવારની ઠંડીમાં નાક-મોં રૂમાલ કે માસ્કથી ઢાંકો" },
+          { "en": "Inhale warm steam and drink warm tulsi-ginger water", "hi": "गर्म पानी की भाप लें और तुलसी-अदरक का काढ़ा पीएं", "gu": "હૂંફાળી સ્ટીમ લો અને તુલસી-આદુનો ઉકાળો પીઓ" }
+        ]
+      },
+      {
+        "disease_id": "asthma",
+        "disease_name": { "en": "Bronchial Asthma Flare-ups", "hi": "अस्थमा (दमा) का दौरा", "gu": "અસ્થમા (દમ)નો હુમલો" },
+        "risk_level": "moderate",
+        "summary": {
+          "en": "Cold dry morning air triggers bronchospasm in chronic asthma patients.",
+          "hi": "सुबह की ठंडी हवा से दमा के मरीजों को सांस लेने में भारी तकलीफ होती है।",
+          "gu": "સવારની ઠંડી હવાથી અસ્થમાના દર્દીઓને શ્વાસ લેવામાં ગંભીર તકલીફ થાય છે."
+        },
+        "precautions": [
+          { "en": "Keep prescribed inhalers accessible at all times", "hi": "डॉक्टर द्वारा दिया गया इनहेलर हमेशा पास रखें", "gu": "ડૉક્ટર દ્વારા નિર્ધારિત ઇનહેલર હંમેશા સાથે રાખો" },
+          { "en": "Avoid early morning walks in dense fog", "hi": "घने कोहरे में सुबह टहलने से बचें", "gu": "ગાઢ ધુમ્મસમાં વહેલી સવારે બહાર જવાનું ટાળો" }
+        ]
+      }
+    ]
+  },
+  {
+    "month": 12,
+    "month_name": { "en": "December", "hi": "दिसंबर", "gu": "ડિસેમ્બર" },
+    "season": "Peak Winter",
+    "advisories": [
+      {
+        "disease_id": "pneumonia",
+        "disease_name": { "en": "Childhood & Elderly Pneumonia", "hi": "निमोनिया (फेफड़ों की गंभीर सूजन)", "gu": "ન્યુમોનિયા (ફેફસાંનો ગંભીર સોજો)" },
+        "risk_level": "high",
+        "summary": {
+          "en": "Peak winter cold spell leads to high risk of bacterial pneumonia in young infants and frail elderly.",
+          "hi": "कड़ाके की ठंड में छोटे बच्चों और बुजुर्गों में निमोनिया का गंभीर खतरा रहता है।",
+          "gu": "તીવ્ર ઠંડીના કારણે નાના બાળકો અને વૃદ્ધોમાં ન્યુમોનિયાનું ગંભીર જોખમ રહે છે."
+        },
+        "precautions": [
+          { "en": "Ensure chest, ears, and feet are fully covered with woolen clothes", "hi": "छाती, कान और पैरों को ऊनी कपड़ों से पूरी तरह ढकें", "gu": "છાતી, કાન અને પગ ગરમ ઊની કપડાંથી ઢાંકેલા રાખો" },
+          { "en": "Watch for fast breathing, chest retractions, or lethargy", "hi": "तेज सांस चलने या बच्चे के सुस्त होने पर तुरंत अस्पताल जाएं", "gu": "ઝડપી શ્વાસ કે બાળક સુસ્ત જણાય તો તાત્કાલિક હોસ્પિટલ પહોંચો" }
+        ]
+      },
+      {
+        "disease_id": "common_cold",
+        "disease_name": { "en": "Acute Rhinitis & Influenza", "hi": "तीव्र जुकाम व इन्फ्लूएंजा", "gu": "તીવ્ર શરદી અને ઈન્ફ્લુએન્ઝા" },
+        "risk_level": "moderate",
+        "summary": {
+          "en": "Winter flu spreads rapidly in enclosed homes and crowded indoor gatherings.",
+          "hi": "सर्दियों में बंद कमरों और भीड़भाड़ वाली जगहों में फ्लू तेजी से फैलता है।",
+          "gu": "શિયાળામાં ભીડભાડવાળી જગ્યાઓમાં ફ્લૂ ઝડપથી ફેલાય છે."
+        },
+        "precautions": [
+          { "en": "Maintain hand hygiene and stay indoors if feeling feverish", "hi": "हाथों की सफाई रखें और बुखार होने पर घर पर आराम करें", "gu": "હાથની સ્વચ્છતા રાખો અને તાવ આવે ત્યારે ઘરે આરામ કરો" }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "int_001",
+    "medA": "paracetamol_500",
+    "medB": "alcohol",
+    "severity": "severe",
+    "description": {
+      "en": "Paracetamol with alcohol significantly increases the risk of severe acute liver damage.",
+      "hi": "पैरासिटामोल के साथ शराब लीवर की गंभीर क्षति के जोखिम को काफी बढ़ा देती है।",
+      "gu": "પેરાસિટામોલ સાથે આલ્કોહોલ યકૃતને ગંભીર નુકસાન પહોંચાડવાનું જોખમ ખૂબ વધારે છે."
+    },
+    "contraindicated": ["liver_disease", "alcoholism"]
+  },
+  {
+    "id": "int_002",
+    "medA": "ibuprofen_400",
+    "medB": "aspirin_75",
+    "severity": "severe",
+    "description": {
+      "en": "Ibuprofen interferes with the cardioprotective effect of low-dose aspirin and sharply increases gastrointestinal bleeding risk.",
+      "hi": "आइबूप्रोफेन कम खुराक वाली एस्पिरिन के हृदय सुरक्षात्मक प्रभाव में बाधा डालता है और पेट के रक्तस्राव का जोखिम बढ़ाता है।",
+      "gu": "આઇબુપ્રોફેન લો-ડોઝ એસ્પિરિનની અસરમાં દખલ કરે છે અને પેટમાં રક્તસ્ત્રાવનું જોખમ વધારે છે."
+    },
+    "contraindicated": ["peptic_ulcer", "bleeding_disorders"]
+  },
+  {
+    "id": "int_003",
+    "medA": "paracetamol_500",
+    "medB": "warfarin",
+    "severity": "moderate",
+    "description": {
+      "en": "Regular or high-dose Paracetamol may enhance the anticoagulant effect of Warfarin, increasing bleeding tendency.",
+      "hi": "पैरासिटामोल का नियमित उपयोग वारफारिन के थक्का-रोधी प्रभाव को बढ़ा सकता है, जिससे रक्तस्राव का खतरा बढ़ता है।",
+      "gu": "પેરાસિટામોલનો નિયમિત ઉપયોગ વોરફારિનની અસર વધારે છે, જેથી લોહી વહેવાનું જોખમ રહે છે."
+    },
+    "contraindicated": ["bleeding_disorder"]
+  },
+  {
+    "id": "int_004",
+    "medA": "cetirizine_5mg",
+    "medB": "alcohol",
+    "severity": "moderate",
+    "description": {
+      "en": "Cetirizine combined with alcohol increases central nervous system depression, drowsiness, and impaired motor reflexes.",
+      "hi": "सेटिरिज़िन के साथ शराब अत्यधिक उनींदापन और मानसिक सतर्कता में कमी लाती है।",
+      "gu": "સેટિરિઝિન સાથે આલ્કોહોલ ભારે ઘેન અને માનસિક આળસ લાવે છે."
+    },
+    "contraindicated": ["sedatives", "alcohol_use"]
+  },
+  {
+    "id": "int_005",
+    "medA": "ibuprofen_400",
+    "medB": "paracetamol_500",
+    "severity": "moderate",
+    "description": {
+      "en": "Simultaneous long-term dual analgesic use increases renal toxicity and stomach lining irritation.",
+      "hi": "एक साथ दोनों दर्द निवारक गोलियां लेने से गुर्दे और पेट में जलन का खतरा बढ़ जाता है।",
+      "gu": "બંને દુખાવાની દવાનો એકસાથે ઉપયોગ કીડની અને પેટમાં બળતરા વધારી શકે છે."
+    },
+    "contraindicated": ["kidney_disease"]
+  },
+  {
+    "id": "int_006",
+    "medA": "alkaline_citrate_syrup",
+    "medB": "ciprofloxacin",
+    "severity": "moderate",
+    "description": {
+      "en": "Alkaline citrate syrups reduce urinary clearance of quinolone antibiotics and alter drug absorption.",
+      "hi": "अल्कलाइन सिरप सीप्रोफ्लोक्सासिन जैसी एंटीबायोटिक दवाओं के अवशोषण को प्रभावित कर सकता है।",
+      "gu": "અલ્કલાઇન સિરપ સિપ્રોફ્લોક્સાસિન એન્ટિબાયોટિકના શોષણને ઘટાડી શકે છે."
+    },
+    "contraindicated": ["renal_impairment"]
+  },
+  {
+    "id": "int_007",
+    "medA": "giloy_kwath",
+    "medB": "metformin",
+    "severity": "moderate",
+    "description": {
+      "en": "Giloy has potent hypoglycemic properties and when combined with antidiabetic drugs (like Metformin) can cause sudden hypoglycemia.",
+      "hi": "गिलोय और डायबिटीज की दवा एक साथ लेने से ब्लड शुगर अचानक बहुत कम (हाइपोग्लाइसीमिया) हो सकता है।",
+      "gu": "ગિલોય અને ડાયાબિટીસની દવા એકસાથે લેવાથી શુગરનું પ્રમાણ ખૂબ ઘટી શકે છે."
+    },
+    "contraindicated": ["severe_hypoglycemia"]
+  },
+  {
+    "id": "int_008",
+    "medA": "ibuprofen_400",
+    "medB": "warfarin",
+    "severity": "severe",
+    "description": {
+      "en": "NSAIDs combined with blood thinners like Warfarin cause dangerous internal bleeding and ulceration.",
+      "hi": "आइबूप्रोफेन और वारफारिन का संयोजन शरीर में खतरनाक आंतरिक रक्तस्राव का कारण बन सकता है।",
+      "gu": "આઇબુપ્રોફેન અને લોહી પાતળું કરવાની દવા સાથે લેવાથી આંતરિક રક્તસ્ત્રાવ થઈ શકે છે."
+    },
+    "contraindicated": ["bleeding_diathesis"]
+  },
+  {
+    "id": "int_009",
+    "medA": "ambroxol_syrup",
+    "medB": "codeine_syrup",
+    "severity": "moderate",
+    "description": {
+      "en": "Combining mucolytics (Ambroxol) with cough suppressants (Codeine) leads to mucus retention in the lungs.",
+      "hi": "कफ ढीला करने वाली दवा और खांसी दबाने वाली सिरप एक साथ लेने से फेफड़ों में बलगम जमा हो सकता है।",
+      "gu": "કફ પાતળો કરવાની અને ખાંસી દબાવવાની સિરપ સાથે લેવાથી ફેફસામાં કફ ભરાઈ રહે છે."
+    },
+    "contraindicated": ["severe_asthma"]
+  },
+  {
+    "id": "int_010",
+    "medA": "paracetamol_500",
+    "medB": "paracetamol_tepid_sponge",
+    "severity": "moderate",
+    "description": {
+      "en": "Multiple paracetamol formulations selected simultaneously may cause accidental liver overdose.",
+      "hi": "एक साथ दो पैरासिटामोल उत्पाद लेने से ओवरडोज का खतरा रहता है।",
+      "gu": "એકસાથે બે પેરાસિટામોલ દવાઓ લેવાથી ઓવરડોઝનું જોખમ રહે છે."
+    },
+    "contraindicated": []
+  },
+  {
+    "id": "int_011",
+    "medA": "amoxicillin",
+    "medB": "allopurinol",
+    "severity": "moderate",
+    "description": {
+      "en": "Combining Amoxicillin with Allopurinol significantly increases the incidence of severe skin rashes.",
+      "hi": "अमोक्सिसिलिन और एलोप्यूरिनॉल साथ लेने से त्वचा पर चकत्ते (स्किन रैश) होने का खतरा बढ़ता है।",
+      "gu": "અમોક્સિસિલિન અને એલોપ્યુરિનોલ સાથે લેવાથી ચામડી પર ધાબા થવાનું જોખમ વધે છે."
+    },
+    "contraindicated": ["gout_therapy"]
+  },
+  {
+    "id": "int_012",
+    "medA": "sitopaladi_churna",
+    "medB": "insulin",
+    "severity": "mild",
+    "description": {
+      "en": "Sitopaladi churna compounded with sugar or honey can elevate blood glucose levels in insulin-dependent patients.",
+      "hi": "शहद युक्त सितोपलादि चूर्ण इंसुलिन ले रहे रोगियों में ब्लड शुगर बढ़ा सकता है।",
+      "gu": "મધવાળું સિતોપલાદિ ચૂર્ણ ઇન્સ્યુલિન લેતા દર્દીઓમાં બ્લડ શુગર વધારી શકે છે."
+    },
+    "contraindicated": ["diabetes_mellitus"]
+  },
+  {
+    "id": "int_013",
+    "medA": "gokshuradi_guggulu",
+    "medB": "furosemide",
+    "severity": "moderate",
+    "description": {
+      "en": "Ayurvedic diuretics (Gokshuradi) paired with pharmaceutical loop diuretics (Furosemide) can cause dehydration or potassium imbalance.",
+      "hi": "गोक्षुरादि गुग्गुलु और एलोपैथिक पेशाब बढ़ाने वाली दवा साथ लेने से शरीर में पानी और पोटेशियम की कमी हो सकती है।",
+      "gu": "ગોક્ષુરાદિ ગુગ્ગુલુ અને એલોપેથિક લૂપ ડાયયુરેટિક સાથે લેવાથી શરીરમાં ડિહાઇડ્રેશન થઈ શકે છે."
+    },
+    "contraindicated": ["electrolyte_imbalance"]
+  },
+  {
+    "id": "int_014",
+    "medA": "ibuprofen_400",
+    "medB": "enalapril",
+    "severity": "moderate",
+    "description": {
+      "en": "NSAIDs decrease the antihypertensive action of ACE inhibitors and increase renal toxicity risk.",
+      "hi": "आइबूप्रोफेन ब्लड प्रेशर की दवा के असर को कम करती है और गुर्दे पर दबाव डालती है।",
+      "gu": "આઇબુપ્રોફેન બીપીની દવાની અસર ઘટાડે છે અને કિડની પર અસર કરે છે."
+    },
+    "contraindicated": ["hypertension", "chronic_kidney_disease"]
+  },
+  {
+    "id": "int_015",
+    "medA": "paracetamol_strict_ors",
+    "medB": "ibuprofen_400",
+    "severity": "severe",
+    "description": {
+      "en": "In Dengue or suspected viral hemorrhagic fever, NSAIDs like Ibuprofen trigger dangerous internal hemorrhaging.",
+      "hi": "डेंगू बुखार में आइबूप्रोफेन या अन्य दर्द निवारक दवाएं अत्यधिक आंतरिक रक्तस्राव का कारण बन सकती हैं।",
+      "gu": "ડેન્ગ્યુ તાવમાં આઇબુપ્રોફેન જેવી દુખાવાની દવાઓ આંતરિક રક્તસ્ત્રાવનું મોટું જોખમ ઊભું કરે છે."
+    },
+    "contraindicated": ["dengue_fever", "thrombocytopenia"]
+  },
+  {
+    "id": "int_016",
+    "medA": "aspirin_75",
+    "medB": "alcohol",
+    "severity": "severe",
+    "description": {
+      "en": "Aspirin mixed with alcohol severely damages the gastric mucosa, causing upper GI bleeding.",
+      "hi": "एस्पिरिन के साथ शराब पेट में छालों और खून बहने का गंभीर खतरा उत्पन्न करती है।",
+      "gu": "એસ્પિરિન સાથે આલ્કોહોલ પેટની અંદર ચામડીને નુકસાન પહોંચાડી લોહી વહેવડાવે છે."
+    },
+    "contraindicated": ["peptic_ulcer"]
+  },
+  {
+    "id": "int_017",
+    "medA": "cotrimoxazole",
+    "medB": "warfarin",
+    "severity": "severe",
+    "description": {
+      "en": "Cotrimoxazole inhibits Warfarin metabolism, dramatically elevating bleeding risk and INR values.",
+      "hi": "कोट्रिमोक्साज़ोल वारफारिन की चयापचय को रोकता है, जिससे खतरनाक रक्तस्राव हो सकता है।",
+      "gu": "કોટ્રિમોક્સાઝોલ વોરફારિનની અસર ખૂબ વધારે છે જેનાથી રક્તસ્ત્રાવ થવાની વિપરિત સ્થિતિ સર્જાય છે."
+    },
+    "contraindicated": ["coagulopathy"]
+  },
+  {
+    "id": "int_018",
+    "medA": "azithromycin",
+    "medB": "antacid_gel",
+    "severity": "moderate",
+    "description": {
+      "en": "Aluminium and magnesium antacids decrease peak serum concentrations of Azithromycin.",
+      "hi": "एंटासिड जेल एज़िथ्रोमाइसिन एंटीबायोटिक के अवशोषण को कम करता है।",
+      "gu": "એન્ટાસિડ જેલ એઝિથ્રોમાઇસિન એન્ટિબાયોટિકનું શોષણ ઘટાડે છે."
+    },
+    "contraindicated": []
+  },
+  {
+    "id": "int_019",
+    "medA": "amoxicillin",
+    "medB": "methotrexate",
+    "severity": "severe",
+    "description": {
+      "en": "Penicillins clear Methotrexate excretion in kidneys, precipitating severe Methotrexate toxicity.",
+      "hi": "पेनिसिलिन वर्ग की दवाएं मेथोट्रेक्सेट के निष्कासन को बाधित करती हैं जिससे गंभीर विषाक्तता हो सकती है।",
+      "gu": "પેનિસિલિન જૂથની દવાઓ મેથોટ્રેક્સેટનું ઉત્સર્જન અટકાવે છે જે ઝેરી અસર ઉત્પન્ન કરે છે."
+    },
+    "contraindicated": ["rheumatoid_therapy"]
+  },
+  {
+    "id": "int_020",
+    "medA": "sudarshan_ghan_vati",
+    "medB": "glimepiride",
+    "severity": "moderate",
+    "description": {
+      "en": "Ayurvedic bitter herbs may synergistically increase insulin sensitivity alongside oral antidiabetics.",
+      "hi": "सुदर्शन घन वटी का सेवन शुगर की दवाओं के साथ करने पर रक्त शर्करा अचानक घट सकती है।",
+      "gu": "સુદર્શન ઘન વટી ડાયાબિટીસની ગોળીઓ સાથે લેવાથી શુગર લેવલ વધુ ઘટી શકે છે."
+    },
+    "contraindicated": ["uncontrolled_hypoglycemia"]
+  },
+  {
+    "id": "int_021",
+    "medA": "digoxin",
+    "medB": "furosemide",
+    "severity": "severe",
+    "description": {
+      "en": "Furosemide-induced hypokalemia severely increases Digoxin toxicity and fatal cardiac arrhythmias.",
+      "hi": "फ्यूरोसेमाइड से पोटेशियम कम होने पर डिगॉक्सिन विषाक्तता और दिल की धड़कन बिगड़ने का गंभीर खतरा रहता है।",
+      "gu": "પોટેશિયમ ઓછું થવાથી ડિગોક્સિનની ઝેરી અસર અને હૃદયના ધબકારા અનિયમિત થવાનું જોખમ રહે છે."
+    },
+    "contraindicated": ["arrhythmia"]
+  },
+  {
+    "id": "int_022",
+    "medA": "diclofenac",
+    "medB": "aspirin_75",
+    "severity": "severe",
+    "description": {
+      "en": "Concomitant NSAID usage creates severe mucosal injury and renal failure.",
+      "hi": "डिक्लोफेनेक और एस्पिरिन एक साथ लेने से पेट में घाव और गुर्दे की विफलता हो सकती है।",
+      "gu": "ડિકલોફેનેક અને એસ્પિરિન સાથે લેવાથી ચાંદા અને કિડનીની તકલીફ થાય છે."
+    },
+    "contraindicated": ["ulcers"]
+  },
+  {
+    "id": "int_023",
+    "medA": "iron_tablets",
+    "medB": "antacid_gel",
+    "severity": "moderate",
+    "description": {
+      "en": "Antacids bind iron in the GI tract, reducing therapeutic iron absorption.",
+      "hi": "एंटासिड आयरन के अवशोषण को काफी कम कर देता है।",
+      "gu": "એન્ટાસિડ આયર્નના શોષણને ખૂબ ઓછું કરે છે."
+    },
+    "contraindicated": ["anemia_treatment"]
+  },
+  {
+    "id": "int_024",
+    "medA": "paracetamol_500",
+    "medB": "isoniazid",
+    "severity": "severe",
+    "description": {
+      "en": "Isoniazid (TB medication) enhances paracetamol hepatotoxicity even at moderate doses.",
+      "hi": "टीबी की दवा (आइसोनियाज़िड) के साथ पैरासिटामोल लेने से लीवर पर अत्यधिक प्रभाव पड़ता है।",
+      "gu": "ટીબીની દવા સાથે પેરાસિટામોલ લેવાથી લીવર પર ગંભીર તાણ આવે છે."
+    },
+    "contraindicated": ["tuberculosis_treatment"]
+  },
+  {
+    "id": "int_025",
+    "medA": "cetirizine_5mg",
+    "medB": "theophylline",
+    "severity": "moderate",
+    "description": {
+      "en": "Theophylline reduces clearance of Cetirizine, increasing drowsiness and fatigue.",
+      "hi": "थियोफिलाइन सेटिरिज़िन के असर को बढ़ा देती है जिससे अधिक सुस्ती आती है।",
+      "gu": "થિઓફિલાઇન સેટિરિઝિનના કારણે વધુ ઘેન અને થાક ઉત્પન્ન કરે છે."
+    },
+    "contraindicated": ["copd"]
+  },
+  {
+    "id": "int_026",
+    "medA": "kutajghan_vati",
+    "medB": "senna_laxative",
+    "severity": "moderate",
+    "description": {
+      "en": "Astringent anti-diarrheal herbs directly counteract stimulant laxatives.",
+      "hi": "दस्त रोकने की दवा और पेट साफ करने की दवा एक साथ लेने से दोनों का प्रभाव शून्य हो जाता है।",
+      "gu": "ઝાડા અટકાવવાની દવા અને જુલમાની દવા સાથે લેવાથી બંનેની અસર નિષ્ફળ જાય છે."
+    },
+    "contraindicated": []
+  },
+  {
+    "id": "int_027",
+    "medA": "rifampicin",
+    "medB": "oral_contraceptive",
+    "severity": "severe",
+    "description": {
+      "en": "Rifampicin induces hepatic enzymes, causing contraceptive failure.",
+      "hi": "रिफैम्पिसिन गर्भनिरोधक गोलियों के प्रभाव को समाप्त कर देता है।",
+      "gu": "રિફેમ્પિસિન ગર્ભનિરોધક ગોળીઓની અસર નિષ્ફળ બનાવે છે."
+    },
+    "contraindicated": []
+  },
+  {
+    "id": "int_028",
+    "medA": "metformin",
+    "medB": "alcohol",
+    "severity": "severe",
+    "description": {
+      "en": "Metformin with acute or chronic alcohol intake increases the danger of lactic acidosis.",
+      "hi": "मेटफॉर्मिन के साथ शराब का सेवन लैक्टिक एसिडोसिस नामक घातक स्थिति पैदा कर सकता है।",
+      "gu": "મેટફોર્મિન સાથે આલ્કોહોલ લેવો લેક્ટિક એસિડોસિસ નામનું ગંભીર જોખમ ઉભું કરે છે."
+    },
+    "contraindicated": ["metabolic_acidosis"]
+  },
+  {
+    "id": "int_029",
+    "medA": "amoxicillin",
+    "medB": "oral_contraceptive",
+    "severity": "moderate",
+    "description": {
+      "en": "Broad spectrum antibiotics may alter gut flora and reduce oral contraceptive absorption.",
+      "hi": "अमोक्सिसिलिन गर्भनिरोधक गोलियों की प्रभावशीलता को कम कर सकता है।",
+      "gu": "અમોક્સિસિલિન ગર્ભનિરોધક ગોળીઓની કાર્યક્ષમતા ઘટાડી શકે છે."
+    },
+    "contraindicated": []
+  },
+  {
+    "id": "int_030",
+    "medA": "mahagandhak_amritarishta",
+    "medB": "metronidazole",
+    "severity": "severe",
+    "description": {
+      "en": "Ayurvedic fermentations containing self-generated alcohol cause disulfiram-like reactions with Metronidazole.",
+      "hi": "अरिष्ट औषधियों में प्राकृतिक अल्कोहल होता है जो मेट्रोनिडाजोल के साथ उल्टी और दिल की धड़कन बढ़ा सकता है।",
+      "gu": "અરિષ્ટ આયુર્વેદિક પ્રવાહી મેટ્રોનિડાઝોલ સાથે ઉલટી અને ગભરામણ કરાવી શકે છે."
+    },
+    "contraindicated": ["alcohol_intolerance"]
+  }
+]

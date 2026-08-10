@@ -1,0 +1,455 @@
+[
+  {
+    "id": "tulsi",
+    "name": { "en": "Holy Basil (Tulsi)", "hi": "तुलसी", "gu": "તુલસી" },
+    "scientificName": "Ocimum tenuiflorum",
+    "description": {
+      "en": "Aromatic perennial plant widely used for respiratory ailments, fever, and immunity.",
+      "hi": "एक सुगंधित पौधा जो श्वसन रोगों, बुखार और इम्युनिटी के लिए बेहद उपयोगी है।",
+      "gu": "એક સુગંધિત છોડ જે શ્વસન રોગો, તાવ અને ઇમ્યુનિટી માટે અત્યંત ઉપયોગી છે."
+    },
+    "parts_used": ["leaf"],
+    "growing_guide": {
+      "climate": { "en": "Warm tropical climate with full sunlight.", "hi": "पूर्ण सूर्य के प्रकाश के साथ गर्म उष्णकटिबंधीय जलवायु।", "gu": "સંપૂર્ણ સૂર્યપ્રકાશ સાથે ગરમ હવામાન." },
+      "soil": { "en": "Well-drained fertile loam soil.", "hi": "अच्छी जल निकासी वाली उपजाऊ मिट्टी।", "gu": "સારી પાણી નિકાલવાળી ફળદ્રુપ માટી." },
+      "watering": { "en": "Water daily; keep soil moist but not waterlogged.", "hi": "प्रतिदिन पानी दें; मिट्टी नम रखें लेकिन दलदली नहीं।", "gu": "દરરોજ પાણી આપો; માટી ભેજવાળી રાખો." },
+      "harvesting": { "en": "Pinch top leaf clusters regularly to encourage bushy growth.", "hi": "घने विकास के लिए ऊपर की पत्तियों को नियमित रूप से तोड़ें।", "gu": "છોડ ઘાટો થાય તે માટે ઉપરના પાંદડા નિયમિત ચૂંટો." },
+      "pests": { "en": "Watch for aphids. Spray neem oil if needed.", "hi": "माहू/कीड़ों से बचाएं। नीम के तेल का छिड़काव करें।", "gu": "જીવાત સામે લીમડાના તેલનો છંટકાવ કરો." }
+    },
+    "availability_season": "year_round"
+  },
+  {
+    "id": "ginger",
+    "name": { "en": "Fresh Ginger (Adrak)", "hi": "अदरक", "gu": "આદુ" },
+    "scientificName": "Zingiber officinale",
+    "description": {
+      "en": "Rhizome widely used for digestion, nausea, cough, and warming body remedies.",
+      "hi": "पाचन, मतली, खांसी और शरीर को गर्माहट देने के लिए प्रयुक्त कंद।",
+      "gu": "પાચન, ઉબકા, ખાંસી અને શરીરને ગરમાવો આપવા માટે વપરાતું આદુ."
+    },
+    "parts_used": ["rhizome"],
+    "growing_guide": {
+      "climate": { "en": "Warm humid climate with indirect shade.", "hi": "हल्की छाया वाली गर्म और आर्द्र जलवायु।", "gu": "હળવા છાંયડાવાળું ગરમ અને ભેજવાળું હવામાન." },
+      "soil": { "en": "Loose, rich organic soil with good drainage.", "hi": "जैविक खाद युक्त ढीली भुरभुरी मिट्टी।", "gu": "સેન્દ્રિય ખાતર યુક્ત હળવી માટી." },
+      "watering": { "en": "Keep soil consistently damp; avoid soggy roots.", "hi": "मिट्टी में नमी बनाए रखें, पानी जमा न होने दें।", "gu": "માટીમાં ભેજ જાળવી રાખો, પાણી ભરાવા ન દો." },
+      "harvesting": { "en": "Harvest rhizomes after 8-9 months when leaves turn yellow.", "hi": "पत्तियां पीली पड़ने पर 8-9 महीने में कंद निकालें।", "gu": "પાંદડા પીળા થાય ત્યારે 8-9 મહિને આદુ કાઢો." },
+      "pests": { "en": "Prevent root rot by avoiding overwatering.", "hi": "अत्यधिक पानी देने से बचें ताकि जड़ें न सड़ें।", "gu": "વધારે પાણી ન આપવું જેથી કંદ સડી ન જાય." }
+    },
+    "availability_season": "year_round"
+  },
+  {
+    "id": "giloy",
+    "name": { "en": "Giloy / Guduchi", "hi": "गिलोय (गुडूची)", "gu": "ગિલોય (ગડૂચી)" },
+    "scientificName": "Tinospora cordifolia",
+    "description": {
+      "en": "Climbing shrub famed for fever reduction, liver protection, and immunity.",
+      "hi": "बुखार कम करने, लिवर सुरक्षा और रोग प्रतिरोधकता के लिए प्रसिद्ध बेल।",
+      "gu": "તાવ ઘટાડવા, લીવર રક્ષણ અને ઇમ્યુનિટી માટે જાણીતી વેલ."
+    },
+    "parts_used": ["stem", "leaf"],
+    "growing_guide": {
+      "climate": { "en": "Thrives in tropical climates on trees or fences.", "hi": "पेड़ों या जाली के सहारे उष्णकटिबंधीय मौसम में तेजी से बढ़ती है।", "gu": "ઝાડ કે જાળીના ટેકે ઝડપથી વધતી વેલ." },
+      "soil": { "en": "Adaptable to most soil types.", "hi": "लगभग सभी प्रकार की मिट्टी में उपयुक्त।", "gu": "તમામ પ્રકારની માટીમાં અનુકૂળ." },
+      "watering": { "en": "Moderate watering once rooted.", "hi": "जड़ पकड़ने के बाद कम पानी की आवश्यकता।", "gu": "ચોંટી ગયા પછી મધ્યમ પાણીની જરૂર." },
+      "harvesting": { "en": "Cut thick pencil-sized mature stems.", "hi": "पेंसिल जितनी मोटी परिपक्व टहनी काटें।", "gu": "પેન્સિલ જેવડી જાડી પાકી ડાળી કાપો." },
+      "pests": { "en": "Hardy plant; minimal pest issues.", "hi": "अत्यंत सहनशील पौधा, कीड़े कम लगते हैं।", "gu": "ખૂબ મજબૂત છોડ, જીવાત નહિવત." }
+    },
+    "availability_season": "year_round"
+  },
+  {
+    "id": "vasaka",
+    "name": { "en": "Vasaka / Malabar Nut", "hi": "अडूसा (वासा)", "gu": "અરડૂસી (વાસા)" },
+    "scientificName": "Adhatoda vasica",
+    "description": {
+      "en": "Potent herb for severe bronchial cough, asthma, and clearing lung mucus.",
+      "hi": "गंभीर खांसी, दमा और कफ साफ करने के लिए उत्तम औषधि।", "gu": "ગંભીર ખાંસી, દમ અને કફ સાફ કરવા માટે ઉત્તમ ઔષધિ."
+    },
+    "parts_used": ["leaf"],
+    "growing_guide": {
+      "climate": { "en": "Warm tropical climate.", "hi": "गर्म जलवायु।", "gu": "ગરમ વાતાવરણ." },
+      "soil": { "en": "Well-drained soil.", "hi": "अच्छी जल निकासी वाली मिट्टी।", "gu": "પાણી નીતરી જાય તેવી માટી." },
+      "watering": { "en": "Water 2-3 times a week.", "hi": "सप्ताह में 2-3 बार पानी दें।", "gu": "અઠવાડિયામાં 2-3 વાર પાણી આપો." },
+      "harvesting": { "en": "Pick dark green mature leaves.", "hi": "गहरे हरे परिपक्व पत्ते तोड़ें।", "gu": "ઘેરા લીલા પાકા પાંદડા ચૂંટો." },
+      "pests": { "en": "Relatively pest resistant.", "hi": "कीटों के प्रति प्रतिरोधी।", "gu": "જીવાત સામે પ્રતિકારક." }
+    },
+    "availability_season": "year_round"
+  },
+  {
+    "id": "papaya",
+    "name": { "en": "Papaya Leaf", "hi": "पपीता पत्ता", "gu": "પપૈયાનું પાન" },
+    "scientificName": "Carica papaya",
+    "description": {
+      "en": "Fresh leaf juice boosts platelet count and helps in dengue and viral fever.",
+      "hi": "डेंगू और वायरल बुखार में प्लेटलेट काउंट बढ़ाने में सहायक।", "gu": "ડેન્ગ્યુ અને વાયરલ તાવમાં પ્લેટલેટ કાઉન્ટ વધારવામાં મદદરૂપ."
+    },
+    "parts_used": ["leaf"],
+    "growing_guide": {
+      "climate": { "en": "Sunny tropical location.", "hi": "धूप वाला उष्णकटिबंधीय स्थान।", "gu": "તડકાવાળી જગ્યા." },
+      "soil": { "en": "Rich organic soil, no stagnant water.", "hi": "पानी का जमाव न होने वाली उपजाऊ मिट्टी।", "gu": "પાણી ન ભરાય તેવી ફળદ્રુપ માટી." },
+      "watering": { "en": "Water regularly when soil top is dry.", "hi": "ऊपरी मिट्टी सूखने पर पानी दें।", "gu": "ઉપરની માટી સુકાય ત્યારે પાણી આપો." },
+      "harvesting": { "en": "Harvest medium-sized young leaves.", "hi": "मध्यम आकार के ताजे पत्ते लें।", "gu": "મધ્યમ કદના તાજા પાંદડા લો." },
+      "pests": { "en": "Watch for mealybugs.", "hi": "मिलीबग से बचाव करें।", "gu": "મિલિબગથી રક્ષણ કરો." }
+    },
+    "availability_season": "year_round"
+  },
+  {
+    "id": "gokshura",
+    "name": { "en": "Gokshura (Small Caltrops)", "hi": "गोखरू", "gu": "ગોખરૂ" },
+    "scientificName": "Tribulus terrestris",
+    "description": {
+      "en": "Urinary tract cleanser, natural diuretic, and kidney tonic.",
+      "hi": "मूत्र मार्ग को स्वच्छ करने वाला और गुर्दे के लिए लाभकारी पौधा।", "gu": "પેશાબ માર્ગ સાફ કરતો અને કિડની માટે ગુણકારી છોડ."
+    },
+    "parts_used": ["fruit", "root", "whole_plant"],
+    "growing_guide": {
+      "climate": { "en": "Hot and dry climate; highly drought resistant.", "hi": "गर्म और शुष्क जलवायु।", "gu": "ગરમ અને સૂકું વાતાવરણ." },
+      "soil": { "en": "Sandy or rocky loose soil.", "hi": "बलुई या रेतीली मिट्टी।", "gu": "રેતાળ કે કાંકરાવાળી માટી." },
+      "watering": { "en": "Low water requirement.", "hi": "बहुत कम पानी की आवश्यकता।", "gu": "ઓછા પાણીની જરૂર." },
+      "harvesting": { "en": "Collect spiny fruits when dry.", "hi": "सूखने पर कांटेदार फल एकत्र करें।", "gu": "સુકાય ત્યારે કાંટાળા ફળ એકઠા કરો." },
+      "pests": { "en": "Rarely affected by pests.", "hi": "कीटमुक्त।", "gu": "જીવાતમુક્ત." }
+    },
+    "availability_season": "monsoon"
+  },
+  {
+    "id": "arjuna",
+    "name": { "en": "Arjuna Tree", "hi": "अर्जुन वृक्ष", "gu": "અર્જુન વૃક્ષ" },
+    "scientificName": "Terminalia arjuna",
+    "description": {
+      "en": "Renowned cardiac tonic, helps maintain blood pressure and vascular strength.",
+      "hi": "हृदय स्वास्थ्य और रक्तचाप नियंत्रण के लिए प्रसिद्ध वृक्ष।", "gu": "હૃદય સ્વાસ્થ્ય અને બ્લડ પ્રેશર માટે જાણીતું વૃક્ષ."
+    },
+    "parts_used": ["bark", "leaf"],
+    "growing_guide": {
+      "climate": { "en": "Humid riverine and tropical environment.", "hi": "नदी किनारे या आर्द्र वातावरण।", "gu": "ભેજવાળું વાતાવરણ." },
+      "soil": { "en": "Deep fertile alluvial soil.", "hi": "जलोढ़ उपजाऊ मिट्टी।", "gu": "નદી કિનારાની ફળદ્રુપ માટી." },
+      "watering": { "en": "Regular watering during early sapling stage.", "hi": "शुरुआती दौर में नियमित पानी।", "gu": "શરૂઆતના તબક્કે નિયમિત પાણી." },
+      "harvesting": { "en": "Peel small outer bark strips without girdling trunk.", "hi": "पेड़ को नुकसान पहुंचाए बिना बाहरी छाल निकालें।", "gu": "ઝાડને નુકસાન પહોંચાડ્યા વગર બહારની છાલ કાઢો." },
+      "pests": { "en": "Hardy forest tree.", "hi": "मजबूत पेड़।", "gu": "મજબૂત વૃક્ષ." }
+    },
+    "availability_season": "year_round"
+  },
+  {
+    "id": "neem",
+    "name": { "en": "Neem", "hi": "नीम", "gu": "લીમડો" },
+    "scientificName": "Azadirachta indica",
+    "description": {
+      "en": "Universal antiseptic, blood purifier, skin remedy, and natural pesticide.",
+      "hi": "प्राकृतिक एंटीसेप्टिक, रक्त शोधक और त्वचा रोगों की अचूक दवा।", "gu": "કુદરતી એન્ટિસેપ્ટિક, લોહી શુદ્ધિકર્તા અને ચામડીના રોગોની દવા."
+    },
+    "parts_used": ["leaf", "bark", "seed"],
+    "growing_guide": {
+      "climate": { "en": "Hot tropical climate; sun-loving.", "hi": "गर्म धूप वाला स्थान।", "gu": "ગરમ અને તડકાવાળી જગ્યા." },
+      "soil": { "en": "Grows well in poor sandy soil.", "hi": "सामान्य मिट्टी में भी उगता है।", "gu": "સામાન્ય માટીમાં પણ ઉગે છે." },
+      "watering": { "en": "Minimal water needed after establishing.", "hi": "बड़ा होने पर बहुत कम पानी।", "gu": "મોટું થયા પછી નહિવત પાણી." },
+      "harvesting": { "en": "Pick fresh green leaves as required.", "hi": "आवश्यकतानुसार ताजे पत्ते तोड़ें।", "gu": "જરૂર મુજબ તાજા પાંદડા ચૂંટો." },
+      "pests": { "en": "Acts as its own natural pesticide.", "hi": "स्वयं कीटनाशक है।", "gu": "પોતે જ કીટનાશક છે." }
+    },
+    "availability_season": "year_round"
+  },
+  {
+    "id": "turmeric",
+    "name": { "en": "Raw Turmeric (Haldi)", "hi": "कच्ची हल्दी", "gu": "લીલી હળદર" },
+    "scientificName": "Curcuma longa",
+    "description": {
+      "en": "Anti-inflammatory, healing rhizome used for wound care, cough, and joint pains.",
+      "hi": "सूजन-रोधी, घाव भरने वाला और दर्द निवारक कंद।", "gu": "સોજા વિરોધી, વાગેલું રુઝવતો અને દર્દ શામક કંદ."
+    },
+    "parts_used": ["rhizome"],
+    "growing_guide": {
+      "climate": { "en": "Warm humid weather with partial shade.", "hi": "गर्म आर्द्र मौसम और हल्की छांव।", "gu": "ગરમ ભેજવાળું હવામાન અને છાંયડો." },
+      "soil": { "en": "Rich loose sandy loam with high compost.", "hi": "खाद युक्त भुरभुरी मिट्टी।", "gu": "ખાતર યુક્ત હળવી માટી." },
+      "watering": { "en": "Keep damp during growing season.", "hi": "फसल के दौरान मिट्टी नम रखें।", "gu": "પાક દરમિયાન માટીમાં ભેજ રાખો." },
+      "harvesting": { "en": "Harvest after 8 months when leaves wither.", "hi": "8 महीने बाद पत्तियां सूखने पर कंद खोदें।", "gu": "8 મહિને પાંદડા સુકાય ત્યારે હળદર કાઢો." },
+      "pests": { "en": "Avoid waterlogging to prevent rot.", "hi": "सड़न से बचाने के लिए जलजमाव न होने दें।", "gu": "સડાથી બચવા પાણી ભરાવા ન દો." }
+    },
+    "availability_season": "winter"
+  },
+  {
+    "id": "aloe_vera",
+    "name": { "en": "Aloe Vera (Ghritkumari)", "hi": "घृतकुमारी (एलोवेरा)", "gu": "કુંવારપાઠું (એલોવેરા)" },
+    "scientificName": "Aloe barbadensis",
+    "description": {
+      "en": "Succulent gel for skin burns, digestion, wound healing, and liver tonic.",
+      "hi": "त्वचा के जलने, पाचन और घाव भरने के लिए जेल युक्त पौधा।", "gu": "ચામડી દાઝવા પર, પાચન અને વાગેલું રુઝવવા માટે ઘાટો જેલ."
+    },
+    "parts_used": ["leaf_gel"],
+    "growing_guide": {
+      "climate": { "en": "Sunny warm dry location.", "hi": "धूप वाला गर्म शुष्क स्थान।", "gu": "તડકાવાળી ગરમ સૂકી જગ્યા." },
+      "soil": { "en": "Cactus or sandy fast-draining mix.", "hi": "रेतीली जल्दी सूखने वाली मिट्टी।", "gu": "રેતાળ નીતરી જતી માટી." },
+      "watering": { "en": "Water sparsely; let soil dry completely between waterings.", "hi": "बहुत कम पानी दें; मिट्टी पूरी सूखने दें।", "gu": "ઓછું પાણી આપો; માટી સુકાવા દો." },
+      "harvesting": { "en": "Cut outer thick plump leaves from base.", "hi": "नीचे की मोटी पत्तियों को चाकू से काटें।", "gu": "નીચેના કૂણા જાડા પાંદડા કાપો." },
+      "pests": { "en": "Overwatering causes root rot.", "hi": "अधिक पानी से जड़ सड़ती है।", "gu": "વધારે પાણીથી મૂળ સડે છે." }
+    },
+    "availability_season": "year_round"
+  },
+  {
+    "id": "mint",
+    "name": { "en": "Spearmint (Pudina)", "hi": "पुदीना", "gu": "ફુદીનો" },
+    "scientificName": "Mentha spicata",
+    "description": {
+      "en": "Cooling herb excellent for digestion, stomach cramps, nausea, and vomiting.",
+      "hi": "पाचन, पेट दर्द, मिचली और उल्टी में ठंडक देने वाली जड़ी-बूटी।", "gu": "પાચન, પેટનો દુખાવો, ઉબકા અને ઉલટીમાં ઠંડક આપતી વનસ્પતિ."
+    },
+    "parts_used": ["leaf"],
+    "growing_guide": {
+      "climate": { "en": "Mild warm climate with partial shade.", "hi": "हल्की छांव वाला मौसम।", "gu": "હળવા છાંયડાવાળું વાતાવરણ." },
+      "soil": { "en": "Moist, rich potting soil.", "hi": "नमी युक्त उपजाऊ मिट्टी।", "gu": "ભેજવાળી ફળદ્રુપ માટી." },
+      "watering": { "en": "Water daily; loves constant moisture.", "hi": "प्रतिदिन पानी दें; लगातार नमी पसंद है।", "gu": "દરરોજ પાણી આપો; ભેજ જરૂરી છે." },
+      "harvesting": { "en": "Snip stem tips regularly for continuous leaves.", "hi": "नियमित रूप से ऊपर की टहनियां काटें।", "gu": "નિયમિત રીતે ઉપરની ટીપો કાપો." },
+      "pests": { "en": "Check for caterpillars.", "hi": "इल्लियों से बचाएं।", "gu": "ઈયળોથી રક્ષણ કરો." }
+    },
+    "availability_season": "year_round"
+  },
+  {
+    "id": "ajwain",
+    "name": { "en": "Carom Plant / Ajwain Leaves", "hi": "अजवायन पत्ता", "gu": "અજમાનું પાન" },
+    "scientificName": "Trachyspermum ammi",
+    "description": {
+      "en": "Aromatic leaves with thymol, relieves gas, bloating, stomach pain, and colic.",
+      "hi": "गैस, पेट फूलने और पेट दर्द से तुरंत राहत देने वाले पत्ते।", "gu": "ગેસ, આફરો અને પેટના દુખાવામાં તુરંત આરામ આપતા પાંદડા."
+    },
+    "parts_used": ["leaf", "seed"],
+    "growing_guide": {
+      "climate": { "en": "Sunny pots or garden borders.", "hi": "धूप वाला स्थान।", "gu": "તડકાવાળી જગ્યા." },
+      "soil": { "en": "Standard garden soil.", "hi": "सामान्य बगीचे की मिट्टी।", "gu": "સામાન્ય બગીચાની માટી." },
+      "watering": { "en": "Water when dry.", "hi": "सूखने पर पानी दें।", "gu": "સુકાય ત્યારે પાણી આપો." },
+      "harvesting": { "en": "Pluck thick succulent leaves anytime.", "hi": "जरूरत पड़ने पर पत्ते तोड़ें।", "gu": "જરૂર હોય ત્યારે પાંદડા ચૂંટો." },
+      "pests": { "en": "Pest resistant due to strong aroma.", "hi": "तेज़ गंध के कारण कीट नहीं आते।", "gu": "તીવ્ર ગંધને કારણે જીવાત નથી આવતી." }
+    },
+    "availability_season": "year_round"
+  },
+  {
+    "id": "amla",
+    "name": { "en": "Indian Gooseberry (Amla)", "hi": "आंवला", "gu": "આંબળા" },
+    "scientificName": "Phyllanthus emblica",
+    "description": {
+      "en": "Rich natural Vitamin C source, rejuvenator, digestant, and hair/skin health builder.",
+      "hi": "विटामिन सी का अपार स्रोत, रसायन और पाचन शक्ति बढ़ाने वाला फल।", "gu": "વિટામિન સીનો ભરપૂર સ્ત્રોત, શક્તિવર્ધક અને પાચન સુધારે છે."
+    },
+    "parts_used": ["fruit", "leaf"],
+    "growing_guide": {
+      "climate": { "en": "Dry subtropical to tropical regions.", "hi": "शुष्क उष्णकटिबंधीय क्षेत्र।", "gu": "સૂકું અને ગરમ હવામાન." },
+      "soil": { "en": "Deep well-drained loam or light clay.", "hi": "गहरी और अच्छी जल निकास वाली मिट्टी।", "gu": "ઉંડી પાણી નીતરી જતી માટી." },
+      "watering": { "en": "Water young plants; adult trees survive droughts.", "hi": "छोटे पौधे को पानी दें, बड़ा पेड़ सूखा झेलता है।", "gu": "નાના છોડને પાણી આપો, મોટું વૃક્ષ સૂકારો સહન કરે છે." },
+      "harvesting": { "en": "Harvest translucent greenish-yellow fruits in winter.", "hi": "सर्दियों में हरे-पीले फल तोड़ें।", "gu": "શિયાળામાં લીલાશ પડતા પીળા ફળ ચૂંટો." },
+      "pests": { "en": "Watch for bark-eating caterpillars.", "hi": "छाल खाने वाले कीड़ों से बचाएं।", "gu": "છાલ ખાતી જીવાતથી રક્ષણ કરો." }
+    },
+    "availability_season": "winter"
+  },
+  {
+    "id": "coriander",
+    "name": { "en": "Fresh Coriander (Dhaniya)", "hi": "हरा धनिया", "gu": "લીલા ધાણા" },
+    "scientificName": "Coriandrum sativum",
+    "description": {
+      "en": "Cooling herb used for burning sensation, UTI relief, fever tea, and digestion.",
+      "hi": "शरीर की जलन, पेशाब की जलन और पाचन में ठंडक देने वाली पत्तियां।", "gu": "શરીરની બળતરા, પેશાબની બળતરા અને પાચનમાં ઠંડક આપતા ધાણા."
+    },
+    "parts_used": ["leaf", "seed"],
+    "growing_guide": {
+      "climate": { "en": "Cool weather crops, full sun in winter.", "hi": "ठंडा मौसम और हल्की धूप।", "gu": "ઠંડુ હવામાન અને આછો તડકો." },
+      "soil": { "en": "Rich organic loamy soil.", "hi": "खाद युक्त उपजाऊ मिट्टी।", "gu": "ખાતર યુક્ત ફળદ્રુપ માટી." },
+      "watering": { "en": "Water gently to keep soil moist.", "hi": "हल्का पानी देकर नमी बनाए रखें।", "gu": "હળવું પાણી આપી ભેજ જાળવો." },
+      "harvesting": { "en": "Harvest whole stems when 4-6 inches tall.", "hi": "4-6 इंच लंबे होने पर टहनियां काटें।", "gu": "4-6 ઇંચ લાંબા થાય ત્યારે છોડ કાપો." },
+      "pests": { "en": "Susceptible to powdery mildew if crowded.", "hi": "ज्यादा घने होने पर फफूंद से बचाएं।", "gu": "વધુ ઘાટા હોય તો ફૂગથી બચાવો." }
+    },
+    "availability_season": "winter"
+  },
+  {
+    "id": "curry_leaves",
+    "name": { "en": "Curry Leaves (Kadi Patta)", "hi": "कड़ी पत्ता (मीठा नीम)", "gu": "મીઠો લીમડો" },
+    "scientificName": "Murraya koenigii",
+    "description": {
+      "en": "Aromatic leaves beneficial for anemia, blood sugar control, diarrhea, and hair.",
+      "hi": "एनीमिया, ब्लड शुगर, दस्त और बालों के स्वास्थ्य के लिए उत्तम पत्ते।", "gu": "એનિમીયા, બ્લડ શુગર, ઝાડા અને વાળના સ્વાસ્થ્ય માટે ઉત્તમ."
+    },
+    "parts_used": ["leaf"],
+    "growing_guide": {
+      "climate": { "en": "Warm sunny location.", "hi": "धूप वाला स्थान।", "gu": "તડકાવાળી જગ્યા." },
+      "soil": { "en": "Slightly acidic fertile soil.", "hi": "उपजाऊ मिट्टी।", "gu": "ફળદ્રુપ માટી." },
+      "watering": { "en": "Allow soil surface to dry between waterings.", "hi": "मिट्टी सूखने पर पानी दें।", "gu": "માટી સુકાય ત્યારે પાણી આપો." },
+      "harvesting": { "en": "Pick full leaf sprigs.", "hi": "पत्तियों की टहनियां तोड़ें।", "gu": "પાંદડાની ડાળી ચૂંટો." },
+      "pests": { "en": "Watch for citrus caterpillars.", "hi": "कीड़ों से बचाएं।", "gu": "જીવાત સામે રક્ષણ કરો." }
+    },
+    "availability_season": "year_round"
+  },
+  {
+    "id": "guava_leaves",
+    "name": { "en": "Guava Tree Leaves", "hi": "अमरूद के पत्ते", "gu": "જામફળના પાન" },
+    "scientificName": "Psidium guajava",
+    "description": {
+      "en": "Astringent leaves effective for acute diarrhea, mouth ulcers, and toothache.",
+      "hi": "दस्त, मुंह के छाले और दांत दर्द में असरदार कसैले पत्ते।", "gu": "ઝાડા, મોંના ચાંદા અને દાંતના દુખાવામાં અસરકારક પાંદડા."
+    },
+    "parts_used": ["leaf"],
+    "growing_guide": {
+      "climate": { "en": "Full tropical sun.", "hi": "पूर्ण उष्णकटिबंधीय धूप।", "gu": "પૂરો તડકો." },
+      "soil": { "en": "Adaptable to various soils.", "hi": "हर मिट्टी में उपयुक्त।", "gu": "દરેક માટીમાં અનુકૂળ." },
+      "watering": { "en": "Water during dry spells.", "hi": "सूखे मौसम में पानी दें।", "gu": "સૂકા હવામાનમાં પાણી આપો." },
+      "harvesting": { "en": "Pick tender young top leaves.", "hi": "ऊपर के कोमल ताजे पत्ते तोड़ें।", "gu": "ઉપરના કૂણા પાંદડા ચૂંટો." },
+      "pests": { "en": "Hardy fruit tree.", "hi": "मजबूत पेड़।", "gu": "મજબૂત વૃક્ષ." }
+    },
+    "availability_season": "year_round"
+  },
+  {
+    "id": "shatavari",
+    "name": { "en": "Shatavari (Wild Asparagus)", "hi": "शतावरी", "gu": "શતાવરી" },
+    "scientificName": "Asparagus racemosus",
+    "description": {
+      "en": "Rejuvenative female tonic, galactagogue (breast milk booster), and acidity soothing root.",
+      "hi": "महिलाओं के लिए शक्तिवर्धक, स्तनपान में दूध बढ़ाने वाली और एसिडिटी शांत करने वाली जड़ी-बूटी।", "gu": "મહિલાઓ માટે શક્તિવર્ધક, ધાત્રી માતાઓ માટે દૂધ વધારતી અને એસિડિટી શાંત કરતી ઔષધિ."
+    },
+    "parts_used": ["root"],
+    "growing_guide": {
+      "climate": { "en": "Tropical climate with partial shade.", "hi": "हल्की छांव वाला गर्म मौसम।", "gu": "હળવા છાંયડાવાળું વાતાવરણ." },
+      "soil": { "en": "Deep porous sandy loam.", "hi": "गहरी रेतीली भुरभुरी मिट्टी।", "gu": "ઉંડી પોચી માટી." },
+      "watering": { "en": "Moderate watering.", "hi": "मजबूत जड़ों के लिए मध्यम पानी।", "gu": "મધ્યમ પાણી આપો." },
+      "harvesting": { "en": "Dig tubers after 1.5 - 2 years.", "hi": "1.5 - 2 साल बाद जड़ें खोदें।", "gu": "1.5 - 2 વર્ષ પછી મૂળ ખોદો." },
+      "pests": { "en": "Tuberous roots resist most insects.", "hi": "कीड़ों से सुरक्षित।", "gu": "જીવાત સામે સુરક્ષિત." }
+    },
+    "availability_season": "year_round"
+  },
+  {
+    "id": "ashwagandha",
+    "name": { "en": "Ashwagandha (Indian Ginseng)", "hi": "अश्वगंधा", "gu": "અશ્વગંધા" },
+    "scientificName": "Withania somnifera",
+    "description": {
+      "en": "Adaptogen root for stress relief, stamina, muscle strength, and general weakness.",
+      "hi": "तनाव दूर करने, शारीरिक ताकत और कमजोरी मिटाने वाली दिव्य जड़ी-बूटी।", "gu": "તણાવ દૂર કરતી, શારીરિક તાકાત અને નબળાઈ મટાડતી દિવ્ય ઔષધિ."
+    },
+    "parts_used": ["root", "leaf"],
+    "growing_guide": {
+      "climate": { "en": "Dry warm weather.", "hi": "शुष्क गर्म मौसम।", "gu": "સૂકું ગરમ વાતાવરણ." },
+      "soil": { "en": "Sandy well-drained soil with low moisture.", "hi": "रेतीली सूखी मिट्टी।", "gu": "રેતાળ સૂકી માટી." },
+      "watering": { "en": "Low water requirement.", "hi": "कम पानी दें।", "gu": "ઓછું પાણી આપો." },
+      "harvesting": { "en": "Uproot 150-180 days after sowing when berries ripen.", "hi": "लाल फल आने पर 5-6 महीने में उखाड़ें।", "gu": "લાલ ફળ આવે ત્યારે 5-6 મહિને ઉખાડો." },
+      "pests": { "en": "Watch for leaf spot fungus.", "hi": "पत्तियों के धब्बों से बचाएं।", "gu": "પાંદડાના ડાઘા સામે રક્ષણ કરો." }
+    },
+    "availability_season": "winter"
+  },
+  {
+    "id": "brahmi",
+    "name": { "en": "Brahmi (Water Hyssop)", "hi": "ब्राह्मी", "gu": "બ્રાહ્મી" },
+    "scientificName": "Bacopa monnieri",
+    "description": {
+      "en": "Creeping herb famed for memory boost, mental calm, anxiety reduction, and sleep.",
+      "hi": "स्मरण शक्ति बढ़ाने, मानसिक शांति और तनाव कम करने वाली जड़ी-बूटी।", "gu": "યાદશક્તિ વધારવા, માનસિક શાંતિ અને તણાવ દૂર કરવા માટે જાણીતી વનસ્પતિ."
+    },
+    "parts_used": ["whole_plant", "leaf"],
+    "growing_guide": {
+      "climate": { "en": "Warm marshy, wetland, or shady location.", "hi": "आर्द्र, दलदली या छांव वाली जगह।", "gu": "ભેજવાળી, કાદવવાળી કે છાંયડાવાળી જગ્યા." },
+      "soil": { "en": "Rich wet mud or hydroponic pot.", "hi": "गीली उपजाऊ कीचड़/मिट्टी।", "gu": "ભીની ફળદ્રુપ કાદવ માટી." },
+      "watering": { "en": "Keep thoroughly wet or submerged at base.", "hi": "हमेशा गीला रखें, पानी भरा रहे।", "gu": "હંમેશા ભીનું રાખો, પાણી ભરેલું રહે." },
+      "harvesting": { "en": "Trim trailing leafy stems.", "hi": "फैलती हुई पत्तियों वाली टहनियां काटें।", "gu": "ફેલાતી પાંદડાવાળી ડાળી કાપો." },
+      "pests": { "en": "Protected by high moisture.", "hi": "कीटमुक्त।", "gu": "જીવાતમુક્ત." }
+    },
+    "availability_season": "year_round"
+  },
+  {
+    "id": "haritaki",
+    "name": { "en": "Haritaki (Hardode)", "hi": "हरड़ (हरितकी)", "gu": "હરડે (હરીતકી)" },
+    "scientificName": "Terminalia chebula",
+    "description": {
+      "en": "Premier digestive cleanser, bowel regulator, and main component of Triphala.",
+      "hi": "पेट साफ करने, कब्ज मिटाने और त्रिफला का मुख्य घटक।", "gu": "પેટ સાફ કરતી, કબજિયાત મટાડતી અને ત્રિફળાનું મુખ્ય ઘટક."
+    },
+    "parts_used": ["fruit"],
+    "growing_guide": {
+      "climate": { "en": "Warm sub-tropical forests.", "hi": "गर्म उप-उष्णकटिबंधीय मौसम।", "gu": "ગરમ વાતાવરણ." },
+      "soil": { "en": "Deep loamy clay with good drainage.", "hi": "गहरी दोमट मिट्टी।", "gu": "ઉંડી પાણી નીતરી જતી માટી." },
+      "watering": { "en": "Regular sapling care.", "hi": "पौधे की शुरुआती देखभाल।", "gu": "નાના છોડની નિયમિત સંભાળ." },
+      "harvesting": { "en": "Pick ribbed dried fruits in winter.", "hi": "सर्दियों में पके फल सुखाकर एकत्र करें।", "gu": "શિયાળામાં પાકા ફળ એકઠા કરો." },
+      "pests": { "en": "Forest tree species.", "hi": "सहनशील पेड़।", "gu": "મજબૂત વૃક્ષ." }
+    },
+    "availability_season": "winter"
+  },
+  {
+    "id": "bibhitaki",
+    "name": { "en": "Bibhitaki (Baheda)", "hi": "बहेड़ा (बिभीतकी)", "gu": "બહેડા (બિભીતકી)" },
+    "scientificName": "Terminalia bellirica",
+    "description": {
+      "en": "Respiratory phlegm reducer, sore throat remedy, and Triphala ingredient.",
+      "hi": "कफ दूर करने, गले की खराश और त्रिफला का महत्वपूर्ण घटक।", "gu": "કફ દૂર કરતો, ગળાની ખારાશ અને ત્રિફળાનો મહત્વનો ભાગ."
+    },
+    "parts_used": ["fruit"],
+    "growing_guide": {
+      "climate": { "en": "Dry warm environment.", "hi": "शुष्क गर्म जलवायु।", "gu": "સૂકું વાતાવરણ." },
+      "soil": { "en": "Sandy clay soil.", "hi": "बलुई मिट्टी।", "gu": "રેતાળ માટી." },
+      "watering": { "en": "Low watering once established.", "hi": "कम पानी की आवश्यकता।", "gu": "ઓછા પાણીની જરૂર." },
+      "harvesting": { "en": "Collect fallen mature fruits.", "hi": "गिरे हुए पके फल चुनें।", "gu": "નીચે પડેલા પાકા ફળ એકઠા કરો." },
+      "pests": { "en": "Hardy tree.", "hi": "मजबूत।", "gu": "મજબૂત." }
+    },
+    "availability_season": "winter"
+  },
+  {
+    "id": "kutaja",
+    "name": { "en": "Kutaja Bark (Holarrhena)", "hi": "कुटज (इन्द्रजौ)", "gu": "કુટજ (ઇન્દ્રજવ)" },
+    "scientificName": "Holarrhena antidysenterica",
+    "description": {
+      "en": "Classic herb for amoebic dysentery, severe diarrhea, and intestinal bleeding.",
+      "hi": "पेचिश, मरोड़ और दस्त की अचूक पारंपरिक औषधि।", "gu": "મરડો, ઝાડા અને ચુંક સામે અચૂક આયુર્વેદિક દવા."
+    },
+    "parts_used": ["bark", "seed"],
+    "growing_guide": {
+      "climate": { "en": "Tropical dry deciduous forest climate.", "hi": "गर्म पर्णपाती मौसम।", "gu": "ગરમ હવામાન." },
+      "soil": { "en": "Rocky, well-drained slope soil.", "hi": "पथरीली ढलान वाली मिट्टी।", "gu": "પથરાળ માટી." },
+      "watering": { "en": "Drought tolerant.", "hi": "कम पानी में जीवित।", "gu": "ઓછા પાણીમાં જીવી શકે." },
+      "harvesting": { "en": "Peel stem bark strips carefully.", "hi": "सावधानी से तने की छाल निकालें।", "gu": "સંભાળીને થડની છાલ ઉતારો." },
+      "pests": { "en": "Minimal pest issues.", "hi": "कीट कम।", "gu": "જીવાત નહિવત." }
+    },
+    "availability_season": "year_round"
+  },
+  {
+    "id": "punarnava",
+    "name": { "en": "Punarnava (Boerhavia)", "hi": "पुनर्नवा", "gu": "પુનર્નવા" },
+    "scientificName": "Boerhavia diffusa",
+    "description": {
+      "en": "Renowned diuretic, reduces water retention, swelling (edema), and clears kidney/liver toxins.",
+      "hi": "सूजन दूर करने, गुर्दे व लिवर के विषैले तत्व निकालने वाली औषधि।", "gu": "સોજા દૂર કરતી, કિડની અને લીવરના ઝેરી તત્વો દૂર કરતી ઔષધિ."
+    },
+    "parts_used": ["root", "whole_plant"],
+    "growing_guide": {
+      "climate": { "en": "Sunny dry waste lands or garden beds.", "hi": "धूप वाला स्थान।", "gu": "તડકાવાળી જગ્યા." },
+      "soil": { "en": "Sandy loam.", "hi": "रेतीली मिट्टी।", "gu": "રેતાળ માટી." },
+      "watering": { "en": "Water lightly.", "hi": "हल्का पानी दें।", "gu": "હળવું પાણી આપો." },
+      "harvesting": { "en": "Dig taproot in winter.", "hi": "सर्दियों में जड़ें निकालें।", "gu": "શિયાળામાં મૂળ કાઢો." },
+      "pests": { "en": "Very hardy weed-like plant.", "hi": "अत्यंत मजबूत पौधा।", "gu": "ખૂબ મજબૂત છોડ." }
+    },
+    "availability_season": "year_round"
+  },
+  {
+    "id": "nirgundi",
+    "name": { "en": "Nirgundi (Five-leaved Chaste Tree)", "hi": "निर्गुंडी (संभाळू)", "gu": "નિરગુંડી (નગોડ)" },
+    "scientificName": "Vitex negundo",
+    "description": {
+      "en": "Analgesic and anti-inflammatory leaves for joint pain, arthritis, muscle ache, and swelling.",
+      "hi": "जोड़ों के दर्द, गठिया और मांसपेशियों के खिंचाव के लिए सूजन-रोधी पत्ते।", "gu": "સાંધાના દુખાવા, ગઠિયા અને સ્નાયુના દુખાવા માટે ઉત્તમ પાંદડા."
+    },
+    "parts_used": ["leaf"],
+    "growing_guide": {
+      "climate": { "en": "Warm tropical climate.", "hi": "गर्म स्थान।", "gu": "ગરમ હવામાન." },
+      "soil": { "en": "Adaptable to all soil types.", "hi": "किसी भी मिट्टी में उपयुक्त।", "gu": "કોઈપણ માટીમાં અનુકૂળ." },
+      "watering": { "en": "Water occasionally.", "hi": "कभी-कभी पानी दें।", "gu": "ક્યારેક ક્યારેક પાણી આપો." },
+      "harvesting": { "en": "Pick fresh leaves for poultice or oil.", "hi": "लेप या काढ़े के लिए पत्ते तोड़ें।", "gu": "લેપ કે ક્વાથ માટે પાંદડા ચૂંટો." },
+      "pests": { "en": "Insect repellent foliage.", "hi": "कीटों को दूर भगाता है।", "gu": "જીવાતને દૂર ભગાડે છે." }
+    },
+    "availability_season": "year_round"
+  },
+  {
+    "id": "parijat",
+    "name": { "en": "Parijat / Night Jasmine (Harsingar)", "hi": "पारिजात (हरसिंगार)", "gu": "પારિજાત (હરસિંગાર)" },
+    "scientificName": "Nyctanthes arbor-tristis",
+    "description": {
+      "en": "Classic leaves for chronic sciatica, joint stiffness, fever, and arthritis remedy.",
+      "hi": "साइटिका, जोड़ों की जकड़न, बुखार और गठिया के दर्द में असरदार पत्ते।", "gu": "સાયટિકા, સાંધાની અકડન, તાવ અને ગઠિયાના દુખાવામાં અસરકારક પાંદડા."
+    },
+    "parts_used": ["leaf", "flower"],
+    "growing_guide": {
+      "climate": { "en": "Sunny or semi-shaded location.", "hi": "धूप या हल्की छांव वाला स्थान।", "gu": "તડકો કે હળવો છાંયડો." },
+      "soil": { "en": "Rich fertile soil with proper drainage.", "hi": "उपजाऊ अच्छी जल निकासी वाली मिट्टी।", "gu": "ફળદ્રુપ માટી." },
+      "watering": { "en": "Water when top soil dries.", "hi": "मिट्टी सूखने पर पानी दें।", "gu": "માટી સુકાય ત્યારે પાણી આપો." },
+      "harvesting": { "en": "Harvest rough dark green leaves.", "hi": "खुरदरे हरे पत्ते तोड़ें।", "gu": "ખરબચડા લીલા પાંદડા ચૂંટો." },
+      "pests": { "en": "Resistant tree shrub.", "hi": "प्रतिरोधी।", "gu": "જીવાત સામે પ્રતિકારક." }
+    },
+    "availability_season": "year_round"
+  }
+]

@@ -1,0 +1,548 @@
+[
+  {
+    "id": "bcg_birth",
+    "vaccine": "BCG",
+    "name": {
+      "en": "BCG Vaccine",
+      "hi": "बीसीजी का टीका",
+      "gu": "બીસીજી રસી"
+    },
+    "age_days": 0,
+    "age_label": {
+      "en": "At birth",
+      "hi": "जन्म पर",
+      "gu": "જન્મ સમયે"
+    },
+    "dose": "1st Dose",
+    "description": {
+      "en": "Protects against Tuberculosis (TB) and severe tubercular meningitis.",
+      "hi": "टीबी और तपेदिक मेनिनजाइटिस से बचाव करता है।",
+      "gu": "ટીબી રોગ સામે રક્ષણ આપે છે."
+    }
+  },
+  {
+    "id": "opv_0",
+    "vaccine": "OPV",
+    "name": {
+      "en": "Oral Polio Vaccine (OPV 0)",
+      "hi": "ओरल पोलिओ वैक्सीन (OPV 0)",
+      "gu": "ઓરલ પોલિયો રસી (OPV 0)"
+    },
+    "age_days": 0,
+    "age_label": {
+      "en": "At birth",
+      "hi": "जन्म पर",
+      "gu": "જન્મ સમયે"
+    },
+    "dose": "Zero Dose",
+    "description": {
+      "en": "Oral drops to protect against Poliomyelitis.",
+      "hi": "पोलियो से बचाव के लिए ओरल ड्रॉप्स।",
+      "gu": "પોલિયો સામે રક્ષણ આપતા ટીપાં."
+    }
+  },
+  {
+    "id": "hepb_birth",
+    "vaccine": "Hepatitis B",
+    "name": {
+      "en": "Hepatitis B Birth Dose",
+      "hi": "हेपेटाइटिस बी (जन्म खुराक)",
+      "gu": "હેપેટાઇટિસ બી રસી"
+    },
+    "age_days": 0,
+    "age_label": {
+      "en": "At birth (within 24 hrs)",
+      "hi": "जन्म पर (24 घंटे के भीतर)",
+      "gu": "જન્મ સમયે (૨૪ કલાકમાં)"
+    },
+    "dose": "Birth Dose",
+    "description": {
+      "en": "Prevents perinatal transmission of Hepatitis B virus.",
+      "hi": "माँ से शिशु में हेपेटाइटिस बी के प्रसार को रोकता है।",
+      "gu": "માતામાંથી બાળકમાં હેપેટાઇટિસ વાયરસ અટકાવે છે."
+    }
+  },
+  {
+    "id": "opv_1",
+    "vaccine": "OPV",
+    "name": {
+      "en": "OPV 1st Dose",
+      "hi": "ओरल पोलिओ (1ली खुराक)",
+      "gu": "ઓરલ પોલિયો (૧લો ડોઝ)"
+    },
+    "age_days": 42,
+    "age_label": {
+      "en": "6 weeks",
+      "hi": "6 सप्ताह",
+      "gu": "૬ અઠવાડિયા"
+    },
+    "dose": "1st Dose",
+    "description": {
+      "en": "Polio oral drops at 6 weeks.",
+      "hi": "6 सप्ताह पर पोलियो ड्रॉप्स।",
+      "gu": "૬ અઠવાડિયે પોલિયો ટીપાં."
+    }
+  },
+  {
+    "id": "penta_1",
+    "vaccine": "Pentavalent",
+    "name": {
+      "en": "Pentavalent 1",
+      "hi": "पेंटावेलेंट 1",
+      "gu": "પેન્ટાવેલન્ટ ૧"
+    },
+    "age_days": 42,
+    "age_label": {
+      "en": "6 weeks",
+      "hi": "6 सप्ताह",
+      "gu": "૬ અઠવાડિયા"
+    },
+    "dose": "1st Dose",
+    "description": {
+      "en": "5-in-1 vaccine: Diphtheria, Pertussis, Tetanus, Hepatitis B, and Hib.",
+      "hi": "5-इन-1 टीका: डिप्थीरिया, काली खांसी, टिटनेस, हेपेटाइटिस बी और हिब।",
+      "gu": "૫ રોગો સામે રક્ષણ આપતી રસી."
+    }
+  },
+  {
+    "id": "rotavirus_1",
+    "vaccine": "Rotavirus",
+    "name": {
+      "en": "Rotavirus Vaccine 1",
+      "hi": "रोटावायरस वैक्सीन 1",
+      "gu": "રોટાવાયરસ રસી ૧"
+    },
+    "age_days": 42,
+    "age_label": {
+      "en": "6 weeks",
+      "hi": "6 सप्ताह",
+      "gu": "૬ અઠવાડિયા"
+    },
+    "dose": "1st Dose",
+    "description": {
+      "en": "Oral drops preventing severe rotavirus diarrhea in infants.",
+      "hi": "रोटावायरस जनित दस्त से बचाव के लिए ओरल बूंदें।",
+      "gu": "ગંભીર ઝાડા સામે રક્ષણ આપતા ટીપાં."
+    }
+  },
+  {
+    "id": "fipv_1",
+    "vaccine": "fIPV",
+    "name": {
+      "en": "fIPV 1 (Fractional IPV)",
+      "hi": "एफ-आईपीवी 1",
+      "gu": "એફ-આઈપીવી ૧"
+    },
+    "age_days": 42,
+    "age_label": {
+      "en": "6 weeks",
+      "hi": "6 सप्ताह",
+      "gu": "૬ અઠવાડિયા"
+    },
+    "dose": "1st Dose",
+    "description": {
+      "en": "Intradermal fractional Inactivated Polio Vaccine.",
+      "hi": "पोलियो सुरक्षा के लिए इंट्राडर्मल एफ-आईपीवी।",
+      "gu": "પોલિયો વિરોધી રસી."
+    }
+  },
+  {
+    "id": "pcv_1",
+    "vaccine": "PCV",
+    "name": {
+      "en": "Pneumococcal Conjugate (PCV 1)",
+      "hi": "न्यूमोकोकल वैक्सीन (PCV 1)",
+      "gu": "ન્યુમોકોકલ રસી (PCV ૧)"
+    },
+    "age_days": 42,
+    "age_label": {
+      "en": "6 weeks",
+      "hi": "6 सप्ताह",
+      "gu": "૬ અઠવાડિયા"
+    },
+    "dose": "1st Dose",
+    "description": {
+      "en": "Protects against severe Pneumococcal pneumonia and meningitis.",
+      "hi": "न्यूमोकोकल निमोनिया और दिमागी बुखार से सुरक्षा।",
+      "gu": "ન્યુમોનિયા સામે રક્ષણ."
+    }
+  },
+  {
+    "id": "opv_2",
+    "vaccine": "OPV",
+    "name": {
+      "en": "OPV 2nd Dose",
+      "hi": "ओरल पोलिओ (2री खुराक)",
+      "gu": "ઓરલ પોલિયો (૨જો ડોઝ)"
+    },
+    "age_days": 70,
+    "age_label": {
+      "en": "10 weeks",
+      "hi": "10 सप्ताह",
+      "gu": "૧૦ અઠવાડિયા"
+    },
+    "dose": "2nd Dose",
+    "description": {
+      "en": "Polio oral drops at 10 weeks.",
+      "hi": "10 सप्ताह पर पोलियो ड्रॉप्स।",
+      "gu": "૧૦ અઠવાડિયે પોલિયો ટીપાં."
+    }
+  },
+  {
+    "id": "penta_2",
+    "vaccine": "Pentavalent",
+    "name": {
+      "en": "Pentavalent 2",
+      "hi": "पेंटावेलेंट 2",
+      "gu": "પેન્ટાવેલન્ટ ૨"
+    },
+    "age_days": 70,
+    "age_label": {
+      "en": "10 weeks",
+      "hi": "10 सप्ताह",
+      "gu": "૧૦ અઠવાડિયા"
+    },
+    "dose": "2nd Dose",
+    "description": {
+      "en": "2nd dose of 5-in-1 Pentavalent vaccine.",
+      "hi": "पेंटावेलेंट टीके की दूसरी खुराक।",
+      "gu": "પેન્ટાવેલન્ટ રસીનો ૨જો ડોઝ."
+    }
+  },
+  {
+    "id": "rotavirus_2",
+    "vaccine": "Rotavirus",
+    "name": {
+      "en": "Rotavirus Vaccine 2",
+      "hi": "रोटावायरस वैक्सीन 2",
+      "gu": "રોટાવાયરસ રસી ૨"
+    },
+    "age_days": 70,
+    "age_label": {
+      "en": "10 weeks",
+      "hi": "10 सप्ताह",
+      "gu": "૧૦ અઠવાડિયા"
+    },
+    "dose": "2nd Dose",
+    "description": {
+      "en": "2nd dose of Rotavirus oral drops.",
+      "hi": "रोटावायरस ड्रॉप्स की दूसरी खुराक।",
+      "gu": "રોટાવાયરસ ટીપાંનો ૨જો ડોઝ."
+    }
+  },
+  {
+    "id": "opv_3",
+    "vaccine": "OPV",
+    "name": {
+      "en": "OPV 3rd Dose",
+      "hi": "ओरल पोलिओ (3री खुराक)",
+      "gu": "ઓરલ પોલિયો (૩જો ડોઝ)"
+    },
+    "age_days": 98,
+    "age_label": {
+      "en": "14 weeks",
+      "hi": "14 सप्ताह",
+      "gu": "૧૪ અઠવાડિયા"
+    },
+    "dose": "3rd Dose",
+    "description": {
+      "en": "Polio oral drops at 14 weeks.",
+      "hi": "14 सप्ताह पर पोलियो ड्रॉप्स।",
+      "gu": "૧૪ અઠવાડિયે પોલિયો ટીપાં."
+    }
+  },
+  {
+    "id": "penta_3",
+    "vaccine": "Pentavalent",
+    "name": {
+      "en": "Pentavalent 3",
+      "hi": "पेंटावेलेंट 3",
+      "gu": "પેન્ટાવેલન્ટ ૩"
+    },
+    "age_days": 98,
+    "age_label": {
+      "en": "14 weeks",
+      "hi": "14 सप्ताह",
+      "gu": "૧૪ અઠવાડિયા"
+    },
+    "dose": "3rd Dose",
+    "description": {
+      "en": "3rd dose of 5-in-1 Pentavalent vaccine.",
+      "hi": "पेंटावेलेंट टीके की तीसरी खुराक।",
+      "gu": "પેન્ટાવેલન્ટ રસીનો ૩જો ડોઝ."
+    }
+  },
+  {
+    "id": "rotavirus_3",
+    "vaccine": "Rotavirus",
+    "name": {
+      "en": "Rotavirus Vaccine 3",
+      "hi": "रोटावायरस वैक्सीन 3",
+      "gu": "રોટાવાયરસ રસી ૩"
+    },
+    "age_days": 98,
+    "age_label": {
+      "en": "14 weeks",
+      "hi": "14 सप्ताह",
+      "gu": "૧૪ અઠવાડિયા"
+    },
+    "dose": "3rd Dose",
+    "description": {
+      "en": "3rd dose of Rotavirus oral drops.",
+      "hi": "रोटावायरस की तीसरी खुराक।",
+      "gu": "રોટાવાયરસનો ૩જો ડોઝ."
+    }
+  },
+  {
+    "id": "fipv_2",
+    "vaccine": "fIPV",
+    "name": {
+      "en": "fIPV 2 (Fractional IPV)",
+      "hi": "एफ-आईपीवी 2",
+      "gu": "એફ-આઈપીવી ૨"
+    },
+    "age_days": 98,
+    "age_label": {
+      "en": "14 weeks",
+      "hi": "14 सप्ताह",
+      "gu": "૧૪ અઠવાડિયા"
+    },
+    "dose": "2nd Dose",
+    "description": {
+      "en": "2nd dose of Fractional Inactivated Polio Vaccine.",
+      "hi": "एफ-आईपीवी की दूसरी खुराक।",
+      "gu": "એફ-આઈપીવીનો ૨જો ડોઝ."
+    }
+  },
+  {
+    "id": "pcv_2",
+    "vaccine": "PCV",
+    "name": {
+      "en": "PCV 2nd Dose",
+      "hi": "पीसीवी (2री खुराक)",
+      "gu": "પીસીવી (૨જો ડોઝ)"
+    },
+    "age_days": 98,
+    "age_label": {
+      "en": "14 weeks",
+      "hi": "14 सप्ताह",
+      "gu": "૧૪ અઠવાડિયા"
+    },
+    "dose": "2nd Dose",
+    "description": {
+      "en": "2nd dose of Pneumococcal Conjugate Vaccine.",
+      "hi": "न्यूमोकोकल टीके की दूसरी खुराक।",
+      "gu": "ન્યુમોકોકલ રસીનો ૨જો ડોઝ."
+    }
+  },
+  {
+    "id": "mr_1",
+    "vaccine": "MR",
+    "name": {
+      "en": "Measles & Rubella (MR 1st Dose)",
+      "hi": "खसरा एवं रूबेला (एमआर 1ली खुराक)",
+      "gu": "ઓરી અને રૂબેલા (MR ૧લો ડોઝ)"
+    },
+    "age_days": 270,
+    "age_label": {
+      "en": "9-12 months",
+      "hi": "9-12 महीने",
+      "gu": "૯-૧૨ મહિના"
+    },
+    "dose": "1st Dose",
+    "description": {
+      "en": "Protects against Measles and Rubella infections.",
+      "hi": "खसरा और रूबेला संक्रमण से बचाव।",
+      "gu": "ઓરી અને રૂબેલા સામે રક્ષણ."
+    }
+  },
+  {
+    "id": "je_1",
+    "vaccine": "JE",
+    "name": {
+      "en": "Japanese Encephalitis (JE 1)",
+      "hi": "जापानी एन्सेफलाइटिस (जेई 1)",
+      "gu": "જાપાનીઝ એન્સેફાલાઇટિસ (JE ૧)"
+    },
+    "age_days": 270,
+    "age_label": {
+      "en": "9-12 months",
+      "hi": "9-12 महीने",
+      "gu": "૯-૧૨ મહિના"
+    },
+    "dose": "1st Dose",
+    "description": {
+      "en": "Protects against Japanese Encephalitis viral brain infection.",
+      "hi": "दिमागी बुखार (जापानी एन्सेफलाइटिस) से बचाव।",
+      "gu": "મગજના તાવ સામે રક્ષણ."
+    }
+  },
+  {
+    "id": "pcv_booster",
+    "vaccine": "PCV",
+    "name": {
+      "en": "PCV Booster",
+      "hi": "पीसीवी बूस्टर",
+      "gu": "પીસીવી બૂસ્ટર"
+    },
+    "age_days": 270,
+    "age_label": {
+      "en": "9-12 months",
+      "hi": "9-12 महीने",
+      "gu": "૯-૧૨ મહિના"
+    },
+    "dose": "Booster",
+    "description": {
+      "en": "Booster dose for long term pneumococcal immunity.",
+      "hi": "दीर्घकालिक निमोनिया सुरक्षा के लिए बूस्टर खुराक।",
+      "gu": "લાંબા ગાળાના રક્ષણ માટે બૂસ્ટર ડોઝ."
+    }
+  },
+  {
+    "id": "vit_a_1",
+    "vaccine": "Vitamin A",
+    "name": {
+      "en": "Vitamin A (1st Dose)",
+      "hi": "विटामिन ए (1ली खुराक)",
+      "gu": "વિટામિન એ (૧લો ડોઝ)"
+    },
+    "age_days": 270,
+    "age_label": {
+      "en": "9 months",
+      "hi": "9 महीने",
+      "gu": "૯ મહિના"
+    },
+    "dose": "1st Dose (1 Lakh IU)",
+    "description": {
+      "en": "Oral liquid dose preventing night blindness and strengthening immunity.",
+      "hi": "रतौंधी से बचाव और रोग प्रतिरोधक क्षमता बढ़ाने के लिए सिरप।",
+      "gu": "રતાંધળાપણું અટકાવવા માટે દ્રાવણ."
+    }
+  },
+  {
+    "id": "mr_2",
+    "vaccine": "MR",
+    "name": {
+      "en": "MR 2nd Dose",
+      "hi": "एमआर 2री खुराक",
+      "gu": "MR ૨જો ડોઝ"
+    },
+    "age_days": 480,
+    "age_label": {
+      "en": "16-24 months",
+      "hi": "16-24 महीने",
+      "gu": "૧૬-૨૪ મહિના"
+    },
+    "dose": "2nd Dose",
+    "description": {
+      "en": "2nd dose of Measles & Rubella vaccine.",
+      "hi": "खसरा-रूबेला की दूसरी खुराक।",
+      "gu": "ઓરી-રૂબેલાનો ૨જો ડોઝ."
+    }
+  },
+  {
+    "id": "dpt_booster_1",
+    "vaccine": "DPT",
+    "name": {
+      "en": "DPT 1st Booster",
+      "hi": "डीपीटी 1ला बूस्टर",
+      "gu": "ડીપીટી ૧લો બૂસ્ટર"
+    },
+    "age_days": 480,
+    "age_label": {
+      "en": "16-24 months",
+      "hi": "16-24 महीने",
+      "gu": "૧૬-૨૪ મહિના"
+    },
+    "dose": "1st Booster",
+    "description": {
+      "en": "Booster for Diphtheria, Pertussis, and Tetanus.",
+      "hi": "डिप्थीरिया, काली खांसी और टिटनेस के लिए बूस्टर।",
+      "gu": "ડીપીટી બૂસ્ટર ડોઝ."
+    }
+  },
+  {
+    "id": "opv_booster",
+    "vaccine": "OPV",
+    "name": {
+      "en": "OPV Booster",
+      "hi": "ओरल पोलिओ बूस्टर",
+      "gu": "ઓરલ પોલિયો બૂસ્ટર"
+    },
+    "age_days": 480,
+    "age_label": {
+      "en": "16-24 months",
+      "hi": "16-24 महीने",
+      "gu": "૧૬-૨૪ મહિના"
+    },
+    "dose": "Booster",
+    "description": {
+      "en": "Polio booster oral drops.",
+      "hi": "पोलियो बूस्टर ड्रॉप्स।",
+      "gu": "પોલિયો બૂસ્ટર ટીપાં."
+    }
+  },
+  {
+    "id": "dpt_booster_2",
+    "vaccine": "DPT",
+    "name": {
+      "en": "DPT 2nd Booster",
+      "hi": "डीपीटी 2रा बूस्टर",
+      "gu": "ડીપીટી ૨જો બૂસ્ટર"
+    },
+    "age_days": 1825,
+    "age_label": {
+      "en": "5-6 years",
+      "hi": "5-6 वर्ष",
+      "gu": "૫-૬ વર્ષ"
+    },
+    "dose": "2nd Booster",
+    "description": {
+      "en": "Diphtheria, Pertussis, and Tetanus booster at school entry.",
+      "hi": "स्कूली उम्र में डीपीटी सुरक्षा बूस्टर।",
+      "gu": "શાળા પ્રવેશ સમયે ડીપીટી બૂસ્ટર."
+    }
+  },
+  {
+    "id": "td_10yr",
+    "vaccine": "Td",
+    "name": {
+      "en": "Td Vaccine (10 Years)",
+      "hi": "टीडी टीका (10 वर्ष)",
+      "gu": "ટીડી રસી (૧૦ વર્ષ)"
+    },
+    "age_days": 3650,
+    "age_label": {
+      "en": "10 years",
+      "hi": "10 वर्ष",
+      "gu": "૧૦ વર્ષ"
+    },
+    "dose": "Dose at 10 Yrs",
+    "description": {
+      "en": "Tetanus and adult Diphtheria vaccine.",
+      "hi": "टिटनेस और डिप्थीरिया सुरक्षा।",
+      "gu": "ધનુર અને ડિપ્થેરિયા રસી."
+    }
+  },
+  {
+    "id": "td_16yr",
+    "vaccine": "Td",
+    "name": {
+      "en": "Td Vaccine (16 Years)",
+      "hi": "टीडी टीका (16 वर्ष)",
+      "gu": "ટીડી રસી (૧૬ વર્ષ)"
+    },
+    "age_days": 5840,
+    "age_label": {
+      "en": "16 years",
+      "hi": "16 वर्ष",
+      "gu": "૧૬ વર્ષ"
+    },
+    "dose": "Dose at 16 Yrs",
+    "description": {
+      "en": "Adolescent Tetanus and adult Diphtheria booster.",
+      "hi": "किशरावस्था टिटनेस और डिप्थीरिया बूस्टर।",
+      "gu": "કિશોરાવસ્થા ધનુર રસી."
+    }
+  }
+]

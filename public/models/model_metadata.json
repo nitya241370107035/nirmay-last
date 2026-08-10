@@ -1,0 +1,144 @@
+{
+  "model_type": "xgboost_multiclass",
+  "num_classes": 3,
+  "classes": [
+    "Home Care",
+    "Consult within 48 Hours",
+    "Immediate Medical Attention"
+  ],
+  "class_colors": [
+    "green",
+    "orange",
+    "red"
+  ],
+  "risk_levels": [
+    "green",
+    "orange",
+    "red"
+  ],
+  "accuracy": 1.0,
+  "feature_names": [
+    "duration_days",
+    "body_temperature",
+    "spo2_percent",
+    "systolic_bp",
+    "heart_rate",
+    "has_red_flag",
+    "comorbidities_count",
+    "chief_complaint_acute_abdomen",
+    "chief_complaint_acute_fever",
+    "chief_complaint_altered_mental_status",
+    "chief_complaint_breathing_difficulty",
+    "chief_complaint_chest_pain",
+    "chief_complaint_chronic_fatigue_weakness",
+    "chief_complaint_diarrhea_vomiting",
+    "chief_complaint_ear_throat_infection",
+    "chief_complaint_hypertensive_crisis",
+    "chief_complaint_jaundice_liver",
+    "chief_complaint_joint_swelling",
+    "chief_complaint_pediatric_fever_cough",
+    "chief_complaint_skin_rash_infection",
+    "chief_complaint_trauma_wound",
+    "chief_complaint_urinary_symptoms",
+    "age_group_elderly",
+    "age_group_middle_aged",
+    "age_group_pediatric",
+    "age_group_young_adult",
+    "gender_female",
+    "gender_male",
+    "gender_other",
+    "severity_mild",
+    "severity_moderate",
+    "severity_severe"
+  ],
+  "categorical_cols": [
+    "chief_complaint",
+    "age_group",
+    "gender",
+    "severity"
+  ],
+  "numeric_cols": [
+    "duration_days",
+    "body_temperature",
+    "spo2_percent",
+    "systolic_bp",
+    "heart_rate",
+    "has_red_flag",
+    "comorbidities_count"
+  ],
+  "imputations": {
+    "duration_days": 1.0,
+    "body_temperature": 98.6,
+    "spo2_percent": 98.0,
+    "systolic_bp": 120.0,
+    "heart_rate": 75.0,
+    "has_red_flag": 0,
+    "comorbidities_count": 0,
+    "chief_complaint": "acute_fever",
+    "age_group": "young_adult",
+    "gender": "female",
+    "severity": "moderate"
+  },
+  "top_features": [
+    [
+      "severity_mild",
+      0.3350975811481476
+    ],
+    [
+      "severity_moderate",
+      0.33293789625167847
+    ],
+    [
+      "has_red_flag",
+      0.3319646120071411
+    ],
+    [
+      "duration_days",
+      0.0
+    ],
+    [
+      "body_temperature",
+      0.0
+    ],
+    [
+      "spo2_percent",
+      0.0
+    ],
+    [
+      "systolic_bp",
+      0.0
+    ],
+    [
+      "heart_rate",
+      0.0
+    ],
+    [
+      "comorbidities_count",
+      0.0
+    ],
+    [
+      "chief_complaint_acute_abdomen",
+      0.0
+    ],
+    [
+      "chief_complaint_acute_fever",
+      0.0
+    ],
+    [
+      "chief_complaint_altered_mental_status",
+      0.0
+    ],
+    [
+      "chief_complaint_breathing_difficulty",
+      0.0
+    ],
+    [
+      "chief_complaint_chest_pain",
+      0.0
+    ],
+    [
+      "chief_complaint_chronic_fatigue_weakness",
+      0.0
+    ]
+  ]
+}

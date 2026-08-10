@@ -1,0 +1,1149 @@
+[
+  {
+    "id": "ors_preparation",
+    "category": "child_health",
+    "title": {
+      "en": "How to Prepare Oral Rehydration Solution (ORS)",
+      "hi": "ओरल रिहाइड्रेशन सॉल्यूशन (ORS) कैसे बनाएं",
+      "gu": "ઓરલ રિહાઇડ્રેશન સોલ્યુશન (ORS) કેવી રીતે બનાવવું"
+    },
+    "body": [
+      {
+        "type": "heading",
+        "content": {
+          "en": "What is ORS and Why is it Essential?",
+          "hi": "ORS क्या है और यह क्यों आवश्यक है?",
+          "gu": "ORS શું છે અને તે શા માટે જરૂરી છે?"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "ORS is a simple mixture of clean water, salt, and sugar that can save a child's life by replacing lost fluids and electrolytes during diarrhoea.",
+          "hi": "ORS साफ पानी, नमक और चीनी का एक सरल मिश्रण है जो दस्त के दौरान खोए हुए तरल पदार्थ की भरपाई करके बच्चे की जान बचा सकता है।",
+          "gu": "ORS સ્વચ્છ પાણી, મીઠું અને ખાંડનું એક સરળ મિશ્રણ છે જે ઝાડા દરમિયાન ગુમાવેલા પ્રવાહી અને ઇલેક્ટ્રોલાઇટ્સને ભરપાઈ કરીને બાળકનું જીવન બચાવી શકે છે."
+        }
+      },
+      {
+        "type": "illustration",
+        "src": "/illustrations/ors_steps.svg",
+        "alt": {
+          "en": "Steps to prepare ORS at home",
+          "hi": "घर पर ORS बनाने के चरण",
+          "gu": "ઘરે ORS બનાવવાના તબક્કા"
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "4 Simple Steps to Prepare Government ORS Sachet",
+          "hi": "सरकारी ORS पैकेट बनाने के 4 आसान चरण",
+          "gu": "સરકારી ORS પેકેટ બનાવવાના ૪ સરળ તબક્કા"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "1. Wash your hands thoroughly with soap and clean water. 2. Pour 1 litre (about 5 glasses) of clean drinking water into a clean container. If water quality is questionable, boil it and let it cool. 3. Empty the entire WHO ORS sachet into the water. 4. Stir well until the powder completely dissolves. Give small frequent sips to the child after every loose stool.",
+          "hi": "1. अपने हाथों को साबुन और साफ पानी से अच्छी तरह धोएं। 2. एक साफ बर्तन में 1 लीटर (लगभग 5 गिलास) साफ पीने का पानी लें। यदि पानी की गुणवत्ता संदिग्ध हो, तो इसे उबालें और ठंडा होने दें। 3. पूरा डब्ल्यूएचओ ओआरएस पैकेट पानी में डालें। 4. पाउडर पूरी तरह घुलने तक अच्छी तरह मिलाएं। बच्चे को हर दस्त के बाद छोटे-छोटे घूंट पिलाएं।",
+          "gu": "૧. સાબુ અને સ્વચ્છ પાણીથી તમારા હાથ સારી રીતે ધોઈ લો. ૨. એક સ્વચ્છ વાસણમાં ૧ લીટર (લગભગ ૫ ગ્લાસ) પીવાનું પાણી લો. જો પાણીની ગુણવત્તા શંકાસ્પદ હોય, તો તેને ઉકાળો અને ઠંડુ થવા દો. ૩. આખું WHO ORS પેકેટ પાણીમાં ઠાલવો. ૪. પાવડર સંપૂર્ણપણે ઓગળી જાય ત્યાં સુધી બરાબર હલાવો. બાળકના દરેક ઝાડા પછી થોડા થોડા ઘૂંટડા પાઓ."
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Emergency Home-Made Solution (If Sachet Unvailable)",
+          "hi": "आपातकालीन घरेलू घोल (यदि पैकेट उपलब्ध न हो)",
+          "gu": "ઇમરજન્સી ઘરેલું દ્રાવણ (જો પેકેટ ઉપલબ્ધ ન હોય)"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Mix 6 level teaspoons of sugar and half level teaspoon of salt into 1 litre of clean drinking water. Taste it—it should not be saltier than tears.",
+          "hi": "1 लीटर साफ पीने के पानी में 6 चम्मच चीनी और आधा चम्मच नमक मिलाएं। इसे चखें- यह आंसुओं से अधिक नमकीन नहीं होना चाहिए।",
+          "gu": "૧ લીટર સ્વચ્છ પીવાના પાણીમાં ૬ ચમચી ખાંડ અને અડધી ચમચી મીઠું ઉમેરો. ચાખો—તે આંસુ કરતાં વધુ ખારું હોવું જોઈએ નહીં."
+        }
+      }
+    ],
+    "tags": ["ors", "diarrhoea", "dehydration", "child", "hydration"]
+  },
+  {
+    "id": "handwashing_technique",
+    "category": "hygiene",
+    "title": {
+      "en": "Correct Handwashing Technique for Disease Prevention",
+      "hi": "बीमारी से बचाव के लिए हाथ धोने की सही विधि",
+      "gu": "રોગ અટકાવવા માટે હાથ ધોવાની સાચી પદ્ધતિ"
+    },
+    "body": [
+      {
+        "type": "heading",
+        "content": {
+          "en": "Why Handwashing Saves Lives",
+          "hi": "हाथ धोना जीवन क्यों बचाता है",
+          "gu": "હાથ ધોવાથી જીવન શા માટે બચે છે"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Washing hands with soap at critical times reduces diarrhoea rates by over 40% and respiratory infections by 20%. Hands carry invisible germs from soil, toilets, and surfaces to food and children.",
+          "hi": "महत्वपूर्ण समय पर साबुन से हाथ धोने से दस्त की दर 40% से अधिक और श्वसन संक्रमण 20% तक कम हो जाता है। हाथ मिट्टी, शौचालय और सतहों से अदृश्य रोगाणुओं को भोजन और बच्चों तक ले जाते हैं।",
+          "gu": "મહત્વપૂર્ણ સમયે સાબુથી હાથ ધોવાથી ઝાડા થવાના દરમાં ૪૦% થી વધુ અને શ્વાસના ચેપમાં ૨૦% ઘટાડો થાય છે. હાથ માટી, શૌચાલય અને સપાટી પરથી અદ્રશ્ય જંતુઓ ખોરાક અને બાળકો સુધી પહોંચાડે છે."
+        }
+      },
+      {
+        "type": "illustration",
+        "src": "/illustrations/handwashing.svg",
+        "alt": {
+          "en": "Steps of effective handwashing",
+          "hi": "प्रभावी हाथ धोने के चरण",
+          "gu": "અસરકારક હાથ ધોવાના તબક્કા"
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "The 6 Steps of Handwashing (Minimum 20 Seconds)",
+          "hi": "हाथ धोने के 6 चरण (कम से कम 20 सेकंड)",
+          "gu": "હાથ ધોવાના ૬ તબક્કા (ઓછામાં ઓછી ૨૦ સેકન્ડ)"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "1. Wet hands with water and apply soap. 2. Rub palms together. 3. Rub the back of each hand with interlocked fingers. 4. Rub between fingers and knuckles. 5. Clean thumbs carefully by rotating. 6. Rub fingertips on palms and rinse thoroughly with running water.",
+          "hi": "1. पानी से हाथ गीले करें और साबुन लगाएं। 2. हथेलियों को आपस में रगड़ें। 3. उंगलियों को मिलाकर प्रत्येक हाथ के पिछले हिस्से को रगड़ें। 4. उंगलियों और पोरों के बीच रगड़ें। 5. अंगूठों को घुमाकर अच्छी तरह साफ करें। 6. उंगलियों के पोरों को हथेलियों पर रगड़ें और बहते पानी से अच्छी तरह धोएं।",
+          "gu": "૧. પાણીથી હાથ ભીના કરો અને સાબુ લગાવો. ૨. હથેળીઓને એકબીજા સાથે ઘસો. ૩. આંગળીઓ પરોવીને દરેક હાથની પાછળનો ભાગ ઘસો. ૪. આંગળીઓની વચ્ચે અને વેઢા પર ઘસો. ૫. અંગૂઠાને ગોળ ફેરવીને સાફ કરો. ૬. આંગળીઓના ટેરવા હથેળી પર ઘસો અને વહેતા પાણીથી ધોઈ લો."
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Critical Moments to Wash Hands",
+          "hi": "हाथ धोने के महत्वपूर्ण अवसर",
+          "gu": "હાથ ધોવાના અત્યંત જરૂરી પ્રસંગો"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Always wash hands before cooking, feeding a baby, or eating; and after using the toilet, cleaning a child's bottom, or handling sick family members.",
+          "hi": "खाना बनाने, बच्चे को खिलाने या खाना खाने से पहले; और शौचालय का उपयोग करने, बच्चे की सफाई करने या बीमार परिवार के सदस्यों की देखभाल के बाद हमेशा हाथ धोएं।",
+          "gu": "રસોઈ બનાવતા પહેલા, બાળકને ખવડાવતા પહેલા અથવા જમતા પહેલા; અને શૌચાલયનો ઉપયોગ કર્યા પછી, બાળકના શૌચ સાફ કર્યા પછી અથવા બીમાર વ્યક્તિની સેવા કર્યા પછી હંમેશાં હાથ ધોવો."
+        }
+      }
+    ],
+    "tags": ["handwashing", "hygiene", "prevention", "germs", "diarrhoea"]
+  },
+  {
+    "id": "newborn_danger_signs",
+    "category": "child_health",
+    "title": {
+      "en": "Newborn Danger Signs: When to Rush to Hospital",
+      "hi": "नवजात शिशु के खतरे के संकेत: अस्पताल कब भागें",
+      "gu": "નવજાત શિશુના જોખમી લક્ષણો: હોસ્પિટલ ક્યારે જવું"
+    },
+    "body": [
+      {
+        "type": "heading",
+        "content": {
+          "en": "Protecting Your Newborn's First Month",
+          "hi": "अपने नवजात के पहले महीने की सुरक्षा",
+          "gu": "તમારા નવજાત બાળકના પ્રથમ મહિનાનું રક્ષણ"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "The first 28 days of a baby's life are fragile. Immediate identification of red flags saves young lives.",
+          "hi": "बच्चे के जीवन के पहले 28 दिन बेहद संवेदनशील होते हैं। खतरे के संकेतों की तुरंत पहचान बच्चे की जान बचाती है।",
+          "gu": "બાળકના જીવનના પ્રથમ ૨૮ દિવસ અત્યંત નાજુક હોય છે. જોખમી લક્ષણોની તાત્કાલિક ઓળખ બાળકની જિંદગી બચાવે છે."
+        }
+      },
+      {
+        "type": "illustration",
+        "src": "/illustrations/newborn_care.svg",
+        "alt": {
+          "en": "Newborn danger signs identification",
+          "hi": "नवजात के खतरे के संकेत",
+          "gu": "નવજાત બાળકના જોખમી ચિહ્નો"
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Key Danger Symptoms to Watch For",
+          "hi": "मुख्य खतरे के लक्षण जिन पर नज़र रखें",
+          "gu": "ધ્યાન રાખવા જેવા મુખ્ય જોખમી લક્ષણો"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "1. Inability to breastfeed or weak sucking. 2. High fever (>37.5°C) or feeling cold to touch (<35.5°C). 3. Fast breathing (>60 breaths/min) or severe chest in-drawing. 4. Lethargy or unconsciousness. 5. Fits or convulsions. 6. Yellow skin on palms and soles. 7. Umbilical cord redness, pus, or foul smell.",
+          "hi": "1. मां का दूध पीने में असमर्थता या कमजोर चुस्की। 2. तेज बुखार या शरीर का बहुत ठंडा पड़ना। 3. तेज सांस चलना (>60 सांस/मिनट) या छाती का धंसना। 4. सुस्ती या बेहोशी। 5. दौरे या झटके आना। 6. हथेली और तलवों पर पीलापन। 7. नाभि में लाली, मवाद या बदबू।",
+          "gu": "૧. ધાવણ ન લઈ શકવું કે નબળું ચૂસવું. ૨. સખત તાવ આવવો કે શરીર એકદમ ઠંડુ પડી જવું. ૩. ઝડપી શ્વાસ ચાલવા (>૬૦ શ્વાસ/મિનિટ) કે છાતી ખાડા પડવી. ૪. અતિશય સુસ્તી કે બેભાન અવસ્થા. ૫. ખેંચ કે આંચકી આવવી. ૬. હથેળી અને પગના તળિયા પીળા પડી જવા. ૭. ડૂંટી લાલ થવી, પરૂ થવું કે દુર્ગંધ આવવી."
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Action Plan for ASHA / Anganwadi / PHC",
+          "hi": "आशा / आंगनवाड़ी / पीएचसी के लिए कार्य योजना",
+          "gu": "આશા / આંગણવાડી / PHC માટે પગલાં"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "If any single sign is present, immediately arrange referral transport to the nearest CHC/District Hospital with Newborn Care Unit (SNCU). Keep baby warm using Kangaroo Mother Care (skin-to-skin contact) during journey.",
+          "hi": "यदि इनमें से कोई भी एक लक्षण दिखे, तो तुरंत निकटतम अस्पताल/SNCU के लिए एम्बुलेंस बुलाएं। यात्रा के दौरान कंगारू मदर केयर (त्वचा से त्वचा का संपर्क) देकर बच्चे को गर्म रखें।",
+          "gu": "જો આમાંથી એક પણ લક્ષણ દેખાય, તો તરત જ નજીકની સરકારી હોસ્પિટલ/SNCU માટે વાહનની વ્યવસ્થા કરો. મુસાફરી દરમિયાન કાંગારૂ મધર કેર (છાતી સાથે ચોંટાડીને) આપી બાળકને હૂંફાળું રાખો."
+        }
+      }
+    ],
+    "tags": ["newborn", "danger_signs", "infant", "sncu", "child_health"]
+  },
+  {
+    "id": "tb_symptoms_care",
+    "category": "disease_prevention",
+    "title": {
+      "en": "Tuberculosis (TB) Symptoms, Testing, and DOTS Treatment",
+      "hi": "टीबी के लक्षण, जांच और डॉट्स (DOTS) इलाज",
+      "gu": "ટીબી (TB) ના લક્ષણો, નિદાન અને મફત સારવાર"
+    },
+    "body": [
+      {
+        "type": "heading",
+        "content": {
+          "en": "Understanding Tuberculosis (TB)",
+          "hi": "टीबी रोग को समझें",
+          "gu": "ટ્યુબરક્યુલોસિસ (ટીબી) ને સમજો"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "TB is an infectious airborne bacterial disease primarily affecting lungs. It is 100% curable if diagnosed early and full course of free medicines is taken continuously.",
+          "hi": "टीबी एक संक्रामक बीमारी है जो हवा के जरिए फैलती है और फेफड़ों को प्रभावित करती है। सही समय पर जांच और मुफ्त दवाइयों का पूरा कोर्स करने से यह 100% ठीक हो जाती है।",
+          "gu": "ટીબી એ હવાથી ફેલાતો ચેપી રોગ છે જે મુખ્યત્વે ફેફસાંને અસર કરે છે. વહેલું નિદાન અને મફત દવાઓનો પૂરો કોર્સ લેવાથી તે ૧૦૦% મટી શકે છે."
+        }
+      },
+      {
+        "type": "illustration",
+        "src": "/illustrations/tb_cough.svg",
+        "alt": {
+          "en": "TB symptoms and cough hygiene",
+          "hi": "टीबी के लक्षण और खांसने का तरीका",
+          "gu": "ટીબીના લક્ષણો અને ઉધરસ ખાવાની રીત"
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Common Symptoms of Lung TB",
+          "hi": "फेफड़ों की टीबी के मुख्य लक्षण",
+          "gu": "ફેફસાંના ટીબીના મુખ્ય લક્ષણો"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "• Continuous cough for 2 weeks or more. • Low-grade evening fever with night sweats. • Unexplained weight loss and fatigue. • Chest pain or coughing up blood in sputum.",
+          "hi": "• 2 हफ्ते या अधिक समय से लगातार खांसी। • शाम को हल्का बुखार और रात में पसीना। • वजन में कमी और लगातार थकावट। • छाती में दर्द या बलगम में खून आना।",
+          "gu": "• ૨ અઠવાડિયા કે તેથી વધુ સમયથી સતત ઉધરસ. • સાંજના સમયે ઝીણો તાવ અને રાત્રે પરસેવો. • વજન ઘટવું અને થાક લાગવો. • છાતીમાં દુખાવો અથવા થૂંકમાં લોહી પડવું."
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Free Testing & Monthly Financial Support (Nikshay Poshan)",
+          "hi": "मुफ्त जांच और मासिक पोषण सहायता (निक्षय पोषण)",
+          "gu": "મફત તપાસ અને માસિક સહાય (નિક્ષય પોષણ યોજના)"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Sputum testing and TrueNat/CBNAAT DNA tests are completely free at all Govt PHCs. Registered TB patients receive ₹500-1000/month directly in their bank account for nutritious food under Nikshay Poshan Yojana.",
+          "hi": "सरकारी स्वास्थ्य केंद्रों पर बलगम की जांच और CBNAAT जांच पूरी तरह मुफ्त है। निक्षय पोषण योजना के तहत हर टीबी मरीज को पौष्टिक आहार के लिए सीधे बैंक खाते में सहायता मिलती है।",
+          "gu": "સરકારી આરોગ્ય કેન્દ્રો પર કફની તપાસ અને CBNAAT ટેસ્ટ બિલકુલ મફત છે. નિક્ષય પોષણ યોજના હેઠળ નોંધાયેલા દર્દીને પૌષ્ટિક આહાર માટે દર મહિને સીધા બેંક ખાતામાં નાણાકીય સહાય મળે છે."
+        }
+      }
+    ],
+    "tags": ["tb", "tuberculosis", "cough", "nikshay", "dots"]
+  },
+  {
+    "id": "mosquito_disease_prevention",
+    "category": "disease_prevention",
+    "title": {
+      "en": "Preventing Malaria, Dengue & Chikungunya in Villages",
+      "hi": "गांवों में मलेरिया, डेंगू और चिकुनगुनिया से बचाव",
+      "gu": "ગામડાઓમાં મલેરિયા, ડેન્ગ્યુ અને ચિકનગુનિયાથી બચાવ"
+    },
+    "body": [
+      {
+        "type": "heading",
+        "content": {
+          "en": "Stop Vector-Borne Diseases at the Source",
+          "hi": "मच्छर जनित बीमारियों को पनपने से रोकें",
+          "gu": "મચ્છરજન્ય રોગોને ઉદ્ભવસ્થાનથી જ રોકો"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Mosquitoes transmit dangerous fevers like Malaria (Anopheles mosquito) and Dengue/Chikungunya (Aedes mosquito). Eliminating standing water destroys mosquito breeding grounds.",
+          "hi": "मच्छर मलेरिया और डेंगू जैसी घातक बीमारियां फैलाते हैं। रुका हुआ पानी हटाना मच्छर के पनपने को रोकता है।",
+          "gu": "મચ્છર મલેરિયા અને ડેન્ગ્યુ જેવા ઘાતક તાવ ફેલાવે છે. ભરાયેલું પાણી દૂર કરવાથી મચ્છરોની ઉત્પત્તિ અટકે છે."
+        }
+      },
+      {
+        "type": "illustration",
+        "src": "/illustrations/mosquito_net.svg",
+        "alt": {
+          "en": "Mosquito net and water container protection",
+          "hi": "मच्छरदानी और जलपात्र सुरक्षा",
+          "gu": "મચ્છરદાની અને પાણીના વાસણોની સુરક્ષા"
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Dry Day Practices & Larval Control",
+          "hi": "ड्राई डे की आदतें और लार्वा नियंत्रण",
+          "gu": "ડ્રાય ડે ની ટેવ અને પોરા નાશિક પ્રવૃત્તિ"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Observe one 'Dry Day' every week: empty, scrub, and dry water tanks, coolers, bird troughs, and flower pots. Cover all domestic water barrels tightly. Put Temephos or Abate solution in stagnant ponds.",
+          "hi": "हर हफ्ते एक 'ड्राई डे' मनाएं: पानी की टंकियां, कूलर, पक्षियों के बर्तन खाली करके सुखाएं। पानी के ड्रम ढंक कर रखें।",
+          "gu": "દર અઠવાડિયે એક 'ડ્રાય ડે' ઉજવો: પાણીની ટાંકીઓ, કૂલર અને કૂંડા ખાલી કરીને સૂકવી દો. પાણીના વાસણો ચુસ્તપણે ઢાંકીને રાખો."
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Personal Protection & Medicated Mosquito Nets",
+          "hi": "व्यक्तिगत सुरक्षा और कीटनाशक युक्त मच्छरदानी (LLIN)",
+          "gu": "વ્યક્તિગત સુરક્ષા અને દવાયુક્ત મચ્છરદાની (LLIN)"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Sleep inside Long-Lasting Insecticidal Nets (LLIN) provided free by health department, especially for pregnant women and young children. Wear long-sleeved clothes during morning and evening peak biting hours.",
+          "hi": "स्वास्थ्य विभाग द्वारा दी गई दवायुक्त मच्छरदानी (LLIN) में सोएं। सुबह और शाम पूरी बांह के कपड़े पहनें।",
+          "gu": "સરકાર દ્વારા આપવામાં આવતી દવાયુક્ત મચ્છરદાની (LLIN) માં જ ઊંઘો. સવાર-સંજ આખી બંયના કપડાં પહેરો."
+        }
+      }
+    ],
+    "tags": ["malaria", "dengue", "chikungunya", "mosquito", "fever"]
+  },
+  {
+    "id": "breastfeeding_nutrition",
+    "category": "maternal_health",
+    "title": {
+      "en": "Exclusive Breastfeeding and Young Child Feeding",
+      "hi": "केवल स्तनपान और शिशु पोषण मार्गदर्शिका",
+      "gu": "માત્ર સ્તનપાન અને બાળકનું યોગ્ય પોષણ"
+    },
+    "body": [
+      {
+        "type": "heading",
+        "content": {
+          "en": "Golden First Hour & Colostrum (First Milk)",
+          "hi": "पहला सुनहरा घंटा और खीस (गाढ़ा पीला दूध)",
+          "gu": "પ્રથમ સોનેરી કલાક અને ધાવણનું ઘાટું દૂધ (ધાવણું)"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Initiate breastfeeding within 1 hour of birth. The first thick yellow milk (colostrum) is baby's first natural vaccine, rich in protective antibodies.",
+          "hi": "जन्म के 1 घंटे के भीतर स्तनपान शुरू करें। पहला गाढ़ा पीला दूध (खीस) बच्चे का पहला प्राकृतिक टीका है।",
+          "gu": "જન્મના ૧ કલાકની અંદર સ્તનપાન શરૂ કરો. શરૂઆતનું ઘાટું પીળું દૂધ બાળકની પ્રથમ કુદરતી રસી છે, જે રોગપ્રતિકારક શક્તિ આપે છે."
+        }
+      },
+      {
+        "type": "illustration",
+        "src": "/illustrations/breastfeeding.svg",
+        "alt": {
+          "en": "Proper breastfeeding position and latch",
+          "hi": "स्तनपान कराने की सही स्थिति",
+          "gu": "સ્તનપાન કરાવવાની સાચી સ્થિતિ"
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Exclusive Breastfeeding for 6 Months",
+          "hi": "6 महीने तक केवल और केवल मां का दूध",
+          "gu": "૬ મહિના સુધી માત્ર ને માત્ર માઁનું દૂધ"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Do NOT give water, honey, ghutti, or animal milk for the first 6 months. Mother's milk contains 88% water and all essential nutrients required for brain and body growth.",
+          "hi": "पहले 6 महीनों तक पानी, शहद, घुट्टी या गाय का दूध बिल्कुल न दें। मां के दूध में 88% पानी और सभी पोषक तत्व मौजूद होते हैं।",
+          "gu": "પ્રથમ ૬ મહિના સુધી પાણી, મધ, જનમઘૂંટી કે ગાયનું દૂધ બિલકુલ ન આપો. માઁના દૂધમાં ૮૮% પાણી અને બાળકના વિકાસ માટે જરૂરી તમામ તત્વો હોય છે."
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Complementary Feeding After 6 Months (Annaprashan)",
+          "hi": "6 महीने के बाद ऊपरी आहार (अन्नप्राशन)",
+          "gu": "૬ મહિના પછી ઉપરનો આહાર (અન્નપ્રાશન)"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "At 6 completed months, start thick mashed porridge, mashed khichdi, mashed banana, and boiled dal along with continued breastfeeding up to 2 years.",
+          "hi": "6 महीने पूरे होने पर स्तनपान के साथ मसली हुई खिचड़ी, दलिया, उबली दाल और केला देना शुरू करें।",
+          "gu": "૬ મહિના પૂરા થતાં સ્તનપાન ચાલુ રાખીને રાબેતા મુજબ મસળેલી ખીચડી, રાબ, બાફેલી દાળ અને કેળું આપવાનું શરૂ કરો."
+        }
+      }
+    ],
+    "tags": ["breastfeeding", "nutrition", "infant_feeding", "colostrum", "maternal"]
+  },
+  {
+    "id": "anemia_prevention",
+    "category": "nutrition",
+    "title": {
+      "en": "Preventing Anemia: Iron-Rich Diet & IFA Tablets",
+      "hi": "एनीमिया (खून की कमी) से बचाव: आयरन युक्त आहार और आईएफए गोलियां",
+      "gu": "એનિમીઆ (લોહીની ટકાવારી ઘટી જવી) થી બચાવ અને ઉપાયો"
+    },
+    "body": [
+      {
+        "type": "heading",
+        "content": {
+          "en": "Understanding Anemia in Women and Children",
+          "hi": "महिलाओं और बच्चों में एनीमिया को समझें",
+          "gu": "મહિલાઓ અને બાળકોમાં પાંડુરોગ (એનિમીઆ)"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Anemia occurs when hemoglobin levels fall low. Symptoms include pale skin, fatigue, dizziness, shortness of breath, and poor concentration in school.",
+          "hi": "हीमोग्लोबिन कम होने पर एनीमिया होता है। लक्षण हैं पीला चेहरा, बहुत थकावट, सिर चकराना और पढ़ाई में ध्यान न लगना।",
+          "gu": "હિમોગ્લોબિન ઓછું થવાથી એનિમીઆ થાય છે. લક્ષણોમાં ચહેરો પીળો પડવો, અતિશય થાક લાગવો, ચક્કર આવવા અને ભણવામાં મન ન લાગવું સામેલ છે."
+        }
+      },
+      {
+        "type": "illustration",
+        "src": "/illustrations/anemia_food.svg",
+        "alt": {
+          "en": "Iron-rich local foods and IFA tablets",
+          "hi": "आयरन युक्त स्थानीय भोजन और गोलियां",
+          "gu": "આયર્નથી ભરપૂર ખોરાક અને ગોળીઓ"
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Iron-Rich Locally Available Foods",
+          "hi": "आयरन से भरपूर स्थानीय खाद्य पदार्थ",
+          "gu": "આયર્નથી ભરપૂર સ્થાનિક ખોરાક"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Eat green leafy vegetables (spinach, drumstick leaves/moringa, fenugreek), jaggery (gud), roasted chana, sesame seeds, dates, and amla. Vitamin C (lemon juice, oranges) helps iron absorption.",
+          "hi": "हरी पत्तेदार सब्जियां (पालक, सहजन के पत्ते), गुड़, भुना चना, तिल, खजूर और आंवला खाएं। नींबू पानी आयरन को सोखने में मदद करता है।",
+          "gu": "લીલા શાકભાજી (પાલક, સરગવાના પાન, મેથી), ગોળ, શેકેલા ચણા, તલ, ખજૂર અને આમળા ખાવા. લીંબુ પાણી પીવાથી આયર્ન જલ્દી પચે છે."
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Anemia Mukt Bharat Protocol (IFA Supplementation)",
+          "hi": "एनीमिया मुक्त भारत (आईएफए गोलियां)",
+          "gu": "એનિમીઆ મુક્ત ભારત (આયર્ન ફોલિક ગોળીઓ)"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Pregnant women: Take 1 Red IFA tablet daily from 4th month for 180 days. Children 5-10 yrs: Pink IFA tablet weekly. Adolescents: Blue IFA tablet weekly. Always take IFA after meals with water (never with tea/milk).",
+          "hi": "गर्भवती महिलाएं: चौथे महीने से रोज 1 लाल आईएफए गोली 180 दिनों तक लें। गोलियां हमेशा खाने के बाद पानी से लें (चाय/दूध से नहीं)।",
+          "gu": "સગર્ભા બહેનો: ચોથા મહિનાથી દરરોજ ૧ લાલ IFA ગોળી ૧૮૦ દિવસ સુધી લો. ગોળી હંમેશા જમ્યા પછી પાણી સાથે લો (ચા કે દૂધ સાથે નહીં)."
+        }
+      }
+    ],
+    "tags": ["anemia", "iron", "ifa", "nutrition", "maternal_health"]
+  },
+  {
+    "id": "pneumonia_ari_care",
+    "category": "child_health",
+    "title": {
+      "en": "Recognizing Respiratory Infections & Pneumonia in Children",
+      "hi": "बच्चों में निमोनिया और सांस की बीमारी की पहचान",
+      "gu": "બાળકોમાં ન્યુમોનિયા અને શ્વાસની બીમારીની સમયસર ઓળખ"
+    },
+    "body": [
+      {
+        "type": "heading",
+        "content": {
+          "en": "Pneumonia is Dangerous but Preventable",
+          "hi": "निमोनिया खतरनाक है लेकिन इलाज संभव है",
+          "gu": "ન્યુમોનિયા ગંભીર છે પરંતુ સમયસર સારવારથી મટી શકે છે"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Acute Respiratory Infections (ARI) and Pneumonia cause lung inflammation in children under 5. Recognizing fast breathing early prevents complications.",
+          "hi": "5 साल से कम उम्र के बच्चों में निमोनिया फेफड़ों का गंभीर संक्रमण है। तेज सांस की समय पर पहचान जान बचाती है।",
+          "gu": "૫ વર્ષથી નાનાં બાળકોમાં ન્યુમોનિયા ફેફસાંનો ગંભીર ચેપ છે. શ્વાસની ઝડપ માપીને વહેલી ઓળખ કરવી જરૂરી છે."
+        }
+      },
+      {
+        "type": "illustration",
+        "src": "/illustrations/pneumonia_breathing.svg",
+        "alt": {
+          "en": "Counting breath rates and chest in-drawing test",
+          "hi": "सांस की गिनती और छाती का धंसना",
+          "gu": "શ્વાસની ગણતરી અને છાતીમાં ખાડા પડવા"
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "How to Measure Fast Breathing (ARI Protocol)",
+          "hi": "तेज सांस की जांच कैसे करें",
+          "gu": "ઝડપી શ્વાસ કેવી રીતે ગણવા"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Count chest rises for 1 full minute when child is calm: • Age 2-11 months: Cut-off is 50 breaths/min or more. • Age 12-59 months: Cut-off is 40 breaths/min or more. Look for lower chest wall in-drawing (skin sucking under ribs during breath).",
+          "hi": "शांत स्थिति में 1 मिनट तक छाती की गिनती करें: • 2-11 महीने: 50 सांस/मिनट या अधिक। • 12-59 महीने: 40 सांस/मिनट या अधिक। छाती के नीचे के हिस्से का धंसना भी निमोनिया का प्रमुख लक्षण है।",
+          "gu": "બાળક શાંત હોય ત્યારે ૧ મિનિટ સુધી શ્વાસ ગણો: • ૨-૧૧ મહિના: ૫૦ શ્વાસ/મિનિટ કે વધુ. • ૧૨-૫૯ મહિના: ૪૦ શ્વાસ/મિનિટ કે વધુ. શ્વાસ લેતી વખતે છાતીનો નીચેનો ભાગ અંદર ખેંચાવો (ખાડા પડવા)."
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Immediate Action & Amoxicillin Therapy",
+          "hi": "तत्काल कार्रवाई और अमोक्सिसिलिन दवा",
+          "gu": "તાત્કાલિક પગલાં અને એન્ટિબાયોટિક સારવાર"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Fast breathing pneumonia without chest in-drawing can be treated at home with oral Amoxicillin dispersible tablets as prescribed by ASHA/ANM for 5 days. Chest in-drawing or stridor requires urgent hospital referral.",
+          "hi": "तेज सांस वाले निमोनिया का इलाज आशा/एएनएम की सलाह से अमोक्सिसिलिन सिरप/गोली से 5 दिन घर पर किया जा सकता है। छाती धंसने पर तुरंत अस्पताल ले जाएं।",
+          "gu": "ઝડપી શ્વાસવાળા ન્યુમોનિયાની સારવાર આરોગ્ય કાર્યકરની સલાહ મુજબ અમોક્સિસિલિન દવાથી ૫ દિવસ ઘરે થઈ શકે છે. છાતીમાં ખાડા પડે તો તરત જ હોસ્પિટલ પહોંચાડો."
+        }
+      }
+    ],
+    "tags": ["pneumonia", "ari", "cough", "child_health", "breathing"]
+  },
+  {
+    "id": "immunization_importance",
+    "category": "disease_prevention",
+    "title": {
+      "en": "National Immunization Schedule: Protecting Every Child",
+      "hi": "राष्ट्रीय टीकाकरण सारणी: हर बच्चे की सुरक्षा",
+      "gu": "રાષ્ટ્રીય રસીકરણ પત્રક: દરેક બાળકનું સશક્ત રક્ષણ"
+    },
+    "body": [
+      {
+        "type": "heading",
+        "content": {
+          "en": "Vaccines Build Life-Long Defense",
+          "hi": "टीके आजीवन सुरक्षा कवच बनाते हैं",
+          "gu": "રસી આજીવન રક્ષણાત્મક કવચ પૂરું પાડે છે"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Vaccination protects infants against 12 deadly diseases including Polio, Tuberculosis, Hepatitis B, Diphtheria, Pertussis, Tetanus, Rotavirus, Pneumonia, and Measles.",
+          "hi": "टीकाकरण शिशु को पोलिया, टीबी, हेपेटाइटिस, काली खांसी, टिटनेस, निमोनिया और खसरा जैसी 12 जानलेवा बीमारियों से बचाता है।",
+          "gu": "રસીકરણ બાળકને પોલિયો, ટીબી, હિપેટાઇટિસ, ધનુર, કાળી ખાંસી, ન્યુમોનિયા અને ઓરી જેવા ૧૨ ઘાતક રોગો સામે રક્ષણ આપે છે."
+        }
+      },
+      {
+        "type": "illustration",
+        "src": "/illustrations/vaccines.svg",
+        "alt": {
+          "en": "Vaccination schedule timeline",
+          "hi": "टीकाकरण की समय-सारणी",
+          "gu": "રસીકરણનું અઠવાડિયા મુજબનું સમયપત્રક"
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Key Milestones on the Vaccination Card",
+          "hi": "टीकाकरण कार्ड के मुख्य पड़ाव",
+          "gu": "રસીકરણ કાર્ડના મુખ્ય તબક્કા"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "• At Birth: BCG, OPV-0, Hepatitis B birth dose. • 6, 10 & 14 Weeks: Pentavalent (DPT+HepB+Hib), OPV, Rotavirus, fIPV, PCV. • 9 Months: MR 1st dose, JE 1st dose, Vitamin A. • 16-24 Months: MR 2nd dose, DPT booster 1.",
+          "hi": "• जन्म पर: बीसीजी, ओपीवी, हेपेटाइटिस बी। • 6, 10 व 14 हफ्ते: पेंटावेलेंट, ओपीवी, रोटावायरस, पीसीवी। • 9 महीने: एमआर (खसरा-रूबेला) पहली खुराक, विटामिन ए। • 16-24 महीने: एमआर दूसरी खुराक, डीपीटी बूस्टर।",
+          "gu": "• જન્મ સમયે: BCG, OPV, હિપેટાઇટિસ B. • ૬, ૧૦ અને ૧૪ અઠવાડિયે: પેન્ટાવેલેન્ટ, OPV, રોટાવાયરસ, PCV. • ૯ મહિને: MR (ઓરી) ૧લો ડોઝ, વિટામિન A. • ૧૬-૨૪ મહિને: MR ૨જો ડોઝ, DPT બુસ્ટર."
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Managing Mild Vaccine Side-Effects",
+          "hi": "टीके के सामान्य प्रभावों का प्रबंधन",
+          "gu": "રસી પછીના સામાન્ય તાવ અને સુધાર"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Mild fever or soreness at injection site is normal—it shows the immune system is responding. Give Paracetamol drops as advised by ANM. Do not massage the injection spot.",
+          "hi": "हल्का बुखार या इंजेक्शन की जगह पर सूजन सामान्य है। एएनएम की सलाह के अनुसार पैरासिटामोल सिरप दें। इंजेक्शन की जगह पर मालिश न करें।",
+          "gu": "હળવો તાવ કે રસીની જગ્યાએ દુખાવો થવો સામાન્ય છે. આરોગ્ય કાર્યકરની સલાહ મુજબ પેરાસીટામોલ આપવું. રસી મુકેલી જગ્યાએ માલિશ કરવી નહીં."
+        }
+      }
+    ],
+    "tags": ["immunization", "vaccine", "bcg", "pentavalent", "child_health"]
+  },
+  {
+    "id": "hypertension_salt_reduction",
+    "category": "chronic_care",
+    "title": {
+      "en": "Managing High Blood Pressure: Salt Reduction & Lifestyle",
+      "hi": "उच्च रक्तचाप (बीपी) नियंत्रण: नमक कम करें और स्वस्थ रहें",
+      "gu": "હાઈ બ્લડ પ્રેશર (BP) નિયંત્રણ: મીઠું ઘટાડો, આયુષ્ય વધારો"
+    },
+    "body": [
+      {
+        "type": "heading",
+        "content": {
+          "en": "High Blood Pressure is a Silent Danger",
+          "hi": "हाई बीपी: एक खामोश बीमारी",
+          "gu": "હાઈ પ્રેશર: છૂપો શત્રુ"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Hypertension (BP > 140/90 mmHg) damages blood vessels, kidneys, and heart over time without obvious warning signs until stroke or heart attack occurs.",
+          "hi": "हाई ब्लड प्रेशर (बीपी > 140/90) बिना किसी स्पष्ट लक्षण के धीरे-धीरे दिल, गुर्दे और दिमाग की नसों को नुकसान पहुंचाता है।",
+          "gu": "હાઈ બ્લડ પ્રેશર (BP > ૧૪૦/૯૦) કોઈ પણ લક્ષણ આપ્યા વગર ધીમે ધીમે હૃદય, કિડની અને મગજની નસોને નુકસાન પહોંચાડે છે."
+        }
+      },
+      {
+        "type": "illustration",
+        "src": "/illustrations/salt_reduction.svg",
+        "alt": {
+          "en": "Salt restriction and blood pressure monitoring",
+          "hi": "नमक की सीमा और बीपी जांच",
+          "gu": "મીઠાની મર્યાદા અને BP તપાસ"
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Practical Steps to Lower Sodium Intake",
+          "hi": "नमक कम करने के व्यावहारिक उपाय",
+          "gu": "મીઠાનો વપરાશ ઘટાડવાના સરળ ઉપાયો"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "• Limit daily salt to less than 1 teaspoon (5g) per person. • Avoid adding raw salt on salad, curd, or cooked rice. • Avoid pickles, papad, salted chips, and packaged snacks. • Flavor food with lemon juice, coriander, garlic, and mint instead of extra salt.",
+          "hi": "• प्रति व्यक्ति दैनिक नमक 1 छोटी चम्मच (5 ग्राम) से कम रखें। • सलाद, दही या पके चावल पर ऊपर से कच्चा नमक न छिड़कें। • अचार, पापड़ और नमकीन चिप्स से बचें। • स्वाद के लिए नींबू, धनिया, लहसुन और पुदीना का प्रयोग करें।",
+          "gu": "• વ્યક્તિ દીઠ દૈનિક મીઠાનો વપરાશ ૧ નાની ચમચી (૫ ગ્રામ) થી ઓછો રાખો. • કચુંબર, દહીં કે રોટલી પર ઉપરથી કાચું મીઠું ભભરાવશો નહીં. • અથાણાં, પાપડ અને ખારા નમકીન ટાળો. • સ્વાદ માટે લીંબુ, ધાણા, લસણ અને ફુદીનાનો ઉપયોગ કરો."
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Regular Screening & Medication Adherence",
+          "hi": "नियमित जांच और दवाइयां न छोड़ना",
+          "gu": "નિયમિત તપાસ અને દવાનો નિયમિત કોર્સ"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Get your BP checked every month at the Health & Wellness Center (Aam Aadmi Clinic/Sub-Center). Never stop prescribed antihypertensive medicines on your own even if you feel fine.",
+          "hi": "हर महीने निकटतम उप-केंद्र पर बीपी की जांच कराएं। ठीक महसूस होने पर भी डॉक्टर की सलाह के बिना बीपी की दवा कभी बंद न करें।",
+          "gu": "દર મહિને નજીકના સબ-સેન્ટર કે PHC પર BP તપાસાવો. સારું લાગવા છતાં પણ ડૉક્ટરની સલાહ વગર BP ની દવા ક્યારેય બંધ કરશો નહીં."
+        }
+      }
+    ],
+    "tags": ["hypertension", "blood_pressure", "salt", "heart", "chronic_care"]
+  },
+  {
+    "id": "diabetes_management",
+    "category": "chronic_care",
+    "title": {
+      "en": "Understanding & Managing Diabetes (Sugar Disease)",
+      "hi": "डायबिटीज (शुगर) को समझें और नियंत्रित करें",
+      "gu": "ડાયાબિટીસ (મધુપ્રમેહ) નું યોગ્ય નિયંત્રણ"
+    },
+    "body": [
+      {
+        "type": "heading",
+        "content": {
+          "en": "What Happens in Diabetes?",
+          "hi": "डायबिटीज में क्या होता है?",
+          "gu": "ડાયાબિટીસમાં શરીરમાં શું થાય છે?"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "In diabetes, the body cannot process blood glucose properly. Warning signs: frequent urination, excessive thirst, sudden weight loss, slow-healing wounds, and blurred vision.",
+          "hi": "डायबिटीज में शरीर ब्लड शुगर का सही इस्तेमाल नहीं कर पाता। लक्षण: बार-बार पेशाब आना, अधिक प्यास लगना, वजन घटना और घाव देरी से भरना।",
+          "gu": "ડાયાબિટીસમાં શરીર લોહીમાં રહેલી શર્કરા પચાવી શકતું નથી. લક્ષણો: વારંવાર પેશાબ થવો, ખૂબ તરસ લાગવી, વજન ઘટવું અને વાગેલું રુઝાતા વાર લાગવી."
+        }
+      },
+      {
+        "type": "illustration",
+        "src": "/illustrations/diabetes_diet.svg",
+        "alt": {
+          "en": "Healthy plate rule for diabetes care",
+          "hi": "डायबिटीज के लिए थाली का नियम",
+          "gu": "ડાયાબિટીસ માટે યોગ્ય થાળી"
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "The Diabetes Food Plate Rule",
+          "hi": "डायबिटीज भोजन थाली नियम",
+          "gu": "ડાયાબિટીસ આહાર થાળીનો નિયમ"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "• Half Plate: Non-starchy vegetables (spinach, cabbage, gourd, brinjal, cucumbers). • Quarter Plate: Whole grains (bajra, jowar, oats, brown rice instead of refined white flour). • Quarter Plate: Protein (pulses, sprouts, chana, boiled eggs, cottage cheese/paneer). Avoid sweets, cold drinks, white sugar, and jalebi.",
+          "hi": "• आधी थाली: हरी सब्जियां (लौकी, तोरई, पालक, खीरा)। • एक-चौथाई थाली: मोटे अनाज (बाजरा, ज्वार, चना)। • एक-चौथाई थाली: दालें, अंकुरित अनाज, पनीर। मीठे पेय, चीनी और जलेबी से बचें।",
+          "gu": "• અડધી થાળી: લીલા શાકભાજી (દૂધી, ગલકાં, પાલક, કાકડી). • ચોથા ભાગની થાળી: કઠોળ અને અંકુરિત ચણા. • ચોથા ભાગની થાળી: જુવાર, બાજરી કે ઓટ્સનો રોટલો. ખાંડ, ગળ્યા પીણાં અને સ્વીટ્સ ટાળો."
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Foot Care & Exercise Routine",
+          "hi": "पैरों की देखभाल और व्यायाम",
+          "gu": "પગની સંભાળ અને રોજિંદો વ્યાયામ"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Inspect feet daily for small cuts or blisters. Never walk barefoot outside. Walk briskly for 30-45 minutes daily to improve insulin sensitivity.",
+          "hi": "रोजाना पैरों की जांच करें कि कोई कट या घाव तो नहीं। कभी नंगे पैर न चलें। रोजाना 30-45 मिनट टहलें।",
+          "gu": "રોજિંદા પગ તપાસો કે ક્યાંય છાલા કે વાગેલું નથી. ખુલ્લા પગે ક્યારેય ચાલશો નહીં. રોજ ૪૦ મિનિટ ઝડપી ચાલો."
+        }
+      }
+    ],
+    "tags": ["diabetes", "sugar", "diet", "chronic_care", "foot_care"]
+  },
+  {
+    "id": "rabies_first_aid",
+    "category": "disease_prevention",
+    "title": {
+      "en": "Animal Bite First Aid and Rabies Vaccine Protocol",
+      "hi": "पशु के काटने पर प्राथमिक उपचार और रेबीज टीका",
+      "gu": "પ્રાણીના કરડવા પર પ્રાથમિક સારવાર અને હડકવાની રસી"
+    },
+    "body": [
+      {
+        "type": "heading",
+        "content": {
+          "en": "Rabies is 100% Fatal but 100% Preventable",
+          "hi": "रेबीज 100% घातक है लेकिन 100% रोकथाम योग्य है",
+          "gu": "હડકવા ૧૦૦% પ્રાણઘાતક છે પરંતુ ૧૦૦% અટકાવી શકાય છે"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Rabies is transmitted through saliva of infected dogs, cats, monkeys, or stray animals via bites or scratches. Once symptoms appear, there is no cure, making immediate post-exposure prophylaxis vital.",
+          "hi": "रेबीज कुत्ते, बिल्ली या बंदर के काटने या खरोंचने से फैलता है। लक्षण आने के बाद इसका इलाज नहीं है, इसलिए तुरंत टीका लगवाना जीवनरक्षक है।",
+          "gu": "હડકવા કૂતરા, બિલાડી કે વાંદરાના કરડવાથી અથવા નખ વાગવાથી થાય છે. લક્ષણો દેખાયા પછી તેનો ઉપાય નથી, તેથી તાત્કાલિક રસી લેવી અનિવાર્ય છે."
+        }
+      },
+      {
+        "type": "illustration",
+        "src": "/illustrations/rabies_wash.svg",
+        "alt": {
+          "en": "Washing animal bite wound under running tap water",
+          "hi": "बहते पानी और साबुन से घाव धोना",
+          "gu": "વહેતા પાણી અને સાબુથી ઘા સાફ કરવો"
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Immediate 15-Minute Soap & Water Wash",
+          "hi": "तुरंत 15 मिनट तक साबुन और पानी से घाव धोएं",
+          "gu": "તરત જ ૧૫ મિનિટ સુધી સાબુ અને વહેતા પાણીથી ઘા ધુઓ"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "1. Wash the wound immediately under running tap water with soap for at least 15 minutes. This mechanically removes most virus particles. 2. Apply Povidone-Iodine antiseptic. 3. NEVER apply red chili powder, turmeric, lime, oil, or ties/bandages tightly over animal bites.",
+          "hi": "1. घाव को तुरंत बहते पानी में साबुन से कम से कम 15 मिनट धोएं। 2. सेवलॉन या बीटाडीन एंटीसेप्टिक लगाएं। 3. घाव पर मिर्च, हल्दी, चूना या तेल बिल्कुल न लगाएं और न ही कसकर बांधें।",
+          "gu": "૧. ઘાને તરત જ સાબુ અને વહેતા પાણી નીચે ઓછામાં ઓછી ૧૫ મિનિટ સુધી સતત ધુઓ. ૨. બેટાડીન અથવા એન્ટિસેપ્ટિક લગાવો. ૩. ઘા પર મરચું, હળદર, ચૂનો કે તેલ બિલકુલ ન લગાવવું અને ઘાને સખત બાંધવો નહીં."
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Free Anti-Rabies Vaccine Schedule (ARV)",
+          "hi": "मुफ्त रेबीज रोधी टीका अनुसूची",
+          "gu": "મફત હડકવા વિરોધી રસી (ARV) ડોઝ શિડ્યુલ"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Visit the Govt Hospital on Day 0 (day of bite), Day 3, Day 7, Day 14, and Day 28 for anti-rabies injection. For severe Category III bites, Rabies Immunoglobulin (RIG) must be infiltrated around the wound.",
+          "hi": "सरकारी अस्पताल में दिन 0 (काटने वाले दिन), दिन 3, दिन 7, दिन 14 और दिन 28 पर रेबीज का टीका लगवाएं। गंभीर घाव पर रेबीज इम्युनोग्लोबुलिन (RIG) भी लगवाना आवश्यक है।",
+          "gu": "સરકારી હોસ્પિટલમાં દિવસ ૦ (કરડવાના દિવસે), દિવસ ૩, દિવસ ૭, દિવસ ૧૪ અને દિવસ ૨૮ પર હડકવાની રસી મુકાવો. ગંભીર ઘા હોય તો RIG રસી ઘા ની આસપાસ મુકાવવી અનિવાર્ય છે."
+        }
+      }
+    ],
+    "tags": ["rabies", "dog_bite", "first_aid", "vaccine", "disease_prevention"]
+  },
+  {
+    "id": "heatstroke_prevention",
+    "category": "disease_prevention",
+    "title": {
+      "en": "Summer Heatstroke (Loo) First Aid & Prevention",
+      "hi": "गर्मी में लू (हीटस्ट्रोक) से बचाव और प्राथमिक उपचार",
+      "gu": "ઉનાળામાં લૂ (Heatstroke) થી બચાવ અને પ્રાથમિક ઉપચાર"
+    },
+    "body": [
+      {
+        "type": "heading",
+        "content": {
+          "en": "Recognizing Heat Exhaustion vs Heatstroke",
+          "hi": "लू के लक्षण और चेतावनी संकेत",
+          "gu": "લૂ લાગવાના મુખ્ય લક્ષણો"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Extreme summer heat during peak hours (12 PM - 4 PM) causes severe dehydration, high body temperature (>40°C), confusion, red dry skin, and muscle cramps.",
+          "hi": "कड़ी धूप में (दोपहर 12 से 4 बजे) रहने से शरीर का तापमान तेजी से बढ़ता है, लाल सूखी त्वचा, सिरदर्द, उल्टी और बेहोशी हो सकती है।",
+          "gu": "બપોરે ૧૨ થી ૪ વાગ્યાની આકરા તાપમાં રહેવાથી શરીરનું તાપમાન વધી જાય છે, માથું દુખવું, ઉલટી થવી અને બેભાન થઈ જવું એ લૂ લાગવાના ચિહ્નો છે."
+        }
+      },
+      {
+        "type": "illustration",
+        "src": "/illustrations/heatstroke_hydration.svg",
+        "alt": {
+          "en": "Cooling body with wet cloth and ORS/buttermilk hydration",
+          "hi": "गीले कपड़े से शरीर पोछना और छाछ/ORS पीना",
+          "gu": "ભીના કપડાથી શરીર લૂછવું અને છાશ/ORS પીવું"
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Immediate Emergency Cooling First Aid",
+          "hi": "तत्काल कूलिंग प्राथमिक उपचार",
+          "gu": "તાત્કાલિક ઠંડક આપતો ઉપચાર"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "1. Move the person to a cool shaded room or under a fan immediately. 2. Apply wet cold towels over neck, armpits, and groin. Sponge whole body with normal water. 3. If conscious, give ORS, fresh buttermilk (chaas), sattu drink, or lemon water. 4. Rush to nearest PHC if confused or unconscious.",
+          "hi": "1. व्यक्ति को तुरंत ठंडे छायादार स्थान या पंखे के नीचे लाएं। 2. गर्दन, बगल और पेट पर गीला ठंडा कपड़ा रखें। पूरे शरीर को सामान्य पानी से पोछें। 3. होश में होने पर छाछ, ओआरएस, सत्तू या शिकंजी पिलाएं। 4. बेहोश होने पर तुरंत अस्पताल ले जाएं।",
+          "gu": "૧. દર્દીને તરત જ છાંયડામાં કે પંખા નીચે લાવો. ૨. મોં, ડોક અને બગલમાં ઠંડા પાણીથી પલાળેલું કપડું મૂકો. ૩. જો ભાનમાં હોય તો મોળી છાશ, ORS, લીંબુ શરબત કે વરિયાળીનું પાણી પાઓ. ૪. બેભાન જણાય તો તરત સરકારી હોસ્પિટલ પહોંચાડો."
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Prevention Tips for Outdoor Workers",
+          "hi": "खेत और बाहर काम करने वालों के लिए सावधानी",
+          "gu": "ખેતરમાં કે બહાર કામ કરનારાઓ માટે સાવચેતી"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Cover head with a light cotton cloth or gamcha/turban. Drink water before stepping out and carry a water bottle. Take rest breaks in shade during noon hours.",
+          "hi": "सिर को सूती कपड़े या गमछे से ढक कर रखें। बाहर निकलने से पहले पानी पिएं। दोपहर में छाया में आराम करें।",
+          "gu": "માથા પર સુતરાઉ રૂમાલ કે ટોપી પહેરો. બહાર નીકળતા પહેલાં પુષ્કળ પાણી પીવો. બપોરના સમયે છાંયડામાં વિરામ લો."
+        }
+      }
+    ],
+    "tags": ["heatstroke", "loo", "summer", "hydration", "first_aid"]
+  },
+  {
+    "id": "water_purification",
+    "category": "hygiene",
+    "title": {
+      "en": "Safe Drinking Water Purification at Village Home",
+      "hi": "घर पर पीने के पानी को शुद्ध करने के सुरक्षित तरीके",
+      "gu": "ઘરે પીવાના પાણીને શુદ્ધ કરવાના સુરક્ષિત ઉપાયો"
+    },
+    "body": [
+      {
+        "type": "heading",
+        "content": {
+          "en": "Contaminated Water Causes 80% Waterborne Ills",
+          "hi": "दूषित पानी 80% बीमारियों की जड़ है",
+          "gu": "દૂષિત પાણી ૮૦% પાણીજન્ય રોગોનું મૂળ છે"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Unsafe drinking water carries bacteria and viruses causing Cholera, Typhoid, Hepatitis A/E, and severe diarrhoea.",
+          "hi": "असुरक्षित पीने का पानी हैजा, टाइफाइड, पीलिया और दस्त फैलाने वाले बैक्टीरिया ले जाता है।",
+          "gu": "અશુદ્ધ પીવાનું પાણી મરડો, ટાઇફોઇડ, કમળો અને ઝાડા જેવા ગંભીર રોગો ફેલાવે છે."
+        }
+      },
+      {
+        "type": "illustration",
+        "src": "/illustrations/water_purification.svg",
+        "alt": {
+          "en": "Boiling water and chlorine liquid disinfection",
+          "hi": "पानी उबालना और क्लोरीन की गोलियां",
+          "gu": "પાણી ઉકાળવું અને ક્લોરીનની ગોળીઓ"
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Method 1: Rolling Boil for 10 Minutes (Gold Standard)",
+          "hi": "तरीका 1: 10 मिनट तक उबालना (सबसे उत्तम)",
+          "gu": "રીત ૧: ૧૦ મિનિટ સુધી ઉકાળવું (સૌથી શ્રેષ્ઠ)"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Bring water to a continuous rolling boil for 10 full minutes. Allow it to cool naturally in a covered container. Do not dip fingers into stored boiled water; use a long-handled ladle.",
+          "hi": "पानी को 10 मिनट तक लगातार उबालें। ढके बर्तन में प्राकृतिक रूप से ठंडा होने दें। ढके पानी में हाथ न डुबोएं, लंबे हत्थे वाले लोटे का उपयोग करें।",
+          "gu": "પાણીને સતત ૧૦ મિનિટ સુધી બરાબર ઉકાળો. ઢાંકેલા વાસણમાં આપોઆપ ઠંડુ થવા દો. પાણી લેવા માટે લાંબા હાથવાળા ડોયાનો જ ઉપયોગ કરો."
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Method 2: Chlorine Disinfection Liquid/Tablets",
+          "hi": "तरीका 2: क्लोरीन तरल या गोलियां",
+          "gu": "રીત ૨: ક્લોરીનનું દ્રાવણ અથવા ગોળીઓ"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Add 1 chlorine tablet (or 2-4 drops of Govt liquid chlorine) per 20 litres of clear water. Stir well and wait for 30 minutes before drinking.",
+          "hi": "20 लीटर साफ पानी में 1 क्लोरीन गोली (या 2-4 बूंद तरल क्लोरीन) मिलाएं। 30 मिनट तक इंतजार करने के बाद ही पिएं।",
+          "gu": "૨૦ લીટર ચોખ્ખા પાણીમાં ૧ ક્લોરીનની ગોળી ઉમેરો. ૩૦ મિનિટ સુધી રહેવા દીધા પછી જ પીવા માટે ઉપયોગમાં લો."
+        }
+      }
+    ],
+    "tags": ["water", "purification", "chlorine", "hygiene", "diarrhoea"]
+  },
+  {
+    "id": "worm_infestation",
+    "category": "child_health",
+    "title": {
+      "en": "Worm Infestation Prevention & Albendazole Deworming",
+      "hi": "पेट के कीड़ों से बचाव और एल्बेंडाजोल (Deworming) खुराक",
+      "gu": "પેટના કરમિયાંથી બચાવ અને આલ્બેન્ડાઝોલ દવાનો ડોઝ"
+    },
+    "body": [
+      {
+        "type": "heading",
+        "content": {
+          "en": "How Intestinal Worms Affect Children",
+          "hi": "पेट के कीड़े बच्चों को कैसे नुकसान पहुंचाते हैं",
+          "gu": "પેટના કરમિયાં બાળકોને કેવી રીતે નુકસાન કરે છે"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Intestinal worms (roundworm, hookworm, whipworm) consume nutrients inside child's gut, causing severe anemia, malnutrition, stunted physical growth, and poor school attendance.",
+          "hi": "पेट के कीड़े बच्चे के शरीर का पोषण चूस लेते हैं, जिससे खून की कमी (एनीमिया), कुपोषण और शारीरिक विकास रुक जाता है।",
+          "gu": "પેટના કરમિયાં બાળકના ખોરાકમાંથી પોષણ ખેંચી લે છે, જેનાથી એનિમીઆ, કુપોષણ અને શારીરિક વિકાસ રૂંધાઈ જાય છે."
+        }
+      },
+      {
+        "type": "illustration",
+        "src": "/illustrations/worm_hygiene.svg",
+        "alt": {
+          "en": "Wearing footwear and taking chewable Albendazole tablet",
+          "hi": "चप्पल पहनना और एल्बेंडाजोल गोली खाना",
+          "gu": "ચંપલ પહેરવા અને આલ્બેન્ડાઝોલ ગોળી ગળવી"
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "National Deworming Day (NDD) Dosage",
+          "hi": "राष्ट्रीय कृमिमुक्ति दिवस खुराक",
+          "gu": "રાષ્ટ્રીય કૃમિનાશક દિવસનો ડોઝ"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "• Age 1-2 years: Half Albendazole (200mg) tablet crushed in water. • Age 2-19 years: 1 full chewable Albendazole (400mg) tablet twice every year (February & August).",
+          "hi": "• 1-2 वर्ष: आधी एल्बेंडाजोल (200mg) गोली पानी में पीसकर। • 2-19 वर्ष: 1 पूरी चबाने वाली एल्बेंडाजोल (400mg) गोली साल में दो बार।",
+          "gu": "• ૧-૨ વર્ષ: અડધી આલ્બેન્ડાઝોલ (૨૦૦mg) ગોળી ભૂકો કરીને. • ૨-૧૯ વર્ષ: ૧ આખી ચાવવાની આલ્બેન્ડાઝોલ (૪૦૦mg) ગોળી વર્ષમાં બે વાર (ફેબ્રુઆરી અને ઓગસ્ટ)."
+        }
+      },
+      {
+        "type": "heading",
+        "content": {
+          "en": "Hygiene Practices to Stop Worm Re-infection",
+          "hi": "पुनः संक्रमण रोकने की आदतें",
+          "gu": "ફરી કરમિયાં ન થાય તે માટેની ટેવો"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "1. Always wear slippers/shoes outside to prevent hookworm penetration through bare feet soil. 2. Keep fingernails short and clean. 3. Wash fruits and vegetables thoroughly before eating.",
+          "hi": "1. हमेशा बाहर चप्पल पहनें ताकि हुकवर्म पैरों से न घुसे। 2. नाखून छोटे और साफ रखें। 3. फल और सब्जियां धोकर खाएं।",
+          "gu": "૧. જમીનમાંથી કરમિયાં પગ વાટે ન ઘૂસે તે માટે બહાર ચંપલ જ પહેરો. ૨. નખ ટૂંકા અને સાફ રાખો. ૩. શાકભાજી બરાબર ધોઈને વાપરો."
+        }
+      }
+    ],
+    "tags": ["worms", "deworming", "albendazole", "child_health", "anemia"]
+  },
+  {
+    "id": "iron_rich_diet",
+    "category": "nutrition",
+    "title": {
+      "en": "Iron-Rich Locally Available Foods for Anaemia Prevention",
+      "hi": "एनीमिया की रोकथाम के लिए स्थानीय आयरन-युक्त आहार",
+      "gu": "એનીમિયા અટકાવવા માટે સ્થાનિક આયર્નયુક્ત ખોરાક"
+    },
+    "body": [
+      {
+        "type": "heading",
+        "content": {
+          "en": "Best Local Sources of Iron",
+          "hi": "आयरन के मुख्य स्थानीय स्रोत",
+          "gu": "આયર્નના મુખ્ય સ્થાનિક સ્રોત"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Spinach, fenugreek, drumstick leaves (moringa), jaggery (gud), dates, roasted chana, sesame seeds, and millets (bajra, ragi). Adding lemon or amla increases iron absorption up to 3 times.",
+          "hi": "पालक, मेथी, सहजन के पत्ते, गुड़, खजूर, भुना चना, तिल और बाजरा-रागी। खाने के साथ नींबू या आँवला लेने से आयरन शरीर में जल्दी सोखता है।",
+          "gu": "પાલક, મેથી, સરગવાના પાન, ગોળ, ખજૂર, શેકેલા ચણા, તલ અને બાજરી-રાગી. જમવામાં લીંબુ કે આમળા ઉમેરવાથી આયર્ન ઝડપથી પચે છે."
+        }
+      }
+    ],
+    "tags": ["iron", "diet", "nutrition", "anemia"]
+  },
+  {
+    "id": "anaemia_prevention",
+    "category": "nutrition",
+    "title": {
+      "en": "Understanding Anaemia Symptoms and IFA Supplementation",
+      "hi": "एनीमिया के लक्षण और आईएफए (IFA) गोलियों का सेवन",
+      "gu": "એનીમિયાના લક્ષણો અને આયર્ન ગોળીની સારવાર"
+    },
+    "body": [
+      {
+        "type": "heading",
+        "content": {
+          "en": "IFA Guidelines under Anemia Mukt Bharat",
+          "hi": "एनीमिया मुक्त भारत के तहत दवा की खुराक",
+          "gu": "એનીમિયા મુક્ત ભારત અંતર્ગત માર્ગદર્શિકા"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Red IFA tablets for pregnant women daily, Blue IFA for adolescents weekly, and Pink IFA for children bi-weekly as per national norms. Never take IFA tablets on an empty stomach or with milk/tea.",
+          "hi": "गर्भवती महिलाओं के लिए रोजाना लाल गोलियां, किशोरों के लिए नीली और बच्चों के लिए गुलाबी सिरप/गोली। दवा को हमेशा खाने के बाद पानी से लें, दूध या चाय के साथ न लें।",
+          "gu": "સગર્ભા મહિલાઓ માટે દરરોજ લાલ ગોળીઓ, કિશોરો માટે અઠવાડિયે એક વાર વાદળી અને બાળકો માટે ગુલાબી સિરપ. દૂધ કે ચા સાથે ન આપો."
+        }
+      }
+    ],
+    "tags": ["anemia", "ifa", "iron", "women_health"]
+  },
+  {
+    "id": "vitamin_a_nutrition",
+    "category": "nutrition",
+    "title": {
+      "en": "Vitamin A Foods and Blindness Prevention in Children",
+      "hi": "विटामिन ए युक्त आहार और बच्चों में अंधापन से बचाव",
+      "gu": "વિટામિન એ અને બાળકોમાં દ્રષ્ટિની સુરક્ષા"
+    },
+    "body": [
+      {
+        "type": "heading",
+        "content": {
+          "en": "Protecting Child Vision with Vitamin A",
+          "hi": "विटामिन ए से आँखों का बचाव",
+          "gu": "વિટામિન એ વડે આંખોનું રક્ષણ"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "Papaya, ripe mangoes, carrots, pumpkin, drumstick leaves, milk, ghee, and eggs provide rich natural Vitamin A. Bi-annual mega Vitamin A doses from 9 months to 5 years prevent night blindness and Bitot spots.",
+          "hi": "पपीता, पका आम, गाजर, कद्दू, सहजन के पत्ते, दूध, घी और अंडा। 9 महीने से 5 साल तक साल में दो बार विटामिन ए की खुराक आँखों को सुरक्षित रखती है।",
+          "gu": "પપૈયું, કેરી, ગાજર, કોળું, સરગવાના પાન, દૂધ અને ઈંડા. ૯ મહિનાથી ૫ વર્ષ સુધી દર ૬ મહિને વિટામિન એ નો ડોઝ રતાંધળાપણું અટકાવે છે."
+        }
+      }
+    ],
+    "tags": ["vitamin_a", "eyes", "child_health"]
+  },
+  {
+    "id": "sam_child_care",
+    "category": "child_health",
+    "title": {
+      "en": "Management of Severe Acute Malnutrition (SAM) at Home & NRC",
+      "hi": "गंभीर कुपोषण (SAM) की पहचान और देखरेख",
+      "gu": "ગંભીર કુપોષણની ઓળખ અને એનઆરસી સારવાર"
+    },
+    "body": [
+      {
+        "type": "heading",
+        "content": {
+          "en": "Detecting and Treating SAM",
+          "hi": "कुपोषण की तुरंत पहचान",
+          "gu": "કુપોષણની તાત્કાલિક ઓળખ"
+        }
+      },
+      {
+        "type": "text",
+        "content": {
+          "en": "MUAC tape in the Red Zone (<11.5 cm) or bilateral pedal edema indicates Severe Acute Malnutrition. Non-complicated SAM can be treated with Ready-to-Use Therapeutic Food (RUTF) and Take Home Ration at home. Complicated cases need 14-day stay at Nutritional Rehabilitation Centre (NRC).",
+          "hi": "बाँह का घेरा लाल निशान (<11.5 सेमी) या दोनों पैरों में सूजन गंभीर कुपोषण दर्शाता है। ऐसे बच्चों को तुरंत पोषण पुनर्वास केंद्र (NRC) या एएनएम के पास ले जाएं।",
+          "gu": "મિયાક ટેપ લાલ ઝોનમાં હોય (<૧૧.૫ સેમી) અથવા બંને પગમાં સોજો હોય તો તાત્કાલિક બાળકને એનઆરસી (NRC) સેન્ટર પર મોકલો."
+        }
+      }
+    ],
+    "tags": ["malnutrition", "sam", "nrc", "child_health"]
+  }
+]

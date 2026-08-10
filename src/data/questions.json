@@ -1,0 +1,268 @@
+[
+  {
+    "id": "age_group",
+    "type": "buttons",
+    "question": {
+      "en": "What is the age group of the patient?",
+      "hi": "मरीज़ का आयु वर्ग क्या है?",
+      "gu": "દર્દીનું ઉંમર જૂથ શું છે?"
+    },
+    "options": [
+      {
+        "value": "infant",
+        "label": {
+          "en": "0 - 2 years",
+          "hi": "0 - 2 वर्ष (शिशु)",
+          "gu": "0 - 2 વર્ષ (બાળક)"
+        }
+      },
+      {
+        "value": "child",
+        "label": {
+          "en": "3 - 12 years",
+          "hi": "3 - 12 वर्ष (बच्चा)",
+          "gu": "3 - 12 વર્ષ (બાળક)"
+        }
+      },
+      {
+        "value": "adult",
+        "label": {
+          "en": "13 - 60 years",
+          "hi": "13 - 60 वर्ष (वयस्क)",
+          "gu": "13 - 60 વર્ષ (યુવાન/પ્રૌઢ)"
+        }
+      },
+      {
+        "value": "elderly",
+        "label": {
+          "en": "60+ years",
+          "hi": "60+ वर्ष (बुजुर्ग)",
+          "gu": "60+ વર્ષ (વૃદ્ધ)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "gender",
+    "type": "buttons",
+    "question": {
+      "en": "What is the patient's gender?",
+      "hi": "मरीज़ का लिंग क्या है?",
+      "gu": "દર્દીની જાતિ શું છે?"
+    },
+    "options": [
+      {
+        "value": "male",
+        "label": {
+          "en": "Male",
+          "hi": "पुरुष",
+          "gu": "પુરુષ"
+        }
+      },
+      {
+        "value": "female",
+        "label": {
+          "en": "Female",
+          "hi": "महिला",
+          "gu": "મહિલા"
+        }
+      },
+      {
+        "value": "other",
+        "label": {
+          "en": "Other",
+          "hi": "अन्य",
+          "gu": "અન્ય"
+        }
+      }
+    ]
+  },
+  {
+    "id": "chief_complaint",
+    "type": "multiline",
+    "question": {
+      "en": "Describe the main trouble or symptoms (chief complaint):",
+      "hi": "मुख्य समस्या या लक्षणों का वर्णन करें:",
+      "gu": "મુખ્ય તકલીફ અથવા લક્ષણો જણાવો:"
+    },
+    "placeholder": {
+      "en": "e.g. I have fever, cough and body ache for 2 days",
+      "hi": "जैसे: मुझे 2 दिन से बुखार, खाँसी और बदन दर्द है",
+      "gu": "દા.ત.: મને 2 દિવસથી તાવ, ઉધરસ અને શરીરનો દુખાવો છે"
+    }
+  },
+  {
+    "id": "duration",
+    "type": "buttons",
+    "question": {
+      "en": "Since how many days has the problem been present?",
+      "hi": "यह समस्या कितने दिनों से है?",
+      "gu": "આ તકલીફ કેટલા દિવસથી છે?"
+    },
+    "options": [
+      {
+        "value": "1",
+        "label": {
+          "en": "1 day (Today)",
+          "hi": "1 दिन (आज से)",
+          "gu": "1 દિવસ (આજથી)"
+        }
+      },
+      {
+        "value": "2",
+        "label": {
+          "en": "2 - 3 days",
+          "hi": "2 - 3 दिन",
+          "gu": "2 - 3 દિવસ"
+        }
+      },
+      {
+        "value": "5",
+        "label": {
+          "en": "4 - 7 days",
+          "hi": "4 - 7 दिन",
+          "gu": "4 - 7 દિવસ"
+        }
+      },
+      {
+        "value": "10",
+        "label": {
+          "en": "More than 1 week",
+          "hi": "1 सप्ताह से अधिक",
+          "gu": "1 અઠવાડિયાથી વધુ"
+        }
+      }
+    ]
+  },
+  {
+    "id": "additional_symptoms",
+    "type": "checklist",
+    "question": {
+      "en": "Select any primary symptoms observed:",
+      "hi": "प्राथमिक लक्षण जो दिखाई दे रहे हों:",
+      "gu": "જોવા મળતા મુખ્ય લક્ષણો પસંદ કરો:"
+    },
+    "options": [
+      { "value": "fever", "label": { "en": "Fever / High Temp", "hi": "बुखार", "gu": "તાવ" } },
+      { "value": "cough", "label": { "en": "Cough", "hi": "खाँसी", "gu": "ઉધરસ" } },
+      { "value": "cold", "label": { "en": "Runny Nose / Cold", "hi": "सर्दी / छींक", "gu": "શરદી / છીંક" } },
+      { "value": "sore_throat", "label": { "en": "Sore Throat / Pain", "hi": "गले में खराश", "gu": "ગળામાં દુખાવો" } },
+      { "value": "breathing_difficulty", "label": { "en": "Breathing Difficulty", "hi": "सांस लेने में तकलीफ", "gu": "શ્વાસ લેવામાં તકલીફ" } },
+      { "value": "chest_pain", "label": { "en": "Chest Pain", "hi": "छाती में दर्द", "gu": "છાતીમાં દુખાવો" } },
+      { "value": "vomiting", "label": { "en": "Vomiting / Nausea", "hi": "उल्टी / मिचली", "gu": "ઉલટી / મચકોડ" } },
+      { "value": "diarrhoea", "label": { "en": "Loose Motion / Diarrhoea", "hi": "दस्त / पेट खराब", "gu": "ઝાડા / દસ્ત" } },
+      { "value": "abdominal_pain", "label": { "en": "Stomach / Abdominal Pain", "hi": "पेट दर्द", "gu": "પેટમાં દુખાવો" } },
+      { "value": "headache", "label": { "en": "Headache", "hi": "सिर दर्द", "gu": "માથાનો દુખાવો" } },
+      { "value": "bodyache", "label": { "en": "Body Ache / Muscle Pain", "hi": "बदन दर्द", "gu": "શરીરનો દુખાવો" } },
+      { "value": "fatigue", "label": { "en": "Extreme Weakness / Tiredness", "hi": "अत्यधिक कमजोरी / थकान", "gu": "અતિશય નબળાઈ / થાક" } },
+      { "value": "skin_rash", "label": { "en": "Skin Rash / Itching", "hi": "त्वचा पर दाने / खुजली", "gu": "ચામડી પર લાલ ચકામાં / ખંજવાળ" } },
+      { "value": "dizziness", "label": { "en": "Dizziness / Giddiness", "hi": "चक्कर आना", "gu": "ચક્કર આવવા" } },
+      { "value": "burning_urination", "label": { "en": "Burning Urination", "hi": "पेशाब में जलन", "gu": "પેશાબમાં બળતરા" } },
+      { "value": "joint_pain", "label": { "en": "Joint Pain / Swelling", "hi": "जोड़ों में दर्द / सूजन", "gu": "સાંધાનો દુખાવો / સોજો" } }
+    ]
+  },
+  {
+    "id": "associated_signs",
+    "type": "checklist",
+    "question": {
+      "en": "Select specific clinical signs & physical observations:",
+      "hi": "विशिष्ट नैदानिक लक्षण और शारीरिक अवलोकन चुनें:",
+      "gu": "વિશેષ ક્લિનિકલ ચિહ્નો અને નિરીક્ષણો પસંદ કરો:"
+    },
+    "options": [
+      { "value": "chills", "label": { "en": "Chills / Shivering with Fever", "hi": "ठंड या कंपकंपी के साथ बुखार", "gu": "ઠંડી કે ધ્રુજારી સાથે તાવ" } },
+      { "value": "yellow_eyes", "label": { "en": "Yellow Eyes or Skin (Jaundice)", "hi": "पीली आंखें या त्वचा (पीलिया)", "gu": "પીળી આંખો કે ચામડી (કમળો)" } },
+      { "value": "sputum", "label": { "en": "Yellow/Green Thick Phlegm or Sputum", "hi": "खाँसी में पीला/हरा बलगम", "gu": "ઉધરસ સાથે પીળો કે લીલો કફ" } },
+      { "value": "dehydration", "label": { "en": "Extreme Thirst / Sunken Eyes / Dry Mouth", "hi": "अत्यधिक प्यास / सूखा मुंह / आंखें धंसी", "gu": "અતિશય તરસ / સુકાઈ ગયેલું મોં / ઘેરી આંખો" } },
+      { "value": "blood_stool", "label": { "en": "Blood or Mucus in Stool or Vomit", "hi": "मल या उल्टी में खून/आंव", "gu": "મળ કે ઉલટીમાં લોહી અથવા ચીકાશ" } },
+      { "value": "neck_stiffness", "label": { "en": "Stiff Neck or Light Sensitivity", "hi": "गर्दन में अकड़न / रोशनी से तकलीफ", "gu": "ગરદન અકડાવાની કે અજવાળાથી તકલીફ" } },
+      { "value": "appetite_loss", "label": { "en": "Loss of Appetite / Bitter Taste", "hi": "भूख न लगना / मुंह का स्वाद कड़वा", "gu": "ભૂખ ન લાગવી / મોંમાં કડવાશ" } },
+      { "value": "joint_swelling", "label": { "en": "Visible Joint Swelling / Stiffness", "hi": "जोड़ों में दिखाई देने वाली सूजन", "gu": "સાંધામાં સોજો કે અકડામણ" } },
+      { "value": "rash_blisters", "label": { "en": "Watery Blisters or Red Spots on Skin", "hi": "त्वचा पर छाले / फफोले या लाल धब्बे", "gu": "ચામડી પર પાણીવાળા ફોલ્લા કે લાલ ચાઠાં" } },
+      { "value": "sweating", "label": { "en": "Profuse Night Sweats or Chills", "hi": "रात में अत्यधिक पसीना या कंपकंपी", "gu": "રાત્રે અતિશય પરસેવો થવો" } }
+    ]
+  },
+  {
+    "id": "vitals",
+    "type": "checklist",
+    "question": {
+      "en": "Select recorded vital measurements or physical findings:",
+      "hi": "शारीरिक मापदंड या वाइटल्स दर्ज करें:",
+      "gu": "નોંધાયેલા વાઇટલ્સ કે શારીરિક તારણો પસંદ કરો:"
+    },
+    "options": [
+      { "value": "high_fever", "label": { "en": "High Temperature (>101°F / Feel Burning Hot)", "hi": "तेज बुखार (>101°F)", "gu": "ખૂબ તીવ્ર તાવ (>101°F)" } },
+      { "value": "high_bp", "label": { "en": "High Blood Pressure (>140/90 mmHg / Heavy Head)", "hi": "उच्च रक्तचाप (हाई बीपी / भारी सिर)", "gu": "હાઇ બ્લડ પ્રેશર (હાઇ BP / ભારે માથું)" } },
+      { "value": "low_spo2", "label": { "en": "Low Oxygen SpO2 (<94% / Blue Lips or Nails)", "hi": "कम ऑक्सीजन (<94% SpO2 / नीले होंठ)", "gu": "ઓછું ઓક્સિજન સ્તર (<94% SpO2 / લીલાશ પડતા હોઠ)" } },
+      { "value": "rapid_pulse", "label": { "en": "Fast Pulse / Racing Heart (>100 bpm)", "hi": "तेज धड़कन / नाड़ी दर तेज (>100 bpm)", "gu": "તીવ્ર ધબકારા / નાડીના ઝડપી ધબકારા" } }
+    ]
+  },
+  {
+    "id": "medical_history",
+    "type": "checklist",
+    "question": {
+      "en": "Select patient's known past medical history & conditions:",
+      "hi": "मरीज की पुरानी बीमारी या मेडिकल हिस्ट्री चुनें:",
+      "gu": "દર્દીની ભૂતકાળની બીમારીઓ પસંદ કરો:"
+    },
+    "options": [
+      { "value": "diabetes", "label": { "en": "Diabetes Mellitus / High Blood Sugar", "hi": "मधुमेह (शुगर)", "gu": "ડાયાબિટીસ (શુગર)" } },
+      { "value": "hypertension", "label": { "en": "Hypertension / Known BP Problem", "hi": "उच्च रक्तचाप (बीपी समस्या)", "gu": "હાઇ બ્લડ પ્રેશરની તકલીફ" } },
+      { "value": "asthma_history", "label": { "en": "Asthma / Chronic Respiratory Disease", "hi": "दमा / अस्थमा / सांस की बीमारी", "gu": "અસ્થમા / દમ / શ્વાસની બીમારી" } },
+      { "value": "kidney_disease", "label": { "en": "Kidney or Liver Illness", "hi": "गुर्दे या लिवर की बीमारी", "gu": "કિડની કે લિવરની બીમારી" } },
+      { "value": "pregnancy", "label": { "en": "Currently Pregnant or Lactating Mother", "hi": "गर्भवती या स्तनपान कराने वाली माता", "gu": "ગર્ભવતી અથવા ધાત્રી માતા" } },
+      { "value": "allergies", "label": { "en": "Known Allergy to Food or Medicines", "hi": "दवा या भोजन से एलर्जी", "gu": "દવા કે ખોરાકની એલર્જી" } }
+    ]
+  },
+  {
+    "id": "exposure_history",
+    "type": "checklist",
+    "question": {
+      "en": "Select relevant environmental, travel, or exposure risks:",
+      "hi": "पर्यावरणीय, यात्रा या संपर्क संबंधी जोखिम चुनें:",
+      "gu": "પર્યાવરણીય, મુસાફરી અથવા જોખમો પસંદ કરો:"
+    },
+    "options": [
+      { "value": "mosquito_exposure", "label": { "en": "Mosquito Exposure / Stagnant Water Nearby", "hi": "मच्छर का प्रकोप / आसपास रुका पानी", "gu": "મચ્છરનો ઉપદ્રવ / આસપાસ ભરાયેલું પાણી" } },
+      { "value": "outside_food_water", "label": { "en": "Outside Food / Unhygienic Drinking Water", "hi": "बाहर का खाना / दूषित पीने का पानी", "gu": "બહારનું ખાવાનું / દૂષિત પીવાનું પાણી" } },
+      { "value": "similar_family_symptoms", "label": { "en": "Family Members / Neighbors with Similar Symptoms", "hi": "परिवार या पड़ोस में लोगों को समान बीमारी", "gu": "પરિવાર કે પડોશમાં આવી જ બીમારી" } },
+      { "value": "recent_travel", "label": { "en": "Recent Travel outside Village / City", "hi": "हाल ही में बाहर यात्रा की", "gu": "તાજેતરમાં ગામ કે શહેર બહાર પ્રવાસ" } },
+      { "value": "contagious_contact", "label": { "en": "Direct Contact with Sick / Infectious Patient", "hi": "संक्रमित मरीज के सीधे संपर्क में आए", "gu": "બીમાર વ્યક્તિના સીધા સંપર્કમાં આવ્યા" } }
+    ]
+  },
+  {
+    "id": "severity",
+    "type": "buttons",
+    "question": {
+      "en": "How severe is the overall discomfort?",
+      "hi": "तकलीफ कितनी गंभीर है?",
+      "gu": "તકલીફ કેટલી ગંભીર છે?"
+    },
+    "options": [
+      {
+        "value": "mild",
+        "label": {
+          "en": "Mild (Manageable daily work)",
+          "hi": "हल्की (कामकाज सामान्य)",
+          "gu": "હળવી (દૈનિક કામ થઈ શકે)"
+        }
+      },
+      {
+        "value": "moderate",
+        "label": {
+          "en": "Moderate (Resting, feeling sick)",
+          "hi": "मध्यम (आराम की जरूरत)",
+          "gu": "મધ્યમ (આરામની જરૂર)"
+        }
+      },
+      {
+        "value": "severe",
+        "label": {
+          "en": "Severe (Bedridden, very high pain)",
+          "hi": "गंभीर (बिस्तर से उठना मुश्किल)",
+          "gu": "ગંભીર (અતિશય અસહ્ય તકલીફ)"
+        }
+      }
+    ]
+  }
+]

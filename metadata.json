@@ -1,0 +1,6 @@
+{
+  "name": "Nirāmay",
+  "description": "Virtual Hospital with multilingual chat-style case taking, diagnostic inference, risk triage, and medicine suggestions.",
+  "requestFramePermissions": ["microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

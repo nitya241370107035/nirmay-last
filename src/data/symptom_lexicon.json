@@ -1,0 +1,175 @@
+{
+  "fever": {
+    "phrases": [
+      "fever", "bukhar", "taav", "jwar", "tapman", "bukhār", "tāva", "jvara", "tav", "garmi", "high temperature", "hararat", "bakhār", "bukhar hai", "taav chhe", "taav aave chhe", "bukhaar", "tav aavyo"
+    ],
+    "weight": 10,
+    "type": "symptom"
+  },
+  "cough": {
+    "phrases": [
+      "cough", "coughing", "khansi", "udharas", "khas", "khānsī", "khāṃsī", "kasa", "khasra", "khasi", "udhros", "khansiyo", "khansi hai", "udharas chhe", "khansi aa rahi hai", "udharas aave chhe", "dhaso"
+    ],
+    "weight": 8,
+    "type": "symptom"
+  },
+  "cold": {
+    "phrases": [
+      "cold", "runny nose", "sardi", "chhinak", "sardī", "chink", "shardi", "shardī", "chhinakna", "nak behna", "naak me paani", "naak thi paani", "sardi chhe", "sardi ho gayi", "chink aave chhe", "sardi hai"
+    ],
+    "weight": 7,
+    "type": "symptom"
+  },
+  "sore_throat": {
+    "phrases": [
+      "sore throat", "throat pain", "throat irritation", "gala dard", "galama dukhavo", "gala kharab", "gala me kharash", "galu cholavung", "gale me dard", "gala dukhvu", "gala chhe", "gala ma kharash"
+    ],
+    "weight": 7,
+    "type": "symptom"
+  },
+  "breathing_difficulty": {
+    "phrases": [
+      "breathing difficulty", "shortness of breath", "breathless", "saans lene mein takleef", "saans phoolna", "shvas chadvo", "shvas ma taklif", "shvas phulvu", "saans nahi aa rahi", "saans lene me dard", "shvas chadva lagyo", "dam phoolna", "dam"
+    ],
+    "weight": 10,
+    "type": "redflag"
+  },
+  "chest_pain": {
+    "phrases": [
+      "chest pain", "pain in chest", "chhati ma dard", "chhātīmāṁ dukhāvo", "seene mein dard", "hridaya shool", "chhati no dukhavo", "chhati ma balatara", "seene me jalan", "seene me dard hai", "chhati dukhaya kare chhe"
+    ],
+    "weight": 10,
+    "type": "redflag"
+  },
+  "vomiting": {
+    "phrases": [
+      "vomiting", "nausea", "ulti", "ūlṭī", "vomit", "ubka", "michli", "ulti aana", "ulti aave chhe", "ulti thae chhe", "michli ho rahi hai", "ji ghabrana", "kamathaavu"
+    ],
+    "weight": 8,
+    "type": "symptom"
+  },
+  "diarrhoea": {
+    "phrases": [
+      "diarrhoea", "diarrhea", "loose motion", "dast", "jhada", "pātalā jhāḍā", "dast ho rahe hain", "patla jhada", "jhada ulti", "dast lag gaye", "patli potty", "dast thaye chhe", "jhada aave chhe"
+    ],
+    "weight": 9,
+    "type": "symptom"
+  },
+  "abdominal_pain": {
+    "phrases": [
+      "abdominal pain", "stomach pain", "stomach ache", "pet dard", "pet ma dukhavo", "pet no dukhavo", "pet me chuk", "pet me dard", "pet dukhvu", "pet kharab", "tummy pain", "belly ache", "pet ma balatara"
+    ],
+    "weight": 8,
+    "type": "symptom"
+  },
+  "headache": {
+    "phrases": [
+      "headache", "head pain", "sir dard", "sar dard", "māthā no dukhavo", "mathu dukhvu", "matha no dukhavo", "sir me dard hai", "head paining", "mathu fati rahyu chhe", "adho sir dard"
+    ],
+    "weight": 7,
+    "type": "symptom"
+  },
+  "bodyache": {
+    "phrases": [
+      "body ache", "bodyache", "muscle pain", "badan dard", "sarir no dukhavo", "ang dukhva", "maspeshi no dukhavo", "badan me dard", "sharir dukhvu", "ang marodna", "sharir no dukhavo"
+    ],
+    "weight": 7,
+    "type": "symptom"
+  },
+  "fatigue": {
+    "phrases": [
+      "fatigue", "weakness", "tiredness", "kamzori", "ashaktipana", "thakan", "ashakti", "sharir me takat nahi", "susti", "thakav", "shram", "kamjori hai", "thak jaana", "thaki javu"
+    ],
+    "weight": 6,
+    "type": "symptom"
+  },
+  "skin_rash": {
+    "phrases": [
+      "skin rash", "rash", "itching", "khujli", "chamdi no rog", "dadar", "khanjwal", "chamdi par lal nishan", "chakatte", "rash on skin", "khajval", "chamdi ma balatara"
+    ],
+    "weight": 6,
+    "type": "symptom"
+  },
+  "dizziness": {
+    "phrases": [
+      "dizziness", "giddiness", "chakkar", "mathu ghumvu", "chakkar aana", "chakkar aavva", "sir ghoomna", "dizzy", "chakkar aave chhe", "aankho aagal andhari"
+    ],
+    "weight": 7,
+    "type": "symptom"
+  },
+  "burning_urination": {
+    "phrases": [
+      "burning urination", "painful urine", "urine pain", "peshab me jalan", "peshab ma balatara", "peshab echo thavo", "mutra me jalan", "peshab me dard", "urinating pain", "peshab ma dukhava"
+    ],
+    "weight": 8,
+    "type": "symptom"
+  },
+  "joint_pain": {
+    "phrases": [
+      "joint pain", "joints pain", "sandhi sudha", "jodo me dard", "sandha no dukhavo", "jodo no dukhavo", "gothan no dukhavo", "ghutne me dard", "joint dukhvu", "gothan dukhva"
+    ],
+    "weight": 8,
+    "type": "symptom"
+  },
+  "unconscious": {
+    "phrases": [
+      "unconscious", "fainting", "behosh", "befan", "bhan bhulvu", "behosh ho gaya", "behosh ho jana", "gash khana", "befan thavu", "consciousness loss"
+    ],
+    "weight": 10,
+    "type": "redflag"
+  },
+  "bleeding": {
+    "phrases": [
+      "bleeding", "blood", "khun", "rakt", "lohi", "lohi nikalvu", "khun nikalna", "bleeding ho rahi hai", "lohi aave chhe", "blood loss", "raktasrava"
+    ],
+    "weight": 10,
+    "type": "redflag"
+  },
+  "seizure": {
+    "phrases": [
+      "seizure", "fits", "mirgi", "tan", "daura", "khench", "mırgı", "fits aana", "daura padna", "khench aavvi", "fits aave chhe"
+    ],
+    "weight": 10,
+    "type": "redflag"
+  },
+  "chills": {
+    "phrases": ["chills", "shivering", "thand", "thandi", "dhrujari", "dhujari", "thand lagna", "thandi aavvi"],
+    "weight": 8,
+    "type": "symptom"
+  },
+  "yellow_eyes": {
+    "phrases": ["yellow eyes", "jaundice", "pili aankhen", "kamlo", "peeli aankh", "kamala", "pila peshab"],
+    "weight": 10,
+    "type": "symptom"
+  },
+  "sputum": {
+    "phrases": ["sputum", "phlegm", "balgam", "kaf", "balgam wali khansi", "peela balgam", "peelo kaf"],
+    "weight": 7,
+    "type": "symptom"
+  },
+  "dehydration": {
+    "phrases": ["dehydration", "dry mouth", "extreme thirst", "pyaas", "taras", "sukaae gaelu mo"],
+    "weight": 8,
+    "type": "symptom"
+  },
+  "blood_stool": {
+    "phrases": ["blood in stool", "blood in vomit", "khun aana", "lohi aavvu", "jhada ma lohi", "dast me khun"],
+    "weight": 10,
+    "type": "redflag"
+  },
+  "neck_stiffness": {
+    "phrases": ["neck stiffness", "stiff neck", "gardan me akdan", "gardan ma akdamon", "gardan dukhvi"],
+    "weight": 10,
+    "type": "redflag"
+  },
+  "mosquito_exposure": {
+    "phrases": ["mosquito", "machhar", "stagnant water", "machhar bite", "machhar aave chhe"],
+    "weight": 8,
+    "type": "risk"
+  },
+  "outside_food_water": {
+    "phrases": ["outside food", "unhygienic water", "bahar nu khavanu", "dushit pani", "bahar ka khana"],
+    "weight": 7,
+    "type": "risk"
+  }
+}

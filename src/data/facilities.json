@@ -1,0 +1,1496 @@
+[
+  {
+    "id": "fac_001",
+    "name": "Shreeji Multispeciality Hospital",
+    "type": "hospital",
+    "address": "Near Bus Stand, Sanand, Ahmedabad - 382110",
+    "phone": [
+      "079-29751234",
+      "+91-9876543210"
+    ],
+    "latitude": 22.9925,
+    "longitude": 72.3714,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_002",
+    "name": "Community Health Centre (CHC) Sanand",
+    "type": "hospital",
+    "address": "Hospital Road, Sanand, Ahmedabad - 382110",
+    "phone": [
+      "079-23214567"
+    ],
+    "latitude": 22.9881,
+    "longitude": 72.3798,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "NTEP",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_003",
+    "name": "Pradhan Mantri Jan Aushadhi Kendra",
+    "type": "pharmacy",
+    "address": "Shop 12, Station Road, Sanand, Ahmedabad - 382110",
+    "phone": [
+      "+91-9825011223"
+    ],
+    "latitude": 22.9904,
+    "longitude": 72.3752
+  },
+  {
+    "id": "fac_004",
+    "name": "Primary Health Centre (PHC) Changodar",
+    "type": "clinic",
+    "address": "Sarkhej-Bavla Highway, Changodar, Sanand - 382213",
+    "phone": [
+      "02717-251011"
+    ],
+    "latitude": 22.9231,
+    "longitude": 72.4385,
+    "empanelled_schemes": [
+      "PMJAY",
+      "NTEP"
+    ]
+  },
+  {
+    "id": "fac_005",
+    "name": "Civil Hospital Asarwa (BJ Medical)",
+    "type": "hospital",
+    "address": "Asarwa, Ahmedabad - 380016",
+    "phone": [
+      "079-22683721",
+      "079-22688000"
+    ],
+    "latitude": 23.0518,
+    "longitude": 72.6026,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "NTEP",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_006",
+    "name": "Sarkhej Community Clinic & Maternity",
+    "type": "clinic",
+    "address": "Sarkhej Highway Circle, Ahmedabad - 382210",
+    "phone": [
+      "079-26821200"
+    ],
+    "latitude": 22.9833,
+    "longitude": 72.4981
+  },
+  {
+    "id": "fac_007",
+    "name": "Apollo Pharmacy - Bopal Circle",
+    "type": "pharmacy",
+    "address": "G-4, Gala Gymkhana Road, South Bopal, Ahmedabad - 380058",
+    "phone": [
+      "079-66112233",
+      "+91-9909012345"
+    ],
+    "latitude": 23.0331,
+    "longitude": 72.4678
+  },
+  {
+    "id": "fac_008",
+    "name": "Sardar Vallabhbhai Patel (SVP) Hospital",
+    "type": "hospital",
+    "address": "Ellisbridge, Near VS Hospital, Ahmedabad - 380006",
+    "phone": [
+      "079-26577621",
+      "079-26577622"
+    ],
+    "latitude": 23.0215,
+    "longitude": 72.5714,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_009",
+    "name": "Zydus Hospital & Medical Research Centre",
+    "type": "hospital",
+    "address": "Zydus Hospital Road, Thaltej, Ahmedabad - 380054",
+    "phone": [
+      "079-66770000",
+      "+91-9909923000"
+    ],
+    "latitude": 23.0612,
+    "longitude": 72.5184,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_010",
+    "name": "MedPlus Chemist & Druggist",
+    "type": "pharmacy",
+    "address": "Main Bazar Road, Sanand, Ahmedabad - 382110",
+    "phone": [
+      "079-29290011"
+    ],
+    "latitude": 22.9912,
+    "longitude": 72.3735
+  },
+  {
+    "id": "fac_011",
+    "name": "Government Sub-District Hospital Bavla",
+    "type": "hospital",
+    "address": "Bavla Highway Road, Bavla, Ahmedabad - 382220",
+    "phone": [
+      "02714-222100"
+    ],
+    "latitude": 22.8361,
+    "longitude": 72.3619,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "NTEP",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_012",
+    "name": "Urban Health Center (UHC) Bopal",
+    "type": "clinic",
+    "address": "TRP Mall Road, Bopal, Ahmedabad - 380058",
+    "phone": [
+      "079-29704455"
+    ],
+    "latitude": 23.0305,
+    "longitude": 72.4721,
+    "empanelled_schemes": [
+      "PMJAY",
+      "NTEP"
+    ]
+  },
+  {
+    "id": "fac_013",
+    "name": "KD Hospital (Kusum Dhirajlal)",
+    "type": "hospital",
+    "address": "Vaishnodevi Circle, SG Highway, Ahmedabad - 382421",
+    "phone": [
+      "079-67770000"
+    ],
+    "latitude": 23.1325,
+    "longitude": 72.541,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_014",
+    "name": "Wellness Forever 24/7 Pharmacy",
+    "type": "pharmacy",
+    "address": "Science City Road, Sola, Ahmedabad - 380060",
+    "phone": [
+      "079-27714000",
+      "+91-9879100022"
+    ],
+    "latitude": 23.0768,
+    "longitude": 72.5122
+  },
+  {
+    "id": "fac_015",
+    "name": "Shalby Multispecialty Hospital",
+    "type": "hospital",
+    "address": "Opp. Karnavati Club, SG Highway, Ahmedabad - 380015",
+    "phone": [
+      "079-40203000"
+    ],
+    "latitude": 23.0182,
+    "longitude": 72.5085,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_016",
+    "name": "Sanjivani Multispecialty Clinic",
+    "type": "clinic",
+    "address": "Near Railway Station, Viramgam, Ahmedabad - 382150",
+    "phone": [
+      "02715-231122"
+    ],
+    "latitude": 23.1189,
+    "longitude": 72.0543
+  },
+  {
+    "id": "fac_017",
+    "name": "Sub-District Hospital Viramgam",
+    "type": "hospital",
+    "address": "Mandal Road, Viramgam, Ahmedabad - 382150",
+    "phone": [
+      "02715-220044"
+    ],
+    "latitude": 23.1235,
+    "longitude": 72.0611,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "NTEP",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_018",
+    "name": "Shree Ram Medical & General Store",
+    "type": "pharmacy",
+    "address": "Bus Stand Complex, Changodar, Sanand - 382213",
+    "phone": [
+      "+91-9898123456"
+    ],
+    "latitude": 22.9248,
+    "longitude": 72.4398
+  },
+  {
+    "id": "fac_019",
+    "name": "GMERS General Hospital & Medical College Sola",
+    "type": "hospital",
+    "address": "SG Highway, Sola, Ahmedabad - 380060",
+    "phone": [
+      "079-27661000",
+      "079-27661234"
+    ],
+    "latitude": 23.0753,
+    "longitude": 72.5255,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_020",
+    "name": "Lifeline Sanjeevani Pharmacy",
+    "type": "pharmacy",
+    "address": "Opp. CHC Hospital, Bavla, Ahmedabad - 382220",
+    "phone": [
+      "+91-9426012345"
+    ],
+    "latitude": 22.8369,
+    "longitude": 72.3625
+  },
+  {
+    "id": "fac_021",
+    "name": "Aastha Family Health Clinic",
+    "type": "clinic",
+    "address": "Near Municipal Garden, Sanand, Ahmedabad - 382110",
+    "phone": [
+      "+91-9824056789"
+    ],
+    "latitude": 22.9938,
+    "longitude": 72.3729
+  },
+  {
+    "id": "fac_022",
+    "name": "CIMS Hospital (Marengo CIMS)",
+    "type": "hospital",
+    "address": "Off Science City Road, Sola, Ahmedabad - 380060",
+    "phone": [
+      "079-48000000",
+      "+91-9825066666"
+    ],
+    "latitude": 23.0789,
+    "longitude": 72.5098,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_023",
+    "name": "Janaushadhi Kendra - Bopal",
+    "type": "pharmacy",
+    "address": "Sobha Complex, Sun City Road, Bopal - 380058",
+    "phone": [
+      "+91-9723044556"
+    ],
+    "latitude": 23.0318,
+    "longitude": 72.4699
+  },
+  {
+    "id": "fac_024",
+    "name": "Urban Health Centre (UHC) Ranip",
+    "type": "clinic",
+    "address": "Near Railway Crossing, Ranip, Ahmedabad - 380081",
+    "phone": [
+      "079-27521000"
+    ],
+    "latitude": 23.0821,
+    "longitude": 72.5833,
+    "empanelled_schemes": [
+      "PMJAY",
+      "NTEP"
+    ]
+  },
+  {
+    "id": "fac_025",
+    "name": "Sterling Hospital Drive-In",
+    "type": "hospital",
+    "address": "Sterling Hospital Road, Memnagar, Ahmedabad - 380052",
+    "phone": [
+      "079-40011111"
+    ],
+    "latitude": 23.0511,
+    "longitude": 72.5322,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_026",
+    "name": "Jay Ambe Medical & Surgical Store",
+    "type": "pharmacy",
+    "address": "Main Road, Moraiya, Sanand - 382213",
+    "phone": [
+      "+91-9979011122"
+    ],
+    "latitude": 22.9411,
+    "longitude": 72.4215
+  },
+  {
+    "id": "fac_027",
+    "name": "Moraiya Primary Health Centre",
+    "type": "clinic",
+    "address": "GIDC Road, Moraiya, Sanand - 382213",
+    "phone": [
+      "02717-283100"
+    ],
+    "latitude": 22.9425,
+    "longitude": 72.423,
+    "empanelled_schemes": [
+      "PMJAY",
+      "NTEP"
+    ]
+  },
+  {
+    "id": "fac_028",
+    "name": "SAL Hospital & Medical Institute",
+    "type": "hospital",
+    "address": "Drive-in Road, Thaltej, Ahmedabad - 380054",
+    "phone": [
+      "079-66312000"
+    ],
+    "latitude": 23.0489,
+    "longitude": 72.5201,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_029",
+    "name": "Civil Hospital Gandhinagar",
+    "type": "hospital",
+    "address": "Sector 12, Gandhinagar - 382012",
+    "phone": [
+      "079-23221012",
+      "079-23222718"
+    ],
+    "latitude": 23.2201,
+    "longitude": 72.6512,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "NTEP",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_030",
+    "name": "Apollo Hospitals Gandhinagar",
+    "type": "hospital",
+    "address": "Bhat, Near Indira Bridge, Gandhinagar - 382428",
+    "phone": [
+      "079-66701800"
+    ],
+    "latitude": 23.1118,
+    "longitude": 72.6288,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_031",
+    "name": "Dhanvantari Ayurvedic Clinic & Medical Store",
+    "type": "clinic",
+    "address": "Plot 45, GIDC Phase 2, Sanand - 382110",
+    "phone": [
+      "+91-9879033445"
+    ],
+    "latitude": 22.9961,
+    "longitude": 72.3688
+  },
+  {
+    "id": "fac_032",
+    "name": "Reliable Chemist & Druggist",
+    "type": "pharmacy",
+    "address": "Near Sarkhej Roza, Sarkhej, Ahmedabad - 380055",
+    "phone": [
+      "079-26820088"
+    ],
+    "latitude": 22.981,
+    "longitude": 72.5012
+  },
+  {
+    "id": "fac_033",
+    "name": "Shardaben Municipal General Hospital",
+    "type": "hospital",
+    "address": "Saraspur, Ahmedabad - 380018",
+    "phone": [
+      "079-22921401"
+    ],
+    "latitude": 23.0298,
+    "longitude": 72.612,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_034",
+    "name": "L.G. General Municipal Hospital",
+    "type": "hospital",
+    "address": "Maninagar, Ahmedabad - 380008",
+    "phone": [
+      "079-25461111"
+    ],
+    "latitude": 23.0012,
+    "longitude": 72.6023,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_035",
+    "name": "Jan Seva Pharmacy - Sanand GIDC",
+    "type": "pharmacy",
+    "address": "Gate No 1, GIDC Estate, Sanand - 382110",
+    "phone": [
+      "+91-9428077889"
+    ],
+    "latitude": 22.998,
+    "longitude": 72.361
+  },
+  {
+    "id": "fac_036",
+    "name": "Jivraj Mehta Smarak Health Centre",
+    "type": "hospital",
+    "address": "Ayurvedic College Compound, Vasna, Ahmedabad - 380007",
+    "phone": [
+      "079-26630000"
+    ],
+    "latitude": 23.0051,
+    "longitude": 72.5511,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_037",
+    "name": "Primary Health Centre (PHC) Nidhrad",
+    "type": "clinic",
+    "address": "Nidhrad Village, Sanand Taluka, Ahmedabad - 382110",
+    "phone": [
+      "02717-262111"
+    ],
+    "latitude": 23.0312,
+    "longitude": 72.3892,
+    "empanelled_schemes": [
+      "PMJAY",
+      "NTEP"
+    ]
+  },
+  {
+    "id": "fac_038",
+    "name": "Primary Health Centre (PHC) Chekhla",
+    "type": "clinic",
+    "address": "Chekhla Village Road, Sanand - 382110",
+    "phone": [
+      "02717-263222"
+    ],
+    "latitude": 23.0611,
+    "longitude": 72.358,
+    "empanelled_schemes": [
+      "PMJAY",
+      "NTEP"
+    ]
+  },
+  {
+    "id": "fac_039",
+    "name": "Sanjivani Health Clinic & Daycare",
+    "type": "clinic",
+    "address": "Opp Bus Stand, Dholka, Ahmedabad - 387120",
+    "phone": [
+      "02714-221234"
+    ],
+    "latitude": 22.7215,
+    "longitude": 72.441
+  },
+  {
+    "id": "fac_040",
+    "name": "Sub-District Hospital Dholka",
+    "type": "hospital",
+    "address": "College Road, Dholka, Ahmedabad - 387120",
+    "phone": [
+      "02714-220011"
+    ],
+    "latitude": 22.725,
+    "longitude": 72.4489,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "NTEP",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_041",
+    "name": "Shiv Medical & Surgical Store",
+    "type": "pharmacy",
+    "address": "Main Bazar, Dholka, Ahmedabad - 387120",
+    "phone": [
+      "+91-9824188900"
+    ],
+    "latitude": 22.723,
+    "longitude": 72.4435
+  },
+  {
+    "id": "fac_042",
+    "name": "Gujarat Cancer & Research Institute (GCRI)",
+    "type": "hospital",
+    "address": "Civil Hospital Campus, Asarwa, Ahmedabad - 380016",
+    "phone": [
+      "079-22688000"
+    ],
+    "latitude": 23.0531,
+    "longitude": 72.6035,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_043",
+    "name": "U.N. Mehta Institute of Cardiology",
+    "type": "hospital",
+    "address": "Civil Hospital Campus, Asarwa, Ahmedabad - 380016",
+    "phone": [
+      "079-22682395"
+    ],
+    "latitude": 23.0525,
+    "longitude": 72.6041,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_044",
+    "name": "IKDRC Kidney Disease Hospital",
+    "type": "hospital",
+    "address": "Civil Hospital Campus, Asarwa, Ahmedabad - 380016",
+    "phone": [
+      "079-22687000"
+    ],
+    "latitude": 23.051,
+    "longitude": 72.6019,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_045",
+    "name": "Urban Health Center (UHC) Paldi",
+    "type": "clinic",
+    "address": "Near Bhatt Ji Hall, Paldi, Ahmedabad - 380007",
+    "phone": [
+      "079-26578000"
+    ],
+    "latitude": 23.0112,
+    "longitude": 72.562,
+    "empanelled_schemes": [
+      "PMJAY",
+      "NTEP"
+    ]
+  },
+  {
+    "id": "fac_046",
+    "name": "Urban Health Center (UHC) Ghatlodia",
+    "type": "clinic",
+    "address": "Near Prabhat Chowk, Ghatlodia, Ahmedabad - 380061",
+    "phone": [
+      "079-27451200"
+    ],
+    "latitude": 23.071,
+    "longitude": 72.5381,
+    "empanelled_schemes": [
+      "PMJAY",
+      "NTEP"
+    ]
+  },
+  {
+    "id": "fac_047",
+    "name": "Aastha Medical Store",
+    "type": "pharmacy",
+    "address": "Prabhat Chowk, Ghatlodia, Ahmedabad - 380061",
+    "phone": [
+      "+91-9825544332"
+    ],
+    "latitude": 23.0715,
+    "longitude": 72.5388
+  },
+  {
+    "id": "fac_048",
+    "name": "HCG Cancer Centre",
+    "type": "hospital",
+    "address": "Sola-Santej Road, Science City, Ahmedabad - 380060",
+    "phone": [
+      "079-40010000"
+    ],
+    "latitude": 23.0812,
+    "longitude": 72.502,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_049",
+    "name": "Sanand Dental & Maxillofacial Clinic",
+    "type": "clinic",
+    "address": "Complex B, Opp Bus Stand, Sanand - 382110",
+    "phone": [
+      "+91-9898033221"
+    ],
+    "latitude": 22.9918,
+    "longitude": 72.372
+  },
+  {
+    "id": "fac_050",
+    "name": "Shree Ram Clinic & Pediatric Center",
+    "type": "clinic",
+    "address": "Station Road, Sanand, Ahmedabad - 382110",
+    "phone": [
+      "+91-9879155443"
+    ],
+    "latitude": 22.9901,
+    "longitude": 72.3761
+  },
+  {
+    "id": "fac_051",
+    "name": "SSG Hospital (Sir Sayajirao General)",
+    "type": "hospital",
+    "address": "Jail Road, Raopura, Vadodara - 390001",
+    "phone": [
+      "0265-2424848"
+    ],
+    "latitude": 22.3082,
+    "longitude": 73.1812,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "NTEP",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_052",
+    "name": "New Civil Hospital Surat",
+    "type": "hospital",
+    "address": "Majura Gate, Surat - 395002",
+    "phone": [
+      "0261-2244456"
+    ],
+    "latitude": 21.1702,
+    "longitude": 72.821,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "NTEP",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_053",
+    "name": "AIIMS Rajkot Hospital",
+    "type": "hospital",
+    "address": "Khandheri, Rajkot - 360006",
+    "phone": [
+      "0281-2991000"
+    ],
+    "latitude": 22.3512,
+    "longitude": 70.761,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "NTEP",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_054",
+    "name": "PDU Government General Hospital Rajkot",
+    "type": "hospital",
+    "address": "Jamnagar Road, Rajkot - 360001",
+    "phone": [
+      "0281-2444201"
+    ],
+    "latitude": 22.3012,
+    "longitude": 70.7981,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "NTEP",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_055",
+    "name": "Sir T Hospital Bhavnagar",
+    "type": "hospital",
+    "address": "Jail Road, Bhavnagar - 364001",
+    "phone": [
+      "0278-2424211"
+    ],
+    "latitude": 21.7612,
+    "longitude": 72.151,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_056",
+    "name": "GG Hospital Jamnagar",
+    "type": "hospital",
+    "address": "Pandit Nehru Marg, Jamnagar - 361008",
+    "phone": [
+      "0288-2550201"
+    ],
+    "latitude": 22.471,
+    "longitude": 70.0681,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_057",
+    "name": "General Hospital Anand (Majestic)",
+    "type": "hospital",
+    "address": "Gamdi Vad, Anand - 388001",
+    "phone": [
+      "02692-250100"
+    ],
+    "latitude": 22.5612,
+    "longitude": 72.951,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_058",
+    "name": "Shree Krishna Hospital Karamsad",
+    "type": "hospital",
+    "address": "Gokal Nagar, Karamsad, Anand - 388325",
+    "phone": [
+      "02692-228411"
+    ],
+    "latitude": 22.5481,
+    "longitude": 72.898,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_059",
+    "name": "Jan Aushadhi Kendra Anand Station",
+    "type": "pharmacy",
+    "address": "Station Road, Anand - 388001",
+    "phone": [
+      "+91-9898011234"
+    ],
+    "latitude": 22.559,
+    "longitude": 72.9531
+  },
+  {
+    "id": "fac_060",
+    "name": "General Hospital Mehsana",
+    "type": "hospital",
+    "address": "Civil Hospital Road, Mehsana - 384001",
+    "phone": [
+      "02762-220100"
+    ],
+    "latitude": 23.5981,
+    "longitude": 72.3912,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_061",
+    "name": "Primary Health Centre (PHC) Santhal",
+    "type": "clinic",
+    "address": "Santhal Village, Sanand Taluka, Ahmedabad - 382110",
+    "phone": [
+      "02717-264100"
+    ],
+    "latitude": 22.951,
+    "longitude": 72.311,
+    "empanelled_schemes": [
+      "PMJAY",
+      "NTEP"
+    ]
+  },
+  {
+    "id": "fac_062",
+    "name": "Apollo Pharmacy - Satellite Road",
+    "type": "pharmacy",
+    "address": "Shivranjani Cross Roads, Satellite, Ahmedabad - 380015",
+    "phone": [
+      "079-26760011"
+    ],
+    "latitude": 23.0245,
+    "longitude": 72.5281
+  },
+  {
+    "id": "fac_063",
+    "name": "Kachchh General Hospital Bhuj",
+    "type": "hospital",
+    "address": "Hospital Road, Bhuj, Kachchh - 370001",
+    "phone": [
+      "02832-220100"
+    ],
+    "latitude": 23.2512,
+    "longitude": 69.671,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_064",
+    "name": "General Hospital Patan",
+    "type": "hospital",
+    "address": "Chanasma Highway, Patan - 384265",
+    "phone": [
+      "02766-230100"
+    ],
+    "latitude": 23.851,
+    "longitude": 72.1281,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_065",
+    "name": "Urban Health Center (UHC) Naroda",
+    "type": "clinic",
+    "address": "Near Naroda ST Workshop, Naroda, Ahmedabad - 382330",
+    "phone": [
+      "079-22810011"
+    ],
+    "latitude": 23.0712,
+    "longitude": 72.658,
+    "empanelled_schemes": [
+      "PMJAY",
+      "NTEP"
+    ]
+  },
+  {
+    "id": "fac_066",
+    "name": "Naroda Dhanvantari Medical Store",
+    "type": "pharmacy",
+    "address": "Naroda Baithak, Naroda, Ahmedabad - 382330",
+    "phone": [
+      "+91-9879100223"
+    ],
+    "latitude": 23.072,
+    "longitude": 72.6591
+  },
+  {
+    "id": "fac_067",
+    "name": "Primary Health Centre (PHC) Vasna Chacharvadi",
+    "type": "clinic",
+    "address": "Vasna Chacharvadi, Sanand, Ahmedabad - 382213",
+    "phone": [
+      "02717-271200"
+    ],
+    "latitude": 22.9281,
+    "longitude": 72.4081,
+    "empanelled_schemes": [
+      "PMJAY",
+      "NTEP"
+    ]
+  },
+  {
+    "id": "fac_068",
+    "name": "Sanjeevani Clinic & Eye Care",
+    "type": "clinic",
+    "address": "Sarkhej Road, Juhapura, Ahmedabad - 380055",
+    "phone": [
+      "079-26824411"
+    ],
+    "latitude": 22.9912,
+    "longitude": 72.521
+  },
+  {
+    "id": "fac_069",
+    "name": "Aastha Pharmacy & Surgical",
+    "type": "pharmacy",
+    "address": "Cross Roads, Juhapura, Ahmedabad - 380055",
+    "phone": [
+      "+91-9898122334"
+    ],
+    "latitude": 22.992,
+    "longitude": 72.5218
+  },
+  {
+    "id": "fac_070",
+    "name": "Gujarat Kidney Institute & Research Hospital",
+    "type": "hospital",
+    "address": "Shahibaug Road, Shahibaug, Ahmedabad - 380004",
+    "phone": [
+      "079-25621000"
+    ],
+    "latitude": 23.0512,
+    "longitude": 72.5891,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_071",
+    "name": "Urban Health Center (UHC) Sabarmati",
+    "type": "clinic",
+    "address": "Ramnagar, Sabarmati, Ahmedabad - 380005",
+    "phone": [
+      "079-27501200"
+    ],
+    "latitude": 23.0812,
+    "longitude": 72.591,
+    "empanelled_schemes": [
+      "PMJAY",
+      "NTEP"
+    ]
+  },
+  {
+    "id": "fac_072",
+    "name": "Sabarmati Medical Store",
+    "type": "pharmacy",
+    "address": "Ramnagar Market, Sabarmati, Ahmedabad - 380005",
+    "phone": [
+      "+91-9824088776"
+    ],
+    "latitude": 23.082,
+    "longitude": 72.5918
+  },
+  {
+    "id": "fac_073",
+    "name": "Civil Hospital Surendranagar",
+    "type": "hospital",
+    "address": "T B Hospital Road, Surendranagar - 363001",
+    "phone": [
+      "02752-220100"
+    ],
+    "latitude": 22.721,
+    "longitude": 71.6381,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "NTEP",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_074",
+    "name": "C.U. Shah Medical College & Hospital",
+    "type": "hospital",
+    "address": "Dudhrej Road, Wadhwan, Surendranagar - 363030",
+    "phone": [
+      "02752-283300"
+    ],
+    "latitude": 22.7112,
+    "longitude": 71.661,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_075",
+    "name": "Sub-District Hospital Kheda",
+    "type": "hospital",
+    "address": "National Highway, Kheda - 387411",
+    "phone": [
+      "02694-222100"
+    ],
+    "latitude": 22.7512,
+    "longitude": 72.6881,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "NTEP",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_076",
+    "name": "Primary Health Centre (PHC) Bareja",
+    "type": "clinic",
+    "address": "Bareja Road, Daskroi, Ahmedabad - 382425",
+    "phone": [
+      "02718-232100"
+    ],
+    "latitude": 22.8812,
+    "longitude": 72.581,
+    "empanelled_schemes": [
+      "PMJAY",
+      "NTEP"
+    ]
+  },
+  {
+    "id": "fac_077",
+    "name": "Bareja Jan Aushadhi Chemist",
+    "type": "pharmacy",
+    "address": "Near Bus Stand, Bareja, Ahmedabad - 382425",
+    "phone": [
+      "+91-9879022110"
+    ],
+    "latitude": 22.882,
+    "longitude": 72.5818
+  },
+  {
+    "id": "fac_078",
+    "name": "Dhanvantari Health Clinic Nadiad",
+    "type": "clinic",
+    "address": "College Road, Nadiad - 387001",
+    "phone": [
+      "0268-2521100"
+    ],
+    "latitude": 22.6912,
+    "longitude": 72.861
+  },
+  {
+    "id": "fac_079",
+    "name": "Muljibhai Patel Urological Hospital (MUPH) Nadiad",
+    "type": "hospital",
+    "address": "Dr. Virendra Desai Road, Nadiad - 387001",
+    "phone": [
+      "0268-2520323"
+    ],
+    "latitude": 22.689,
+    "longitude": 72.859,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_080",
+    "name": "Civil Hospital Nadiad (Mahagujarat)",
+    "type": "hospital",
+    "address": "Station Road, Nadiad - 387001",
+    "phone": [
+      "0268-2550100"
+    ],
+    "latitude": 22.695,
+    "longitude": 72.864,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "NTEP",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_081",
+    "name": "Nadiad Medical Hall",
+    "type": "pharmacy",
+    "address": "Station Road, Nadiad - 387001",
+    "phone": [
+      "+91-9825122112"
+    ],
+    "latitude": 22.6955,
+    "longitude": 72.8648
+  },
+  {
+    "id": "fac_082",
+    "name": "Sanand Orthopedic & Surgical Clinic",
+    "type": "clinic",
+    "address": "2nd Floor, Royal Plaza, Sanand - 382110",
+    "phone": [
+      "+91-9824099887"
+    ],
+    "latitude": 22.993,
+    "longitude": 72.3731
+  },
+  {
+    "id": "fac_083",
+    "name": "Lifespan Pharmacy 24/7 Sanand",
+    "type": "pharmacy",
+    "address": "Opp. Civil Court, Sanand - 382110",
+    "phone": [
+      "+91-9979023456"
+    ],
+    "latitude": 22.9922,
+    "longitude": 72.374
+  },
+  {
+    "id": "fac_084",
+    "name": "Primary Health Centre (PHC) Modasar",
+    "type": "clinic",
+    "address": "Modasar Village, Sanand Taluka, Ahmedabad - 382110",
+    "phone": [
+      "02717-288100"
+    ],
+    "latitude": 22.911,
+    "longitude": 72.3512,
+    "empanelled_schemes": [
+      "PMJAY",
+      "NTEP"
+    ]
+  },
+  {
+    "id": "fac_085",
+    "name": "Primary Health Centre (PHC) Kolat",
+    "type": "clinic",
+    "address": "Kolat Village, Sanand Taluka, Ahmedabad - 382110",
+    "phone": [
+      "02717-289100"
+    ],
+    "latitude": 22.9312,
+    "longitude": 72.381,
+    "empanelled_schemes": [
+      "PMJAY",
+      "NTEP"
+    ]
+  },
+  {
+    "id": "fac_086",
+    "name": "Urban Health Center (UHC) Vasna",
+    "type": "clinic",
+    "address": "Near Vasna Bus Rapid Transit, Vasna, Ahmedabad - 380007",
+    "phone": [
+      "079-26611200"
+    ],
+    "latitude": 23.001,
+    "longitude": 72.548,
+    "empanelled_schemes": [
+      "PMJAY",
+      "NTEP"
+    ]
+  },
+  {
+    "id": "fac_087",
+    "name": "Vasna Medical Store",
+    "type": "pharmacy",
+    "address": "Vasna Bus Stand Complex, Vasna, Ahmedabad - 380007",
+    "phone": [
+      "+91-9879122330"
+    ],
+    "latitude": 23.0015,
+    "longitude": 72.5488
+  },
+  {
+    "id": "fac_088",
+    "name": "Karnavati Dental College & Hospital",
+    "type": "hospital",
+    "address": "Uvarsad, Near Gandhinagar Highway - 382422",
+    "phone": [
+      "079-23970294"
+    ],
+    "latitude": 23.1812,
+    "longitude": 72.591,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_089",
+    "name": "Primary Health Centre (PHC) Uvarsad",
+    "type": "clinic",
+    "address": "Main Bazar, Uvarsad, Gandhinagar - 382422",
+    "phone": [
+      "079-23970100"
+    ],
+    "latitude": 23.182,
+    "longitude": 72.592,
+    "empanelled_schemes": [
+      "PMJAY",
+      "NTEP"
+    ]
+  },
+  {
+    "id": "fac_090",
+    "name": "Apollo Pharmacy - Chandkheda",
+    "type": "pharmacy",
+    "address": "BRTS Road, Chandkheda, Ahmedabad - 382424",
+    "phone": [
+      "079-29291122"
+    ],
+    "latitude": 23.111,
+    "longitude": 72.5812
+  },
+  {
+    "id": "fac_091",
+    "name": "SMS Hospital (Shree Multi Specialty)",
+    "type": "hospital",
+    "address": "IOC Road, Chandkheda, Ahmedabad - 382424",
+    "phone": [
+      "079-29098800"
+    ],
+    "latitude": 23.113,
+    "longitude": 72.583,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_092",
+    "name": "Urban Health Center (UHC) Chandkheda",
+    "type": "clinic",
+    "address": "Near Zundal Circle, Chandkheda, Ahmedabad - 382424",
+    "phone": [
+      "079-27508800"
+    ],
+    "latitude": 23.115,
+    "longitude": 72.584,
+    "empanelled_schemes": [
+      "PMJAY",
+      "NTEP"
+    ]
+  },
+  {
+    "id": "fac_093",
+    "name": "Jan Aushadhi Kendra Chandkheda",
+    "type": "pharmacy",
+    "address": "Shopping Mall, IOC Road, Chandkheda - 382424",
+    "phone": [
+      "+91-9898099887"
+    ],
+    "latitude": 23.1135,
+    "longitude": 72.5838
+  },
+  {
+    "id": "fac_094",
+    "name": "General Hospital Godhra",
+    "type": "hospital",
+    "address": "Civil Hospital Road, Godhra - 389001",
+    "phone": [
+      "02672-240100"
+    ],
+    "latitude": 22.7781,
+    "longitude": 73.618,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_095",
+    "name": "Civil Hospital Dahod",
+    "type": "hospital",
+    "address": "Station Road, Dahod - 389151",
+    "phone": [
+      "02673-220100"
+    ],
+    "latitude": 22.8381,
+    "longitude": 74.258,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "NTEP",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_096",
+    "name": "Sub-District Hospital Navsari",
+    "type": "hospital",
+    "address": "Lunsikui, Navsari - 396445",
+    "phone": [
+      "02637-250100"
+    ],
+    "latitude": 20.9512,
+    "longitude": 72.931,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "NTEP",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_097",
+    "name": "Civil Hospital Valsad",
+    "type": "hospital",
+    "address": "Halar Road, Valsad - 396001",
+    "phone": [
+      "02632-254100"
+    ],
+    "latitude": 20.6112,
+    "longitude": 72.9312,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya",
+      "NTEP",
+      "RAN",
+      "PMNDP"
+    ]
+  },
+  {
+    "id": "fac_098",
+    "name": "General Hospital Junagadh",
+    "type": "hospital",
+    "address": "Majevadi Gate, Junagadh - 362001",
+    "phone": [
+      "0285-2650100"
+    ],
+    "latitude": 21.5212,
+    "longitude": 70.458,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_099",
+    "name": "General Hospital Amreli",
+    "type": "hospital",
+    "address": "Lathi Road, Amreli - 365601",
+    "phone": [
+      "02792-220100"
+    ],
+    "latitude": 21.6012,
+    "longitude": 71.218,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_100",
+    "name": "General Hospital Palanpur (Banaskantha)",
+    "type": "hospital",
+    "address": "Civil Hospital Campus, Palanpur - 385001",
+    "phone": [
+      "02742-252100"
+    ],
+    "latitude": 24.1712,
+    "longitude": 72.438,
+    "empanelled_schemes": [
+      "PMJAY",
+      "MA_MA_Vatsalya"
+    ]
+  },
+  {
+    "id": "fac_101",
+    "name": "Primary Health Centre (PHC) Sanand Rural",
+    "type": "clinic",
+    "address": "Sanand Rural Outskirts, Sanand - 382110",
+    "phone": [
+      "02717-295000"
+    ],
+    "latitude": 22.985,
+    "longitude": 72.365,
+    "empanelled_schemes": [
+      "PMJAY",
+      "NTEP"
+    ]
+  },
+  {
+    "id": "fac_102",
+    "name": "Shiv Shakti Medical Store",
+    "type": "pharmacy",
+    "address": "Opp CHC Sanand, Hospital Road, Sanand - 382110",
+    "phone": [
+      "+91-9825199887"
+    ],
+    "latitude": 22.9885,
+    "longitude": 72.3802
+  },
+  {
+    "id": "fac_103",
+    "name": "Niramay Community Dispensary",
+    "type": "clinic",
+    "address": "GIDC Colony, Sanand, Ahmedabad - 382110",
+    "phone": [
+      "079-29759900"
+    ],
+    "latitude": 22.994,
+    "longitude": 72.3695
+  },
+  {
+    "id": "fac_104",
+    "name": "Apollo Pharmacy - SG Highway Sola",
+    "type": "pharmacy",
+    "address": "Opp Sola Civil Hospital, SG Highway, Ahmedabad - 380060",
+    "phone": [
+      "079-27665544"
+    ],
+    "latitude": 23.0758,
+    "longitude": 72.526
+  },
+  {
+    "id": "fac_105",
+    "name": "MedPlus Chemist - Thaltej Cross Roads",
+    "type": "pharmacy",
+    "address": "Drive-In Road, Thaltej, Ahmedabad - 380054",
+    "phone": [
+      "079-26859988"
+    ],
+    "latitude": 23.0501,
+    "longitude": 72.519
+  }
+]

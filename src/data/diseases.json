@@ -1,0 +1,398 @@
+[
+  {
+    "id": "acute bronchiolitis",
+    "canonicalIndex": 0,
+    "name": "acute bronchiolitis",
+    "displayName": {
+      "en": "Acute Bronchiolitis",
+      "hi": "ब्रोंकियोलाइटिस / बच्चों में सांस की घरघराहट",
+      "gu": "બ્રોન્કિઓલાઇટિસ / શ્વાસમાં સીટી જેવો અવાજ"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "acute bronchitis",
+    "canonicalIndex": 1,
+    "name": "acute bronchitis",
+    "displayName": {
+      "en": "Acute Bronchitis",
+      "hi": "तीव्र ब्रोंकाइटिस / सीने में घरघराहट",
+      "gu": "શ્વસનનળીનો સોજો / કફવાળી ઉધરસ"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "acute otitis media",
+    "canonicalIndex": 2,
+    "name": "acute otitis media",
+    "displayName": {
+      "en": "Acute Otitis Media (Middle Ear Infection)",
+      "hi": "कान का तीव्र संक्रमण व दर्द",
+      "gu": "કાનનો ચેપ / કાનમાં દુખાવો અને પરુ"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "acute sinusitis",
+    "canonicalIndex": 3,
+    "name": "acute sinusitis",
+    "displayName": {
+      "en": "Acute Sinusitis (Sinus Infection)",
+      "hi": "साइनस संक्रमण / सिर व चेहरे में भारीपन",
+      "gu": "સાઇનસ ઇન્ફેક્શન / માથું અને ચહેરો ભારે થવો"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "angina",
+    "canonicalIndex": 4,
+    "name": "angina",
+    "displayName": {
+      "en": "Angina Pectoris / Ischemic Chest Pain",
+      "hi": "एनजाइना / सीने में जकड़न व दर्द",
+      "gu": "એન્જાઇના / છાતીમાં દબાણ અને દુખાવો"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "appendicitis",
+    "canonicalIndex": 5,
+    "name": "appendicitis",
+    "displayName": {
+      "en": "Acute Appendicitis",
+      "hi": "अपेंडिसाइटिस / पेट के निचले दाहिने हिस्से में तेज दर्द",
+      "gu": "એપેન્ડિસાઇટિસ / પેટના જમણા ભાગમાં તીવ્ર દુખાવો"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "asthma",
+    "canonicalIndex": 6,
+    "name": "asthma",
+    "displayName": {
+      "en": "Bronchial Asthma Flare / Attack",
+      "hi": "दमा / अस्थमा का दौरा",
+      "gu": "દમ / અસ્થમાનો હુમલો"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "chronic back pain",
+    "canonicalIndex": 7,
+    "name": "chronic back pain",
+    "displayName": {
+      "en": "Mechanical Low Back Pain / Lumbar Strain",
+      "hi": "कमर दर्द / मांसपेशियों में खिंचाव व जकड़न",
+      "gu": "કમરનો દુખાવો / સ્નાયુઓમાં ખેંચાણ"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "common cold",
+    "canonicalIndex": 8,
+    "name": "common cold",
+    "displayName": {
+      "en": "Common Cold / Acute Viral Rhinitis",
+      "hi": "सामान्य जुकाम / नजला व छींकें",
+      "gu": "સામાન્ય શરદી / સળેખમ"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "conjunctivitis due to allergy",
+    "canonicalIndex": 9,
+    "name": "conjunctivitis due to allergy",
+    "displayName": {
+      "en": "Allergic Conjunctivitis (Pink Eye)",
+      "hi": "आंख आना / एलर्जी जनित आंखों में लाली व खुजली",
+      "gu": "આંખો આવવી / આંખમાં લાલાશ અને ખંજવાળ"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "contact dermatitis",
+    "canonicalIndex": 10,
+    "name": "contact dermatitis",
+    "displayName": {
+      "en": "Contact Dermatitis / Skin Allergy",
+      "hi": "कॉन्टैक्ट डर्मेटाइटिस / त्वचा की एलर्जी व लाली",
+      "gu": "કોન્ટેક્ટ ડર્મેટાઇટિસ / ચામડીની એલર્જી"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "cystitis",
+    "canonicalIndex": 11,
+    "name": "cystitis",
+    "displayName": {
+      "en": "Acute Cystitis / Urinary Tract Infection (UTI)",
+      "hi": "मूत्र संक्रमण / पेशाब में तेज जलन व दर्द",
+      "gu": "પેશાબમાં ચેપ (યુટીઆઈ) / પેશાબમાં બળતરા"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "diabetic peripheral neuropathy",
+    "canonicalIndex": 12,
+    "name": "diabetic peripheral neuropathy",
+    "displayName": {
+      "en": "Diabetic Peripheral Neuropathy (Nerve Damage)",
+      "hi": "डायबिटिक न्यूरोपैथी / पैरों में जलन, सुन्नपन व झनझनाहट",
+      "gu": "ડાયાબિટીક ન્યુરોપેથી / પગમાં બળતરા અને સુન્નતા"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "eczema",
+    "canonicalIndex": 13,
+    "name": "eczema",
+    "displayName": {
+      "en": "Atopic Dermatitis / Eczema Flare",
+      "hi": "एक्जिमा / त्वचा पर खुजली, सूखापन व पपड़ी",
+      "gu": "એક્ઝિમા / ચામડી પર ખંજવાળ અને રુક્ષતા"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "flu",
+    "canonicalIndex": 14,
+    "name": "flu",
+    "displayName": {
+      "en": "Influenza (Flu) / Viral Syndrome",
+      "hi": "इन्फ्लूएंजा (फ्लू) / मौसमी बुखार",
+      "gu": "ઇન્ફ્લુએન્ઝા (ફ્લૂ) / મોસમી તાવ"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "fungal infection of the skin",
+    "canonicalIndex": 15,
+    "name": "fungal infection of the skin",
+    "displayName": {
+      "en": "Cutaneous Fungal Infection (Ringworm / Tinea)",
+      "hi": "त्वचा का फंगल इन्फेक्शन / दाद व खुजली",
+      "gu": "ચામડીનો ફંગલ ચેપ / દાદર અને ખંજવાળ"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "gastroduodenal ulcer",
+    "canonicalIndex": 16,
+    "name": "gastroduodenal ulcer",
+    "displayName": {
+      "en": "Peptic / Gastroduodenal Ulcer Disease",
+      "hi": "पेट का अल्सर / छाला व जलन",
+      "gu": "પેટનું અલ્સર / ચાંદું અને બળતરા"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "gastroesophageal reflux disease (gerd)",
+    "canonicalIndex": 17,
+    "name": "gastroesophageal reflux disease (gerd)",
+    "displayName": {
+      "en": "GERD / Severe Acid Reflux",
+      "hi": "एसिड रिफ्लक्स / गंभीर सीने में जलन",
+      "gu": "એસિડિટી / છાતીમાં બળતરા"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "gout",
+    "canonicalIndex": 18,
+    "name": "gout",
+    "displayName": {
+      "en": "Acute Gouty Arthritis Attack",
+      "hi": "गाउट (गठिया) / पैर के अंगूठे में तीव्र दर्द व लाल सूजन",
+      "gu": "ગાઉટ (ગઠિયો વા) / પગના અંગૂઠામાં સોજો અને અતિશય દુખાવો"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "heart attack",
+    "canonicalIndex": 19,
+    "name": "heart attack",
+    "displayName": {
+      "en": "Heart Attack / Myocardial Infarction",
+      "hi": "दिल का दौरा (हार्ट अटैक)",
+      "gu": "હાર્ટ એટેક / હૃદયરોગનો હુમલો"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "heart failure",
+    "canonicalIndex": 20,
+    "name": "heart failure",
+    "displayName": {
+      "en": "Congestive Heart Failure",
+      "hi": "हार्ट फेलियर / सांस फूलना व पैरों में सूजन",
+      "gu": "હાર્ટ ફેલિયર / શ્વાસ ચઢવો અને પગમાં સોજો"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "hypertensive heart disease",
+    "canonicalIndex": 21,
+    "name": "hypertensive heart disease",
+    "displayName": {
+      "en": "Hypertensive Heart Disease",
+      "hi": "उच्च रक्तचाप जनित हृदय रोग (हाई बीपी)",
+      "gu": "હાઈ બ્લડ પ્રેશર જનિત હૃદયરોગ"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "hypoglycemia",
+    "canonicalIndex": 22,
+    "name": "hypoglycemia",
+    "displayName": {
+      "en": "Hypoglycemia (Low Blood Sugar)",
+      "hi": "हाइपोग्लाइसीमिया (शुगर का अचानक बहुत कम होना)",
+      "gu": "હાઇપોગ્લાયકેમિયા (બ્લડ સુગર અચાનક ઘટી જવું)"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "infectious gastroenteritis",
+    "canonicalIndex": 23,
+    "name": "infectious gastroenteritis",
+    "displayName": {
+      "en": "Infectious Gastroenteritis (Food Poisoning / Diarrhea)",
+      "hi": "संक्रामक आंत्रशोथ / दस्त एवं उल्टी",
+      "gu": "ઝાડા-ઉલ્ટી / ખોરાકી ઝેર (ગેસ્ટ્રો)"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "kidney stone",
+    "canonicalIndex": 24,
+    "name": "kidney stone",
+    "displayName": {
+      "en": "Renal Colic (Kidney Stone Pain)",
+      "hi": "गुर्दे की पथरी का तीव्र दर्द",
+      "gu": "પથરીનો તીવ્ર દુખાવો (કિડની સ્ટોન)"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "migraine",
+    "canonicalIndex": 25,
+    "name": "migraine",
+    "displayName": {
+      "en": "Migraine Headache",
+      "hi": "माइग्रेन / आधे सिर का तेज दर्द व उल्टी",
+      "gu": "માઇગ્રેન / અડધા માથાનો તીવ્ર દુખાવો"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "osteoarthritis",
+    "canonicalIndex": 26,
+    "name": "osteoarthritis",
+    "displayName": {
+      "en": "Osteoarthritis / Knee & Joint Wear",
+      "hi": "ऑस्टियोआर्थराइटिस / घुटनों व जोड़ों में घिसाव व दर्द",
+      "gu": "ઓસ્ટિઓઆર્થરાઇટિસ / ઘૂંટણ અને સાંધાનો ઘસારો"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "pneumonia",
+    "canonicalIndex": 27,
+    "name": "pneumonia",
+    "displayName": {
+      "en": "Pneumonia (Lung Infection)",
+      "hi": "निमोनिया (फेफड़ों का तीव्र संक्रमण)",
+      "gu": "ન્યુમોનિયા (ફેફસાંનો ગંભીર ચેપ)"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "pyogenic skin infection",
+    "canonicalIndex": 28,
+    "name": "pyogenic skin infection",
+    "displayName": {
+      "en": "Pyogenic Bacterial Skin Infection (Boil / Cellulitis)",
+      "hi": "त्वचा का मवाददार संक्रमण / फोड़े-फुंसी व सूजन",
+      "gu": "ચામડીનું પરુવાળું ઇન્ફેક્શન / ગૂમડું અને લાલાશ"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "rheumatoid arthritis",
+    "canonicalIndex": 29,
+    "name": "rheumatoid arthritis",
+    "displayName": {
+      "en": "Rheumatoid Arthritis Flare",
+      "hi": "रुमेटाइड अर्थराइटिस / जोड़ों में सूजन व सुबह की अकड़न",
+      "gu": "રુમેટોઇડ સંધિવા / સવારે સાંધા અકડાઈ જવા"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "sciatica",
+    "canonicalIndex": 30,
+    "name": "sciatica",
+    "displayName": {
+      "en": "Sciatica (Lumbar Radiculopathy)",
+      "hi": "साइटिका / कमर से पैर में नीचे तक जाने वाला तेज दर्द",
+      "gu": "સાયટિકા / કમરથી પગ સુધી ઉતરતો દુખાવો (રાંઝણ)"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "seasonal allergies (hay fever)",
+    "canonicalIndex": 31,
+    "name": "seasonal allergies (hay fever)",
+    "displayName": {
+      "en": "Allergic Rhinitis / Hay Fever",
+      "hi": "एलर्जी जनित जुकाम / मौसमी एलर्जी",
+      "gu": "એલર્જિક શરદી / મોસમી એલર્જી"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "spondylosis",
+    "canonicalIndex": 32,
+    "name": "spondylosis",
+    "displayName": {
+      "en": "Cervical / Lumbar Spondylosis",
+      "hi": "स्पॉन्डिलाइटिस / गर्दन व पीठ में जकड़न",
+      "gu": "સ્પોન્ડિલાઇટિસ / ગરદન અને પીઠનો દુખાવો"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "strep throat",
+    "canonicalIndex": 33,
+    "name": "strep throat",
+    "displayName": {
+      "en": "Streptococcal Pharyngitis / Strep Throat",
+      "hi": "गले का तीव्र संक्रमण / स्ट्रेप थ्रोट",
+      "gu": "ગળાનો ચેપ / કાકડાનો સોજો"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "tension headache",
+    "canonicalIndex": 34,
+    "name": "tension headache",
+    "displayName": {
+      "en": "Tension / Stress Headache",
+      "hi": "तनाव जनित सिरदर्द / माथे में भारीपन",
+      "gu": "તણાવજન્ય માથાનો દુખાવો / માથામાં જકડન"
+    },
+    "prior": 0.027777777777777776
+  },
+  {
+    "id": "tonsillitis",
+    "canonicalIndex": 35,
+    "name": "tonsillitis",
+    "displayName": {
+      "en": "Acute Tonsillitis",
+      "hi": "टॉन्सिलाइटिस / गले की गांठों में सूजन",
+      "gu": "ટાન્સિલાઇટિસ / ગળામાં કાકડા ફૂલવા"
+    },
+    "prior": 0.027777777777777776
+  }
+]

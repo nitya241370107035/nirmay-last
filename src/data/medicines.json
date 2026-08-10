@@ -1,0 +1,634 @@
+{
+  "viral_fever": {
+    "allopathy": [
+      {
+        "name": { "en": "Paracetamol 500mg", "hi": "पैरासिटामोल 500mg", "gu": "પેરાસિટામોલ 500mg" },
+        "benefit": { "en": "Reduces body temperature and relieves general body ache.", "hi": "बुखार और शरीर के दर्द को कम करता है।", "gu": "તાવ અને શરીરનો દુખાવો ઘટાડે છે." },
+        "sideEffects": { "en": "Rare at recommended dose. Avoid overdose.", "hi": "सामान्य खुराक पर दुर्लभ। अत्यधिक मात्रा से बचें।", "gu": "સામાન્ય ડૉઝ પર દુર્લભ. વધુ પડતા સેવનથી બચવું." }
+      },
+      {
+        "name": { "en": "ORS (Oral Rehydration Solution)", "hi": "ओआरएस घोल", "gu": "ઓ.આર.એસ. (ORS) ઘોળ" },
+        "benefit": { "en": "Restores essential electrolytes and prevents dehydration.", "hi": "शरीर में इलेक्ट्रोलाइट्स और पानी की पूर्ति करता है।", "gu": "શરીરમાં પાણી અને ક્ષારોનું પ્રમાણ જાળવી રાખે છે." },
+        "sideEffects": { "en": "Safe for all ages.", "hi": "सभी आयु वर्ग के लिए सुरक्षित।", "gu": "તમામ ઉંમરના લોકો માટે સુરક્ષિત." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Maha Sudarshan Ghan Vati", "hi": "महासुदर्शन घन वटी", "gu": "મહાસુદર્શન ઘન વટી" },
+        "benefit": { "en": "Traditional herbal formulation to balance Pitta and lower fever.", "hi": "पित्त का शमन करती है और बुखार कम करने में सहायक है।", "gu": "તાવ ઘટાડવા અને શરીરને તાકાત આપવા માટે આયુર્વેદિક વટી." },
+        "sideEffects": { "en": "Bitter taste; consume with warm water after meals.", "hi": "कड़वा स्वाद; भोजन के बाद गुनगुने पानी के साथ लें।", "gu": "કડવો સ્વાદ; જમ્યા પછી હૂંફાળા પાણી સાથે લેવી." }
+      },
+      {
+        "name": { "en": "Giloy Ghanvati / Kwath", "hi": "गिलोय घनवटी / क्वाथ", "gu": "ગિલોય (ગળો) ઘનવટી" },
+        "benefit": { "en": "Boosts immunity and helps clear viral toxins.", "hi": "प्रतिरोधक क्षमता बढ़ाती है और वायरल विषाक्त पदार्थों को दूर करती है।", "gu": "રોગપ્રતિકારક શક્તિ વધારે છે અને વાયરલ ઇન્ફેક્શનમાં રાહત આપે છે." },
+        "sideEffects": { "en": "Mild constipation in susceptible individuals.", "hi": "संवेदनशील व्यक्तियों में हल्का कब्ज।", "gu": "જરૂર કરતાં વધુ લેવાથી કબ્જિયાત થઈ શકે." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Ferrum Phosphoricum 6X", "hi": "फेरम फॉस्फोरिकम 6X", "gu": "ફેરેમ ફોસ્ફોરિકમ 6X" },
+        "benefit": { "en": "Indicated in early stages of fever and inflammation.", "hi": "बुखार और सूजन के शुरुआती दौर में उपयोगी।", "gu": "તાવની શરૂઆતમાં અને બળતરામાં રાહત માટે." },
+        "sideEffects": { "en": "No known toxic side effects.", "hi": "कोई ज्ञात दुष्प्रभाव नहीं।", "gu": "કોઈ જાણીતી આડઅસર નથી." }
+      }
+    ]
+  },
+  "common_cold": {
+    "allopathy": [
+      {
+        "name": { "en": "Cetirizine 10mg", "hi": "सिटिरिज़िन 10mg", "gu": "સિટીરિઝિન 10mg" },
+        "benefit": { "en": "Relieves sneezing, runny nose, and watery eyes.", "hi": "छींकने, बहती नाक और आंखों के पानी को रोकता है।", "gu": "છીંક, વહેતી નાક અને શરદીમાં રાહત આપે છે." },
+        "sideEffects": { "en": "Mild drowsiness. Avoid driving after taking.", "hi": "हल्की नींद या सुस्ती। लेने के बाद गाड़ी चलाने से बचें।", "gu": "હળવી ઊંઘ આવી શકે. વાહન ચલાવતી વખતે સાવચેતી રાખવી." }
+      },
+      {
+        "name": { "en": "Steam Inhalation + Saline Nasal Drops", "hi": "भाप लेना + सेलाइन नेज़ल ड्रॉप्स", "gu": "નાસ લેવો (સ્ટીમ) + સેલાઇન નેઝલ ડ્રોપ્સ" },
+        "benefit": { "en": "Clears nasal congestion naturally.", "hi": "नाक के बंदपन को प्राकृतिक रूप से खोलता है।", "gu": "નાક બંધ હોવામાં કુદરતી રાહત આપે છે." },
+        "sideEffects": { "en": "Extremely safe; avoid scalding during steam.", "hi": "अत्यंत सुरक्षित; भाप लेते समय जलने से बचें।", "gu": "અતિ સુરક્ષિત; નાસ લેતી વખતે દાઝી ન જવાય તેનું ધ્યાન રાખવું." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Sitopaladi Churna with Honey", "hi": "सितोपलादि चूर्ण (शहद के साथ)", "gu": "સિતોપલાદિ ચૂર્ણ (મધ સાથે)" },
+        "benefit": { "en": "Soothes upper respiratory tract and cleanses mucus.", "hi": "श्वसन नली को आराम देता है और कफ को बाहर निकालता है।", "gu": "ઉધરસ અને શરદીમાં શ્વાસનળીને રાહત આપે છે." },
+        "sideEffects": { "en": "Diabetic patients should take without honey.", "hi": "मधुमेह के रोगी बिना शहद के लें।", "gu": "ડાયાબિટીસના દર્દીઓએ મધ વિના લેવું." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Allium Cepa 30C", "hi": "एलियम सेपा 30C", "gu": "એલિયમ સેપા 30C" },
+        "benefit": { "en": "Effective for profuse watery nasal discharge and sneezing.", "hi": "नाक से लगातार पानी बहने और छींकों में प्रभावी।", "gu": "નાકમાંથી પાણી વહેવું અને સતત છીંક આવવામાં રાહત." },
+        "sideEffects": { "en": "Safe and non-drowsy.", "hi": "सुरक्षित और नींद रहित।", "gu": "સુરક્ષિત અને ઊંઘ વગરની." }
+      }
+    ]
+  },
+  "acute_bronchitis": {
+    "allopathy": [
+      {
+        "name": { "en": "Ambroxol / Terbutaline Cough Syrup", "hi": "एम्ब्रॉक्सोल / टरब्यूटालिन कफ सिरप", "gu": "એમ્બ્રોક્સોલ / ટરબ્યુટાલાઇન કફ સિરપ" },
+        "benefit": { "en": "Loosens thick phlegm and widens airways.", "hi": "गाढ़े कफ को ढीला करता है और सांस की नाली खोलता है।", "gu": "ઉધરસના કફને પાતળો કરી બહાર કાઢવામાં મદદ કરે છે." },
+        "sideEffects": { "en": "Mild hand tremors or fast heart rate.", "hi": "हाथों में हल्की कंपकंपी या तेज धड़कन।", "gu": "હળવા ધ્રુજારી અથવા ધબકારા વધવા." }
+      },
+      {
+        "name": { "en": "Steam Inhalation 3 times daily", "hi": "दिन में 3 बार गर्म भाप लें", "gu": "દિવસમાં 3 વખત ગરમ નાસ લેવો" },
+        "benefit": { "en": "Moistens inflamed bronchi and provides immediate comfort.", "hi": "सूजी हुई श्वसन नली को राहत देता है।", "gu": "શ્વાસનળીનો સોજો ઓછો કરવામાં મદદ કરે છે." },
+        "sideEffects": { "en": "Safe.", "hi": "सुरक्षित।", "gu": "સુરક્ષિત." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Vasavaleha / Kantakari Avaleha", "hi": "वासावलेह / कंटकारी अवलेह", "gu": "વાસાવલેહ / કંટકારી અવલેહ" },
+        "benefit": { "en": "Powerful herbal bronchodilator and mucolytic.", "hi": "सांस की नाली की सूजन कम करता है और कफ निकालता है।", "gu": "શ્વાસ ચડવામાં અને કફ નીકાળવામાં આયુર્વેદિક ઔષધ." },
+        "sideEffects": { "en": "Take after meals under guidance.", "hi": "भोजन के बाद लें।", "gu": "જમ્યા પછી જ સેવન કરવું." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Bryonia Alba 30C", "hi": "ब्रायोनिया अल्बा 30C", "gu": "બ્રાયોનિયા આલ્બા 30C" },
+        "benefit": { "en": "Relieves dry, painful cough aggravated by movement.", "hi": "सूखी और दर्दनाक खाँसी में राहत।", "gu": "સુકી અને દુખાવાવાળી ઉધરસમાં ગુણકારી." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." }
+      }
+    ]
+  },
+  "gastroenteritis": {
+    "allopathy": [
+      {
+        "name": { "en": "ORS + Zinc Supplement (20mg)", "hi": "ओआरएस + जिंक सप्लीमेंट (20mg)", "gu": "ઓ.આર.એસ. + ઝીંક ટેબ્લેટ (20mg)" },
+        "benefit": { "en": "Essential for fluid recovery and reducing diarrhoea duration.", "hi": "शरीर में पानी की पूर्ति करता है और दस्त की अवधि घटाता है।", "gu": "ઝાડાનો સમયગાળો ઘટાડે છે અને ડિહાઇડ્રેશન રોકે છે." },
+        "sideEffects": { "en": "Zinc may cause mild metallic taste or nausea.", "hi": "जिंक से हल्का धातु जैसा स्वाद या उल्टी की भावना।", "gu": "ઝીંકથી મોંમાં હળવી કડવાશ આવી શકે." }
+      },
+      {
+        "name": { "en": "Probiotics (Lactic Acid Bacillus)", "hi": "प्रोबायोटिक्स (लैक्टिक एसिड बैसिलस)", "gu": "પ્રોબાયોટિક્સ (Probiotics Sachet/Capsule)" },
+        "benefit": { "en": "Restores healthy gut flora.", "hi": "आंतों के अच्छे बैक्टीरिया को पुनर्स्थापित करता है।", "gu": "આંતરડાના ઉપયોગી બેક્ટેરિયાનું પ્રમાણ સુધારે છે." },
+        "sideEffects": { "en": "Extremely safe.", "hi": "अत्यंत सुरक्षित।", "gu": "ખૂબ જ સુરક્ષિત." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Kutajghan Vati", "hi": "कुटजघन वटी", "gu": "કુટજઘન વટી" },
+        "benefit": { "en": "Astringent herbal medicine for controlling loose stools.", "hi": "दस्त और पेट के मरोड़ को नियंत्रित करती है।", "gu": "ઝાડા અને પેટના મરડામાં ખૂબ જ અસરકારક આયુર્વેદિક વટી." },
+        "sideEffects": { "en": "Avoid overdosage to prevent constipation.", "hi": "अधिक मात्रा से बचें ताकि कब्ज न हो।", "gu": "વધુ પ્રમાણમાં લેવાથી કબ્જિયાત થઈ શકે." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Arsenicum Album 30C", "hi": "आर्सेनिकम एल्बम 30C", "gu": "આર્સેનિકમ આલ્બમ 30C" },
+        "benefit": { "en": "Indicated in food poisoning, vomiting, and burning diarrhoea.", "hi": "फूड पॉइज़निंग, उल्टी और जलन वाले दस्त में उपयोगी।", "gu": "ફૂડ પોઈઝનિંગ, ઉલટી અને પેટની બળતરામાં રાહત." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." }
+      }
+    ]
+  },
+  "pneumonia": {
+    "allopathy": [
+      {
+        "name": { "en": "EMERGENCY: Rush to Hospital / Doctor Urgently", "hi": "आपातकाल: तुरंत अस्पताल / डॉक्टर के पास जाएं", "gu": "ઈમરજન્સી: તાત્કાલિક ડોક્ટર/હોસ્પિટલ પહોંચો" },
+        "benefit": { "en": "Requires immediate evaluation, oxygen assessment & prescription antibiotics.", "hi": "तत्काल ऑक्सीजन जांच और प्रिस्क्रिप्शन एंटीबायोटिक की आवश्यकता।", "gu": "ઓક્સિજન ચેક અને એન્ટિબાયોટિક સારવાર માટે તાત્કાલિક હોસ્પિટલ જવું." },
+        "sideEffects": { "en": "Do not delay transport.", "hi": "अस्पताल जाने में देरी न करें।", "gu": "હોસ્પિટલ જવામાં મોડું ન કરવું." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Emergency Referral Required", "hi": "तत्काल रेफरल आवश्यक", "gu": "તાત્કાલિક રેફરલ જરૂરી" },
+        "benefit": { "en": "Do not rely solely on home remedies for acute pneumonia.", "hi": "गंभीर निमोनिया में केवल घरेलू उपचार पर निर्भर न रहें।", "gu": "ગંભીર ન્યુમોનિયામાં ઘરગથ્થુ ઉપચાર પર આધાર ન રાખવો." },
+        "sideEffects": { "en": "N/A", "hi": "N/A", "gu": "N/A" }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Emergency Referral Required", "hi": "तत्काल रेफरल आवश्यक", "gu": "તાત્કાલિક રેફરલ જરૂરી" },
+        "benefit": { "en": "Seek hospital support immediately.", "hi": "तुरंत अस्पताल की सहायता लें।", "gu": "તાત્કાલિક હોસ્પિટલ પહોંચો." },
+        "sideEffects": { "en": "N/A", "hi": "N/A", "gu": "N/A" }
+      }
+    ]
+  },
+  "malaria": {
+    "allopathy": [
+      {
+        "name": { "en": "Paracetamol 500mg + Blood Test (MP Kit)", "hi": "पैरासिटामोल 500mg + मलेरिया खून जांच", "gu": "પેરાસિટામોલ + મલેરિયા લોહીની તપાસ" },
+        "benefit": { "en": "Symptom control while awaiting diagnostic blood smear / RDT test.", "hi": "खून जांच रिपोर्ट आने तक बुखार पर नियंत्रण।", "gu": "લેબ ટેસ્ટનું રિપોર્ટ આવે ત્યાં સુધી તાવ નિયંત્રણ." },
+        "sideEffects": { "en": "Prescription antimalarial drugs must be started by doctor.", "hi": "एंटी-मलेरियल दवाएं डॉक्टर की सलाह से ही लें।", "gu": "મલેરિયાની ખાસ દવાઓ ડોક્ટરની ચીઠ્ઠીથી જ લેવી." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Sudarshan Churna / Papaya Leaf Extract", "hi": "सुदर्शन चूर्ण / पपीते की पत्ती का रस", "gu": "સુદર્શન ચૂર્ણ / પપૈયાના પાનનો રસ" },
+        "benefit": { "en": "Supportive herb to help lower high fever spikes.", "hi": "बुखार के तापमान को नियंत्रित करने में सहायक।", "gu": "તાવના આંકડા ઘટાડવામાં અને તાકાત આપવામાં સહાયક." },
+        "sideEffects": { "en": "Bitter.", "hi": "कड़वा।", "gu": "કડવું." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Cinchona Officinalis 30C", "hi": "सिंकोना ऑफिसिनेलिस 30C", "gu": "સિંકોના ઑફિસિનાલિસ 30C" },
+        "benefit": { "en": "Indicated in periodic chills, fever, and exhaustion.", "hi": "ठंड लगकर आने वाले बुखार और कमजोरी में उपयोगी।", "gu": "ઠંડી લાગીને આવતા તાવમાં રાહત આપવા માટે." },
+        "sideEffects": { "en": "Safe.", "hi": "सुरक्षित।", "gu": "સુરક્ષિત." }
+      }
+    ]
+  },
+  "typhoid": {
+    "allopathy": [
+      {
+        "name": { "en": "Paracetamol 500mg + Widal / Typhoid Test", "hi": "पैरासिटामोल + विडाल / टाइफाइड जांच", "gu": "પેરાસિટામોલ + ટાઇફોઇડ ટેસ્ટ (Widal Test)" },
+        "benefit": { "en": "Fever control; consult doctor for full antibiotic course.", "hi": "बुखार कम करता है; पूर्ण एंटीबायोटिक कोर्स के लिए डॉक्टर से मिलें।", "gu": "તાવ ઓછો કરે છે; એન્ટિબાયોટિક કોર્સ માટે ડૉક્ટરને બતાવવું." },
+        "sideEffects": { "en": "Requires medical supervision.", "hi": "डॉक्टरी देखरेख आवश्यक।", "gu": "ડૉક્ટરની દેખરેખ જરૂરી." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Amritarishta", "hi": "अमृतारिष्ट", "gu": "અમૃતારિષ્ટ" },
+        "benefit": { "en": "Traditional tonic used in chronic or recurring fevers.", "hi": "जीर्ण और बार-बार आने वाले बुखार में लाभदायक।", "gu": "જુના અને હઠીલા તાવમાં તાકાત આપતું આયુર્વેદિક અરીષ્ટ." },
+        "sideEffects": { "en": "Contains self-generated alcohol (mild).", "hi": "हल्का स्व-निर्मित अल्कोहल।", "gu": "જમ્યા પછી સમાન પાણી ઉમેરીને લેવું." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Baptisia Tinctoria 30C", "hi": "बैप्टीसिया टिंक्टोरिया 30C", "gu": "બેપ્ટિશિયા ટિંક્ટોરિયા 30C" },
+        "benefit": { "en": "Useful in typhoid-like stupor and severe muscle soreness.", "hi": "टाइफाइड बुखार में मांसपेशियों के दर्द और भारीपन में उपयोगी।", "gu": "ટાઇફોઇડ જેવા તાવમાં અને આખા શરીરના દુખાવામાં ઉપયોગી." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." }
+      }
+    ]
+  },
+  "dengue": {
+    "allopathy": [
+      {
+        "name": { "en": "Paracetamol 500mg (NO Aspirin / NO Ibuprofen)", "hi": "पैरासिटामोल (एस्पिरिन या कॉम्बिफ्लेम न लें)", "gu": "પેરાસિટામોલ (ડિસ્પ્રિન કે આઇબુપ્રોફેન ક્યારેય ન લેવી)" },
+        "benefit": { "en": "Safely manages fever. WARNING: Avoid NSAIDs as they increase bleeding risk.", "hi": "सुरक्षित बुखार नियंत्रण। चेतावनी: एस्पिरिन/आइबुप्रोफेन न लें, इससे ब्लीडिंग हो सकती है।", "gu": "સુરક્ષિત તાવ નિયંત્રણ. ચેતવણી: આઇબુપ્રોફેન કે ડિસ્પ્રીન ન લેવી (લોહી પાતળું થવાનું જોખમ)." }
+      },
+      {
+        "name": { "en": "Plentiful Fluids + ORS + Coconut Water", "hi": "भरपूर तरल पदार्थ + नारियल पानी", "gu": "પુષ્કળ પ્રવાહી + નાળિયેર પાણી + ORS" },
+        "benefit": { "en": "Crucial to maintain intravascular hydration.", "hi": "शरीर में तरल पदार्थ और प्लेटलेट्स की सुरक्षा के लिए जरूरी।", "gu": "શરીરમાં પ્રવાહીનું પ્રમાણ જાળવી રાખવા માટે અતિ મહત્વનું." },
+        "sideEffects": { "en": "Safe.", "hi": "सुरक्षित।", "gu": "સુરક્ષિત." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Carica Papaya Leaf Juice / Syrup", "hi": "पपीते के पत्ते का रस / सिरप", "gu": "પપૈયાના પાનનો રસ / સિરપ" },
+        "benefit": { "en": "Helps maintain and boost platelet counts.", "hi": "प्लेटलेट काउंट बढ़ाने और बनाए रखने में सहायक।", "gu": "પ્લેટલેટ્સનું પ્રમાણ જાળવી રાખવામાં અને વધારવામાં મદદરૂપ." },
+        "sideEffects": { "en": "May cause mild gastric discomfort.", "hi": "हल्का पेट खराब हो सकता है।", "gu": "હળવો ઉબકો આવી શકે." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Eupatorium Perfoliatum 30C", "hi": "यूपेटोरियम पर्फोलिएटम 30C", "gu": "યુપેટોરિયમ પરફોલિયાટમ 30C" },
+        "benefit": { "en": "Famous remedy for severe bone-breaking body ache in Dengue.", "hi": "हड्डी तोड़ बुखार और तीव्र बदन दर्द में राहत।", "gu": "અતિશય અસહ્ય હાડકાના દુખાવામાં ગુણકારી." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." }
+      }
+    ]
+  },
+  "uti": {
+    "allopathy": [
+      {
+        "name": { "en": "Alkaline Citrate Syrup (Disodium Hydrogen Citrate)", "hi": "अल्कासोल / साइट्रेट सिरप", "gu": "અલ્કાલાઇન સાઇટ્રેટ સિરપ (Disodium Hydrogen Citrate)" },
+        "benefit": { "en": "Alkalinizes urine to reduce burning sensation.", "hi": "पेशाब का एसिड कम करके जलन तुरंत मिटाता है।", "gu": "પેશાબની એસિડિટી ઘટાડી બળતરામાં તુરંત રાહત આપે છે." },
+        "sideEffects": { "en": "Dilute in a full glass of water before drinking.", "hi": "एक गिलास पानी में मिलाकर पिएं।", "gu": "એક ગ્લાસ પાણીમાં ઉમેરીને જ પીવું." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Chandraprabha Vati", "hi": "चंद्रप्रभावटी", "gu": "ચંદ્રપ્રભા વટી" },
+        "benefit": { "en": "Renowned Ayurvedic formulation for urinary tract wellness.", "hi": "मूत्र मार्ग के जलन, दर्द और इंफेक्शन में अत्यंत लाभकारी।", "gu": "પેશાબની બળતરા અને યુરિનરી ઇન્ફેક્શનમાં ઉત્તમ આયુર્વેદિક ઔષધ." },
+        "sideEffects": { "en": "Safe when taken as prescribed.", "hi": "निर्देशानुसार लेने पर सुरक्षित।", "gu": "જમ્યા પછી લેવી." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Cantharis 30C", "hi": "कैंथेरिस 30C", "gu": "કેન્થેરિસ 30C" },
+        "benefit": { "en": "Eases intense burning and drop-by-drop painful urination.", "hi": "अत्यधिक जलन और बूंद-बूंद पेशाब के दर्द में राहत।", "gu": "પેશાબમાં તીવ્ર બળતરા અને દુખાવામાં ઝડપી રાહત." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." }
+      }
+    ]
+  },
+  "migraine": {
+    "allopathy": [
+      {
+        "name": { "en": "Paracetamol 650mg + Quiet Dark Room Rest", "hi": "पैरासिटामोल 650mg + शांत अंधेरे कमरे में आराम", "gu": "પેરાસિટામોલ 650mg + શાંત અંધારા રૂમમાં આરામ" },
+        "benefit": { "en": "Reduces throbbing headache and light sensitivity.", "hi": "धड़कने वाले सिरदर्द और रोशनी से होने वाली तकलीफ घटाता है।", "gu": "માથાનો ધબકારા મારતો દુખાવો ઘટાડે છે." },
+        "sideEffects": { "en": "Avoid excessive painkillers to prevent rebound headache.", "hi": "ज्यादा पेनकिलर न लें।", "gu": "વધારે પડતી પેઇનકિલર ન લેવી." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Shirashooladi Vajra Ras", "hi": "शिराशूलादि वज्र रस", "gu": "શિરઃશૂલાદિ વજ્ર રસ" },
+        "benefit": { "en": "Classical Ayurvedic medicine for chronic vascular headaches.", "hi": "सिरदर्द और माइग्रेन के दर्द शमन में प्रभावी।", "gu": "માઇગ્રેન અને જુના માથાના દુખાવામાં આયુર્વેદિક ઈલાજ." },
+        "sideEffects": { "en": "Take under practitioner guidance.", "hi": "वैद्य की देखरेख में लें।", "gu": "નિષ્ણાતની સલાહથી લેવી." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Belladonna 30C / Sanguinaria 30C", "hi": "बेलाडोना 30C / संग्विनेरिया 30C", "gu": "બેલાડોના 30C / સંગ્વિનેરિયા 30C" },
+        "benefit": { "en": "Indicated in sudden pulsating, throbbing right/left sided headache.", "hi": "अचानक होने वाले तेज धड़कन वाले सिरदर्द में राहत।", "gu": "તીવ્ર ધબકારા મારતા માથાના દુખાવામાં રાહત." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." }
+      }
+    ]
+  },
+  "tonsillitis": {
+    "allopathy": [
+      {
+        "name": { "en": "Warm Salt Water Gargles 4 times daily", "hi": "दिन में 4 बार गुनगुने नमक पानी के गरारे", "gu": "દિવસમાં 4 વખત હૂંફાળા મીઠાના પાણીના કોગળા" },
+        "benefit": { "en": "Reduces swollen tonsils and cleanses throat bacteria.", "hi": "टॉन्सिल की सूजन कम करता है और गले की सफाई करता है।", "gu": "ટોન્સિલનો સોજો ઓછો કરે છે અને ગળાની સફાઈ કરે છે." },
+        "sideEffects": { "en": "Safe and effective.", "hi": "सुरक्षित और प्रभावी।", "gu": "સુરક્ષિત અને ઉત્તમ." }
+      },
+      {
+        "name": { "en": "Paracetamol 500mg for throat pain", "hi": "गले के दर्द के लिए पैरासिटामोल 500mg", "gu": "ગળાના દુખાવા માટે પેરાસિટામોલ 500mg" },
+        "benefit": { "en": "Eases swallowing discomfort.", "hi": "गि निगलने के दर्द में राहत।", "gu": "ગળતી વખતે થતા દુખાવામાં રાહત." },
+        "sideEffects": { "en": "Standard safe dose.", "hi": "मानक सुरक्षित खुराक।", "gu": "સુરક્ષિત ડોઝ." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Khadiradi Vati (Sucking tablets)", "hi": "खदिरादि वटी (चूसने की गोली)", "gu": "ખદિરાદિ વટી (ચૂસવાની ગોળી)" },
+        "benefit": { "en": "Direct astringent action on infected throat and tonsils.", "hi": "सूजे हुए टॉन्सिल और गले के संक्रमण में राहत।", "gu": "ગળાના અને ટોન્સિલના સોજા પર સીધી જ રાહત આપતી ગોળી." },
+        "sideEffects": { "en": "Safe herbal lozenge.", "hi": "सुरक्षित आयुर्वेदिक गोली।", "gu": "સુરક્ષિત ચૂસવાની ગોળી." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Merc Sol 30C / Phytolacca 30C", "hi": "मर्क सॉल 30C / फाइटोलाका 30C", "gu": "મર્ક સોલ 30C / ફાયટોલાકા 30C" },
+        "benefit": { "en": "Eases painful swollen throat and difficulty swallowing.", "hi": "सूजे टॉन्सिल और निगलने की तकलीफ में आराम।", "gu": "ટોન્સિલના સોજા અને ખોરાક ગળવાની તકલીફમાં ગુણકારી." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." }
+      }
+    ]
+  },
+  "heat_exhaustion": {
+    "allopathy": [
+      {
+        "name": { "en": "Cool Environment + Hydration with ORS & Cold Compresses", "hi": "ठंडी जगह + ओआरएस और ठंडी पट्टी", "gu": "ઠંડી જગ્યાએ આરામ + ઓઆરએસ અને ઠંડા પોતા" },
+        "benefit": { "en": "Rapidly cools body core temperature and replaces lost fluid.", "hi": "शरीर के तापमान को तुरंत सामान्य करता है।", "gu": "શરીરનું તાપમાન તુરંત સામાન્ય લાવવામાં મદદ કરે છે." },
+        "sideEffects": { "en": "N/A", "hi": "N/A", "gu": "N/A" }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Aam Panna / Sugarcane Juice / Coriander Water", "hi": "आम पन्ना / गन्ने का रस / धनिया पानी", "gu": "કાચી કેરીનું પન્નું / શેરડીનો રસ / ધાણાનું પાણી" },
+        "benefit": { "en": "Natural cooling beverages that eliminate summer heat toxins.", "hi": "लू के प्रभाव को खत्म करने वाले प्राकृतिक शीतल पेय।", "gu": "લૂ અને ગરમીની અસર નાબૂદ કરતી કુદરતી તાજગી." },
+        "sideEffects": { "en": "Safe.", "hi": "सुरक्षित।", "gu": "સુરક્ષિત." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Glonoinum 30C", "hi": "ग्लोनोइनम 30C", "gu": "ગ્લોનોઇનમ 30C" },
+        "benefit": { "en": "Indicated in sunstroke with throbbing head congestion.", "hi": "धूप और गर्म हवाओं से हुए तेज सिरदर्द में राहत।", "gu": "તડકા અને લૂ લાગવાથી થતા માથાના ધબકારામાં રાહત." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." }
+      }
+    ]
+  },
+  "gerd": {
+    "allopathy": [
+      {
+        "name": { "en": "Antacid Gel (Magaldrate + Simethicone)", "hi": "एंटासिड सिरप / जेल", "gu": "એન્ટાસિડ સીરપ / જેલ" },
+        "benefit": { "en": "Neutralizes stomach acid immediately and coats stomach lining.", "hi": "पेट के तेज़ाब को तुरंत बेअसर करता है और जलन दूर करता है।", "gu": "પેટમાં છાતીની બળતરા અને પિત્તમાં તુરંત રાહત આપે છે." },
+        "sideEffects": { "en": "Take 30 minutes after meals or when burning occurs.", "hi": "खाने के 30 मिनट बाद या जलन होने पर लें।", "gu": "જમ્યા પછી 30 મિનિટે લેવું." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Avipattikar Churna", "hi": "अविपत्तिकर चूर्ण", "gu": "અવિપત્તિકર ચૂર્ણ" },
+        "benefit": { "en": "Promotes healthy digestion and reduces excess gastric acid.", "hi": "अम्लपित्त, सीने की जलन और खट्टी डकारों का शमन।", "gu": "અમ્લપિત્ત, એસિડિટી અને ખાટા ઓડકારમાં અત્યંત ગુણકારી." },
+        "sideEffects": { "en": "Take 1 tsp with lukewarm water before bedtime or meals.", "hi": "गुनगुने पानी के साथ लें।", "gu": "હૂંફાળા પાણી સાથે જમતા પહેલાં કે રાત્રે લેવું." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Nux Vomica 30C", "hi": "नक्स वोमिका 30C", "gu": "નક્સ વોમિકા 30C" },
+        "benefit": { "en": "Excellent for heartburn, acidity, and heavy sensation after eating.", "hi": "एसिडिटी, पेट भारी होने और खट्टी डकारों में लाभदायक।", "gu": "જમ્યા પછી પેટ ભારે થવું અને એસિડિટીમાં ઉત્તમ." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." }
+      }
+    ]
+  },
+  "asthma": {
+    "allopathy": [
+      {
+        "name": { "en": "EMERGENCY: Salbutamol Inhaler / Rush to Hospital", "hi": "आपातकाल: साल्बुटामोल इनहेलर / तुरंत अस्पताल जाएं", "gu": "ઈમરજન્સી: સાલ્બુટામોલ ઈનહેલર / તાત્કાલિક હોસ્પિટલ પહોંચો" },
+        "benefit": { "en": "Inhaled bronchodilator opens constricted airways instantly.", "hi": "इनहेलर सांस की नाली को तुरंत खोलता है।", "gu": "ઈનહેલર શ્વાસની રુંધાયેલી નળીને તુરંત ખોલે છે." },
+        "sideEffects": { "en": "Immediate emergency care required if no response.", "hi": "आराम न मिलने पर तुरंत अस्पताल जाएं।", "gu": "રાહત ન મળે તો તુરંત ડોક્ટર પાસે જવું." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Emergency Care Required", "hi": "आपातकालीन चिकित्सा आवश्यक", "gu": "ઈમરજન્સી સારવાર જરૂરી" },
+        "benefit": { "en": "Acute shortness of breath requires medical emergency attention.", "hi": "गंभीर सांस की तकलीफ में तुरंत डॉक्टर की मदद लें।", "gu": "શ્વાસ ચડવાની ઈમરજન્સીમાં તુરંત ડોક્ટર પાસે જવું." },
+        "sideEffects": { "en": "N/A", "hi": "N/A", "gu": "N/A" }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Emergency Care Required", "hi": "आपातकालीन चिकित्सा आवश्यक", "gu": "ઈમરજન્સી સારવાર જરૂરી" },
+        "benefit": { "en": "Seek immediate oxygen and medical support.", "hi": "तत्काल चिकित्सा सहायता लें।", "gu": "તાત્કાલિક ડોક્ટર પાસે જવું." },
+        "sideEffects": { "en": "N/A", "hi": "N/A", "gu": "N/A" }
+      }
+    ]
+  },
+  "appendicitis": {
+    "allopathy": [
+      {
+        "name": { "en": "EMERGENCY: Do NOT give food/water. Rush to Surgeon", "hi": "आपातकाल: कुछ खाने-पीने को न दें। तुरंत सर्जन के पास जाएं", "gu": "ઈમરજન્સી: દર્દીને કશું જ ખાવા-પીવા ન દેવું. તાત્કાલિક સર્જન પાસે પહોંચો" },
+        "benefit": { "en": "Surgical evaluation needed immediately.", "hi": "तत्काल सर्जिकल जांच की आवश्यकता।", "gu": "તાત્કાલિક સર્જિકલ ઈમરજન્સી ઈવેલ્યુએશન." },
+        "sideEffects": { "en": "Never give laxatives or heating pads on stomach.", "hi": "पेट पर गर्म सिकाई न करें।", "gu": "પેટ પર ગરમ શેક ક્યારેય ન કરવો." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Emergency Surgical Referral Required", "hi": "तत्काल सर्जरी रेफरल आवश्यक", "gu": "તાત્કાલિક સર્જિકલ રેફરલ જરૂરી" },
+        "benefit": { "en": "Do not delay surgery.", "hi": "सर्जरी में देरी न करें।", "gu": "સર્જરીમાં મોડું ન કરવું." },
+        "sideEffects": { "en": "N/A", "hi": "N/A", "gu": "N/A" }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Emergency Surgical Referral Required", "hi": "तत्काल सर्जरी रेफरल आवश्यक", "gu": "તાત્કાલિક સર્જિકલ રેફરલ જરૂરી" },
+        "benefit": { "en": "Immediate hospital admission required.", "hi": "तुरंत अस्पताल भर्ती हों।", "gu": "તાત્કાલિક હોસ્પિટલમાં દાખલ થવું." },
+        "sideEffects": { "en": "N/A", "hi": "N/A", "gu": "N/A" }
+      }
+    ]
+  },
+  "chickenpox": {
+    "allopathy": [
+      {
+        "name": { "en": "Calamine Lotion (External apply) + Paracetamol", "hi": "कैलामाइन लोशन (त्वचा पर लगाएं) + पैरासिटामोल", "gu": "કેલેમાઇન લોશન (ચામડી પર લગાવવું) + પેરાસિટામોલ" },
+        "benefit": { "en": "Soothes severe skin itching and reduces fever.", "hi": "त्वचा की खुजली शांत करता है और बुखार कम करता है।", "gu": "ચામડીની ખંજવાળ શાંત કરે છે અને તાવ ઘટાડે છે." },
+        "sideEffects": { "en": "Do NOT give Aspirin to children with viral rash.", "hi": "बच्चों को एस्पिरिन न दें।", "gu": "બાળકોને એસ્પિરિન ક્યારેય ન આપવી." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Neem Water Bath / Neem Paste", "hi": "नीम के पानी से स्नान / नीम का लेप", "gu": "લીમડાના પાણીનું સ્નાન / લીમડાનો લેપ" },
+        "benefit": { "en": "Natural antiseptic soothing rash and preventing secondary infection.", "hi": "प्राकृतिक एंटीसेप्टिक जो दानों को सुखाता है।", "gu": "કુદરતી એન્ટિસેપ્ટિક જે ચકામાં શાંત કરે છે." },
+        "sideEffects": { "en": "Extremely safe traditional remedy.", "hi": "अत्यंत सुरक्षित परम्परागत उपाय।", "gu": "અત્યંત સુરક્ષિત પરંપરાગત ઉપાય." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Rhus Tox 30C", "hi": "रस टॉक्स 30C", "gu": "રસ ટોક્સ 30C" },
+        "benefit": { "en": "Primary homeopathic remedy for vesicular, itchy rash and fever.", "hi": "पानीदार दानों और खुजली वाले बुखार में प्रभावी।", "gu": "પાણીવાળા ચકામાં અને ખંજવાળમાં રાહત." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." }
+      }
+    ]
+  },
+  "anemia": {
+    "allopathy": [
+      {
+        "name": { "en": "Ferrous Ascorbate + Folic Acid Tablets", "hi": "आयरन + फोलिक एसिड गोली", "gu": "આયર્ન + ફોલિક એસિડ ગોળી" },
+        "benefit": { "en": "Replenishes hemoglobin reserves in blood.", "hi": "रक्त में हीमोग्लोबिन के स्तर को बढ़ाता है।", "gu": "લોહીમાં હિમોગ્લોબિનનું પ્રમાણ સુધારે છે." },
+        "sideEffects": { "en": "May cause blackish stools or mild stomach upset; take after food.", "hi": "मल का रंग काला हो सकता है; भोजन के बाद लें।", "gu": "ઝાડાનો રંગ કાળો થઈ શકે; જમ્યા પછી લેવું." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Punarnavadi Mandoor / Lohasava", "hi": "पुनर्नवादि मंडूर / लोहासव", "gu": "પુનર્નવાદિ મંડૂર / લોહાસવ" },
+        "benefit": { "en": "Classical Ayurvedic iron tonic for improving red blood cell counts.", "hi": "रक्त विकार और हीमोग्लोबिन की कमी को दूर करता है।", "gu": "લોહીની ટકાવારી વધારવા ઉત્તમ આયુર્વેદિક ઔષધ." },
+        "sideEffects": { "en": "Take after meals with water.", "hi": "भोजन के बाद लें।", "gu": "જમ્યા પછી લેવું." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Ferrum Metallicum 6X", "hi": "फेरम मेटालिकम 6X", "gu": "ફેરેમ મેટાલિકમ 6X" },
+        "benefit": { "en": "Aids iron assimilation in pale, exhausted individuals.", "hi": "शरीर में आयरन के अवशोषण को बढ़ाता है।", "gu": "શરીરમાં આયર્ન પચાવવામાં મદદરૂપ." },
+        "sideEffects": { "en": "Safe.", "hi": "सुरक्षित।", "gu": "સુરક્ષિત." }
+      }
+    ]
+  },
+  "jaundice": {
+    "allopathy": [
+      {
+        "name": { "en": "B-Complex + L-Ornithine L-Aspartate Syrup + Liver Checkup", "hi": "बी-कॉम्प्लेक्स सिरप + लिवर जांच", "gu": "બી-કોમ્પ્લેક્સ સિરપ + લિવર તપાસ" },
+        "benefit": { "en": "Supportive liver nutrition; consult doctor for LFT blood test.", "hi": "लिवर को सहारा देता है; एलएफटी खून जांच कराएं।", "gu": "લિવરને પોષણ આપે છે; LFT ટેસ્ટ કરાવવો." },
+        "sideEffects": { "en": "Avoid fatty/oily food completely.", "hi": "तले-भुने और वसायुक्त भोजन से बचें।", "gu": "તેલી અને ચરબીયુક્ત ખોરાકથી દૂર રહેવું." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Arogyavardhini Vati / Bhumyamalaki Swaras", "hi": "आरोग्यवर्धिनी वटी / भूम्यामलकी रस", "gu": "આરોગ્યવર્ધિની વટી / ભોંયઆમળીનો રસ" },
+        "benefit": { "en": "Premier Ayurvedic liver protectant and bilirubin detoxifier.", "hi": "लिवर की रक्षा करता है और बिलीरुबिन कम करता है।", "gu": "કમળામાં લિવરનું રક્ષણ કરતી શ્રેષ્ઠ આયુર્વેદિક વટી." },
+        "sideEffects": { "en": "Take under supervision.", "hi": "वैद्यकीय परामर्श लें।", "gu": "નિષ્ણાતની સલાહથી લેવી." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Chelidonium Majus 30C", "hi": "चेलिडोनियम मेजस 30C", "gu": "ચેલિડોનિયમ મેજસ 30C" },
+        "benefit": { "en": "Indicated in jaundice, right upper abdominal pain, and yellow eyes.", "hi": "पीलिया और यकृत के दर्द में अत्यंत उपयोगी।", "gu": "કમળાના ઈલાજ માટે પ્રખ્યાત હોમિયોપેથિક ઔષધ." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." }
+      }
+    ]
+  },
+  "ear_infection": {
+    "allopathy": [
+      {
+        "name": { "en": "Paracetamol 500mg + Dry Warm Cloth Compress", "hi": "पैरासिटामोल 500mg + कान पर सूखी गर्म सिकाई", "gu": "પેરાસિટામોલ 500mg + કાન પર સૂકો ગરમ શેક" },
+        "benefit": { "en": "Relieves throbbing earache. Do NOT pour oil or drops if ear is discharging.", "hi": "कान के दर्द को शांत करता है। कान बहने पर तेल न डालें।", "gu": "કાનનો દુખાવો ઘટાડે છે. કાનમાંથી રસી વહેતી હોય તો કશું પણ અંદર ન નાખવું." },
+        "sideEffects": { "en": "Do not put drops without doctor consultation.", "hi": "डॉक्टर की सलाह के बिना ड्रॉप्स न डालें।", "gu": "ડૉક્ટરની સલાહ વિના ટીંપા ન નાખવા." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Bilva Taila (Warm ear drops if drum intact)", "hi": "बिल्व तेल (कान बह न रहा हो तो)", "gu": "બિલ્વ તેલ (કાનનું પડદું અકબંધ હોય તો)" },
+        "benefit": { "en": "Ayurvedic medicated oil for ear discomfort.", "hi": "कान के दर्द और भारीपन में सहायक।", "gu": "કાનની તકલીફમાં સહાયક તેલ." },
+        "sideEffects": { "en": "Do not use if eardrum is perforated.", "hi": "कान का पर्दा फटा हो तो न डालें।", "gu": "કાનનો પડદો કાણો હોય તો ઉપયોગ ન કરવો." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Pulsatilla 30C / Chamomilla 30C", "hi": "पल्सेटिला 30C / कैमोमिला 30C", "gu": "પલ્સેટિલા 30C / કેમોમિલા 30C" },
+        "benefit": { "en": "Eases earache, particularly in irritable children.", "hi": "कान दर्द और बच्चों के चिड़चिड़ेपन में राहत।", "gu": "કાનના દુખાવામાં અને બાળકોની બળતરામાં ગુણકારી." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." }
+      }
+    ]
+  },
+  "conjunctivitis": {
+    "allopathy": [
+      {
+        "name": { "en": "Carboxymethylcellulose Eye Drops + Cold Water Cleanse", "hi": "लुब्रिकेटिंग आई ड्रॉप्स + ठंडे पानी से सफाई", "gu": "લુબ્રિકેટિંગ આઈ ડ્રોપ્સ + સ્વચ્છ પાણીથી સફાઈ" },
+        "benefit": { "en": "Soothes gritty eye sensation and cleanses discharge.", "hi": "आंखों की जलन और चिपचिपाहट दूर करता है।", "gu": "આંખોની બળતરા અને કચરો દૂર કરે છે." },
+        "sideEffects": { "en": "Wash hands thoroughly to prevent spreading.", "hi": "संक्रमण फैलने से रोकने के लिए हाथ धोएं।", "gu": "હાથ વારંવાર ધોવા જેથી ચેપ ન ફેલાય." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Rose Water (Gulab Jal) / Triphala Wash", "hi": "गुलाब जल / त्रिफला जल से आंखें धोना", "gu": "ગુલાબ જળ / ત્રિફળાના પાણીથી આંખો ધોવી" },
+        "benefit": { "en": "Natural cooling anti-inflammatory wash for irritated eyes.", "hi": "आंखों को शीतलता प्रदान करता है।", "gu": "આંખોને ઠંડક અને સ્વચ્છતા આપે છે." },
+        "sideEffects": { "en": "Ensure sterile water is used.", "hi": "पानी साफ होना चाहिए।", "gu": "પાણી એકદમ સ્વચ્છ હોવું જોઈએ." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Euphrasia 30C (Eyebright)", "hi": "यूफ्रेसिया 30C", "gu": "યુફ્રેશિયા 30C" },
+        "benefit": { "en": "Famous remedy for red, burning, lacrimating eyes.", "hi": "लाल, जलती हुई और पानी बहती आंखों में अचूक।", "gu": "લાલ, બળતી અને પાણી વહેતી આંખોમાં અતિ ગુણકારી." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." }
+      }
+    ]
+  },
+  "skin_infection": {
+    "allopathy": [
+      {
+        "name": { "en": "Clotrimazole / Neomycin Ointment (Topical)", "hi": "क्लोट्रिमेज़ोल / एंटीफंगल क्रीम", "gu": "ક્લોટ્રિમેઝોલ / એન્ટિફંગલ ક્રીમ" },
+        "benefit": { "en": "Treats localized fungal/bacterial skin rash and itching.", "hi": "त्वचा के फंगल इंफेक्शन और खुजली को समाप्त करता है।", "gu": "ચામડીની ખંજવાળ અને ફૂગના ઇન્ફેક્શનને મટાડે છે." },
+        "sideEffects": { "en": "Apply thin layer on clean dry area twice daily.", "hi": "साफ जगह पर पतली परत लगाएं।", "gu": "સ્વચ્છ જગ્યા પર દિવસમાં બે વાર લગાવવું." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Neem Oil + Turmeric (Haldi) Paste", "hi": "नीम का तेल + हल्दी का लेप", "gu": "લીમડાનું તેલ + હળદરનો લેપ" },
+        "benefit": { "en": "Antimicrobial herbal combination for ringworm and rash.", "hi": "दाद, खाज और खुजली में प्राकृतिक रोगाणुरोधक।", "gu": "દાદર, ખંજવાળ અને ચામડીના રોગોમાં કુદરતી ઈલાજ." },
+        "sideEffects": { "en": "Turmeric stains clothing yellow.", "hi": "हल्दी कपड़ों पर दाग छोड़ सकती है।", "gu": "હળદરથી કપડાં પીળા થઈ શકે." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Sulphur 30C / Graphites 30C", "hi": "सल्फर 30C / ग्रेफाइटिस 30C", "gu": "સલ્ફર 30C / ગ્રેફાઇટિસ 30C" },
+        "benefit": { "en": "Indicated in dry or weeping itchy skin eruption.", "hi": "सूखी या पानी रिसाव वाली खुजली में लाभदायक।", "gu": "ખંજવાળ અને ચામડીના લાલ ચકામાંમાં રાહત." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." }
+      }
+    ]
+  },
+  "hypoglycemia": {
+    "allopathy": [
+      {
+        "name": { "en": "EMERGENCY: Give 3-4 teaspoons Glucose / Sugar water immediately", "hi": "आपातकाल: तुरंत 3-4 चम्मच ग्लूकोज या चीनी का पानी पिलाएं", "gu": "ઈમરજન્સી: તાત્કાલિક 3-4 ચમચી ગ્લુકોઝ કે ખાંડનું પાણી પાવું" },
+        "benefit": { "en": "Rapidly raises critical blood sugar level in conscious patient.", "hi": "रक्त में शर्करा का स्तर तुरंत बढ़ाता है।", "gu": "લોહીમાં શુગરનું પ્રમાણ તુરંત નોર્મલ કરે છે." },
+        "sideEffects": { "en": "If patient is unconscious, do NOT put anything in mouth; rush to hospital.", "hi": "बेहोश मरीज के मुंह में कुछ न डालें; तुरंत अस्पताल ले जाएं।", "gu": "બેભાન દર્દીના મોંમાં કશું જ ન નાખવું; તાત્કાલિક હોસ્પિટલ પહોંચો." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Jaggery (Gud) / Fruit Juice immediately", "hi": "तुरंत गुड़ या मीठा फल रस दें", "gu": "તાત્કાલિક ગોળ કે ગળ્યો ફળોનો રસ પાવો" },
+        "benefit": { "en": "Immediate sweet source to restore blood sugar.", "hi": "ब्लड शुगर बढ़ाने का प्राकृतिक त्वरित साधन।", "gu": "શુગર વધારવા માટેનો ત્વરિત કુદરતી રસ્તો." },
+        "sideEffects": { "en": "For conscious patient only.", "hi": "केवल होश में मरीज के लिए।", "gu": "માત્ર ભાનમાં હોય તેવા દર્દી માટે." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Emergency Glucose First", "hi": "पहले आपातकालीन ग्लूकोज दें", "gu": "પ્રથમ ગ્લુકોઝ આપવું" },
+        "benefit": { "en": "Hypoglycemia requires immediate sugar intake before any remedy.", "hi": "हाइपोग्लाइसीमिया में सबसे पहले चीनी देना अनिवार्य है।", "gu": "શુગર ઓછી હોય ત્યારે ખાંડ/ગ્લુકોઝ આપવું પ્રથમ ફરજ છે." },
+        "sideEffects": { "en": "N/A", "hi": "N/A", "gu": "N/A" }
+      }
+    ]
+  },
+  "kidney_stones": {
+    "allopathy": [
+      {
+        "name": { "en": "Hyoscine / Drotaverine Antispasmodic + Plentiful Water", "hi": "ड्रोटावेरिन पेट दर्द की गोली + खूब पानी पिएं", "gu": "ડ્રોટાવેરાઇન ગોળી + પુષ્કળ પાણી પીવું" },
+        "benefit": { "en": "Relieves intense smooth muscle spasm caused by stone.", "hi": "पथरी के तेज मरोड़ वाले दर्द को कम करता है।", "gu": "પથરીના અસહ્ય દુખાવાના ગોથા શાંત કરે છે." },
+        "sideEffects": { "en": "Consult doctor if severe fever or blood in urine occurs.", "hi": "पेशाब में खून आने पर डॉक्टर से मिलें।", "gu": "પેશાબમાં લોહી આવે તો ડૉક્ટરને બતાવવું." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Cystone Tablets / Pashanbhed Churna", "hi": "सिस्टोन टैबलेट / पाषाणभेद चूर्ण", "gu": "સિસ્ટોન ગોળીઓ / પાષાણભેદ ચૂર્ણ" },
+        "benefit": { "en": "Helps break down micro-calculi and flushes urinary tract.", "hi": "पथरी को गलाने और पेशाब के जरिए निकालने में मददगार।", "gu": "પથરીને તોડીને પેશાબ વાટે બહાર કાઢવામાં આયુર્વેદિક મદદ." },
+        "sideEffects": { "en": "Drink 3-4 liters of water daily.", "hi": "दिन में 3-4 लीटर पानी पिएं।", "gu": "રોજ 3-4 લીટર પાણી પીવું." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Berberis Vulgaris Q (Mother Tincture)", "hi": "बर्बेरिस वल्गेरिस Q (मदर टिंचर)", "gu": "બર્બેરિસ વલ્ગેરિસ Q (મધર ટિંક્ચર)" },
+        "benefit": { "en": "World renowned homeopathic remedy for renal colic and stone pain.", "hi": "पथरी के तीखे दर्द और पथरी निकालने की प्रसिद्ध दवा।", "gu": "પથરીના દુખાવામાં અને પથરી નીકાળવામાં અતિ પ્રખ્યાત ઔષધ." },
+        "sideEffects": { "en": "Take 10-15 drops in half cup water.", "hi": "आधे कप पानी में 10-15 बूंद लें।", "gu": "અડધા કપ પાણીમાં 10-15 ટીંપા લેવા." }
+      }
+    ]
+  },
+  "hypertension_crisis": {
+    "allopathy": [
+      {
+        "name": { "en": "EMERGENCY: Rest in Sitting Position + Rush to Hospital", "hi": "आपातकाल: बैठकर आराम करें + तुरंत अस्पताल जाएं", "gu": "ઈમરજન્સી: બેસીને આરામ કરો + તાત્કાલિક હોસ્પિટલ પહોંચો" },
+        "benefit": { "en": "High BP with chest pain / severe headache needs immediate ER medical control.", "hi": "अत्यधिक बीपी के लिए तत्काल डॉक्टर की दवा की आवश्यकता।", "gu": "અતિશય બીપીમાં તાત્કાલિક ડોક્ટરની દવા અને ઈમરજન્સી સંભાળ જરૂરી." },
+        "sideEffects": { "en": "Do not panic; keep calm during transport.", "hi": "घबराएं नहीं, शांत रहें।", "gu": "ગભરાવું નહીં, શાંતિ જાળવવી." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Sarpagandha Vati / Brahmi (Emergency Referral)", "hi": "सर्पगंधा वटी (आपातकालीन रेफरल)", "gu": "સર્પગંધા વટી (તાત્કાલિક હોસ્પિટલ જવું)" },
+        "benefit": { "en": "Supportive herbs; high BP crisis requires emergency medical evaluation.", "hi": "बीपी संकट में तुरंत डॉक्टर की सहायता लें।", "gu": "હાઇ બીપી ક્રાઇસિસમાં હોસ્પિટલ જવું ફરજિયાત છે." },
+        "sideEffects": { "en": "N/A", "hi": "N/A", "gu": "N/A" }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Glonoinum 30C / Rauwolfia Q (Emergency Referral)", "hi": "ग्लोनोइनम 30C / राउवोल्फिया Q", "gu": "ગ્લોનોઇનમ 30C / રાઉવોલ્ફિયા Q" },
+        "benefit": { "en": "Emergency transport needed.", "hi": "तुरंत अस्पताल जाएं।", "gu": "તાત્કાલિક હોસ્પિટલ પહોંચો." },
+        "sideEffects": { "en": "N/A", "hi": "N/A", "gu": "N/A" }
+      }
+    ]
+  },
+  "chikungunya": {
+    "allopathy": [
+      {
+        "name": { "en": "Paracetamol 500mg + Warm Joint Compresses", "hi": "पैरासिटामोल 500mg + जोड़ों की गर्म सिकाई", "gu": "પેરાસિટામોલ 500mg + સાંધાનો હળવો શેક" },
+        "benefit": { "en": "Safely manages fever and severe arthritic pain.", "hi": "बुखार और जोड़ों के असहनीय दर्द को नियंत्रित करता है।", "gu": "તાવ અને સાંધાના તીવ્ર દુખાવાને નિયંત્રિત કરે છે." },
+        "sideEffects": { "en": "Avoid heavy physical exertion.", "hi": "भारी काम करने से बचें।", "gu": "વજનદાર કામ ન કરવું." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Yograj Guggulu + Rasnasaptak Kwath", "hi": "योगराज गुग्गुलु + रास्नासप्तक क्वाथ", "gu": "યોગરાજ ગુગ્ગુળ + રાસ્નાસપ્તક ક્વાથ" },
+        "benefit": { "en": "Premier classical formulation for post-viral joint inflammation.", "hi": "चिकनगुनिया के बाद जोड़ों की सूजन और जकड़न दूर करती है।", "gu": "ચિકનગુનિયા પછીના સાંધાના સોજા અને જકડનમાં રાહત." },
+        "sideEffects": { "en": "Take after meals with warm water.", "hi": "गुनगुने पानी के साथ लें।", "gu": "જમ્યા પછી હૂંફાળા પાણી સાથે." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Rhus Tox 30C / Bryonia Alba 30C", "hi": "रस टॉक्स 30C / ब्रायोनिया 30C", "gu": "રસ ટોક્સ 30C / બ્રાયોનિયા 30C" },
+        "benefit": { "en": "Excellent for joint stiffness that worsens on first motion.", "hi": "जोड़ों की जकड़न और हिलने-डुलने के दर्द में राहत।", "gu": "સાંધાની જકડન અને દુખાવામાં રાહત." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." }
+      }
+    ]
+  },
+  "tension_headache": {
+    "allopathy": [
+      {
+        "name": { "en": "Paracetamol 500mg + Neck Stretching & Rest", "hi": "पैरासिटामोल 500mg + गर्दन की सिकाई और आराम", "gu": "પેરાસિટામોલ 500mg + આરામ અને ઊંઘ" },
+        "benefit": { "en": "Eases muscle contraction headache caused by fatigue or stress.", "hi": "थकान और तनाव के कारण होने वाले सिरदर्द में राहत।", "gu": "થાક અને ચિંતાથી થતા માથાના દુખાવામાં રાહત." },
+        "sideEffects": { "en": "Drink plenty of water.", "hi": "पर्याप्त पानी पिएं।", "gu": "પૂરતું પાણી પીવું." }
+      }
+    ],
+    "ayurveda": [
+      {
+        "name": { "en": "Brahmi Vati / Shankhpushpi Syrup", "hi": "ब्राह्मी वटी / शंखपुष्पी सिरप", "gu": "બ્રાહ્મી વટી / શંખપુષ્પી સિરપ" },
+        "benefit": { "en": "Calms central nervous system and relieves mental tension.", "hi": "मानसिक तनाव दूर करता है और अच्छी नींद लाता है।", "gu": "માનસિક શાંતિ આપે છે અને માથાનો દુખાવો ઘટાડે છે." },
+        "sideEffects": { "en": "Safe and soothing.", "hi": "सुरक्षित।", "gu": "સુરક્ષિત." }
+      }
+    ],
+    "homeopathy": [
+      {
+        "name": { "en": "Kali Phos 6X", "hi": "काली फॉस 6X", "gu": "કાલી ફોસ 6X" },
+        "benefit": { "en": "Nerve tonic for mental fatigue, worry, and stress headache.", "hi": "मानसिक थकान, चिंता और सिरदर्द में राहत।", "gu": "માનસિક થાક અને ચિંતાથી થતા માથાના દુખાવામાં ઉત્તમ." },
+        "sideEffects": { "en": "Safe tissue salt.", "hi": "सुरक्षित।", "gu": "સુરક્ષિત." }
+      }
+    ]
+  }
+}

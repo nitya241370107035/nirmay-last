@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="100%" height="100%">
+  <rect width="600" height="300" rx="16" fill="#F4F8F7"/>
+  <g transform="translate(30, 20)">
+    <rect x="0" y="0" width="540" height="260" rx="16" fill="#E0F2F1" stroke="#2E7D73" stroke-width="2"/>
+    <text x="270" y="35" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1B4D4A" text-anchor="middle">National Immunization Schedule</text>
+    <g transform="translate(40, 60)">
+      <rect x="0" y="0" width="210" height="170" rx="12" fill="#FFFFFF" stroke="#2E7D73" stroke-width="2"/>
+      <text x="105" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1B4D4A" text-anchor="middle">Birth &amp; Weeks 6,10,14</text>
+      <text x="105" y="60" font-family="sans-serif" font-size="12" fill="#37474F" text-anchor="middle">BCG, OPV, Pentavalent</text>
+      <text x="105" y="80" font-family="sans-serif" font-size="12" fill="#37474F" text-anchor="middle">Rotavirus &amp; PCV</text>
+      <text x="105" y="140" font-family="sans-serif" font-size="28" text-anchor="middle">💉</text>
+
+      <rect x="250" y="0" width="210" height="170" rx="12" fill="#FFFFFF" stroke="#2E7D73" stroke-width="2"/>
+      <text x="355" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2E7D73" text-anchor="middle">9 &amp; 16-24 Months</text>
+      <text x="355" y="60" font-family="sans-serif" font-size="12" fill="#37474F" text-anchor="middle">MR 1st &amp; 2nd Dose</text>
+      <text x="355" y="80" font-family="sans-serif" font-size="12" fill="#37474F" text-anchor="middle">Vitamin A Drops</text>
+      <text x="355" y="140" font-family="sans-serif" font-size="28" text-anchor="middle">🛡️</text>
+    </g>
+  </g>
+</svg>

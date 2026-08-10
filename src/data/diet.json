@@ -1,0 +1,1014 @@
+{
+  "viral_fever": {
+    "modern": {
+      "eat": {
+        "en": ["Rice gruel (kanji)", "Khichdi with ghee", "Vegetable soup", "Coconut water", "Honey ginger tea"],
+        "hi": ["चावल का माँड़", "घी के साथ खिचड़ी", "सब्ज़ी का सूप", "नारियल पानी", "शहद-अदरक की चाय"],
+        "gu": ["ભાતનું ઓસામણ", "ઘી સાથે ખીચડી", "શાકનો સૂપ", "નારિયેળ પાણી", "મધ-આદુની ચા"]
+      },
+      "avoid": {
+        "en": ["Fried food", "Spicy food", "Cold drinks & ice cream", "Raw unwashed salads", "Processed snacks"],
+        "hi": ["तला हुआ खाना", "मसालेदार भोजन", "ठंडे पेय और आइसक्रीम", "कच्चा बिना धुला सलाद", "प्रसंस्कृत स्नैक्स"],
+        "gu": ["તળેલો ખોરાક", "મસાલેદાર ભોજન", "ઠંડા પીણાં અને આઇસ્ક્રીમ", "કાચો વગર ધોયેલો સલાડ", "પ્રોસેસ્ડ નાસ્તો"]
+      },
+      "reason": {
+        "en": "Light, warm, and easily digestible hydration helps the metabolic immune response fight viral pathogens.",
+        "hi": "हल्का, गर्म और आसानी से पचने वाला पानी शरीर को वायरल संक्रमण से लड़ने में मदद करता है।",
+        "gu": "હળવો, ગરમ અને સરળતાથી પચે તેવો ખોરાક અને પાણી વાયરસ સામે લડવામાં મદદ કરે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Old rice water (Purana Shali Manda)", "Moong dal soup (Mudga Yusha)", "Warm boiled water (Ushnodaka)", "Pomegranate juice", "Bitter gourd (Karavella)"],
+        "hi": ["पुराना चावल का माँड़", "मूंग दाल का यूष (सूप)", "उबला हुआ गर्म पानी", "अनार का रस", "करेला"],
+        "gu": ["જૂના ચોખાનું ઓસામણ", "મગનું પાણી", "ઉકાળેલું ગરમ પાણી", "દાડમનો રસ", "કારેલા"]
+      },
+      "avoid": {
+        "en": ["Curd & Yoghurt (Dahi)", "Cold milk & Ice water", "Heavy milk desserts (Kheer)", "Sour citrus fruits", "Daytime sleep (Diva Swapna)"],
+        "hi": ["दही", "ठंडा दूध और ठंडा पानी", "मिठाई और खीर", "अत्यधिक खट्टे फल", "दिन में सोना"],
+        "gu": ["દહીં", "ઠંડુ દૂધ અને ઠંડુ પાણી", "મીઠાઈ અને ખીર", "અતિશય ખાટા ફળો", "દિવસ દરમિયાન ઊંઘવું"]
+      },
+      "reason": {
+        "en": "Fever (Jwara) causes Agnimandya (low digestive fire). Light, bitter, and astringent foods restore digestive warmth.",
+        "hi": "ज्वर (बुखार) में अग्निमंदता होती है। हल्का, तिक्त और कषाय आहार पाचन शक्ति को पुनः जाग्रत करता है।",
+        "gu": "ાવમાં જઠરાગ્નિ મંદ પડે છે. હળવો, કડવો અને કષાય ખોરાક પચનમાં મદદ કરે છે."
+      }
+    },
+    "age_overrides": {
+      "infant": {
+        "modern": {
+          "eat": {
+            "en": ["Exclusive breast milk", "ORS (Oral Rehydration Solution)", "Boiled cooled water (if >6 mos)"],
+            "hi": ["केवल माँ का दूध", "ORS का घोल", "उबला ठंडा पानी (6 महीने से ऊपर)"],
+            "gu": ["માત્ર માતાનું ધાવણ", "ORS નું પાણી", "ઉકાળેલું ઠંડુ પાણી (6 મહિનાથી મોટા)"]
+          },
+          "avoid": {
+            "en": ["Solid fried foods", "Cow milk (<1 year)", "Honey (<1 year)", "Sugary juices"],
+            "hi": ["ठोस तला हुआ खाना", "गाय का दूध (1 वर्ष से कम)", "शहद (1 वर्ष से कम)", "मीठे जूस"],
+            "gu": ["ઘન તળેલું ભોજન", "ગાયનું દૂધ (1 વર્ષથી નાના)", "મધ (1 વર્ષથી નાના)", "ગળ્યા જ્યુસ"]
+          },
+          "reason": {
+            "en": "Infants require pure fluid hydration and breast milk antibodies without solid strain.",
+            "hi": "शिशुओं को केवल स्तनपान और तरल पदार्थों की आवश्यकता होती है।",
+            "gu": "શિશુઓને માત્ર ધાવણ અને યોગ્ય પ્રવાહીની જરૂર હોય છે."
+          }
+        }
+      },
+      "elderly": {
+        "modern": {
+          "eat": {
+            "en": ["Soft well-cooked khichdi", "Mashed boiled potatoes", "Stewed apple", "Warm herbal broth"],
+            "hi": ["नरम अच्छी तरह पकी खिचड़ी", "उबला आलू", "उबला हुआ सेब", "गर्म हर्बल सूप"],
+            "gu": ["નરમ ખીચડી", "બાફેલા બટાકા", "બાફેલું સફરજન", "ગરમ ઉકાળો"]
+          },
+          "avoid": {
+            "en": ["Hard nuts & raw fiber", "Cold aerated beverages", "Heavy fried foods"],
+            "hi": ["कड़े मेवे और कच्चा फाइबर", "ठंडे वातित पेय", "भारी तला भोजन"],
+            "gu": ["કઠણ સૂકો મેવો", "ઠંડા સોડા/પીણાં", "ભારે તળેલું ભોજન"]
+          }
+        }
+      }
+    }
+  },
+
+  "common_cold": {
+    "modern": {
+      "eat": {
+        "en": ["Hot chicken/vegetable broth", "Turmeric warm milk", "Tulsi ginger tea", "Citrus fruits (Orange, Amla)", "Garlic cloves"],
+        "hi": ["गर्म सब्ज़ी का सूप", "हल्दी वाला गर्म दूध", "तुलसी-अदरक चाय", "आंवला और संतरा", "लहसुन"],
+        "gu": ["ગરમ શાકનો સૂપ", "હળદર વાળું ગરમ દૂધ", "તુલસી-આદુની ચા", "આંબળા અને સંતરા", "લસણ"]
+      },
+      "avoid": {
+        "en": ["Chilled ice cream", "Refrigerated water", "Oily fast foods", "Heavy cheeses"],
+        "hi": ["ठंडी आइसक्रीम", "फ्रिज का ठंडा पानी", "तले हुए फ़ास्ट फ़ूड", "भारी पनीर"],
+        "gu": ["ઠંડી આઇસ્ક્રીમ", "ફ્રિજનું ઠંડુ પાણી", "તળેલું ફાસ્ટ ફૂડ", "ભારે ચીઝ"]
+      },
+      "reason": {
+        "en": "Warm fluids liquefy nasal mucus while Vitamin C supports upper respiratory mucosal immunity.",
+        "hi": "गर्म पेय बलगम को पतला करते हैं और विटामिन C प्रतिरक्षा प्रणाली को बढ़ावा देता है।",
+        "gu": "ગરમ પ્રવાહી કફને પાતળો કરે છે અને વિટામિન C રોગપ્રતિકારક શક્તિ વધારે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Ginger black pepper tea (Trikatu)", "Warm roasted gram (Bhuna Chana)", "Tulsi decoction (Kada)", "Honey with sitopaladi"],
+        "hi": ["अदरक-कालीमिर्च की चाय", "भुना हुआ चना", "तुलसी का काढ़ा", "शहद और सितोपलादि"],
+        "gu": ["આદુ-મરીનો ઉકાળો", "શેકેલા ચણા", "તુલસીનો કાઢો", "મધ અને સિતોપલાદી"]
+      },
+      "avoid": {
+        "en": ["Chilled buttermilk (Chhas)", "Curd (Dahi)", "Banana & Custard apple", "Cold sugary drinks"],
+        "hi": ["ठंडी छाछ", "दही", "केला और शरीफा", "ठंडे मीठे पेय"],
+        "gu": ["ઠંડી છાશ", "દહીં", "કેળા અને સીતાફળ", "ઠંડા ગળ્યા પીણાં"]
+      },
+      "reason": {
+        "en": "Cold and nasal congestion stem from Kapha aggravation; pungent, warm, and dry foods pacify excess Kapha.",
+        "hi": "सर्दी कफ दोष के बढ़ने से होती है; तीखे और गर्म पदार्थ कफ को दूर करते हैं।",
+        "gu": "શરદી કફ વધવાથી થાય છે; તીખા અને ગરમ પદાર્થો કફને શાંત કરે છે."
+      }
+    }
+  },
+
+  "acute_bronchitis": {
+    "modern": {
+      "eat": {
+        "en": ["Warm water with honey & lemon", "Steam-cooked vegetables", "Clear lentil soups", "Warm turmeric decoction"],
+        "hi": ["शहद और नींबू के साथ गर्म पानी", "भाप में पकी सब्ज़ियाँ", "दाल का पतला सूप", "हल्दी का काढ़ा"],
+        "gu": ["મધ અને લીંબુ સાથે ગરમ પાણી", "બાફેલા શાકભાજી", "દાળનું પાણી", "હળદરનો ઉકાળો"]
+      },
+      "avoid": {
+        "en": ["Iced drinks", "Cold milk shakes", "Deep-fried snacks", "Excessive salt"],
+        "hi": ["बरफ़ वाले पेय", "ठंडे मिल्क शेक", "तले हुए पकौड़े", "अत्यधिक नमक"],
+        "gu": ["બરફવાળા પીણાં", "ઠંડા મિલ્ક શેક", "તળેલા ભજીયા", "વધારે પડતું મીઠું"]
+      },
+      "reason": {
+        "en": "Warm soothing fluids relax bronchial spasms and thin viscous mucous secretions.",
+        "hi": "गर्म पेय श्वसन नली के खिंचाव को कम करते हैं और बलगम को निकालते हैं।",
+        "gu": "ગરમ પ્રવાહી શ્વાસનળીના સોજાને શાંત કરે છે અને કફ બહાર કાઢે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Vasa (Adhatoda) tea", "Kanthakari decoction", "Dry ginger water (Shunthi Jala)", "Warm honey"],
+        "hi": ["अडूसा (वासा) की चाय", "कंटकारी काढ़ा", "सौंठ का पानी", "गर्म शहद"],
+        "gu": ["અરડૂસીનો ઉકાળો", "કાંટાગોખરું કાઢો", "સૂંઠનું પાણી", "મધ"]
+      },
+      "avoid": {
+        "en": ["Cold milk products", "Heavy oily gravies", "Fermented batters (Idli/Dosa)", "Direct exposure to chilled air"],
+        "hi": ["ठंडे दुग्ध उत्पाद", "भारी मसालेदार भोजन", "खमीर उठा खाना (इडली/डोसा)", "ठंडी हवा"],
+        "gu": ["ઠંડી દૂધની વાનગીઓ", "ભારે મસાલેદાર શાક", "આથો આવેલો ખોરાક (ઈડલી/ઢોસા)", "ઠંડી હવા"]
+      },
+      "reason": {
+        "en": "Bronchial inflammation involves Vata-Kapha blockage; expectorant herb decoctions clear bronchial airways.",
+        "hi": "श्वास संबंधी समस्या वात-कफ के प्रकोप से होती है; कफघ्न औषधियां मार्ग साफ़ करती हैं।",
+        "gu": "શ્વાસની તકલીફ વાયરા-કફથી થાય છે; કફનાશક જડીબુટ્ટીઓ શ્વાસમાર્ગ સાફ કરે છે."
+      }
+    }
+  },
+
+  "gastroenteritis": {
+    "modern": {
+      "eat": {
+        "en": ["ORS rehydration solution", "Rice kanji / Rice water", "Boiled applesauce", "Toasted bread", "Bananas (BRAT diet)"],
+        "hi": ["ORS का घोल", "चावल का माँड़", "उबला हुआ सेब", "टोस्ट", "केला (BRAT आहार)"],
+        "gu": ["ORS નું પાણી", "ભાતનું ઓસામણ", "બાફેલું સફરજન", "ટોસ્ટ", "કેળાં"]
+      },
+      "avoid": {
+        "en": ["Whole milk & dairy", "Spicy curries & chili", "Coffee & caffeinated tea", "Artificial sweeteners", "Raw fibrous salads"],
+        "hi": ["दूध और डेयरी उत्पाद", "मसालेदार कढ़ी व मिर्च", "कॉफी और चाय", "कृत्रिम शक्कर", "कच्चा रेशेदार सलाद"],
+        "gu": ["દૂધ અને દૂધની વાનગીઓ", "મસાલેદાર શાક-મરચું", "કોફી અને ચા", "કૃત્રિમ ગળપણ", "કાચો સલાડ"]
+      },
+      "reason": {
+        "en": "Gentle, low-residue binding foods allow inflamed intestinal mucosa to rest and prevent electrolyte dehydration.",
+        "hi": "हल्का बाइंडिंग आहार आंतों की सूजन को कम करता है और पानी की कमी रोकता है।",
+        "gu": "હળવો ભોજન આંતરડાના સોજાને આરામ આપે છે અને ડિહાઇડ્રેશન રોકે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Boiled water with cumin (Jeera Jala)", "Pomegranate rind decoction", "Buttermilk with roasted jeera & hing (Takra)", "Arrowroot kanji"],
+        "hi": ["जीरा पानी", "अनार के छिलके का काढ़ा", "भुने जीरे और हींग के साथ छाछ", "अरारोट की कांजी"],
+        "gu": [" જીરાનું પાણી", "દાડમના છાલનો કાઢો", "શેકેલું જીરું અને હિંગ વાળી મધુર છાશ", "આરારૂટનું ઓસામણ"]
+      },
+      "avoid": {
+        "en": ["Heavy oils & ghee", "Raw green leafy vegetables", "Heavy sweets", "Unboiled tap water"],
+        "hi": ["तेल और अत्यधिक घी", "कच्ची हरी पत्तेदार सब्ज़ियाँ", "भारी मिठाइयाँ", "बिना उबला पानी"],
+        "gu": ["તેલ અને વધુ પડતું ઘી", "કાચા લીલા શાકભાજી", "ભારે મીઠાઈઓ", "ઉકાળ્યા વગરનું પાણી"]
+      },
+      "reason": {
+        "en": "Atisara (Diarrhoea) weakens Agni; Takra (medicated buttermilk) acts as a potent Grahi (intestinal binder) to restore flora.",
+        "hi": "अतिसार में जठराग्नि क्षीण होती है; मट्ठा (छाछ) ग्राही होने से दस्त को रोकता है।",
+        "gu": "ઝાડામાં અગ્નિ મંદ થાય છે; છાશ આંતરડાને મજબૂત કરી ઝાડા રોકે છે."
+      }
+    },
+    "age_overrides": {
+      "infant": {
+        "modern": {
+          "eat": {
+            "en": ["Zinc-supplemented ORS solution", "Continued breastfeeding", "Sip-by-sip rice water"],
+            "hi": ["जिंक युक्त ORS का घोल", "निरंतर स्तनपान", "थोड़ा-थोड़ा करके चावल का पानी"],
+            "gu": ["ઝિંક સાથે ORS નું પાણી", "ચાલુ રાખેલું ધાવણ", "ઘૂંટડે ઘૂંટડે ભાતનું પાણી"]
+          },
+          "avoid": {
+            "en": ["Undiluted fruit juices", "Formula without medical advice", "Solid spices"],
+            "hi": ["गाढ़े फलों के जूस", "बिना सलाह फॉर्मूला दूध", "ठोस मसाले"],
+            "gu": ["ઘાટા ફળોના જ્યુસ", "ડોક્ટરની સલાહ વગરનું દૂધ", "મસાલા"]
+          }
+        }
+      }
+    }
+  },
+
+  "pneumonia": {
+    "modern": {
+      "eat": {
+        "en": ["Protein-rich lentil broth", "Warm vegetable soups", "Boiled eggs / soft paneer", "Warm water", "Fresh citrus juices"],
+        "hi": ["प्रोटीन युक्त दाल का सूप", "गर्म सब्ज़ी का सूप", "उबला अंडा / सॉफ्ट पनीर", "गर्म पानी", "ताज़ा संतरे का रस"],
+        "gu": ["પ્રોટીનયુક્ત દાળનું પાણી", "ગરમ શાકનો સૂપ", "બાફેલું ઈંડું / સોફ્ટ પનીર", "ગરમ પાણી", "તાજો મોસંબીનો રસ"]
+      },
+      "avoid": {
+        "en": ["Chilled drinks", "Salty processed chips", "Heavy fried meats", "Sugary sodas"],
+        "hi": ["ठंडे शीतल पेय", "नमकीन चिप्स", "भारी तला हुआ मांस", "मीठे सोडा"],
+        "gu": ["ઠંડા પીણાં", "નમકીન ચિપ્સ", "તળેલું માસ", "ગળ્યા સોડા"]
+      },
+      "reason": {
+        "en": "Calorie and protein dense warm foods rebuild respiratory cellular tissue and meet elevated metabolic demand.",
+        "hi": "प्रोटीन और ऊर्जा से भरपूर गर्म भोजन फेफड़ों के ऊतकों को स्वस्थ बनाता है।",
+        "gu": "પ્રોટીન અને ઉર્જાસભર ગરમ ખોરાક ફેફસાના કોષોને શક્તિ આપે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Garlic milk decoction (Lashuna Ksheerapaka)", "Dry ginger water", "Tulsi pepper tea", "Warm moong soup"],
+        "hi": ["लहसुन सिद्ध दूध", "सौंठ सिद्ध जल", "तुलसी-कालीमिर्च काढ़ा", "गर्म मूंग यूष"],
+        "gu": ["લસણવાળું ગરમ દૂધ", "સૂંઠનું પાણી", "તુલસી-મરીનો કાઢો", "ગરમ મગનું પાણી"]
+      },
+      "avoid": {
+        "en": ["Cold curd & ice creams", "Oily heavy preparations", "Sour pickles", "Chilled night air"],
+        "hi": ["ठंडा दही और आइसक्रीम", "भारी चिकनाई वाला खाना", "खट्टा अचार", "रात की ठंडी हवा"],
+        "gu": ["ઠંડુ દહીં અને આઇસ્ક્રીમ", "ભારે તેલી ખોરાક", "ખાટું અથાણું", "રાતની ઠંડી હવા"]
+      },
+      "reason": {
+        "en": "Lashuna (Garlic) clears severe Kapha congestion from the lungs while Ksheerapaka prevents mucosal dryness.",
+        "hi": "लहसुन फेफड़ों के कफ को साफ़ करता है और दूध शरीर को बल प्रदान करता है।",
+        "gu": "લસણ ફેફસાંમાંથી કફ દૂર કરે છે અને દૂધ તાકાત આપે છે."
+      }
+    }
+  },
+
+  "malaria": {
+    "modern": {
+      "eat": {
+        "en": ["High-carbohydrate rice / porridge", "Stewed fruits (Apple, Papaya)", "Electrolyte fluids & coconut water", "Steamed lentils"],
+        "hi": ["कार्बोहाइड्रेट युक्त चावल / दलिया", "पके हुए फल (सेब, पपीता)", "इलेक्ट्रोलाइट और नारियल पानी", "भाप में पकी दाल"],
+        "gu": ["કાર્બોહાઇડ્રેટ યુક્ત ચોખા / ઘઉંનું દળિયું", "બાફેલા ફળો (સફરજન, પપૈયું)", "ઈલેક્ટ્રોલાઈટ અને નારિયેળ પાણી", "બાફેલી દાળ"]
+      },
+      "avoid": {
+        "en": ["High-fat fried foods", "Raw unpasteurized milk", "Heavy spicy gravies", "Caffeinated energizers"],
+        "hi": ["अत्यधिक वसा वाले तले भोजन", "कच्चा बिना उबला दूध", "मसालेदार ग्रेवी", "कैफीन युक्त पेय"],
+        "gu": ["વધારે તેલવાળો ખોરાક", "કાચું દૂધ", "મસાલેદાર શાક", "કેફીન વાળા પીણાં"]
+      },
+      "reason": {
+        "en": "High carbohydrate intake restores glycogen depleted by recurrent malarial fever spikes.",
+        "hi": "कार्बोहाइड्रेट युक्त आहार बार-बार आने वाले बुखार से घटी ऊर्जा को तुरंत पुनर्स्थापित करता है।",
+        "gu": "કાર્બોહાઇડ્રેટ યુક્ત ભોજન તાવને કારણે ઘટેલી શક્તિ પાછી લાવે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Saptaparna bark tea", "Neem leaf decoction", "Warm moong dal with cumin", "Pomegranate juice"],
+        "hi": ["सप्तपर्ण काढ़ा", "नीम की पत्तियों का काढ़ा", "जीरा युक्त मूंग दाल", "अनार का रस"],
+        "gu": ["સપ્તપર્ણનો કાઢો", "લીમડાના પાનનો ઉકાળો", "જીરાવાળી મગની દાળ", "દાડમનો રસ"]
+      },
+      "avoid": {
+        "en": ["Heavy, greasy food", "Sour fermentation", "Curd & chilled milk", "Late night dinners"],
+        "hi": ["भारी, चिकना भोजन", "खट्टा व खमीर युक्त खाना", "दही और ठंडा दूध", "देर रात का भोजन"],
+        "gu": ["ભારે વાસણવાળો ખોરાક", "ખાટો આથો આવેલો ખોરાક", "દહીં અને ઠંડુ દૂધ", "મોડી રાતનું ભોજન"]
+      },
+      "reason": {
+        "en": "Vishamajwara (Malarial fever) requires Tikta (bitter) herbs like Neem and Kiratatikta to purify blood and balance Pitta.",
+        "hi": "विषमज्वर में कड़वे (तिक्त) रस जैसे नीम और किराततिक्त रक्त शोधन और पित्त शमन करते हैं।",
+        "gu": "વિષમજ્વરમાં કડવા પદાર્થો જેવા કે લીમડો રક્ત શુદ્ધિ અને પિત્ત શાંત કરે છે."
+      }
+    }
+  },
+
+  "typhoid": {
+    "modern": {
+      "eat": {
+        "en": ["Soft boiled rice with curd (light)", "Banana puree", "Custard with soft fruits", "Clear vegetable soups", "Boiled potatoes"],
+        "hi": ["नरम उबला चावल", "केले का पेस्ट", "सॉफ्ट कस्टर्ड", "सब्ज़ियों का सूप", "उबला आलू"],
+        "gu": ["નરમ બાફેલા ચોખા", "કેળાનું મિશ્રણ", "નરમ કસ્ટર્ડ", "શાકભાજીનો સૂપ", "બાફેલા બટાકા"]
+      },
+      "avoid": {
+        "en": ["High-fiber raw vegetables", "Coarse whole grains & seeds", "Spicy chilies", "Fried pakoras", "Carbonated beverages"],
+        "hi": ["अत्यधिक फाइबर वाली कच्ची सब्ज़ियाँ", "मोटे अनाज व बीज", "तीखी मिर्च", "तले हुए पकौड़े", "शीतल पेय"],
+        "gu": ["વધારે ફાઇબર વાળા કાચા શાકભાજી", "જાડો અનાજ", "તીખા મરચાં", "તળેલા ભજીયા", "સોડા/પીણાં"]
+      },
+      "reason": {
+        "en": "Typhoid ulcerates intestinal Peyer's patches; low-fiber soft foods prevent intestinal perforation or bleeding.",
+        "hi": "टाइफाइड में आंतों में घाव हो सकते हैं; इसलिए बिना रेशे वाला नरम भोजन ही सुरक्षित है।",
+        "gu": "ટાઇફોઇડમાં આંતરડામાં ચાંદા પડી શકે છે; તેથી રેસા વગરનો નરમ ખોરાક જ આપવો."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Peyadi Krama (thin rice water to thick kanji)", "Raisin & dry ginger water", "Moong soup with pomegranate", "Warm water"],
+        "hi": ["पेयादि क्रम (पतले माँड़ से धीरे-धीरे दलिया)", "मुनक्का और सौंठ जल", "अनार युक्त मूंग सूप", "गर्म पानी"],
+        "gu": ["પેયાદિ ક્રમ (પાતળા ઓસામણથી નરમ ખીચડી)", "મનૂકા અને સૂંઠનું પાણી", "દાડમ વાળું મગનું પાણી", "ગરમ પાણી"]
+      },
+      "avoid": {
+        "en": ["Raw salads & spouts", "Heavy meats", "Heavy oils & ghee", "Hard bread", "Pickles"],
+        "hi": ["कच्चा सलाद और अंकुरित अनाज", "भारी मांस", "अत्यधिक तेल व घी", "कड़ा ब्रेड", "अचार"],
+        "gu": ["કાચો સલાડ અને ફણગાવેલા કઠોળ", "માસ", "વધારે તેલ-ઘી", "કઠણ બ્રેડ", "અથાણું"]
+      },
+      "reason": {
+        "en": "Sannipata Jwara requires progressive digestive rehabilitation (Samsarjana Krama) to safely rekindle Agni.",
+        "hi": "गंभीर बुखार के बाद पेयादि क्रम से धीरे-धीरे पाचन शक्ति को बढ़ाया जाता है।",
+        "gu": "તાવ પછી ધીમે ધીમે હળવાથી ભારે ખોરાક આપી અગ્નિ પ્રદીપ્ત કરાય છે."
+      }
+    }
+  },
+
+  "dengue": {
+    "modern": {
+      "eat": {
+        "en": ["Papaya leaf extract water", "Fresh tender coconut water", "Pomegranate juice", "Kiwi & Dragonfruit", "Boiled eggs & pulses"],
+        "hi": ["पपीते के पत्तों का रस", "ताज़ा नारियल पानी", "अनार का रस", "कीवी और ड्रैगन फ्रूट", "उबले अंडे और दालें"],
+        "gu": ["પપૈયાના પાનનો રસ", "તાજું નારિયેળ પાણી", "દાડમનો રસ", "કીવી અને ડ્રેગન ફ્રુટ", "બાફેલા ઈંડા અને દાળ"]
+      },
+      "avoid": {
+        "en": ["Dark red / black foods (to detect internal bleeding)", "Spicy oily food", "Caffeinated colas", "Alcohol"],
+        "hi": ["गहरे लाल या काले खाद्य पदार्थ (रक्तस्राव की पहचान के लिए)", "तीखा तला भोजन", "कैफीन वाले पेय", "शराब"],
+        "gu": ["ઘાટા લાલ કે કાળા ખોરાક (રક્તસ્રાવની ઓળખ માટે)", "તીખો તળેલું ખોરાક", "કોલા/કેફીન", "દારૂ"]
+      },
+      "reason": {
+        "en": "Hydration prevents plasma leakage; rich antioxidant fruits support bone marrow platelet regeneration.",
+        "hi": "पर्याप्त जल प्लेटलेट्स को गिरने से रोकता है और एंटीऑक्सीडेंट कोशिकाओं को पोषण देते हैं।",
+        "gu": "પુષ્કળ પ્રવાહી પ્લેટલેટ્સ ઘટતા અટકાવે છે અને એન્ટીઓક્સીડેન્ટ શક્તિ આપે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Giloy (Guduchi) decoction", "Papaya leaf juice with honey", "Pomegranate juice", "Warm rice gruel"],
+        "hi": ["गिलोय (गुडूची) काढ़ा", "शहद के साथ पपीते का रस", "अनार का रस", "गर्म चावल की कांजी"],
+        "gu": ["ગળો (ગુડૂચી)નો ઉકાળો", "મધ સાથે પપૈયાના પાનનો રસ", "દાડમનો રસ", "ગરમ ભાતનું ઓસામણ"]
+      },
+      "avoid": {
+        "en": ["Chilled drinks", "Sour fermented food", "Heavy oily dishes", "Salty fast food"],
+        "hi": ["ठंडे शीतल पेय", "खट्टा खमीर खाना", "भारी तला भोजन", "नमकीन फ़ास्ट फ़ूड"],
+        "gu": ["ઠંડા પીણાં", "ખાટો આથો આવેલો ખોરાક", "ભારે તળેલું ભોજન", "નમકીન નાસ્તો"]
+      },
+      "reason": {
+        "en": "Guduchi is a supreme Rasayana that purifies Rakta Dhatu and boosts immunity against Dengue virus.",
+        "hi": "गिलोय उत्तम रसायन है जो रक्त धातु को शुद्ध कर प्लेटलेट्स और प्रतिरक्षा को बढ़ाता है।",
+        "gu": "ગળો ઉત્તમ ઔષધ છે જે રક્ત ધાતુ શુદ્ધ કરી પ્લેટલેટ્સ વધારે છે."
+      }
+    }
+  },
+
+  "uti": {
+    "modern": {
+      "eat": {
+        "en": ["Cranberry juice (unsweetened)", "Barley water", "Coconut water", "Watermelon slices", "Probiotic yoghurt / Curd"],
+        "hi": ["क्रैनबेरी जूस (बिना चीनी)", "जौ का पानी", "नारियल पानी", "तरबूज", "दही / प्रोबायोटिक"],
+        "gu": ["ક્રેનબેરી જ્યુસ (વગર ખાંડે)", "જવનું પાણી", "નારિયેળ પાણી", "તડબૂચ", "દહીં / પ્રોબાયોટિક"]
+      },
+      "avoid": {
+        "en": ["Caffeine (Coffee, Black tea)", "Alcoholic drinks", "Excessive red chilies", "Artificial carbonated sodas"],
+        "hi": ["कैफीन (कॉफी, चाय)", "अल्कोहल", "अत्यधिक लाल मिर्च", "सोडा व शीतल पेय"],
+        "gu": ["કેફીન (કોફી, ચા)", "દારૂ", "વધારે લાલ મરચું", "સોડા અને ઠંડા પીણાં"]
+      },
+      "reason": {
+        "en": "High fluid throughput flushes urinary pathogens while Cranberry proanthocyanidins prevent bacterial wall adhesion.",
+        "hi": "प्रचुर मात्रा में जल पेशाब के बैक्टीरिया को बाहर निकालता है और क्रैनबेरी संक्रमण रोकती है।",
+        "gu": "પુષ્કળ પ્રવાહી પેશાબના બેક્ટેરિયા બહાર કાઢે છે અને ક્રેનબેરી રક્ષણ આપે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Gokshura decoction", "Coriander seed tea (Dhanyaka Hima)", "Barley water (Yava Manda)", "Sugarcane juice"],
+        "hi": ["गोक्षुर काढ़ा", "धनिया का ठंडा पानी (धान्यक हिम)", "जौ का पानी", "गन्ने का रस"],
+        "gu": ["ગોખરૂનો કાઢો", "ધાણાનું ઠંડુ પાણી", "જવનું પાણી", "શેરડીનો રસ"]
+      },
+      "avoid": {
+        "en": ["Excessive pungent chilies & mustard", "Salty crisps", "Sour curd at night", "Alcohol & tobacco"],
+        "hi": ["अत्यधिक मिर्च व सरसों", "नमकीन स्नैक्स", "रात में खट्टा दही", "शराब व तंबाकू"],
+        "gu": ["વધારે મરચું અને રાય", "નમકીન", "રાત્રે ખાટું દહીં", "દારૂ અને તમાકુ"]
+      },
+      "reason": {
+        "en": "Mutrakrichra (UTI/Burning urination) is a Pitta disorder; cooling diuretic herbs like Gokshura and Dhanyaka soothe the urinary mucosa.",
+        "hi": "मूत्रकृच्छ्र (UTI) पित्तज विकार है; गोक्षुर और धनिया जैसे शीतल-मूत्रल द्रव्य जलन शांत करते हैं।",
+        "gu": "પેશાબની બળતરા પિત્તદોષથી થાય છે; ગોખરૂ અને ધાણા ઠંડક આપી બળતરા શમાવે છે."
+      }
+    }
+  },
+
+  "migraine": {
+    "modern": {
+      "eat": {
+        "en": ["Magnesium-rich spinach & almonds", "Hydrating cucumber water", "Ginger tea", "Whole grain oats", "Flaxseeds"],
+        "hi": ["मैग्नीशियम युक्त पालक व बादाम", "खीरे का पानी", "अदरक की चाय", "ओट्स (जई)", "अलसी के बीज"],
+        "gu": ["મેગ્નેશિયમ યુક્ત પાલક અને બદામ", "કાકડીનું પાણી", "આદુની ચા", "ઓટ્સ", "અળસી"]
+      },
+      "avoid": {
+        "en": ["Aged cheese (Tyramine)", "Dark chocolate", "Red wine & alcohol", "Monosodium glutamate (MSG)", "Processed meats"],
+        "hi": ["पुराना पनीर", "डार्क चॉकलेट", "रेड वाइन और शराब", "अजीनोमोटो (MSG)", "प्रसंस्कृत मांस"],
+        "gu": ["જૂનું ચીઝ", "ડાર્ક ચોકલેટ", "દારૂ/વાયન", "અજીનોમોટો (MSG)", "પ્રોસેસ્ડ માસ"]
+      },
+      "reason": {
+        "en": "Avoiding dietary vascular neuro-triggers (tyramine, MSG) combined with magnesium reduces cranial vasoconstriction.",
+        "hi": "टाइरामाइन और MSG जैसे ट्रिगर्स से बचकर और मैग्नीशियम लेकर सिरदर्द कम किया जा सकता है।",
+        "gu": "માથાના દુખાવાના ટ્રિગર્સથી બચીને અને મેગ્નેશિયમ યુક્ત ખોરાક લેવાથી રાહત મળે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Warm cow ghee with milk", "Soaked almonds", "Coconut water", "Sweet ripe fruits (Mango, Grapes)"],
+        "hi": ["दूध में गर्म देसी गाय का घी", "भीगे हुए बादाम", "नारियल पानी", "मीठे पके फल (आम, अंगूर)"],
+        "gu": ["દૂધમાં ગરમ ગાયનું ઘી", "પલળેલા બદામ", "નારિયેળ પાણી", "મીઠા પાકા ફળો (કેરી, દ્રાક્ષ)"]
+      },
+      "avoid": {
+        "en": ["Extremely pungent red chilies", "Sour fermented curds", "Stale night leftovers", "Skipping meals (Upavasa)"],
+        "hi": ["अत्यधिक तीखी लाल मिर्च", "खट्टा बासी दही", "रात का बासी खाना", "खाली पेट रहना/उपवास"],
+        "gu": ["વધારે તીખું મરચું", "ખાટું વાસી દહીં", "રાતની વાસી રસોઈ", "ભૂખ્યા રહેવું/ઉપવાસ"]
+      },
+      "reason": {
+        "en": "Ardhavabhedaka (Migraine) involves Vata-Pitta imbalance; Snigdha (unctuous) cow ghee nourishes brain tissues and calms Pitta.",
+        "hi": "माइग्रेन वात-पित्त दोष है; शुद्ध गाय का घी और दूध मस्तिष्क को शांति प्रदान करते हैं।",
+        "gu": "માઇગ્રેન વાયુ-પિત્તથી થાય છે; ગાયનું ઘી અને દૂધ માથાને ઠંડક આપે છે."
+      }
+    }
+  },
+
+  "tonsillitis": {
+    "modern": {
+      "eat": {
+        "en": ["Warm salt water gargle", "Smooth ice pops / cold curd (for pain relief)", "Warm honey-lemon tea", "Soft mashed soups", "Pureed fruits"],
+        "hi": ["गर्म पानी-नमक के गरारे", "हल्की ठंडी आइस-पॉप्स (दर्द राहत हेतु)", "शहद-नींबू की गर्म चाय", "नरम मथुआ सूप", "फलों की प्यूरी"],
+        "gu": ["ગરમ મીઠાના પાણીના કોગળા", "સોફ્ટ બરફની ચુસ્સી (દુખાવામાં શાતા માટે)", "મધ-લીંબુની ચા", "નરમ શાકનો સૂપ", "ફળોની પેસ્ટ"]
+      },
+      "avoid": {
+        "en": ["Rough crunchy chips & toast", "Spicy peppers", "Acidic vinegar dressings", "Scalding hot drinks"],
+        "hi": ["खुरदरे कड़े चिप्स व टोस्ट", "तीखी मिर्च", "अत्यधिक खट्टा सिरका", "बहुत ज्यादा गर्म पेय"],
+        "gu": ["કઠણ ચિપ્સ અને ટોસ્ટ", "તીખા મરચાં", "ખાટો સરકો", "બહુ વધારે ગરમ પીણાં"]
+      },
+      "reason": {
+        "en": "Soft non-abrasive textures prevent mechanical irritation of swollen tonsillar lymphatic tissues.",
+        "hi": "मुलायम और गैर-ज्वलनशील आहार गले की टॉन्सिल की सूजन को छीलने से बचाता है।",
+        "gu": "નરમ અને લીસો ખોરાક ગળાના સોજાવાળા ભાગને વાગતો અટકાવે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Turmeric warm water gargle", "Honey with Khadiradi vati", "Warm moong broth", "Pomegranate rind water"],
+        "hi": ["हल्दी-सेंधा नमक गरारे", "शहद और खदिरादि वटी", "गर्म मूंग सूप", "अनार छिलका जल"],
+        "gu": ["હળદર-મીઠાના કોગળા", "મધ અને ખદિરાદિ વટી", "ગરમ મગનું પાણી", "દાડમ છાલનું પાણી"]
+      },
+      "avoid": {
+        "en": ["Deep fried pakoras", "Heavy sour curd", "Chilled tap water", "Astringent raw bananas"],
+        "hi": ["तले हुए पकौड़े", "भारी खट्टा दही", "फ्रिज का ठंडा पानी", "कच्चा केला"],
+        "gu": ["તળેલા ભજીયા", "ખાટું દહીં", "ફ્રિજનું ઠંડુ પાણી", "કાચા કેળા"]
+      },
+      "reason": {
+        "en": "Tundikeri (Tonsillitis) is Kapha-Rakta inflammation; Turmeric and Khadira provide astringent mucosal healing.",
+        "hi": "टॉन्सिल कफ-रक्तज सूजन है; हल्दी और खदिर गले के शोधन में सहायक हैं।",
+        "gu": "ટાન્સિલ કફ-રક્તનો સોજો છે; હળદર અને ખદિર ગળાને સાફ રાખી રૂઝ લાવે છે."
+      }
+    }
+  },
+
+  "heat_exhaustion": {
+    "modern": {
+      "eat": {
+        "en": ["ORS & Electrolyte solutions", "Chilled watermelon & cantaloupe", "Coconut water", "Salted buttermilk (Chhas)", "Lemonade with mint & black salt"],
+        "hi": ["ORS और इलेक्ट्रोलाइट घोल", "ठंडा तरबूज और खरबूजा", "ताज़ा नारियल पानी", "नमकीन छाछ", "पुदीना व काला नमक शिकंजी"],
+        "gu": ["ORS અને ઈલેક્ટ્રોલાઈટ પ્રવાહી", "ઠંડુ તડબૂચ અને શક્કરટેટી", "નારિયેળ પાણી", "નમકીન છાશ", "ફુદીના વાળી લીંબુ શરબત"]
+      },
+      "avoid": {
+        "en": ["Alcoholic beverages", "High-caffeine energy drinks", "Hot spicy gravies", "Salty processed meats"],
+        "hi": ["शराब", "अत्यधिक कैफीन युक्त एनर्जी ड्रिंक", "गर्म मसालेदार ग्रेवी", "नमकीन प्रसंस्कृत मांस"],
+        "gu": ["દારૂ", "કેફીન યુક્ત એનર્જી ડ્રિન્ક્સ", "ગરમ મસાલેદાર શાક", "પ્રોસેસ્ડ માસ"]
+      },
+      "reason": {
+        "en": "Rapid sodium and potassium fluid replacement reverses heat-induced hypovolemia and cell breakdown.",
+        "hi": "सोडियम और पोटेशियम से भरपूर पानी डिहाइड्रेशन और गर्मी के प्रभाव को तुरंत मिटाता है।",
+        "gu": "સોડિયમ અને પોટેશિયમ યુક્ત પ્રવાહી લૂ અને ગરમીની અસર તુરંત દૂર કરે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Gulkand (Rose petal jam) with milk", "Sugarcane juice", "Amla syrup (Phanita)", "Barley water", "Sattu drink (roasted Bengal gram flour)"],
+        "hi": ["दूध के साथ गुलकंद", "गन्ने का रस", "आंवले का शरबत", "जौ का पानी", "सत्तू का नमकीन/मीठा घोल"],
+        "gu": ["દૂધ સાથે ગુલકંદ", "શેરડીનો રસ", "આંબળાનું શરબત", "જવનું પાણી", "સક્તુ (સત્તુ)નું પીણું"]
+      },
+      "avoid": {
+        "en": ["Mustard, garlic & chilies", "Heavy fried foods", "Dry stale snacks", "Hot sun exposure after heavy food"],
+        "hi": ["सरसों, लहसुन और मिर्च", "भारी तला खाना", "सूखा बासी खाना", "धूप में घूमना"],
+        "gu": ["રાય, લસણ અને મરચાં", "ભારે તળેલું ભોજન", "સુકો નાસ્તો", "તડકામાં ફરવું"]
+      },
+      "reason": {
+        "en": "Ushta/Greeshma heat aggravates Pitta and consumes Ojas; cooling Pitta-pacifying Sheeta Dravyas like Gulkand and Sattu rebuild vitality.",
+        "hi": "गर्मी में पित्त का प्रकोप होता है; गुलकंद, सत्तू और आंवला शरीर को भीतर से शीतलता देते हैं।",
+        "gu": "ઉનાળામાં પિત્ત વધે છે; ગુલકંદ, સત્તુ અને આંબળા શરીરને અંદરથી ઠંડક આપે છે."
+      }
+    }
+  },
+
+  "gerd": {
+    "modern": {
+      "eat": {
+        "en": ["Cold skimmed milk", "Oatmeal with banana", "Boiled vegetables", "Almonds", "Chamomile tea"],
+        "hi": ["ठंडा टोंड दूध", "केले के साथ ओट्स", "उबली सब्ज़ियाँ", "बादाम", "कैमोमाइल चाय"],
+        "gu": ["ઠંડુ મોળા દૂધ", "કેળા સાથે ઓટ્સ", "બાફેલા શાકભાજી", "બદામ", "કેમોમાઇલ ચા"]
+      },
+      "avoid": {
+        "en": ["Raw tomatoes & citrus", "Chilies & pepper", "Deep fried samosas/pakoras", "Peppermint & chocolate", "Late night heavy meals"],
+        "hi": ["कच्चा टमाटर और खट्टे फल", "मिर्च और काली मिर्च", "तले हुए समोसे/पकौड़े", "चॉकलेट", "देर रात का भारी खाना"],
+        "gu": ["કાચા ટામેટાં અને ખાટા ફળો", "મરચાં અને મરી", "તળેલા સમોસા/ભજીયા", "ચોકલેટ", "મોડી રાતનું ભારે ભોજન"]
+      },
+      "reason": {
+        "en": "Alkaline low-fat foods reduce lower esophageal sphincter relaxation and neutralize gastric acid secretion.",
+        "hi": "क्षारीय और कम वसा वाला आहार पेट के तेज़ाब को शांत करता है।",
+        "gu": "ઓછી ચરબીવાળો અને ઠંડો ખોરાક એસિડિટી અને છાતીની બળતરા ઘટાડે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Cold cow milk with mishri", "Amla powder with honey", "Soaked raisins (Draksha)", "Cucumber juice", "Coconut water"],
+        "hi": ["मिश्री के साथ ठंडा गाय का दूध", "शहद के साथ आंवला चूर्ण", "भीगी हुई मुनक्का", "खीरे का रस", "नारियल पानी"],
+        "gu": ["સાકર સાથે ઠંડુ ગાયનું દૂધ", "મધ સાથે આંબળા ચૂર્ણ", "પલળેલી મનૂકા", "કાકડીનો રસ", "નારિયેળ પાણી"]
+      },
+      "avoid": {
+        "en": ["Sour curd & buttermilk", "Garlic & onions in excess", "Fermented batters (Dhokla, Idli)", "Fried snacks"],
+        "hi": ["खट्टा दही और छाछ", "अत्यधिक लहसुन-प्याज", "खमीर उठाई चीज़ें (ढोकला, इडली)", "तले स्नैक्स"],
+        "gu": ["ખાટું દહીં અને છાશ", "વધારે લસણ-ડુંગળી", "આથો આવેલી વાનગીઓ (ઢોકળા, ઈડલી)", "તળેલું નાસ્તો"]
+      },
+      "reason": {
+        "en": "Amlapitta is caused by Vidagdha Pitta; Sheeta and Madhura substances like Amla and Draksha pacify hyperacidity.",
+        "hi": "अम्लपित्त में पित्त दूषित होता है; आंवला, मुनक्का और मिश्री पित्त को शांत करते हैं।",
+        "gu": "અમ્લપિત્ત (એસિડિટી) પિત્ત કોપથી થાય છે; આંબળા અને મનૂકા એસિડ શાંત કરે છે."
+      }
+    }
+  },
+
+  "asthma": {
+    "modern": {
+      "eat": {
+        "en": ["Magnesium-dense pumpkin seeds", "Warm water with ginger", "Steamed leafy greens", "Apples & berries"],
+        "hi": ["कद्दू के बीज (मैग्नीशियम)", "अदरक युक्त गर्म पानी", "भाप में पकी हरी सब्ज़ियाँ", "सेब और बेरी"],
+        "gu": ["કોળાના બી (મેગ્નેશિયમ)", "આદુ વાળું ગરમ પાણી", "બાફેલી ભાજી", "સફરજન"]
+      },
+      "avoid": {
+        "en": ["Sulfite preservatives (Dried fruits, wine)", "Chilled sodas & ice cream", "Salty processed chips", "Artificial food dyes"],
+        "hi": ["सल्फाइट युक्त प्रिजर्वेटिव", "ठंडी सोडा और आइसक्रीम", "नमकीन चिप्स", "कृत्रिम खाद्य रंग"],
+        "gu": ["પ્રિઝર્વેટિવ વાળા ખોરાક", "ઠંડી સોડા અને આઇસ્ક્રીમ", "નમકીન ચિપ્સ", "કૃત્રિમ રંગો"]
+      },
+      "reason": {
+        "en": "Antioxidant and magnesium rich foods suppress bronchial hyper-reactivity and airway inflammation.",
+        "hi": "एंटीऑक्सीडेंट और मैग्नीशियम फेफड़ों के खिंचाव को रोकते हैं।",
+        "gu": "એન્ટીઓક્સીડેન્ટ અને મેગ્નેશિયમ શ્વાસનળીનો સોજો ઘટાડે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Agasthya Rasayana / Tulsi honey", "Kantakari decoction", "Dry ginger boiled water", "Old Shali rice"],
+        "hi": ["अगस्त्य रसायन / तुलसी-शहद", "कंटकारी काढ़ा", "सौंठ उबला पानी", "पुराना शालि चावल"],
+        "gu": ["અગસ્ત્ય રસાયણ / તુલસી મધ", "કાંટાગોખરું કાઢો", "સૂંઠનું ઉકાળેલું પાણી", "જૂના ચોખા"]
+      },
+      "avoid": {
+        "en": ["Cold curd, banana, guava", "Heavy black gram (Urad dal)", "Fermented batters", "Night chill exposure"],
+        "hi": ["ठंडा दही, केला, अमरूद", "भारी उड़द दाल", "खमीर वाला खाना", "रात की ठंड"],
+        "gu": ["ઠંડુ દહીં, કેળા, જામફળ", "અડદની દાળ", "આથો આવેલો ખોરાક", "રાતની ઠંડી"]
+      },
+      "reason": {
+        "en": "Shwasa Roga stems from Pranavaha Srotas obstruction by Kapha; warming Kapha-Vatahara herbs reopen airways.",
+        "hi": "श्वास रोग में कफ प्राणवाह स्रोतस को रोकता है; उष्ण और तीक्ष्ण औषधियां मार्ग खोलती हैं।",
+        "gu": "દમમાં કફ શ્વાસમાર્ગ રોકે છે; ગરમ ઔષધિઓ શ્વાસ લેવામાં સરળતા આપે છે."
+      }
+    }
+  },
+
+  "appendicitis": {
+    "modern": {
+      "eat": {
+        "en": ["NPO (Nothing By Mouth) if acute surgery suspected", "Clear fluids under medical supervision only", "ORS sips"],
+        "hi": ["डॉक्टर की सलाह से ही केवल हल्का पानी/ORS", "सर्जरी की स्थिति में कुछ भी न खाएं (NPO)", "केवल तरल पदार्थ"],
+        "gu": ["ડોક્ટરની દેખરેખ હેઠળ માત્ર પ્રવાહી/ORS", "ઇમરજન્સીમાં કશું જ ન ખાવું (NPO)", "પાતળું પ્રવાહી"]
+      },
+      "avoid": {
+        "en": ["Solid food of any kind", "Dairy products", "High-fat meals", "Laxatives or purgatives"],
+        "hi": ["किसी भी प्रकार का ठोस खाना", "डेयरी उत्पाद", "वसायुक्त भोजन", "दस्तावर दवाएं/जुलाब"],
+        "gu": ["કોઈપણ પ્રકારનો ઘન ખોરાક", "દૂધની વાનગીઓ", "વધારે તેલવાળો ખોરાક", "જુલાબની દવાઓ"]
+      },
+      "reason": {
+        "en": "Emergency acute appendicitis requires strict gut rest (NPO) prior to urgent surgical evaluation.",
+        "hi": "अपेंडिसाइटिस मेडिकल इमरजेंसी है, आंतों को पूर्ण विश्राम देना आवश्यक है।",
+        "gu": "એપેન્ડિસાઇટિસ ઇમરજન્સી છે, આંતરડાને પૂરો આરામ આપવો જરૂરી છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Warm water sips only under medical supervision", "Must seek immediate emergency hospital care"],
+        "hi": ["केवल डॉक्टर की देखरेख में उबला पानी", "तुरंत अस्पताल जाएं"],
+        "gu": ["માત્ર ડોક્ટરની સલાહ મુજબ ઉકાળેલું પાણી", "તુરંત હોસ્પિટલ પહોંચવું"]
+      },
+      "avoid": {
+        "en": ["All solid foods", "Heavy Ayurvedic oils or purgatives"],
+        "hi": ["सभी ठोस आहार", "भारी तेल व जुलाब"],
+        "gu": ["તમામ ઘન ખોરાક", "તેલ અને જુલાબ"]
+      },
+      "reason": {
+        "en": "Vidradhi (Acute internal abscess) requires immediate modern surgical intervention.",
+        "hi": "आंतरिक विद्रधि में तत्काल आधुनिक शल्य चिकित्सा (सर्जरी) की आवश्यकता होती है।",
+        "gu": "આંતરિક ચાંદામાં તુરંત સર્જરીની જરૂર હોય છે."
+      }
+    }
+  },
+
+  "chickenpox": {
+    "modern": {
+      "eat": {
+        "en": ["Cool soft foods (Yoghurt, Khichdi)", "Fresh fruit smoothies", "Coconut water", "Boiled vegetables", "High fluid intake"],
+        "hi": ["ठंडा मुलायम भोजन (दही, खिचड़ी)", "ताज़े फलों की स्मूदी", "नारियल पानी", "उबली सब्ज़ियाँ", "प्रचुर प्रवाही"],
+        "gu": ["ઠંડો નરમ ખોરાક (દહીં, ખીચડી)", "તાજા ફળોની સ્મૂધી", "નારિયેળ પાણી", "બાફેલા શાકભાજી", "પુષ્કળ પ્રવાહી"]
+      },
+      "avoid": {
+        "en": ["Salty crisps (causes mouth blister pain)", "Acidic tomatoes & oranges", "Hard crusty bread", "Spicy curries"],
+        "hi": ["नमकीन चिप्स (मुंह के छाले जलाते हैं)", "खट्टे फल व टमाटर", "कड़ा ब्रेड", "मसालेदार कढ़ी"],
+        "gu": ["નમકીન વેફર (મોંના ચાંદામાં બળે છે)", "ખાટા ફળો અને ટામેટાં", "કઠણ બ્રેડ", "મસાલેદાર શાક"]
+      },
+      "reason": {
+        "en": "Soft non-acidic hydration soothes internal oral mucosal blisters without causing sharp burning pain.",
+        "hi": "मुलायम और गैर-अम्लीय भोजन मुंह के छालों को बिना जलाए पोषण देता है।",
+        "gu": "નરમ ખોરાક મોંના ચાંદામાં બળતરા વગર પોષણ આપે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Neem water bath & sips", "Coriander seed water", "Moong dal kanji", "Pomegranate juice"],
+        "hi": ["नीम सिद्ध जल", "धनिया का ठंडा पानी", "मूंग दाल की कांजी", "अनार का रस"],
+        "gu": ["લીમડાવાળું પાણી", "ધાણાનું ઠંડુ પાણી", "મગની દાળનું ઓસામણ", "દાડમનો રસ"]
+      },
+      "avoid": {
+        "en": ["Sour pickles & mustard", "Salty fast foods", "Direct sunlight exposure", "Garlic & heavy chilies"],
+        "hi": ["खट्टा अचार व सरसों", "नमकीन फ़ास्ट फ़ूड", "सीधी धूप", "लहसुन व तीखी मिर्च"],
+        "gu": ["ખાટું અથાણું અને રાય", "નમકીન નાસ્તો", "સીધો તડકો", "લસણ અને તીખું મરચું"]
+      },
+      "reason": {
+        "en": "Masurika (Chickenpox) is a Pitta-Rakta eruption; cooling Sheeta Dravyas like Neem and Dhanyaka soothe rash burning.",
+        "hi": "मसूरिका पित्त-रक्तज व्याधि है; नीम और धनिया त्वचीय जलन व खुजली को दूर करते हैं।",
+        "gu": "અછબડા પિત્ત-રક્તનો રોગ છે; લીમડો અને ધાણા ચામડીની બળતરા શમાવે છે."
+      }
+    }
+  },
+
+  "anemia": {
+    "modern": {
+      "eat": {
+        "en": ["Iron-rich spinach & fenugreek greens", "Beetroot & pomegranate juice", "Jaggery (Gud) with roasted chana", "Dates & raisins", "Vitamin C foods (Amla/Lemon) to aid iron absorption"],
+        "hi": ["आयरन से भरपूर पालक व मेथी", "चुकंदर और अनार का रस", "भुने चने के साथ गुड़", "खजूर और मुनक्का", "विटामिन C (आंवला/नींबू) ताकि आयरन पचे"],
+        "gu": ["આયર્નથી ભરપૂર પાલક અને મેથી", "બીટ અને દાડમનો રસ", "શેકેલા ચણા સાથે ગોળ", "ખજૂર અને મનૂકા", "વિટામિન C (આંબળા/લીંબુ) આયર્ન પચાવવા"]
+      },
+      "avoid": {
+        "en": ["Tea or coffee immediately with meals (tannins block iron absorption)", "Calcium supplements with iron meals", "Excessive bran wheat"],
+        "hi": ["खाने के तुरंत बाद चाय या कॉफी (टैनिन आयरन सोखने से रोकता है)", "आयरन के साथ कैल्शियम", "अत्यधिक चोकर युक्त गेहूं"],
+        "gu": ["જમ્યા પછી તરત ચા કે કોફી (ટેનિન આયર્ન સોસાવા દેતું નથી)", "આયર્ન સાથે કેલ્શિયમ", "વધારે થૂલું"]
+      },
+      "reason": {
+        "en": "Bioavailable heme/non-heme iron paired with Vitamin C rebuilds hemoglobin and red blood cell counts.",
+        "hi": "विटामिन C के साथ आयरन युक्त आहार हीमोग्लोबिन के स्तर को तेज़ी से बढ़ाता है।",
+        "gu": "વિટામિન C સાથે આયર્ન વાળો ખોરાક હીમોગ્લોબિન ઝડપથી વધારે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Lauha Bhasma prep / Mandura Vataka (under doctor)", "Amla juice with honey", "Cow ghee with pomegranate", "Sesame seeds with jaggery"],
+        "hi": ["मंडूर वटक / लौह भस्म (वैद्यकीय सलाह से)", "शहद के साथ आंवला जूस", "अनार के साथ देसी घी", "गुड़ के साथ तिल"],
+        "gu": ["મંડૂર વટક / લોહ ભસ્મ (વૈદ્યની સલાહથી)", "મધ સાથે આંબળાનો રસ", "દાડમ સાથે ગાયનું ઘી", "ગોળ સાથે તિલ"]
+      },
+      "avoid": {
+        "en": ["Sour vinegar pickles", "Excessive soil/mud eating (Mrittika)", "Heavy fried junk", "Chilled sodas"],
+        "hi": ["अत्यधिक खट्टा अचार", "मिट्टी/चौक खाना", "तली हुई जंक चीज़ें", "ठंडे पेय"],
+        "gu": ["ખૂબ ખાટું અથાણું", "માટી કે ચોક ખાવું", "તળેલું જંક ફૂડ", "ઠંડા પીણાં"]
+      },
+      "reason": {
+        "en": "Pandu Roga (Anemia) weakens Pitta and Rakta Dhatu; Mandura, Amla, and Gud nourish Rakta production.",
+        "hi": "पांडु रोग में पित्त क्षीण होता है; आंवला, गुड़ और तिल रक्त धातु का वर्धन करते हैं।",
+        "gu": "પાંડુ રોગમાં લોહી ઘટે છે; આંબળા, ગોળ અને તલ લોહીનું પ્રમાણ વધારે છે."
+      }
+    }
+  },
+
+  "jaundice": {
+    "modern": {
+      "eat": {
+        "en": ["Sugarcane juice (hygienic)", "Boiled rice with curd", "Radish juice with leaves", "Barley water", "Glucose/Electrolyte water"],
+        "hi": ["साफ़ गन्ने का रस", "दही के साथ उबला चावल", "मूली और पत्तों का रस", "जौ का पानी", "ग्लूकोज का पानी"],
+        "gu": ["સ્વચ્છ શેરડીનો રસ", "દહીં સાથે બાફેલા ચોખા", "મૂળા અને પાનનો રસ", "જવનું પાણી", "ગ્લુકોઝનું પાણી"]
+      },
+      "avoid": {
+        "en": ["Fats, oils & butter/ghee entirely during peak phase", "Alcohol (absolute prohibition)", "Spicy gravies", "Meat & heavy poultry"],
+        "hi": ["शुरुआती दिनों में तेल, वसा व घी पूरी तरह बंद", "शराब पर पूर्ण प्रतिबंध", "तीखी ग्रेवी", "मांस व मुर्गा"],
+        "gu": ["શરૂઆતમાં તેલ, ઘી અને ચરબી તદ્દન બંધ", "દારૂ પર સંપૂર્ણ પ્રતિબંધ", "મસાલેદાર શાક", "માસ અને ઈંડા"]
+      },
+      "reason": {
+        "en": "The damaged liver cannot metabolize dietary lipids; strict fat-free simple carbohydrates prevent hepatic encephalopathy.",
+        "hi": "पीलिया में लिवर वसा नहीं पचा सकता; इसलिए वसा-रहित हल्का आहार ही आवश्यक है।",
+        "gu": "કમળામાં લિવર ચરબી પચાવી શકતું નથી; તેથી તેલ-ઘી વગરનો હળવો ખોરાક આપવો."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Bhumi Amla juice", "Radish juice (Moolaka Swarasa)", "Sugarcane juice", "Punar nava decoction", "Boiled old rice with buttermilk"],
+        "hi": ["भूमि आंवला रस", "मूली का स्वरस", "गन्ने का रस", "पुनर्नवा काढ़ा", "मट्ठा के साथ उबला चावल"],
+        "gu": ["ભૂમિ આંબળાનો રસ", "મૂળાનો રસ", "શેરડીનો રસ", "પુનર્નવાનો કાઢો", "છાસ સાથે બાફેલા ચોખા"]
+      },
+      "avoid": {
+        "en": ["All oils, ghee & butter", "Heavy yellow turmeric in excess", "Pungent mustard & chilies", "Daytime sleep"],
+        "hi": ["सभी प्रकार का तेल व घी", "अत्यधिक हल्दी", "सरसों व तीखी मिर्च", "दिन में सोना"],
+        "gu": ["તમામ પ્રકારનું તેલ અને ઘી", "વધારે પડતી હળદર", "રાય અને મરચાં", "દિવસ દરમિયાન ઊંઘવું"]
+      },
+      "reason": {
+        "en": "Kamala (Jaundice) is a severe Pitta disorder affecting Kostha-Shakha; Bhumi Amla and Moolaka restore liver function.",
+        "hi": "कामला पित्तज यकृत विकार है; भूमि आंवला और मूली लिवर की कोशिकाओं को फिर से जीवित करते हैं।",
+        "gu": "કમળો પિત્તદોષનો લિવર રોગ છે; ભૂમિ આંબળા અને મૂળો લિવરને નવજીવન આપે છે."
+      }
+    }
+  },
+
+  "ear_infection": {
+    "modern": {
+      "eat": {
+        "en": ["Warm soups", "Steamed soft rice", "Warm ginger tea", "Vitamin C rich fruits"],
+        "hi": ["गर्म सूप", "भाप में पका चावल", "गर्म अदरक चाय", "विटामिन C युक्त फल"],
+        "gu": ["ગરમ સૂપ", "બાફેલો ભાત", "ગરમ આદુ ચા", "વિટામિન C વાળા ફળો"]
+      },
+      "avoid": {
+        "en": ["Chilled drinks & ice cream", "Hard foods requiring aggressive jaw chewing", "Excessive sugar"],
+        "hi": ["ठंडे पेय और आइसक्रीम", "ज्यादा चबाने वाला कड़ा खाना", "अत्यधिक शक्कर"],
+        "gu": ["ઠંડા પીણાં અને આઇસ્ક્રીમ", "વધારે ચાવવો પડે તેવો કઠણ ખોરાક", "વધારે સાકર"]
+      },
+      "reason": {
+        "en": "Reducing chewing force minimizes Eustachian tube pain and warm fluids decrease upper airway congestion.",
+        "hi": "मुलायम भोजन चबाने के दर्द को कम करता है और गर्म पेय कान व गले की नली खोलते हैं।",
+        "gu": "નરમ ખોરાક જડબાના દુખાવામાં રાહત આપે છે અને ગરમ પ્રવાહી કાનની નળી સાફ રાખે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Garlic sesame oil drops (under supervision)", "Warm dry ginger water", "Tulsi tea"],
+        "hi": ["लहसुन-तिल तेल (सुपरविज़न में)", "सौंठ का गर्म पानी", "तुलसी चाय"],
+        "gu": ["લસણ-તલનું તેલ (વૈદ્યની સલાહથી)", "સૂંઠનું ગરમ પાણી", "તુલસી ચા"]
+      },
+      "avoid": {
+        "en": ["Curd & cold beverages", "Heavy sour dishes", "Exposure to cold wind"],
+        "hi": ["दही और ठंडे पेय", "भारी खट्टा खाना", "ठंडी हवा का संपर्क"],
+        "gu": ["દહીં અને ઠંડા પીણાં", "ભારે ખાટો ખોરાક", "ઠંડી પવન"]
+      },
+      "reason": {
+        "en": "Karna Shoola is predominantly Vata-Kapha disorder; warm Shunthi water clears Eustachian congestion.",
+        "hi": "कर्ण शूल वात-कफ विकार है; सौंठ का गर्म जल नली की रुकावट मिटाता है।",
+        "gu": "કાનનો દુખાવો વાયુ-કફથી થાય છે; સૂંઠનું ગરમ પાણી રાહત આપે છે."
+      }
+    }
+  },
+
+  "conjunctivitis": {
+    "modern": {
+      "eat": {
+        "en": ["Beta-carotene rich carrots & sweet potato", "Spinach & green vegetables", "Almonds & walnuts", "Clean water"],
+        "hi": ["बीटा-कैरोटीन युक्त गाजर व शकरकंद", "पालक व हरी सब्ज़ियाँ", "बादाम व अखरोट", "साफ़ पानी"],
+        "gu": ["બીટા-કેરોટીન યુક્ત ગાજર અને શક્કરિયાં", "પાલક અને શાકભાજી", "બદામ અને અખરોટ", "ચોખ્ખું પાણી"]
+      },
+      "avoid": {
+        "en": ["Excessive hot red chilies", "Extremely salty snacks", "Unwashed raw market salads"],
+        "hi": ["अत्यधिक तीखी लाल मिर्च", "बहुत नमकीन स्नैक्स", "बिना धुला कच्चा बाजार का सलाद"],
+        "gu": ["વધારે તીખું મરચું", "વધારે નમકીન", "વગર ધોયેલો કાચો સલાડ"]
+      },
+      "reason": {
+        "en": "Vitamin A and Omega-3 fatty acids accelerate conjunctival epithelial repair and eye hydration.",
+        "hi": "विटामिन A और ओमेगा-3 आँख के ऊतकों को ठीक करने और नमी बनाए रखने में मदद करते हैं।",
+        "gu": "વિટામિન A અને ઓમેગા-3 આંખના કોષોને શક્તિ આપે છે અને બળતરા ઘટાડે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Triphala decoction wash (sterile)", "Cow ghee with rice", "Amla preserves (Murabba)", "Coriander seed water"],
+        "hi": ["त्रिफला जल से आँख धोना (साफ़)", "देसी गाय के घी के साथ चावल", "आंवले का मुरब्बा", "धनिया का ठंडा पानी"],
+        "gu": ["ત્રિફળાના પાણીથી આંખ ધોવી", "ગાયના ઘી સાથે ચોખા", "આંબળાનો મુરબ્બો", "ધાણાનું ઠંડુ પાણી"]
+      },
+      "avoid": {
+        "en": ["Pungent mustard & chilies", "Sour curd & vinegar", "Late night screen strain", "Dust & direct smoke"],
+        "hi": ["तीखी सरसों व मिर्च", "खट्टा दही व सिरका", "रात में स्क्रीन देखना", "धूल व धुआं"],
+        "gu": ["તીખી રાય અને મરચાં", "ખાટું દહીં અને સરકો", "રાત્રે મોબાઈલ જોવો", "ધૂળ અને ધુમાડો"]
+      },
+      "reason": {
+        "en": "Netrabhishyanda (Conjunctivitis) affects Alochaka Pitta; Triphala and Amla soothe ocular inflammation.",
+        "hi": "नेत्राभिष्यंद आलोचक पित्त का विकार है; त्रिफला और आंवला आँखों को ठंडक प्रदान करते हैं।",
+        "gu": "આંખ આવવી પિત્તનો રોગ છે; ત્રિફળા અને આંબળા આંખોને ઠંડક આપે છે."
+      }
+    }
+  },
+
+  "skin_infection": {
+    "modern": {
+      "eat": {
+        "en": ["Zinc-rich seeds (Pumpkin, Sunflower)", "Turmeric & neem water", "Garlic cloves", "Probiotic yoghurt", "Fresh leafy vegetables"],
+        "hi": ["जिंक युक्त बीज (कद्दू, सूरजमुखी)", "हल्दी व नीम जल", "लहसुन", "प्रोबायोटिक दही", "ताज़ी हरी सब्ज़ियाँ"],
+        "gu": ["ઝિંક યુક્ત બી (કોળું, સૂરજમુખી)", "હળદર અને લીમડાનું પાણી", "લસણ", "દહીં", "તાજી ભાજી"]
+      },
+      "avoid": {
+        "en": ["Refined white sugar & sweets", "Deep fried oily fast food", "Excessive shellfish & red meat", "Processed artificial cheese"],
+        "hi": ["सफेद चीनी व मिठाइयाँ", "तले हुए फ़ास्ट फ़ूड", "अत्यधिक झींगा व लाल मांस", "प्रसंस्कृत पनीर"],
+        "gu": ["રિફાઇન્ડ સાકર અને મીઠાઈ", "તળેલું ફાસ્ટ ફૂડ", "ચીઝ અને પ્રોસેસ્ડ નાસ્તો"]
+      },
+      "reason": {
+        "en": "Reducing glycemic overload prevents bacterial dermal colonization while Zinc enhances epithelial wound healing.",
+        "hi": "कम चीनी वाला आहार जीवाणुओं की वृद्धि रोकता है और जिंक त्वचा के घावों को भरता है।",
+        "gu": "ઓછી સાકરવાળો ખોરાક બેક્ટેરિયા વધતા અટકાવે છે અને ઝિંક ચામડીના રૂઝ લાવે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Neem leaf swarasa", "Khadirarishta water", "Bitter gourd (Karela)", "Turmeric with warm water", "Moong dal"],
+        "hi": ["नीम के पत्तों का रस", "खदिरारिष्ट जल", "करेला", "हल्दी-गर्म पानी", "मूंग की दाल"],
+        "gu": ["લીમડાનો રસ", "ખદિરાિષ્ટનું પાણી", "કારેલાં", "હળદર-ગરમ પાણી", "મગની દાળ"]
+      },
+      "avoid": {
+        "en": ["Sour curd & fermented batters", "Jaggery & heavy sugar", "Excessive salt & mustard", "Daytime sleep"],
+        "hi": ["खट्टा दही व खमीर खाना", "गुड़ व अत्यधिक शक्कर", "अत्यधिक नमक व सरसों", "दिन में सोना"],
+        "gu": ["ખાટું દહીં અને આથો", "ગોળ અને વધુ સાકર", "વધારે મીઠું અને રાય", "દિવસ દરમિયાન ઊંઘવું"]
+      },
+      "reason": {
+        "en": "Kushta / Twak Vikara arises from Rakta and Kapha vitiation; Neem and Khadira act as potent Kusthaghna (anti-dermatosis) herbs.",
+        "hi": "त्वचा रोग रक्त और कफ के दूषित होने से होते हैं; नीम और खदिर रक्त शोधन करते हैं।",
+        "gu": "ચામડીના રોગો લોહી બિગાડથી થાય છે; લીમડો અને ખદિર લોહી સાફ કરે છે."
+      }
+    }
+  },
+
+  "hypoglycemia": {
+    "modern": {
+      "eat": {
+        "en": ["15g Fast-acting sugar (3-4 glucose tablets, 1/2 cup fruit juice, 1 tbsp honey) immediately", "Followed by a complex carb snack (Whole wheat biscuit, toast)"],
+        "hi": ["तुरंत 15 ग्राम चीनी (3-4 ग्लूकोज टैबलेट, आधा कप जूस, 1 चम्मच शहद)", "इसके बाद रोटी या बिस्किट का कॉम्प्लेक्स कार्ब स्नैक"],
+        "gu": ["તુરંત 15 ગ્રામ ગ્લુકોઝ (3-4 ગ્લુકોઝ ગોળીઓ, અડધો કપ જ્યુસ, 1 ચમચી મધ)", "ત્યારબાદ બિસ્કિટ કે રોટલીનો નાસ્તો"]
+      },
+      "avoid": {
+        "en": ["High-fat chocolate bar during acute drop (fat slows sugar absorption)", "Alcohol without food", "Skipping prescribed meals"],
+        "hi": ["शुगर कम होने पर चॉकलेट खाना (वसा शुगर के अवशोषण को धीमा करती है)", "खाली पेट शराब", "भोजन छोड़ना"],
+        "gu": ["ઈમરજન્સીમાં ચોકલેટ (ચરબી સાકર સોસાવામાં વાર લગાડે છે)", "ખાલી પેટ દારૂ", "જમવાનું છોડવું"]
+      },
+      "reason": {
+        "en": "The 15-15 Rule rapidly restores plasma glucose to prevent hypoglycemic seizures or unconsciousness.",
+        "hi": "15-15 नियम तुरंत रक्त शर्करा का स्तर बढ़ाकर बेहोशी और दौरे को रोकता है।",
+        "gu": "15-15 નો નિયમ તુરંત બ્લડ શુગર વધારી બેભાન થતાં અટકાવે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Warm water with Mishri / Organic Jaggery", "Fruit juice (Pomegranate, Grape)", "Boiled sweet potato"],
+        "hi": ["मिश्री या देसी गुड़ का गर्म पानी", "फलों का रस (अनार, अंगूर)", "उबला शकरकंद"],
+        "gu": ["સાકર અથવા દેશી ગોળનું ગરમ પાણી", "ફળોનો રસ (દાડમ, દ્રાક્ષ)", "બાફેલા શક્કરિયાં"]
+      },
+      "avoid": {
+        "en": ["Long fasts without intake", "Excessive bitter Karela juice during low sugar"],
+        "hi": ["बिना खाए लंबा उपवास", "शुगर कम होने पर कड़वा करेला जूस"],
+        "gu": ["લાંબા ઉપવાસ", "શુગર ઓછું હોય ત્યારે કારેલાનો રસ"]
+      },
+      "reason": {
+        "en": "Sharira Ksheena requires immediate Madhura Rasa dravya to nourish Dhatus and elevate Agni.",
+        "hi": "शरीर में शर्करा घटने पर मधुर रस तत्काल धातु पोषण कर ऊर्जा प्रदान करता है।",
+        "gu": "શરીરમાં શક્તિ ઘટતાં મધુર રસ તુરંત પોષણ આપે છે."
+      }
+    }
+  },
+
+  "kidney_stones": {
+    "modern": {
+      "eat": {
+        "en": ["3-4 Liters clean water daily", "Lemonade (Citrate rich)", "Barley water", "Coconut water", "Moderate calcium foods (Yoghurt with meal)"],
+        "hi": ["दिन में 3-4 लीटर साफ़ पानी", "नींबू पानी (सिट्रेट युक्त)", "जौ का पानी", "नारियल पानी", "भोजन के साथ सीमित कैल्शियम (दही)"],
+        "gu": ["દિવસે 3-4 લીટર ચોખ્ખું પાણી", "લીંબુ શરબત (સિટ્રિક એસિડ)", "જવનું પાણી", "નારિયેળ પાણી", "જમવા સાથે પ્રમાણસર કેલ્શિયમ"]
+      },
+      "avoid": {
+        "en": ["High oxalate spinach, beet, chocolate, nuts", "Excessive table salt (Sodium)", "Red meat & animal purines", "Carbonated dark colas"],
+        "hi": ["पालक, चुकंदर, चॉकलेट और मेवे (ऑक्सिलेट)", "अत्यधिक नमक", "लाल मांस व प्यूरीन", "काले शीतल पेय (कोला)"],
+        "gu": ["પાલક, બીટ, ચોકલેટ, કાજુ (ઓક્સિલેટ)", "વધારે પડતું મીઠું", "રેડ મીટ", "કાળા ઠંડા પીણાં (કોલા)"]
+      },
+      "reason": {
+        "en": "High fluid volume dilutes urinary calcium-oxalate saturation while Citrate inhibits stone crystallization.",
+        "hi": "प्रचुर जल और सिट्रेट पथरी के कणों को घुलनशील बनाकर पेशाब के रास्ते बाहर निकालते हैं।",
+        "gu": "પુષ્કળ પાણી અને લીંબુનો સિટ્રિક એસિડ પથરીના કણોને ઓગાળી બહાર કાઢે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Pashanbheda decoction", "Kulthi dal (Horse gram) soup", "Gokshura water", "Radish juice", "Corn silk tea"],
+        "hi": ["पाषाणभेद काढ़ा", "कुलथी की दाल का सूप", "गोक्षुर सिद्ध जल", "मूली का रस", "भुट्टे के बाल की चाय"],
+        "gu": ["પાષાણભેદનો કાઢો", "કુલ્થી (કુળથ)ની દાળનું પાણી", "ગોખરૂનું પાણી", "મૂળાનો રસ", "મકાઈના વાળની ચા"]
+      },
+      "avoid": {
+        "en": ["Tomato with seeds, brinjal", "Heavy dry nuts", "Excessive salt", "Holding urine urge (Mutra Vegadharana)"],
+        "hi": ["बीज वाले टमाटर, बैंगन", "कड़े सूखे मेवे", "अत्यधिक नमक", "पेशाब का वेग रोकना"],
+        "gu": ["બીયાં વાળા ટામેટાં, રીંગણ", "કઠણ સૂકો મેવો", "વધારે મીઠું", "પેશાબ રોકી રાખવો"]
+      },
+      "reason": {
+        "en": "Ashmari (Kidney stones) is broken down by Kulthi and Pashanbheda which possess Ashmarighna (lithotriptic) properties.",
+        "hi": "अश्मरी (पथरी) में कुलथी और पाषाणभेद भेदन गुण द्वारा पथरी को तोड़कर बाहर निकालते हैं।",
+        "gu": "પથરીમાં કુળથ અને પાષાણભેદ પથરીના કડાકા કરી બહાર કાઢવામાં મદદ કરે છે."
+      }
+    }
+  },
+
+  "hypertension_crisis": {
+    "modern": {
+      "eat": {
+        "en": ["DASH diet principles", "Potassium-rich bananas & oranges", "Steamed garlic", "Flaxseed meal", "Low-fat milk", "Unsalted oats"],
+        "hi": ["DASH डाइट (कम नमक)", "पोटेशियम युक्त केला और संतरा", "भाप में पका लहसुन", "अलसी का चूर्ण", "कम वसा दूध", "बिना नमक के ओट्स"],
+        "gu": ["DASH ડાયેટ (ઓછું મીઠું)", "પોટેશિયમ યુક્ત કેળાં અને સંતરા", "બાફેલું લસણ", "અળસી", "મોળું દૂધ", "મોળા ઓટ્સ"]
+      },
+      "avoid": {
+        "en": ["Table salt & pickles/papad", "Salty processed cheese & chips", "Canned soups", "Caffeinated energizers", "Alcohol & smoking"],
+        "hi": ["ऊपर से नमक, अचार व पापड़", "नमकीन प्रसंस्कृत पनीर व चिप्स", "डिब्बा बंद सूप", "कैफीन युक्त पेय", "शराब व धूम्रपान"],
+        "gu": ["ઉપરથી મીઠું, અથાણું અને પાપડ", "નમકીન ચીઝ અને ચિપ્સ", "પેક કરેલા સૂપ", "કેફીન વાળા પીણાં", "દારૂ અને તમાકુ"]
+      },
+      "reason": {
+        "en": "Strict sodium restriction (<1.5g/day) with high potassium reduces intravascular fluid tension and arterial wall stiffness.",
+        "hi": "नमक कम करने और पोटेशियम लेने से धमनियों का दबाव तुरंत कम होने लगता है।",
+        "gu": "મીઠું ઓછું કરવાથી અને પોટેશિયમ લેવાથી બ્લડ પ્રેશર નિયંત્રણમાં આવે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Sarpagandha / Arjuna tea (under medical supervision)", "Garlic cloves with milk", "Amla with honey", "Watermelon juice"],
+        "hi": ["सर्पगंधा / अर्जुन की छाल की चाय (वैद्यकीय सलाह)", "दूध के साथ लहसुन", "शहद के साथ आंवला", "तरबूज का रस"],
+        "gu": ["સર્પગંધા / અર્જુન છાલની ચા (વૈદ્યની દેખરેખથી)", "દૂધ સાથે લસણ", "મધ સાથે આંબળા", "તડબૂચનો રસ"]
+      },
+      "avoid": {
+        "en": ["Papad, pickles & dry salted fish", "Excessive chilies & mustard", "Stress & anger (Krodha)", "Late night sleep deprivations"],
+        "hi": ["पापड़, अचार व सूखी नमकीन मछली", "अत्यधिक मिर्च व सरसों", "मानसिक तनाव व क्रोध", "देर रात तक जगना"],
+        "gu": ["પાપડ, અથાણું અને નમકીન", "વધારે મરચું અને રાય", "ચિંતા અને ક્રોધ", "રાત્રે મોડે સુધી જાગવું"]
+      },
+      "reason": {
+        "en": "Rakta Vata involves arterial Pitta-Vata tension; Arjuna and Sarpagandha nourish Hridaya and balance arterial pressure.",
+        "hi": "उच्च रक्तचाप वात-पित्त विकार है; अर्जुन और सर्पगंधा हृदय और रक्त वाहिनियों को शक्ति देते हैं।",
+        "gu": "હાઇ બ્લડપ્રેશર વાયુ-પિત્તથી થાય છે; અર્જુન અને સર્પગંધા હૃદયને મજબૂત કરે છે."
+      }
+    }
+  },
+
+  "chikungunya": {
+    "modern": {
+      "eat": {
+        "en": ["Omega-3 rich walnuts & flaxseeds", "Turmeric milk (Curcumin)", "Fresh orange & amla juice", "Vegetable soups", "Hydrating coconut water"],
+        "hi": ["ओमेगा-3 युक्त अखरोट व अलसी", "हल्दी वाला दूध (करक्यूमिन)", "ताज़ा संतरा व आंवला जूस", "सब्ज़ियों का सूप", "नारियल पानी"],
+        "gu": ["ઓમેગા-3 યુક્ત અખરોટ અને અળસી", "હળદર વાળું દૂધ", "તાજા સંતરા અને આંબળાનો રસ", "શાકનો સૂપ", "નારિયેળ પાણી"]
+      },
+      "avoid": {
+        "en": ["Pro-inflammatory fried fast food", "Excessive refined sugar", "Alcohol", "Chilled cold drinks"],
+        "hi": ["सूजन बढ़ाने वाला तला फ़ास्ट फ़ूड", "अत्यधिक सफेद चीनी", "शराब", "ठंडे पेय"],
+        "gu": ["સોજો વધારતો તળેલું ખોરાક", "વધારે સાકર", "દારૂ", "ઠંડા પીણાં"]
+      },
+      "reason": {
+        "en": "Anti-inflammatory Omega-3 and Curcumin downregulate joint synovial cytokine inflammation.",
+        "hi": "एंटी-इन्फ्लेमेटरी पोषक तत्व जोड़ों के दर्द और सूजन को कम करने में मदद करते हैं।",
+        "gu": "એન્ટી-ઇન્ફ્લેમેટરી ખોરાક સાંધાનો દુખાવો અને સોજો ઘટાડે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Rasnadi decoction", "Dry ginger & castor oil (Erandataila) sips (under guidance)", "Shallaki (Boswellia) tea", "Moong soup"],
+        "hi": ["रास्नादि काढ़ा", "सौंठ और एरण्ड तेल (वैद्यकीय सलाह से)", "शल्लकी चाय", "मूंग सूप"],
+        "gu": ["રાસ્નાદિ કાઢો", "સૂંઠ અને દિવેલ (વૈદ્યની સલાહથી)", "શલ્લકી ચા", "મગનું પાણી"]
+      },
+      "avoid": {
+        "en": ["Heavy black gram (Urad)", "Sour curd & fermentations", "Cold baths", "Daytime sleep"],
+        "hi": ["भारी उड़द दाल", "खट्टा दही व खमीर खाना", "ठंडे पानी से नहाना", "दिन में सोना"],
+        "gu": ["અડદની દાળ", "ખાટું દહીં અને આથો", "ઠંડા પાણીથી નાહવું", "દિવસ દરમિયાન ઊંઘવું"]
+      },
+      "reason": {
+        "en": "Amavata / Sandhigata Jwara requires Amapachana with Rasna, Shunthi, and Eranda to clear joint stiffness.",
+        "hi": "चिकनगुनिया में वात-कफ से जोड़ों में आम जमता है; रास्ना और सौंठ आम का पाचन करते हैं।",
+        "gu": "સાંધાના તાવમાં વાયુ-કફથી સોજો આવે છે; રાસ્ના અને સૂંઠ સોજો ઉતારે છે."
+      }
+    }
+  },
+
+  "tension_headache": {
+    "modern": {
+      "eat": {
+        "en": ["Magnesium pumpkin seeds", "Warm chamomile/peppermint tea", "Hydrating water", "Whole grain oatmeal", "Bananas"],
+        "hi": ["कद्दू के बीज (मैग्नीशियम)", "कैमोमाइल या पुदीना चाय", "पर्याप्त पानी", "ओट्स (जई)", "केला"],
+        "gu": ["કોળાના બી", "ફુદીના કે કેમોમાઇલ ચા", "પુષ્કળ પાણી", "ઓટ્સ", "કેળાં"]
+      },
+      "avoid": {
+        "en": ["Dehydrating high caffeine", "Skipping breakfast", "Excessive alcohol", "Artificial sweeteners"],
+        "hi": ["अत्यधिक चाय/कॉफी (डिहाइड्रेशन)", "नाश्ता छोड़ना", "अत्यधिक शराब", "कृत्रिम मीठा"],
+        "gu": ["વધારે પડતી ચા/કોફી", "સવારનો નાસ્તો છોડવો", "દારૂ", "કૃત્રિમ ગળપણ"]
+      },
+      "reason": {
+        "en": "Magnesium and hydration relieve pericranial muscle spasm and stress tension.",
+        "hi": "मैग्नीशियम और पानी की पर्याप्त मात्रा सिर और गर्दन की मांसपेशियों के तनाव को शांत करती है।",
+        "gu": "મેગ્નેશિયમ અને પાણી માથા અને માનસિક તાણ દૂર કરે છે."
+      }
+    },
+    "ayurveda": {
+      "eat": {
+        "en": ["Warm milk with cow ghee at bedtime", "Brahmi / Shankhpushpi tea", "Soaked almonds", "Warm water"],
+        "hi": ["सोते समय गर्म दूध में गाय का घी", "ब्राह्मी / शंखपुष्पी चाय", "भीगे बादाम", "गर्म पानी"],
+        "gu": ["રાત્રે ગરમ દૂધમાં ગાયનું ઘી", "બ્રાહ્મી / શંખપુષ્પી ચા", "પલળેલા બદામ", "ગરમ પાણી"]
+      },
+      "avoid": {
+        "en": ["Pungent chilies & excessive salt", "Late night sleep loss (Ratri Jagarana)", "Excessive screen time"],
+        "hi": ["तीखी मिर्च व अत्यधिक नमक", "रात में देर तक जगना", "अत्यधिक स्क्रीन देखना"],
+        "gu": ["તીખું મરચું અને વધારે મીઠું", "રાત્રે ઉજાગરા કરવા", "વધારે સ્ક્રીન ટાઇમ"]
+      },
+      "reason": {
+        "en": "Shiroshoola from mental fatigue is pacified by Vata-shamak Sheeta Dravyas like Brahmi and cow ghee.",
+        "hi": "मानसिक तनाव से होने वाला सिरदर्द वात प्रकोप से होता है; ब्राह्मी और घी मस्तिष्क को तृप्त करते हैं।",
+        "gu": "માનસિક તાણનો માથાનો દુખાવો વાયુથી થાય છે; બ્રાહ્મી અને ઘી મગજ શાંત કરે છે."
+      }
+    }
+  }
+}

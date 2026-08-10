@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="100" fill="#00897B"/>
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#004D40" stroke-width="12" opacity="0.3"/>
+  <circle cx="256" cy="256" r="170" fill="#00695C"/>
+  <!-- Hospital Cross -->
+  <path d="M216 116 h80 v100 h100 v80 h-100 v100 h-80 v-100 h-100 v-80 h100 z" fill="#FFFFFF" rx="16"/>
+  <!-- Inner Cross Accent Glow -->
+  <path d="M236 136 h40 v110 h110 v40 h-110 v110 h-40 v-110 h-110 v-40 h110 z" fill="#80CBC4" opacity="0.6"/>
+  <!-- Heartbeat / ECG line inside cross -->
+  <path d="M156 256 h50 l15 -35 l20 70 l25 -50 l15 15 h75" fill="none" stroke="#004D40" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

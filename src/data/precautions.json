@@ -1,0 +1,164 @@
+{
+  "dengue": {
+    "title": {
+      "en": "Dengue Fever Prevention & Vector Control",
+      "hi": "डेगू बुखार रोकथाम एवं मच्छर नियंत्रण",
+      "gu": "ડેન્ગ્યુ તાવ અટકાવ અને મચ્છર નિયંત્રણ"
+    },
+    "items": {
+      "en": [
+        "Eliminate stagnant water from buckets, flower pots, tires, and coolers weekly.",
+        "Use mosquito repellent creams (DEET/Picaridin) on exposed skin.",
+        "Wear long-sleeved light-colored shirts and full trousers.",
+        "Install bed nets and window screens in homes and health clinics."
+      ],
+      "hi": [
+        "बाल्टी, गमलों, कूलरों तथा पुराने टायरों में जमा पानी साप्ताहिक रूप से खाली करें।",
+        "खुली त्वचा पर मच्छर रोधी क्रीम या तेल का प्रयोग करें।",
+        "पूरी बांह के हल्के रंग के कपड़े और लंबी पैंट पहनें।",
+        "घरों और क्लीनिकों की खिड़कियों पर जाली लगाएं तथा मच्छरदानी का उपयोग करें।"
+      ],
+      "gu": [
+        "બાલટી, કૂલર, કુંડાં અને જૂના ટાયરમાં ભરાયેલું પાણી અઠવાડિયામાં એકવાર ખાલી કરો.",
+        "ખુલ્લી ત્વચા પર મચ્છર વિરોધી ક્રીમ અથવા તેલ લગાવો.",
+        "આખી બંયના હળવા રંગના કપડાં અને લાંબી પેન્ટ પહેરો.",
+        "ઘરો અને ક્લિનિકની બારીઓ પર મચ્છરદાની અથવા જાળી લગાવો."
+      ]
+    }
+  },
+  "malaria": {
+    "title": {
+      "en": "Malaria Prevention Protocol",
+      "hi": "मलेरिया रोकथाम प्रोटोकॉल",
+      "gu": "મલેરિયા નિયંત્રણ પ્રોટોકોલ"
+    },
+    "items": {
+      "en": [
+        "Sleep under insecticide-treated bed nets (ITNs) every night.",
+        "Avoid remaining outdoors near drainage ditches after dusk.",
+        "Report high fever with chills immediately to the nearest health worker.",
+        "Ensure prompt blood smear examination for plasmodium parasite."
+      ],
+      "hi": [
+        "प्रतिदिन रात को कीटनाशक युक्त मच्छरदानी (ITN) के नीचे सोएं।",
+        "शाम के समय नालियों और गंदे पानी के आसपास रुकने से बचें।",
+        "कंपकंपी के साथ तेज बुखार होने पर तुरंत नजदीकी स्वास्थ्य कार्यकर्ता को सूचित करें।",
+        "मलेरिया की जांच के लिए तुरंत खून की पट्टी (ब्लड स्मीयर) करवाएं।"
+      ],
+      "gu": [
+        "દરરોજ રાત્રે જીવાણુનાશક મચ્છરદાની હેઠળ સુવો.",
+        "સાંજના સમયે ગંદા પાણીના ખાબોચિયા નજીક ઊભા રહેવાનું ટાળો.",
+        "ઠંડી સાથે તીવ્ર તાવ આવે તો તરત નજીકના આરોગ્ય કાર્યકરને જાણ કરો.",
+        "લોહીની તપાસ કરાવવામાં વિલંબ કરશો નહીં."
+      ]
+    }
+  },
+  "food_poisoning": {
+    "title": {
+      "en": "Gastroenteritis & Acute Food Poisoning Safety",
+      "hi": "फूड पॉइजनिंग एवं पेट संक्रमण सुरक्षा",
+      "gu": "ફૂડ પોઈઝનિંગ અને ઝાડા-ઉલટી અટકાવ"
+    },
+    "items": {
+      "en": [
+        "Drink boiled or chlorine-treated water only.",
+        "Wash hands thoroughly with soap before cooking and eating.",
+        "Avoid stale food, uncovered roadside snacks, and cut fruits.",
+        "Administer Oral Rehydration Salts (ORS) and zinc immediately upon diarrhea onset."
+      ],
+      "hi": [
+        "केवल उबला हुआ या क्लोरीन युक्त साफ़ पानी पिएं।",
+        "खाना बनाने और खाने से पहले हाथों को साबुन से अच्छी तरह धोएं।",
+        "बासी भोजन, खुले सड़क किनारे के व्यंजन और कटे फलों से परहेज करें।",
+        "दस्त शुरू होते ही तुरंत ओआरएस (ORS) घोल और जिंक की गोली शुरू करें।"
+      ],
+      "gu": [
+        "માત્ર ઉકાળેલું અથવા ક્લોરિનયુક્ત શુદ્ધ પાણી પીવો.",
+        "જમતા પહેલાં અને રસોઈ બનાવતા પહેલાં સાબુથી હાથ બરાબર ધુઓ.",
+        "વાસી ખોરાક, ઉઘાડો ખોરાક અને કાપેલા ફળો ખાવાનું ટાળો.",
+        "ઝાડા શરૂ થતાં જ ORS અને ઝિંકની ગોળી ચાલુ કરો."
+      ]
+    }
+  },
+  "viral_fever": {
+    "title": {
+      "en": "Viral Outbreak & Respiratory Hygiene",
+      "hi": "वायरल बुखार एवं श्वसन स्वच्छता दिशा-निर्देश",
+      "gu": "વાયરલ તાવ અને શ્વાસની સ્વચ્છતા માર્ગદર્શિકા"
+    },
+    "items": {
+      "en": [
+        "Cover nose and mouth with a tissue or elbow when coughing or sneezing.",
+        "Stay hydrated with warm fluids and electrolyte solutions.",
+        "Isolate patients with active cough/fever in well-ventilated rooms.",
+        "Avoid self-medication with antibiotics for viral infections."
+      ],
+      "hi": [
+        "खांसते या छींकते समय नाक और मुंह को रुमाल या कोहनी से ढकें।",
+        "गुनगुना पानी और इलेक्ट्रोलाइट घोल पीकर शरीर में पानी की मात्रा बनाए रखें।",
+        "बुखार और खांसी वाले रोगी को हवादार कमरे में रखें।",
+        "वायरल बुखार में बिना डॉक्टर की सलाह के एंटीबायोटिक दवा न लें।"
+      ],
+      "gu": [
+        "ઉધરસ કે છીંક આવતી વખતે નાક અને મોં રૂમાલથી ઢાંકો.",
+        "હૂંફાળું પાણી અને પ્રવાહી પૂરતા પ્રમાણમાં પીવો.",
+        "તાવવાળા દર્દીને હવાઉજાસ વાળા રૂમમાં અલગ રાખો.",
+        "ડોક્ટરની સલાહ વગર જાતે એન્ટિબાયોટિક્સ લેશો નહીં."
+      ]
+    }
+  },
+  "typhoid": {
+    "title": {
+      "en": "Typhoid Fever & Waterborne Infection Precautions",
+      "hi": "टाइफाइड एवं जलजनित रोग से बचाव",
+      "gu": "ટાઈફોઈડ અને દૂષિત પાણીથી બચાવ"
+    },
+    "items": {
+      "en": [
+        "Boil drinking water for at least 3 minutes before consumption.",
+        "Ensure food is served steaming hot and fully cooked.",
+        "Sanitize hands after using restrooms and before handling food.",
+        "Complete the prescribed full course of antimicrobial therapy if diagnosed."
+      ],
+      "hi": [
+        "पीने का पानी उपयोग करने से पहले कम से कम 3 मिनट तक उबालें।",
+        "ताजा, गरम और पूरी तरह पका हुआ भोजन ही ग्रहण करें।",
+        "शौचालय के उपयोग के बाद हाथों को साबुन से अच्छी तरह साफ करें।",
+        "चिकित्सक द्वारा दी गई दवा का पूरा कोर्स अवश्य करें।"
+      ],
+      "gu": [
+        "પીવાનું પાણી વાપરતા પહેલાં ઓછામાં ઓછું ૩ મિનિટ ઉકાળો.",
+        "તાજો અને ગરમ ખોરાક જ ખાઓ.",
+        "રેસ્ટરૂમ વાપર્યા પછી સાબુથી હાથ ચોખ્ખા ધુઓ.",
+        "નિદાન થાય ત્યારે એન્ટિબાયોટિક્સનો પૂરો કોર્સ પૂર્ણ કરો."
+      ]
+    }
+  },
+  "cholera": {
+    "title": {
+      "en": "Acute Waterborne Diarrhea & Cholera Emergency Measures",
+      "hi": "हैजा एवं तीव्र दस्त आपातकालीन सावधानियां",
+      "gu": "કોલેરા અને અતિસાર ઈમરજન્સી માર્ગદર્શિકા"
+    },
+    "items": {
+      "en": [
+        "Start ORS solution immediately at first loose stool.",
+        "Do NOT consume water from untested wells or hand pumps during outbreaks.",
+        "Disinfect latrines with bleaching powder or sodium hypochlorite.",
+        "Seek emergency hospital referral for severe vomiting or dehydration signs."
+      ],
+      "hi": [
+        "पहला पतला दस्त होते ही तुरंत ORS घोल देना शुरू करें।",
+        "प्रकोप के समय असुरक्षित कुओं या हैण्डपंप का पानी न पिएं।",
+        "शौचालय में ब्लीचिंग पाउडर का छिड़काव करें।",
+        "गंभीर उल्टी या निर्जलीकरण (डिहाइड्रेशन) होने पर तुरंत अस्पताल जाएं।"
+      ],
+      "gu": [
+        "પહેલો ઝાડો થતાં જ ઓઆરએસ (ORS) નું દ્રાવણ ચાલુ કરો.",
+        "અસુરક્ષિત કૂવા કે હેન્ડપંપનું પાણી ન પીવો.",
+        "શૌચાલયમાં બ્લીચિંગ પાવડર છાંટો.",
+        "ગંભીર ડિહાઈડ્રેશન જણાય તો તરત જ હોસ્પિટલ પહોંચો."
+      ]
+    }
+  }
+}

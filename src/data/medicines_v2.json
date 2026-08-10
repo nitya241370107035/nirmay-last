@@ -1,0 +1,1207 @@
+{
+  "viral_fever": {
+    "allopathy": [
+      {
+        "id": "paracetamol_500",
+        "name": { "en": "Paracetamol 500mg", "hi": "पैरासिटामोल 500mg", "gu": "પેરાસિટામોલ 500mg" },
+        "system": "allopathy",
+        "benefit": { "en": "Reduces fever and mild to moderate body pain.", "hi": "बुखार और हल्के से मध्यम शारीरिक दर्द को कम करता है।", "gu": "તાવ અને હળવાથી મધ્યમ શરીરનો દુખાવો ઘટાડે છે." },
+        "sideEffects": { "en": "Rare at recommended dose; overdose can harm liver.", "hi": "अनुशंसित खुराक में दुर्लभ; अधिक मात्रा यकृत को नुकसान पहुंचा सकती है।", "gu": "ભલામણ કરેલ ડોઝમાં દુર્લભ; વધુ માત્રાથી યકૃતને નુકસાન થઈ શકે છે." },
+        "howToTake": { "en": "Take 1 tablet after meals with warm water. Max 4 doses/24hr.", "hi": "भोजन के बाद 1 गोली गर्म पानी के साथ लें। 24 घंटे में अधिकतम 4 खुराक।", "gu": "જમ્યા પછી ગરમ પાણી સાથે 1 ગોળી લો. 24 કલાકમાં મહત્તમ 4 ડોઝ." },
+        "contraindications": { "en": "Avoid in severe liver dysfunction.", "hi": "गंभीर यकृत रोग में बचें।", "gu": "ગંભીર યકૃત રોગમાં ટાળો." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      },
+      {
+        "id": "ors_hydration",
+        "name": { "en": "ORS Sachet (Oral Rehydration)", "hi": "ओआरएस घोल", "gu": "ઓઆરએસ પાઉડર (જળસંચય)" },
+        "system": "allopathy",
+        "benefit": { "en": "Prevents dehydration and restores essential electrolytes during fever.", "hi": "डिहाइड्रेशन से बचाता है और इलेक्ट्रोलाइट्स को संतुलित करता है।", "gu": "ડીહાઇડ્રેશન રોકે છે અને ઇલેક્ટ્રોલાઇટ્સ પુનઃસ્થાપિત કરે છે." },
+        "sideEffects": { "en": "None when mixed properly in clean water.", "hi": "साफ पानी में सही से मिलाने पर कोई दुष्प्रभाव नहीं।", "gu": "સ્વચ્છ પાણીમાં યોગ્ય રીતે ભેળવવામાં આવે તો કોઈ આડઅસર નથી." },
+        "howToTake": { "en": "Dissolve 1 sachet in 1 litre clean boiled/cooled water; sip frequently.", "hi": "1 पैकेट को 1 लीटर उबले/ठंडे पानी में घोलें; धीरे-धीरे पिएं।", "gu": "1 પેકેટ 1 લીટર ઉકાળેલા/ઠંડા પાણીમાં ઓગાળો; થોડું થોડું પીવો." },
+        "contraindications": { "en": "Caution in severe renal failure.", "hi": "गंभीर किडनी विफलता में सावधानी।", "gu": "ગંભીર કીડનીની સમસ્યામાં સાવધાની." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "sudarshan_ghan_vati",
+        "name": { "en": "Sudarshan Ghan Vati", "hi": "सुदर्शन घन वटी", "gu": "સુદર્શન ઘન વટી" },
+        "system": "ayurveda",
+        "benefit": { "en": "Traditional Ayurvedic formulation for all types of fevers and body ache.", "hi": "सभी प्रकार के बुखार और शरीर दर्द के लिए पारंपरिक आयुर्वेदिक औषधि।", "gu": "તમામ પ્રકારના તાવ અને શરીરના દુખાવા માટે પરંપરાગત આયુર્વેદિક ઔષધિ." },
+        "sideEffects": { "en": "Mild bitter taste; mild dryness of mouth if taken in excess.", "hi": "हल्का कड़वा स्वाद; अधिक लेने पर मुंह में सूखापन।", "gu": "હળવો કડવો સ્વાદ; વધુ લેવાથી મોઢામાં શુષ્કતા." },
+        "howToTake": { "en": "Take 1-2 tablets twice daily with lukewarm water after food.", "hi": "भोजन के बाद गुनगुने पानी के साथ दिन में दो बार 1-2 गोली लें।", "gu": "જમ્યા પછી નવશેકા પાણી સાથે દિવસમાં બે વાર 1-2 ગોળી લો." },
+        "contraindications": { "en": "Avoid during early pregnancy without consultation.", "hi": "डॉक्टर की सलाह के बिना शुरुआती गर्भावस्था में न लें।", "gu": "સલાહ વિના શરૂઆતની ગર્ભાવસ્થા દરમિયાન ટાળો." },
+        "ageRestriction": "adult",
+        "pregnancySafe": false,
+        "lactationSafe": true,
+        "isOTC": true
+      },
+      {
+        "id": "giloy_kwath",
+        "name": { "en": "Giloy (Guduchi) Juice / Kwath", "hi": "गिलोय (गुडूची) स्वरस", "gu": "ગિલોય (ગડૂચી) રસ / ક્વાથ" },
+        "system": "ayurveda",
+        "benefit": { "en": "Boosts immunity, purifies blood, and aids quick recovery from fevers.", "hi": "प्रतिरोधक क्षमता बढ़ाता है और बुखार से जल्दी राहत दिलाता है।", "gu": "રોગપ્રતિકારક શક્તિ વધારે છે અને તાવમાંથી ઝડપી રાહત આપે છે." },
+        "sideEffects": { "en": "May lower blood sugar slightly.", "hi": "रक्त शर्करा को थोड़ा कम कर सकता है।", "gu": "બ્લડ શુગર થોડું ઘટાડી શકે છે." },
+        "howToTake": { "en": "15-20ml juice diluted with equal warm water morning and evening.", "hi": "15-20ml स्वरस बराबर गुनगुने पानी के साथ सुबह-शाम लें।", "gu": "15-20ml રસ સરખા ભાગે નવશેકા પાણી સાથે સવાર-સાંજ લો." },
+        "contraindications": { "en": "Monitor blood glucose if taking antidiabetic drugs.", "hi": "डायबिटीज की दवा ले रहे हों तो ब्लड शुगर की निगरानी करें।", "gu": "ડાયાબિટીસની દવા લેતા હો તો શુગર તપાસો." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "ferrum_phos_6x",
+        "name": { "en": "Ferrum Phosphoricum 6X", "hi": "फेरम फॉस्फोरिकम 6X", "gu": "ફેરેમ ફોસ્ફોરિકમ 6X" },
+        "system": "homeopathy",
+        "benefit": { "en": "First stage of inflammatory febrile conditions and congestion.", "hi": "बुखार और सूजन की पहली अवस्था में उपयोगी।", "gu": "તાવ અને બળતરાની પ્રથમ અવસ્થામાં ઉપયોગી." },
+        "sideEffects": { "en": "No reported side effects.", "hi": "कोई ज्ञात दुष्प्रभाव नहीं।", "gu": "કોઈ જાણીતી આડઅસર નથી." },
+        "howToTake": { "en": "Dissolve 4 tablets under tongue 3-4 times a day.", "hi": "4 गोलियां दिन में 3-4 बार जीभ के नीचे घोलें।", "gu": "4 ગોળી દિવસમાં 3-4 વાર જીભ નીચે ઓગાળો." },
+        "contraindications": { "en": "None known.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "common_cold": {
+    "allopathy": [
+      {
+        "id": "steam_inhalation_saline",
+        "name": { "en": "Steam Inhalation + Normal Saline Nasal Drops", "hi": "भाप की सिकाई + नॉर्मल सलाइन नेज़ल ड्रॉप्स", "gu": "વરાળ નો શેક + નોર્મલ સલાઇન નેઝલ ટીંપા" },
+        "system": "allopathy",
+        "benefit": { "en": "Clears nasal congestion and soothes upper respiratory tract.", "hi": "नाक बंद होने से राहत देता है और श्वास नली को आराम पहुंचाता है।", "gu": "નાક બંધ થવામાં રાહત આપે છે અને શ્વાસનળીને આરામ આપે છે." },
+        "sideEffects": { "en": "Beware of scalding steam burns.", "hi": "भाप से जलने से बचें।", "gu": "ગરમ વરાળથી દાઝી ન જવાય તેનું ધ્યાન રાખો." },
+        "howToTake": { "en": "Inhale steam for 5-10 mins twice daily; 2 drops saline per nostril.", "hi": "दिन में दो बार 5-10 मिनट भाप लें; प्रत्येक नथुने में 2 बूंद सलाइन।", "gu": "દિવસમાં બે વાર 5-10 મિનિટ વરાળ લો; દરેક નસકોરામાં 2 ટીંપા સલાઇન." },
+        "contraindications": { "en": "Avoid boiling water steam directly for infants.", "hi": "शिशुओं को सीधे उबलते पानी की तेज भाप न दें।", "gu": "નાના બાળકોને સીધી તેજ વરાળ ન આપવી." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      },
+      {
+        "id": "cetirizine_5mg",
+        "name": { "en": "Cetirizine 5mg/10mg", "hi": "सेटिरिज़िन 5mg/10mg", "gu": "સેટિરિઝિન 5mg/10mg" },
+        "system": "allopathy",
+        "benefit": { "en": "Relieves sneezing, runny nose, watery eyes, and allergic itch.", "hi": "छींकने, बहती नाक और पानीदार आंखों से राहत दिलाता है।", "gu": "છિંકો, વહેતું નાક અને આંખોમાંથી પાણી પડવામાં રાહત આપે છે." },
+        "sideEffects": { "en": "Mild drowsiness or sedation.", "hi": "हल्की नींद या आलस आना।", "gu": "હળવી ઊંઘ કે ઘેન ચડવું." },
+        "howToTake": { "en": "Take 1 tablet at bedtime with water.", "hi": "सोते समय 1 गोली पानी के साथ लें।", "gu": "રાત્રે સૂતી વખતે 1 ગોળી પાણી સાથે લો." },
+        "contraindications": { "en": "Do not drive or operate machinery after taking.", "hi": "लेने के बाद ड्राइविंग या भारी मशीनरी न चलाएं।", "gu": "લીધા પછી ડ્રાઇવિંગ ન કરવું." },
+        "ageRestriction": "child",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "sitopaladi_churna",
+        "name": { "en": "Sitopaladi Churna with Honey", "hi": "सितोपलादि चूर्ण (शहद के साथ)", "gu": "સિતોપલાદિ ચૂર્ણ (મધ સાથે)" },
+        "system": "ayurveda",
+        "benefit": { "en": "Eases cough, congestion, and cold throat irritation naturally.", "hi": "खांसी, कफ और गले की खराश को स्वाभाविक रूप से शांत करता है।", "gu": "ખાંસી, કફ અને ગળાની ખારાશને કુદરતી રીતે શાંત કરે છે." },
+        "sideEffects": { "en": "Diabetic patients should avoid honey or adjust dosage.", "hi": "मधुमेह के मरीज शहद के बिना लें।", "gu": "ડાયાબિટીસના દર્દીઓએ મધ વિના લેવું." },
+        "howToTake": { "en": "Mix 2g churna with 1 tsp honey 2-3 times daily.", "hi": "2 ग्राम चूर्ण 1 चम्मच शहद के साथ दिन में 2-3 बार चाटें।", "gu": "2 ગ્રામ ચૂર્ણ 1 ચમચી મધ સાથે દિવસમાં 2-3 વાર લો." },
+        "contraindications": { "en": "Do not give raw honey to infants under 1 year.", "hi": "1 वर्ष से कम उम्र के बच्चों को शहद न दें।", "gu": "1 વર્ષથી નાના બાળકને મધ ન આપવું." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "aconite_napellus_30c",
+        "name": { "en": "Aconitum Napellus 30C", "hi": "एकोनाइट नेपेलस 30C", "gu": "એકોનાઇટ નેપેલસ 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Effective at immediate onset of cold after cold exposure.", "hi": "ठंडी हवा लगने के बाद तुरंत होने वाली सर्दी में प्रभावी।", "gu": "ઠંડી લાગ્યા પછી તરત શરૂ થતી શરદીમાં અસરકારક." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills dissolved under tongue 3 times a day.", "hi": "4 गोलियां जीभ के नीचे दिन में 3 बार।", "gu": "4 ગોળી જીભ નીચે દિવસમાં 3 વાર." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "acute_bronchitis": {
+    "allopathy": [
+      {
+        "id": "ambroxol_syrup",
+        "name": { "en": "Ambroxol Cough Syrup", "hi": "एम्ब्रॉक्सोल कफ सिरप", "gu": "એમ્બ્રોક્સોલ કફ સિરપ" },
+        "system": "allopathy",
+        "benefit": { "en": "Liquefies thick mucus and relieves wet painful cough.", "hi": "गाढ़े बलगम को पतला करता है और खांसी में आराम देता है।", "gu": "જાડા કફને પાતળો કરે છે અને ખાંસીમાં આરામ આપે છે." },
+        "sideEffects": { "en": "Mild nausea or abdominal discomfort.", "hi": "हल्की मिचली या पेट में असहजता।", "gu": "હળવી ઉલટી જેવી અસર કે પેટમાં અસ્વસ્થતા." },
+        "howToTake": { "en": "10ml thrice daily after meals with warm water.", "hi": "भोजन के बाद 10ml दिन में 3 बार गुनगुने पानी के साथ।", "gu": "જમ્યા પછી 10ml દિવસમાં 3 વાર નવશેકા પાણી સાથે." },
+        "contraindications": { "en": "Avoid in active peptic ulcer disease.", "hi": "पेट के अल्सर में सावधानी बरतें।", "gu": "પેટના અલ્સરવાળા દર્દીઓએ સાવધાની રાખવી." },
+        "ageRestriction": "child",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "vasavaleha",
+        "name": { "en": "Vasavaleha Jam", "hi": "वासावलेह", "gu": "વાસાવલેહ" },
+        "system": "ayurveda",
+        "benefit": { "en": "Soothes inflamed bronchial airways and relieves chronic bronchial cough.", "hi": "श्वसन नली की सूजन कम करता है और खांसी शांत करता है।", "gu": "શ્વાસનળીનો સોજો ઓછો કરે છે અને કફમાં રાહત આપે છે." },
+        "sideEffects": { "en": "Contains sugar; diabetics adjust intake.", "hi": "शर्करायुक्त; मधुमेह रोगी ध्यान दें।", "gu": "ખાંડ ધરાવે છે; ડાયાબિટીસવાળા ધ્યાનમાં રાખવું." },
+        "howToTake": { "en": "1 teaspoon twice daily with warm milk or water.", "hi": "1 चम्मच दिन में दो बार गुनगुने दूध या पानी से लें।", "gu": "1 ચમચી દિવસમાં બે વાર નવશેકા દૂધ કે પાણી સાથે." },
+        "contraindications": { "en": "Caution in unmanaged diabetes.", "hi": "अनियंत्रित डायबिटीज में सावधानी।", "gu": "અનિયંત્રિત ડાયાબિટીસમાં સાવધાની." },
+        "ageRestriction": "adult",
+        "pregnancySafe": false,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "bryonia_alba_30c",
+        "name": { "en": "Bryonia Alba 30C", "hi": "ब्रायोनिया अल्बा 30C", "gu": "બ્રાયોનિયા અલ્બા 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Dry, hacking painful cough with chest tightness worsening on movement.", "hi": "सूखी, दर्दनाक खांसी जो हिलने-डुलने पर बढ़ती है।", "gu": "સૂકી અને દર્દનાક ખાંસી જે હલનચલનથી વધે છે." },
+        "sideEffects": { "en": "None reported.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills under tongue every 4 hours.", "hi": "4 गोलियां हर 4 घंटे में जीभ के नीचे।", "gu": "4 ગોળી દર 4 કલાકે જીભ નીચે." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "gastroenteritis": {
+    "allopathy": [
+      {
+        "id": "ors_zinc_syrup",
+        "name": { "en": "ORS Fluid + Zinc Supplementation", "hi": "ओआरएस + जिंक सप्लीमेंट", "gu": "ઓઆરએસ + ઝિંક સપ્લીમેન્ટ" },
+        "system": "allopathy",
+        "benefit": { "en": "Rehydrates rapidly, replaces electrolyte losses and speeds intestinal recovery.", "hi": "शरीर को पुनर्जलीकृत करता है और आंतों की रिकवरी तेज करता है।", "gu": "શરીરને પુનઃહાઇડ્રેટ કરે છે અને આંતરડા સુધારે છે." },
+        "sideEffects": { "en": "Zinc may cause mild transient metallic taste.", "hi": "जिंक से मुंह का स्वाद कड़वा हो सकता है।", "gu": "ઝિંકથી મોઢાનો સ્વાદ થોડો બદલાઇ શકે છે." },
+        "howToTake": { "en": "Drink ORS after every loose stool. Zinc 20mg daily for 14 days.", "hi": "हर दस्त के बाद ओआरएस पिएं। जिंक 20mg रोजाना 14 दिनों तक।", "gu": "દરેક ઝાડા પછી ઓઆરએસ પીવો. ઝિંક 20mg રોજ 14 દિવસ સુધી." },
+        "contraindications": { "en": "Severe vomiting preventing oral fluid requires IV referral.", "hi": "लगातार उल्टी होने पर अस्पताल में ड्रिप की आवश्यकता।", "gu": "સતત ઉલટી થતી હોય તો હોસ્પિટલમાં બોટલ ચડાવવી." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "kutajghan_vati",
+        "name": { "en": "Kutajghan Vati", "hi": "कुटजघन वटी", "gu": "કુટજઘન વટી" },
+        "system": "ayurveda",
+        "benefit": { "en": "Potent Ayurvedic astringent remedy for loose diarrhoea and dysentery.", "hi": "दस्त और मरोड़ को रोकने के लिए असरदार आयुर्वेदिक औषधि।", "gu": "ઝાડા અને મરડાને રોકવા માટે અતિ અસરકારક આયુર્વેદિક ઔષધિ." },
+        "sideEffects": { "en": "Excessive dose may cause constipation.", "hi": "अधिक खुराक से कब्ज हो सकती है।", "gu": "વધુ પડતો ડોઝ લેવાથી કબજિયાત થઈ શકે છે." },
+        "howToTake": { "en": "1-2 tablets twice daily after meals with warm water or buttermilk.", "hi": "भोजन के बाद 1-2 गोली छाछ या गुनगुने पानी के साथ।", "gu": "જમ્યા પછી 1-2 ગોળી છાશ કે નવશેકા પાણી સાથે." },
+        "contraindications": { "en": "Avoid in severe chronic constipation.", "hi": "कब्ज की शिकायत में न लें।", "gu": "કબજિયાત હોય તો ન લેવી." },
+        "ageRestriction": "adult",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "arsenicum_album_30c",
+        "name": { "en": "Arsenicum Album 30C", "hi": "आर्सेनिकम एल्बम 30C", "gu": "આર્સેનિકમ આલ્બમ 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Key remedy for food poisoning, watery stools, burning stomach and weakness.", "hi": "फूड पॉइजनिंग, पतले दस्त और पेट की जलन में प्रमुख औषधि।", "gu": "ફૂડ પોઇઝનિંગ, પાણી જેવા ઝાડા અને પેટની બળતરામાં ઉત્તમ." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills every 3 hours during acute diarrhea.", "hi": "तीव्र अवस्था में 4 गोलियां हर 3 घंटे में।", "gu": "તીવ્ર સ્થિતિમાં 4 ગોળી દર 3 કલાકે." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "pneumonia": {
+    "allopathy": [
+      {
+        "id": "emergency_referral_oxygen",
+        "name": { "en": "Immediate Hospital Referral & Emergency Oxygen", "hi": "तत्काल अस्पताल संदर्भ + ऑक्सीजन", "gu": "તત્કાલ હોસ્પિટલ રીફર + ઇમરજન્સી ઓક્સિજન" },
+        "system": "allopathy",
+        "benefit": { "en": "Critical emergency referral required for antibiotic treatment and oxygen support.", "hi": "एंटीबायोटिक उपचार और ऑक्सीजन के लिए तुरंत अस्पताल ले जाएं।", "gu": "એન્ટિબાયોટિક સારવાર અને ઓક્સિજન માટે તુરંત હોસ્પિટલ જવું." },
+        "sideEffects": { "en": "N/A - Emergency procedures.", "hi": "लागू नहीं - आपातकालीन स्थिति।", "gu": "લાગુ નથી - ઇમરજન્સી." },
+        "howToTake": { "en": "Go immediately to Primary Health Centre (PHC) or district hospital.", "hi": "तुरंत नजदीकी प्राथमिक स्वास्थ्य केंद्र या अस्पताल जाएं।", "gu": "તુરંત નજીકના સરકારી દવાખાને પહોંચો." },
+        "contraindications": { "en": "Do NOT delay medical transfer at home.", "hi": "घर पर इलाज में देरी न करें।", "gu": "ઘરે ઇલાજ કરવામાં વિલંબ ન કરવો." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "kanchanar_shwas_kuthar",
+        "name": { "en": "Shwas Kuthar Ras (Supportive)", "hi": "श्वास कुठार रस (सहायक)", "gu": "શ્વાસ કુઠાર રસ (સહાયક ઔષધિ)" },
+        "system": "ayurveda",
+        "benefit": { "en": "Supportive bronchodilator for respiratory congestion alongside hospital therapy.", "hi": "अस्पताल के इलाज के साथ श्वास में राहत के लिए सहायक।", "gu": "હોસ્પિટલની સારવાર સાથે શ્વાસમાં આરામ માટે સહાયક." },
+        "sideEffects": { "en": "Contains heavy metal ash; must be taken strictly under supervision.", "hi": "वैद्य की देखरेख में ही लें।", "gu": "નિષ્ણાત વૈદ્યની દેખરેખમાં જ લેવી." },
+        "howToTake": { "en": "1 tablet twice daily with honey under professional Ayurvedic supervision.", "hi": "वैद्य के परामर्श अनुसार 1 गोली दिन में दो बार।", "gu": "વૈદ્યની સલાહ મુજબ 1 ગોળી દિવસમાં બે વાર." },
+        "contraindications": { "en": "Unsupervised usage in children or pregnancy.", "hi": "बिना परामर्श बच्चों या गर्भवती को न दें।", "gu": "સલાહ વિના બાળકો કે ગર્ભવતીને ન આપવી." },
+        "ageRestriction": "adult",
+        "pregnancySafe": false,
+        "lactationSafe": false,
+        "isOTC": false
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "antim_tart_30c",
+        "name": { "en": "Antimonium Tartaricum 30C", "hi": "एंटिमोनियम टार्टारिकम 30C", "gu": "એન્ટિમોનિયમ ટાર્ટારિકમ 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Rattling phlegm in chest with difficult hawking and breathlessness.", "hi": "छाती में घड़घड़ाहट और सांस लेने में कठिनाई में सहायक।", "gu": "છાતીમાં કફનો અવાજ અને શ્વાસ ચડવામાં સહાયક." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills dissolved in spoonful water every 2 hours until hospital arrival.", "hi": "अस्पताल पहुंचने तक 4 गोलियां हर 2 घंटे में लें।", "gu": "હોસ્પિટલ પહોંચો ત્યાં સુધી દર 2 કલાકે 4 ગોળી." },
+        "contraindications": { "en": "Do NOT substitute emergency hospitalization.", "hi": "अस्पताल जाने में देरी न करें।", "gu": "હોસ્પિટલમાં જવાનું ટાળવું નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "malaria": {
+    "allopathy": [
+      {
+        "id": "paracetamol_tepid_sponge",
+        "name": { "en": "Paracetamol 500mg + Tepid Water Sponging", "hi": "पैरासिटामोल + ताजे पानी की पट्टी", "gu": "પેરાસિટામોલ + પાણીના પોતા" },
+        "system": "allopathy",
+        "benefit": { "en": "Controls severe high fever chills while awaiting lab blood test report.", "hi": "ब्लड टेस्ट रिपोर्ट आने तक तेज बुखार और कंपकंपी को नियंत्रित करता है।", "gu": "રિપોર્ટ આવે ત્યાં સુધી તીવ્ર તાવ નિયંત્રિત કરે છે." },
+        "sideEffects": { "en": "Overdose liver risk.", "hi": "अधिक मात्रा हानिकारक।", "gu": "ઓવરડોઝ નુકસાનકારક." },
+        "howToTake": { "en": "1 tablet every 6 hours if temp > 101°F + wet forehead cloth.", "hi": "101°F से अधिक बुखार पर 1 गोली + माथे पर गीली पट्टी।", "gu": "101°F થી વધુ તાવ હોય તો 1 ગોળી + માથા પર ભીનું પોતા." },
+        "contraindications": { "en": "Do not skip blood smear / RDT test.", "hi": "खून की जांच (मलेरिया टेस्ट) जरूर कराएं।", "gu": "લોહીની મલેરિયા તપાસ અચૂક કરાવવી." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "mahagandhak_amritarishta",
+        "name": { "en": "Amritarishta Liquid", "hi": "अमृतादिष्ट काढ़ा", "gu": "અમૃતારિષ્ટ ક્વાથ" },
+        "system": "ayurveda",
+        "benefit": { "en": "Classical Ayurvedic tonic for chronic and periodic fevers with shivering.", "hi": "बार-बार आने वाले बुखार और कंपकंपी में अत्यंत लाभकारी।", "gu": "વારંવાર આવતા તાવ અને ધ્રુજારીમાં અત્યંત લાભદાયી." },
+        "sideEffects": { "en": "Self-generated alcohol content (~5-10%); mild warmth.", "hi": "स्वाभाविक आसव गुण; पेट में हल्की गर्मी।", "gu": "હળવી ગરમી ઉત્પન્ન કરી શકે." },
+        "howToTake": { "en": "15ml mixed with equal warm water twice daily after meals.", "hi": "15ml बराबर पानी मिलाकर भोजन के बाद दिन में दो बार।", "gu": "15ml સરખા પાણી સાથે જમ્યા પછી દિવસમાં બે વાર." },
+        "contraindications": { "en": "Avoid in hyperacidity or pregnancy without approval.", "hi": "गर्भावस्था या अति-एसिडिटी में बचें।", "gu": "ગર્ભાવસ્થા કે વધુ એસિડિટીમાં ટાળવું." },
+        "ageRestriction": "adult",
+        "pregnancySafe": false,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "chinium_sulph_30c",
+        "name": { "en": "Chininum Sulphuricum 30C", "hi": "चिनीनम सल्फरिकम 30C", "gu": "ચિનીનમ સલ્ફ્યુરિકમ 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Periodic chills with shivering followed by profuse sweat and headache.", "hi": "समय-समय पर कंपकंपी के साथ बुखार और पसीना आने में उपयोगी।", "gu": "સમયાંતરે ધ્રુજારી સાથે તાવ અને પરસેવો થવામાં ઉપયોગી." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills 3 times daily.", "hi": "4 गोलियां दिन में 3 बार।", "gu": "4 ગોળી દિવસમાં 3 વાર." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "typhoid": {
+    "allopathy": [
+      {
+        "id": "paracetamol_fluid_rest",
+        "name": { "en": "Paracetamol 500mg + Light Bland Diet & Fluids", "hi": "पैरासिटामोल + सुपाच्य हल्का भोजन", "gu": "પેરાસિટામોલ + હળવો પચવામાં સરળ ખોરાક" },
+        "system": "allopathy",
+        "benefit": { "en": "Symptomatic relief for step-ladder fever and stomach discomfort.", "hi": "टाइफाइड के बुखार और पेट की असहजता में लक्षण-आधारित राहत।", "gu": "ટાઇફોઇડના તાવ અને પેટની તકલીફમાં રાહત." },
+        "sideEffects": { "en": "Overdose risk.", "hi": "अधिक मात्रा से बचें।", "gu": "વધુ ડોઝથી બચવું." },
+        "howToTake": { "en": "1 tab as needed for fever. Eat khichdi, boiled water, dal soup.", "hi": "बुखार होने पर 1 गोली। खिचड़ी, उबला पानी और दाल का पानी पिएं।", "gu": "તાવ આવે ત્યારે 1 ગોળી. ખીચડી, ઉકાળેલું પાણી પીવું." },
+        "contraindications": { "en": "Full course of physician-prescribed antibiotics is mandatory.", "hi": "डॉक्टर की सलाह से एंटीबायोटिक की पूरी खुराक लें।", "gu": "ડૉક્ટરની એન્ટિબાયોટિક કોર્સ પૂરી કરવી." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "mahasudarshan_churna",
+        "name": { "en": "Mahasudarshan Churna", "hi": "महासुदर्शन चूर्ण", "gu": "મહાસુદર્શન ચૂર્ણ" },
+        "system": "ayurveda",
+        "benefit": { "en": "Clears lingering toxins (Ama) from digestive tract and relieves enteric fevers.", "hi": "आंतों के विषाक्त पदार्थों को दूर कर आंतों के बुखार को शांत करता है।", "gu": "આંતરડાના ઝેરી તત્વો દૂર કરી તાવ શાંત કરે છે." },
+        "sideEffects": { "en": "Strong bitter taste.", "hi": "काफी कड़वा स्वाद।", "gu": "ખૂબ કડવો સ્વાદ." },
+        "howToTake": { "en": "3g twice daily with warm water after meals.", "hi": "3 ग्राम दिन में दो बार भोजन के बाद गुनगुने पानी से।", "gu": "3 ગ્રામ દિવસમાં બે વાર જમ્યા પછી નવશેકા પાણી સાથે." },
+        "contraindications": { "en": "Avoid during acute dehydration.", "hi": "गंभीर निर्जलीकरण में सावधानी।", "gu": "વધુ પડતા ડીહાઇડ્રેશનમાં ટાળવું." },
+        "ageRestriction": "adult",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "baptisia_tinctoria_30c",
+        "name": { "en": "Baptisia Tinctoria 30C", "hi": "बैप्टीशिया टिंक्टोरिया 30C", "gu": "બેપ્ટિશિયા ટિંક્ટોરિયા 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Typhoid fever state with extreme weakness, foul breath, and drowsiness.", "hi": "टाइफाइड बुखार, भारी सुस्ती और अत्यधिक कमजोरी में लाभदायक।", "gu": "ટાઇફોઇડ તાવ, ભારે સુસ્તી અને નબળાઇમાં ઉપયોગી." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills 3 times a day.", "hi": "4 गोलियां दिन में 3 बार।", "gu": "4 ગોળી દિવસમાં 3 વાર." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "dengue": {
+    "allopathy": [
+      {
+        "id": "paracetamol_strict_ors",
+        "name": { "en": "Paracetamol 500mg + Abundant ORS/Fluids", "hi": "पैरासिटामोल + प्रचुर मात्रा में तरल पदार्थ", "gu": "પેરાસિટામોલ + પુષ્કળ પ્રવાહી" },
+        "system": "allopathy",
+        "benefit": { "en": "Safely manages high fever and joint pain while maintaining plasma hydration.", "hi": "प्लेटलेट्स की सुरक्षा के लिए सुरक्षित बुखार नियंत्रण व हाइड्रेशन।", "gu": "તાવ નિયંત્રિત કરી પ્લેટલેટ્સ અને પ્રવાહી જાળવી રાખે છે." },
+        "sideEffects": { "en": "Never take Aspirin, Ibuprofen, or NSAIDs as they increase bleeding risk!", "hi": "एस्पिरिन या कॉम्बिफ्लाम कभी न लें, इससे रक्तस्राव बढ़ सकता है!", "gu": "એસ્પિરિન કે બ્રુફેન ક્યારેય ન લેવી, લોહી વહેવાનું જોખમ વધી જાય!" },
+        "howToTake": { "en": "1 tab Paracetamol every 6-8 hours + 3-4 Litres fluid daily (coconut water, ORS).", "hi": "हर 6-8 घंटे में 1 गोली पैरासिटामोल + दिन में 3-4 लीटर तरल (नारियल पानी)।", "gu": "દર 6-8 કલાકે 1 ગોળી + દિવસમાં 3-4 લીટર પ્રવાહી (નાળિયેર પાણી, ઓઆરએસ)." },
+        "contraindications": { "en": "STRICTLY AVOID NSAIDs (Ibuprofen, Diclofenac, Aspirin).", "hi": "आइबूप्रोफेन या अन्य दर्द निवारक कतई न लें।", "gu": "કોઈપણ પેઇનકિલર (બ્રુફેન વગેરે) બિલકુલ ન લેવી." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "papaya_leaf_extract",
+        "name": { "en": "Papaya Leaf Extract / Carica Papaya Syrup", "hi": "पपीते के पत्तों का रस", "gu": "પપૈયાના પાનનો રસ / પપૈયા સિરપ" },
+        "system": "ayurveda",
+        "benefit": { "en": "Promotes platelet count stability and supports immune recovery in Dengue.", "hi": "डेंगू में प्लेटलेट काउंट बढ़ाने और रिकवरी में सहायक।", "gu": "ડેન્ગ્યુમાં પ્લેટલેટ કાઉન્ટ જાળવવામાં અને સુધારવામાં અત્યંત મદદરૂપ." },
+        "sideEffects": { "en": "Bitter taste; occasional mild stomach upset.", "hi": "कड़वा स्वाद; कभी-कभी पेट में बेचैनी।", "gu": "કડવો સ્વાદ; ક્યારેક પેટમાં અસ્વસ્થતા." },
+        "howToTake": { "en": "10-20ml fresh leaf juice or 1-2 tablets twice daily.", "hi": "10-20ml ताज़ा रस या 1-2 गोली दिन में दो बार।", "gu": "10-20ml તાજો રસ કે 1-2 ગોળી દિવસમાં બે વાર." },
+        "contraindications": { "en": "Caution in severe gastritis.", "hi": "गंभीर गैस्ट्रिक समस्याओं में न लें।", "gu": "ગંભીર ગર્ભાશય કે પેટના સોજામાં ટાળવું." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "eupatorium_perf_30c",
+        "name": { "en": "Eupatorium Perfoliatum 30C", "hi": "यूपेटोरियम पर्फोलिएटम 30C", "gu": "યુપેટોરિયમ પરફોલિએટમ 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Specific remedy for severe 'break-bone' body aches and eye pain in Dengue.", "hi": "हड्डी तोड़ बुखार और तीव्र शरीर दर्द से राहत दिलाने वाली प्रमुख दवा।", "gu": "હાડકાં તૂટે તેવા તીવ્ર તાવ અને શરીરના દુખાવામાં ઉત્તમ." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills dissolved under tongue 4 times daily.", "hi": "4 गोलियां दिन में 4 बार।", "gu": "4 ગોળી દિવસમાં 4 વાર." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "uti": {
+    "allopathy": [
+      {
+        "id": "alkaline_citrate_syrup",
+        "name": { "en": "Disodium Hydrogen Citrate Syrup", "hi": "अल्कलाइन सिरप (साइट्रेट घोल)", "gu": "અલ્કલાઇન સિરપ (સાઇટ્રેટ સોલ્યુશન)" },
+        "system": "allopathy",
+        "benefit": { "en": "Alkalinizes urine to provide fast relief from severe burning urination.", "hi": "पेशाब की जलन को शांत करने के लिए मूत्र को अल्कलाइन बनाता है।", "gu": "પેશાબની તીવ્ર બળતરામાં ઝડપી આરામ આપે છે." },
+        "sideEffects": { "en": "Mild stomach cramping or loose stools if taken undiluted.", "hi": "बिना पानी मिलाए लेने पर पेट दर्द हो सकता है।", "gu": "પાણી ઉમેર્યા વગર લેવાથી પેટમાં દુખાવો થઈ શકે." },
+        "howToTake": { "en": "Mix 2 teaspoons (10ml) in a glass of water 3 times daily.", "hi": "1 गिलास पानी में 2 चम्मच मिलाकर दिन में 3 बार पिएं।", "gu": "1 ગ્લાસ પાણીમાં 2 ચમચી ઉમેરી દિવસમાં 3 વાર પીવો." },
+        "contraindications": { "en": "Caution in severe renal failure or high blood pressure.", "hi": "किडनी की गंभीर बीमारी में सावधानी।", "gu": "કિડનીની ગંભીર બીમારીમાં સાવધાની." },
+        "ageRestriction": "child",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "gokshuradi_guggulu",
+        "name": { "en": "Gokshuradi Guggulu", "hi": "गोक्षुरादि गुग्गुलु", "gu": "ગોક્ષુરાદિ ગુગ્ગુલુ" },
+        "system": "ayurveda",
+        "benefit": { "en": "Rejuvenates urinary tract, relieves dysuria and clears urinary tract infections.", "hi": "मूत्र मार्ग के संक्रमण और जलन को दूर करने में सिद्ध औषधि।", "gu": "પેશાબની બળતરા અને ઇન્ફેક્શન દૂર કરવામાં સિદ્ધ ઔષધિ." },
+        "sideEffects": { "en": "Mild gastric discomfort if taken on empty stomach.", "hi": "खाली पेट लेने पर हल्की गैस हो सकती है।", "gu": "ખાલી પેટે લેવાથી ગેસ થઈ શકે." },
+        "howToTake": { "en": "2 tablets twice daily with lukewarm water after meals.", "hi": "2 गोली दिन में दो बार भोजन के बाद गुनगुने पानी से।", "gu": "2 ગોળી દિવસમાં બે વાર જમ્યા પછી નવશેકા પાણી સાથે." },
+        "contraindications": { "en": "Consult doctor during pregnancy.", "hi": "गर्भावस्था में डॉक्टर से सलाह लें।", "gu": "ગર્ભાવસ્થા દરમિયાન ડોક્ટરની સલાહ લેવી." },
+        "ageRestriction": "adult",
+        "pregnancySafe": false,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "cantharis_30c",
+        "name": { "en": "Cantharis 30C", "hi": "कैंथरिस 30C", "gu": "કેન્થરિસ 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Intense burning pain before, during, and after passing urine drop-by-drop.", "hi": "पेशाब करते समय अत्यधिक जलन और बूंद-बूंद पेशाब आने में असरदार।", "gu": "પેશાબ કરતી વખતે અતિશય બળતરા અને ટીંપે-ટીંપે પેશાબ થવામાં અતિ ગુણકારી." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills under tongue every 3 hours.", "hi": "4 गोलियां हर 3 घंटे में।", "gu": "4 ગોળી દર 3 કલાકે." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "migraine": {
+    "allopathy": [
+      {
+        "id": "paracetamol_caffeine_rest",
+        "name": { "en": "Paracetamol 500mg + Dark Quiet Room Rest", "hi": "पैरासिटामोल + अंधेरे शांत कमरे में विश्राम", "gu": "પેરાસિટામોલ + અંધારા શાંત રૂમમાં આરામ" },
+        "system": "allopathy",
+        "benefit": { "en": "Relieves throbbing one-sided headache, nausea, and light sensitivity.", "hi": "आधे सिर के धड़कन वाले दर्द और रोशनी की संवेदनशीलता में राहत।", "gu": "અડધા માથાના દુખાવામાં અને અજવાળાથી થતી તકલીફમાં આરામ." },
+        "sideEffects": { "en": "Avoid excessive medication overuse.", "hi": "दवाओं के अत्यधिक उपयोग से बचें।", "gu": "દવાઓનો વધુ પડતો ઉપયોગ ટાળવો." },
+        "howToTake": { "en": "Take 1 tablet at onset of headache with a glass of water.", "hi": "सिरदर्द शुरू होते ही 1 गोली पानी के साथ लें।", "gu": "દુખાવો શરૂ થતાં જ 1 ગોળી પાણી સાથે લેવી." },
+        "contraindications": { "en": "Avoid known triggers (bright light, skipped meals).", "hi": "तेज धूप या भूखे रहने से बचें।", "gu": "તડકો કે ભૂખ્યા રહેવાનું ટાળવું." },
+        "ageRestriction": "child",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "pathyadi_kadha",
+        "name": { "en": "Pathyadi Kadha", "hi": "पथ्यादि काढ़ा", "gu": "પથ્યાદિ ક્વાથ" },
+        "system": "ayurveda",
+        "benefit": { "en": "Classic Ayurvedic formulation specifically indicated for vascular and migraine headaches.", "hi": "माइग्रेन और पुराने सिरदर्द को जड़ से मिटाने में अत्यंत उपयोगी।", "gu": "માઇગ્રેન અને જૂના માથાના દુખાવામાં ખૂબ જ ગુણકારી." },
+        "sideEffects": { "en": "Mild astringent taste.", "hi": "कसैला स्वाद।", "gu": "તૂરો સ્વાદ." },
+        "howToTake": { "en": "15ml with equal warm water twice daily after meals.", "hi": "15ml बराबर गुनगुने पानी के साथ दिन में दो बार।", "gu": "15ml સરખા નવશેકા પાણી સાથે દિવસમાં બે વાર." },
+        "contraindications": { "en": "Avoid on empty stomach.", "hi": "खाली पेट न लें।", "gu": "ખાલી પેટે ન લેવું." },
+        "ageRestriction": "adult",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "belladonna_30c_migraine",
+        "name": { "en": "Belladonna 30C", "hi": "बेलाडोना 30C", "gu": "બેલાડોના 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Sudden violent throbbing headache with redness of face and light/sound sensitivity.", "hi": "अचानक तेज धड़कने वाला सिरदर्द, लाल चेहरा व रोशनी से चिढ़।", "gu": "અચાનક શરુ થતો તીવ્ર ધબકારા મારતો દુખાવો અને પ્રકાશની તકલીફ." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills under tongue every 2-3 hours during episode.", "hi": "दौरे के समय हर 2-3 घंटे में 4 गोलियां।", "gu": "દુખાવા સમયે દર 2-3 કલાકે 4 ગોળી." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "tonsillitis": {
+    "allopathy": [
+      {
+        "id": "warm_saline_gargle_paracetamol",
+        "name": { "en": "Warm Salt Water Gargles + Paracetamol", "hi": "गुनगुने नमक के पानी के गरारे + पैरासिटामोल", "gu": "નવશેકા મીઠાના પાણીના કોગળા + પેરાસિટામોલ" },
+        "system": "allopathy",
+        "benefit": { "en": "Reduces swelling in tonsils, eases difficulty swallowing, and lowers fever.", "hi": "टॉन्सिल की सूजन कम करता है और निगलने में आसानी देता है।", "gu": "ટોન્સિલનો સોજો ઓછો કરે છે અને ગળવામાં રાહત આપે છે." },
+        "sideEffects": { "en": "Do not swallow salt water.", "hi": "नमक का पानी न निगलें।", "gu": "મીઠાનું પાણી ગળી જવું નહીં." },
+        "howToTake": { "en": "Gargle with warm salt water 4 times daily. Paracetamol 500mg if pain/fever.", "hi": "दिन में 4 बार नमक के पानी से गरारे करें। दर्द पर 1 गोली पैरासिटामोल।", "gu": "દિવસમાં 4 વાર ગરમ મીઠાના પાણીથી કોગળા કરો. 1 ગોળી તાવ/દુખાવામાં." },
+        "contraindications": { "en": "Ensure children don't choke while gargling.", "hi": "छोटे बच्चों को गरारे कराने में सावधानी रखें।", "gu": "નાના બાળકોને કોગળા કરતી વખતે સંભાળવું." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "khadiradi_vati",
+        "name": { "en": "Khadiradi Vati (Lozenges)", "hi": "खदिरादि वटी", "gu": "ખદિરાદિ વટી" },
+        "system": "ayurveda",
+        "benefit": { "en": "Soothing herbal lozenge for throat ulcers, tonsil swelling, and hoarseness.", "hi": "गले की सूजन, टॉन्सिल और आवाज बैठने में रामबाण गोली।", "gu": "ગળાના સોજા, ટોન્સિલ અને અવાજ બેસી જવામાં રામબાણ." },
+        "sideEffects": { "en": "Astringent dry feel.", "hi": "मुंह में सूखापन।", "gu": "મોઢામાં શુષ્કતા." },
+        "howToTake": { "en": "Suck 1 tablet slowly in mouth 3-4 times a day.", "hi": "दिन में 3-4 बार 1 गोली मुंह में धीरे-धीरे चूसें।", "gu": "દિવસમાં 3-4 વાર 1 ગોળી મોઢામાં ધીમે-ધીમે ચૂસવી." },
+        "contraindications": { "en": "Choking risk in young toddlers under 3.", "hi": "3 साल से छोटे बच्चों को न चूसने दें।", "gu": "3 વર્ષથી ના નાના બાળકોને ન આપવી." },
+        "ageRestriction": "child",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "mercurius_sol_30c",
+        "name": { "en": "Mercurius Solubilis 30C", "hi": "मर्क्यूरियस सॉल्युबिलिस 30C", "gu": "મર્ક્યુરિયસ સોલ્યુબિલિસ 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Painful throat swallowing with painful tonsils, salivation, and bad breath.", "hi": "टॉन्सिल का दर्द, अधिक थूक आना और मुंह की दुर्गंध में आराम।", "gu": "ટોન્સિલનો દુખાવો, લાળ ગળવી અને મોઢાની દુર્ગંધમાં લાભદાયી." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills 3 times a day.", "hi": "4 गोलियां दिन में 3 बार।", "gu": "4 ગોળી દિવસમાં 3 વાર." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "heat_exhaustion": {
+    "allopathy": [
+      {
+        "id": "ors_cool_shade",
+        "name": { "en": "ORS Drink + Cool Shade & Fan Rest", "hi": "ओआरएस + ठंडी छांव व पंखे में आराम", "gu": "ઓઆરએસ + ઠંડા છાંયડે આરામ" },
+        "system": "allopathy",
+        "benefit": { "en": "Rapidly replaces lost water and minerals caused by heat exposure and sweating.", "hi": "गर्मी और पसीने से नुकसान हुए पानी और खनिज की तुरंत भरपाई।", "gu": "ગરમી અને પરસેવાથી ઘટેલા પાણી અને ક્ષારોની તુરંત ભરપાઈ." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "Sip 1-2 Litres ORS water continuously over 2 hours.", "hi": "2 घंटे में 1-2 लीटर ओआरएस पानी धीरे-धीरे पिएं।", "gu": "2 કલાકમાં 1-2 લીટર ઓઆરએસ પાણી થોડું થોડું પીવો." },
+        "contraindications": { "en": "If heat stroke (unconscious/no sweating), call 108 immediately!", "hi": "यदि मरीज बेहोश हो जाए तो तुरंत 108 पर कॉल करें!", "gu": "દર્દી બેભાન થાય તો તુરંત 108 બોલાવવી!" },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "aam_panna_gulkand",
+        "name": { "en": "Raw Mango Panna / Gulkand Water", "hi": "कच्चे आम का पन्ना / गुलकंद शर्बत", "gu": "કાચી કેરીનો પન્નો / ગુલકંદ શરબત" },
+        "system": "ayurveda",
+        "benefit": { "en": "Traditional Indian cooling elixir that combats heat stroke, thirst, and sun fatigue.", "hi": "लू से बचाव और शरीर की गर्मी शांत करने का पारंपरिक उपाय।", "gu": "લૂ અને ગરમીની અસરમાંથી ઉગારતો પ્રાચીન ભારતીય પ્રયોગ." },
+        "sideEffects": { "en": "Diabetics restrict added sugar.", "hi": "मधुमेह के रोगी चीनी कम रखें।", "gu": "ડાયાબિટીસવાળા લોકોએ ખાંડ ન ઉમેરવી." },
+        "howToTake": { "en": "1 glass cooled mango panna or 1 spoon gulkand in water twice daily.", "hi": "1 गिलास ठंडा पन्ना या 1 चम्मच गुलकंद पानी के साथ पिएं।", "gu": "1 ગ્લાસ ઠંડો પન્નો કે 1 ચમચી ગુલકંદ દિવસમાં બે વાર." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "glonoine_30c",
+        "name": { "en": "Glonoinum 30C", "hi": "ग्लोनोइनम 30C", "gu": "ગ્લોનોઇનમ 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Throbbing sun headache, heat stroke dizziness, and feeling hot after sun exposure.", "hi": "धूप में घूमने से होने वाले तेज सिरदर्द और चक्कर में लाभदायक।", "gu": "તડકામાં ફરવાથી થતા માથાના તીવ્ર દુખાવા અને ચક્કરમાં રામબાણ." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills under tongue every 2 hours until headache eases.", "hi": "सिरदर्द कम होने तक हर 2 घंटे में 4 गोलियां।", "gu": "દુખાવો હળવો થાય ત્યાં સુધી દર 2 કલાકે 4 ગોળી." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "gerd": {
+    "allopathy": [
+      {
+        "id": "antacid_liquid_gel",
+        "name": { "en": "Magnesium/Aluminum Hydroxide Gel", "hi": "एंटासिड लिक्विड जेल", "gu": "એન્ટાસિડ લિક્વિડ જેલ" },
+        "system": "allopathy",
+        "benefit": { "en": "Neutralizes stomach acid immediately, relieving heartburn and upper chest burning.", "hi": "पेट के एसिड को शांत कर सीने और पेट की जलन तुरंत दूर करता है।", "gu": "પેટના એસિડને તુરંત શાંત કરી બળતરામાં રાહત આપે છે." },
+        "sideEffects": { "en": "Mild laxative effect or slight constipation.", "hi": "हल्की कब्ज या दस्त।", "gu": "હળવી કબજિયાત કે પેટ સાફ થવું." },
+        "howToTake": { "en": "Take 2 teaspoons (10ml) 30 mins after meals and at bedtime.", "hi": "भोजन के 30 मिनट बाद और सोते समय 2 चम्मच (10ml) पिएं।", "gu": "જમ્યા પછી 30 મિનિટે અને રાત્રે 2 ચમચી લેવું." },
+        "contraindications": { "en": "Avoid chronic daily use without investigating causes.", "hi": "डॉक्टर की सलाह के बिना रोज लंबे समय तक न लें।", "gu": "સલાહ વિના લાંબો સમય ન લેવું." },
+        "ageRestriction": "child",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "avipattikar_churna",
+        "name": { "en": "Avipattikar Churna", "hi": "अविपत्तिकर चूर्ण", "gu": "અવિપત્તિકર ચૂર્ણ" },
+        "system": "ayurveda",
+        "benefit": { "en": "Classical formulation for Pitta disorders, hyperacidity, sour belching, and heartburn.", "hi": "अम्लपित्त (एसिडिटी), खट्टी डकार और सीने की जलन का उत्तम आयुर्वेदिक इलाज।", "gu": "એસિડિટી, ખાટા ઓડકાર અને છાતીની બળતરામાં શ્રેષ્ઠ આયુર્વેદિક ઉપાય." },
+        "sideEffects": { "en": "Mild laxative; contains sugar.", "hi": "पेट साफ कर सकता है।", "gu": "ઝાડા જેવું થઈ શકે." },
+        "howToTake": { "en": "3-5g with cool water or milk before meals twice daily.", "hi": "3-5 ग्राम ताजे पानी या दूध के साथ भोजन से पहले।", "gu": "3-5 ગ્રામ પાણી કે દૂધ સાથે જમતા પહેલા." },
+        "contraindications": { "en": "Caution in severe watery diarrhea.", "hi": "दस्त होने पर न लें।", "gu": "ઝાડા હોય તો ન લેવું." },
+        "ageRestriction": "adult",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "nux_vomica_30c",
+        "name": { "en": "Nux Vomica 30C", "hi": "नक्स वोमिका 30C", "gu": "નક્સ વોમિકા 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Acidity, stomach heaviness, heartburn, and bloating after spicy food or coffee.", "hi": "मसालेदार भोजन, चाय-कॉफी के बाद होने वाली एसिडिटी और भारीपन में।", "gu": "તીખો ખોરાક કે ચા-કોફી પછી થતી એસિડિટી અને અગવડમાં." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills under tongue at bedtime.", "hi": "सोते समय 4 गोलियां जीभ के नीचे।", "gu": "રાત્રે સૂતી વખતે 4 ગોળી જીભ નીચે." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "asthma": {
+    "allopathy": [
+      {
+        "id": "salbutamol_inhaler_referral",
+        "name": { "en": "Salbutamol Inhaler (Emergency) + Urgent Clinic Referral", "hi": "साल्बुटामोल इनहेलर + आपातकालीन अस्पताल परामर्श", "gu": "સાલ્બ્યુટામોલ ઇનહેલર + તત્કાલ હોસ્પિટલ રીફર" },
+        "system": "allopathy",
+        "benefit": { "en": "Rapidly dilates narrowed airways during acute asthma wheezing breathlessness.", "hi": "सांस फूलने और सांस की घरघराहट में तुरंत हवा की नली खोलता है।", "gu": "શ્વાસ ચડવામાં તુરંત શ્વાસનળી પહોળી કરી શ્વાસ લેવામાં આરામ આપે છે." },
+        "sideEffects": { "en": "Fine hand tremors, mild rapid heartbeat.", "hi": "हाथों में हल्की कपकपी या दिल की धड़कन तेज होना।", "gu": "હાથમાં હળવી ધ્રુજારી કે હૃદયના ધબકારા વધવા." },
+        "howToTake": { "en": "1-2 puffs via spacer immediately; repeat in 20 mins if needed + go to hospital.", "hi": "2 पफ इनहेलर लें; सुधार न होने पर तुरंत अस्पताल ले जाएं।", "gu": "ઇનહેલરથી 2 પફ તુરંત લો; રાહત ન થાય તો હોસ્પિટલ જવું." },
+        "contraindications": { "en": "Do NOT delay medical referral if lips turn blue.", "hi": "होंठ नीले पड़ने पर बिना देरी अस्पताल ले जाएं।", "gu": "હોઠ ભૂરા પડે તો સહેજ પણ વિલંબ ન કરવો." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "kanakasava",
+        "name": { "en": "Kanakasava Liquid", "hi": "कनकासव", "gu": "કનકાસવ" },
+        "system": "ayurveda",
+        "benefit": { "en": "Traditional Ayurvedic expectorant bronchodilator for chronic asthma and wheezing.", "hi": "दमा, श्वास लेने में तकलीफ और पुरानी खांसी में राहत देता है।", "gu": "દમ, શ્વાસ ચડવો અને જૂની ખાંસીમાં રાહત આપે છે." },
+        "sideEffects": { "en": "Contains natural herbs; take in prescribed dosage.", "hi": "निर्धारित खुराक में ही लें।", "gu": "નક્કી કરેલ ડોઝમાં જ લેવું." },
+        "howToTake": { "en": "15ml with equal water after meals under Ayurvedic supervision.", "hi": "15ml बराबर पानी के साथ भोजन के बाद।", "gu": "15ml સરખા પાણી સાથે જમ્યા પછી." },
+        "contraindications": { "en": "Unsupervised in pregnancy or infants.", "hi": "गर्भावस्था में बिना सलाह न लें।", "gu": "ગર્ભાવસ્થામાં સલાહ વગર ન આપવી." },
+        "ageRestriction": "adult",
+        "pregnancySafe": false,
+        "lactationSafe": true,
+        "isOTC": false
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "arsenicum_alb_asthma",
+        "name": { "en": "Arsenicum Album 30C", "hi": "आर्सेनिकम एल्बम 30C", "gu": "આર્સેનિકમ આલ્બમ 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Asthma worsening midnight (12-2 AM) with suffocative coughing and restlessness.", "hi": "आधी रात को बढ़ने वाले दमे के दौरे और घबराहट में असरदार।", "gu": "અડધી રાત્રે વધતા શ્વાસના હુમલા અને ગભરામણમાં રામબાણ." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills under tongue during acute attack.", "hi": "दौरे के समय 4 गोलियां।", "gu": "હુમલા સમયે 4 ગોળી." },
+        "contraindications": { "en": "Do not replace emergency inhalers.", "hi": "आपातकालीन इनहेलर बंद न करें।", "gu": "ઇમરજન્સી ઇનહેલર બંધ ન કરવું." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "appendicitis": {
+    "allopathy": [
+      {
+        "id": "strict_hospital_surgical_referral",
+        "name": { "en": "Immediate Surgical Hospital Referral (No Food/Water)", "hi": "तत्काल सर्जिकल अस्पताल संदर्भ (भूखे पेट रहें)", "gu": "તત્કાલ સર્જિકલ હોસ્પિટલ રીફર (કશું ખાવું/પીવું નહીં)" },
+        "system": "allopathy",
+        "benefit": { "en": "CRITICAL EMERGENCY! Suspected acute appendicitis requires emergency surgical evaluation.", "hi": "अत्यंत गंभीर स्थिति! तुरंत अस्पताल जाएं, कुछ भी खाने-पीने को न दें।", "gu": "અત્યંત ગંભીર સ્થિતિ! તુરંત હોસ્પિટલ પહોંચો, કશું પણ ખવડાવવું નહીં." },
+        "sideEffects": { "en": "Do NOT give laxatives or strong painkillers before hospital!", "hi": "अस्पताल पहुंचने से पहले कोई दर्द निवारक या जुलाब न दें!", "gu": "હોસ્પિટલ પહોંચતા પહેલા કોઈ પેઇનકિલર ન આપવી!" },
+        "howToTake": { "en": "Transport patient immediately to district/surgical hospital.", "hi": "मरीज को तुरंत नजदीकी बड़े अस्पताल ले जाएं।", "gu": "દર્દીને તુરંત મોટા દવાખાને લઈ જવો." },
+        "contraindications": { "en": "DO NOT APPLY HOT WATER BOTTLE ON ABDOMEN (risk of rupture).", "hi": "पेट पर गर्म पानी की सिकाई कतई न करें (अपेंडिक्स फटने का खतरा)।", "gu": "પેટ પર ગરમ શેક બિલકુલ ન કરવો (એપેન્ડિક્સ ફાટવાનું જોખમ)." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [],
+    "homeopathy": []
+  },
+  "chickenpox": {
+    "allopathy": [
+      {
+        "id": "calamine_paracetamol",
+        "name": { "en": "Calamine Lotion + Paracetamol 500mg", "hi": "कैलामाइन लोशन + पैरासिटामोल", "gu": "કેલામાઇન લોશન + પેરાસિટામોલ" },
+        "system": "allopathy",
+        "benefit": { "en": "Calamine relieves intense rash itching; Paracetamol controls fever and malaise.", "hi": "कैलामाइन से खुजली शांत होती है और पैरासिटामोल से बुखार उतरता है।", "gu": "કેલામાઇનથી ખંજવાળ શાંત થાય છે અને તાવ ઓછો થાય છે." },
+        "sideEffects": { "en": "None when lotion applied externally.", "hi": "लोशन लगाने पर कोई दुष्प्रभाव नहीं।", "gu": "લોશન બહારથી લગાડવામાં કોઈ આડઅસર નથી." },
+        "howToTake": { "en": "Apply lotion gently on itchy spots 3 times daily. Paracetamol for fever.", "hi": "दाने व खुजली वाली जगह कैलामाइन लगाएं। बुखार पर पैरासिटामोल।", "gu": "ખંજવાળ વાળી જગ્યાએ લોશન લગાડવું. તાવ માટે પેરાસિટામોલ." },
+        "contraindications": { "en": "DO NOT GIVE ASPIRIN TO CHILDREN (Reye's syndrome risk!).", "hi": "बच्चों को एस्पिरिन कतई न दें (गंभीर जोखिम)।", "gu": "બાળકોને એસ્પિરિન બિલકુલ ન આપવી." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "neem_water_wash",
+        "name": { "en": "Neem Water Wash & Neem Paste", "hi": "नीम के पत्तों के पानी से स्नान", "gu": "લીમડાના પાનના પાણીથી સ્નાન" },
+        "system": "ayurveda",
+        "benefit": { "en": "Potent natural antiviral and antiseptic that disinfects blisters and prevents scarring.", "hi": "प्राकृतिक एंटीसेप्टिक जो छालों के संक्रमण और खुजली को रोकता है।", "gu": "કુદરતી એન્ટિસેપ્ટિક જે ફોલ્લા અને ખંજવાળ અટકાવે છે." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "Boil fresh neem leaves in water; cool and sponge or bathe daily.", "hi": "नीम के पत्ते पानी में उबालकर ठंडे पानी से धीरे से स्नान कराएं।", "gu": "લીમડાના પાન પાણીમાં ઉકાળી ઠંડુ કરી સ્નાન કરાવવું." },
+        "contraindications": { "en": "Avoid scratching blisters directly.", "hi": "छालों को खुजलाएं नहीं।", "gu": "ફોલ્લા નખથી ફોડવા નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "rhus_tox_30c",
+        "name": { "en": "Rhus Toxicodendron 30C", "hi": "रस टॉक्सिकोडेंड्रोन 30C", "gu": "રસ ટોક્સિકોડેન્ડ્રોન 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Eases intense fluid-filled blister itching, fever, and restlessness.", "hi": "पानी भरे छालों की भयंकर खुजली और बुखार में आराम।", "gu": "પાણી ભરેલા ફોલ્લાની ખંજવાળ અને તાવમાં રાહત." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills 3 times a day.", "hi": "4 गोलियां दिन में 3 बार।", "gu": "4 ગોળી દિવસમાં 3 વાર." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "anemia": {
+    "allopathy": [
+      {
+        "id": "ferrous_sulfate_folic",
+        "name": { "en": "Iron + Folic Acid Supplement", "hi": "आयरन एवं फॉलिक एसिड गोली", "gu": "આયર્ન અને ફોલિક એસિડ ગોળી" },
+        "system": "allopathy",
+        "benefit": { "en": "Restores iron stores, increases hemoglobin levels, and cures chronic fatigue.", "hi": "शरीर में हीमोग्लोबिन बढ़ाकर खून की कमी और कमजोरी दूर करता है।", "gu": "હીમોગ્લોબિન વધારી લોહીની ટકાવારી અને નબળાઈ સુધારે છે." },
+        "sideEffects": { "en": "Black-colored stool (harmless), mild nausea or constipation.", "hi": "काले रंग का मल (सामान्य), हल्की मिचली या कब्ज।", "gu": "કાળા રંગનો મળ (સામાન્ય), હળવી ઉલટી જેવું." },
+        "howToTake": { "en": "1 tablet daily after food with Lemon juice / Vitamin C (increases absorption).", "hi": "भोजन के बाद नींबू पानी के साथ 1 गोली रोजाना लें।", "gu": "જમ્યા પછી લીંબુ પાણી સાથે રોજ 1 ગોળી લો." },
+        "contraindications": { "en": "Do NOT take with tea or milk (reduces absorption).", "hi": "चाय या दूध के साथ न लें (अवशोषण घटता है)।", "gu": "ચા કે દૂધ સાથે ન લેવી (અસર ઘટે છે)." },
+        "ageRestriction": "child",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "punarnavadi_mandur",
+        "name": { "en": "Punarnavadi Mandur", "hi": "पुनर्नवादि मंडूर", "gu": "પુનર્નવાદિ મંડૂર" },
+        "system": "ayurveda",
+        "benefit": { "en": "Famous Ayurvedic iron herbomineral compound for anemia, liver health, and swelling.", "hi": "एनीमिया, खून की कमी और सूजन को दूर करने की श्रेष्ठ औषधि।", "gu": "એનિમિયા, લોહીની ટાંચ અને સોજા દૂર કરતી ઉત્તમ ઔષધિ." },
+        "sideEffects": { "en": "Mild dark stool.", "hi": "मल का रंग गहरा होना।", "gu": "ઝાડાનો રંગ ઘાટો થવો." },
+        "howToTake": { "en": "2 tablets twice daily after meals with buttermilk or warm water.", "hi": "भोजन के बाद 2 गोली छाछ या पानी के साथ दिन में दो बार।", "gu": "જમ્યા પછી 2 ગોળી છાશ કે પાણી સાથે દિવસમાં બે વાર." },
+        "contraindications": { "en": "Caution in severe kidney dysfunction.", "hi": "किडनी रोग में सावधानी रखें।", "gu": "કિડનીની બીમારીમાં સાવધાની રાખવી." },
+        "ageRestriction": "adult",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "ferrum_met_30c",
+        "name": { "en": "Ferrum Metallicum 30C", "hi": "फेरम मेटालिकम 30C", "gu": "ફેરેમ મેટાલિકમ 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Pale face, paleness of lips/gums, extreme weakness, and fatigue upon exertion.", "hi": "चेहरे का पीलापन, कमजोरी और थकावट में सुधार लाता है।", "gu": "ચહેરાની પાંડુતા, નબળાઈ અને થાકમાં સુધારો કરે છે." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills 3 times a day.", "hi": "4 गोलियां दिन में 3 बार।", "gu": "4 ગોળી દિવસમાં 3 વાર." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "jaundice": {
+    "allopathy": [
+      {
+        "id": "high_glucose_bcomplex",
+        "name": { "en": "B-Complex + High Carbohydrate Low Fat Diet", "hi": "बी-कॉम्प्लेक्स + सुपाच्य कार्बोहाइड्रेट भोजन", "gu": "બી-કોમ્પ્લેક્સ + હળવો ચરબી વગરનો ખોરાક" },
+        "system": "allopathy",
+        "benefit": { "en": "Supports liver cell regeneration, provides energy and prevents liver strain.", "hi": "लिवर की रिकवरी में मदद करता है और शरीर को ऊर्जा प्रदान करता है।", "gu": "લીવરની રિકવરીમાં મદદ કરે છે અને શક્તિ આપે છે." },
+        "sideEffects": { "en": "Bright yellow urine (harmless Riboflavin excretion).", "hi": "पेशाब का पीला रंग (सामान्य)।", "gu": "પેશાબનો પીળો રંગ (સામાન્ય)." },
+        "howToTake": { "en": "1 B-complex capsule daily. Drink boiled sugarcane juice/glucose water.", "hi": "रोजाना 1 बी-कॉम्प्लेक्स कैप्सूल। गन्ने का रस व उबला पानी पिएं।", "gu": "રોજ 1 બી-કોમ્પ્લેક્સ કેપ્સ્યુલ. શેરડીનો રસ પીવો." },
+        "contraindications": { "en": "STRICTLY AVOID ALCOHOL AND FATTY FRIED FOOD.", "hi": "शराब और तला हुआ भोजन पूरी तरह बंद करें!", "gu": "દારૂ અને તળેલું ખાવાનું બિલકુલ બંધ રાખવું!" },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "liv_52_bhumi_amla",
+        "name": { "en": "Bhumyamalaki / Liv.52 Syrup", "hi": "भूम्यामलकी / लिव-52 सिरप", "gu": "ભૂમિઆંબળા / લિવ-52 સિરપ" },
+        "system": "ayurveda",
+        "benefit": { "en": "Premier hepatoprotective herb that protects liver cells and reduces bilirubin.", "hi": "लिवर की सुरक्षा और पीलिया (बिलीरुबिन) कम करने में सर्वश्रेष्ठ।", "gu": "લીવરનું રક્ષણ અને કમળો ઘટાડવામાં શ્રેષ્ઠ આયુર્વેદિક ઉપાય." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "2 teaspoons syrup twice daily before meals.", "hi": "भोजन से पहले 2 चम्मच दिन में दो बार।", "gu": "જમતા પહેલા 2 ચમચી દિવસમાં બે વાર." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "chelidonium_maj_30c",
+        "name": { "en": "Chelidonium Majus 30C", "hi": "चेलिडोनियम मेजस 30C", "gu": "ચેલિડોનિયમ મેજસ 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Key homeopathic liver remedy for yellow eyes/skin, right upper abdominal pain and nausea.", "hi": "पीली आंखें/त्वचा और लिवर के दर्द में होम्योपैथी की प्रमुख दवा।", "gu": "પીળી આંખો, ત્વચા અને લીવરના દુખાવામાં હોમિયોપેથીની મુખ્ય દવા." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills 3 times daily.", "hi": "4 गोलियां दिन में 3 बार।", "gu": "4 ગોળી દિવસમાં 3 વાર." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "ear_infection": {
+    "allopathy": [
+      {
+        "id": "paracetamol_dry_warm_compress",
+        "name": { "en": "Paracetamol 500mg + Dry Warm Cloth Compress", "hi": "पैरासिटामोल + सूखी गर्म सिकाई", "gu": "પેરાસિટામોલ 500mg + કાન પર સૂકો ગરમ શેક" },
+        "system": "allopathy",
+        "benefit": { "en": "Relieves severe throbbing ear pain and lowers ear infection fever.", "hi": "कान के तेज दर्द को शांत करता है और बुखार कम करता है।", "gu": "કાનનો દુખાવો ઘટાડે છે અને તાવ ઓછો કરે છે." },
+        "sideEffects": { "en": "Do not put drops without doctor consultation.", "hi": "डॉक्टर की सलाह के बिना ड्रॉप्स न डालें।", "gu": "ડૉક્ટરની સલાહ વિના ટીંપા ન નાખવા." },
+        "howToTake": { "en": "1 tablet Paracetamol for pain. Hold warm cloth over ear.", "hi": "दर्द होने पर 1 गोली पैरासिटामोल। कान पर गर्म कपड़ा रखें।", "gu": "દુખાવા સમયે 1 ગોળી. કાન પર ગરમ કપડું મૂકવું." },
+        "contraindications": { "en": "DO NOT POUR OIL OR LIQUID DROPS IF EAR IS DISCHARGING PUS!", "hi": "कान से मवाद बहने पर तेल या पानी कतई न डालें!", "gu": "કાનમાંથી રસી વહેતી હોય તો કશું પણ અંદર નાખવું નહીં!" },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "bilva_taila_external",
+        "name": { "en": "Bilva / Nirgundi Oil (Warm External Massage)", "hi": "बिल्व तेल (कान के पीछे मालिश)", "gu": "બિલ્વ / નિર્ગુંડી તેલ (કાન બહાર માલિશ)" },
+        "system": "ayurveda",
+        "benefit": { "en": "Gentle external massage around outer ear relieves pain and inflammation.", "hi": "कान के बाहरी हिस्से व पीछे मालिश करने से दर्द में राहत।", "gu": "કાનની પાછળ બહારથી માલિશ કરવાથી દુખાવામાં શાંતિ." },
+        "sideEffects": { "en": "None when applied externally.", "hi": "बाहरी प्रयोग पर कोई दुष्प्रभाव नहीं।", "gu": "બહાર માલિશ કરવામાં આડઅસર નથી." },
+        "howToTake": { "en": "Apply warm oil behind and below earlobe gently twice daily.", "hi": "कान के पीछे और नीचे हल्के हाथ से तेल की मालिश करें।", "gu": "કાનની પાછળ અને નીચે તેલ હળવા હાથે ચોળવું." },
+        "contraindications": { "en": "Do not insert oil inside eardrum if perforated.", "hi": "कान के पर्दे में छेद हो तो अंदर न डालें।", "gu": "કાનનો પડદો ફાટેલો હોય તો અંદર ન તેલ નાખવું." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "pulsatilla_30c",
+        "name": { "en": "Pulsatilla Nigricans 30C", "hi": "पल्सटिला 30C", "gu": "પલ્સટિલા 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Earache in children, weeping with pain, worse at night and in warm room.", "hi": "बच्चों के कान का दर्द, रात में रोना और दर्द बढ़ने पर बहुत असरदार।", "gu": "બાળકોના કાનનો દુખાવો અને રાત્રે રોવામાં ખૂબ જ ગુણકારી." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills 3 times daily.", "hi": "4 गोलियां दिन में 3 बार।", "gu": "4 ગોળી દિવસમાં 3 વાર." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "conjunctivitis": {
+    "allopathy": [
+      {
+        "id": "clean_water_wash_saline",
+        "name": { "en": "Clean Cool Water Wipe + Dark Glasses", "hi": "साफ पानी से आंख पोंछना + काला चश्मा", "gu": "સ્વચ્છ ઠંડા પાણીથી આંખ લૂછવી + કાળો ચશ્મો" },
+        "system": "allopathy",
+        "benefit": { "en": "Clears discharge, prevents cross-infection and soothes photophobia.", "hi": "कीचड़ साफ करता है, संक्रमण फैलने से रोकता है और धूप में आराम देता है।", "gu": "આંખની રસી સાફ કરે છે અને ચેપ ફેલાતો અટકાવે છે." },
+        "sideEffects": { "en": "Use separate clean cotton/tissue for each eye.", "hi": "दोनों आंखों के लिए अलग रुई का उपयोग करें।", "gu": "બંને આંખો માટે અલગ રૂ વાપરવું." },
+        "howToTake": { "en": "Wipe discharge from inside to outside corner gently with moist cotton.", "hi": "गीली साफ रुई से आंख के कोने से बाहर की ओर पोंछें।", "gu": "ભીના સ્વચ્છ રૂથી આંખ અંદરથી બહારની તરફ લૂછવી." },
+        "contraindications": { "en": "DO NOT SHARE TOWELS OR PILLOWS WITH FAMILY MEMBERS.", "hi": "तौलिया या तकिया दूसरों के साथ साझा न करें।", "gu": "ટુવાલ કે ઓશીકું બીજા સાથે શેર ન કરવું." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "triphala_eye_wash",
+        "name": { "en": "Triphala Water Wash (Filtered)", "hi": "त्रिफला जल (छना हुआ पानी)", "gu": "ત્રિફળાનું ગાળેલું પાણી" },
+        "system": "ayurveda",
+        "benefit": { "en": "Classical Ayurvedic eye cleansing wash that cools redness and reduces itching.", "hi": "आंखों की लाली और जलन शांत करने का उत्तम पारंपरिक तरीका।", "gu": "આંખોની લાલાશ અને બળતરા શાંત કરવાનો ઉત્તમ ઉપાય." },
+        "sideEffects": { "en": "Must be filtered thoroughly through fine cloth so no particles remain.", "hi": "पानी को बारीक कपड़े से अच्छी तरह छाने।", "gu": "પાણી કપડાથી બરાબર ગાળેલું હોવું જોઈએ." },
+        "howToTake": { "en": "Soak 1 tsp Triphala overnight, filter 3 times, splash on eyes.", "hi": "रात में भिगोकर सुबह 3 बार छानकर आंखें धोएं।", "gu": "રાત્રે પલાળી સવારે 3 વાર ગાળી આંખો છાંટવી." },
+        "contraindications": { "en": "Do not splash if particles are present.", "hi": "यदि कण हों तो उपयोग न करें।", "gu": "પાણીમાં કચરો હોય તો ન વાપરવું." },
+        "ageRestriction": "child",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "euphrasia_30c",
+        "name": { "en": "Euphrasia Officinalis 30C", "hi": "यूफ्रेसिया 30C", "gu": "યુફ્રેસિયા 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Profuse acrid burning eye discharge, redness, watering and swollen eyelids.", "hi": "आंखों से तेज आंसू आना, लाली और पलकों की सूजन में लाभदायक।", "gu": "આંખોમાંથી પાણી પડવું, લાલાશ અને પોપચાંની બળતરામાં." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills under tongue 4 times daily.", "hi": "4 गोलियां दिन में 4 बार।", "gu": "4 ગોળી દિવસમાં 4 વાર." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "skin_infection": {
+    "allopathy": [
+      {
+        "id": "clotrimazole_neosporin",
+        "name": { "en": "Antifungal Clotrimazole 1% Cream / Ointment", "hi": "क्लोट्रिमेज़ोल 1% क्रीम (एंटीफंगल)", "gu": "ક્લોટ્રિમેઝોલ 1% ક્રીમ" },
+        "system": "allopathy",
+        "benefit": { "en": "Clears fungal ringworm (Dadar), itching, redness and scaling skin lesions.", "hi": "दाद, खुजली और त्वचा के लाल चकत्तों को ठीक करता है।", "gu": "દાદર, ખંજવાળ અને ચામડીના ચાઠા સાફ કરે છે." },
+        "sideEffects": { "en": "Mild temporary burning sensation at application site.", "hi": "लगाने पर हल्की जलन।", "gu": "લગાડતી વખતે હળવી બળતરા." },
+        "howToTake": { "en": "Wash area with clean soap/water, pat dry, apply thin layer twice daily.", "hi": "त्वचा साफ कर सुखाएं, फिर पतली परत दिन में दो बार लगाएं।", "gu": "જગ્યા સાફ કરી સુકાવી દિવસમાં બે વાર પાતળું પળ લગાડવું." },
+        "contraindications": { "en": "Avoid contact with eyes and mucous membranes.", "hi": "आंखों में न जाने दें।", "gu": "આંખોમાં જવાથી બચાવવું." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "gandhak_rasayan",
+        "name": { "en": "Gandhak Rasayan Tablets", "hi": "गंधक रसायन", "gu": "ગંધક રસાયણ" },
+        "system": "ayurveda",
+        "benefit": { "en": "Purifies blood, cures persistent skin diseases, ringworm, and chronic itching.", "hi": "रक्त शोधक जो त्वचा रोग, दाद और पुरानी खुजली मिटाता है।", "gu": "લોહી શુદ્ધ કરી ચામડીના જૂના રોગો અને ખંજવાળ મટાડે છે." },
+        "sideEffects": { "en": "Mild sulfur smell in breath/sweat.", "hi": "सांस या पसीने में गंध।", "gu": "શ્વાસ કે પરસેવામાં ગંધ." },
+        "howToTake": { "en": "1-2 tablets twice daily with warm milk/water after food.", "hi": "1-2 गोली दिन में दो बार भोजन के बाद गुनगुने पानी या दूध से।", "gu": "1-2 ગોળી દિવસમાં બે વાર જમ્યા પછી નવશેકા દૂધ કે પાણી સાથે." },
+        "contraindications": { "en": "Caution during pregnancy.", "hi": "गर्भावस्था में परामर्श लें।", "gu": "ગર્ભાવસ્થામાં સલાહ લેવી." },
+        "ageRestriction": "adult",
+        "pregnancySafe": false,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "sulfur_30c",
+        "name": { "en": "Sulphur 30C", "hi": "सल्फर 30C", "gu": "સલ્ફર 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Great homeopathic skin remedy for intense itching worse after washing or heat.", "hi": "पानी से धोने या गर्मी से बढ़ने वाली तेज खुजली में अत्यंत असरदार।", "gu": "પાણી કે ગરમીથી વધતી તીવ્ર ખંજવાળમાં ખૂબ જ ઉપયોગી." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills once daily in morning.", "hi": "सुबह 1 बार 4 गोलियां।", "gu": "સવારે 1 વાર 4 ગોળી." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "hypoglycemia": {
+    "allopathy": [
+      {
+        "id": "sugar_glucose_water_emergency",
+        "name": { "en": "Immediate Sugar Water / Glucose Powder Drink", "hi": "तुरंत चीनी का पानी / ग्लूकोज का घोल", "gu": "તત્કાલ ખાંડનું પાણી / ગ્લુકોઝ સોલ્યુશન" },
+        "system": "allopathy",
+        "benefit": { "en": "CRITICAL EMERGENCY! Instantly raises dangerously low blood sugar to prevent fainting.", "hi": "जीवनरक्षक! बेहोशी से बचाने के लिए ब्लड शुगर तुरंत बढ़ाता है।", "gu": "જીવનરક્ષક! બેભાન થતાં બચાવવા બ્લડ શુગર તુરંત વધારે છે." },
+        "sideEffects": { "en": "None in acute low sugar crisis.", "hi": "लो-शुगर की स्थिति में कोई दुष्प्रभाव नहीं।", "gu": "ઓછા શુગરમાં કોઈ આડઅસર નથી." },
+        "howToTake": { "en": "Dissolve 3 teaspoons sugar or glucose in half glass water; drink immediately.", "hi": "3 चम्मच चीनी आधे गिलास पानी में घोलकर तुरंत पिएं।", "gu": "3 ચમચી ખાંડ અડધા ગ્લાસ પાણીમાં ઓગાળી તુરંત પીવો." },
+        "contraindications": { "en": "IF UNCONSCIOUS, DO NOT POUR LIQUID INTO MOUTH (choking hazard!).", "hi": "यदि मरीज बेहोश है, तो मुंह में तरल न डालें (दम घुटने का खतरा)।", "gu": "દર્દી બેભાન હોય તો મોઢામાં પાણી ન નાખવું (શ્વાસ રુંધાવાનું જોખમ)." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [],
+    "homeopathy": []
+  },
+  "kidney_stones": {
+    "allopathy": [
+      {
+        "id": "heavy_hydration_paracetamol",
+        "name": { "en": "High Fluid Intake (3-4L Water) + Paracetamol", "hi": "प्रचुर जल (3-4 लीटर) + दर्द निवारक", "gu": "પુષ્કળ પાણી (3-4 લીટર) + પેરાસિટામોલ" },
+        "system": "allopathy",
+        "benefit": { "en": "Flushes small kidney stones through urinary tract and controls severe flank pain.", "hi": "गुर्दे की पथरी को पेशाब के रास्ते निकालने और दर्द में राहत।", "gu": "પથરી પેશાબ વાટે બહાર કાઢવામાં અને દુખાવો શમાવવામાં." },
+        "sideEffects": { "en": "Temporary frequent urination.", "hi": "बार-बार पेशाब आना।", "gu": "વારંવાર પેશાબ આવવું." },
+        "howToTake": { "en": "Drink 3-4 Litres boiled cooled water daily. Paracetamol 500mg for pain.", "hi": "रोजाना 3-4 लीटर उबला पानी पिएं। दर्द पर 1 गोली पैरासिटामोल।", "gu": "રોજ 3-4 લીટર પાણી પીવું. દુખાવામાં 1 ગોળી." },
+        "contraindications": { "en": "If complete inability to pass urine, go to emergency hospital.", "hi": "पेशाब बिल्कुल बंद होने पर तुरंत अस्पताल जाएं।", "gu": "પેશાબ સાવ બંધ થાય તો તુરંત હોસ્પિટલ જવું." },
+        "ageRestriction": "child",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "pashanbhedadi_kwath",
+        "name": { "en": "Pashanbhedadi Churna / Neeri Syrup", "hi": "पाषाणभेदादि चूर्ण / नीरी सिरप", "gu": "પાષાણભેદાદિ ચૂર્ણ / નીરી સિરપ" },
+        "system": "ayurveda",
+        "benefit": { "en": "Breaks down renal calculi (lithotriptic) and eases burning urination pain.", "hi": "पथरी को तोड़ने (अश्मरी भेदन) और पेशाब की जलन मिटाने में सिद्ध।", "gu": "પથરી તોડવા અને પેશાબની બળતરા મટાડવામાં સિદ્ધ." },
+        "sideEffects": { "en": "Increased urine output.", "hi": "पेशाब की मात्रा बढ़ना।", "gu": "પેશાબ વધવો." },
+        "howToTake": { "en": "2 teaspoons syrup or 3g powder twice daily with water.", "hi": "2 चम्मच सिरप या 3g चूर्ण दिन में दो बार पानी के साथ।", "gu": "2 ચમચી સિરપ કે 3g ચૂર્ણ દિવસમાં બે વાર પાણી સાથે." },
+        "contraindications": { "en": "Caution if stone size > 10mm (may cause blockage).", "hi": "10mm से बड़ी पथरी होने पर डॉक्टर की सलाह लें।", "gu": "10mm થી મોટી પથરીમાં સાવધાની." },
+        "ageRestriction": "adult",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "berberis_vulgaris_q",
+        "name": { "en": "Berberis Vulgaris Mother Tincture", "hi": "बर्बेरिस वल्गैरिस Q", "gu": "બર્બેરિસ વલ્ગેરિસ Q" },
+        "system": "homeopathy",
+        "benefit": { "en": "Famous homeopathic kidney stone remedy for radiating kidney pain from back to groin.", "hi": "पीठ से जांघ की ओर जाने वाले पथरी के दर्द में विश्व प्रसिद्ध दवा।", "gu": "પીઠથી સાથળ તરફ જતા પથરીના તીવ્ર દુખાવાની પ્રખ્યાત હોમિયોપેથી દવા." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "10-15 drops in half cup water 3 times a day.", "hi": "आधे कप पानी में 10-15 बूंदें दिन में 3 बार।", "gu": "અડધા કપ પાણીમાં 10-15 ટીંપા દિવસમાં 3 વાર." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": "child",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "hypertension_crisis": {
+    "allopathy": [
+      {
+        "id": "bp_emergency_referral",
+        "name": { "en": "Immediate Emergency Hospital Referral + Dark Quiet Rest", "hi": "तत्काल आपातकालीन अस्पताल संदर्भ", "gu": "તત્કાલ ઇમરજન્સી હોસ્પિટલ રીફર" },
+        "system": "allopathy",
+        "benefit": { "en": "CRITICAL EMERGENCY! High blood pressure requires urgent medical evaluation to prevent stroke.", "hi": "अत्यंत गंभीर स्थिति! स्ट्रोक से बचने के लिए तुरंत अस्पताल जाएं।", "gu": "અત્યંત ગંભીર સ્થિતિ! બ્રેઈન સ્ટ્રોક અટકાવવા તુરંત હોસ્પિટલ જવું." },
+        "sideEffects": { "en": "N/A", "hi": "लागू नहीं।", "gu": "લાગુ નથી." },
+        "howToTake": { "en": "Keep patient lying down quietly; go to hospital immediately.", "hi": "मरीज को शांति से लिटा कर तुरंत अस्पताल ले जाएं।", "gu": "દર્દીને શાંતિથી સુવાડી તુરંત દવાખાને પહોંચવું." },
+        "contraindications": { "en": "Do NOT take unprescribed high-dose blood pressure pills.", "hi": "बिना सलाह के कोई दवा न दें।", "gu": "સલાહ વગર કોઈ દવા ન આપવી." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "sarpagandha_muktavati",
+        "name": { "en": "Mukta Vati / Sarpagandha Vati (Supportive)", "hi": "मुक्ता वटी / सर्पगंधा वटी", "gu": "મુક્તા વટી / સરપગંધા વટી" },
+        "system": "ayurveda",
+        "benefit": { "en": "Natural Ayurvedic tranquilizer and vascular calmative for high blood pressure.", "hi": "मानसिक तनाव कम करने और उच्च रक्तचाप में सहायक।", "gu": "માનસિક તાણ ઘટાડવા અને હાઇ પ્રેશરમાં સહાયક." },
+        "sideEffects": { "en": "Mild nasal congestion or drowsiness.", "hi": "हल्की नाक बंद होना।", "gu": "હળવું નાક બંધ થવું." },
+        "howToTake": { "en": "1 tablet twice daily with water under Ayurvedic supervision.", "hi": "वैद्य के परामर्श अनुसार 1 गोली दिन में दो बार।", "gu": "વૈદ્યની સલાહ મુજબ 1 ગોળી દિવસમાં બે વાર." },
+        "contraindications": { "en": "Unsupervised in pregnancy or severe depression.", "hi": "डिप्रेशन में परामर्श बिना न लें।", "gu": "ડિપ્રેશનમાં સલાહ વિના ન લેવી." },
+        "ageRestriction": "adult",
+        "pregnancySafe": false,
+        "lactationSafe": false,
+        "isOTC": false
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "glonoinum_high_bp",
+        "name": { "en": "Glonoinum 30C", "hi": "ग्लोनोइनम 30C", "gu": "ગ્લોનોઇનમ 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Throbbing head pain, feeling of blood surging to head with high BP.", "hi": "सिर में खून चढ़ने जैसा तेज दर्द और धड़कन में राहत।", "gu": "માથામાં લોહી ચડવા જેવો તીવ્ર દુખાવો અને ધબકારામાં રાહત." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills under tongue during acute surge.", "hi": "4 गोलियां जीभ के नीचे।", "gu": "4 ગોળી જીભ નીચે." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "chikungunya": {
+    "allopathy": [
+      {
+        "id": "paracetamol_joint_rest",
+        "name": { "en": "Paracetamol 500mg + Complete Joint Rest", "hi": "पैरासिटामोल + जोड़ों को पूर्ण विश्राम", "gu": "પેરાસિટામોલ + સાંધાને સંપૂર્ણ આરામ" },
+        "system": "allopathy",
+        "benefit": { "en": "Relieves severe crippling joint inflammation, fever, and morning stiffness.", "hi": "जोड़ों की असहनीय सूजन, अकड़न और बुखार में सुरक्षित राहत।", "gu": "સાંધાનો અસહ્ય દુખાવો, સોજો અને તાવમાં આરામ." },
+        "sideEffects": { "en": "Avoid NSAIDs during initial febrile days.", "hi": "शुरुआती दिनों में दर्द निवारक से बचें।", "gu": "શરૂઆતમાં પેઇનકિલર ટાળવી." },
+        "howToTake": { "en": "1 tablet every 6-8 hours for fever/pain. Rest knees/wrists.", "hi": "हर 6-8 घंटे में 1 गोली। जोड़ों को आराम दें।", "gu": "દર 6-8 કલાકે 1 ગોળી. સાંધાને આરામ આપવો." },
+        "contraindications": { "en": "Do not take Aspirin.", "hi": "एस्पिरिन न लें।", "gu": "એસ્પિરિન ન લેવી." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "yograj_guggulu_nirgundi",
+        "name": { "en": "Yograj Guggulu + Nirgundi Taila Massage", "hi": "योगराज गुग्गुलु + निर्गुंडी तेल", "gu": "યોગરાજ ગુગ્ગુલુ + નિર્ગુંડી તેલ" },
+        "system": "ayurveda",
+        "benefit": { "en": "Renowned Ayurvedic treatment for Chikungunya joint pain and swelling.", "hi": "चिकनगुनिया के जोड़ों के दर्द और सूजन को दूर करने में सर्वश्रेष्ठ।", "gu": "ચિકનગુનિયાના સાંધાના દુખાવા અને સોજા દૂર કરવામાં શ્રેષ્ઠ." },
+        "sideEffects": { "en": "Warm potency; drink plenty water.", "hi": "गर्म तासीर; प्रचुर पानी पिएं।", "gu": "ગરમ પ્રકૃતિ; પુષ્કળ પાણી પીવું." },
+        "howToTake": { "en": "2 tabs Yograj Guggulu twice daily + gently apply warm oil on joints.", "hi": "2 गोली दिन में दो बार + जोड़ों पर हल्का गुनगुना तेल लगाएं।", "gu": "2 ગોળી દિવસમાં બે વાર + સાંધા પર નવશેકું તેલ લગાડવું." },
+        "contraindications": { "en": "Avoid during acute active high fever.", "hi": "तेज बुखार में न लें।", "gu": "તીવ્ર તાવમાં ન લેવી." },
+        "ageRestriction": "adult",
+        "pregnancySafe": false,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "rhus_tox_chikungunya",
+        "name": { "en": "Rhus Toxicodendron 30C", "hi": "रस टॉक्सिकोडेंड्रोन 30C", "gu": "રસ ટોક્સિકોડેન્ડ્રોન 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Severe joint stiffness worse on waking up and improving after slow movement.", "hi": "सुबह जोड़ों की अकड़न और चलने पर धीरे-धीरे दर्द कम होने में असरदार।", "gu": "સવારે સાંધા પકડાઈ જવા અને ચાલવાથી રાહત થવામાં ઉત્તમ." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills 3 times daily.", "hi": "4 गोलियां दिन में 3 बार।", "gu": "4 ગોળી દિવસમાં 3 વાર." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  },
+  "tension_headache": {
+    "allopathy": [
+      {
+        "id": "paracetamol_head_massage",
+        "name": { "en": "Paracetamol 500mg + Forehead Balm / Rest", "hi": "पैरासिटामोल + झंडू बाम / विश्राम", "gu": "પેરાસિટામોલ + બામ / માથાનો શેક" },
+        "system": "allopathy",
+        "benefit": { "en": "Relieves tight band-like dull aching tension headache and neck stiffness.", "hi": "तनाव के सिरदर्द और गर्दन के खिंचाव से सुरक्षित राहत।", "gu": "તાણના માથાના દુખાવામાં અને ગરદનની જકડનમાં આરામ." },
+        "sideEffects": { "en": "None if taken as directed.", "hi": "सही मात्रा में लेने पर कोई दुष्प्रभाव नहीं।", "gu": "યોગ્ય રીતે લેવામાં કોઈ આડઅસર નથી." },
+        "howToTake": { "en": "1 tablet after food; apply cooling balm on temples.", "hi": "भोजन के बाद 1 गोली; कनपटी पर बाम लगाएं।", "gu": "જમ્યા પછી 1 ગોળી; વાંસળી પર બામ લગાડવો." },
+        "contraindications": { "en": "Avoid sleep deprivation and eye strain.", "hi": "नींद पूरी करें, मोबाइल/स्क्रीन कम देखें।", "gu": "ઊંઘ પૂરી કરવી, મોબાઈલ ઓછો વાપરવો." },
+        "ageRestriction": "child",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "shirashooladi_vajra_ras",
+        "name": { "en": "Shirashooladi Vajra Ras", "hi": "शिरःशूलादि वज्र रस", "gu": "શિરઃશૂલાદિ વજ્ર રસ" },
+        "system": "ayurveda",
+        "benefit": { "en": "Potent Ayurvedic medicine for stress-induced chronic tension headache.", "hi": "तनाव और मानसिक थकान से होने वाले सिरदर्द का उत्तम इलाज।", "gu": "તાણ અને માનસિક થાકથી થતા માથાના દુખાવામાં રામબાણ." },
+        "sideEffects": { "en": "Take strictly under supervision.", "hi": "वैद्य के परामर्श से लें।", "gu": "વૈદ્યની દેખરેખમાં લેવી." },
+        "howToTake": { "en": "1 tablet twice daily with honey or warm water after meals.", "hi": "1 गोली दिन में दो बार भोजन के बाद।", "gu": "1 ગોળી દિવસમાં બે વાર જમ્યા પછી." },
+        "contraindications": { "en": "Avoid during pregnancy.", "hi": "गर्भावस्था में न लें।", "gu": "ગર્ભાવસ્થામાં ન લેવી." },
+        "ageRestriction": "adult",
+        "pregnancySafe": false,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "kali_phos_6x",
+        "name": { "en": "Kali Phosphoricum 6X", "hi": "काली फॉस्फोरिकम 6X", "gu": "કાલી ફોસ્ફોરિકમ 6X" },
+        "system": "homeopathy",
+        "benefit": { "en": "Outstanding tissue salt for mental exhaustion, nerve stress, and tension headache.", "hi": "मानसिक थकान, तनाव और पढ़ाई या काम से होने वाले सिरदर्द में वरदान।", "gu": "માનસિક થાક, તાણ અને ભણતરના માથાના દુખાવામાં વરદાન." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 tablets dissolved under tongue 3 times daily.", "hi": "4 गोलियां दिन में 3 बार।", "gu": "4 ગોળી દિવસમાં 3 વાર." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
+  }
+}
