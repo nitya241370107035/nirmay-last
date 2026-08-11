@@ -1,4 +1,4 @@
-import modelMetadata from '../data/model_metadata.json';
+import diseaseModelData from '../data/disease_model_data.json';
 import symptomsData from '../data/symptoms.json';
 import diseasesData from '../data/diseases.json';
 
@@ -41,11 +41,14 @@ export interface DiagnosticSession {
 const sessionStore = new Map<string, DiagnosticSession>();
 
 // Precomputed model matrices
-const CANONICAL_FEATURES: string[] = modelMetadata.canonicalFeatureOrder;
-const CANONICAL_DISEASES: string[] = modelMetadata.canonicalDiseaseOrder;
-const P_DISEASE: number[] = modelMetadata.p_disease;
-const P_S_GIVEN_D: number[][] = modelMetadata.p_s_given_d;
-const FEATURE_MAP: Record<string, number> = modelMetadata.featureIndexMap;
+const CANONICAL_FEATURES: string[] = diseaseModelData.features;
+const CANONICAL_DISEASES: string[] = diseaseModelData.diseases;
+const P_DISEASE: number[] = diseaseModelData.p_disease;
+const P_S_GIVEN_D: number[][] = diseaseModelData.p_s_given_d;
+const FEATURE_MAP: Record<string, number> = diseaseModelData.features.reduce((acc, feat, idx) => {
+  acc[feat.toLowerCase().trim()] = idx;
+  return acc;
+}, {} as Record<string, number>);
 
 /**
  * Fuzzy / Canonical feature resolver
@@ -212,6 +215,105 @@ export function computeBayesianPosterior(vector: Record<string, TriState>): {
   };
 }
 
+const SYMPTOM_CATEGORIES: Record<string, string> = {
+  // Infectious & General
+  'high_fever': 'infectious',
+  'mild_fever': 'infectious',
+  'chills': 'infectious',
+  'shivering': 'infectious',
+  'cough': 'infectious',
+  'runny_nose': 'infectious',
+  'congestion': 'infectious',
+  'throat_irritation': 'infectious',
+  'sinus_pressure': 'infectious',
+  'redness_of_eyes': 'infectious',
+  'watering_from_eyes': 'infectious',
+  'loss_of_smell': 'infectious',
+  'headache': 'infectious',
+  'fatigue': 'infectious',
+  'malaise': 'infectious',
+  'sweating': 'infectious',
+
+  // Cardiorespiratory
+  'chest_pain': 'cardio',
+  'breathlessness': 'cardio',
+  'fast_heart_rate': 'cardio',
+  'palpitations': 'cardio',
+  'blood_in_sputum': 'cardio',
+  'coughing_up_blood': 'cardio',
+
+  // Gastrointestinal
+  'vomiting': 'gi',
+  'nausea': 'gi',
+  'abdominal_pain': 'gi',
+  'stomach_pain': 'gi',
+  'belly_pain': 'gi',
+  'diarrhoea': 'gi',
+  'constipation': 'gi',
+  'acidity': 'gi',
+  'indigestion': 'gi',
+  'loss_of_appetite': 'gi',
+  'stomach_bleeding': 'gi',
+  'distention_of_abdomen': 'gi',
+
+  // Dermatological
+  'itching': 'skin',
+  'skin_rash': 'skin',
+  'nodal_skin_eruptions': 'skin',
+  'pus_filled_pimples': 'skin',
+  'blackheads': 'skin',
+  'scurring': 'skin',
+  'skin_peeling': 'skin',
+  'blister': 'skin',
+  'red_sore_around_nose': 'skin',
+  'yellow_crust_ooze': 'skin',
+  'silver_like_dusting': 'skin',
+  'small_dents_in_nails': 'skin',
+  'inflammatory_nails': 'skin',
+
+  // Musculoskeletal
+  'joint_pain': 'musculo',
+  'muscle_pain': 'musculo',
+  'back_pain': 'musculo',
+  'neck_pain': 'musculo',
+  'knee_pain': 'musculo',
+  'hip_joint_pain': 'musculo',
+  'muscle_weakness': 'musculo',
+  'stiff_neck': 'musculo',
+  'swelling_joints': 'musculo',
+  'movement_stiffness': 'musculo',
+  'painful_walking': 'musculo',
+
+  // Neurological & Balance
+  'dizziness': 'neuro',
+  'loss_of_balance': 'neuro',
+  'unsteadiness': 'neuro',
+  'spinning_movements': 'neuro',
+  'slurred_speech': 'neuro',
+  'weakness_of_one_body_side': 'neuro',
+  'altered_sensorium': 'neuro',
+  'lack_of_concentration': 'neuro',
+  'visual_disturbances': 'neuro',
+  'coma': 'neuro'
+};
+
+function areSymptomsInterrelated(confirmed: string[], candidate: string, topProb: number): boolean {
+  if (confirmed.length === 0) return true;
+  if (topProb >= 0.50) return true;
+
+  const candCat = SYMPTOM_CATEGORIES[candidate.toLowerCase().trim()] || 'general';
+  if (candCat === 'infectious' || candCat === 'general') return true;
+
+  for (const cs of confirmed) {
+    const csCat = SYMPTOM_CATEGORIES[cs.toLowerCase().trim()] || 'general';
+    if (csCat === 'general' || csCat === candCat) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
 /**
  * Expected Information Gain & Multi-Criteria Question Utility Engine
  */
@@ -262,6 +364,27 @@ export function selectBestAdaptiveQuestion(session: DiagnosticSession): {
 
     // Skip symptoms with zero/negligible connection to the active differential pool
     if (maxCandidateAssociation < 0.08) continue;
+
+    // 0.5. Smart Question Relevance Filter: Candidate symptom MUST co-occur (P(S_j | S_i) >= 0.05) with at least one confirmed symptom
+    const confirmedSymptoms = Object.keys(vector).filter((k) => vector[k] === 1);
+    if (confirmedSymptoms.length > 0) {
+      const topProb = topCandidateList[0]?.probability ?? 0.0;
+      if (!areSymptomsInterrelated(confirmedSymptoms, featId, topProb)) {
+        continue;
+      }
+
+      let maxCoOccur = 0.0;
+      for (const cs of confirmedSymptoms) {
+        const csLower = cs.toLowerCase().trim();
+        const matrix = diseaseModelData.symptom_co_occurrence as Record<string, Record<string, number>>;
+        const csMatrix = matrix[cs] || matrix[csLower];
+        if (csMatrix) {
+          const prob = csMatrix[featId] || csMatrix[featLower] || 0.0;
+          if (prob > maxCoOccur) maxCoOccur = prob;
+        }
+      }
+      if (maxCoOccur < 0.05) continue;
+    }
 
     // 1. Calculate case-specific P(S_j = 1 | Evidence)
     let p_S1 = 0.0;
@@ -427,7 +550,7 @@ export const sessionManager = {
       redFlagAlert,
       createdAt: Date.now(),
       updatedAt: Date.now(),
-      modelVersion: modelMetadata.modelVersion
+      modelVersion: diseaseModelData.model_name
     };
 
     const stoppingEval = evaluateSessionStopping(session);

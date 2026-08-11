@@ -1,6 +1,7 @@
 import questionsData from '../data/questions.json';
 import symptomMap from '../data/symptom_map.json';
 import diseasesData from '../data/diseases.json';
+import diseaseModelData from '../data/disease_model_data.json';
 import medicinesData from '../data/medicines.json';
 import { extractSymptoms as extractSymptomsNLP, extractDuration as extractDurationNLP } from './nlp';
 import { diseaseModelService, DiseasePredictionResult } from '../services/diseaseModelService';
@@ -226,9 +227,14 @@ export function evaluateCase(caseData: CaseData, currentLang: LanguageCode = 'en
   const hasRedFlag = extractedSymptoms.some((s) => redFlagSymptoms.includes(s)) ||
     (caseData.symptoms || []).some((s: string) => redFlagSymptoms.includes(s.toLowerCase().trim()));
 
-  const emergencyDiseases = ['heart attack', 'angina', 'pneumonia', 'appendicitis', 'pyelonephritis', 'acute pancreatitis', 'cholecystitis'];
-  const isEmergencyDisease = emergencyDiseases.includes((primaryName || '').toLowerCase().trim()) ||
-    emergencyDiseases.includes((mlDiseasePrediction?.primaryDisease || '').toLowerCase().trim());
+  const pNameLower = (primaryName || '').toLowerCase().trim();
+  const mlNameLower = (mlDiseasePrediction?.primaryDisease || '').toLowerCase().trim();
+  const mappedUrgency = (diseaseModelData as any).disease_urgency?.[pNameLower] || 
+                        (diseaseModelData as any).disease_urgency?.[mlNameLower] || 
+                        (diseaseModelData as any).disease_urgency?.[topMatch.disease.id] || 
+                        'green';
+
+  const isEmergencyDisease = mappedUrgency === 'red';
 
   if (hasRedFlag || isEmergencyDisease || mlDiseasePrediction?.urgency === 'red' || topMatch.disease.base_urgency === 'red') {
     risk = 'red';
@@ -238,6 +244,7 @@ export function evaluateCase(caseData: CaseData, currentLang: LanguageCode = 'en
       ? `Red flag symptom detected (${(caseData.symptoms || extractedSymptoms).filter((s: string) => redFlagSymptoms.includes(s)).join(', ') || 'Critical Symptoms'})`
       : 'High urgency medical condition';
   } else if (
+    mappedUrgency === 'orange' ||
     mlDiseasePrediction?.urgency === 'orange' ||
     topMatch.disease.base_urgency === 'orange' ||
     severity === 'severe' ||
