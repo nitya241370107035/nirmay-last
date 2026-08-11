@@ -260,14 +260,14 @@ function MainApp() {
 
   if (activePortal === 'clinic') {
     return (
-      <div className="min-h-screen bg-slate-900 text-slate-100 font-sans">
+      <div className="min-h-screen bg-[#F0F5F4] text-slate-800 font-sans antialiased selection:bg-teal-700 selection:text-white">
         <Suspense
           fallback={
-            <div className="min-h-screen flex flex-col items-center justify-center p-6 text-center space-y-3 font-sans bg-slate-900 text-white">
+            <div className="min-h-screen flex flex-col items-center justify-center p-6 text-center space-y-3 font-sans bg-[#F0F5F4] text-teal-900">
               <div className="w-14 h-14 rounded-2xl bg-teal-800 text-teal-200 border border-teal-600 flex items-center justify-center animate-spin shadow-md">
                 <Hospital className="w-7 h-7 text-teal-200" />
               </div>
-              <p className="text-base font-bold text-teal-200 font-display">
+              <p className="text-base font-bold text-teal-900 font-display">
                 Loading Nirāmay Clinical Triage Portal (150k Encounter ML)...
               </p>
             </div>

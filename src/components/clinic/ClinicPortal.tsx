@@ -416,10 +416,10 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
   return (
     <div className="max-w-6xl mx-auto px-4 py-6 font-sans text-slate-800">
       {/* Top Clinic Header */}
-      <div className="bg-gradient-to-r from-teal-900 via-teal-800 to-cyan-900 text-white rounded-2xl shadow-xl p-6 mb-6">
+      <div className="bg-gradient-to-r from-[#0C3833] via-[#124B45] to-[#1A5C56] text-white rounded-3xl shadow-xl p-6 sm:p-7 mb-6 border border-[#2E7D73]/40">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <div className="flex items-center gap-3.5">
-            <div className="bg-white/15 p-3 rounded-2xl backdrop-blur-sm border border-white/20 shadow-inner">
+          <div className="flex items-center gap-4">
+            <div className="bg-white/15 p-3.5 rounded-2xl backdrop-blur-sm border border-white/20 shadow-inner">
               <Hospital className="w-8 h-8 text-teal-200" />
             </div>
             <div>
@@ -433,31 +433,31 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
                 </span>
               </div>
               
-              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-teal-100/90 mt-1">
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-teal-100/90 mt-1.5 font-medium">
                 <span className="flex items-center gap-1">
-                  <MapPin className="w-3 h-3 text-teal-300" />
+                  <MapPin className="w-3.5 h-3.5 text-teal-300" />
                   {clinicProfile.address}, {clinicProfile.cityDistrict} ({clinicProfile.state})
                 </span>
                 <span className="text-teal-400/40 hidden sm:inline">•</span>
                 <span className="flex items-center gap-1">
-                  <Stethoscope className="w-3 h-3 text-teal-300" />
+                  <Stethoscope className="w-3.5 h-3.5 text-teal-300" />
                   MO: <strong>{clinicProfile.doctorInCharge}</strong> ({clinicProfile.doctorDegree})
                 </span>
               </div>
             </div>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 shrink-0">
             <button
               onClick={handleReset}
-              className="flex items-center gap-1.5 px-3 py-2 bg-white/10 hover:bg-white/20 active:bg-white/30 text-white text-xs sm:text-sm font-semibold rounded-xl border border-white/20 backdrop-blur-sm transition cursor-pointer"
+              className="flex items-center gap-1.5 px-3.5 py-2 bg-white/15 hover:bg-white/25 active:scale-95 text-white text-xs sm:text-sm font-bold rounded-xl border border-white/20 shadow-xs transition cursor-pointer"
             >
               <RefreshCw className="w-3.5 h-3.5" />
               <span>New Patient</span>
             </button>
             <button
               onClick={handleClinicLogout}
-              className="flex items-center gap-1.5 px-3 py-2 bg-white/10 hover:bg-white/20 active:bg-white/30 text-teal-100 hover:text-white text-xs sm:text-sm font-semibold rounded-xl border border-white/20 backdrop-blur-sm transition cursor-pointer"
+              className="flex items-center gap-1.5 px-3.5 py-2 bg-white/10 hover:bg-white/20 active:scale-95 text-teal-100 hover:text-white text-xs sm:text-sm font-semibold rounded-xl border border-white/20 shadow-xs transition cursor-pointer"
               title="Sign Out / Switch Clinic Credentials"
             >
               <Edit3 className="w-3.5 h-3.5" />
@@ -466,7 +466,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
             {onSwitchPortal && (
               <button
                 onClick={onSwitchPortal}
-                className="flex items-center gap-1.5 px-3 py-2 bg-rose-500/20 hover:bg-rose-500/30 active:bg-rose-500/40 text-rose-200 text-xs sm:text-sm font-semibold rounded-xl border border-rose-400/30 backdrop-blur-sm transition cursor-pointer"
+                className="flex items-center gap-1.5 px-3.5 py-2 bg-rose-500/20 hover:bg-rose-500/30 active:scale-95 text-rose-200 text-xs sm:text-sm font-bold rounded-xl border border-rose-400/30 shadow-xs transition cursor-pointer"
                 title="Exit to Portal Selection Gate"
               >
                 <LogOut className="w-3.5 h-3.5" />
