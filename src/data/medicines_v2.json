@@ -712,8 +712,36 @@
         "isOTC": true
       }
     ],
-    "ayurveda": [],
-    "homeopathy": []
+    "ayurveda": [
+      {
+        "id": "appendicitis_no_herbal",
+        "name": { "en": "⚠️ Herbal Remedies CONTRAINDICATED — Surgical Emergency", "hi": "⚠️ जड़ी-बूटी वर्जित — शल्य चिकित्सा आवश्यक", "gu": "⚠️ ઔષધિ વર્જિત — ઑપરેશન ઇમર્જન્સી" },
+        "system": "ayurveda",
+        "benefit": { "en": "DO NOT attempt any herbal treatment for suspected appendicitis. Surgical referral is the only safe option.", "hi": "संदिग्ध अपेंडिसाइटिस में कोई भी घरेलू उपाय न करें। ऑपरेशन अनिवार्य है।", "gu": "અપેન્ડિક્સ ફૂટી ન જાય એ માટે ઘરેલુ ઉપચાર ક઼ !!! ઇમર્જન્સી ઑપ જ એકમાત્ર ઉપાય." },
+        "sideEffects": { "en": "N/A", "hi": "लागू नहीं।", "gu": "લાગુ નથી." },
+        "howToTake": { "en": "Rush to surgical hospital immediately. Keep patient NPO (nothing by mouth).", "hi": "तुरंत सर्जिकल अस्पताल जाएं। मरीज को कुछ भी न दें।", "gu": "ઑપ્ હોસ્પિટલ જાઓ. મોઢેથી કઈ ન આપો." },
+        "contraindications": { "en": "All herbal / home remedies are STRICTLY contraindicated.", "hi": "सभी घरेलू उपाय वर्जित हैं।", "gu": "તમામ ઘરેલુ ઉપચાર વર્જિત." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "belladonna_appendicitis",
+        "name": { "en": "Belladonna 30C (Supportive Only — Seek Surgery)", "hi": "बेलाडोना 30C (केवल सहायक — ऑपरेशन अनिवार्य)", "gu": "બેલ્લાડોના 30C (સહાયક — ઑપ. ફ઼ !!! !')" },
+        "system": "homeopathy",
+        "benefit": { "en": "Supportive only during transport to hospital. Belladonna addresses sudden violent right-sided abdominal pain with fever. SURGICAL REFERRAL IS MANDATORY.", "hi": "हॉस्पिटल ले जाने के दौरान अस्थायी राहत के लिए। सर्जरी अनिवार्य है।", "gu": "હોસ્પિટલ જાવ ત્યાં સુધી ઘડીક આરામ. ઑperation ઑ!!! !' ." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills under tongue during transit. GO TO SURGERY HOSPITAL IMMEDIATELY.", "hi": "रास्ते में 4 गोलियां जीभ के नीचे। तुरंत सर्जिकल अस्पताल जाएं।", "gu": "જતી વखत 4 ગોળી. ઑperational hospital immediately." },
+        "contraindications": { "en": "This is NOT a treatment for appendicitis. DO NOT delay surgical evaluation.", "hi": "यह इलाज नहीं है। ऑपरेशन में देरी न करें।", "gu": "ઇ ઇલ !!! !'  ′ ′ ′ ′. Operation delay ′ ′ ′ ." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
   },
   "chickenpox": {
     "allopathy": [
@@ -1013,8 +1041,36 @@
         "isOTC": true
       }
     ],
-    "ayurveda": [],
-    "homeopathy": []
+    "ayurveda": [
+      {
+        "id": "gurmar_jamun_seeds",
+        "name": { "en": "Gurmar Churna (Gymnema Sylvestre) + Jamun Seed Powder", "hi": "गुड़मार चूर्ण + जामुन बीज चूर्ण", "gu": "ગુડ઼માર ચૂર્ણ + જાંબૂ બીજ ચૂર્ણ" },
+        "system": "ayurveda",
+        "benefit": { "en": "AFTER acute correction with sugar: Gurmar gently supports blood sugar stability and prevents repeated hypoglycemic episodes in diabetics.", "hi": "शुगर से तत्काल इलाज के बाद: गुड़मार रक्त शर्करा को संतुलित रखता है और मधुमेह में बार-बार लो शुगर होने से बचाता है।", "gu": "ખાંડ-પાણીથી ઇમર્જન્સી ઠીક કર્યા બાદ: ગુડ઼માર બ્લડ શુગર સ્થિર રાખે છે અને ફરીથી ઓછી ન થઈ જાય તે માટે ઉપયોગી." },
+        "sideEffects": { "en": "May lower blood sugar further if taken without food — always eat first.", "hi": "ख़ाली पेट लेने से शुगर और नीचे जा सकती है — हमेशा खाने के बाद लें।", "gu": "ભૂખ્યા પેટ ન લેવું — ખાધા પછી જ લો." },
+        "howToTake": { "en": "3g Gurmar + 3g Jamun seed powder, twice daily with water AFTER main meals — only after blood sugar has stabilized.", "hi": "3g गुड़मार + 3g जामुन बीज, दोपहर और रात के खाने के बाद पानी के साथ — केवल शुगर सामान्य होने के बाद।", "gu": "3g ગુડ઼માર + 3g જાંબૂ બીજ, ભોજન પછી — ફક્ત શુગર સ્થિર થઈ જાય પછી." },
+        "contraindications": { "en": "Do NOT take during active hypoglycemia. First treat with sugar water.", "hi": "लो शुगर के दौरे के समय न लें। पहले चीनी का घोल पिलाएं।", "gu": "ઓછી શુગરના હુમલા દરમ્યાન ન આપવું. પ્રથમ ખાંડ-પાણી." },
+        "ageRestriction": "adult",
+        "pregnancySafe": false,
+        "lactationSafe": false,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "china_arsenicum_recovery",
+        "name": { "en": "China Officinalis 30C (Post-Hypoglycemia Weakness)", "hi": "चाइना ऑफिसिनेलिस 30C (लो-शुगर के बाद कमज़ोरी)", "gu": "ચાઇના ઑફ઼ 30C (ઓછી શુગર પછીની નબળાઈ)" },
+        "system": "homeopathy",
+        "benefit": { "en": "AFTER blood sugar correction: China is the top homeopathic remedy for profound weakness, exhaustion, ringing in ears and trembling after any episode of fluid/sugar loss.", "hi": "शुगर ठीक होने के बाद: थकान, कमज़ोरी, कान में घंटी और कंपन के लिए सर्वश्रेष्ठ होम्योपैथी।", "gu": "શુગર ઠીક થઈ ગઈ પછી: ઘોર નબળાઈ, ચક્કર, કાનમાં અવાજ અને ધ્રૂજારી માટે શ્રેષ્ઠ." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills under tongue every 30 minutes after sugar water has revived the patient — only after stabilization.", "hi": "ग्लूकोज से मरीज ठीक होने के बाद हर 30 मिनट में 4 गोलियां।", "gu": "ગ્લુકોઝ-પાણી પછી દર 30 મિનિટ 4 ગોળી. ફ઼ ! !' ." },
+        "contraindications": { "en": "Do NOT use instead of emergency glucose correction.", "hi": "आपातकालीन ग्लूकोज उपचार की जगह नहीं।", "gu": "ઇમર્જન્સી ગ્લુકોઝ ઉપચારના સ્થાને નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
   },
   "kidney_stones": {
     "allopathy": [
