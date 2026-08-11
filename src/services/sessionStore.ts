@@ -526,22 +526,35 @@ export function selectBestAdaptiveQuestion(session: DiagnosticSession): {
 
 /**
  * STEP 4, 7, 12 — Evaluate Multi-Criteria Stopping Conditions
- * Executes exactly 2 rounds of 4 follow-up questions (Total 8 questions).
+ * Executes 3 to 4 rounds of 4 follow-up questions (Total 12 to 16 questions).
  */
 export function evaluateSessionStopping(session: DiagnosticSession): {
   isStoppingMet: boolean;
   reason: { en: string; hi: string; gu: string } | null;
 } {
   const turn = session.questionCount;
+  const topProb = session.currentPosterior[0]?.probability ?? 0.0;
 
-  // Enforce exactly 8 questions (Round 1: 4 questions + Round 2: 4 questions)
-  if (turn >= 8) {
+  // 1. High Certainty after at least 3 rounds (12 questions)
+  if (turn >= 12 && topProb >= 0.96) {
     return {
       isStoppingMet: true,
       reason: {
-        en: `✅ 2-Round Adaptive Triage Complete (8 Clinical Follow-ups Answered). Proceeding to XGBoost Decision Support.`,
-        hi: `✅ 2-चरण अनुकूली ट्राइएज पूर्ण (8 अनुवर्ती प्रश्न उत्तरित)। XGBoost निर्णय समर्थन पर आगे बढ़ रहे हैं।`,
-        gu: `✅ ૨-રાઉન્ડ અનુકૂલનશીલ ટ્રાયેજ પૂર્ણ (૮ પ્રશ્નોના જવાબો પૂર્ણ). XGBoost નિર્ણય સહાય માટે આગળ વધી રહ્યા છીએ.`
+        en: `✅ 3-Round Deep Clinical Triage Complete (High Diagnostic Certainty: ${Math.round(topProb * 100)}% for ${session.currentPosterior[0]?.diseaseName || 'Primary Match'}). Proceeding to XGBoost Decision Support.`,
+        hi: `✅ 3-चरण गहन नैदानिक ट्राइएज पूर्ण (${Math.round(topProb * 100)}% निश्चितता)। XGBoost निर्णय समर्थन पर आगे बढ़ रहे हैं।`,
+        gu: `✅ ૩-રાઉન્ડ ઊંડાણપૂર્વક ક્લિનિકલ ટ્રાયેજ પૂર્ણ (${Math.round(topProb * 100)}% ચોકસાઈ). XGBoost નિર્ણય સહાય માટે આગળ વધી રહ્યા છીએ.`
+      }
+    };
+  }
+
+  // 2. Comprehensive 4-Round Maximum (14-16 questions)
+  if (turn >= 14) {
+    return {
+      isStoppingMet: true,
+      reason: {
+        en: `✅ Multi-Round Comprehensive Triage Complete (${turn} Targeted Questions Answered). Proceeding to XGBoost Decision Support.`,
+        hi: `✅ बहु-चरणीय व्यापक ट्राइएज पूर्ण (${turn} प्रश्न उत्तरित)। XGBoost निर्णय समर्थन पर आगे बढ़ रहे हैं।`,
+        gu: `✅ બહુ-રાઉન્ડ વ્યાપક ટ્રાયેજ પૂર્ણ (${turn} લક્ષ્યાંકિત પ્રશ્નો પૂર્ણ). XGBoost નિર્ણય સહાય માટે આગળ વધી રહ્યા છીએ.`
       }
     };
   }

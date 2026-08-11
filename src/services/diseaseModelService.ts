@@ -905,8 +905,24 @@ class DiseaseModelService {
 
     const maxProb = rankedCandidates[0]?.probability ? rankedCandidates[0].probability / 100 : 0;
 
-    // Check Stopping Conditions (Enforce exactly 8 questions: 2 rounds of 4)
-    if (questionTurn >= 8) {
+    // Check Stopping Conditions (Enforce 3 to 4 rounds: 12 to 16 questions)
+    if (questionTurn >= 12 && maxProb >= 0.96) {
+      return {
+        nextQuestion: null,
+        currentEntropy: Number(currentEntropy.toFixed(3)),
+        maxProbability: Number((maxProb * 100).toFixed(1)),
+        topCandidates: rankedCandidates.slice(0, 5),
+        isStoppingCriteriaMet: true,
+        stoppingReason: 'high_confidence',
+        stoppingMessage: {
+          en: `3-Round Deep Clinical Triage Complete (≥ 96% diagnostic certainty for ${rankedCandidates[0].name}). Proceeding to XGBoost evaluation.`,
+          hi: `3-चरण गहन नैदानिक ट्राइएज पूर्ण (${rankedCandidates[0].name} हेतु ≥ 96% निश्चितता)। XGBoost निदान पर आगे बढ़ रहे हैं।`,
+          gu: `૩-રાઉન્ડ ઊંડાણપૂર્વક ક્લિનિકલ ટ્રાયેજ પૂર્ણ (${rankedCandidates[0].name} માટે ≥ ૯૬% ચોકસાઈ). XGBoost નિદાન માટે આગળ વધી રહ્યા છીએ.`
+        }
+      };
+    }
+
+    if (questionTurn >= 14) {
       return {
         nextQuestion: null,
         currentEntropy: Number(currentEntropy.toFixed(3)),
@@ -915,9 +931,9 @@ class DiseaseModelService {
         isStoppingCriteriaMet: true,
         stoppingReason: 'rounds_completed',
         stoppingMessage: {
-          en: `2-Round Adaptive Triage Complete (8 follow-ups answered). Proceeding to XGBoost diagnosis.`,
-          hi: `2-चरण अनुकूली ट्राइएज पूर्ण (8 प्रश्न उत्तरित)। XGBoost निदान पर आगे बढ़ रहे हैं।`,
-          gu: `૨-રાઉન્ડ અનુકૂલનશીલ ટ્રાયેજ પૂર્ણ (૮ પ્રશ્નો પૂર્ણ). XGBoost નિદાન માટે આગળ વધી રહ્યા છીએ.`
+          en: `Multi-Round Comprehensive Triage Complete (${questionTurn} questions answered). Proceeding to XGBoost evaluation.`,
+          hi: `बहु-चरणीय व्यापक ट्राइएज पूर्ण (${questionTurn} प्रश्न उत्तरित)। XGBoost निदान पर आगे बढ़ रहे हैं।`,
+          gu: `બહુ-રાઉન્ડ વ્યાપક ટ્રાયેજ પૂર્ણ (${questionTurn} લક્ષ્યાંકિત પ્રશ્નો પૂર્ણ). XGBoost નિદાન માટે આગળ વધી રહ્યા છીએ.`
         }
       };
     }
