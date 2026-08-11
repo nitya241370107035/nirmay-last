@@ -1032,10 +1032,12 @@ export const CaseTaking: React.FC<CaseTakingProps> = ({ onComplete, onCancel }) 
                   <div className="flex items-center justify-between">
                     <span className="inline-flex items-center gap-1.5 bg-emerald-600 text-white font-extrabold text-[11px] px-2.5 py-1 rounded-lg uppercase tracking-wide">
                       <HelpCircle className="w-3.5 h-3.5" />
-                      {currentLang === 'gu' ? `પ્રશ્ન #${questionTurn}` : currentLang === 'hi' ? `प्रश्न #${questionTurn}` : `Active Question #${questionTurn}`}
+                      {questionTurn <= 4
+                        ? (currentLang === 'gu' ? `રાઉન્ડ ૧ • પ્રશ્ન ${questionTurn}/૪` : currentLang === 'hi' ? `राउंड 1 • प्रश्न ${questionTurn}/4` : `Round 1 • Question ${questionTurn}/4`)
+                        : (currentLang === 'gu' ? `રાઉન્ડ ૨ • પ્રશ્ન ${questionTurn - 4}/૪` : currentLang === 'hi' ? `राउंड 2 • प्रश्न ${questionTurn - 4}/4` : `Round 2 • Question ${questionTurn - 4}/4`)}
                     </span>
                     <span className="text-[11px] font-bold text-teal-800 bg-teal-100/80 px-2.5 py-0.5 rounded-md">
-                      ⚡ {currentLang === 'gu' ? `માહિતી લાભ: +${activeAdaptiveQuestion.informationGain}%` : currentLang === 'hi' ? `सूचना लाभ: +${activeAdaptiveQuestion.informationGain}%` : `Information Gain: +${activeAdaptiveQuestion.informationGain}%`}
+                      ⚡ {currentLang === 'gu' ? `સ્કોર: ${(activeAdaptiveQuestion.informationGain || 0.45).toFixed(2)}` : currentLang === 'hi' ? `स्कोर: ${(activeAdaptiveQuestion.informationGain || 0.45).toFixed(2)}` : `Score: ${(activeAdaptiveQuestion.informationGain || 0.45).toFixed(2)}`}
                     </span>
                   </div>
 
@@ -1050,7 +1052,7 @@ export const CaseTaking: React.FC<CaseTakingProps> = ({ onComplete, onCancel }) 
                         ? `લક્ષણ: ${(typeof activeAdaptiveQuestion.label === 'object' ? activeAdaptiveQuestion.label?.[currentLang] : activeAdaptiveQuestion.label) || activeAdaptiveQuestion.featureName}`
                         : currentLang === 'hi'
                         ? `लक्षण: ${(typeof activeAdaptiveQuestion.label === 'object' ? activeAdaptiveQuestion.label?.[currentLang] : activeAdaptiveQuestion.label) || activeAdaptiveQuestion.featureName}`
-                        : `Evaluating feature: ${activeAdaptiveQuestion.featureName}`}
+                        : `Evaluating feature: ${(typeof activeAdaptiveQuestion.label === 'object' ? activeAdaptiveQuestion.label?.en : activeAdaptiveQuestion.label) || activeAdaptiveQuestion.featureName}`}
                     </p>
                   </div>
 
