@@ -12,7 +12,9 @@ import {
   Building2, 
   Baby, 
   Sprout, 
-  Calendar
+  Calendar,
+  Pill,
+  Sparkles
 } from 'lucide-react';
 import { Patient, Family, LanguageCode } from '../types';
 import { PulseLine } from './PulseLine';
