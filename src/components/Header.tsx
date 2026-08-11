@@ -215,7 +215,7 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Center Primary Navigation Tabs (Desktop) */}
-        <nav className="hidden lg:flex items-center gap-1 bg-[#092422]/80 p-1 rounded-2xl border border-[#1E6B63]/50 text-xs shadow-inner">
+        <nav className="hidden xl:flex items-center gap-1 bg-[#092422]/90 px-1.5 py-1 rounded-2xl border border-[#1E6B63]/60 text-xs shadow-inner shrink-0">
           <button
             onClick={onHomeClick}
             className={`px-3 py-1.5 rounded-xl text-xs transition-all cursor-pointer flex items-center gap-1.5 shrink-0 font-medium ${
@@ -371,16 +371,16 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
         </nav>
 
-        {/* Language Switcher & Portal Switcher & Mobile Menu Button */}
-        <div className="flex items-center gap-2 shrink-0">
+        {/* Right Controls: Switch Portal, Language Switcher & Mobile Menu Button */}
+        <div className="flex items-center gap-2.5 shrink-0 ml-auto xl:ml-0">
           {onSwitchPortal && (
             <button
               onClick={onSwitchPortal}
-              className="px-2.5 py-1 rounded-xl bg-teal-900/70 hover:bg-teal-700 active:bg-teal-600 text-teal-200 hover:text-white border border-teal-600/50 text-xs font-bold transition flex items-center gap-1.5 cursor-pointer shadow-inner"
+              className="px-3 py-1.5 rounded-xl bg-gradient-to-r from-emerald-800 to-teal-800 hover:from-emerald-700 hover:to-teal-700 active:scale-95 text-teal-100 hover:text-white border border-teal-500/50 text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer shadow-sm shrink-0"
               title="Exit to Portal Selection Screen"
             >
-              <Building2 className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">Switch Portal</span>
+              <Building2 className="w-3.5 h-3.5 text-teal-300" />
+              <span>Switch Portal</span>
             </button>
           )}
 
@@ -389,7 +389,7 @@ export const Header: React.FC<HeaderProps> = ({
               <button
                 key={lang.code}
                 onClick={() => handleLanguageChange(lang.code)}
-                className={`min-h-[26px] px-2.5 py-0.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                className={`min-h-[26px] px-2 py-0.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                   currentLang === lang.code
                     ? 'bg-[#1E6B63] text-white shadow-xs'
                     : 'text-[#B2DFD8] hover:text-white hover:bg-[#1E6B63]/30'
@@ -401,10 +401,10 @@ export const Header: React.FC<HeaderProps> = ({
             ))}
           </div>
 
-          {/* Mobile Menu Hamburger */}
+          {/* Mobile Menu Hamburger (Visible below XL) */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 rounded-xl bg-[#143B38] border border-[#1E6B63] text-white hover:bg-[#1E6B63] transition-colors cursor-pointer"
+            className="xl:hidden p-2 rounded-xl bg-[#143B38] border border-[#1E6B63] text-white hover:bg-[#1E6B63] transition-colors cursor-pointer shrink-0"
             aria-label="Toggle navigation menu"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -414,7 +414,7 @@ export const Header: React.FC<HeaderProps> = ({
 
       {/* Mobile Dropdown Navigation Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#092422] border-t border-[#143B38] px-4 py-3 space-y-2 animate-in slide-in-from-top-2 duration-200">
+        <div className="xl:hidden bg-[#092422] border-t border-[#143B38] px-4 py-3 space-y-2 animate-in slide-in-from-top-2 duration-200">
           <div className="grid grid-cols-2 gap-2 text-xs">
             <button
               onClick={() => { onHomeClick?.(); setMobileMenuOpen(false); }}
@@ -439,16 +439,6 @@ export const Header: React.FC<HeaderProps> = ({
             </button>
 
             <button
-              onClick={() => { onChronicCareClick?.(); setMobileMenuOpen(false); }}
-              className={`p-2.5 rounded-xl flex items-center gap-2 font-semibold transition ${
-                currentView === 'chronic_care' ? 'bg-[#1E6B63] text-white' : 'bg-[#143B38] text-[#B2DFD8]'
-              }`}
-            >
-              <Activity className="w-4 h-4 text-teal-300" />
-              <span>{labels.chronic}</span>
-            </button>
-
-            <button
               onClick={() => { onRosterClick?.(); setMobileMenuOpen(false); }}
               className={`p-2.5 rounded-xl flex items-center gap-2 font-semibold transition ${
                 currentView === 'roster' ? 'bg-[#1E6B63] text-white' : 'bg-[#143B38] text-[#B2DFD8]'
@@ -460,19 +450,12 @@ export const Header: React.FC<HeaderProps> = ({
 
             <button
               onClick={() => { onFollowUpsClick?.(); setMobileMenuOpen(false); }}
-              className={`p-2.5 rounded-xl flex items-center justify-between font-semibold transition ${
+              className={`p-2.5 rounded-xl flex items-center gap-2 font-semibold transition ${
                 currentView === 'followups' ? 'bg-[#1E6B63] text-white' : 'bg-[#143B38] text-[#B2DFD8]'
               }`}
             >
-              <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4 text-orange-300" />
-                <span>{labels.followups}</span>
-              </div>
-              {dueCount > 0 && (
-                <span className="w-4 h-4 bg-[#D9534F] text-white font-mono font-bold text-[10px] rounded-full flex items-center justify-center">
-                  {dueCount}
-                </span>
-              )}
+              <Clock className="w-4 h-4 text-orange-300" />
+              <span>{labels.followups}</span>
             </button>
 
             <button
@@ -486,6 +469,16 @@ export const Header: React.FC<HeaderProps> = ({
             </button>
 
             <button
+              onClick={() => { onChronicCareClick?.(); setMobileMenuOpen(false); }}
+              className={`p-2.5 rounded-xl flex items-center gap-2 font-semibold transition ${
+                currentView === 'chronic_care' ? 'bg-[#1E6B63] text-white' : 'bg-[#143B38] text-[#B2DFD8]'
+              }`}
+            >
+              <Activity className="w-4 h-4 text-teal-300" />
+              <span>{labels.chronic}</span>
+            </button>
+
+            <button
               onClick={() => { onSchemesClick?.(); setMobileMenuOpen(false); }}
               className={`p-2.5 rounded-xl flex items-center gap-2 font-semibold transition ${
                 currentView === 'schemes' ? 'bg-[#1E6B63] text-white' : 'bg-[#143B38] text-[#B2DFD8]'
@@ -493,26 +486,6 @@ export const Header: React.FC<HeaderProps> = ({
             >
               <FileText className="w-4 h-4 text-emerald-300" />
               <span>{labels.schemes}</span>
-            </button>
-
-            <button
-              onClick={() => { onStoriesClick?.(); setMobileMenuOpen(false); }}
-              className={`p-2.5 rounded-xl flex items-center gap-2 font-semibold transition ${
-                currentView === 'stories' ? 'bg-[#1E6B63] text-white' : 'bg-[#143B38] text-[#B2DFD8]'
-              }`}
-            >
-              <Sparkles className="w-4 h-4 text-amber-300" />
-              <span>{labels.stories}</span>
-            </button>
-
-            <button
-              onClick={() => { onArticlesClick?.(); setMobileMenuOpen(false); }}
-              className={`p-2.5 rounded-xl flex items-center gap-2 font-semibold transition ${
-                currentView === 'articles' ? 'bg-[#1E6B63] text-white' : 'bg-[#143B38] text-[#B2DFD8]'
-              }`}
-            >
-              <BookOpen className="w-4 h-4 text-cyan-300" />
-              <span>{labels.articles}</span>
             </button>
 
             <button
@@ -524,27 +497,19 @@ export const Header: React.FC<HeaderProps> = ({
               <Sprout className="w-4 h-4 text-lime-300" />
               <span>{labels.garden}</span>
             </button>
-
-            <button
-              onClick={() => { onOutbreakClick?.(); setMobileMenuOpen(false); }}
-              className={`p-2.5 rounded-xl flex items-center gap-2 font-semibold transition ${
-                currentView === 'outbreak' ? 'bg-[#1E6B63] text-white' : 'bg-[#143B38] text-[#B2DFD8]'
-              }`}
-            >
-              <AlertTriangle className="w-4 h-4 text-orange-400" />
-              <span>{labels.outbreaks}</span>
-            </button>
-
-            <button
-              onClick={() => { onNearbyClick?.(); setMobileMenuOpen(false); }}
-              className={`p-2.5 rounded-xl flex items-center gap-2 font-semibold transition ${
-                currentView === 'nearby' ? 'bg-[#1E6B63] text-white' : 'bg-[#143B38] text-[#B2DFD8]'
-              }`}
-            >
-              <MapPin className="w-4 h-4 text-rose-300" />
-              <span>{labels.nearby}</span>
-            </button>
           </div>
+
+          {onSwitchPortal && (
+            <div className="pt-2 border-t border-[#143B38]">
+              <button
+                onClick={() => { onSwitchPortal(); setMobileMenuOpen(false); }}
+                className="w-full py-2.5 px-3 bg-gradient-to-r from-emerald-800 to-teal-800 text-white rounded-xl text-xs font-bold flex items-center justify-center gap-2 shadow"
+              >
+                <Building2 className="w-4 h-4 text-teal-300" />
+                <span>Switch to Clinic Portal / Main Menu</span>
+              </button>
+            </div>
+          )}
         </div>
       )}
     </header>
