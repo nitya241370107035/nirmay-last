@@ -319,7 +319,7 @@ function getFeaturesForSymptom(s: string): string[] {
 }
 
 /**
- * Candidate Disease Narrowing & Hierarchical Splitting Question Engine
+ * Candidate Disease Progressive Filtering & Frequency-Ranked Question Engine
  */
 export function selectBestAdaptiveQuestion(session: DiagnosticSession): {
   featureId: string;
@@ -339,62 +339,49 @@ export function selectBestAdaptiveQuestion(session: DiagnosticSession): {
   const excludedRaw = Object.keys(vector).filter((k) => vector[k] === 0);
   const excludedSymptoms = excludedRaw.flatMap(getFeaturesForSymptom);
 
-  // 1. Determine active candidate diseases that have all confirmed symptoms
+  // 1. Initial & Progressive Filtering: Score all 41 diseases by confirmed matching count
   let candidateDiseaseIndices: number[] = [];
+  
+  // Diseases that possess the confirmed symptoms
+  let scores: { idx: number; score: number }[] = [];
   for (let d = 0; d < CANONICAL_DISEASES.length; d++) {
     const pSList = P_S_GIVEN_D[d] || [];
-    
-    // Check if disease has ALL confirmed symptoms
-    let hasAllConfirmed = true;
+    let cMatch = 0;
     for (const cs of confirmedSymptoms) {
       const fIdx = CANONICAL_FEATURES.indexOf(cs);
-      if (fIdx !== -1 && (pSList[fIdx] || 0) < 0.10) {
-        hasAllConfirmed = false;
-        break;
+      if (fIdx !== -1 && (pSList[fIdx] || 0) >= 0.10) {
+        cMatch += 1;
       }
     }
-    if (!hasAllConfirmed) continue;
-
-    // Check if disease has any strictly excluded symptom
-    let hasExcluded = false;
+    let eMatch = 0;
     for (const es of excludedSymptoms) {
       const fIdx = CANONICAL_FEATURES.indexOf(es);
-      if (fIdx !== -1 && (pSList[fIdx] || 0) >= 0.80) {
-        hasExcluded = true;
-        break;
+      if (fIdx !== -1 && (pSList[fIdx] || 0) >= 0.50) {
+        eMatch += 1;
       }
     }
-    if (!hasExcluded) {
-      candidateDiseaseIndices.push(d);
+
+    if (confirmedSymptoms.length === 0 || cMatch > 0) {
+      const netScore = cMatch * 3 - eMatch;
+      scores.push({ idx: d, score: netScore });
     }
   }
 
-  // Fallback: If no disease strictly satisfies all constraints, score by matching count
-  if (candidateDiseaseIndices.length === 0) {
-    let maxMatchScore = -Infinity;
-    let scores: number[] = [];
-    for (let d = 0; d < CANONICAL_DISEASES.length; d++) {
-      const pSList = P_S_GIVEN_D[d] || [];
-      let cMatch = 0;
-      for (const cs of confirmedSymptoms) {
-        const fIdx = CANONICAL_FEATURES.indexOf(cs);
-        if (fIdx !== -1 && (pSList[fIdx] || 0) >= 0.10) cMatch += 1;
-      }
-      let eMatch = 0;
-      for (const es of excludedSymptoms) {
-        const fIdx = CANONICAL_FEATURES.indexOf(es);
-        if (fIdx !== -1 && (pSList[fIdx] || 0) >= 0.50) eMatch += 1;
-      }
-      const score = cMatch * 2 - eMatch;
-      scores.push(score);
-      if (score > maxMatchScore) maxMatchScore = score;
-    }
+  // Sort by netScore descending
+  scores.sort((a, b) => b.score - a.score);
+
+  if (scores.length > 0) {
+    const maxScore = scores[0].score;
+    // Keep top candidates with max or near-max score
     candidateDiseaseIndices = scores
-      .map((s, idx) => (s === maxMatchScore ? idx : -1))
-      .filter((idx) => idx !== -1);
+      .filter((s) => s.score >= maxScore - 1)
+      .slice(0, 6)
+      .map((s) => s.idx);
+  } else {
+    candidateDiseaseIndices = Array.from({ length: CANONICAL_DISEASES.length }, (_, i) => i);
   }
 
-  // 2. Rank unasked symptoms present among candidate diseases
+  // 2. Select the most frequent unasked symptom among the candidate diseases
   let bestFeatureId: string | null = null;
   let bestScore = -Infinity;
   let bestCount = 0;
@@ -408,7 +395,7 @@ export function selectBestAdaptiveQuestion(session: DiagnosticSession): {
     if (askedSet.has(featLower) || askedSet.has(featId)) continue;
     if (skippedSet.has(featLower) || skippedSet.has(featId)) continue;
 
-    // Count how many candidate diseases have this symptom
+    // Count occurrence across active candidate diseases
     let countInCandidates = 0;
     for (const dIdx of candidateDiseaseIndices) {
       if ((P_S_GIVEN_D[dIdx]?.[fIdx] || 0) >= 0.10) {
@@ -416,20 +403,57 @@ export function selectBestAdaptiveQuestion(session: DiagnosticSession): {
       }
     }
 
-    if (countInCandidates === 0) continue; // Not present in any candidate disease
+    if (countInCandidates === 0) continue;
 
-    // Differentiating power: maximum when ratio = 0.5 (halves candidates)
+    // Score based on frequency and candidate split power
     const ratio = countInCandidates / numCandidates;
-    let splitPower = 1.0;
-    if (numCandidates > 1) {
-      splitPower = 1.0 - Math.abs(ratio - 0.5) * 2.0;
-    }
+    const splitPower = 1.0 - Math.abs(ratio - 0.5);
+    const score = countInCandidates * 5 + splitPower * 10;
 
-    const score = splitPower * 10 + countInCandidates;
     if (score > bestScore) {
       bestScore = score;
       bestFeatureId = featId;
       bestCount = countInCandidates;
+    }
+  }
+
+  // Fallback Tier 2: Associated Co-occurring / Review of Systems symptoms
+  if (!bestFeatureId) {
+    const matrix = diseaseModelData.symptom_co_occurrence as Record<string, Record<string, number>>;
+    for (const cs of confirmedSymptoms) {
+      const csLower = cs.toLowerCase().trim();
+      const coMap = matrix[cs] || matrix[csLower] || {};
+      for (const featId of CANONICAL_FEATURES) {
+        const featLower = featId.toLowerCase().trim();
+        if (vector[featId] !== null && vector[featId] !== undefined) continue;
+        if (vector[featLower] !== null && vector[featLower] !== undefined) continue;
+        if (askedSet.has(featLower) || askedSet.has(featId)) continue;
+        if (skippedSet.has(featLower) || skippedSet.has(featId)) continue;
+
+        const prob = coMap[featId] || coMap[featLower] || 0.0;
+        const score = prob * 10;
+        if (score > bestScore) {
+          bestScore = score;
+          bestFeatureId = featId;
+          bestCount = 1;
+        }
+      }
+    }
+  }
+
+  // Fallback Tier 3: Any remaining unasked clinical symptom
+  if (!bestFeatureId) {
+    for (const featId of CANONICAL_FEATURES) {
+      const featLower = featId.toLowerCase().trim();
+      if (vector[featId] !== null && vector[featId] !== undefined) continue;
+      if (vector[featLower] !== null && vector[featLower] !== undefined) continue;
+      if (askedSet.has(featLower) || askedSet.has(featId)) continue;
+      if (skippedSet.has(featLower) || skippedSet.has(featId)) continue;
+
+      bestFeatureId = featId;
+      bestScore = 1.0;
+      bestCount = 1;
+      break;
     }
   }
 
@@ -452,7 +476,7 @@ export function selectBestAdaptiveQuestion(session: DiagnosticSession): {
     featureName: trans.en || bestFeatureId,
     utility,
     informationGain,
-    question: {
+    question: symMeta?.question || {
       en: `Do you have ${trans.en.toLowerCase()}?`,
       hi: `क्या आपको ${trans.hi} की समस्या है?`,
       gu: `શું તમને ${trans.gu} ની તકલીફ છે?`
@@ -471,13 +495,13 @@ export function evaluateSessionStopping(session: DiagnosticSession): {
   const topProb = session.currentPosterior[0]?.probability ?? 0.0;
   const turn = session.questionCount;
 
-  // Minimum Questions Enforcement: Never stop before at least 6 questions!
-  if (turn < 6) {
+  // Minimum Questions Enforcement: Must complete AT LEAST 8 questions before early stopping!
+  if (turn < 8) {
     return { isStoppingMet: false, reason: null };
   }
 
-  // 1. High Certainty: max P(D) >= 0.95 after at least 6 questions
-  if (topProb >= 0.95 && turn >= 6) {
+  // 1. High Certainty: max P(D) >= 0.95 after at least 8 questions
+  if (topProb >= 0.95 && turn >= 8) {
     return {
       isStoppingMet: true,
       reason: {

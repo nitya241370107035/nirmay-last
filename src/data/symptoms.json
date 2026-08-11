@@ -1,2450 +1,2246 @@
 [
   {
-    "id": "anxiety and nervousness",
+    "id": "itching",
     "canonicalIndex": 0,
-    "name": "anxiety and nervousness",
+    "name": "itching",
     "label": {
-      "en": "Anxiety, restlessness & nervousness",
+      "en": "Itching",
+      "hi": "खुजली",
+      "gu": "ખંજવાળ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have itching?",
+      "hi": "क्या आपको खुजली की समस्या है?",
+      "gu": "શું તમને ખંજવાળ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "skin_rash",
+    "canonicalIndex": 1,
+    "name": "skin_rash",
+    "label": {
+      "en": "Skin Rash",
+      "hi": "त्वचा पर चकत्ते",
+      "gu": "ત્વચા પર ફોલ્લીઓ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have skin rash?",
+      "hi": "क्या आपको त्वचा पर चकत्ते की समस्या है?",
+      "gu": "શું તમને ત્વચા પર ફોલ્લીઓ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "nodal_skin_eruptions",
+    "canonicalIndex": 2,
+    "name": "nodal_skin_eruptions",
+    "label": {
+      "en": "Nodal Skin Eruptions",
+      "hi": "त्वचा पर गांठदार दाने",
+      "gu": "ત્વચા પર ગાંઠદાર ફોલ્લીઓ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have nodal skin eruptions?",
+      "hi": "क्या आपको त्वचा पर गांठदार दाने की समस्या है?",
+      "gu": "શું તમને ત્વચા પર ગાંઠદાર ફોલ્લીઓ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "continuous_sneezing",
+    "canonicalIndex": 3,
+    "name": "continuous_sneezing",
+    "label": {
+      "en": "Continuous Sneezing",
+      "hi": "लगातार छींक आना",
+      "gu": "સતત છીંક આવવી"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have continuous sneezing?",
+      "hi": "क्या आपको लगातार छींक आना की समस्या है?",
+      "gu": "શું તમને સતત છીંક આવવી ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "shivering",
+    "canonicalIndex": 4,
+    "name": "shivering",
+    "label": {
+      "en": "Shivering",
+      "hi": "कपकपी",
+      "gu": "ધ્રુજારી"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have shivering?",
+      "hi": "क्या आपको कपकपी की समस्या है?",
+      "gu": "શું તમને ધ્રુજારી ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "chills",
+    "canonicalIndex": 5,
+    "name": "chills",
+    "label": {
+      "en": "Chills",
+      "hi": "ठंड लगना",
+      "gu": "ઠંડી લાગવી"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have chills?",
+      "hi": "क्या आपको ठंड लगना की समस्या है?",
+      "gu": "શું તમને ઠંડી લાગવી ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "joint_pain",
+    "canonicalIndex": 6,
+    "name": "joint_pain",
+    "label": {
+      "en": "Joint Pain",
+      "hi": "जोड़ों का दर्द",
+      "gu": "સાંધાનો દુખાવો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have joint pain?",
+      "hi": "क्या आपको जोड़ों का दर्द की समस्या है?",
+      "gu": "શું તમને સાંધાનો દુખાવો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "stomach_pain",
+    "canonicalIndex": 7,
+    "name": "stomach_pain",
+    "label": {
+      "en": "Stomach Pain",
+      "hi": "पेट दर्द",
+      "gu": "પેટનો દુખાવો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have stomach pain?",
+      "hi": "क्या आपको पेट दर्द की समस्या है?",
+      "gu": "શું તમને પેટનો દુખાવો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "acidity",
+    "canonicalIndex": 8,
+    "name": "acidity",
+    "label": {
+      "en": "Acidity / Heartburn",
+      "hi": "एसिडिटी / छाती में जलन",
+      "gu": "એસિડિટી / છાતીમાં બળતરા"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have acidity / heartburn?",
+      "hi": "क्या आपको एसिडिटी / छाती में जलन की समस्या है?",
+      "gu": "શું તમને એસિડિટી / છાતીમાં બળતરા ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "ulcers_on_tongue",
+    "canonicalIndex": 9,
+    "name": "ulcers_on_tongue",
+    "label": {
+      "en": "Ulcers on Tongue",
+      "hi": "जीभ पर छाले",
+      "gu": "જીભ પર ચાંદા"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have ulcers on tongue?",
+      "hi": "क्या आपको जीभ पर छाले की समस्या है?",
+      "gu": "શું તમને જીભ પર ચાંદા ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "muscle_wasting",
+    "canonicalIndex": 10,
+    "name": "muscle_wasting",
+    "label": {
+      "en": "Muscle Wasting",
+      "hi": "मांसपेशियों का सूखना",
+      "gu": "સ્નાયુઓનું નબળું પડવું"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have muscle wasting?",
+      "hi": "क्या आपको मांसपेशियों का सूखना की समस्या है?",
+      "gu": "શું તમને સ્નાયુઓનું નબળું પડવું ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "vomiting",
+    "canonicalIndex": 11,
+    "name": "vomiting",
+    "label": {
+      "en": "Vomiting",
+      "hi": "उल्टी",
+      "gu": "ઊલટી"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have vomiting?",
+      "hi": "क्या आपको उल्टी की समस्या है?",
+      "gu": "શું તમને ઊલટી ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "burning_micturition",
+    "canonicalIndex": 12,
+    "name": "burning_micturition",
+    "label": {
+      "en": "Burning Urination",
+      "hi": "पेशाब में जलन",
+      "gu": "પેશાબમાં બળતરા"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have burning urination?",
+      "hi": "क्या आपको पेशाब में जलन की समस्या है?",
+      "gu": "શું તમને પેશાબમાં બળતરા ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "spotting_ urination",
+    "canonicalIndex": 13,
+    "name": "spotting_ urination",
+    "label": {
+      "en": "Urinary Spotting",
+      "hi": "पेशाब में बूंद-बूंद टपकना",
+      "gu": "પેશાબમાં લોહીના ડાઘ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have urinary spotting?",
+      "hi": "क्या आपको पेशाब में बूंद-बूंद टपकना की समस्या है?",
+      "gu": "શું તમને પેશાબમાં લોહીના ડાઘ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "fatigue",
+    "canonicalIndex": 14,
+    "name": "fatigue",
+    "label": {
+      "en": "Fatigue",
+      "hi": "थकान",
+      "gu": "થાક"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have fatigue?",
+      "hi": "क्या आपको थकान की समस्या है?",
+      "gu": "શું તમને થાક ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "weight_gain",
+    "canonicalIndex": 15,
+    "name": "weight_gain",
+    "label": {
+      "en": "Weight Gain",
+      "hi": "वजन बढ़ना",
+      "gu": "વજન વધવું"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have weight gain?",
+      "hi": "क्या आपको वजन बढ़ना की समस्या है?",
+      "gu": "શું તમને વજન વધવું ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "anxiety",
+    "canonicalIndex": 16,
+    "name": "anxiety",
+    "label": {
+      "en": "Anxiety",
       "hi": "घबराहट व बेचैनी",
       "gu": "ગભરામણ અને બેચેની"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have anxiety, restlessness & nervousness?",
+      "en": "Do you have anxiety?",
       "hi": "क्या आपको घबराहट व बेचैनी की समस्या है?",
       "gu": "શું તમને ગભરામણ અને બેચેની ની તકલીફ છે?"
     }
   },
   {
-    "id": "shortness of breath",
-    "canonicalIndex": 1,
-    "name": "shortness of breath",
+    "id": "cold_hands_and_feets",
+    "canonicalIndex": 17,
+    "name": "cold_hands_and_feets",
     "label": {
-      "en": "Shortness of breath",
+      "en": "Cold Hands & Feet",
+      "hi": "हाथ-पैर ठंडे पड़ना",
+      "gu": "હાથ-પગ ઠંડા પડવા"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have cold hands & feet?",
+      "hi": "क्या आपको हाथ-पैर ठंडे पड़ना की समस्या है?",
+      "gu": "શું તમને હાથ-પગ ઠંડા પડવા ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "mood_swings",
+    "canonicalIndex": 18,
+    "name": "mood_swings",
+    "label": {
+      "en": "Mood Swings",
+      "hi": "मूड में तेजी से बदलाव",
+      "gu": "મૂડમાં ઝડપી ફેરફાર"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have mood swings?",
+      "hi": "क्या आपको मूड में तेजी से बदलाव की समस्या है?",
+      "gu": "શું તમને મૂડમાં ઝડપી ફેરફાર ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "weight_loss",
+    "canonicalIndex": 19,
+    "name": "weight_loss",
+    "label": {
+      "en": "Weight Loss",
+      "hi": "वजन कम होना",
+      "gu": "વજન ઘટવું"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have weight loss?",
+      "hi": "क्या आपको वजन कम होना की समस्या है?",
+      "gu": "શું તમને વજન ઘટવું ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "restlessness",
+    "canonicalIndex": 20,
+    "name": "restlessness",
+    "label": {
+      "en": "Restlessness",
+      "hi": "बेचैनी",
+      "gu": "બેચેની"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have restlessness?",
+      "hi": "क्या आपको बेचैनी की समस्या है?",
+      "gu": "શું તમને બેચેની ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "lethargy",
+    "canonicalIndex": 21,
+    "name": "lethargy",
+    "label": {
+      "en": "Lethargy",
+      "hi": "सुस्ती / आलस्य",
+      "gu": "સુસ્તી"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have lethargy?",
+      "hi": "क्या आपको सुस्ती / आलस्य की समस्या है?",
+      "gu": "શું તમને સુસ્તી ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "patches_in_throat",
+    "canonicalIndex": 22,
+    "name": "patches_in_throat",
+    "label": {
+      "en": "Patches in Throat",
+      "hi": "गले में धब्बे",
+      "gu": "ગળામાં ચાંદા / ધબ્બા"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have patches in throat?",
+      "hi": "क्या आपको गले में धब्बे की समस्या है?",
+      "gu": "શું તમને ગળામાં ચાંદા / ધબ્બા ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "irregular_sugar_level",
+    "canonicalIndex": 23,
+    "name": "irregular_sugar_level",
+    "label": {
+      "en": "Irregular Sugar Level",
+      "hi": "अनियमित ब्लड शुगर",
+      "gu": "અનિયમિત બ્લડ સુગર"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have irregular sugar level?",
+      "hi": "क्या आपको अनियमित ब्लड शुगर की समस्या है?",
+      "gu": "શું તમને અનિયમિત બ્લડ સુગર ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "cough",
+    "canonicalIndex": 24,
+    "name": "cough",
+    "label": {
+      "en": "Cough",
+      "hi": "खांसी",
+      "gu": "ખાંસી"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have cough?",
+      "hi": "क्या आपको खांसी की समस्या है?",
+      "gu": "શું તમને ખાંસી ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "high_fever",
+    "canonicalIndex": 25,
+    "name": "high_fever",
+    "label": {
+      "en": "High Fever",
+      "hi": "तेज बुखार",
+      "gu": "તેજ તાવ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have high fever?",
+      "hi": "क्या आपको तेज बुखार की समस्या है?",
+      "gu": "શું તમને તેજ તાવ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "sunken_eyes",
+    "canonicalIndex": 26,
+    "name": "sunken_eyes",
+    "label": {
+      "en": "Sunken Eyes",
+      "hi": "धंसी हुई आंखें",
+      "gu": "ઊંડી ઉતરી ગયેલી આંખો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have sunken eyes?",
+      "hi": "क्या आपको धंसी हुई आंखें की समस्या है?",
+      "gu": "શું તમને ઊંડી ઉતરી ગયેલી આંખો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "breathlessness",
+    "canonicalIndex": 27,
+    "name": "breathlessness",
+    "label": {
+      "en": "Breathlessness",
       "hi": "सांस फूलना / सांस लेने में तकलीफ",
       "gu": "શ્વાસ ચઢવો / શ્વાસ લેવામાં તકલીફ"
     },
     "answerability": 0.95,
     "reliability": 0.95,
     "question": {
-      "en": "Do you have shortness of breath?",
+      "en": "Do you have breathlessness?",
       "hi": "क्या आपको सांस फूलना / सांस लेने में तकलीफ की समस्या है?",
       "gu": "શું તમને શ્વાસ ચઢવો / શ્વાસ લેવામાં તકલીફ ની તકલીફ છે?"
     }
   },
   {
-    "id": "depressive or psychotic symptoms",
-    "canonicalIndex": 2,
-    "name": "depressive or psychotic symptoms",
-    "label": {
-      "en": "Depressive Or Psychotic Symptoms",
-      "hi": "Depressive Or Psychotic Symptoms",
-      "gu": "Depressive Or Psychotic Symptoms"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have depressive or psychotic symptoms?",
-      "hi": "क्या आपको Depressive Or Psychotic Symptoms की समस्या है?",
-      "gu": "શું તમને Depressive Or Psychotic Symptoms ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "sharp chest pain",
-    "canonicalIndex": 3,
-    "name": "sharp chest pain",
-    "label": {
-      "en": "Sharp chest pain",
-      "hi": "सीने में तेज दर्द / चुभन",
-      "gu": "છાતીમાં તીક્ષ્ણ દુખાવો"
-    },
-    "answerability": 0.95,
-    "reliability": 0.95,
-    "question": {
-      "en": "Do you have sharp chest pain?",
-      "hi": "क्या आपको सीने में तेज दर्द / चुभन की समस्या है?",
-      "gu": "શું તમને છાતીમાં તીક્ષ્ણ દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "dizziness",
-    "canonicalIndex": 4,
-    "name": "dizziness",
-    "label": {
-      "en": "Dizziness / Lightheadedness",
-      "hi": "चक्कर आना",
-      "gu": "ચક્કર આવવા"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have dizziness / lightheadedness?",
-      "hi": "क्या आपको चक्कर आना की समस्या है?",
-      "gu": "શું તમને ચક્કર આવવા ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "insomnia",
-    "canonicalIndex": 5,
-    "name": "insomnia",
-    "label": {
-      "en": "Difficulty sleeping / Insomnia",
-      "hi": "नींद न आना",
-      "gu": "ઊંઘ ન આવવી"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have difficulty sleeping / insomnia?",
-      "hi": "क्या आपको नींद न आना की समस्या है?",
-      "gu": "શું તમને ઊંઘ ન આવવી ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "abnormal involuntary movements",
-    "canonicalIndex": 6,
-    "name": "abnormal involuntary movements",
-    "label": {
-      "en": "Abnormal Involuntary Movements",
-      "hi": "Abnormal Involuntary Movements",
-      "gu": "Abnormal Involuntary Movements"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have abnormal involuntary movements?",
-      "hi": "क्या आपको Abnormal Involuntary Movements की समस्या है?",
-      "gu": "શું તમને Abnormal Involuntary Movements ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "chest tightness",
-    "canonicalIndex": 7,
-    "name": "chest tightness",
-    "label": {
-      "en": "Chest tightness",
-      "hi": "छाती में भारीपन / जकड़न",
-      "gu": "છાતીમાં દબાણ અથવા જકડાઈ જવું"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have chest tightness?",
-      "hi": "क्या आपको छाती में भारीपन / जकड़न की समस्या है?",
-      "gu": "શું તમને છાતીમાં દબાણ અથવા જકડાઈ જવું ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "palpitations",
-    "canonicalIndex": 8,
-    "name": "palpitations",
-    "label": {
-      "en": "Heart palpitations",
-      "hi": "दिल की धड़कन तेज होना",
-      "gu": "હૃદયના ધબકારા વધવા"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have heart palpitations?",
-      "hi": "क्या आपको दिल की धड़कन तेज होना की समस्या है?",
-      "gu": "શું તમને હૃદયના ધબકારા વધવા ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "irregular heartbeat",
-    "canonicalIndex": 9,
-    "name": "irregular heartbeat",
-    "label": {
-      "en": "Irregular heartbeat",
-      "hi": "अनियमित धड़कन",
-      "gu": "અનિયમિત ધબકારા"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have irregular heartbeat?",
-      "hi": "क्या आपको अनियमित धड़कन की समस्या है?",
-      "gu": "શું તમને અનિયમિત ધબકારા ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "hoarse voice",
-    "canonicalIndex": 10,
-    "name": "hoarse voice",
-    "label": {
-      "en": "Hoarse / Raspy voice",
-      "hi": "आवाज बैठना या भारी होना",
-      "gu": "અવાજ બેસી જવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have hoarse / raspy voice?",
-      "hi": "क्या आपको आवाज बैठना या भारी होना की समस्या है?",
-      "gu": "શું તમને અવાજ બેસી જવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "sore throat",
-    "canonicalIndex": 11,
-    "name": "sore throat",
-    "label": {
-      "en": "Sore throat / Painful throat",
-      "hi": "गले में दर्द या खराश",
-      "gu": "ગળામાં દુખાવો / ખારાશ"
-    },
-    "answerability": 0.95,
-    "reliability": 0.95,
-    "question": {
-      "en": "Do you have sore throat / painful throat?",
-      "hi": "क्या आपको गले में दर्द या खराश की समस्या है?",
-      "gu": "શું તમને ગળામાં દુખાવો / ખારાશ ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "cough",
-    "canonicalIndex": 12,
-    "name": "cough",
-    "label": {
-      "en": "Cough",
-      "hi": "खांसी",
-      "gu": "ઉધરસ"
-    },
-    "answerability": 1.0,
-    "reliability": 0.98,
-    "question": {
-      "en": "Do you have cough?",
-      "hi": "क्या आपको खांसी की समस्या है?",
-      "gu": "શું તમને ઉધરસ ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "nasal congestion",
-    "canonicalIndex": 13,
-    "name": "nasal congestion",
-    "label": {
-      "en": "Nasal congestion / Blocked nose",
-      "hi": "नाक बंद होना / जुकाम",
-      "gu": "નાક બંધ થવું / શરદી"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have nasal congestion / blocked nose?",
-      "hi": "क्या आपको नाक बंद होना / जुकाम की समस्या है?",
-      "gu": "શું તમને નાક બંધ થવું / શરદી ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "diminished hearing",
-    "canonicalIndex": 14,
-    "name": "diminished hearing",
-    "label": {
-      "en": "Reduced hearing acuity",
-      "hi": "कम सुनाई देना",
-      "gu": "ઓછું સંભળાવું"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have reduced hearing acuity?",
-      "hi": "क्या आपको कम सुनाई देना की समस्या है?",
-      "gu": "શું તમને ઓછું સંભળાવું ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "lump in throat",
-    "canonicalIndex": 15,
-    "name": "lump in throat",
-    "label": {
-      "en": "Sensation of lump in throat",
-      "hi": "गले में कुछ अटका हुआ लगना",
-      "gu": "ગળામાં કંઈક ફસાયેલું લાગવું"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have sensation of lump in throat?",
-      "hi": "क्या आपको गले में कुछ अटका हुआ लगना की समस्या है?",
-      "gu": "શું તમને ગળામાં કંઈક ફસાયેલું લાગવું ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "throat feels tight",
-    "canonicalIndex": 16,
-    "name": "throat feels tight",
-    "label": {
-      "en": "Throat feels tight / Constricted",
-      "hi": "गला घुटने जैसा महसूस होना",
-      "gu": "ગળું દબાઈ જવું"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have throat feels tight / constricted?",
-      "hi": "क्या आपको गला घुटने जैसा महसूस होना की समस्या है?",
-      "gu": "શું તમને ગળું દબાઈ જવું ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "difficulty in swallowing",
-    "canonicalIndex": 17,
-    "name": "difficulty in swallowing",
-    "label": {
-      "en": "Difficulty or pain swallowing",
-      "hi": "खाना निगलने में दर्द या रुकावट",
-      "gu": "ખોરાક ગળવામાં તકલીફ કે દુખાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have difficulty or pain swallowing?",
-      "hi": "क्या आपको खाना निगलने में दर्द या रुकावट की समस्या है?",
-      "gu": "શું તમને ખોરાક ગળવામાં તકલીફ કે દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "skin swelling",
-    "canonicalIndex": 18,
-    "name": "skin swelling",
-    "label": {
-      "en": "Localized skin swelling",
-      "hi": "त्वचा में सूजन",
-      "gu": "ચામડી પર સોજો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have localized skin swelling?",
-      "hi": "क्या आपको त्वचा में सूजन की समस्या है?",
-      "gu": "શું તમને ચામડી પર સોજો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "retention of urine",
-    "canonicalIndex": 19,
-    "name": "retention of urine",
-    "label": {
-      "en": "Inability to pass urine / Retention",
-      "hi": "पेशाब रुक जाना / रुकावट",
-      "gu": "પેશાબ અટકી જવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have inability to pass urine / retention?",
-      "hi": "क्या आपको पेशाब रुक जाना / रुकावट की समस्या है?",
-      "gu": "શું તમને પેશાબ અટકી જવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "leg pain",
-    "canonicalIndex": 20,
-    "name": "leg pain",
-    "label": {
-      "en": "Leg pain",
-      "hi": "पैरों में दर्द",
-      "gu": "પગમાં દુખાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have leg pain?",
-      "hi": "क्या आपको पैरों में दर्द की समस्या है?",
-      "gu": "શું તમને પગમાં દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "hip pain",
-    "canonicalIndex": 21,
-    "name": "hip pain",
-    "label": {
-      "en": "Hip joint pain",
-      "hi": "कूल्हे में दर्द",
-      "gu": "થાપાનો દુખાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have hip joint pain?",
-      "hi": "क्या आपको कूल्हे में दर्द की समस्या है?",
-      "gu": "શું તમને થાપાનો દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "suprapubic pain",
-    "canonicalIndex": 22,
-    "name": "suprapubic pain",
-    "label": {
-      "en": "Bladder / Suprapubic pain",
-      "hi": "मूत्राशय के ऊपर दर्द",
-      "gu": "પેડુના ભાગમાં પેશાબની કોથળીનો દુખાવો"
-    },
-    "answerability": 0.8,
-    "reliability": 0.9,
-    "question": {
-      "en": "Do you have bladder / suprapubic pain?",
-      "hi": "क्या आपको मूत्राशय के ऊपर दर्द की समस्या है?",
-      "gu": "શું તમને પેડુના ભાગમાં પેશાબની કોથળીનો દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "blood in stool",
-    "canonicalIndex": 23,
-    "name": "blood in stool",
-    "label": {
-      "en": "Blood in stool",
-      "hi": "शौच में खून आना",
-      "gu": "ઝાડામાં લોહી આવવું"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have blood in stool?",
-      "hi": "क्या आपको शौच में खून आना की समस्या है?",
-      "gu": "શું તમને ઝાડામાં લોહી આવવું ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "irritable infant",
-    "canonicalIndex": 24,
-    "name": "irritable infant",
-    "label": {
-      "en": "Irritable Infant",
-      "hi": "Irritable Infant",
-      "gu": "Irritable Infant"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have irritable infant?",
-      "hi": "क्या आपको Irritable Infant की समस्या है?",
-      "gu": "શું તમને Irritable Infant ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "fainting",
-    "canonicalIndex": 25,
-    "name": "fainting",
-    "label": {
-      "en": "Fainting / Loss of consciousness",
-      "hi": "बेहोशी या चक्कर खाकर गिरना",
-      "gu": "બેભાન થવું / ચક્કર આવવા"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have fainting / loss of consciousness?",
-      "hi": "क्या आपको बेहोशी या चक्कर खाकर गिरना की समस्या है?",
-      "gu": "શું તમને બેભાન થવું / ચક્કર આવવા ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "sharp abdominal pain",
-    "canonicalIndex": 26,
-    "name": "sharp abdominal pain",
-    "label": {
-      "en": "Sharp abdominal pain",
-      "hi": "पेट में तेज दर्द",
-      "gu": "પેટમાં તીવ્ર દુખાવો"
-    },
-    "answerability": 0.95,
-    "reliability": 0.95,
-    "question": {
-      "en": "Do you have sharp abdominal pain?",
-      "hi": "क्या आपको पेट में तेज दर्द की समस्या है?",
-      "gu": "શું તમને પેટમાં તીવ્ર દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "feeling ill",
-    "canonicalIndex": 27,
-    "name": "feeling ill",
-    "label": {
-      "en": "General malaise / Sickness feeling",
-      "hi": "तबीयत खराब लगना व कमजोरी",
-      "gu": "અસ્વસ્થતા અને અશક્તિ"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have general malaise / sickness feeling?",
-      "hi": "क्या आपको तबीयत खराब लगना व कमजोरी की समस्या है?",
-      "gu": "શું તમને અસ્વસ્થતા અને અશક્તિ ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "vomiting",
+    "id": "sweating",
     "canonicalIndex": 28,
-    "name": "vomiting",
+    "name": "sweating",
     "label": {
-      "en": "Vomiting",
-      "hi": "उल्टी आना",
-      "gu": "ઊલટી થવી"
+      "en": "Sweating",
+      "hi": "पसीना आना",
+      "gu": "પરસેવો વળવો"
     },
-    "answerability": 1.0,
-    "reliability": 0.98,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have vomiting?",
-      "hi": "क्या आपको उल्टी आना की समस्या है?",
-      "gu": "શું તમને ઊલટી થવી ની તકલીફ છે?"
+      "en": "Do you have sweating?",
+      "hi": "क्या आपको पसीना आना की समस्या है?",
+      "gu": "શું તમને પરસેવો વળવો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "dehydration",
+    "canonicalIndex": 29,
+    "name": "dehydration",
+    "label": {
+      "en": "Dehydration",
+      "hi": "शरीर में पानी की कमी",
+      "gu": "ડીહાઈડ્રેશન / શરીરમાં પાણીની અછત"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have dehydration?",
+      "hi": "क्या आपको शरीर में पानी की कमी की समस्या है?",
+      "gu": "શું તમને ડીહાઈડ્રેશન / શરીરમાં પાણીની અછત ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "indigestion",
+    "canonicalIndex": 30,
+    "name": "indigestion",
+    "label": {
+      "en": "Indigestion",
+      "hi": "अपच",
+      "gu": "અપચો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have indigestion?",
+      "hi": "क्या आपको अपच की समस्या है?",
+      "gu": "શું તમને અપચો ની તકલીફ છે?"
     }
   },
   {
     "id": "headache",
-    "canonicalIndex": 29,
+    "canonicalIndex": 31,
     "name": "headache",
     "label": {
       "en": "Headache",
-      "hi": "सिरदर्द",
+      "hi": "सिर दर्द",
       "gu": "માથાનો દુખાવો"
     },
     "answerability": 0.95,
     "reliability": 0.95,
     "question": {
       "en": "Do you have headache?",
-      "hi": "क्या आपको सिरदर्द की समस्या है?",
+      "hi": "क्या आपको सिर दर्द की समस्या है?",
       "gu": "શું તમને માથાનો દુખાવો ની તકલીફ છે?"
     }
   },
   {
+    "id": "yellowish_skin",
+    "canonicalIndex": 32,
+    "name": "yellowish_skin",
+    "label": {
+      "en": "Yellowish Skin",
+      "hi": "त्वचा का पीला पड़ना",
+      "gu": "ત્વચા પીળી પડવી"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have yellowish skin?",
+      "hi": "क्या आपको त्वचा का पीला पड़ना की समस्या है?",
+      "gu": "શું તમને ત્વચા પીળી પડવી ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "dark_urine",
+    "canonicalIndex": 33,
+    "name": "dark_urine",
+    "label": {
+      "en": "Dark Urine",
+      "hi": "गहरा पीला पेशाब",
+      "gu": "ઘાટો પેશાબ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have dark urine?",
+      "hi": "क्या आपको गहरा पीला पेशाब की समस्या है?",
+      "gu": "શું તમને ઘાટો પેશાબ ની તકલીફ છે?"
+    }
+  },
+  {
     "id": "nausea",
-    "canonicalIndex": 30,
+    "canonicalIndex": 34,
     "name": "nausea",
     "label": {
-      "en": "Nausea / Queasiness",
-      "hi": "जी मिचलाना",
+      "en": "Nausea",
+      "hi": "जी मिचलाना / उल्टी जैसा महसूस होना",
       "gu": "ઉબકા આવવા"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have nausea / queasiness?",
-      "hi": "क्या आपको जी मिचलाना की समस्या है?",
+      "en": "Do you have nausea?",
+      "hi": "क्या आपको जी मिचलाना / उल्टी जैसा महसूस होना की समस्या है?",
       "gu": "શું તમને ઉબકા આવવા ની તકલીફ છે?"
     }
   },
   {
-    "id": "diarrhea",
-    "canonicalIndex": 31,
-    "name": "diarrhea",
-    "label": {
-      "en": "Diarrhea / Watery loose motions",
-      "hi": "दस्त / पतले दस्त",
-      "gu": "ઝાડા / પાતળા ઝાડા"
-    },
-    "answerability": 1.0,
-    "reliability": 0.98,
-    "question": {
-      "en": "Do you have diarrhea / watery loose motions?",
-      "hi": "क्या आपको दस्त / पतले दस्त की समस्या है?",
-      "gu": "શું તમને ઝાડા / પાતળા ઝાડા ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "painful urination",
-    "canonicalIndex": 32,
-    "name": "painful urination",
-    "label": {
-      "en": "Burning or painful urination (Dysuria)",
-      "hi": "पेशाब में जलन या दर्द",
-      "gu": "પેશાબમાં બળતરા કે દુખાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have burning or painful urination (dysuria)?",
-      "hi": "क्या आपको पेशाब में जलन या दर्द की समस्या है?",
-      "gu": "શું તમને પેશાબમાં બળતરા કે દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "involuntary urination",
-    "canonicalIndex": 33,
-    "name": "involuntary urination",
-    "label": {
-      "en": "Urinary incontinence / Leakage",
-      "hi": "पेशाब पर नियंत्रण न रहना",
-      "gu": "પેશાબ પર કાબૂ ન રહેવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have urinary incontinence / leakage?",
-      "hi": "क्या आपको पेशाब पर नियंत्रण न रहना की समस्या है?",
-      "gu": "શું તમને પેશાબ પર કાબૂ ન રહેવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "frequent urination",
-    "canonicalIndex": 34,
-    "name": "frequent urination",
-    "label": {
-      "en": "Frequent urination",
-      "hi": "बार-बार पेशाब आना",
-      "gu": "વારંવાર પેશાબ થવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have frequent urination?",
-      "hi": "क्या आपको बार-बार पेशाब आना की समस्या है?",
-      "gu": "શું તમને વારંવાર પેશાબ થવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "lower abdominal pain",
+    "id": "loss_of_appetite",
     "canonicalIndex": 35,
-    "name": "lower abdominal pain",
+    "name": "loss_of_appetite",
     "label": {
-      "en": "Lower abdominal / Pelvic pain",
-      "hi": "पेट के निचले हिस्से में दर्द",
-      "gu": "પેડુમાં દુખાવો"
-    },
-    "answerability": 0.95,
-    "reliability": 0.95,
-    "question": {
-      "en": "Do you have lower abdominal / pelvic pain?",
-      "hi": "क्या आपको पेट के निचले हिस्से में दर्द की समस्या है?",
-      "gu": "શું તમને પેડુમાં દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "blood in urine",
-    "canonicalIndex": 36,
-    "name": "blood in urine",
-    "label": {
-      "en": "Blood in urine (Hematuria)",
-      "hi": "पेशाब में खून आना",
-      "gu": "પેશાબમાં લોહી આવવું"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have blood in urine (hematuria)?",
-      "hi": "क्या आपको पेशाब में खून आना की समस्या है?",
-      "gu": "શું તમને પેશાબમાં લોહી આવવું ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "hot flashes",
-    "canonicalIndex": 37,
-    "name": "hot flashes",
-    "label": {
-      "en": "Sudden hot flashes / Warm sensation",
-      "hi": "अचानक गर्मी या पसीना छूटना",
-      "gu": "અચાનક ગરમી લાગવી"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have sudden hot flashes / warm sensation?",
-      "hi": "क्या आपको अचानक गर्मी या पसीना छूटना की समस्या है?",
-      "gu": "શું તમને અચાનક ગરમી લાગવી ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "hand or finger pain",
-    "canonicalIndex": 38,
-    "name": "hand or finger pain",
-    "label": {
-      "en": "Hand or finger joint pain",
-      "hi": "हाथ की उंगलियों में दर्द",
-      "gu": "હાથની આંગળીઓમાં દુખાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have hand or finger joint pain?",
-      "hi": "क्या आपको हाथ की उंगलियों में दर्द की समस्या है?",
-      "gu": "શું તમને હાથની આંગળીઓમાં દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "wrist pain",
-    "canonicalIndex": 39,
-    "name": "wrist pain",
-    "label": {
-      "en": "Wrist pain",
-      "hi": "कलाई में दर्द",
-      "gu": "કાંડામાં દુખાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have wrist pain?",
-      "hi": "क्या आपको कलाई में दर्द की समस्या है?",
-      "gu": "શું તમને કાંડામાં દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "hand or finger swelling",
-    "canonicalIndex": 40,
-    "name": "hand or finger swelling",
-    "label": {
-      "en": "Hand or finger swelling",
-      "hi": "उंगलियों में सूजन",
-      "gu": "આંગળીઓમાં સોજો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have hand or finger swelling?",
-      "hi": "क्या आपको उंगलियों में सूजन की समस्या है?",
-      "gu": "શું તમને આંગળીઓમાં સોજો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "arm pain",
-    "canonicalIndex": 41,
-    "name": "arm pain",
-    "label": {
-      "en": "Arm or shoulder pain",
-      "hi": "हाथ या कंधे में दर्द",
-      "gu": "હાથ કે ખભામાં દુખાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have arm or shoulder pain?",
-      "hi": "क्या आपको हाथ या कंधे में दर्द की समस्या है?",
-      "gu": "શું તમને હાથ કે ખભામાં દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "wrist swelling",
-    "canonicalIndex": 42,
-    "name": "wrist swelling",
-    "label": {
-      "en": "Wrist swelling",
-      "hi": "कलाई में सूजन",
-      "gu": "કાંડામાં સોજો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have wrist swelling?",
-      "hi": "क्या आपको कलाई में सूजन की समस्या है?",
-      "gu": "શું તમને કાંડામાં સોજો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "abnormal appearing skin",
-    "canonicalIndex": 43,
-    "name": "abnormal appearing skin",
-    "label": {
-      "en": "Abnormal Appearing Skin",
-      "hi": "Abnormal Appearing Skin",
-      "gu": "Abnormal Appearing Skin"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have abnormal appearing skin?",
-      "hi": "क्या आपको Abnormal Appearing Skin की समस्या है?",
-      "gu": "શું તમને Abnormal Appearing Skin ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "skin lesion",
-    "canonicalIndex": 44,
-    "name": "skin lesion",
-    "label": {
-      "en": "Skin sore, patch or blister",
-      "hi": "त्वचा पर छाले या घाव",
-      "gu": "ચામડી પર ફોલ્લા કે ચાંદા"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have skin sore, patch or blister?",
-      "hi": "क्या आपको त्वचा पर छाले या घाव की समस्या है?",
-      "gu": "શું તમને ચામડી પર ફોલ્લા કે ચાંદા ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "acne or pimples",
-    "canonicalIndex": 45,
-    "name": "acne or pimples",
-    "label": {
-      "en": "Acne / Pus-filled pimples",
-      "hi": "मुंहासे या फुंसियां",
-      "gu": "ખીલ કે ફોલ્લીઓ"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have acne / pus-filled pimples?",
-      "hi": "क्या आपको मुंहासे या फुंसियां की समस्या है?",
-      "gu": "શું તમને ખીલ કે ફોલ્લીઓ ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "facial pain",
-    "canonicalIndex": 46,
-    "name": "facial pain",
-    "label": {
-      "en": "Facial tenderness or pain",
-      "hi": "चेहरे पर दर्द या छूने पर दर्द",
-      "gu": "ચહેરા પર દુખાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have facial tenderness or pain?",
-      "hi": "क्या आपको चेहरे पर दर्द या छूने पर दर्द की समस्या है?",
-      "gu": "શું તમને ચહેરા પર દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "diminished vision",
-    "canonicalIndex": 47,
-    "name": "diminished vision",
-    "label": {
-      "en": "Blurred or reduced vision",
-      "hi": "धुंधला दिखाई देना",
-      "gu": "ઝાંખું દેખાવું"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have blurred or reduced vision?",
-      "hi": "क्या आपको धुंधला दिखाई देना की समस्या है?",
-      "gu": "શું તમને ઝાંખું દેખાવું ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "symptoms of eye",
-    "canonicalIndex": 48,
-    "name": "symptoms of eye",
-    "label": {
-      "en": "Symptoms Of Eye",
-      "hi": "Symptoms Of Eye",
-      "gu": "Symptoms Of Eye"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have symptoms of eye?",
-      "hi": "क्या आपको Symptoms Of Eye की समस्या है?",
-      "gu": "શું તમને Symptoms Of Eye ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "pain in eye",
-    "canonicalIndex": 49,
-    "name": "pain in eye",
-    "label": {
-      "en": "Eye pain / Retro-orbital pain",
-      "hi": "आंख में या आंख के पीछे दर्द",
-      "gu": "આંખમાં દુખાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have eye pain / retro-orbital pain?",
-      "hi": "क्या आपको आंख में या आंख के पीछे दर्द की समस्या है?",
-      "gu": "શું તમને આંખમાં દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "irregular appearing scalp",
-    "canonicalIndex": 50,
-    "name": "irregular appearing scalp",
-    "label": {
-      "en": "Irregular Appearing Scalp",
-      "hi": "Irregular Appearing Scalp",
-      "gu": "Irregular Appearing Scalp"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have irregular appearing scalp?",
-      "hi": "क्या आपको Irregular Appearing Scalp की समस्या है?",
-      "gu": "શું તમને Irregular Appearing Scalp ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "back pain",
-    "canonicalIndex": 51,
-    "name": "back pain",
-    "label": {
-      "en": "Back pain",
-      "hi": "पीठ या कमर में दर्द",
-      "gu": "કમર / પીઠનો દુખાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have back pain?",
-      "hi": "क्या आपको पीठ या कमर में दर्द की समस्या है?",
-      "gu": "શું તમને કમર / પીઠનો દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "neck pain",
-    "canonicalIndex": 52,
-    "name": "neck pain",
-    "label": {
-      "en": "Neck pain",
-      "hi": "गर्दन में दर्द",
-      "gu": "ગરદનનો દુખાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have neck pain?",
-      "hi": "क्या आपको गर्दन में दर्द की समस्या है?",
-      "gu": "શું તમને ગરદનનો દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "low back pain",
-    "canonicalIndex": 53,
-    "name": "low back pain",
-    "label": {
-      "en": "Lower back pain",
-      "hi": "कमर के निचले हिस्से में दर्द",
-      "gu": "કમરના નીચેના ભાગમાં દુખાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have lower back pain?",
-      "hi": "क्या आपको कमर के निचले हिस्से में दर्द की समस्या है?",
-      "gu": "શું તમને કમરના નીચેના ભાગમાં દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "pelvic pain",
-    "canonicalIndex": 54,
-    "name": "pelvic pain",
-    "label": {
-      "en": "Pelvic Pain",
-      "hi": "Pelvic Pain",
-      "gu": "Pelvic Pain"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have pelvic pain?",
-      "hi": "क्या आपको Pelvic Pain की समस्या है?",
-      "gu": "શું તમને Pelvic Pain ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "vomiting blood",
-    "canonicalIndex": 55,
-    "name": "vomiting blood",
-    "label": {
-      "en": "Vomiting blood (Hematemesis)",
-      "hi": "उल्टी में खून आना",
-      "gu": "ઊલટીમાં લોહી આવવું"
-    },
-    "answerability": 1.0,
-    "reliability": 0.98,
-    "question": {
-      "en": "Do you have vomiting blood (hematemesis)?",
-      "hi": "क्या आपको उल्टी में खून आना की समस्या है?",
-      "gu": "શું તમને ઊલટીમાં લોહી આવવું ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "regurgitation",
-    "canonicalIndex": 56,
-    "name": "regurgitation",
-    "label": {
-      "en": "Food regurgitation / Acid backflow",
-      "hi": "भोजन का मुंह में वापस आना",
-      "gu": "ખોરાક મોંમાં પાછો આવવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have food regurgitation / acid backflow?",
-      "hi": "क्या आपको भोजन का मुंह में वापस आना की समस्या है?",
-      "gu": "શું તમને ખોરાક મોંમાં પાછો આવવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "burning abdominal pain",
-    "canonicalIndex": 57,
-    "name": "burning abdominal pain",
-    "label": {
-      "en": "Burning stomach pain / Heartburn",
-      "hi": "पेट में जलन या एसिडिटी",
-      "gu": "પેટમાં બળતરા / એસિડિટી"
-    },
-    "answerability": 0.95,
-    "reliability": 0.95,
-    "question": {
-      "en": "Do you have burning stomach pain / heartburn?",
-      "hi": "क्या आपको पेट में जलन या एसिडिटी की समस्या है?",
-      "gu": "શું તમને પેટમાં બળતરા / એસિડિટી ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "wheezing",
-    "canonicalIndex": 58,
-    "name": "wheezing",
-    "label": {
-      "en": "Wheezing sound in chest",
-      "hi": "सांस में सीटी जैसी आवाज",
-      "gu": "શ્વાસમાં સીટી જેવો અવાજ"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have wheezing sound in chest?",
-      "hi": "क्या आपको सांस में सीटी जैसी आवाज की समस्या है?",
-      "gu": "શું તમને શ્વાસમાં સીટી જેવો અવાજ ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "peripheral edema",
-    "canonicalIndex": 59,
-    "name": "peripheral edema",
-    "label": {
-      "en": "Swelling in lower legs / Pitting edema",
-      "hi": "पैरों में पानी भरना / सूजन",
-      "gu": "પગમાં સોજો ચઢવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have swelling in lower legs / pitting edema?",
-      "hi": "क्या आपको पैरों में पानी भरना / सूजन की समस्या है?",
-      "gu": "શું તમને પગમાં સોજો ચઢવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "ear pain",
-    "canonicalIndex": 60,
-    "name": "ear pain",
-    "label": {
-      "en": "Earache / Pain inside ear",
-      "hi": "कान में तेज दर्द",
-      "gu": "કાનમાં દુખાવો"
-    },
-    "answerability": 1.0,
-    "reliability": 0.98,
-    "question": {
-      "en": "Do you have earache / pain inside ear?",
-      "hi": "क्या आपको कान में तेज दर्द की समस्या है?",
-      "gu": "શું તમને કાનમાં દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "knee pain",
-    "canonicalIndex": 61,
-    "name": "knee pain",
-    "label": {
-      "en": "Knee pain",
-      "hi": "घुटने में दर्द",
-      "gu": "ઘૂંટણનો દુખાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have knee pain?",
-      "hi": "क्या आपको घुटने में दर्द की समस्या है?",
-      "gu": "શું તમને ઘૂંટણનો દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "foot or toe pain",
-    "canonicalIndex": 62,
-    "name": "foot or toe pain",
-    "label": {
-      "en": "Pain in foot or big toe (Gout)",
-      "hi": "पैर या अंगूठे में तेज दर्द",
-      "gu": "પગ અથવા અંગૂઠામાં દુખાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have pain in foot or big toe (gout)?",
-      "hi": "क्या आपको पैर या अंगूठे में तेज दर्द की समस्या है?",
-      "gu": "શું તમને પગ અથવા અંગૂઠામાં દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "ankle pain",
-    "canonicalIndex": 63,
-    "name": "ankle pain",
-    "label": {
-      "en": "Ankle pain",
-      "hi": "टखने में दर्द",
-      "gu": "ઘૂંટીમાં દુખાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have ankle pain?",
-      "hi": "क्या आपको टखने में दर्द की समस्या है?",
-      "gu": "શું તમને ઘૂંટીમાં દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "knee weakness",
-    "canonicalIndex": 64,
-    "name": "knee weakness",
-    "label": {
-      "en": "Knee instability / Weakness",
-      "hi": "घुटने कमजोर पड़ना",
-      "gu": "ઘૂંટણ નબળા પડવા"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have knee instability / weakness?",
-      "hi": "क्या आपको घुटने कमजोर पड़ना की समस्या है?",
-      "gu": "શું તમને ઘૂંટણ નબળા પડવા ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "elbow pain",
-    "canonicalIndex": 65,
-    "name": "elbow pain",
-    "label": {
-      "en": "Elbow pain",
-      "hi": "कोहनी में दर्द",
-      "gu": "કોણીમાં દુખાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have elbow pain?",
-      "hi": "क्या आपको कोहनी में दर्द की समस्या है?",
-      "gu": "શું તમને કોણીમાં દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "knee swelling",
-    "canonicalIndex": 66,
-    "name": "knee swelling",
-    "label": {
-      "en": "Knee swelling / Fluid buildup",
-      "hi": "घुटने में सूजन",
-      "gu": "ઘૂંટણમાં સોજો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have knee swelling / fluid buildup?",
-      "hi": "क्या आपको घुटने में सूजन की समस्या है?",
-      "gu": "શું તમને ઘૂંટણમાં સોજો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "skin moles",
-    "canonicalIndex": 67,
-    "name": "skin moles",
-    "label": {
-      "en": "Skin Moles",
-      "hi": "Skin Moles",
-      "gu": "Skin Moles"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have skin moles?",
-      "hi": "क्या आपको Skin Moles की समस्या है?",
-      "gu": "શું તમને Skin Moles ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "weight gain",
-    "canonicalIndex": 68,
-    "name": "weight gain",
-    "label": {
-      "en": "Weight Gain",
-      "hi": "Weight Gain",
-      "gu": "Weight Gain"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have weight gain?",
-      "hi": "क्या आपको Weight Gain की समस्या है?",
-      "gu": "શું તમને Weight Gain ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "problems with movement",
-    "canonicalIndex": 69,
-    "name": "problems with movement",
-    "label": {
-      "en": "Problems With Movement",
-      "hi": "Problems With Movement",
-      "gu": "Problems With Movement"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have problems with movement?",
-      "hi": "क्या आपको Problems With Movement की समस्या है?",
-      "gu": "શું તમને Problems With Movement ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "leg swelling",
-    "canonicalIndex": 70,
-    "name": "leg swelling",
-    "label": {
-      "en": "Swelling in both legs",
-      "hi": "दोनों पैरों में सूजन",
-      "gu": "બંને પગમાં સોજો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have swelling in both legs?",
-      "hi": "क्या आपको दोनों पैरों में सूजन की समस्या है?",
-      "gu": "શું તમને બંને પગમાં સોજો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "foot or toe swelling",
-    "canonicalIndex": 71,
-    "name": "foot or toe swelling",
-    "label": {
-      "en": "Swelling in foot or toe",
-      "hi": "पैर या अंगूठे में सूजन",
-      "gu": "પગ અથવા અંગૂઠામાં સોજો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have swelling in foot or toe?",
-      "hi": "क्या आपको पैर या अंगूठे में सूजन की समस्या है?",
-      "gu": "શું તમને પગ અથવા અંગૂઠામાં સોજો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "heartburn",
-    "canonicalIndex": 72,
-    "name": "heartburn",
-    "label": {
-      "en": "Acid reflux / Heartburn",
-      "hi": "सीने में जलन व खट्टी डकार",
-      "gu": "છાતીમાં બળતરા / ખાટા ઓડકાર"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have acid reflux / heartburn?",
-      "hi": "क्या आपको सीने में जलन व खट्टी डकार की समस्या है?",
-      "gu": "શું તમને છાતીમાં બળતરા / ખાટા ઓડકાર ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "muscle pain",
-    "canonicalIndex": 73,
-    "name": "muscle pain",
-    "label": {
-      "en": "Muscle Pain",
-      "hi": "Muscle Pain",
-      "gu": "Muscle Pain"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have muscle pain?",
-      "hi": "क्या आपको Muscle Pain की समस्या है?",
-      "gu": "શું તમને Muscle Pain ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "weakness",
-    "canonicalIndex": 74,
-    "name": "weakness",
-    "label": {
-      "en": "Physical weakness / Loss of stamina",
-      "hi": "शरीर में भारी कमजोरी",
-      "gu": "શારીરિક નબળાઈ"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have physical weakness / loss of stamina?",
-      "hi": "क्या आपको शरीर में भारी कमजोरी की समस्या है?",
-      "gu": "શું તમને શારીરિક નબળાઈ ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "increased heart rate",
-    "canonicalIndex": 75,
-    "name": "increased heart rate",
-    "label": {
-      "en": "Fast pulse / Tachycardia",
-      "hi": "नाड़ी की गति तेज होना",
-      "gu": "નાડીના ધબકારા ઝડપી થવા"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have fast pulse / tachycardia?",
-      "hi": "क्या आपको नाड़ी की गति तेज होना की समस्या है?",
-      "gu": "શું તમને નાડીના ધબકારા ઝડપી થવા ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "plugged feeling in ear",
-    "canonicalIndex": 76,
-    "name": "plugged feeling in ear",
-    "label": {
-      "en": "Blocked or clogged ear sensation",
-      "hi": "कान बंद या भारी लगना",
-      "gu": "કાન બંધ થઈ ગયો હોય તેવો અહેસાસ"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have blocked or clogged ear sensation?",
-      "hi": "क्या आपको कान बंद या भारी लगना की समस्या है?",
-      "gu": "શું તમને કાન બંધ થઈ ગયો હોય તેવો અહેસાસ ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "frontal headache",
-    "canonicalIndex": 77,
-    "name": "frontal headache",
-    "label": {
-      "en": "Frontal forehead headache",
-      "hi": "माथे में तेज दर्द",
-      "gu": "કપાળમાં તીવ્ર દુખાવો"
-    },
-    "answerability": 0.95,
-    "reliability": 0.95,
-    "question": {
-      "en": "Do you have frontal forehead headache?",
-      "hi": "क्या आपको माथे में तेज दर्द की समस्या है?",
-      "gu": "શું તમને કપાળમાં તીવ્ર દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "fluid in ear",
-    "canonicalIndex": 78,
-    "name": "fluid in ear",
-    "label": {
-      "en": "Fluid or pus discharge from ear",
-      "hi": "कान से पानी या मवाद आना",
-      "gu": "કાનમાંથી પરુ કે પાણી નીકળવું"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have fluid or pus discharge from ear?",
-      "hi": "क्या आपको कान से पानी या मवाद आना की समस्या है?",
-      "gu": "શું તમને કાનમાંથી પરુ કે પાણી નીકળવું ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "neck stiffness or tightness",
-    "canonicalIndex": 79,
-    "name": "neck stiffness or tightness",
-    "label": {
-      "en": "Stiff neck / Limited neck motion",
-      "hi": "गर्दन में अकड़न",
-      "gu": "ગરદન અકડાઈ જવી"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have stiff neck / limited neck motion?",
-      "hi": "क्या आपको गर्दन में अकड़न की समस्या है?",
-      "gu": "શું તમને ગરદન અકડાઈ જવી ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "spots or clouds in vision",
-    "canonicalIndex": 80,
-    "name": "spots or clouds in vision",
-    "label": {
-      "en": "Floaters or clouds in vision",
-      "hi": "आंखों के आगे जाले या धब्बे",
-      "gu": "આંખો સામે કાળા ધાબા દેખાવા"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have floaters or clouds in vision?",
-      "hi": "क्या आपको आंखों के आगे जाले या धब्बे की समस्या है?",
-      "gu": "શું તમને આંખો સામે કાળા ધાબા દેખાવા ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "eye redness",
-    "canonicalIndex": 81,
-    "name": "eye redness",
-    "label": {
-      "en": "Redness in eyes (Pink eye)",
-      "hi": "आंखें लाल होना",
-      "gu": "આંખો લાલ થવી"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have redness in eyes (pink eye)?",
-      "hi": "क्या आपको आंखें लाल होना की समस्या है?",
-      "gu": "શું તમને આંખો લાલ થવી ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "lacrimation",
-    "canonicalIndex": 82,
-    "name": "lacrimation",
-    "label": {
-      "en": "Excessive eye tearing",
-      "hi": "आंखों से अत्यधिक पानी आना",
-      "gu": "આંખોમાંથી પાણી વહેવું"
-    },
-    "answerability": 0.8,
-    "reliability": 0.9,
-    "question": {
-      "en": "Do you have excessive eye tearing?",
-      "hi": "क्या आपको आंखों से अत्यधिक पानी आना की समस्या है?",
-      "gu": "શું તમને આંખોમાંથી પાણી વહેવું ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "itchiness of eye",
-    "canonicalIndex": 83,
-    "name": "itchiness of eye",
-    "label": {
-      "en": "Eye itching",
-      "hi": "आंखों में खुजली",
-      "gu": "આંખોમાં ખંજવાળ"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have eye itching?",
-      "hi": "क्या आपको आंखों में खुजली की समस्या है?",
-      "gu": "શું તમને આંખોમાં ખંજવાળ ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "blindness",
-    "canonicalIndex": 84,
-    "name": "blindness",
-    "label": {
-      "en": "Blindness",
-      "hi": "Blindness",
-      "gu": "Blindness"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have blindness?",
-      "hi": "क्या आपको Blindness की समस्या है?",
-      "gu": "શું તમને Blindness ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "eye burns or stings",
-    "canonicalIndex": 85,
-    "name": "eye burns or stings",
-    "label": {
-      "en": "Burning or stinging sensation in eyes",
-      "hi": "आंखों में जलन व चुभन",
-      "gu": "આંખોમાં બળતરા"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have burning or stinging sensation in eyes?",
-      "hi": "क्या आपको आंखों में जलन व चुभन की समस्या है?",
-      "gu": "શું તમને આંખોમાં બળતરા ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "decreased appetite",
-    "canonicalIndex": 86,
-    "name": "decreased appetite",
-    "label": {
-      "en": "Loss of appetite (Anorexia)",
+      "en": "Loss of Appetite",
       "hi": "भूख न लगना",
       "gu": "ભૂખ ન લાગવી"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have loss of appetite (anorexia)?",
+      "en": "Do you have loss of appetite?",
       "hi": "क्या आपको भूख न लगना की समस्या है?",
       "gu": "શું તમને ભૂખ ન લાગવી ની તકલીફ છે?"
     }
   },
   {
-    "id": "loss of sensation",
-    "canonicalIndex": 87,
-    "name": "loss of sensation",
+    "id": "pain_behind_the_eyes",
+    "canonicalIndex": 36,
+    "name": "pain_behind_the_eyes",
     "label": {
-      "en": "Loss of sensation / Numbness",
-      "hi": "अंग सुन्न होना",
-      "gu": "અંગ સુન્ન થઈ જવું"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have loss of sensation / numbness?",
-      "hi": "क्या आपको अंग सुन्न होना की समस्या है?",
-      "gu": "શું તમને અંગ સુન્ન થઈ જવું ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "symptoms of the face",
-    "canonicalIndex": 88,
-    "name": "symptoms of the face",
-    "label": {
-      "en": "Symptoms Of The Face",
-      "hi": "Symptoms Of The Face",
-      "gu": "Symptoms Of The Face"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have symptoms of the face?",
-      "hi": "क्या आपको Symptoms Of The Face की समस्या है?",
-      "gu": "શું તમને Symptoms Of The Face ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "disturbance of memory",
-    "canonicalIndex": 89,
-    "name": "disturbance of memory",
-    "label": {
-      "en": "Disturbance Of Memory",
-      "hi": "Disturbance Of Memory",
-      "gu": "Disturbance Of Memory"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have disturbance of memory?",
-      "hi": "क्या आपको Disturbance Of Memory की समस्या है?",
-      "gu": "શું તમને Disturbance Of Memory ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "paresthesia",
-    "canonicalIndex": 90,
-    "name": "paresthesia",
-    "label": {
-      "en": "Tingling / Pins & needles sensation",
-      "hi": "हाथ-पैरों में झनझनाहट",
-      "gu": "હાથ-પગમાં ખાલી ચઢવી"
-    },
-    "answerability": 0.8,
-    "reliability": 0.9,
-    "question": {
-      "en": "Do you have tingling / pins & needles sensation?",
-      "hi": "क्या आपको हाथ-पैरों में झनझनाहट की समस्या है?",
-      "gu": "શું તમને હાથ-પગમાં ખાલી ચઢવી ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "side pain",
-    "canonicalIndex": 91,
-    "name": "side pain",
-    "label": {
-      "en": "Flank pain radiating from back",
-      "hi": "कमर के बाजू (पसलियों के नीचे) तेज दर्द",
-      "gu": "કમરની એક બાજુએ તીવ્ર દુખાવો (પથરી)"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have flank pain radiating from back?",
-      "hi": "क्या आपको कमर के बाजू (पसलियों के नीचे) तेज दर्द की समस्या है?",
-      "gu": "શું તમને કમરની એક બાજુએ તીવ્ર દુખાવો (પથરી) ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "fever",
-    "canonicalIndex": 92,
-    "name": "fever",
-    "label": {
-      "en": "Fever / Elevated body temperature",
-      "hi": "बुखार",
-      "gu": "તાવ"
-    },
-    "answerability": 1.0,
-    "reliability": 0.98,
-    "question": {
-      "en": "Do you have fever / elevated body temperature?",
-      "hi": "क्या आपको बुखार की समस्या है?",
-      "gu": "શું તમને તાવ ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "shoulder pain",
-    "canonicalIndex": 93,
-    "name": "shoulder pain",
-    "label": {
-      "en": "Shoulder pain / Limited motion",
-      "hi": "कंधे में दर्द व अकड़न",
-      "gu": "ખભાનો દુખાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have shoulder pain / limited motion?",
-      "hi": "क्या आपको कंधे में दर्द व अकड़न की समस्या है?",
-      "gu": "શું તમને ખભાનો દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "leg cramps or spasms",
-    "canonicalIndex": 94,
-    "name": "leg cramps or spasms",
-    "label": {
-      "en": "Leg muscle cramps (Calf cramps)",
-      "hi": "पिंडलियों में ऐंठन व मरोड़",
-      "gu": "પગની પિંડીઓમાં ગોટલા ચઢવા"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have leg muscle cramps (calf cramps)?",
-      "hi": "क्या आपको पिंडलियों में ऐंठन व मरोड़ की समस्या है?",
-      "gu": "શું તમને પગની પિંડીઓમાં ગોટલા ચઢવા ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "ache all over",
-    "canonicalIndex": 95,
-    "name": "ache all over",
-    "label": {
-      "en": "Generalized body aches (Myalgia)",
-      "hi": "सारे बदन में तेज दर्द",
-      "gu": "આખા શરીરમાં કળતર"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have generalized body aches (myalgia)?",
-      "hi": "क्या आपको सारे बदन में तेज दर्द की समस्या है?",
-      "gu": "શું તમને આખા શરીરમાં કળતર ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "lower body pain",
-    "canonicalIndex": 96,
-    "name": "lower body pain",
-    "label": {
-      "en": "Lower Body Pain",
-      "hi": "Lower Body Pain",
-      "gu": "Lower Body Pain"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have lower body pain?",
-      "hi": "क्या आपको Lower Body Pain की समस्या है?",
-      "gu": "શું તમને Lower Body Pain ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "upper abdominal pain",
-    "canonicalIndex": 97,
-    "name": "upper abdominal pain",
-    "label": {
-      "en": "Upper abdominal pain",
-      "hi": "पेट के ऊपरी हिस्से में दर्द",
-      "gu": "પેટના ઉપરના ભાગમાં દુખાવો"
+      "en": "Pain Behind Eyes",
+      "hi": "आंखों के पीछे दर्द",
+      "gu": "આંખોની પાછળ દુખાવો"
     },
     "answerability": 0.95,
     "reliability": 0.95,
     "question": {
-      "en": "Do you have upper abdominal pain?",
-      "hi": "क्या आपको पेट के ऊपरी हिस्से में दर्द की समस्या है?",
-      "gu": "શું તમને પેટના ઉપરના ભાગમાં દુખાવો ની તકલીફ છે?"
+      "en": "Do you have pain behind eyes?",
+      "hi": "क्या आपको आंखों के पीछे दर्द की समस्या है?",
+      "gu": "શું તમને આંખોની પાછળ દુખાવો ની તકલીફ છે?"
     }
   },
   {
-    "id": "stomach bloating",
-    "canonicalIndex": 98,
-    "name": "stomach bloating",
+    "id": "back_pain",
+    "canonicalIndex": 37,
+    "name": "back_pain",
     "label": {
-      "en": "Abdominal bloating / Gas fullness",
-      "hi": "पेट में गैस व भारीपन",
-      "gu": "પેટમાં ગેસ અને અફારો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have abdominal bloating / gas fullness?",
-      "hi": "क्या आपको पेट में गैस व भारीपन की समस्या है?",
-      "gu": "શું તમને પેટમાં ગેસ અને અફારો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "changes in stool appearance",
-    "canonicalIndex": 99,
-    "name": "changes in stool appearance",
-    "label": {
-      "en": "Dark or abnormal stool appearance",
-      "hi": "मल के रंग में असामान्य बदलाव",
-      "gu": "ઝાડાના રંગમાં અસામાન્ય ફેરફાર"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have dark or abnormal stool appearance?",
-      "hi": "क्या आपको मल के रंग में असामान्य बदलाव की समस्या है?",
-      "gu": "શું તમને ઝાડાના રંગમાં અસામાન્ય ફેરફાર ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "unusual color or odor to urine",
-    "canonicalIndex": 100,
-    "name": "unusual color or odor to urine",
-    "label": {
-      "en": "Cloudy or foul-smelling urine",
-      "hi": "पेशाब का रंग मटमैला या दुर्गंधयुक्त होना",
-      "gu": "પેશાબમાં વાસ અથવા ડહોળો પેશાબ"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have cloudy or foul-smelling urine?",
-      "hi": "क्या आपको पेशाब का रंग मटमैला या दुर्गंधयुक्त होना की समस्या है?",
-      "gu": "શું તમને પેશાબમાં વાસ અથવા ડહોળો પેશાબ ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "difficulty breathing",
-    "canonicalIndex": 101,
-    "name": "difficulty breathing",
-    "label": {
-      "en": "Difficulty breathing",
-      "hi": "सांस लेने में भारी कठिनाई",
-      "gu": "શ્વાસ લેવામાં ભારે મુશ્કેલી"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have difficulty breathing?",
-      "hi": "क्या आपको सांस लेने में भारी कठिनाई की समस्या है?",
-      "gu": "શું તમને શ્વાસ લેવામાં ભારે મુશ્કેલી ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "joint pain",
-    "canonicalIndex": 102,
-    "name": "joint pain",
-    "label": {
-      "en": "Joint pain (Arthralgia)",
-      "hi": "जोड़ों में दर्द",
-      "gu": "સાંધાનો દુખાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have joint pain (arthralgia)?",
-      "hi": "क्या आपको जोड़ों में दर्द की समस्या है?",
-      "gu": "શું તમને સાંધાનો દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "chills",
-    "canonicalIndex": 103,
-    "name": "chills",
-    "label": {
-      "en": "Chills & Shivering (Rigors)",
-      "hi": "ठंड लगकर कंपकंपी छूटना",
-      "gu": "ધ્રુજારી સાથે ઠંડી લાગવી"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have chills & shivering (rigors)?",
-      "hi": "क्या आपको ठंड लगकर कंपकंपी छूटना की समस्या है?",
-      "gu": "શું તમને ધ્રુજારી સાથે ઠંડી લાગવી ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "groin pain",
-    "canonicalIndex": 104,
-    "name": "groin pain",
-    "label": {
-      "en": "Groin pain",
-      "hi": "जांघ के जोड़ में दर्द",
-      "gu": "સાથળના મૂળમાં દુખાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have groin pain?",
-      "hi": "क्या आपको जांघ के जोड़ में दर्द की समस्या है?",
-      "gu": "શું તમને સાથળના મૂળમાં દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "fatigue",
-    "canonicalIndex": 105,
-    "name": "fatigue",
-    "label": {
-      "en": "Severe exhaustion & fatigue",
-      "hi": "अत्यधिक थकान व कमजोरी",
-      "gu": "અતિશય થાક"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have severe exhaustion & fatigue?",
-      "hi": "क्या आपको अत्यधिक थकान व कमजोरी की समस्या है?",
-      "gu": "શું તમને અતિશય થાક ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "regurgitation.1",
-    "canonicalIndex": 106,
-    "name": "regurgitation.1",
-    "label": {
-      "en": "Regurgitation.1",
-      "hi": "Regurgitation.1",
-      "gu": "Regurgitation.1"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have regurgitation.1?",
-      "hi": "क्या आपको Regurgitation.1 की समस्या है?",
-      "gu": "શું તમને Regurgitation.1 ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "coughing up sputum",
-    "canonicalIndex": 107,
-    "name": "coughing up sputum",
-    "label": {
-      "en": "Cough with sputum / phlegm",
-      "hi": "बलगम वाली खांसी",
-      "gu": "કફવાળી ઉધરસ"
-    },
-    "answerability": 1.0,
-    "reliability": 0.98,
-    "question": {
-      "en": "Do you have cough with sputum / phlegm?",
-      "hi": "क्या आपको बलगम वाली खांसी की समस्या है?",
-      "gu": "શું તમને કફવાળી ઉધરસ ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "seizures",
-    "canonicalIndex": 108,
-    "name": "seizures",
-    "label": {
-      "en": "Seizures",
-      "hi": "Seizures",
-      "gu": "Seizures"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have seizures?",
-      "hi": "क्या आपको Seizures की समस्या है?",
-      "gu": "શું તમને Seizures ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "coryza",
-    "canonicalIndex": 109,
-    "name": "coryza",
-    "label": {
-      "en": "Runny nose / Clear nasal drip",
-      "hi": "नाक से पानी बहना",
-      "gu": "નાકમાંથી પાણી વહેવું"
-    },
-    "answerability": 0.8,
-    "reliability": 0.9,
-    "question": {
-      "en": "Do you have runny nose / clear nasal drip?",
-      "hi": "क्या आपको नाक से पानी बहना की समस्या है?",
-      "gu": "શું તમને નાકમાંથી પાણી વહેવું ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "lymphedema",
-    "canonicalIndex": 110,
-    "name": "lymphedema",
-    "label": {
-      "en": "Lymphedema",
-      "hi": "Lymphedema",
-      "gu": "Lymphedema"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have lymphedema?",
-      "hi": "क्या आपको Lymphedema की समस्या है?",
-      "gu": "શું તમને Lymphedema ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "allergic reaction",
-    "canonicalIndex": 111,
-    "name": "allergic reaction",
-    "label": {
-      "en": "Allergic skin wheals / Hives",
-      "hi": "एलर्जी के चकत्ते व खुजली",
-      "gu": "એલર્જીના ઢીમચા અને ખંજવાળ"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have allergic skin wheals / hives?",
-      "hi": "क्या आपको एलर्जी के चकत्ते व खुजली की समस्या है?",
-      "gu": "શું તમને એલર્જીના ઢીમચા અને ખંજવાળ ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "congestion in chest",
-    "canonicalIndex": 112,
-    "name": "congestion in chest",
-    "label": {
-      "en": "Chest congestion / Phlegm blockage",
-      "hi": "सीने में भारी बलगम जमा होना",
-      "gu": "છાતીમાં કફ ભરાઈ જવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have chest congestion / phlegm blockage?",
-      "hi": "क्या आपको सीने में भारी बलगम जमा होना की समस्या है?",
-      "gu": "શું તમને છાતીમાં કફ ભરાઈ જવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "sleepiness",
-    "canonicalIndex": 113,
-    "name": "sleepiness",
-    "label": {
-      "en": "Sleepiness",
-      "hi": "Sleepiness",
-      "gu": "Sleepiness"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have sleepiness?",
-      "hi": "क्या आपको Sleepiness की समस्या है?",
-      "gu": "શું તમને Sleepiness ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "abnormal breathing sounds",
-    "canonicalIndex": 114,
-    "name": "abnormal breathing sounds",
-    "label": {
-      "en": "Abnormal chest breathing sounds",
-      "hi": "सांस लेते समय घरघराहट",
-      "gu": "શ્વાસ લેતી વખતે ઘરઘરાટી"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have abnormal chest breathing sounds?",
-      "hi": "क्या आपको सांस लेते समय घरघराहट की समस्या है?",
-      "gu": "શું તમને શ્વાસ લેતી વખતે ઘરઘરાટી ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "pulling at ears",
-    "canonicalIndex": 115,
-    "name": "pulling at ears",
-    "label": {
-      "en": "Ear pulling or tugging sensation",
-      "hi": "कान खींचने का अहसास",
-      "gu": "કાન ખેંચાવાની તકલીફ"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have ear pulling or tugging sensation?",
-      "hi": "क्या आपको कान खींचने का अहसास की समस्या है?",
-      "gu": "શું તમને કાન ખેંચાવાની તકલીફ ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "redness in ear",
-    "canonicalIndex": 116,
-    "name": "redness in ear",
-    "label": {
-      "en": "Redness around ear canal",
-      "hi": "कान में लाली",
-      "gu": "કાનમાં લાલાશ"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have redness around ear canal?",
-      "hi": "क्या आपको कान में लाली की समस्या है?",
-      "gu": "શું તમને કાનમાં લાલાશ ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "fluid retention",
-    "canonicalIndex": 117,
-    "name": "fluid retention",
-    "label": {
-      "en": "Fluid Retention",
-      "hi": "Fluid Retention",
-      "gu": "Fluid Retention"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have fluid retention?",
-      "hi": "क्या आपको Fluid Retention की समस्या है?",
-      "gu": "શું તમને Fluid Retention ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "flu-like syndrome",
-    "canonicalIndex": 118,
-    "name": "flu-like syndrome",
-    "label": {
-      "en": "Flu-like body aches & malaise",
-      "hi": "फ्लू जैसे पूरे शरीर में दर्द",
-      "gu": "ફ્લૂ જેવા આખા શરીરમાં કળતર"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have flu-like body aches & malaise?",
-      "hi": "क्या आपको फ्लू जैसे पूरे शरीर में दर्द की समस्या है?",
-      "gu": "શું તમને ફ્લૂ જેવા આખા શરીરમાં કળતર ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "sinus congestion",
-    "canonicalIndex": 119,
-    "name": "sinus congestion",
-    "label": {
-      "en": "Sinus congestion / Heavy head",
-      "hi": "साइनस में भारीपन",
-      "gu": "સાઇનસમાં ભરાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have sinus congestion / heavy head?",
-      "hi": "क्या आपको साइनस में भारीपन की समस्या है?",
-      "gu": "શું તમને સાઇનસમાં ભરાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "painful sinuses",
-    "canonicalIndex": 120,
-    "name": "painful sinuses",
-    "label": {
-      "en": "Pain over cheekbones & forehead",
-      "hi": "गाल व माथे के साइनस में दर्द",
-      "gu": "ગાલ અને કપાળમાં સાઇનસનો દુખાવો"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have pain over cheekbones & forehead?",
-      "hi": "क्या आपको गाल व माथे के साइनस में दर्द की समस्या है?",
-      "gu": "શું તમને ગાલ અને કપાળમાં સાઇનસનો દુખાવો ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "recent pregnancy",
-    "canonicalIndex": 121,
-    "name": "recent pregnancy",
-    "label": {
-      "en": "Recent Pregnancy",
-      "hi": "Recent Pregnancy",
-      "gu": "Recent Pregnancy"
-    },
-    "answerability": 0.9,
-    "reliability": 0.92,
-    "question": {
-      "en": "Do you have recent pregnancy?",
-      "hi": "क्या आपको Recent Pregnancy की समस्या है?",
-      "gu": "શું તમને Recent Pregnancy ની તકલીફ છે?"
-    }
-  },
-  {
-    "id": "burning chest pain",
-    "canonicalIndex": 122,
-    "name": "burning chest pain",
-    "label": {
-      "en": "Burning chest pain",
-      "hi": "सीने में जलन / एसिडिटी दर्द",
-      "gu": "છાતીમાં બળતરા"
+      "en": "Back Pain",
+      "hi": "पीठ दर्द / कमर दर्द",
+      "gu": "પીઠનો દુખાવો / કમરનો દુખાવો"
     },
     "answerability": 0.95,
     "reliability": 0.95,
     "question": {
-      "en": "Do you have burning chest pain?",
-      "hi": "क्या आपको सीने में जलन / एसिडिटी दर्द की समस्या है?",
-      "gu": "શું તમને છાતીમાં બળતરા ની તકલીફ છે?"
+      "en": "Do you have back pain?",
+      "hi": "क्या आपको पीठ दर्द / कमर दर्द की समस्या है?",
+      "gu": "શું તમને પીઠનો દુખાવો / કમરનો દુખાવો ની તકલીફ છે?"
     }
   },
   {
-    "id": "back cramps or spasms",
-    "canonicalIndex": 123,
-    "name": "back cramps or spasms",
+    "id": "constipation",
+    "canonicalIndex": 38,
+    "name": "constipation",
     "label": {
-      "en": "Back muscle cramps & spasms",
-      "hi": "कमर की मांसपेशियों में खिंचाव",
-      "gu": "કમરના સ્નાયુઓમાં ખેંચાણ"
+      "en": "Constipation",
+      "hi": "कब्ज",
+      "gu": "કબજિયાત"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have back muscle cramps & spasms?",
-      "hi": "क्या आपको कमर की मांसपेशियों में खिंचाव की समस्या है?",
-      "gu": "શું તમને કમરના સ્નાયુઓમાં ખેંચાણ ની તકલીફ છે?"
+      "en": "Do you have constipation?",
+      "hi": "क्या आपको कब्ज की समस्या है?",
+      "gu": "શું તમને કબજિયાત ની તકલીફ છે?"
     }
   },
   {
-    "id": "sweating",
-    "canonicalIndex": 124,
-    "name": "sweating",
+    "id": "abdominal_pain",
+    "canonicalIndex": 39,
+    "name": "abdominal_pain",
     "label": {
-      "en": "Profuse cold sweating",
-      "hi": "अत्यधिक पसीना आना",
-      "gu": "પુષ્કળ પરસેવો વળવો"
+      "en": "Abdominal Pain",
+      "hi": "पेट के निचले हिस्से में दर्द",
+      "gu": "પેટના નીચેના ભાગમાં દુખાવો"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have profuse cold sweating?",
-      "hi": "क्या आपको अत्यधिक पसीना आना की समस्या है?",
-      "gu": "શું તમને પુષ્કળ પરસેવો વળવો ની તકલીફ છે?"
+      "en": "Do you have abdominal pain?",
+      "hi": "क्या आपको पेट के निचले हिस्से में दर्द की समस्या है?",
+      "gu": "શું તમને પેટના નીચેના ભાગમાં દુખાવો ની તકલીફ છે?"
     }
   },
   {
-    "id": "swollen eye",
-    "canonicalIndex": 125,
-    "name": "swollen eye",
+    "id": "diarrhoea",
+    "canonicalIndex": 40,
+    "name": "diarrhoea",
     "label": {
-      "en": "Swelling around eyelids",
-      "hi": "पलकों व आंख में सूजन",
-      "gu": "આંખની પાંપણો પર સોજો"
+      "en": "Diarrhoea",
+      "hi": "दस्त / अतिसार",
+      "gu": "ઝાડા"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have swelling around eyelids?",
-      "hi": "क्या आपको पलकों व आंख में सूजन की समस्या है?",
-      "gu": "શું તમને આંખની પાંપણો પર સોજો ની તકલીફ છે?"
+      "en": "Do you have diarrhoea?",
+      "hi": "क्या आपको दस्त / अतिसार की समस्या है?",
+      "gu": "શું તમને ઝાડા ની તકલીફ છે?"
     }
   },
   {
-    "id": "symptoms of bladder",
-    "canonicalIndex": 126,
-    "name": "symptoms of bladder",
+    "id": "mild_fever",
+    "canonicalIndex": 41,
+    "name": "mild_fever",
     "label": {
-      "en": "Bladder pressure / Urgency",
-      "hi": "पेशाब की थैली में भारीपन",
-      "gu": "પેશાબની કોથળીમાં દબાણ"
+      "en": "Mild Fever",
+      "hi": "हल्का बुखार",
+      "gu": "હળવો તાવ"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have bladder pressure / urgency?",
-      "hi": "क्या आपको पेशाब की थैली में भारीपन की समस्या है?",
-      "gu": "શું તમને પેશાબની કોથળીમાં દબાણ ની તકલીફ છે?"
+      "en": "Do you have mild fever?",
+      "hi": "क्या आपको हल्का बुखार की समस्या है?",
+      "gu": "શું તમને હળવો તાવ ની તકલીફ છે?"
     }
   },
   {
-    "id": "itching of skin",
-    "canonicalIndex": 127,
-    "name": "itching of skin",
+    "id": "yellow_urine",
+    "canonicalIndex": 42,
+    "name": "yellow_urine",
     "label": {
-      "en": "Severe skin itching (Pruritus)",
-      "hi": "त्वचा में तेज खुजली",
-      "gu": "ચામડીમાં તીવ્ર ખંજવાળ"
+      "en": "Yellow Urine",
+      "hi": "पीला पेशाब",
+      "gu": "પીળો પેશાબ"
     },
-    "answerability": 1.0,
-    "reliability": 0.98,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have severe skin itching (pruritus)?",
-      "hi": "क्या आपको त्वचा में तेज खुजली की समस्या है?",
-      "gu": "શું તમને ચામડીમાં તીવ્ર ખંજવાળ ની તકલીફ છે?"
+      "en": "Do you have yellow urine?",
+      "hi": "क्या आपको पीला पेशाब की समस्या है?",
+      "gu": "શું તમને પીળો પેશાબ ની તકલીફ છે?"
     }
   },
   {
-    "id": "hurts to breath",
-    "canonicalIndex": 128,
-    "name": "hurts to breath",
+    "id": "yellowing_of_eyes",
+    "canonicalIndex": 43,
+    "name": "yellowing_of_eyes",
     "label": {
-      "en": "Pain when breathing deeply",
-      "hi": "गहरी सांस लेने पर सीने में दर्द",
-      "gu": "ઊંડો શ્વાસ લેતી વખતે છાતીમાં દુખાવો"
+      "en": "Yellowing of Eyes",
+      "hi": "आंखों का पीला होना",
+      "gu": "આંખો પીળી થવી"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have pain when breathing deeply?",
-      "hi": "क्या आपको गहरी सांस लेने पर सीने में दर्द की समस्या है?",
-      "gu": "શું તમને ઊંડો શ્વાસ લેતી વખતે છાતીમાં દુખાવો ની તકલીફ છે?"
+      "en": "Do you have yellowing of eyes?",
+      "hi": "क्या आपको आंखों का पीला होना की समस्या है?",
+      "gu": "શું તમને આંખો પીળી થવી ની તકલીફ છે?"
     }
   },
   {
-    "id": "skin dryness, peeling, scaliness, or roughness",
-    "canonicalIndex": 129,
-    "name": "skin dryness, peeling, scaliness, or roughness",
+    "id": "acute_liver_failure",
+    "canonicalIndex": 44,
+    "name": "acute_liver_failure",
     "label": {
-      "en": "Dry, scaly, peeling or rough skin",
-      "hi": "त्वचा का सूखापन, पपड़ी व खुरदरापन",
-      "gu": "ચામડીની શુષ્કતા, પપડી અને રુક્ષતા"
+      "en": "Acute Liver Failure",
+      "hi": "लिवर का फेल होना",
+      "gu": "લીવર ફેઈલ થવું"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have dry, scaly, peeling or rough skin?",
-      "hi": "क्या आपको त्वचा का सूखापन, पपड़ी व खुरदरापन की समस्या है?",
-      "gu": "શું તમને ચામડીની શુષ્કતા, પપડી અને રુક્ષતા ની તકલીફ છે?"
+      "en": "Do you have acute liver failure?",
+      "hi": "क्या आपको लिवर का फेल होना की समस्या है?",
+      "gu": "શું તમને લીવર ફેઈલ થવું ની તકલીફ છે?"
     }
   },
   {
-    "id": "skin irritation",
-    "canonicalIndex": 130,
-    "name": "skin irritation",
+    "id": "fluid_overload",
+    "canonicalIndex": 45,
+    "name": "fluid_overload",
     "label": {
-      "en": "Skin burning or irritation",
-      "hi": "त्वचा में जलन व असहजता",
-      "gu": "ચામડીમાં બળતરા"
+      "en": "Fluid Overload",
+      "hi": "शरीर में तरल की अधिकता",
+      "gu": "શરીરમાં પ્રવાહી ભરાઈ જવું"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have skin burning or irritation?",
-      "hi": "क्या आपको त्वचा में जलन व असहजता की समस्या है?",
-      "gu": "શું તમને ચામડીમાં બળતરા ની તકલીફ છે?"
+      "en": "Do you have fluid overload?",
+      "hi": "क्या आपको शरीर में तरल की अधिकता की समस्या है?",
+      "gu": "શું તમને શરીરમાં પ્રવાહી ભરાઈ જવું ની તકલીફ છે?"
     }
   },
   {
-    "id": "itchy scalp",
-    "canonicalIndex": 131,
-    "name": "itchy scalp",
+    "id": "swelling_of_stomach",
+    "canonicalIndex": 46,
+    "name": "swelling_of_stomach",
     "label": {
-      "en": "Itchy Scalp",
-      "hi": "Itchy Scalp",
-      "gu": "Itchy Scalp"
+      "en": "Swelling of Stomach",
+      "hi": "पेट में सूजन",
+      "gu": "પેટમાં સોજો"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have itchy scalp?",
-      "hi": "क्या आपको Itchy Scalp की समस्या है?",
-      "gu": "શું તમને Itchy Scalp ની તકલીફ છે?"
+      "en": "Do you have swelling of stomach?",
+      "hi": "क्या आपको पेट में सूजन की समस्या है?",
+      "gu": "શું તમને પેટમાં સોજો ની તકલીફ છે?"
     }
   },
   {
-    "id": "warts",
-    "canonicalIndex": 132,
-    "name": "warts",
+    "id": "swelled_lymph_nodes",
+    "canonicalIndex": 47,
+    "name": "swelled_lymph_nodes",
     "label": {
-      "en": "Warts",
-      "hi": "Warts",
-      "gu": "Warts"
+      "en": "Swelled Lymph Nodes",
+      "hi": "लिम्फ नोड्स (ग्रंथियों) में सूजन",
+      "gu": "લસિકાગ્રંથિઓમાં સોજો"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have warts?",
-      "hi": "क्या आपको Warts की समस्या है?",
-      "gu": "શું તમને Warts ની તકલીફ છે?"
+      "en": "Do you have swelled lymph nodes?",
+      "hi": "क्या आपको लिम्फ नोड्स (ग्रंथियों) में सूजन की समस्या है?",
+      "gu": "શું તમને લસિકાગ્રંથિઓમાં સોજો ની તકલીફ છે?"
     }
   },
   {
-    "id": "too little hair",
-    "canonicalIndex": 133,
-    "name": "too little hair",
+    "id": "malaise",
+    "canonicalIndex": 48,
+    "name": "malaise",
     "label": {
-      "en": "Too Little Hair",
-      "hi": "Too Little Hair",
-      "gu": "Too Little Hair"
+      "en": "Malaise / Uneasiness",
+      "hi": "बेचैनी / अस्वस्थता",
+      "gu": "બેચેની / અસ્વસ્થતા"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have too little hair?",
-      "hi": "क्या आपको Too Little Hair की समस्या है?",
-      "gu": "શું તમને Too Little Hair ની તકલીફ છે?"
+      "en": "Do you have malaise / uneasiness?",
+      "hi": "क्या आपको बेचैनी / अस्वस्थता की समस्या है?",
+      "gu": "શું તમને બેચેની / અસ્વસ્થતા ની તકલીફ છે?"
     }
   },
   {
-    "id": "skin rash",
-    "canonicalIndex": 134,
-    "name": "skin rash",
+    "id": "blurred_and_distorted_vision",
+    "canonicalIndex": 49,
+    "name": "blurred_and_distorted_vision",
     "label": {
-      "en": "Skin rash / Red spots",
-      "hi": "त्वचा पर लाल चकत्ते / दाने",
-      "gu": "ચામડી પર લાલ ચકામા / ફોલ્લીઓ"
+      "en": "Blurred & Distorted Vision",
+      "hi": "धुंधला दिखाई देना",
+      "gu": "ઝાંખું દેખાવું"
     },
-    "answerability": 1.0,
-    "reliability": 0.98,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have skin rash / red spots?",
-      "hi": "क्या आपको त्वचा पर लाल चकत्ते / दाने की समस्या है?",
-      "gu": "શું તમને ચામડી પર લાલ ચકામા / ફોલ્લીઓ ની તકલીફ છે?"
+      "en": "Do you have blurred & distorted vision?",
+      "hi": "क्या आपको धुंधला दिखाई देना की समस्या है?",
+      "gu": "શું તમને ઝાંખું દેખાવું ની તકલીફ છે?"
     }
   },
   {
-    "id": "ankle swelling",
-    "canonicalIndex": 135,
-    "name": "ankle swelling",
+    "id": "phlegm",
+    "canonicalIndex": 50,
+    "name": "phlegm",
     "label": {
-      "en": "Ankle swelling",
-      "hi": "टखने में सूजन",
-      "gu": "ઘૂંટીમાં સોજો"
+      "en": "Phlegm",
+      "hi": "बलगम",
+      "gu": "કફ / બલગમ"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have ankle swelling?",
-      "hi": "क्या आपको टखने में सूजन की समस्या है?",
-      "gu": "શું તમને ઘૂંટીમાં સોજો ની તકલીફ છે?"
+      "en": "Do you have phlegm?",
+      "hi": "क्या आपको बलगम की समस्या है?",
+      "gu": "શું તમને કફ / બલગમ ની તકલીફ છે?"
     }
   },
   {
-    "id": "foot or toe stiffness or tightness",
-    "canonicalIndex": 136,
-    "name": "foot or toe stiffness or tightness",
+    "id": "throat_irritation",
+    "canonicalIndex": 51,
+    "name": "throat_irritation",
     "label": {
-      "en": "Foot or toe joint stiffness",
-      "hi": "पैर के जोड़ों में अकड़न",
-      "gu": "પગના સાંધા અકડાઈ જવા"
+      "en": "Throat Irritation",
+      "hi": "गले में खराश",
+      "gu": "ગળામાં બળતરા / ખંજવાળ"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have foot or toe joint stiffness?",
-      "hi": "क्या आपको पैर के जोड़ों में अकड़न की समस्या है?",
-      "gu": "શું તમને પગના સાંધા અકડાઈ જવા ની તકલીફ છે?"
+      "en": "Do you have throat irritation?",
+      "hi": "क्या आपको गले में खराश की समस्या है?",
+      "gu": "શું તમને ગળામાં બળતરા / ખંજવાળ ની તકલીફ છે?"
     }
   },
   {
-    "id": "elbow swelling",
-    "canonicalIndex": 137,
-    "name": "elbow swelling",
+    "id": "redness_of_eyes",
+    "canonicalIndex": 52,
+    "name": "redness_of_eyes",
     "label": {
-      "en": "Elbow swelling",
-      "hi": "कोहनी में सूजन",
-      "gu": "કોણીમાં સોજો"
+      "en": "Redness of Eyes",
+      "hi": "आंखों का लाल होना",
+      "gu": "આંખો લાલ થવી"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have elbow swelling?",
-      "hi": "क्या आपको कोहनी में सूजन की समस्या है?",
-      "gu": "શું તમને કોણીમાં સોજો ની તકલીફ છે?"
+      "en": "Do you have redness of eyes?",
+      "hi": "क्या आपको आंखों का लाल होना की समस्या है?",
+      "gu": "શું તમને આંખો લાલ થવી ની તકલીફ છે?"
     }
   },
   {
-    "id": "swollen or red tonsils",
-    "canonicalIndex": 138,
-    "name": "swollen or red tonsils",
+    "id": "sinus_pressure",
+    "canonicalIndex": 53,
+    "name": "sinus_pressure",
     "label": {
-      "en": "Swollen or red tonsils",
-      "hi": "टॉन्सिल में सूजन व लाली",
-      "gu": "કાકડામાં સોજો અને લાલાશ"
+      "en": "Sinus Pressure",
+      "hi": "साइनस का दबाव",
+      "gu": "સાઇનસનું દબાણ"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have swollen or red tonsils?",
-      "hi": "क्या आपको टॉन्सिल में सूजन व लाली की समस्या है?",
-      "gu": "શું તમને કાકડામાં સોજો અને લાલાશ ની તકલીફ છે?"
+      "en": "Do you have sinus pressure?",
+      "hi": "क्या आपको साइनस का दबाव की समस्या है?",
+      "gu": "શું તમને સાઇનસનું દબાણ ની તકલીફ છે?"
     }
   },
   {
-    "id": "sneezing",
-    "canonicalIndex": 139,
-    "name": "sneezing",
+    "id": "runny_nose",
+    "canonicalIndex": 54,
+    "name": "runny_nose",
     "label": {
-      "en": "Frequent sneezing fits",
-      "hi": "बार-बार छींक आना",
-      "gu": "વારંવાર છીંકો આવવી"
+      "en": "Runny Nose",
+      "hi": "बहती नाक",
+      "gu": "વહેતું નાક"
     },
-    "answerability": 1.0,
-    "reliability": 0.98,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have frequent sneezing fits?",
-      "hi": "क्या आपको बार-बार छींक आना की समस्या है?",
-      "gu": "શું તમને વારંવાર છીંકો આવવી ની તકલીફ છે?"
+      "en": "Do you have runny nose?",
+      "hi": "क्या आपको बहती नाक की समस्या है?",
+      "gu": "શું તમને વહેતું નાક ની તકલીફ છે?"
     }
   },
   {
-    "id": "leg weakness",
-    "canonicalIndex": 140,
-    "name": "leg weakness",
+    "id": "congestion",
+    "canonicalIndex": 55,
+    "name": "congestion",
     "label": {
-      "en": "Weakness in legs",
-      "hi": "पैरों में कमजोरी",
-      "gu": "પગમાં નબળાઈ"
+      "en": "Nasal Congestion",
+      "hi": "नाक बंद होना",
+      "gu": "નાક બંધ થવું"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have weakness in legs?",
-      "hi": "क्या आपको पैरों में कमजोरी की समस्या है?",
-      "gu": "શું તમને પગમાં નબળાઈ ની તકલીફ છે?"
+      "en": "Do you have nasal congestion?",
+      "hi": "क्या आपको नाक बंद होना की समस्या है?",
+      "gu": "શું તમને નાક બંધ થવું ની તકલીફ છે?"
     }
   },
   {
-    "id": "throat redness",
-    "canonicalIndex": 141,
-    "name": "throat redness",
+    "id": "chest_pain",
+    "canonicalIndex": 56,
+    "name": "chest_pain",
     "label": {
-      "en": "Redness inside throat",
-      "hi": "गले के अंदर लालिमा",
-      "gu": "ગળામાં લાલાશ"
+      "en": "Chest Pain",
+      "hi": "सीने में दर्द",
+      "gu": "છાતીમાં દુખાવો"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have redness inside throat?",
-      "hi": "क्या आपको गले के अंदर लालिमा की समस्या है?",
-      "gu": "શું તમને ગળામાં લાલાશ ની તકલીફ છે?"
+      "en": "Do you have chest pain?",
+      "hi": "क्या आपको सीने में दर्द की समस्या है?",
+      "gu": "શું તમને છાતીમાં દુખાવો ની તકલીફ છે?"
     }
   },
   {
-    "id": "joint swelling",
-    "canonicalIndex": 142,
-    "name": "joint swelling",
+    "id": "weakness_in_limbs",
+    "canonicalIndex": 57,
+    "name": "weakness_in_limbs",
     "label": {
-      "en": "Joint swelling & warmth",
-      "hi": "जोड़ों में सूजन व लाली",
+      "en": "Weakness in Limbs",
+      "hi": "हाथ-पैरों में कमजोरी",
+      "gu": "હાथ-પગમાં નબળાઈ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have weakness in limbs?",
+      "hi": "क्या आपको हाथ-पैरों में कमजोरी की समस्या है?",
+      "gu": "શું તમને હાथ-પગમાં નબળાઈ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "fast_heart_rate",
+    "canonicalIndex": 58,
+    "name": "fast_heart_rate",
+    "label": {
+      "en": "Fast Heart Rate",
+      "hi": "दिल की धड़कन तेज होना",
+      "gu": "હૃદયના ધબકારા ઝડપી થવા"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have fast heart rate?",
+      "hi": "क्या आपको दिल की धड़कन तेज होना की समस्या है?",
+      "gu": "શું તમને હૃદયના ધબકારા ઝડપી થવા ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "pain_during_bowel_movements",
+    "canonicalIndex": 59,
+    "name": "pain_during_bowel_movements",
+    "label": {
+      "en": "Pain During Bowel Movements",
+      "hi": "मलत्याग के दौरान दर्द",
+      "gu": "શૌચક્રિયા વખતે દુખાવો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have pain during bowel movements?",
+      "hi": "क्या आपको मलत्याग के दौरान दर्द की समस्या है?",
+      "gu": "શું તમને શૌચક્રિયા વખતે દુખાવો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "pain_in_anal_region",
+    "canonicalIndex": 60,
+    "name": "pain_in_anal_region",
+    "label": {
+      "en": "Pain in Anal Region",
+      "hi": "गुदा क्षेत्र में दर्द",
+      "gu": "ગુદા ભાગમાં દુખાવો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have pain in anal region?",
+      "hi": "क्या आपको गुदा क्षेत्र में दर्द की समस्या है?",
+      "gu": "શું તમને ગુદા ભાગમાં દુખાવો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "bloody_stool",
+    "canonicalIndex": 61,
+    "name": "bloody_stool",
+    "label": {
+      "en": "Bloody Stool",
+      "hi": "मल में खून आना",
+      "gu": "શૌચમાં લોહી આવવું"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have bloody stool?",
+      "hi": "क्या आपको मल में खून आना की समस्या है?",
+      "gu": "શું તમને શૌચમાં લોહી આવવું ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "irritation_in_anus",
+    "canonicalIndex": 62,
+    "name": "irritation_in_anus",
+    "label": {
+      "en": "Irritation in Anus",
+      "hi": "गुदा में खुजली / जलन",
+      "gu": "ગુદામાં બળતરા / ખંજવાળ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have irritation in anus?",
+      "hi": "क्या आपको गुदा में खुजली / जलन की समस्या है?",
+      "gu": "શું તમને ગુદામાં બળતરા / ખંજવાળ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "neck_pain",
+    "canonicalIndex": 63,
+    "name": "neck_pain",
+    "label": {
+      "en": "Neck Pain",
+      "hi": "गर्दन का दर्द",
+      "gu": "ગળાનો દુખાવો / ગરદનનો દુખાવો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have neck pain?",
+      "hi": "क्या आपको गर्दन का दर्द की समस्या है?",
+      "gu": "શું તમને ગળાનો દુખાવો / ગરદનનો દુખાવો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "dizziness",
+    "canonicalIndex": 64,
+    "name": "dizziness",
+    "label": {
+      "en": "Dizziness",
+      "hi": "चक्कर आना",
+      "gu": "ચક્કર આવવા"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have dizziness?",
+      "hi": "क्या आपको चक्कर आना की समस्या है?",
+      "gu": "શું તમને ચક્કર આવવા ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "cramps",
+    "canonicalIndex": 65,
+    "name": "cramps",
+    "label": {
+      "en": "Muscle Cramps",
+      "hi": "मांसपेशियों में ऐंठन",
+      "gu": "સ્નાયુઓમાં ખેંચાણ / ક્રેમ્પ્સ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have muscle cramps?",
+      "hi": "क्या आपको मांसपेशियों में ऐंठन की समस्या है?",
+      "gu": "શું તમને સ્નાયુઓમાં ખેંચાણ / ક્રેમ્પ્સ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "bruising",
+    "canonicalIndex": 66,
+    "name": "bruising",
+    "label": {
+      "en": "Bruising",
+      "hi": "त्वचा पर नीले निशान",
+      "gu": "ચામડી પર કાળા-વાદળી ડાઘ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have bruising?",
+      "hi": "क्या आपको त्वचा पर नीले निशान की समस्या है?",
+      "gu": "શું તમને ચામડી પર કાળા-વાદળી ડાઘ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "obesity",
+    "canonicalIndex": 67,
+    "name": "obesity",
+    "label": {
+      "en": "Obesity",
+      "hi": "मोटापा",
+      "gu": "મેદસ્વીતા / વજન વધારે હોવું"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have obesity?",
+      "hi": "क्या आपको मोटापा की समस्या है?",
+      "gu": "શું તમને મેદસ્વીતા / વજન વધારે હોવું ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "swollen_legs",
+    "canonicalIndex": 68,
+    "name": "swollen_legs",
+    "label": {
+      "en": "Swollen Legs",
+      "hi": "पैरों में सूजन",
+      "gu": "પગમાં સોજો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have swollen legs?",
+      "hi": "क्या आपको पैरों में सूजन की समस्या है?",
+      "gu": "શું તમને પગમાં સોજો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "swollen_blood_vessels",
+    "canonicalIndex": 69,
+    "name": "swollen_blood_vessels",
+    "label": {
+      "en": "Swollen Blood Vessels",
+      "hi": "रक्त वाहिकाओं में सूजन",
+      "gu": "નસો ફૂલી જવી / સોજો આવવો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have swollen blood vessels?",
+      "hi": "क्या आपको रक्त वाहिकाओं में सूजन की समस्या है?",
+      "gu": "શું તમને નસો ફૂલી જવી / સોજો આવવો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "puffy_face_and_eyes",
+    "canonicalIndex": 70,
+    "name": "puffy_face_and_eyes",
+    "label": {
+      "en": "Puffy Face & Eyes",
+      "hi": "चेहरे और आंखों पर सूजन",
+      "gu": "ચહેરો અને આંખો ફૂલી જવી"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have puffy face & eyes?",
+      "hi": "क्या आपको चेहरे और आंखों पर सूजन की समस्या है?",
+      "gu": "શું તમને ચહેરો અને આંખો ફૂલી જવી ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "enlarged_thyroid",
+    "canonicalIndex": 71,
+    "name": "enlarged_thyroid",
+    "label": {
+      "en": "Enlarged Thyroid",
+      "hi": "थायराइड का बढ़ना (घेंघा)",
+      "gu": "થાઇરોઇડ ગ્રંથિ મોટી થવી"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have enlarged thyroid?",
+      "hi": "क्या आपको थायराइड का बढ़ना (घेंघा) की समस्या है?",
+      "gu": "શું તમને થાઇરોઇડ ગ્રંથિ મોટી થવી ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "brittle_nails",
+    "canonicalIndex": 72,
+    "name": "brittle_nails",
+    "label": {
+      "en": "Brittle Nails",
+      "hi": "कमजोर नाखून",
+      "gu": "નખ બરડ થવા / સરળતાથી તૂટવા"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have brittle nails?",
+      "hi": "क्या आपको कमजोर नाखून की समस्या है?",
+      "gu": "શું તમને નખ બરડ થવા / સરળતાથી તૂટવા ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "swollen_extremeties",
+    "canonicalIndex": 73,
+    "name": "swollen_extremeties",
+    "label": {
+      "en": "Swollen Extremities",
+      "hi": "हाथ-पैरों के पंजों में सूजन",
+      "gu": "હાથ-પગના પંજામાં સોજો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have swollen extremities?",
+      "hi": "क्या आपको हाथ-पैरों के पंजों में सूजन की समस्या है?",
+      "gu": "શું તમને હાથ-પગના પંજામાં સોજો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "excessive_hunger",
+    "canonicalIndex": 74,
+    "name": "excessive_hunger",
+    "label": {
+      "en": "Excessive Hunger",
+      "hi": "अत्यधिक भूख लगना",
+      "gu": "અતિશય ભૂખ લાગવી"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have excessive hunger?",
+      "hi": "क्या आपको अत्यधिक भूख लगना की समस्या है?",
+      "gu": "શું તમને અતિશય ભૂખ લાગવી ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "extra_marital_contacts",
+    "canonicalIndex": 75,
+    "name": "extra_marital_contacts",
+    "label": {
+      "en": "High-Risk Exposure / Contacts",
+      "hi": "असुरक्षित शारीरिक संपर्क",
+      "gu": "અસુરક્ષિત શારીરિક સંબંધો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have high-risk exposure / contacts?",
+      "hi": "क्या आपको असुरक्षित शारीरिक संपर्क की समस्या है?",
+      "gu": "શું તમને અસુરક્ષિત શારીરિક સંબંધો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "drying_and_tingling_lips",
+    "canonicalIndex": 76,
+    "name": "drying_and_tingling_lips",
+    "label": {
+      "en": "Dry & Tingling Lips",
+      "hi": "होंठों का सूखना और झुनझुनी",
+      "gu": "હોઠ સુકાઈ જવા અને ઝણઝણાટી થવી"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have dry & tingling lips?",
+      "hi": "क्या आपको होंठों का सूखना और झुनझुनी की समस्या है?",
+      "gu": "શું તમને હોઠ સુકાઈ જવા અને ઝણઝણાટી થવી ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "slurred_speech",
+    "canonicalIndex": 77,
+    "name": "slurred_speech",
+    "label": {
+      "en": "Slurred Speech",
+      "hi": "हकलाहट / बोली में लड़खड़ाहट",
+      "gu": "બોલવામાં લથડાવું"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have slurred speech?",
+      "hi": "क्या आपको हकलाहट / बोली में लड़खड़ाहट की समस्या है?",
+      "gu": "શું તમને બોલવામાં લથડાવું ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "knee_pain",
+    "canonicalIndex": 78,
+    "name": "knee_pain",
+    "label": {
+      "en": "Knee Pain",
+      "hi": "घुटने का दर्द",
+      "gu": "ઘૂંટણનો દુખાવો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have knee pain?",
+      "hi": "क्या आपको घुटने का दर्द की समस्या है?",
+      "gu": "શું તમને ઘૂંટણનો દુખાવો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "hip_joint_pain",
+    "canonicalIndex": 79,
+    "name": "hip_joint_pain",
+    "label": {
+      "en": "Hip Joint Pain",
+      "hi": "कूल्हे का दर्द",
+      "gu": "નિતંબના સાંધાનો દુખાવો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have hip joint pain?",
+      "hi": "क्या आपको कूल्हे का दर्द की समस्या है?",
+      "gu": "શું તમને નિતંબના સાંધાનો દુખાવો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "muscle_weakness",
+    "canonicalIndex": 80,
+    "name": "muscle_weakness",
+    "label": {
+      "en": "Muscle Weakness",
+      "hi": "मांसपेशियों में कमजोरी",
+      "gu": "સ્નાયુઓમાં નબળાઈ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have muscle weakness?",
+      "hi": "क्या आपको मांसपेशियों में कमजोरी की समस्या है?",
+      "gu": "શું તમને સ્નાયુઓમાં નબળાઈ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "stiff_neck",
+    "canonicalIndex": 81,
+    "name": "stiff_neck",
+    "label": {
+      "en": "Stiff Neck",
+      "hi": "गर्दन में अकड़न",
+      "gu": "ગરદન અકડી જવી"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have stiff neck?",
+      "hi": "क्या आपको गर्दन में अकड़न की समस्या है?",
+      "gu": "શું તમને ગરદન અકડી જવી ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "swelling_joints",
+    "canonicalIndex": 82,
+    "name": "swelling_joints",
+    "label": {
+      "en": "Swelling Joints",
+      "hi": "जोड़ों में सूजन",
       "gu": "સાંધામાં સોજો"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have joint swelling & warmth?",
-      "hi": "क्या आपको जोड़ों में सूजन व लाली की समस्या है?",
+      "en": "Do you have swelling joints?",
+      "hi": "क्या आपको जोड़ों में सूजन की समस्या है?",
       "gu": "શું તમને સાંધામાં સોજો ની તકલીફ છે?"
     }
   },
   {
-    "id": "back stiffness or tightness",
-    "canonicalIndex": 143,
-    "name": "back stiffness or tightness",
+    "id": "movement_stiffness",
+    "canonicalIndex": 83,
+    "name": "movement_stiffness",
     "label": {
-      "en": "Morning back stiffness / Spasm",
-      "hi": "कमर में जकड़न",
-      "gu": "કમરમાં જકડાઈ જવું"
+      "en": "Movement Stiffness",
+      "hi": "हिलने-डुलने में कठिनाई",
+      "gu": "હલનચલનમાં જકડાઈ જવું"
     },
-    "answerability": 0.9,
-    "reliability": 0.92,
+    "answerability": 0.95,
+    "reliability": 0.95,
     "question": {
-      "en": "Do you have morning back stiffness / spasm?",
-      "hi": "क्या आपको कमर में जकड़न की समस्या है?",
-      "gu": "શું તમને કમરમાં જકડાઈ જવું ની તકલીફ છે?"
+      "en": "Do you have movement stiffness?",
+      "hi": "क्या आपको हिलने-डुलने में कठिनाई की समस्या है?",
+      "gu": "શું તમને હલનચલનમાં જકડાઈ જવું ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "spinning_movements",
+    "canonicalIndex": 84,
+    "name": "spinning_movements",
+    "label": {
+      "en": "Spinning Movements / Vertigo",
+      "hi": "सिर घूमना / चक्कर",
+      "gu": "ચક્કર આવવા / ચકરાવો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have spinning movements / vertigo?",
+      "hi": "क्या आपको सिर घूमना / चक्कर की समस्या है?",
+      "gu": "શું તમને ચક્કર આવવા / ચકરાવો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "loss_of_balance",
+    "canonicalIndex": 85,
+    "name": "loss_of_balance",
+    "label": {
+      "en": "Loss of Balance",
+      "hi": "संतुलन खोना",
+      "gu": "સંતુલન ગુમાવવું"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have loss of balance?",
+      "hi": "क्या आपको संतुलन खोना की समस्या है?",
+      "gu": "શું તમને સંતુલન ગુમાવવું ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "unsteadiness",
+    "canonicalIndex": 86,
+    "name": "unsteadiness",
+    "label": {
+      "en": "Unsteadiness",
+      "hi": "अस्थिरता",
+      "gu": "ચાલવામાં અસ્થિરતા"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have unsteadiness?",
+      "hi": "क्या आपको अस्थिरता की समस्या है?",
+      "gu": "શું તમને ચાલવામાં અસ્થિરતા ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "weakness_of_one_body_side",
+    "canonicalIndex": 87,
+    "name": "weakness_of_one_body_side",
+    "label": {
+      "en": "One-Sided Body Weakness",
+      "hi": "शरीर के एक हिस्से में कमजोरी",
+      "gu": "શરીરની એક બાજુ નબળાઈ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have one-sided body weakness?",
+      "hi": "क्या आपको शरीर के एक हिस्से में कमजोरी की समस्या है?",
+      "gu": "શું તમને શરીરની એક બાજુ નબળાઈ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "loss_of_smell",
+    "canonicalIndex": 88,
+    "name": "loss_of_smell",
+    "label": {
+      "en": "Loss of Smell",
+      "hi": "सूंघने की क्षमता में कमी",
+      "gu": "સૂંઘવાની શક્તિ ગુમાવવી"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have loss of smell?",
+      "hi": "क्या आपको सूंघने की क्षमता में कमी की समस्या है?",
+      "gu": "શું તમને સૂંઘવાની શક્તિ ગુમાવવી ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "bladder_discomfort",
+    "canonicalIndex": 89,
+    "name": "bladder_discomfort",
+    "label": {
+      "en": "Bladder Discomfort",
+      "hi": "मूत्राशय में बेचैनी / दर्द",
+      "gu": "મૂત્રાશયમાં અગવડતા"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have bladder discomfort?",
+      "hi": "क्या आपको मूत्राशय में बेचैनी / दर्द की समस्या है?",
+      "gu": "શું તમને મૂત્રાશયમાં અગવડતા ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "foul_smell_of urine",
+    "canonicalIndex": 90,
+    "name": "foul_smell_of urine",
+    "label": {
+      "en": "Foul Smell of Urine",
+      "hi": "पेशाब से दुर्गंध आना",
+      "gu": "પેશાબમાંથી દુર્ગંધ આવવી"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have foul smell of urine?",
+      "hi": "क्या आपको पेशाब से दुर्गंध आना की समस्या है?",
+      "gu": "શું તમને પેશાબમાંથી દુર્ગંધ આવવી ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "continuous_feel_of_urine",
+    "canonicalIndex": 91,
+    "name": "continuous_feel_of_urine",
+    "label": {
+      "en": "Continuous Urge to Urinate",
+      "hi": "लगातार पेशाब महसूस होना",
+      "gu": "સતત પેશાબ લાગવાની લાગણી"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have continuous urge to urinate?",
+      "hi": "क्या आपको लगातार पेशाब महसूस होना की समस्या है?",
+      "gu": "શું તમને સતત પેશાબ લાગવાની લાગણી ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "passage_of_gases",
+    "canonicalIndex": 92,
+    "name": "passage_of_gases",
+    "label": {
+      "en": "Passage of Gases / Flatulence",
+      "hi": "गैस निकलना / अपान वायु",
+      "gu": "ગેસ પાસ થવો / વાયુ છૂટવો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have passage of gases / flatulence?",
+      "hi": "क्या आपको गैस निकलना / अपान वायु की समस्या है?",
+      "gu": "શું તમને ગેસ પાસ થવો / વાયુ છૂટવો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "internal_itching",
+    "canonicalIndex": 93,
+    "name": "internal_itching",
+    "label": {
+      "en": "Internal Itching",
+      "hi": "आंतरिक अंगों में खुजली",
+      "gu": "આંતરિક ભાગોમાં ખંજવાળ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have internal itching?",
+      "hi": "क्या आपको आंतरिक अंगों में खुजली की समस्या है?",
+      "gu": "શું તમને આંતરિક ભાગોમાં ખંજવાળ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "toxic_look_(typhos)",
+    "canonicalIndex": 94,
+    "name": "toxic_look_(typhos)",
+    "label": {
+      "en": "Toxic / Lethargic Look",
+      "hi": "अत्यधिक बीमार दिखना",
+      "gu": "ખૂબ જ બીમાર દેખાવું"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have toxic / lethargic look?",
+      "hi": "क्या आपको अत्यधिक बीमार दिखना की समस्या है?",
+      "gu": "શું તમને ખૂબ જ બીમાર દેખાવું ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "depression",
+    "canonicalIndex": 95,
+    "name": "depression",
+    "label": {
+      "en": "Depression",
+      "hi": "उदासी / अवसाद",
+      "gu": "ડિપ્રેશન / ઉદાસી"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have depression?",
+      "hi": "क्या आपको उदासी / अवसाद की समस्या है?",
+      "gu": "શું તમને ડિપ્રેશન / ઉદાસી ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "irritability",
+    "canonicalIndex": 96,
+    "name": "irritability",
+    "label": {
+      "en": "Irritability",
+      "hi": "चिड़चिड़ापन",
+      "gu": "ચિડિયાપણું"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have irritability?",
+      "hi": "क्या आपको चिड़चिड़ापन की समस्या है?",
+      "gu": "શું તમને ચિડિયાપણું ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "muscle_pain",
+    "canonicalIndex": 97,
+    "name": "muscle_pain",
+    "label": {
+      "en": "Muscle Pain",
+      "hi": "मांसपेशियों का दर्द",
+      "gu": "સ્નાયુઓનો દુખાવો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have muscle pain?",
+      "hi": "क्या आपको मांसपेशियों का दर्द की समस्या है?",
+      "gu": "શું તમને સ્નાયુઓનો દુખાવો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "altered_sensorium",
+    "canonicalIndex": 98,
+    "name": "altered_sensorium",
+    "label": {
+      "en": "Altered Sensorium / Confusion",
+      "hi": "भ्रम / मानसिक चेतना में बदलाव",
+      "gu": "માનસિક અસ્થિરતા / મૂંઝવણ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have altered sensorium / confusion?",
+      "hi": "क्या आपको भ्रम / मानसिक चेतना में बदलाव की समस्या है?",
+      "gu": "શું તમને માનસિક અસ્થિરતા / મૂંઝવણ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "red_spots_over_body",
+    "canonicalIndex": 99,
+    "name": "red_spots_over_body",
+    "label": {
+      "en": "Red Spots Over Body",
+      "hi": "शरीर पर लाल चकत्ते",
+      "gu": "શરીર પર લાલ ડાઘા"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have red spots over body?",
+      "hi": "क्या आपको शरीर पर लाल चकत्ते की समस्या है?",
+      "gu": "શું તમને શરીર પર લાલ ડાઘા ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "belly_pain",
+    "canonicalIndex": 100,
+    "name": "belly_pain",
+    "label": {
+      "en": "Belly Pain",
+      "hi": "पेट दर्द",
+      "gu": "पेंट का दर्द"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have belly pain?",
+      "hi": "क्या आपको पेट दर्द की समस्या है?",
+      "gu": "શું તમને पेंट का दर्द ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "abnormal_menstruation",
+    "canonicalIndex": 101,
+    "name": "abnormal_menstruation",
+    "label": {
+      "en": "Abnormal Menstruation",
+      "hi": "अनियमित मासिक धर्म",
+      "gu": "અનિયમિત માસિક ધર્મ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have abnormal menstruation?",
+      "hi": "क्या आपको अनियमित मासिक धर्म की समस्या है?",
+      "gu": "શું તમને અનિયમિત માસિક ધર્મ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "dischromic _patches",
+    "canonicalIndex": 102,
+    "name": "dischromic _patches",
+    "label": {
+      "en": "Discolored Skin Patches",
+      "hi": "त्वचा का रंग बदलना",
+      "gu": "ત્વચાનો રંગ બદલાવો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have discolored skin patches?",
+      "hi": "क्या आपको त्वचा का रंग बदलना की समस्या है?",
+      "gu": "શું તમને ત્વચાનો રંગ બદલાવો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "watering_from_eyes",
+    "canonicalIndex": 103,
+    "name": "watering_from_eyes",
+    "label": {
+      "en": "Watering From Eyes",
+      "hi": "आंकों से पानी आना",
+      "gu": "આંખોમાંથી પાણી આવવું"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have watering from eyes?",
+      "hi": "क्या आपको आंकों से पानी आना की समस्या है?",
+      "gu": "શું તમને આંખોમાંથી પાણી આવવું ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "increased_appetite",
+    "canonicalIndex": 104,
+    "name": "increased_appetite",
+    "label": {
+      "en": "Increased Appetite",
+      "hi": "अत्यधिक भूख लगना",
+      "gu": "ભૂખમાં વધારો થવો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have increased appetite?",
+      "hi": "क्या आपको अत्यधिक भूख लगना की समस्या है?",
+      "gu": "શું તમને ભૂખમાં વધારો થવો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "polyuria",
+    "canonicalIndex": 105,
+    "name": "polyuria",
+    "label": {
+      "en": "Excessive Urination (Polyuria)",
+      "hi": "अत्यधिक पेशाब आना",
+      "gu": "વારંવાર અને વધારે પેશાબ આવવો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have excessive urination (polyuria)?",
+      "hi": "क्या आपको अत्यधिक पेशाब आना की समस्या है?",
+      "gu": "શું તમને વારંવાર અને વધારે પેશાબ આવવો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "family_history",
+    "canonicalIndex": 106,
+    "name": "family_history",
+    "label": {
+      "en": "Family History of Disease",
+      "hi": "परिवार में बीमारी का इतिहास",
+      "gu": "બીમારીનો કૌટુંબિક ઇતિહાસ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have family history of disease?",
+      "hi": "क्या आपको परिवार में बीमारी का इतिहास की समस्या है?",
+      "gu": "શું તમને બીમારીનો કૌટુંબિક ઇતિહાસ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "mucoid_sputum",
+    "canonicalIndex": 107,
+    "name": "mucoid_sputum",
+    "label": {
+      "en": "Mucoid Sputum",
+      "hi": "लार/बलगम आना",
+      "gu": "ચીકણો કફ આવવો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have mucoid sputum?",
+      "hi": "क्या आपको लार/बलगम आना की समस्या है?",
+      "gu": "શું તમને ચીકણો કફ આવવો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "rusty_sputum",
+    "canonicalIndex": 108,
+    "name": "rusty_sputum",
+    "label": {
+      "en": "Rusty Sputum",
+      "hi": "जंग के रंग का बलगम",
+      "gu": "લાલ-ભૂરો કફ આવવો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have rusty sputum?",
+      "hi": "क्या आपको जंग के रंग का बलगम की समस्या है?",
+      "gu": "શું તમને લાલ-ભૂરો કફ આવવો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "lack_of_concentration",
+    "canonicalIndex": 109,
+    "name": "lack_of_concentration",
+    "label": {
+      "en": "Lack of Concentration",
+      "hi": "एकाग्रता में कमी",
+      "gu": "એકાગ્રતાનો અભાવ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have lack of concentration?",
+      "hi": "क्या आपको एकाग्रता में कमी की समस्या है?",
+      "gu": "શું તમને એકાગ્રતાનો અભાવ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "visual_disturbances",
+    "canonicalIndex": 110,
+    "name": "visual_disturbances",
+    "label": {
+      "en": "Visual Disturbances",
+      "hi": "दृष्टि में गड़बड़ी",
+      "gu": "દેખાવામાં તકલીફ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have visual disturbances?",
+      "hi": "क्या आपको दृष्टि में गड़बड़ी की समस्या है?",
+      "gu": "શું તમને દેખાવામાં તકલીફ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "receiving_blood_transfusion",
+    "canonicalIndex": 111,
+    "name": "receiving_blood_transfusion",
+    "label": {
+      "en": "Blood Transfusion History",
+      "hi": "खून चढ़ाने का इतिहास",
+      "gu": "લોહી ચઢાવવાનો ઇતિહાસ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have blood transfusion history?",
+      "hi": "क्या आपको खून चढ़ाने का इतिहास की समस्या है?",
+      "gu": "શું તમને લોહી ચઢાવવાનો ઇતિહાસ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "receiving_unsterile_injections",
+    "canonicalIndex": 112,
+    "name": "receiving_unsterile_injections",
+    "label": {
+      "en": "Unsterile Injection History",
+      "hi": "असुरक्षित सुई/इंजेक्शन का इतिहास",
+      "gu": "અસુરક્ષિત ઇન્જેક્શનનો ઇતિહાસ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have unsterile injection history?",
+      "hi": "क्या आपको असुरक्षित सुई/इंजेक्शन का इतिहास की समस्या है?",
+      "gu": "શું તમને અસુરક્ષિત ઇન્જેક્શનનો ઇતિહાસ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "coma",
+    "canonicalIndex": 113,
+    "name": "coma",
+    "label": {
+      "en": "Coma",
+      "hi": "कोमा / बेहोशी",
+      "gu": "કોમા / અચેતન અવસ્થા"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have coma?",
+      "hi": "क्या आपको कोमा / बेहोशी की समस्या है?",
+      "gu": "શું તમને કોમા / અચેતન અવસ્થા ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "stomach_bleeding",
+    "canonicalIndex": 114,
+    "name": "stomach_bleeding",
+    "label": {
+      "en": "Stomach Bleeding",
+      "hi": "पेट से खून बहना",
+      "gu": "પેટમાંથી રક્તસ્રાવ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have stomach bleeding?",
+      "hi": "क्या आपको पेट से खून बहना की समस्या है?",
+      "gu": "શું તમને પેટમાંથી રક્તસ્રાવ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "distention_of_abdomen",
+    "canonicalIndex": 115,
+    "name": "distention_of_abdomen",
+    "label": {
+      "en": "Distention of Abdomen",
+      "hi": "पेट फूलना",
+      "gu": "પેટ ફૂલી જવું"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have distention of abdomen?",
+      "hi": "क्या आपको पेट फूलना की समस्या है?",
+      "gu": "શું તમને પેટ ફૂલી જવું ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "history_of_alcohol_consumption",
+    "canonicalIndex": 116,
+    "name": "history_of_alcohol_consumption",
+    "label": {
+      "en": "Alcohol Consumption History",
+      "hi": "शराब पीने का इतिहास",
+      "gu": "દારૂ પીવાની ટેવ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have alcohol consumption history?",
+      "hi": "क्या आपको शराब पीने का इतिहास की समस्या है?",
+      "gu": "શું તમને દારૂ પીવાની ટેવ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "fluid_overload.1",
+    "canonicalIndex": 117,
+    "name": "fluid_overload.1",
+    "label": {
+      "en": "Fluid Accumulation",
+      "hi": "तरल का जमाव",
+      "gu": "પ્રવાહી ભરાઈ જવું"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have fluid accumulation?",
+      "hi": "क्या आपको तरल का जमाव की समस्या है?",
+      "gu": "શું તમને પ્રવાહી ભરાઈ જવું ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "blood_in_sputum",
+    "canonicalIndex": 118,
+    "name": "blood_in_sputum",
+    "label": {
+      "en": "Blood in Sputum",
+      "hi": "बलगम में खून आना",
+      "gu": "કફમાં લોહી આવવું"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have blood in sputum?",
+      "hi": "क्या आपको बलगम में खून आना की समस्या है?",
+      "gu": "શું તમને કફમાં લોહી આવવું ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "prominent_veins_on_calf",
+    "canonicalIndex": 119,
+    "name": "prominent_veins_on_calf",
+    "label": {
+      "en": "Prominent Veins on Calf",
+      "hi": "पिंडली पर उभरी हुई नसें",
+      "gu": "પિંડલી પર ફૂલેલી નસો દેખાવી"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have prominent veins on calf?",
+      "hi": "क्या आपको पिंडली पर उभरी हुई नसें की समस्या है?",
+      "gu": "શું તમને પિંડલી પર ફૂલેલી નસો દેખાવી ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "palpitations",
+    "canonicalIndex": 120,
+    "name": "palpitations",
+    "label": {
+      "en": "Palpitations",
+      "hi": "घबराहट / धड़कन महसूस होना",
+      "gu": "ધબકારા વધવા"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have palpitations?",
+      "hi": "क्या आपको घबराहट / धड़कन महसूस होना की समस्या है?",
+      "gu": "શું તમને ધબકારા વધવા ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "painful_walking",
+    "canonicalIndex": 121,
+    "name": "painful_walking",
+    "label": {
+      "en": "Painful Walking",
+      "hi": "चलने में दर्द होना",
+      "gu": "ચાલતી વખતે દુખાવો થવો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have painful walking?",
+      "hi": "क्या आपको चलने में दर्द होना की समस्या है?",
+      "gu": "શું તમને ચાલતી વખતે દુખાવો થવો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "pus_filled_pimples",
+    "canonicalIndex": 122,
+    "name": "pus_filled_pimples",
+    "label": {
+      "en": "Pus-Filled Pimples",
+      "hi": "पीप वाले मुहांसे",
+      "gu": "પરુવાળા ખીલ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have pus-filled pimples?",
+      "hi": "क्या आपको पीप वाले मुहांसे की समस्या है?",
+      "gu": "શું તમને પરુવાળા ખીલ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "blackheads",
+    "canonicalIndex": 123,
+    "name": "blackheads",
+    "label": {
+      "en": "Blackheads",
+      "hi": "ब्लैकहेड्स",
+      "gu": "બ્લેકહેડ્સ"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have blackheads?",
+      "hi": "क्या आपको ब्लैकहेड्स की समस्या है?",
+      "gu": "શું તમને બ્લેકહેડ્સ ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "scurring",
+    "canonicalIndex": 124,
+    "name": "scurring",
+    "label": {
+      "en": "Scarring",
+      "hi": "दाग-धब्बे / निशान",
+      "gu": "ખીલના ડાઘા"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have scarring?",
+      "hi": "क्या आपको दाग-धब्बे / निशान की समस्या है?",
+      "gu": "શું તમને ખીલના ડાઘા ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "skin_peeling",
+    "canonicalIndex": 125,
+    "name": "skin_peeling",
+    "label": {
+      "en": "Skin Peeling",
+      "hi": "त्वचा का छिलना / निकलना",
+      "gu": "ત્વચા ઉખડવી / છોલાઈ જવી"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have skin peeling?",
+      "hi": "क्या आपको त्वचा का छिलना / निकलना की समस्या है?",
+      "gu": "શું તમને ત્વચા ઉખડવી / છોલાઈ જવી ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "silver_like_dusting",
+    "canonicalIndex": 126,
+    "name": "silver_like_dusting",
+    "label": {
+      "en": "Silver-Like Dusting",
+      "hi": "चांदी जैसी त्वचा की पपड़ी",
+      "gu": "રૂપેરી ભીંગડા જેવી પતરી વળવી"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have silver-like dusting?",
+      "hi": "क्या आपको चांदी जैसी त्वचा की पपड़ी की समस्या है?",
+      "gu": "શું તમને રૂપેરી ભીંગડા જેવી પતરી વળવી ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "small_dents_in_nails",
+    "canonicalIndex": 127,
+    "name": "small_dents_in_nails",
+    "label": {
+      "en": "Small Dents in Nails",
+      "hi": "नाखूनों में छोटे गड्ढे",
+      "gu": "નખમાં નાના ખાડા પડવા"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have small dents in nails?",
+      "hi": "क्या आपको नाखूनों में छोटे गड्ढे की समस्या है?",
+      "gu": "શું તમને નખમાં નાના ખાડા પડવા ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "inflammatory_nails",
+    "canonicalIndex": 128,
+    "name": "inflammatory_nails",
+    "label": {
+      "en": "Inflammatory Nails",
+      "hi": "नाखूनों में सूजन और दर्द",
+      "gu": "નખની આજુબાજુ સોજો અને દુખાવો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have inflammatory nails?",
+      "hi": "क्या आपको नाखूनों में सूजन और दर्द की समस्या है?",
+      "gu": "શું તમને નખની આજુબાજુ સોજો અને દુખાવો ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "blister",
+    "canonicalIndex": 129,
+    "name": "blister",
+    "label": {
+      "en": "Blisters",
+      "hi": "छाले / फफोले",
+      "gu": "ફોલ્લા"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have blisters?",
+      "hi": "क्या आपको छाले / फफोले की समस्या है?",
+      "gu": "શું તમને ફોલ્લા ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "red_sore_around_nose",
+    "canonicalIndex": 130,
+    "name": "red_sore_around_nose",
+    "label": {
+      "en": "Red Sore Around Nose",
+      "hi": "नाक के पास लाल घाव",
+      "gu": "નાકની આસપાસ લાલ ચાંદા"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have red sore around nose?",
+      "hi": "क्या आपको नाक के पास लाल घाव की समस्या है?",
+      "gu": "શું તમને નાકની આસપાસ લાલ ચાંદા ની તકલીફ છે?"
+    }
+  },
+  {
+    "id": "yellow_crust_ooze",
+    "canonicalIndex": 131,
+    "name": "yellow_crust_ooze",
+    "label": {
+      "en": "Yellow Crust Ooze",
+      "hi": "पीला पपड़ीदार स्राव",
+      "gu": "પીળો ચીકણો સ્ત્રાવ વહેવો"
+    },
+    "answerability": 0.95,
+    "reliability": 0.95,
+    "question": {
+      "en": "Do you have yellow crust ooze?",
+      "hi": "क्या आपको पीला पपड़ीदार स्राव की समस्या है?",
+      "gu": "શું તમને પીળો ચીકણો સ્ત્રાવ વહેવો ની તકલીફ છે?"
     }
   }
 ]

@@ -905,8 +905,8 @@ class DiseaseModelService {
 
     const maxProb = rankedCandidates[0]?.probability ? rankedCandidates[0].probability / 100 : 0;
 
-    // Check Stopping Conditions (Enforce minimum 6 questions before stopping)
-    if (questionTurn >= 6 && maxProb >= 0.95) {
+    // Check Stopping Conditions (Enforce minimum 8 questions before stopping)
+    if (questionTurn >= 8 && maxProb >= 0.95) {
       return {
         nextQuestion: null,
         currentEntropy: Number(currentEntropy.toFixed(3)),
@@ -938,7 +938,7 @@ class DiseaseModelService {
       };
     }
 
-    // 3. Hierarchical Candidate Disease Narrowing
+    // 3. Hierarchical Candidate Disease Narrowing (Progressive Match Scoring)
     const confirmedRaw = Object.keys(symptomVector).filter((k) => symptomVector[k] === 1);
     const confirmedSymptoms = confirmedRaw.flatMap((s) => getFeaturesForSymptom(s, this.features));
 
@@ -946,57 +946,43 @@ class DiseaseModelService {
     const excludedSymptoms = excludedRaw.flatMap((s) => getFeaturesForSymptom(s, this.features));
 
     let candidateDiseaseIndices: number[] = [];
+    let candidateScores: { idx: number; score: number }[] = [];
     for (let d = 0; d < this.diseases.length; d++) {
       const pSList = this.pSGivenD[d] || [];
-      let hasAllConfirmed = true;
+      let cMatch = 0;
       for (const cs of confirmedSymptoms) {
         const fIdx = this.features.indexOf(cs);
-        if (fIdx !== -1 && (pSList[fIdx] || 0) < 0.10) {
-          hasAllConfirmed = false;
-          break;
+        if (fIdx !== -1 && (pSList[fIdx] || 0) >= 0.10) {
+          cMatch += 1;
         }
       }
-      if (!hasAllConfirmed) continue;
-
-      let hasExcluded = false;
+      let eMatch = 0;
       for (const es of excludedSymptoms) {
         const fIdx = this.features.indexOf(es);
-        if (fIdx !== -1 && (pSList[fIdx] || 0) >= 0.80) {
-          hasExcluded = true;
-          break;
+        if (fIdx !== -1 && (pSList[fIdx] || 0) >= 0.50) {
+          eMatch += 1;
         }
       }
-      if (!hasExcluded) {
-        candidateDiseaseIndices.push(d);
+
+      if (confirmedSymptoms.length === 0 || cMatch > 0) {
+        const netScore = cMatch * 3 - eMatch;
+        candidateScores.push({ idx: d, score: netScore });
       }
     }
 
-    // Fallback: If no candidate perfectly satisfies strict subset, rank by matching score
-    if (candidateDiseaseIndices.length === 0) {
-      let maxMatchScore = -Infinity;
-      let scores: number[] = [];
-      for (let d = 0; d < this.diseases.length; d++) {
-        const pSList = this.pSGivenD[d] || [];
-        let cMatch = 0;
-        for (const cs of confirmedSymptoms) {
-          const fIdx = this.features.indexOf(cs);
-          if (fIdx !== -1 && (pSList[fIdx] || 0) >= 0.10) cMatch += 1;
-        }
-        let eMatch = 0;
-        for (const es of excludedSymptoms) {
-          const fIdx = this.features.indexOf(es);
-          if (fIdx !== -1 && (pSList[fIdx] || 0) >= 0.50) eMatch += 1;
-        }
-        const score = cMatch * 2 - eMatch;
-        scores.push(score);
-        if (score > maxMatchScore) maxMatchScore = score;
-      }
-      candidateDiseaseIndices = scores
-        .map((s, idx) => (s === maxMatchScore ? idx : -1))
-        .filter((idx) => idx !== -1);
+    candidateScores.sort((a, b) => b.score - a.score);
+
+    if (candidateScores.length > 0) {
+      const maxScore = candidateScores[0].score;
+      candidateDiseaseIndices = candidateScores
+        .filter((s) => s.score >= maxScore - 1)
+        .slice(0, 6)
+        .map((s) => s.idx);
+    } else {
+      candidateDiseaseIndices = Array.from({ length: this.diseases.length }, (_, i) => i);
     }
 
-    // 4. Select best unasked symptom among remaining candidate diseases
+    // 4. Select best unasked symptom among remaining candidate diseases by frequency
     let bestFeature: string | null = null;
     let bestScore = -Infinity;
     let bestEntropyRed = 0;
@@ -1016,19 +1002,54 @@ class DiseaseModelService {
         }
       }
 
-      if (countInCandidates === 0) continue; // Skip symptoms unrelated to candidate diseases
+      if (countInCandidates === 0) continue;
 
       const ratio = countInCandidates / numCandidates;
-      let splitPower = 1.0;
-      if (numCandidates > 1) {
-        splitPower = 1.0 - Math.abs(ratio - 0.5) * 2.0;
-      }
+      const splitPower = 1.0 - Math.abs(ratio - 0.5);
+      const score = countInCandidates * 5 + splitPower * 10;
 
-      const score = splitPower * 10 + countInCandidates;
       if (score > bestScore) {
         bestScore = score;
         bestFeature = feat;
         bestEntropyRed = splitPower;
+      }
+    }
+
+    // Fallback Tier 2: Review of Systems / Co-occurring clinical symptoms
+    if (!bestFeature) {
+      const matrix = (modelData as any).symptom_co_occurrence as Record<string, Record<string, number>> || {};
+      for (const cs of confirmedSymptoms) {
+        const csLower = cs.toLowerCase().trim();
+        const coMap = matrix[cs] || matrix[csLower] || {};
+        for (const feat of this.features) {
+          const featLower = feat.toLowerCase().trim();
+          if (askedSet.has(featLower) || askedSet.has(feat)) continue;
+          if (symptomVector[feat] !== undefined && symptomVector[feat] !== null) continue;
+          if (symptomVector[featLower] !== undefined && symptomVector[featLower] !== null) continue;
+
+          const prob = coMap[feat] || coMap[featLower] || 0.0;
+          const score = prob * 10;
+          if (score > bestScore) {
+            bestScore = score;
+            bestFeature = feat;
+            bestEntropyRed = 0.5;
+          }
+        }
+      }
+    }
+
+    // Fallback Tier 3: Any remaining unasked clinical symptom
+    if (!bestFeature) {
+      for (const feat of this.features) {
+        const featLower = feat.toLowerCase().trim();
+        if (askedSet.has(featLower) || askedSet.has(feat)) continue;
+        if (symptomVector[feat] !== undefined && symptomVector[feat] !== null) continue;
+        if (symptomVector[featLower] !== undefined && symptomVector[featLower] !== null) continue;
+
+        bestFeature = feat;
+        bestScore = 1.0;
+        bestEntropyRed = 0.1;
+        break;
       }
     }
 
@@ -1041,7 +1062,7 @@ class DiseaseModelService {
         isStoppingCriteriaMet: true,
         stoppingReason: 'pool_exhausted',
         stoppingMessage: {
-          en: `Candidate symptom pool exhausted. Proceeding to XGBoost diagnosis.`,
+          en: `Diagnostic evaluation complete. Proceeding to XGBoost diagnosis.`,
           hi: `सभी प्रासंगिक प्रश्नों का विश्लेषण पूर्ण हो चुका है।`,
           gu: `બધા સંબંધિત પ્રશ્નોનું વિશ્લેષણ પૂર્ણ થઈ ગયું છે.`
         }
