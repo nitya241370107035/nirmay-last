@@ -6,6 +6,7 @@ export interface TranslationDictionary {
   emrRecordsTab: string;
   doctorStationTab: string;
   appointmentsTab: string;
+  outbreakSentinelTab: string;
   newPatient: string;
   editClinic: string;
   switchPortal: string;
@@ -170,6 +171,7 @@ export const CLINICAL_TRANSLATIONS: Record<LanguageCode, TranslationDictionary> 
     emrRecordsTab: 'ડિજિટલ EMR રેકોર્ડ્સ',
     doctorStationTab: 'ડૉક્ટર કન્સલ્ટેશન અને Rx',
     appointmentsTab: 'એપોઇન્ટમેન્ટ ડેસ્ક',
+    outbreakSentinelTab: 'રોગચાળો મોનિટરિંગ (Sentinel)',
     newPatient: 'નવો દર્દી',
     editClinic: 'ક્લિનિક વિગત',
     switchPortal: 'પોર્ટલ બદલો',
@@ -333,6 +335,7 @@ export const CLINICAL_TRANSLATIONS: Record<LanguageCode, TranslationDictionary> 
     emrRecordsTab: 'डिजिटल EMR रिकॉर्ड्स',
     doctorStationTab: 'डॉक्टर परामर्श एवं Rx',
     appointmentsTab: 'अपॉइंटमेंट डेस्क',
+    outbreakSentinelTab: 'प्रकोप निगरानी (Sentinel)',
     newPatient: 'नया मरीज',
     editClinic: 'क्लिनिक विवरण',
     switchPortal: 'पोर्टल बदलें',
@@ -496,6 +499,7 @@ export const CLINICAL_TRANSLATIONS: Record<LanguageCode, TranslationDictionary> 
     emrRecordsTab: 'Digital EMR Records',
     doctorStationTab: 'Doctor Consultation & Rx',
     appointmentsTab: 'Appointments Desk',
+    outbreakSentinelTab: 'Outbreak Sentinel',
     newPatient: 'New Patient',
     editClinic: 'Edit Clinic',
     switchPortal: 'Switch Portal',

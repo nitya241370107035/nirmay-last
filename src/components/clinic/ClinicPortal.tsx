@@ -27,7 +27,8 @@ import {
   Edit3,
   Calendar,
   Zap,
-  FileText
+  FileText,
+  Radio
 } from 'lucide-react';
 import { LanguageCode } from '../../types';
 import { getTranslations, getChiefComplaintCategories, getChiefComplaintLabel, getRiskDetails } from '../../utils/translations';
@@ -35,6 +36,7 @@ import { ClinicLogin, ClinicProfile } from './ClinicLogin';
 import { DoctorStation } from './DoctorStation';
 import { EMRRecordsStation } from './EMRRecordsStation';
 import { ClinicAppointmentsDesk } from './ClinicAppointmentsDesk';
+import { OutbreakContributionStation } from './OutbreakContributionStation';
 import { saveClinicRecord, seedEnrolledClinicsIfEmpty } from '../../db/db';
 
 interface PatientInfo {
@@ -126,7 +128,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
     return null;
   });
 
-  const [activeTab, setActiveTab] = useState<'triage' | 'emr_records' | 'doctor_station' | 'appointments'>('triage');
+  const [activeTab, setActiveTab] = useState<'triage' | 'emr_records' | 'doctor_station' | 'appointments' | 'outbreak_surveillance'>('triage');
 
   // Wizard Stepper: 1: Vitals & Info, 2: Chief Complaint, 3: Dynamic Inquiry, 4: Triage Result
   const [step, setStep] = useState<1 | 2 | 3 | 4>(1);
@@ -514,7 +516,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
         </div>
 
         {/* Top Primary Clinic Module Tabs */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-6 pt-5 border-t border-white/15 font-sans">
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 mt-6 pt-5 border-t border-white/15 font-sans">
           <button
             onClick={() => setActiveTab('triage')}
             className={`py-2.5 px-3 rounded-2xl text-xs sm:text-sm font-black transition flex items-center justify-center gap-2 cursor-pointer ${
@@ -562,6 +564,18 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
             <Calendar className="w-4 h-4 text-amber-400" />
             <span>{t.appointmentsTab}</span>
           </button>
+
+          <button
+            onClick={() => setActiveTab('outbreak_surveillance')}
+            className={`py-2.5 px-3 rounded-2xl text-xs sm:text-sm font-black transition flex items-center justify-center gap-2 cursor-pointer ${
+              activeTab === 'outbreak_surveillance'
+                ? 'bg-white text-[#0C3833] shadow-md'
+                : 'bg-red-500/20 text-red-200 hover:bg-red-500/30 border border-red-400/30'
+            }`}
+          >
+            <Radio className="w-4 h-4 text-red-400 animate-pulse" />
+            <span>{t.outbreakSentinelTab}</span>
+          </button>
         </div>
       </div>
 
@@ -606,7 +620,14 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
         />
       )}
 
-      {/* RENDER VIEW 4: ML TRIAGE WIZARD */}
+      {/* RENDER VIEW 4: EPIDEMIOLOGICAL SURVEILLANCE & OUTBREAK SENTINEL */}
+      {activeTab === 'outbreak_surveillance' && (
+        <OutbreakContributionStation
+          clinicProfile={clinicProfile}
+        />
+      )}
+
+      {/* RENDER VIEW 5: ML TRIAGE WIZARD */}
       {activeTab === 'triage' && (
         <div className="space-y-6">
           {/* Stepper Navigation */}
