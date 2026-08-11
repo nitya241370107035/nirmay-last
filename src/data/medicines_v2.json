@@ -1289,5 +1289,79 @@
         "isOTC": true
       }
     ]
+  },
+  "angina": {
+    "allopathy": [
+      {
+        "id": "sorbitrate_angina_5mg",
+        "name": { "en": "Sorbitrate / GTN 5mg Tablet (Under Tongue)", "hi": "सोरबिट्रेट / GTN 5mg (जीभ के नीचे)", "gu": "સોર્બિટ્રેટ / GTN 5mg (જીભ નીચે)" },
+        "system": "allopathy",
+        "benefit": { "en": "EMERGENCY! Dilates coronary arteries immediately to relieve ischemic chest pain and pressure within 2-5 minutes.", "hi": "हृदय की धमनियों में रक्त प्रवाह बढ़ाकर सीने के दर्द में 2-5 मिनट में राहत।", "gu": "હૃદયની ધમનીઓ ખૂલી જાય છે અને 2-5 મિનિટમાં છાતીના ઇસ્કેમિક દુખાવામાં રાહત." },
+        "sideEffects": { "en": "Sudden throbbing headache, flushing, or brief dizziness — normal effects.", "hi": "सिरदर्द या चक्कर — सामान्य है।", "gu": "માથાનો ઝણઝણ દુખાવો અથવા ચક્કર — સામાન્ય છે." },
+        "howToTake": { "en": "Place 1 tablet under tongue and sit/lie down. Repeat after 5 min if pain persists. Call 108 ambulance.", "hi": "1 गोली जीभ के नीचे। दर्द बना रहे तो 5 मिनट बाद दोबारा। अभी 108 बुलाएं।", "gu": "1 ગોળી જીભ નીચે. 5 મિનિટ પછી દુખાવો રહે તો ફરી. 108 ઇમર્જન્સી બોલાવો." },
+        "contraindications": { "en": "BP < 90 systolic, recent Sildenafil/Viagra use, or severe hypotension.", "hi": "BP 90 से नीचे या वियाग्रा लेने वालों को न दें।", "gu": "BP 90 થી ઓછો હોય અથવા વાઇગ્રા લીધો હોય ત્યારે ન આપવી." },
+        "ageRestriction": "adult",
+        "pregnancySafe": false,
+        "lactationSafe": false,
+        "isOTC": true
+      },
+      {
+        "id": "aspirin_angina_300mg",
+        "name": { "en": "Dispersible Aspirin 300mg (Chew Immediately)", "hi": "एस्पिरिन 300mg — तुरंत चबाएं", "gu": "એસ્પિરિન 300mg — તુરંત ચાવીને ગળો" },
+        "system": "allopathy",
+        "benefit": { "en": "Antiplatelet action prevents the arterial clot from worsening during cardiac ischemia — potentially lifesaving.", "hi": "रक्त का थक्का बढ़ने से रोकता है — हार्ट अटैक की संभावना घटाता है।", "gu": "ધમનીની ગઠ્ઠી (ક્લૉટ) મોટી થતી અટકાવે છે — હૃદયની ઈજા ઘટાડે છે." },
+        "sideEffects": { "en": "Mild gastric irritation; avoid on empty stomach.", "hi": "पेट में जलन हो सकती है।", "gu": "પેટમાં બળતરા થઈ શકે." },
+        "howToTake": { "en": "Chew 1 tablet immediately while calling 108 ambulance. Do not swallow whole.", "hi": "108 बुलाते हुए 1 गोली तुरंत चबाकर लें।", "gu": "108 ઇમર્જન્સી બોલાવતી વખતે 1 ગોળી ચાવીને ગળો." },
+        "contraindications": { "en": "Active peptic ulcer or known aspirin allergy.", "hi": "पेट के छाले या एस्पिरिन एलर्जी में न दें।", "gu": "પેટના ઘા (અલ્સર) અથવા એસ્પિરિન એલર્જી હોય ત્યારે ન આપવી." },
+        "ageRestriction": "adult",
+        "pregnancySafe": false,
+        "lactationSafe": false,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "arjuna_angina_tonic",
+        "name": { "en": "Arjunarishta + Arjuna Bark Decoction (Cardiac Tonic)", "hi": "अर्जुनारिष्ट + अर्जुन छाल काढ़ा", "gu": "અર્જુનારિષ્ટ + અર્જુન છાલ ક્વાથ" },
+        "system": "ayurveda",
+        "benefit": { "en": "Strengthens cardiac muscle tone, reduces arterial inflammation, and improves coronary circulation.", "hi": "हृदय की मांसपेशियों को मजबूत बनाता है और धमनियों की सूजन कम करता है।", "gu": "હૃદયના સ્નાયુ ટોન વધારે છે, ધમનીની સોજ ઘટાડે છે." },
+        "sideEffects": { "en": "None at therapeutic doses.", "hi": "उचित मात्रा में कोई दुष्प्रभाव नहीं।", "gu": "સામાન્ય ડોઝ પર કોઈ આડઅસર નથી." },
+        "howToTake": { "en": "15-20ml Arjunarishta twice daily with equal water after meals — always AFTER emergency hospital care.", "hi": "15-20ml दिन में दो बार, भोजन के बाद — अस्पताल उपचार के बाद।", "gu": "15-20ml દિવસમાં બે વાર, ભોજન પછી — ઇમર્જન્સી સારવાર બાદ." },
+        "contraindications": { "en": "ALWAYS seek emergency hospital care FIRST before any herbal remedy.", "hi": "पहले अस्पताल जाएं।", "gu": "પ્રથમ ઇમર્જન્સી હોસ્પિટલ સારવાર લો." },
+        "ageRestriction": "adult",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "cactus_grandiflorus_angina",
+        "name": { "en": "Cactus Grandiflorus 30C + Digitalis 30C", "hi": "कैक्टस ग्रैंडिफ्लोरस 30C + डिजिटेलिस 30C", "gu": "કૅક્ટસ ગ્રૅન્ડિફ્લૉરસ 30C + ડિજિટૅલિસ 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Classical cardiac homeopathy for severe constricting chest pain (iron band sensation), weak irregular pulse and breathlessness.", "hi": "सीने में लोहे की बेल्ट जैसी जकड़न, कमजोर धड़कन और सांस फूलने में सर्वश्रेष्ठ।", "gu": "છાતીમાં ઉઈ (iron band) ની જકડ, અનિયમિત ધડકારા, અને શ્વાસ ચડવામાં ઉત્કૃષ્ટ." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills under tongue every 15-30 minutes during acute anginal attack. Call 108.", "hi": "4 गोलियां जीभ के नीचे, हर 15-30 मिनट में दर्द में।", "gu": "4 ગોળી જીભ નીચે, દર 15-30 મિનિટે. 108 બોલાવો." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      },
+      {
+        "id": "crataegus_q_cardiac_angina",
+        "name": { "en": "Crataegus Oxyacantha Q (Heart Tonic)", "hi": "क्रैटेगस Q (हार्ट टॉनिक)", "gu": "ક્રેટિગસ Q (હૃદય ટોનિક)" },
+        "system": "homeopathy",
+        "benefit": { "en": "Strengthens myocardial contractility, improves coronary arterial supply and reduces anginal frequency.", "hi": "हृदय की शक्ति बढ़ाता है और एंजाइना के दौरों की संख्या कम करता है।", "gu": "હૃદયના સ્નાયુ-સંकोचन વધારે છે, ધમનીઓ ખૂલે છે, ઍન્જાઇના ઓછો થાય." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "10 drops in half cup water 3 times daily as a long-term tonic.", "hi": "10 बूंदें आधे कप पानी में दिन में 3 बार।", "gu": "10 ટીંપા અડધા કપ પાણીમાં દિવસમાં 3 વાર." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": "adult",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
   }
 }
+

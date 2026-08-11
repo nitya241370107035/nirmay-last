@@ -196,9 +196,20 @@ export function evaluateCase(caseData: CaseData, currentLang: LanguageCode = 'en
       }));
   }
 
+  const primaryDiseaseId = mlDiseasePrediction?.diseaseId || 
+    (mlDiseasePrediction?.primaryDisease ? mlDiseasePrediction.primaryDisease.toLowerCase().trim() : topMatch.disease.id);
+
   const diagnosis: DiagnosisResult = {
-    primaryDiseaseId: topMatch.disease.id,
-    primaryDisease: topMatch.disease,
+    primaryDiseaseId,
+    primaryDisease: {
+      ...topMatch.disease,
+      id: primaryDiseaseId,
+      name: {
+        en: primaryName,
+        hi: primaryName,
+        gu: primaryName
+      }
+    } as any,
     primaryName,
     score: topMatch.score,
     confidence,
