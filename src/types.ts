@@ -405,6 +405,117 @@ export interface ChronicLog {
   loggedAt?: string;
 }
 
+// -------------------------------------------------------------
+// Digital Clinical EMR, Doctor Consultation & Appointment Types
+// -------------------------------------------------------------
 
+export interface DoctorPrescription {
+  id?: string;
+  medicineName: string;
+  genericName?: string;
+  dosage: string; // e.g. "500 mg", "1 tablet"
+  timing: '1-0-0' | '0-1-0' | '0-0-1' | '1-0-1' | '1-1-1' | 'SOS' | 'Once Daily';
+  durationDays: number;
+  foodInstruction: 'Before Food' | 'After Food' | 'With Food' | 'Empty Stomach';
+  specialNotes?: string;
+}
 
+export interface ClinicRecordVitals {
+  heartRate: number;
+  respiratoryRate: number;
+  bodyTemperature: number;
+  oxygenSaturation: number;
+  systolicBp: number;
+  diastolicBp: number;
+  heightCm?: number;
+  weightKg?: number;
+  derivedBmi: number;
+}
 
+export interface ClinicRecord {
+  id?: number;
+  uhid: string;
+  patientName: string;
+  age: number;
+  gender: 'Male' | 'Female';
+  phone?: string;
+  villageCity?: string;
+  clinicFacilityCode: string;
+  clinicName: string;
+  department: string;
+  encounterDate: string; // ISO date string
+  entrySource: 'triage_ml' | 'manual_entry' | 'appointment';
+  chiefComplaint: string;
+  symptomsSummary: string[];
+  vitals: ClinicRecordVitals;
+  triageResult?: {
+    riskCategory: 'Low' | 'Medium' | 'High';
+    confidence: number;
+    probabilities?: {
+      Low: number;
+      Medium: number;
+      High: number;
+    };
+    clinicalFlags?: Array<{ level: 'CRITICAL' | 'WARNING'; message: string }>;
+    disposition?: {
+      urgency: string;
+      action: string;
+      color: string;
+      timeframe: string;
+    };
+  };
+  clinicalImpression?: string;
+  provisionalDiagnosis?: string;
+  finalDiagnosis?: string;
+  doctorNotes?: string;
+  prescriptions: DoctorPrescription[];
+  labInvestigations?: string[];
+  status: 'Triage Completed' | 'Waiting Doctor' | 'In Consultation' | 'Completed' | 'Referred';
+  attendingDoctor: string;
+  doctorDegree?: string;
+  referralFacility?: string;
+  referralReason?: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface ClinicAppointment {
+  id?: number;
+  appointmentId: string; // e.g. "APT-78219"
+  citizenId?: number; // Patient ID if linked
+  familyId?: number;
+  patientName: string;
+  age: number;
+  gender: 'Male' | 'Female';
+  phone: string;
+  clinicFacilityCode: string;
+  clinicName: string;
+  department: string;
+  preferredDate: string; // YYYY-MM-DD
+  assignedSlot?: string; // e.g. "10:30 AM"
+  assignedDoctor?: string;
+  reasonForVisit: string;
+  status: 'Pending' | 'Confirmed' | 'Completed' | 'Cancelled';
+  notes?: string;
+  requestedAt: string;
+  updatedAt: string;
+}
+
+export interface EnrolledClinic {
+  id?: number;
+  facilityCode: string; // Unique, e.g. "GJ-PHC-388001"
+  name: string;
+  type: 'PHC' | 'CHC' | 'Civil Hospital' | 'Urban Clinic' | 'Community Health Center';
+  address: string;
+  cityDistrict: string;
+  state: string;
+  pincode: string;
+  phone: string;
+  email?: string;
+  doctorInCharge: string;
+  doctorDegree: string;
+  departments: string[];
+  availableDays: string[];
+  timings: string;
+  isOpen: boolean;
+}
