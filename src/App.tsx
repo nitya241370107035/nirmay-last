@@ -59,8 +59,10 @@ const ClinicPortal = lazy(() =>
 );
 
 import { PortalSelectionScreen } from './components/PortalSelectionScreen';
+import { BookAppointmentModal } from './components/family/BookAppointmentModal';
+import { MyAppointmentsTracker } from './components/family/MyAppointmentsTracker';
 
-type ViewState = 'welcome' | 'selectFamily' | 'selectMember' | 'caseTaking' | 'evaluating' | 'result' | 'nearby' | 'roster' | 'followups' | 'mch' | 'outbreak' | 'schemes' | 'stories' | 'articles' | 'adherence_tracker' | 'chronic_care' | 'garden_advisor';
+type ViewState = 'welcome' | 'selectFamily' | 'selectMember' | 'caseTaking' | 'evaluating' | 'result' | 'nearby' | 'roster' | 'followups' | 'mch' | 'outbreak' | 'schemes' | 'stories' | 'articles' | 'adherence_tracker' | 'chronic_care' | 'garden_advisor' | 'appointments';
 
 function MainApp() {
   const { i18n: i18nInst } = useTranslation();
@@ -83,6 +85,7 @@ function MainApp() {
   const [schemeDiseaseId, setSchemeDiseaseId] = useState<string | null>(null);
   const [nearbySchemeFilter, setNearbySchemeFilter] = useState<string>('all');
   const [showNutritionModal, setShowNutritionModal] = useState<boolean>(false);
+  const [isBookAppointmentModalOpen, setIsBookAppointmentModalOpen] = useState<boolean>(false);
 
   useEffect(() => {
     const initSession = async () => {
@@ -300,6 +303,7 @@ function MainApp() {
         onAdherenceTrackerClick={() => setView('adherence_tracker')}
         onChronicCareClick={() => setView('chronic_care')}
         onGardenClick={() => setView('garden_advisor')}
+        onAppointmentsClick={() => setView('appointments')}
         onSwitchPortal={() => {
           localStorage.removeItem('niramay_active_portal');
           setActivePortal(null);
@@ -320,6 +324,7 @@ function MainApp() {
                 setView('selectFamily');
               }
             }}
+            onOpenAppointments={() => setIsBookAppointmentModalOpen(true)}
             onOpenRoster={handleRosterClick}
             onOpenFollowUps={handleFollowUpsClick}
             onOpenMch={handleMchClick}
@@ -558,6 +563,15 @@ function MainApp() {
         )}
 
 
+        {view === 'appointments' && (
+          <div className="max-w-4xl mx-auto px-4 py-6">
+            <MyAppointmentsTracker
+              familyId={selectedFamily?.id}
+              onOpenBookModal={() => setIsBookAppointmentModalOpen(true)}
+            />
+          </div>
+        )}
+
         {view === 'nearby' && (
           <Suspense
             fallback={
@@ -578,6 +592,16 @@ function MainApp() {
           </Suspense>
         )}
       </main>
+
+      <BookAppointmentModal
+        isOpen={isBookAppointmentModalOpen}
+        onClose={() => setIsBookAppointmentModalOpen(false)}
+        patients={familyMembers.length > 0 ? familyMembers : (activePatient ? [activePatient] : [{ id: 1, name: 'Family Patient', age: 35, gender: 'Male', createdAt: new Date().toISOString() }])}
+        familyId={selectedFamily?.id}
+        onAppointmentBooked={() => {
+          setView('appointments');
+        }}
+      />
 
       <NutritionScreeningModal
         isOpen={showNutritionModal}

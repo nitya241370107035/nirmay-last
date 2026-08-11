@@ -12,10 +12,7 @@ import {
   Building2, 
   Baby, 
   Sprout, 
-  Pill,
-  Sparkles,
-  Zap,
-  Hospital
+  Calendar
 } from 'lucide-react';
 import { Patient, Family, LanguageCode } from '../types';
 import { PulseLine } from './PulseLine';
@@ -25,6 +22,7 @@ import { InAppReminderBanner } from './adherence/InAppReminderBanner';
 interface WelcomeScreenProps {
   onStartCaseTaking: () => void;
   onOpenClinicPortal?: () => void;
+  onOpenAppointments?: () => void;
   onOpenRoster?: () => void;
   onOpenFollowUps?: () => void;
   onOpenMch?: () => void;
@@ -44,6 +42,7 @@ interface WelcomeScreenProps {
 export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
   onStartCaseTaking,
   onOpenClinicPortal,
+  onOpenAppointments,
   onOpenRoster,
   onOpenFollowUps,
   onOpenMch,
@@ -239,8 +238,33 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
               <ArrowRight className="w-5 h-5 text-emerald-200 group-hover:translate-x-1.5 transition-transform" />
             </button>
 
+            {/* Quick Online Clinic Appointment Booking Banner */}
+            {onOpenAppointments && (
+              <button
+                onClick={onOpenAppointments}
+                className="w-full p-3.5 bg-gradient-to-r from-teal-900 via-teal-800 to-cyan-900 hover:opacity-95 text-white font-bold rounded-2xl border border-teal-500/40 shadow-sm transition flex items-center justify-between gap-3 cursor-pointer group"
+              >
+                <div className="flex items-center gap-3 text-left">
+                  <div className="w-9 h-9 rounded-xl bg-white/15 flex items-center justify-center shrink-0 border border-white/20">
+                    <Calendar className="w-5 h-5 text-teal-200" />
+                  </div>
+                  <div>
+                    <span className="block font-black text-sm text-white tracking-tight">
+                      📅 Book Clinic Appointment & OPD
+                    </span>
+                    <span className="block text-[11px] text-teal-100/90 font-normal">
+                      Reserve consultation slots at Anand PHC, Civil Hospital & CHCs
+                    </span>
+                  </div>
+                </div>
+                <div className="p-1.5 rounded-lg bg-white/10 group-hover:bg-white/20 transition shrink-0">
+                  <ArrowRight className="w-4 h-4 text-teal-200 group-hover:translate-x-0.5 transition-transform" />
+                </div>
+              </button>
+            )}
+
             {/* Core Medical & Community Feature Cards Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-left">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1 text-left">
               {onOpenAdherenceTracker && (
                 <button
                   onClick={onOpenAdherenceTracker}

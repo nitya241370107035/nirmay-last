@@ -23,7 +23,8 @@ import {
   FileText,
   Activity,
   Hospital,
-  Building2
+  Building2,
+  Calendar
 } from 'lucide-react';
 
 const LANGUAGES: { code: LanguageCode; label: string; script: string }[] = [
@@ -45,6 +46,7 @@ interface HeaderProps {
   onAdherenceTrackerClick?: () => void;
   onChronicCareClick?: () => void;
   onGardenClick?: () => void;
+  onAppointmentsClick?: () => void;
   onSwitchPortal?: () => void;
   currentView?: string;
   activeFamily?: Family | null;
@@ -65,6 +67,7 @@ export const Header: React.FC<HeaderProps> = ({
   onAdherenceTrackerClick,
   onChronicCareClick,
   onGardenClick,
+  onAppointmentsClick,
   onSwitchPortal,
   currentView = 'welcome',
   activeFamily,
@@ -297,6 +300,16 @@ export const Header: React.FC<HeaderProps> = ({
 
             {showMoreMenu && (
               <div className="absolute right-0 mt-2 w-56 bg-[#0F3835] border border-[#1E6B63] rounded-2xl shadow-2xl p-1.5 z-50 space-y-1 animate-in fade-in zoom-in-95 duration-150">
+                <button
+                  onClick={() => { onAppointmentsClick?.(); setShowMoreMenu(false); }}
+                  className={`w-full text-left px-3 py-2 rounded-xl text-xs flex items-center gap-2.5 transition-all cursor-pointer ${
+                    currentView === 'appointments' ? 'bg-[#1E6B63] text-white font-bold' : 'text-[#B2DFD8] hover:bg-[#1E6B63]/40 hover:text-white'
+                  }`}
+                >
+                  <Calendar className="w-4 h-4 text-teal-300" />
+                  <span>📅 OPD Appointments</span>
+                </button>
+
                 <button
                   onClick={() => { onChronicCareClick?.(); setShowMoreMenu(false); }}
                   className={`w-full text-left px-3 py-2 rounded-xl text-xs flex items-center gap-2.5 transition-all cursor-pointer ${

@@ -21,14 +21,18 @@ import {
   User,
   Wind,
   XCircle,
-  Zap,
   Building2,
   LogOut,
   MapPin,
-  Edit3
+  Edit3,
+  Calendar,
+  Zap
 } from 'lucide-react';
 import { LanguageCode } from '../../types';
 import { ClinicLogin, ClinicProfile } from './ClinicLogin';
+import { DoctorStation } from './DoctorStation';
+import { ClinicAppointmentsDesk } from './ClinicAppointmentsDesk';
+import { saveClinicRecord, seedEnrolledClinicsIfEmpty } from '../../db/db';
 
 interface PatientInfo {
   name: string;
@@ -118,8 +122,14 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
     return null;
   });
 
+  const [activeTab, setActiveTab] = useState<'triage' | 'doctor_station' | 'appointments'>('triage');
+
   // Wizard Stepper: 1: Vitals & Info, 2: Chief Complaint, 3: Dynamic Inquiry, 4: Triage Result
   const [step, setStep] = useState<1 | 2 | 3 | 4>(1);
+
+  useEffect(() => {
+    seedEnrolledClinicsIfEmpty();
+  }, []);
 
   // Form State: Patient Info
   const [patientInfo, setPatientInfo] = useState<PatientInfo>({
@@ -309,6 +319,58 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
       if (data.success) {
         setPredictionResult(data);
         setStep(4);
+
+        // Auto-save to Paperless Digital Clinical EMR
+        if (clinicProfile) {
+          try {
+            await saveClinicRecord({
+              uhid: patientInfo.uhid || `CLN-${Math.floor(100000 + Math.random() * 900000)}`,
+              patientName: patientInfo.name || 'Anonymous Patient',
+              age: patientInfo.age,
+              gender: patientInfo.gender,
+              phone: patientInfo.phone || '',
+              villageCity: clinicProfile.cityDistrict || 'Local',
+              clinicFacilityCode: clinicProfile.facilityCode,
+              clinicName: clinicProfile.clinicName,
+              department: clinicProfile.department,
+              encounterDate: new Date().toISOString(),
+              entrySource: 'triage_ml',
+              chiefComplaint: chiefComplaint.replace('cc_', '').toUpperCase(),
+              symptomsSummary: (data.activeSymptoms || []).map((s: any) => s.name),
+              vitals: {
+                heartRate: vitals.heartRate,
+                respiratoryRate: vitals.respiratoryRate,
+                bodyTemperature: vitals.bodyTemperature,
+                oxygenSaturation: vitals.oxygenSaturation,
+                systolicBp: vitals.systolicBp,
+                diastolicBp: vitals.diastolicBp,
+                heightCm: vitals.heightCm,
+                weightKg: vitals.weightKg,
+                derivedBmi: vitals.derivedBmi
+              },
+              triageResult: {
+                riskCategory: data.riskCategory,
+                confidence: data.confidence,
+                probabilities: data.probabilities,
+                clinicalFlags: data.clinicalFlags,
+                disposition: data.disposition
+              },
+              clinicalImpression: '',
+              provisionalDiagnosis: '',
+              finalDiagnosis: '',
+              doctorNotes: '',
+              prescriptions: [],
+              labInvestigations: [],
+              status: 'Waiting Doctor',
+              attendingDoctor: clinicProfile.doctorInCharge,
+              doctorDegree: clinicProfile.doctorDegree,
+              createdAt: new Date().toISOString(),
+              updatedAt: new Date().toISOString()
+            });
+          } catch (dbErr) {
+            console.error('Error auto-saving encounter to EMR:', dbErr);
+          }
+        }
       }
     } catch (err) {
       console.error('Error running triage prediction:', err);
@@ -476,59 +538,132 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
           </div>
         </div>
 
-        {/* Stepper Navigation */}
-        <div className="grid grid-cols-4 gap-2 mt-6 pt-5 border-t border-white/15">
+        {/* Top Primary Clinic Module Tabs */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-6 pt-5 border-t border-white/15 font-sans">
           <button
-            onClick={() => setStep(1)}
-            className={`flex items-center gap-2 px-3 py-2 rounded-xl text-left transition ${
-              step === 1 ? 'bg-white text-teal-900 font-bold shadow-md' : 'bg-white/10 text-teal-100 hover:bg-white/15'
+            onClick={() => setActiveTab('triage')}
+            className={`py-2.5 px-3 rounded-2xl text-xs sm:text-sm font-black transition flex items-center justify-center gap-2 cursor-pointer ${
+              activeTab === 'triage'
+                ? 'bg-white text-[#0C3833] shadow-md'
+                : 'bg-white/10 text-teal-100 hover:bg-white/20'
             }`}
           >
-            <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${step === 1 ? 'bg-teal-700 text-white' : 'bg-white/20 text-white'}`}>
-              1
-            </span>
-            <span className="text-xs sm:text-sm truncate">Vitals & Demographics</span>
+            <Activity className="w-4 h-4 text-emerald-600" />
+            <span>🏥 Triage Station (ML Intake)</span>
           </button>
 
           <button
-            onClick={() => setStep(2)}
-            className={`flex items-center gap-2 px-3 py-2 rounded-xl text-left transition ${
-              step === 2 ? 'bg-white text-teal-900 font-bold shadow-md' : 'bg-white/10 text-teal-100 hover:bg-white/15'
+            onClick={() => setActiveTab('doctor_station')}
+            className={`py-2.5 px-3 rounded-2xl text-xs sm:text-sm font-black transition flex items-center justify-center gap-2 cursor-pointer ${
+              activeTab === 'doctor_station'
+                ? 'bg-white text-[#0C3833] shadow-md'
+                : 'bg-white/10 text-teal-100 hover:bg-white/20'
             }`}
           >
-            <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${step === 2 ? 'bg-teal-700 text-white' : 'bg-white/20 text-white'}`}>
-              2
-            </span>
-            <span className="text-xs sm:text-sm truncate">Chief Complaint</span>
+            <Stethoscope className="w-4 h-4 text-teal-600" />
+            <span>🩺 Doctor Station & EMR</span>
           </button>
 
           <button
-            onClick={() => sessionId && setStep(3)}
-            disabled={!sessionId}
-            className={`flex items-center gap-2 px-3 py-2 rounded-xl text-left transition ${
-              step === 3 ? 'bg-white text-teal-900 font-bold shadow-md' : !sessionId ? 'opacity-50 cursor-not-allowed bg-white/5 text-teal-200' : 'bg-white/10 text-teal-100 hover:bg-white/15'
+            onClick={() => setActiveTab('appointments')}
+            className={`py-2.5 px-3 rounded-2xl text-xs sm:text-sm font-black transition flex items-center justify-center gap-2 cursor-pointer ${
+              activeTab === 'appointments'
+                ? 'bg-white text-[#0C3833] shadow-md'
+                : 'bg-white/10 text-teal-100 hover:bg-white/20'
             }`}
           >
-            <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${step === 3 ? 'bg-teal-700 text-white' : 'bg-white/20 text-white'}`}>
-              3
-            </span>
-            <span className="text-xs sm:text-sm truncate">Dynamic Inquiry</span>
-          </button>
-
-          <button
-            onClick={() => predictionResult && setStep(4)}
-            disabled={!predictionResult}
-            className={`flex items-center gap-2 px-3 py-2 rounded-xl text-left transition ${
-              step === 4 ? 'bg-white text-teal-900 font-bold shadow-md' : !predictionResult ? 'opacity-50 cursor-not-allowed bg-white/5 text-teal-200' : 'bg-white/10 text-teal-100 hover:bg-white/15'
-            }`}
-          >
-            <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${step === 4 ? 'bg-teal-700 text-white' : 'bg-white/20 text-white'}`}>
-              4
-            </span>
-            <span className="text-xs sm:text-sm truncate">Triage Decision</span>
+            <Calendar className="w-4 h-4 text-amber-400" />
+            <span>📅 Appointments Desk</span>
           </button>
         </div>
       </div>
+
+      {/* RENDER VIEW 1: DOCTOR STATION & EMR */}
+      {activeTab === 'doctor_station' && (
+        <DoctorStation
+          clinicProfile={clinicProfile}
+          onOpenTriageForPatient={(name, uhid, complaint) => {
+            setPatientInfo({ ...patientInfo, name, uhid });
+            setActiveTab('triage');
+            setStep(1);
+          }}
+        />
+      )}
+
+      {/* RENDER VIEW 2: CLINIC APPOINTMENTS DESK */}
+      {activeTab === 'appointments' && (
+        <ClinicAppointmentsDesk
+          clinicProfile={clinicProfile}
+          onIntakePatientForTriage={(name, age, gender, phone, complaint) => {
+            setPatientInfo({
+              ...patientInfo,
+              name,
+              age,
+              gender,
+              phone,
+              uhid: `CLN-${Math.floor(100000 + Math.random() * 900000)}`
+            });
+            setActiveTab('triage');
+            setStep(1);
+          }}
+        />
+      )}
+
+      {/* RENDER VIEW 3: ML TRIAGE WIZARD */}
+      {activeTab === 'triage' && (
+        <div className="space-y-6">
+          {/* Stepper Navigation */}
+          <div className="bg-gradient-to-r from-[#0C3833] to-[#124B45] text-white p-3 rounded-2xl shadow-sm grid grid-cols-4 gap-2">
+            <button
+              onClick={() => setStep(1)}
+              className={`flex items-center gap-2 px-3 py-2 rounded-xl text-left transition ${
+                step === 1 ? 'bg-white text-teal-900 font-bold shadow-md' : 'bg-white/10 text-teal-100 hover:bg-white/15'
+              }`}
+            >
+              <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${step === 1 ? 'bg-teal-700 text-white' : 'bg-white/20 text-white'}`}>
+                1
+              </span>
+              <span className="text-xs sm:text-sm truncate">Vitals & Demographics</span>
+            </button>
+
+            <button
+              onClick={() => setStep(2)}
+              className={`flex items-center gap-2 px-3 py-2 rounded-xl text-left transition ${
+                step === 2 ? 'bg-white text-teal-900 font-bold shadow-md' : 'bg-white/10 text-teal-100 hover:bg-white/15'
+              }`}
+            >
+              <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${step === 2 ? 'bg-teal-700 text-white' : 'bg-white/20 text-white'}`}>
+                2
+              </span>
+              <span className="text-xs sm:text-sm truncate">Chief Complaint</span>
+            </button>
+
+            <button
+              onClick={() => sessionId && setStep(3)}
+              disabled={!sessionId}
+              className={`flex items-center gap-2 px-3 py-2 rounded-xl text-left transition ${
+                step === 3 ? 'bg-white text-teal-900 font-bold shadow-md' : !sessionId ? 'opacity-50 cursor-not-allowed bg-white/5 text-teal-200' : 'bg-white/10 text-teal-100 hover:bg-white/15'
+              }`}
+            >
+              <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${step === 3 ? 'bg-teal-700 text-white' : 'bg-white/20 text-white'}`}>
+                3
+              </span>
+              <span className="text-xs sm:text-sm truncate">Dynamic Inquiry</span>
+            </button>
+
+            <button
+              onClick={() => predictionResult && setStep(4)}
+              disabled={!predictionResult}
+              className={`flex items-center gap-2 px-3 py-2 rounded-xl text-left transition ${
+                step === 4 ? 'bg-white text-teal-900 font-bold shadow-md' : !predictionResult ? 'opacity-50 cursor-not-allowed bg-white/5 text-teal-200' : 'bg-white/10 text-teal-100 hover:bg-white/15'
+              }`}
+            >
+              <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${step === 4 ? 'bg-teal-700 text-white' : 'bg-white/20 text-white'}`}>
+                4
+              </span>
+              <span className="text-xs sm:text-sm truncate">Triage Decision</span>
+            </button>
+          </div>
 
       {/* ================= STEP 1: PATIENT REGISTRATION & MANDATORY VITALS ================= */}
       {step === 1 && (
@@ -1332,14 +1467,24 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
               </button>
 
               <button
+                onClick={() => setActiveTab('doctor_station')}
+                className="w-full py-3 bg-gradient-to-r from-teal-800 to-teal-900 hover:from-teal-700 hover:to-teal-800 text-white font-bold rounded-xl text-xs flex items-center justify-center gap-2 shadow-md transition cursor-pointer"
+              >
+                <Stethoscope className="w-4 h-4 text-teal-300" />
+                Open in Doctor Station (EMR & Prescriptions) →
+              </button>
+
+              <button
                 onClick={handleReset}
-                className="w-full py-3 bg-teal-50 hover:bg-teal-100 text-teal-800 border border-teal-200 font-bold rounded-xl text-xs flex items-center justify-center gap-2 transition"
+                className="w-full py-3 bg-teal-50 hover:bg-teal-100 text-teal-800 border border-teal-200 font-bold rounded-xl text-xs flex items-center justify-center gap-2 transition cursor-pointer"
               >
                 <PlusCircle className="w-4 h-4" />
                 Intake Next Patient
               </button>
             </div>
           </div>
+        </div>
+      )}
         </div>
       )}
     </div>
