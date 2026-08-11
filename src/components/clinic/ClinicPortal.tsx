@@ -30,7 +30,7 @@ import {
   FileText
 } from 'lucide-react';
 import { LanguageCode } from '../../types';
-import { getTranslations } from '../../utils/translations';
+import { getTranslations, getChiefComplaintCategories, getChiefComplaintLabel } from '../../utils/translations';
 import { ClinicLogin, ClinicProfile } from './ClinicLogin';
 import { DoctorStation } from './DoctorStation';
 import { EMRRecordsStation } from './EMRRecordsStation';
@@ -399,69 +399,19 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
     });
   };
 
-  // Categorized Chief Complaints for Quick Select
-  const chiefComplaintCategories = [
-    {
-      title: 'Infectious & Respiratory',
-      icon: <Wind className="w-5 h-5 text-sky-600" />,
-      items: [
-        { id: 'cc_fever', label: 'Fever / High Temperature' },
-        { id: 'cc_cough', label: 'Persistent Cough' },
-        { id: 'cc_coldlikesymptoms', label: 'Common Cold / Runny Nose' },
-        { id: 'cc_sorethroat', label: 'Sore Throat / Pharyngitis' },
-        { id: 'cc_chills', label: 'Chills & Shivering' },
-        { id: 'cc_earpain', label: 'Ear Pain / Fullness' }
-      ]
-    },
-    {
-      title: 'Cardiovascular & Thoracic',
-      icon: <Heart className="w-5 h-5 text-rose-600" />,
-      items: [
-        { id: 'cc_chestpain', label: 'Chest Pain / Angina' },
-        { id: 'cc_shortnessofbreath', label: 'Shortness of Breath (Dyspnea)' },
-        { id: 'cc_chesttightness', label: 'Chest Tightness / Squeezing' },
-        { id: 'cc_palpitations', label: 'Palpitations / Fast Heartbeat' },
-        { id: 'cc_tachycardia', label: 'Racing Pulse (Tachycardia)' },
-        { id: 'cc_edema', label: 'Swollen Feet / Edema' }
-      ]
-    },
-    {
-      title: 'Gastrointestinal & Abdominal',
-      icon: <Activity className="w-5 h-5 text-amber-600" />,
-      items: [
-        { id: 'cc_abdominalpain', label: 'Abdominal Pain / Stomach Cramps' },
-        { id: 'cc_vomiting', label: 'Vomiting / Emesis' },
-        { id: 'cc_nausea', label: 'Nausea' },
-        { id: 'cc_diarrhea', label: 'Diarrhea / Loose Stools' },
-        { id: 'cc_gibleeding', label: 'GI Bleeding / Dark Stools' },
-        { id: 'cc_dehydration', label: 'Dehydration / Dry Mouth' }
-      ]
-    },
-    {
-      title: 'Neurological & Systemic',
-      icon: <Zap className="w-5 h-5 text-purple-600" />,
-      items: [
-        { id: 'cc_headache', label: 'Severe Headache' },
-        { id: 'cc_dizziness', label: 'Dizziness / Vertigo' },
-        { id: 'cc_syncope', label: 'Syncope (Fainting / Blackout)' },
-        { id: 'cc_confusion', label: 'Acute Confusion' },
-        { id: 'cc_alteredmentalstatus', label: 'Altered Mental State' },
-        { id: 'cc_fatigue', label: 'Extreme Weakness / Fatigue' }
-      ]
-    },
-    {
-      title: 'Metabolic, Renal & Trauma',
-      icon: <ShieldAlert className="w-5 h-5 text-emerald-600" />,
-      items: [
-        { id: 'cc_decreasedbloodsugar-symptomatic', label: 'Low Blood Sugar (Hypoglycemia)' },
-        { id: 'cc_elevatedbloodsugar-symptomatic', label: 'High Blood Sugar (Hyperglycemia)' },
-        { id: 'cc_dysuria', label: 'Painful Urination (Dysuria)' },
-        { id: 'cc_flankpain', label: 'Flank / Kidney Pain' },
-        { id: 'cc_laceration', label: 'Open Cut / Wound' },
-        { id: 'cc_skinproblem', label: 'Skin Rash / Lesion' }
-      ]
-    }
+  // Categorized Chief Complaints localized dynamically
+  const categoryIcons = [
+    <Wind className="w-5 h-5 text-sky-600" key="resp" />,
+    <Heart className="w-5 h-5 text-rose-600" key="cardio" />,
+    <Activity className="w-5 h-5 text-amber-600" key="gi" />,
+    <Zap className="w-5 h-5 text-purple-600" key="neuro" />,
+    <ShieldAlert className="w-5 h-5 text-emerald-600" key="meta" />
   ];
+
+  const chiefComplaintCategories = getChiefComplaintCategories(currentLang).map((cat, idx) => ({
+    ...cat,
+    icon: categoryIcons[idx] || <Activity className="w-5 h-5 text-teal-600" />
+  }));
 
   // Authentication Guard: Show Clinic Login if not logged in
   if (!clinicProfile || !clinicProfile.isLoggedIn) {
@@ -1024,16 +974,16 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
         <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-100">
             <div>
-              <h2 className="text-xl font-bold text-slate-900">Select Patient Chief Complaint</h2>
+              <h2 className="text-xl font-bold text-slate-900">{t.chiefComplaintTitle}</h2>
               <p className="text-sm text-slate-500 mt-0.5">
-                The ML engine will automatically tailor follow-up questions to this clinical domain.
+                {t.chiefComplaintDesc}
               </p>
             </div>
             <div className="relative w-full sm:w-72">
               <Search className="w-4 h-4 text-slate-400 absolute left-3 top-3" />
               <input
                 type="text"
-                placeholder="Search symptom (e.g. fever, chest pain)..."
+                placeholder={t.searchComplaints}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full pl-9 pr-3 py-2 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-teal-500 focus:outline-none"
@@ -1048,9 +998,11 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
                 <CheckCircle2 className="w-6 h-6" />
               </div>
               <div>
-                <span className="text-xs font-semibold uppercase tracking-wider text-teal-800">Primary Presenting Complaint</span>
+                <span className="text-xs font-semibold uppercase tracking-wider text-teal-800">
+                  {currentLang === 'gu' ? 'પ્રાથમિક મુખ્ય તકલીફ' : currentLang === 'hi' ? 'प्राथमिक मुख्य समस्या' : 'Primary Presenting Complaint'}
+                </span>
                 <p className="text-lg font-extrabold text-teal-950 capitalize">
-                  {chiefComplaint.replace('cc_', '').replace(/([A-Z])/g, ' $1').replace('/', ' / ')}
+                  {getChiefComplaintLabel(chiefComplaint, currentLang)}
                 </p>
               </div>
             </div>
@@ -1058,10 +1010,10 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
             <button
               onClick={startClinicIntake}
               disabled={isSubmitting}
-              className="w-full sm:w-auto px-6 py-3 bg-teal-700 hover:bg-teal-800 text-white font-bold rounded-xl shadow-md transition flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-6 py-3 bg-teal-700 hover:bg-teal-800 text-white font-bold rounded-xl shadow-md transition flex items-center justify-center gap-2 cursor-pointer"
             >
               {isSubmitting ? <RefreshCw className="w-5 h-5 animate-spin" /> : <Zap className="w-5 h-5 text-amber-300" />}
-              Start Context-Aware Dynamic Inquiry
+              {t.startAdaptiveQuestions}
             </button>
           </div>
 
@@ -1070,6 +1022,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
             {chiefComplaintCategories.map((cat, idx) => {
               const filteredItems = cat.items.filter((item) =>
                 item.label.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                item.enLabel.toLowerCase().includes(searchQuery.toLowerCase()) ||
                 item.id.toLowerCase().includes(searchQuery.toLowerCase())
               );
 
@@ -1090,14 +1043,21 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
                           key={item.id}
                           type="button"
                           onClick={() => setChiefComplaint(item.id)}
-                          className={`w-full text-left px-3 py-2 rounded-xl text-xs font-semibold flex items-center justify-between transition ${
+                          className={`w-full text-left px-3 py-2 rounded-xl text-xs font-semibold flex items-center justify-between transition cursor-pointer ${
                             isSelected
                               ? 'bg-teal-700 text-white shadow-sm'
                               : 'bg-white text-slate-700 border border-slate-200 hover:border-teal-400 hover:bg-teal-50/50'
                           }`}
                         >
-                          <span>{item.label}</span>
-                          {isSelected && <CheckCircle2 className="w-4 h-4 text-white" />}
+                          <div className="flex flex-col">
+                            <span className="font-bold">{item.label}</span>
+                            {currentLang !== 'en' && (
+                              <span className={`text-[10px] ${isSelected ? 'text-teal-100' : 'text-slate-400'}`}>
+                                {item.enLabel}
+                              </span>
+                            )}
+                          </div>
+                          {isSelected && <CheckCircle2 className="w-4 h-4 text-white shrink-0 ml-2" />}
                         </button>
                       );
                     })}
@@ -1110,17 +1070,17 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
           <div className="flex justify-between pt-4 border-t border-slate-100">
             <button
               onClick={() => setStep(1)}
-              className="px-5 py-2.5 border border-slate-300 rounded-xl text-slate-700 font-semibold text-sm hover:bg-slate-50 transition"
+              className="px-5 py-2.5 border border-slate-300 rounded-xl text-slate-700 font-semibold text-sm hover:bg-slate-50 transition cursor-pointer"
             >
-              Back to Vitals
+              {t.back}
             </button>
             <button
               onClick={startClinicIntake}
               disabled={isSubmitting}
-              className="px-6 py-2.5 bg-teal-700 hover:bg-teal-800 text-white font-bold rounded-xl shadow transition flex items-center gap-2"
+              className="px-6 py-2.5 bg-teal-700 hover:bg-teal-800 text-white font-bold rounded-xl shadow transition flex items-center gap-2 cursor-pointer"
             >
-              Start Dynamic Inquiry
-              <ChevronRight className="w-4 h-4" />
+              {isSubmitting ? <RefreshCw className="w-4 h-4 animate-spin" /> : null}
+              {t.startAdaptiveQuestions}
             </button>
           </div>
         </div>

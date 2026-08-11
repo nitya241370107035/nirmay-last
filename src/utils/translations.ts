@@ -657,3 +657,195 @@ export const CLINICAL_TRANSLATIONS: Record<LanguageCode, TranslationDictionary> 
 export function getTranslations(lang: LanguageCode): TranslationDictionary {
   return CLINICAL_TRANSLATIONS[lang] || CLINICAL_TRANSLATIONS.en;
 }
+
+export interface ChiefComplaintCategoryData {
+  title: string;
+  items: Array<{ id: string; label: string; enLabel: string }>;
+}
+
+export const CHIEF_COMPLAINT_DATA: Record<LanguageCode, ChiefComplaintCategoryData[]> = {
+  gu: [
+    {
+      title: 'ચેપી અને શ્વસનતંત્ર (Infectious & Respiratory)',
+      items: [
+        { id: 'cc_fever', label: 'તાવ / ઊંચું તાપમાન', enLabel: 'Fever / High Temperature' },
+        { id: 'cc_cough', label: 'સતત ઉધરસ', enLabel: 'Persistent Cough' },
+        { id: 'cc_coldlikesymptoms', label: 'શરદી / નાકમાંથી પાણી વહેવું', enLabel: 'Common Cold / Runny Nose' },
+        { id: 'cc_sorethroat', label: 'ગળામાં દુખાવો / ખરાશ', enLabel: 'Sore Throat / Pharyngitis' },
+        { id: 'cc_chills', label: 'ધ્રુજારી અને ટાઢ', enLabel: 'Chills & Shivering' },
+        { id: 'cc_earpain', label: 'કાનમાં દુખાવો / ભારેપણું', enLabel: 'Ear Pain / Fullness' }
+      ]
+    },
+    {
+      title: 'હૃદય અને છાતી (Cardiovascular & Thoracic)',
+      items: [
+        { id: 'cc_chestpain', label: 'છાતીમાં દુખાવો / એન્જાઇના', enLabel: 'Chest Pain / Angina' },
+        { id: 'cc_shortnessofbreath', label: 'શ્વાસ લેવામાં તકલીફ', enLabel: 'Shortness of Breath (Dyspnea)' },
+        { id: 'cc_chesttightness', label: 'છાતીમાં ભીંસ / દબાણ', enLabel: 'Chest Tightness / Squeezing' },
+        { id: 'cc_palpitations', label: 'ધબકારા વધવા / ધડકન', enLabel: 'Palpitations / Fast Heartbeat' },
+        { id: 'cc_tachycardia', label: 'ઝડપી પલ્સ (ટાકીકાર્ડિયા)', enLabel: 'Racing Pulse (Tachycardia)' },
+        { id: 'cc_edema', label: 'પગમાં સોજા / એડીમા', enLabel: 'Swollen Feet / Edema' }
+      ]
+    },
+    {
+      title: 'પાચનતંત્ર અને પેટ (Gastrointestinal & Abdominal)',
+      items: [
+        { id: 'cc_abdominalpain', label: 'પેટમાં દુખાવો / ચૂંક', enLabel: 'Abdominal Pain / Cramps' },
+        { id: 'cc_vomiting', label: 'ઊલટી / ઓકવું', enLabel: 'Vomiting / Emesis' },
+        { id: 'cc_nausea', label: 'ઉબકા / જીવ ગભરાવવો', enLabel: 'Nausea' },
+        { id: 'cc_diarrhea', label: 'ઝાડા / પાતળા મળ', enLabel: 'Diarrhea / Loose Stools' },
+        { id: 'cc_gibleeding', label: 'કાળો મળ / રક્તસ્ત્રાવ', enLabel: 'GI Bleeding / Dark Stools' },
+        { id: 'cc_dehydration', label: 'ડિહાઇડ્રેશન / મોં સુકાવું', enLabel: 'Dehydration / Dry Mouth' }
+      ]
+    },
+    {
+      title: 'ચેતાતંત્ર અને મગજ (Neurological & Systemic)',
+      items: [
+        { id: 'cc_headache', label: 'તીવ્ર માથાનો દુખાવો / આધાશીશી', enLabel: 'Severe Headache' },
+        { id: 'cc_dizziness', label: 'ચક્કર આવવા / અસમતુલા', enLabel: 'Dizziness / Vertigo' },
+        { id: 'cc_syncope', label: 'બેહોશ થઈ જવું / ચક્કર ખાઈ પડવું', enLabel: 'Syncope (Fainting)' },
+        { id: 'cc_confusion', label: 'ગૂંચવણ / અસ્વસ્થ મગજ', enLabel: 'Acute Confusion' },
+        { id: 'cc_alteredmentalstatus', label: 'માનસિક સ્થિતિમાં ફેરફાર', enLabel: 'Altered Mental State' },
+        { id: 'cc_fatigue', label: 'અતિશય થાક / અશક્તિ', enLabel: 'Extreme Weakness / Fatigue' }
+      ]
+    },
+    {
+      title: 'ચયાપચય, કિડની અને ઈજા (Metabolic, Renal & Trauma)',
+      items: [
+        { id: 'cc_decreasedbloodsugar-symptomatic', label: 'ઓછું બ્લડ સુગર (હાઈપોગ્લાયસેમિયા)', enLabel: 'Low Blood Sugar (Hypoglycemia)' },
+        { id: 'cc_elevatedbloodsugar-symptomatic', label: 'વધારે બ્લડ સુગર (હાઈપરગ્લાયસેમિયા)', enLabel: 'High Blood Sugar (Hyperglycemia)' },
+        { id: 'cc_dysuria', label: 'પેશાબમાં બળતરા / દુખાવો', enLabel: 'Painful Urination (Dysuria)' },
+        { id: 'cc_flankpain', label: 'કમર / કિડનીમાં દુખાવો', enLabel: 'Flank / Kidney Pain' },
+        { id: 'cc_laceration', label: 'ખુલ્લો ઘા / લોહી નીકળવું', enLabel: 'Open Cut / Wound' },
+        { id: 'cc_skinproblem', label: 'ચામડીના ચકામા / એલર્જી', enLabel: 'Skin Rash / Allergy' }
+      ]
+    }
+  ],
+  hi: [
+    {
+      title: 'संक्रामक एवं श्वसन तंत्र (Infectious & Respiratory)',
+      items: [
+        { id: 'cc_fever', label: 'बुखार / तेज तापमान', enLabel: 'Fever / High Temperature' },
+        { id: 'cc_cough', label: 'लगातार खांसी', enLabel: 'Persistent Cough' },
+        { id: 'cc_coldlikesymptoms', label: 'सर्दी / बहती नाक', enLabel: 'Common Cold / Runny Nose' },
+        { id: 'cc_sorethroat', label: 'गले में खराश / दर्द', enLabel: 'Sore Throat / Pharyngitis' },
+        { id: 'cc_chills', label: 'कंपकंपी एवं ठंड', enLabel: 'Chills & Shivering' },
+        { id: 'cc_earpain', label: 'कान में दर्द / भारीपन', enLabel: 'Ear Pain / Fullness' }
+      ]
+    },
+    {
+      title: 'हृदय एवं वक्ष (Cardiovascular & Thoracic)',
+      items: [
+        { id: 'cc_chestpain', label: 'सीने में दर्द / एंजाइना', enLabel: 'Chest Pain / Angina' },
+        { id: 'cc_shortnessofbreath', label: 'सांस लेने में तकलीफ', enLabel: 'Shortness of Breath (Dyspnea)' },
+        { id: 'cc_chesttightness', label: 'सीने में जकड़न एवं दबाव', enLabel: 'Chest Tightness / Squeezing' },
+        { id: 'cc_palpitations', label: 'घबराहट / तेज धड़कन', enLabel: 'Palpitations / Fast Heartbeat' },
+        { id: 'cc_tachycardia', label: 'तेज पल्स (टैचीकार्डिया)', enLabel: 'Racing Pulse (Tachycardia)' },
+        { id: 'cc_edema', label: 'पैरों में सूजन / एडिमा', enLabel: 'Swollen Feet / Edema' }
+      ]
+    },
+    {
+      title: 'पाचन तंत्र एवं पेट (Gastrointestinal & Abdominal)',
+      items: [
+        { id: 'cc_abdominalpain', label: 'पेट में दर्द / मरोड़', enLabel: 'Abdominal Pain / Cramps' },
+        { id: 'cc_vomiting', label: 'उल्टी / वमन', enLabel: 'Vomiting / Emesis' },
+        { id: 'cc_nausea', label: 'मतली / जी मिचलाना', enLabel: 'Nausea' },
+        { id: 'cc_diarrhea', label: 'दस्त / पतले दस्त', enLabel: 'Diarrhea / Loose Stools' },
+        { id: 'cc_gibleeding', label: 'काला मल / रक्तस्राव', enLabel: 'GI Bleeding / Dark Stools' },
+        { id: 'cc_dehydration', label: 'निर्जलीकरण / मुंह सूखना', enLabel: 'Dehydration / Dry Mouth' }
+      ]
+    },
+    {
+      title: 'तंत्रिका तंत्र एवं मस्तिष्क (Neurological & Systemic)',
+      items: [
+        { id: 'cc_headache', label: 'तेज सिरदर्द / माइग्रेन', enLabel: 'Severe Headache' },
+        { id: 'cc_dizziness', label: 'चक्कर आना / अस्थिरता', enLabel: 'Dizziness / Vertigo' },
+        { id: 'cc_syncope', label: 'बेहोशी / चक्कर खाकर गिरना', enLabel: 'Syncope (Fainting)' },
+        { id: 'cc_confusion', label: 'भ्रम / अस्थिर दिमाग', enLabel: 'Acute Confusion' },
+        { id: 'cc_alteredmentalstatus', label: 'मानसिक स्थिति में बदलाव', enLabel: 'Altered Mental State' },
+        { id: 'cc_fatigue', label: 'अत्यधिक कमजोरी / थकान', enLabel: 'Extreme Weakness / Fatigue' }
+      ]
+    },
+    {
+      title: 'उपापचय, गुर्दा एवं आघात (Metabolic, Renal & Trauma)',
+      items: [
+        { id: 'cc_decreasedbloodsugar-symptomatic', label: 'कम ब्लड शुगर (हाइपोग्लाइसीमिया)', enLabel: 'Low Blood Sugar (Hypoglycemia)' },
+        { id: 'cc_elevatedbloodsugar-symptomatic', label: 'उच्च ब्लड शुगर (हाइपरग्लाइसीमिया)', enLabel: 'High Blood Sugar (Hyperglycemia)' },
+        { id: 'cc_dysuria', label: 'पेशाब में जलन / दर्द', enLabel: 'Painful Urination (Dysuria)' },
+        { id: 'cc_flankpain', label: 'कमर / गुर्दे का दर्द', enLabel: 'Flank / Kidney Pain' },
+        { id: 'cc_laceration', label: 'खुला घाव / चोट', enLabel: 'Open Cut / Wound' },
+        { id: 'cc_skinproblem', label: 'त्वचा पर दाने / एलर्जी', enLabel: 'Skin Rash / Allergy' }
+      ]
+    }
+  ],
+  en: [
+    {
+      title: 'Infectious & Respiratory',
+      items: [
+        { id: 'cc_fever', label: 'Fever / High Temperature', enLabel: 'Fever / High Temperature' },
+        { id: 'cc_cough', label: 'Persistent Cough', enLabel: 'Persistent Cough' },
+        { id: 'cc_coldlikesymptoms', label: 'Common Cold / Runny Nose', enLabel: 'Common Cold / Runny Nose' },
+        { id: 'cc_sorethroat', label: 'Sore Throat / Pharyngitis', enLabel: 'Sore Throat / Pharyngitis' },
+        { id: 'cc_chills', label: 'Chills & Shivering', enLabel: 'Chills & Shivering' },
+        { id: 'cc_earpain', label: 'Ear Pain / Fullness', enLabel: 'Ear Pain / Fullness' }
+      ]
+    },
+    {
+      title: 'Cardiovascular & Thoracic',
+      items: [
+        { id: 'cc_chestpain', label: 'Chest Pain / Angina', enLabel: 'Chest Pain / Angina' },
+        { id: 'cc_shortnessofbreath', label: 'Shortness of Breath (Dyspnea)', enLabel: 'Shortness of Breath (Dyspnea)' },
+        { id: 'cc_chesttightness', label: 'Chest Tightness / Squeezing', enLabel: 'Chest Tightness / Squeezing' },
+        { id: 'cc_palpitations', label: 'Palpitations / Fast Heartbeat', enLabel: 'Palpitations / Fast Heartbeat' },
+        { id: 'cc_tachycardia', label: 'Racing Pulse (Tachycardia)', enLabel: 'Racing Pulse (Tachycardia)' },
+        { id: 'cc_edema', label: 'Swollen Feet / Edema', enLabel: 'Swollen Feet / Edema' }
+      ]
+    },
+    {
+      title: 'Gastrointestinal & Abdominal',
+      items: [
+        { id: 'cc_abdominalpain', label: 'Abdominal Pain / Stomach Cramps', enLabel: 'Abdominal Pain / Stomach Cramps' },
+        { id: 'cc_vomiting', label: 'Vomiting / Emesis', enLabel: 'Vomiting / Emesis' },
+        { id: 'cc_nausea', label: 'Nausea', enLabel: 'Nausea' },
+        { id: 'cc_diarrhea', label: 'Diarrhea / Loose Stools', enLabel: 'Diarrhea / Loose Stools' },
+        { id: 'cc_gibleeding', label: 'GI Bleeding / Dark Stools', enLabel: 'GI Bleeding / Dark Stools' },
+        { id: 'cc_dehydration', label: 'Dehydration / Dry Mouth', enLabel: 'Dehydration / Dry Mouth' }
+      ]
+    },
+    {
+      title: 'Neurological & Systemic',
+      items: [
+        { id: 'cc_headache', label: 'Severe Headache', enLabel: 'Severe Headache' },
+        { id: 'cc_dizziness', label: 'Dizziness / Vertigo', enLabel: 'Dizziness / Vertigo' },
+        { id: 'cc_syncope', label: 'Syncope (Fainting / Blackout)', enLabel: 'Syncope (Fainting / Blackout)' },
+        { id: 'cc_confusion', label: 'Acute Confusion', enLabel: 'Acute Confusion' },
+        { id: 'cc_alteredmentalstatus', label: 'Altered Mental State', enLabel: 'Altered Mental State' },
+        { id: 'cc_fatigue', label: 'Extreme Weakness / Fatigue', enLabel: 'Extreme Weakness / Fatigue' }
+      ]
+    },
+    {
+      title: 'Metabolic, Renal & Trauma',
+      items: [
+        { id: 'cc_decreasedbloodsugar-symptomatic', label: 'Low Blood Sugar (Hypoglycemia)', enLabel: 'Low Blood Sugar (Hypoglycemia)' },
+        { id: 'cc_elevatedbloodsugar-symptomatic', label: 'High Blood Sugar (Hyperglycemia)', enLabel: 'High Blood Sugar (Hyperglycemia)' },
+        { id: 'cc_dysuria', label: 'Painful Urination (Dysuria)', enLabel: 'Painful Urination (Dysuria)' },
+        { id: 'cc_flankpain', label: 'Flank / Kidney Pain', enLabel: 'Flank / Kidney Pain' },
+        { id: 'cc_laceration', label: 'Open Cut / Wound', enLabel: 'Open Cut / Wound' },
+        { id: 'cc_skinproblem', label: 'Skin Rash / Lesion', enLabel: 'Skin Rash / Lesion' }
+      ]
+    }
+  ]
+};
+
+export function getChiefComplaintCategories(lang: LanguageCode) {
+  return CHIEF_COMPLAINT_DATA[lang] || CHIEF_COMPLAINT_DATA.en;
+}
+
+export function getChiefComplaintLabel(id: string, lang: LanguageCode): string {
+  const cats = getChiefComplaintCategories(lang);
+  for (const cat of cats) {
+    const found = cat.items.find((item) => item.id === id);
+    if (found) return found.label;
+  }
+  return id.replace('cc_', '').replace(/([A-Z])/g, ' $1').replace('/', ' / ');
+}
