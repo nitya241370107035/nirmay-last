@@ -26,11 +26,13 @@ import {
   MapPin,
   Edit3,
   Calendar,
-  Zap
+  Zap,
+  FileText
 } from 'lucide-react';
 import { LanguageCode } from '../../types';
 import { ClinicLogin, ClinicProfile } from './ClinicLogin';
 import { DoctorStation } from './DoctorStation';
+import { EMRRecordsStation } from './EMRRecordsStation';
 import { ClinicAppointmentsDesk } from './ClinicAppointmentsDesk';
 import { saveClinicRecord, seedEnrolledClinicsIfEmpty } from '../../db/db';
 
@@ -122,7 +124,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
     return null;
   });
 
-  const [activeTab, setActiveTab] = useState<'triage' | 'doctor_station' | 'appointments'>('triage');
+  const [activeTab, setActiveTab] = useState<'triage' | 'emr_records' | 'doctor_station' | 'appointments'>('triage');
 
   // Wizard Stepper: 1: Vitals & Info, 2: Chief Complaint, 3: Dynamic Inquiry, 4: Triage Result
   const [step, setStep] = useState<1 | 2 | 3 | 4>(1);
@@ -539,7 +541,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
         </div>
 
         {/* Top Primary Clinic Module Tabs */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-6 pt-5 border-t border-white/15 font-sans">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-6 pt-5 border-t border-white/15 font-sans">
           <button
             onClick={() => setActiveTab('triage')}
             className={`py-2.5 px-3 rounded-2xl text-xs sm:text-sm font-black transition flex items-center justify-center gap-2 cursor-pointer ${
@@ -549,7 +551,19 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
             }`}
           >
             <Activity className="w-4 h-4 text-emerald-600" />
-            <span>Triage Station (ML Intake)</span>
+            <span>Triage Station</span>
+          </button>
+
+          <button
+            onClick={() => setActiveTab('emr_records')}
+            className={`py-2.5 px-3 rounded-2xl text-xs sm:text-sm font-black transition flex items-center justify-center gap-2 cursor-pointer ${
+              activeTab === 'emr_records'
+                ? 'bg-white text-[#0C3833] shadow-md'
+                : 'bg-white/10 text-teal-100 hover:bg-white/20'
+            }`}
+          >
+            <FileText className="w-4 h-4 text-cyan-400" />
+            <span>Digital EMR Records</span>
           </button>
 
           <button
@@ -560,8 +574,8 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
                 : 'bg-white/10 text-teal-100 hover:bg-white/20'
             }`}
           >
-            <Stethoscope className="w-4 h-4 text-teal-600" />
-            <span>Doctor Station & EMR</span>
+            <Stethoscope className="w-4 h-4 text-teal-300" />
+            <span>Doctor Consultation & Rx</span>
           </button>
 
           <button
@@ -578,7 +592,17 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
         </div>
       </div>
 
-      {/* RENDER VIEW 1: DOCTOR STATION & EMR */}
+      {/* RENDER VIEW 1: DIGITAL EMR RECORDS (INTAKE & REGISTRY) */}
+      {activeTab === 'emr_records' && (
+        <EMRRecordsStation
+          clinicProfile={clinicProfile}
+          onSendToDoctorConsultation={(record) => {
+            setActiveTab('doctor_station');
+          }}
+        />
+      )}
+
+      {/* RENDER VIEW 2: DOCTOR CONSULTATION & PRESCRIPTION STATION */}
       {activeTab === 'doctor_station' && (
         <DoctorStation
           clinicProfile={clinicProfile}
@@ -590,7 +614,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
         />
       )}
 
-      {/* RENDER VIEW 2: CLINIC APPOINTMENTS DESK */}
+      {/* RENDER VIEW 3: CLINIC APPOINTMENTS DESK */}
       {activeTab === 'appointments' && (
         <ClinicAppointmentsDesk
           clinicProfile={clinicProfile}
@@ -609,7 +633,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
         />
       )}
 
-      {/* RENDER VIEW 3: ML TRIAGE WIZARD */}
+      {/* RENDER VIEW 4: ML TRIAGE WIZARD */}
       {activeTab === 'triage' && (
         <div className="space-y-6">
           {/* Stepper Navigation */}

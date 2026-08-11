@@ -333,7 +333,7 @@ export function DoctorStation({ clinicProfile }: DoctorStationProps) {
         <div>
           <div className="flex items-center gap-2">
             <span className="text-xs uppercase font-extrabold tracking-widest text-teal-800 bg-teal-100/80 px-2.5 py-0.5 rounded-full">
-              EMR & Consultation Desk
+              Doctor Consultation Desk
             </span>
             <span className="text-xs text-slate-400">•</span>
             <span className="text-xs font-semibold text-slate-600 font-mono">
@@ -341,10 +341,10 @@ export function DoctorStation({ clinicProfile }: DoctorStationProps) {
             </span>
           </div>
           <h2 className="text-2xl font-black text-slate-900 tracking-tight mt-1">
-            Paperless Digital Clinical Records
+            Doctor Consultation & Prescription Station
           </h2>
           <p className="text-xs text-slate-500 mt-0.5">
-            Search, edit, manage patient encounters, order lab investigations, and write digital prescriptions.
+            Review patient EMR intake records, examine clinical vitals, formulate diagnoses, and write digital prescriptions (Rx).
           </p>
         </div>
 
@@ -354,7 +354,7 @@ export function DoctorStation({ clinicProfile }: DoctorStationProps) {
             className="px-4 py-2.5 bg-gradient-to-r from-teal-700 to-teal-800 hover:from-teal-600 hover:to-teal-700 active:scale-95 text-white text-xs sm:text-sm font-bold rounded-2xl shadow-md transition flex items-center gap-2 cursor-pointer"
           >
             <PlusCircle className="w-4 h-4" />
-            <span>+ New Clinical Record (Manual Entry)</span>
+            <span>+ Direct Doctor Consultation</span>
           </button>
         </div>
       </div>
@@ -521,17 +521,18 @@ export function DoctorStation({ clinicProfile }: DoctorStationProps) {
                     </td>
 
                     <td className="py-3.5 px-4 text-right">
-                      <div className="flex items-center justify-end gap-1.5">
+                      <div className="flex items-center justify-end gap-2">
                         <button
                           onClick={() => openEditModal(rec)}
-                          className="p-1.5 bg-slate-100 hover:bg-teal-100 text-slate-700 hover:text-teal-800 rounded-lg transition"
-                          title="Edit Clinical Record & Prescriptions"
+                          className="px-3 py-1.5 bg-gradient-to-r from-teal-700 to-teal-800 hover:from-teal-600 hover:to-teal-700 text-white rounded-xl text-xs font-bold shadow-xs flex items-center gap-1.5 transition cursor-pointer"
+                          title="Open Patient EMR, Diagnose & Prescribe Medicines"
                         >
-                          <Edit3 className="w-4 h-4" />
+                          <Stethoscope className="w-3.5 h-3.5" />
+                          <span>Consult & Prescribe Rx</span>
                         </button>
                         <button
                           onClick={() => openPrintSlip(rec)}
-                          className="p-1.5 bg-slate-100 hover:bg-slate-800 text-slate-700 hover:text-white rounded-lg transition"
+                          className="p-1.5 bg-slate-100 hover:bg-slate-800 text-slate-700 hover:text-white rounded-xl transition cursor-pointer"
                           title="Print Doctor Prescription Slip"
                         >
                           <Printer className="w-4 h-4" />
