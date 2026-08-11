@@ -184,663 +184,663 @@
   "feature_labels": {
     "itching": {
       "en": "Itching",
-      "hi": "Itching",
-      "gu": "Itching"
+      "hi": "\u0916\u0941\u091c\u0932\u0940",
+      "gu": "\u0a96\u0a82\u0a9c\u0ab5\u0abe\u0ab3"
     },
     "skin_rash": {
-      "en": "Skin rash / Red spots",
-      "hi": "\u0924\u094d\u0935\u091a\u093e \u092a\u0930 \u0932\u093e\u0932 \u091a\u0915\u0924\u094d\u0924\u0947 / \u0926\u093e\u0928\u0947",
-      "gu": "\u0a9a\u0abe\u0aae\u0aa1\u0ac0 \u0aaa\u0ab0 \u0ab2\u0abe\u0ab2 \u0a9a\u0a95\u0abe\u0aae\u0abe / \u0aab\u0acb\u0ab2\u0acd\u0ab2\u0ac0\u0a93"
+      "en": "Skin Rash",
+      "hi": "\u0924\u094d\u0935\u091a\u093e \u092a\u0930 \u091a\u0915\u0924\u094d\u0924\u0947",
+      "gu": "\u0aa4\u0acd\u0ab5\u0a9a\u0abe \u0aaa\u0ab0 \u0aab\u0acb\u0ab2\u0acd\u0ab2\u0ac0\u0a93"
     },
     "nodal_skin_eruptions": {
       "en": "Nodal Skin Eruptions",
-      "hi": "Nodal Skin Eruptions",
-      "gu": "Nodal Skin Eruptions"
+      "hi": "\u0924\u094d\u0935\u091a\u093e \u092a\u0930 \u0917\u093e\u0902\u0920\u0926\u093e\u0930 \u0926\u093e\u0928\u0947",
+      "gu": "\u0aa4\u0acd\u0ab5\u0a9a\u0abe \u0aaa\u0ab0 \u0a97\u0abe\u0a82\u0aa0\u0aa6\u0abe\u0ab0 \u0aab\u0acb\u0ab2\u0acd\u0ab2\u0ac0\u0a93"
     },
     "continuous_sneezing": {
       "en": "Continuous Sneezing",
-      "hi": "Continuous Sneezing",
-      "gu": "Continuous Sneezing"
+      "hi": "\u0932\u0917\u093e\u0924\u093e\u0930 \u091b\u0940\u0902\u0915 \u0906\u0928\u093e",
+      "gu": "\u0ab8\u0aa4\u0aa4 \u0a9b\u0ac0\u0a82\u0a95 \u0a86\u0ab5\u0ab5\u0ac0"
     },
     "shivering": {
       "en": "Shivering",
-      "hi": "Shivering",
-      "gu": "Shivering"
+      "hi": "\u0915\u092a\u0915\u092a\u0940",
+      "gu": "\u0aa7\u0acd\u0ab0\u0ac1\u0a9c\u0abe\u0ab0\u0ac0"
     },
     "chills": {
-      "en": "Chills & Shivering (Rigors)",
-      "hi": "\u0920\u0902\u0921 \u0932\u0917\u0915\u0930 \u0915\u0902\u092a\u0915\u0902\u092a\u0940 \u091b\u0942\u091f\u0928\u093e",
-      "gu": "\u0aa7\u0acd\u0ab0\u0ac1\u0a9c\u0abe\u0ab0\u0ac0 \u0ab8\u0abe\u0aa5\u0ac7 \u0aa0\u0a82\u0aa1\u0ac0 \u0ab2\u0abe\u0a97\u0ab5\u0ac0"
+      "en": "Chills",
+      "hi": "\u0920\u0902\u0921 \u0932\u0917\u0928\u093e",
+      "gu": "\u0aa0\u0a82\u0aa1\u0ac0 \u0ab2\u0abe\u0a97\u0ab5\u0ac0"
     },
     "joint_pain": {
-      "en": "Joint pain (Arthralgia)",
-      "hi": "\u091c\u094b\u0921\u093c\u094b\u0902 \u092e\u0947\u0902 \u0926\u0930\u094d\u0926",
+      "en": "Joint Pain",
+      "hi": "\u091c\u094b\u0921\u093c\u094b\u0902 \u0915\u093e \u0926\u0930\u094d\u0926",
       "gu": "\u0ab8\u0abe\u0a82\u0aa7\u0abe\u0aa8\u0acb \u0aa6\u0ac1\u0a96\u0abe\u0ab5\u0acb"
     },
     "stomach_pain": {
       "en": "Stomach Pain",
-      "hi": "Stomach Pain",
-      "gu": "Stomach Pain"
+      "hi": "\u092a\u0947\u091f \u0926\u0930\u094d\u0926",
+      "gu": "\u0aaa\u0ac7\u0a9f\u0aa8\u0acb \u0aa6\u0ac1\u0a96\u0abe\u0ab5\u0acb"
     },
     "acidity": {
-      "en": "Acidity",
-      "hi": "Acidity",
-      "gu": "Acidity"
+      "en": "Acidity / Heartburn",
+      "hi": "\u090f\u0938\u093f\u0921\u093f\u091f\u0940 / \u091b\u093e\u0924\u0940 \u092e\u0947\u0902 \u091c\u0932\u0928",
+      "gu": "\u0a8f\u0ab8\u0abf\u0aa1\u0abf\u0a9f\u0ac0 / \u0a9b\u0abe\u0aa4\u0ac0\u0aae\u0abe\u0a82 \u0aac\u0ab3\u0aa4\u0ab0\u0abe"
     },
     "ulcers_on_tongue": {
-      "en": "Ulcers On Tongue",
-      "hi": "Ulcers On Tongue",
-      "gu": "Ulcers On Tongue"
+      "en": "Ulcers on Tongue",
+      "hi": "\u091c\u0940\u092d \u092a\u0930 \u091b\u093e\u0932\u0947",
+      "gu": "\u0a9c\u0ac0\u0aad \u0aaa\u0ab0 \u0a9a\u0abe\u0a82\u0aa6\u0abe"
     },
     "muscle_wasting": {
       "en": "Muscle Wasting",
-      "hi": "Muscle Wasting",
-      "gu": "Muscle Wasting"
+      "hi": "\u092e\u093e\u0902\u0938\u092a\u0947\u0936\u093f\u092f\u094b\u0902 \u0915\u093e \u0938\u0942\u0916\u0928\u093e",
+      "gu": "\u0ab8\u0acd\u0aa8\u0abe\u0aaf\u0ac1\u0a93\u0aa8\u0ac1\u0a82 \u0aa8\u0aac\u0ab3\u0ac1\u0a82 \u0aaa\u0aa1\u0ab5\u0ac1\u0a82"
     },
     "vomiting": {
       "en": "Vomiting",
-      "hi": "\u0909\u0932\u094d\u091f\u0940 \u0906\u0928\u093e",
-      "gu": "\u0a8a\u0ab2\u0a9f\u0ac0 \u0aa5\u0ab5\u0ac0"
+      "hi": "\u0909\u0932\u094d\u091f\u0940",
+      "gu": "\u0a8a\u0ab2\u0a9f\u0ac0"
     },
     "burning_micturition": {
-      "en": "Burning Micturition",
-      "hi": "Burning Micturition",
-      "gu": "Burning Micturition"
+      "en": "Burning Urination",
+      "hi": "\u092a\u0947\u0936\u093e\u092c \u092e\u0947\u0902 \u091c\u0932\u0928",
+      "gu": "\u0aaa\u0ac7\u0ab6\u0abe\u0aac\u0aae\u0abe\u0a82 \u0aac\u0ab3\u0aa4\u0ab0\u0abe"
     },
     "spotting_ urination": {
-      "en": "Spotting  Urination",
-      "hi": "Spotting  Urination",
-      "gu": "Spotting  Urination"
+      "en": "Urinary Spotting",
+      "hi": "\u092a\u0947\u0936\u093e\u092c \u092e\u0947\u0902 \u092c\u0942\u0902\u0926-\u092c\u0942\u0902\u0926 \u091f\u092a\u0915\u0928\u093e",
+      "gu": "\u0aaa\u0ac7\u0ab6\u0abe\u0aac\u0aae\u0abe\u0a82 \u0ab2\u0acb\u0ab9\u0ac0\u0aa8\u0abe \u0aa1\u0abe\u0a98"
     },
     "fatigue": {
-      "en": "Severe exhaustion & fatigue",
-      "hi": "\u0905\u0924\u094d\u092f\u0927\u093f\u0915 \u0925\u0915\u093e\u0928 \u0935 \u0915\u092e\u091c\u094b\u0930\u0940",
-      "gu": "\u0a85\u0aa4\u0abf\u0ab6\u0aaf \u0aa5\u0abe\u0a95"
+      "en": "Fatigue",
+      "hi": "\u0925\u0915\u093e\u0928",
+      "gu": "\u0aa5\u0abe\u0a95"
     },
     "weight_gain": {
       "en": "Weight Gain",
-      "hi": "Weight Gain",
-      "gu": "Weight Gain"
+      "hi": "\u0935\u091c\u0928 \u092c\u0922\u093c\u0928\u093e",
+      "gu": "\u0ab5\u0a9c\u0aa8 \u0ab5\u0aa7\u0ab5\u0ac1\u0a82"
     },
     "anxiety": {
       "en": "Anxiety",
-      "hi": "Anxiety",
-      "gu": "Anxiety"
+      "hi": "\u0918\u092c\u0930\u093e\u0939\u091f \u0935 \u092c\u0947\u091a\u0948\u0928\u0940",
+      "gu": "\u0a97\u0aad\u0ab0\u0abe\u0aae\u0aa3 \u0a85\u0aa8\u0ac7 \u0aac\u0ac7\u0a9a\u0ac7\u0aa8\u0ac0"
     },
     "cold_hands_and_feets": {
-      "en": "Cold Hands And Feets",
-      "hi": "Cold Hands And Feets",
-      "gu": "Cold Hands And Feets"
+      "en": "Cold Hands & Feet",
+      "hi": "\u0939\u093e\u0925-\u092a\u0948\u0930 \u0920\u0902\u0921\u0947 \u092a\u0921\u093c\u0928\u093e",
+      "gu": "\u0ab9\u0abe\u0aa5-\u0aaa\u0a97 \u0aa0\u0a82\u0aa1\u0abe \u0aaa\u0aa1\u0ab5\u0abe"
     },
     "mood_swings": {
       "en": "Mood Swings",
-      "hi": "Mood Swings",
-      "gu": "Mood Swings"
+      "hi": "\u092e\u0942\u0921 \u092e\u0947\u0902 \u0924\u0947\u091c\u0940 \u0938\u0947 \u092c\u0926\u0932\u093e\u0935",
+      "gu": "\u0aae\u0ac2\u0aa1\u0aae\u0abe\u0a82 \u0a9d\u0aa1\u0aaa\u0ac0 \u0aab\u0ac7\u0ab0\u0aab\u0abe\u0ab0"
     },
     "weight_loss": {
       "en": "Weight Loss",
-      "hi": "Weight Loss",
-      "gu": "Weight Loss"
+      "hi": "\u0935\u091c\u0928 \u0915\u092e \u0939\u094b\u0928\u093e",
+      "gu": "\u0ab5\u0a9c\u0aa8 \u0a98\u0a9f\u0ab5\u0ac1\u0a82"
     },
     "restlessness": {
       "en": "Restlessness",
-      "hi": "Restlessness",
-      "gu": "Restlessness"
+      "hi": "\u092c\u0947\u091a\u0948\u0928\u0940",
+      "gu": "\u0aac\u0ac7\u0a9a\u0ac7\u0aa8\u0ac0"
     },
     "lethargy": {
       "en": "Lethargy",
-      "hi": "Lethargy",
-      "gu": "Lethargy"
+      "hi": "\u0938\u0941\u0938\u094d\u0924\u0940 / \u0906\u0932\u0938\u094d\u092f",
+      "gu": "\u0ab8\u0ac1\u0ab8\u0acd\u0aa4\u0ac0"
     },
     "patches_in_throat": {
-      "en": "Patches In Throat",
-      "hi": "Patches In Throat",
-      "gu": "Patches In Throat"
+      "en": "Patches in Throat",
+      "hi": "\u0917\u0932\u0947 \u092e\u0947\u0902 \u0927\u092c\u094d\u092c\u0947",
+      "gu": "\u0a97\u0ab3\u0abe\u0aae\u0abe\u0a82 \u0a9a\u0abe\u0a82\u0aa6\u0abe / \u0aa7\u0aac\u0acd\u0aac\u0abe"
     },
     "irregular_sugar_level": {
       "en": "Irregular Sugar Level",
-      "hi": "Irregular Sugar Level",
-      "gu": "Irregular Sugar Level"
+      "hi": "\u0905\u0928\u093f\u092f\u092e\u093f\u0924 \u092c\u094d\u0932\u0921 \u0936\u0941\u0917\u0930",
+      "gu": "\u0a85\u0aa8\u0abf\u0aaf\u0aae\u0abf\u0aa4 \u0aac\u0acd\u0ab2\u0aa1 \u0ab8\u0ac1\u0a97\u0ab0"
     },
     "cough": {
       "en": "Cough",
       "hi": "\u0916\u093e\u0902\u0938\u0940",
-      "gu": "\u0a89\u0aa7\u0ab0\u0ab8"
+      "gu": "\u0a96\u0abe\u0a82\u0ab8\u0ac0"
     },
     "high_fever": {
       "en": "High Fever",
-      "hi": "High Fever",
-      "gu": "High Fever"
+      "hi": "\u0924\u0947\u091c \u092c\u0941\u0916\u093e\u0930",
+      "gu": "\u0aa4\u0ac7\u0a9c \u0aa4\u0abe\u0ab5"
     },
     "sunken_eyes": {
       "en": "Sunken Eyes",
-      "hi": "Sunken Eyes",
-      "gu": "Sunken Eyes"
+      "hi": "\u0927\u0902\u0938\u0940 \u0939\u0941\u0908 \u0906\u0902\u0916\u0947\u0902",
+      "gu": "\u0a8a\u0a82\u0aa1\u0ac0 \u0a89\u0aa4\u0ab0\u0ac0 \u0a97\u0aaf\u0ac7\u0ab2\u0ac0 \u0a86\u0a82\u0a96\u0acb"
     },
     "breathlessness": {
       "en": "Breathlessness",
-      "hi": "Breathlessness",
-      "gu": "Breathlessness"
+      "hi": "\u0938\u093e\u0902\u0938 \u092b\u0942\u0932\u0928\u093e / \u0938\u093e\u0902\u0938 \u0932\u0947\u0928\u0947 \u092e\u0947\u0902 \u0924\u0915\u0932\u0940\u092b",
+      "gu": "\u0ab6\u0acd\u0ab5\u0abe\u0ab8 \u0a9a\u0aa2\u0ab5\u0acb / \u0ab6\u0acd\u0ab5\u0abe\u0ab8 \u0ab2\u0ac7\u0ab5\u0abe\u0aae\u0abe\u0a82 \u0aa4\u0a95\u0ab2\u0ac0\u0aab"
     },
     "sweating": {
-      "en": "Profuse cold sweating",
-      "hi": "\u0905\u0924\u094d\u092f\u0927\u093f\u0915 \u092a\u0938\u0940\u0928\u093e \u0906\u0928\u093e",
-      "gu": "\u0aaa\u0ac1\u0ab7\u0acd\u0a95\u0ab3 \u0aaa\u0ab0\u0ab8\u0ac7\u0ab5\u0acb \u0ab5\u0ab3\u0ab5\u0acb"
+      "en": "Sweating",
+      "hi": "\u092a\u0938\u0940\u0928\u093e \u0906\u0928\u093e",
+      "gu": "\u0aaa\u0ab0\u0ab8\u0ac7\u0ab5\u0acb \u0ab5\u0ab3\u0ab5\u0acb"
     },
     "dehydration": {
       "en": "Dehydration",
-      "hi": "Dehydration",
-      "gu": "Dehydration"
+      "hi": "\u0936\u0930\u0940\u0930 \u092e\u0947\u0902 \u092a\u093e\u0928\u0940 \u0915\u0940 \u0915\u092e\u0940",
+      "gu": "\u0aa1\u0ac0\u0ab9\u0abe\u0a88\u0aa1\u0acd\u0ab0\u0ac7\u0ab6\u0aa8 / \u0ab6\u0ab0\u0ac0\u0ab0\u0aae\u0abe\u0a82 \u0aaa\u0abe\u0aa3\u0ac0\u0aa8\u0ac0 \u0a85\u0a9b\u0aa4"
     },
     "indigestion": {
       "en": "Indigestion",
-      "hi": "Indigestion",
-      "gu": "Indigestion"
+      "hi": "\u0905\u092a\u091a",
+      "gu": "\u0a85\u0aaa\u0a9a\u0acb"
     },
     "headache": {
       "en": "Headache",
-      "hi": "\u0938\u093f\u0930\u0926\u0930\u094d\u0926",
+      "hi": "\u0938\u093f\u0930 \u0926\u0930\u094d\u0926",
       "gu": "\u0aae\u0abe\u0aa5\u0abe\u0aa8\u0acb \u0aa6\u0ac1\u0a96\u0abe\u0ab5\u0acb"
     },
     "yellowish_skin": {
       "en": "Yellowish Skin",
-      "hi": "Yellowish Skin",
-      "gu": "Yellowish Skin"
+      "hi": "\u0924\u094d\u0935\u091a\u093e \u0915\u093e \u092a\u0940\u0932\u093e \u092a\u0921\u093c\u0928\u093e",
+      "gu": "\u0aa4\u0acd\u0ab5\u0a9a\u0abe \u0aaa\u0ac0\u0ab3\u0ac0 \u0aaa\u0aa1\u0ab5\u0ac0"
     },
     "dark_urine": {
       "en": "Dark Urine",
-      "hi": "Dark Urine",
-      "gu": "Dark Urine"
+      "hi": "\u0917\u0939\u0930\u093e \u092a\u0940\u0932\u093e \u092a\u0947\u0936\u093e\u092c",
+      "gu": "\u0a98\u0abe\u0a9f\u0acb \u0aaa\u0ac7\u0ab6\u0abe\u0aac"
     },
     "nausea": {
-      "en": "Nausea / Queasiness",
-      "hi": "\u091c\u0940 \u092e\u093f\u091a\u0932\u093e\u0928\u093e",
+      "en": "Nausea",
+      "hi": "\u091c\u0940 \u092e\u093f\u091a\u0932\u093e\u0928\u093e / \u0909\u0932\u094d\u091f\u0940 \u091c\u0948\u0938\u093e \u092e\u0939\u0938\u0942\u0938 \u0939\u094b\u0928\u093e",
       "gu": "\u0a89\u0aac\u0a95\u0abe \u0a86\u0ab5\u0ab5\u0abe"
     },
     "loss_of_appetite": {
-      "en": "Loss Of Appetite",
-      "hi": "Loss Of Appetite",
-      "gu": "Loss Of Appetite"
+      "en": "Loss of Appetite",
+      "hi": "\u092d\u0942\u0916 \u0928 \u0932\u0917\u0928\u093e",
+      "gu": "\u0aad\u0ac2\u0a96 \u0aa8 \u0ab2\u0abe\u0a97\u0ab5\u0ac0"
     },
     "pain_behind_the_eyes": {
-      "en": "Pain Behind The Eyes",
-      "hi": "Pain Behind The Eyes",
-      "gu": "Pain Behind The Eyes"
+      "en": "Pain Behind Eyes",
+      "hi": "\u0906\u0902\u0916\u094b\u0902 \u0915\u0947 \u092a\u0940\u091b\u0947 \u0926\u0930\u094d\u0926",
+      "gu": "\u0a86\u0a82\u0a96\u0acb\u0aa8\u0ac0 \u0aaa\u0abe\u0a9b\u0ab3 \u0aa6\u0ac1\u0a96\u0abe\u0ab5\u0acb"
     },
     "back_pain": {
-      "en": "Back pain",
-      "hi": "\u092a\u0940\u0920 \u092f\u093e \u0915\u092e\u0930 \u092e\u0947\u0902 \u0926\u0930\u094d\u0926",
-      "gu": "\u0a95\u0aae\u0ab0 / \u0aaa\u0ac0\u0aa0\u0aa8\u0acb \u0aa6\u0ac1\u0a96\u0abe\u0ab5\u0acb"
+      "en": "Back Pain",
+      "hi": "\u092a\u0940\u0920 \u0926\u0930\u094d\u0926 / \u0915\u092e\u0930 \u0926\u0930\u094d\u0926",
+      "gu": "\u0aaa\u0ac0\u0aa0\u0aa8\u0acb \u0aa6\u0ac1\u0a96\u0abe\u0ab5\u0acb / \u0a95\u0aae\u0ab0\u0aa8\u0acb \u0aa6\u0ac1\u0a96\u0abe\u0ab5\u0acb"
     },
     "constipation": {
       "en": "Constipation",
-      "hi": "Constipation",
-      "gu": "Constipation"
+      "hi": "\u0915\u092c\u094d\u091c",
+      "gu": "\u0a95\u0aac\u0a9c\u0abf\u0aaf\u0abe\u0aa4"
     },
     "abdominal_pain": {
       "en": "Abdominal Pain",
-      "hi": "Abdominal Pain",
-      "gu": "Abdominal Pain"
+      "hi": "\u092a\u0947\u091f \u0915\u0947 \u0928\u093f\u091a\u0932\u0947 \u0939\u093f\u0938\u094d\u0938\u0947 \u092e\u0947\u0902 \u0926\u0930\u094d\u0926",
+      "gu": "\u0aaa\u0ac7\u0a9f\u0aa8\u0abe \u0aa8\u0ac0\u0a9a\u0ac7\u0aa8\u0abe \u0aad\u0abe\u0a97\u0aae\u0abe\u0a82 \u0aa6\u0ac1\u0a96\u0abe\u0ab5\u0acb"
     },
     "diarrhoea": {
       "en": "Diarrhoea",
-      "hi": "Diarrhoea",
-      "gu": "Diarrhoea"
+      "hi": "\u0926\u0938\u094d\u0924 / \u0905\u0924\u093f\u0938\u093e\u0930",
+      "gu": "\u0a9d\u0abe\u0aa1\u0abe"
     },
     "mild_fever": {
       "en": "Mild Fever",
-      "hi": "Mild Fever",
-      "gu": "Mild Fever"
+      "hi": "\u0939\u0932\u094d\u0915\u093e \u092c\u0941\u0916\u093e\u0930",
+      "gu": "\u0ab9\u0ab3\u0ab5\u0acb \u0aa4\u0abe\u0ab5"
     },
     "yellow_urine": {
       "en": "Yellow Urine",
-      "hi": "Yellow Urine",
-      "gu": "Yellow Urine"
+      "hi": "\u092a\u0940\u0932\u093e \u092a\u0947\u0936\u093e\u092c",
+      "gu": "\u0aaa\u0ac0\u0ab3\u0acb \u0aaa\u0ac7\u0ab6\u0abe\u0aac"
     },
     "yellowing_of_eyes": {
-      "en": "Yellowing Of Eyes",
-      "hi": "Yellowing Of Eyes",
-      "gu": "Yellowing Of Eyes"
+      "en": "Yellowing of Eyes",
+      "hi": "\u0906\u0902\u0916\u094b\u0902 \u0915\u093e \u092a\u0940\u0932\u093e \u0939\u094b\u0928\u093e",
+      "gu": "\u0a86\u0a82\u0a96\u0acb \u0aaa\u0ac0\u0ab3\u0ac0 \u0aa5\u0ab5\u0ac0"
     },
     "acute_liver_failure": {
       "en": "Acute Liver Failure",
-      "hi": "Acute Liver Failure",
-      "gu": "Acute Liver Failure"
+      "hi": "\u0932\u093f\u0935\u0930 \u0915\u093e \u092b\u0947\u0932 \u0939\u094b\u0928\u093e",
+      "gu": "\u0ab2\u0ac0\u0ab5\u0ab0 \u0aab\u0ac7\u0a88\u0ab2 \u0aa5\u0ab5\u0ac1\u0a82"
     },
     "fluid_overload": {
       "en": "Fluid Overload",
-      "hi": "Fluid Overload",
-      "gu": "Fluid Overload"
+      "hi": "\u0936\u0930\u0940\u0930 \u092e\u0947\u0902 \u0924\u0930\u0932 \u0915\u0940 \u0905\u0927\u093f\u0915\u0924\u093e",
+      "gu": "\u0ab6\u0ab0\u0ac0\u0ab0\u0aae\u0abe\u0a82 \u0aaa\u0acd\u0ab0\u0ab5\u0abe\u0ab9\u0ac0 \u0aad\u0ab0\u0abe\u0a88 \u0a9c\u0ab5\u0ac1\u0a82"
     },
     "swelling_of_stomach": {
-      "en": "Swelling Of Stomach",
-      "hi": "Swelling Of Stomach",
-      "gu": "Swelling Of Stomach"
+      "en": "Swelling of Stomach",
+      "hi": "\u092a\u0947\u091f \u092e\u0947\u0902 \u0938\u0942\u091c\u0928",
+      "gu": "\u0aaa\u0ac7\u0a9f\u0aae\u0abe\u0a82 \u0ab8\u0acb\u0a9c\u0acb"
     },
     "swelled_lymph_nodes": {
       "en": "Swelled Lymph Nodes",
-      "hi": "Swelled Lymph Nodes",
-      "gu": "Swelled Lymph Nodes"
+      "hi": "\u0932\u093f\u092e\u094d\u092b \u0928\u094b\u0921\u094d\u0938 (\u0917\u094d\u0930\u0902\u0925\u093f\u092f\u094b\u0902) \u092e\u0947\u0902 \u0938\u0942\u091c\u0928",
+      "gu": "\u0ab2\u0ab8\u0abf\u0a95\u0abe\u0a97\u0acd\u0ab0\u0a82\u0aa5\u0abf\u0a93\u0aae\u0abe\u0a82 \u0ab8\u0acb\u0a9c\u0acb"
     },
     "malaise": {
-      "en": "Malaise",
-      "hi": "Malaise",
-      "gu": "Malaise"
+      "en": "Malaise / Uneasiness",
+      "hi": "\u092c\u0947\u091a\u0948\u0928\u0940 / \u0905\u0938\u094d\u0935\u0938\u094d\u0925\u0924\u093e",
+      "gu": "\u0aac\u0ac7\u0a9a\u0ac7\u0aa8\u0ac0 / \u0a85\u0ab8\u0acd\u0ab5\u0ab8\u0acd\u0aa5\u0aa4\u0abe"
     },
     "blurred_and_distorted_vision": {
-      "en": "Blurred And Distorted Vision",
-      "hi": "Blurred And Distorted Vision",
-      "gu": "Blurred And Distorted Vision"
+      "en": "Blurred & Distorted Vision",
+      "hi": "\u0927\u0941\u0902\u0927\u0932\u093e \u0926\u093f\u0916\u093e\u0908 \u0926\u0947\u0928\u093e",
+      "gu": "\u0a9d\u0abe\u0a82\u0a96\u0ac1\u0a82 \u0aa6\u0ac7\u0a96\u0abe\u0ab5\u0ac1\u0a82"
     },
     "phlegm": {
       "en": "Phlegm",
-      "hi": "Phlegm",
-      "gu": "Phlegm"
+      "hi": "\u092c\u0932\u0917\u092e",
+      "gu": "\u0a95\u0aab / \u0aac\u0ab2\u0a97\u0aae"
     },
     "throat_irritation": {
       "en": "Throat Irritation",
-      "hi": "Throat Irritation",
-      "gu": "Throat Irritation"
+      "hi": "\u0917\u0932\u0947 \u092e\u0947\u0902 \u0916\u0930\u093e\u0936",
+      "gu": "\u0a97\u0ab3\u0abe\u0aae\u0abe\u0a82 \u0aac\u0ab3\u0aa4\u0ab0\u0abe / \u0a96\u0a82\u0a9c\u0ab5\u0abe\u0ab3"
     },
     "redness_of_eyes": {
-      "en": "Redness Of Eyes",
-      "hi": "Redness Of Eyes",
-      "gu": "Redness Of Eyes"
+      "en": "Redness of Eyes",
+      "hi": "\u0906\u0902\u0916\u094b\u0902 \u0915\u093e \u0932\u093e\u0932 \u0939\u094b\u0928\u093e",
+      "gu": "\u0a86\u0a82\u0a96\u0acb \u0ab2\u0abe\u0ab2 \u0aa5\u0ab5\u0ac0"
     },
     "sinus_pressure": {
       "en": "Sinus Pressure",
-      "hi": "Sinus Pressure",
-      "gu": "Sinus Pressure"
+      "hi": "\u0938\u093e\u0907\u0928\u0938 \u0915\u093e \u0926\u092c\u093e\u0935",
+      "gu": "\u0ab8\u0abe\u0a87\u0aa8\u0ab8\u0aa8\u0ac1\u0a82 \u0aa6\u0aac\u0abe\u0aa3"
     },
     "runny_nose": {
       "en": "Runny Nose",
-      "hi": "Runny Nose",
-      "gu": "Runny Nose"
+      "hi": "\u092c\u0939\u0924\u0940 \u0928\u093e\u0915",
+      "gu": "\u0ab5\u0ab9\u0ac7\u0aa4\u0ac1\u0a82 \u0aa8\u0abe\u0a95"
     },
     "congestion": {
-      "en": "Congestion",
-      "hi": "Congestion",
-      "gu": "Congestion"
+      "en": "Nasal Congestion",
+      "hi": "\u0928\u093e\u0915 \u092c\u0902\u0926 \u0939\u094b\u0928\u093e",
+      "gu": "\u0aa8\u0abe\u0a95 \u0aac\u0a82\u0aa7 \u0aa5\u0ab5\u0ac1\u0a82"
     },
     "chest_pain": {
       "en": "Chest Pain",
-      "hi": "Chest Pain",
-      "gu": "Chest Pain"
+      "hi": "\u0938\u0940\u0928\u0947 \u092e\u0947\u0902 \u0926\u0930\u094d\u0926",
+      "gu": "\u0a9b\u0abe\u0aa4\u0ac0\u0aae\u0abe\u0a82 \u0aa6\u0ac1\u0a96\u0abe\u0ab5\u0acb"
     },
     "weakness_in_limbs": {
-      "en": "Weakness In Limbs",
-      "hi": "Weakness In Limbs",
-      "gu": "Weakness In Limbs"
+      "en": "Weakness in Limbs",
+      "hi": "\u0939\u093e\u0925-\u092a\u0948\u0930\u094b\u0902 \u092e\u0947\u0902 \u0915\u092e\u091c\u094b\u0930\u0940",
+      "gu": "\u0ab9\u0abe\u0925-\u0aaa\u0a97\u0aae\u0abe\u0a82 \u0aa8\u0aac\u0ab3\u0abe\u0a88"
     },
     "fast_heart_rate": {
       "en": "Fast Heart Rate",
-      "hi": "Fast Heart Rate",
-      "gu": "Fast Heart Rate"
+      "hi": "\u0926\u093f\u0932 \u0915\u0940 \u0927\u0921\u093c\u0915\u0928 \u0924\u0947\u091c \u0939\u094b\u0928\u093e",
+      "gu": "\u0ab9\u0ac3\u0aa6\u0aaf\u0aa8\u0abe \u0aa7\u0aac\u0a95\u0abe\u0ab0\u0abe \u0a9d\u0aa1\u0aaa\u0ac0 \u0aa5\u0ab5\u0abe"
     },
     "pain_during_bowel_movements": {
       "en": "Pain During Bowel Movements",
-      "hi": "Pain During Bowel Movements",
-      "gu": "Pain During Bowel Movements"
+      "hi": "\u092e\u0932\u0924\u094d\u092f\u093e\u0917 \u0915\u0947 \u0926\u094c\u0930\u093e\u0928 \u0926\u0930\u094d\u0926",
+      "gu": "\u0ab6\u0acc\u0a9a\u0a95\u0acd\u0ab0\u0abf\u0aaf\u0abe \u0ab5\u0a96\u0aa4\u0ac7 \u0aa6\u0ac1\u0a96\u0abe\u0ab5\u0acb"
     },
     "pain_in_anal_region": {
-      "en": "Pain In Anal Region",
-      "hi": "Pain In Anal Region",
-      "gu": "Pain In Anal Region"
+      "en": "Pain in Anal Region",
+      "hi": "\u0917\u0941\u0926\u093e \u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092e\u0947\u0902 \u0926\u0930\u094d\u0926",
+      "gu": "\u0a97\u0ac1\u0aa6\u0abe \u0aad\u0abe\u0a97\u0aae\u0abe\u0a82 \u0aa6\u0ac1\u0a96\u0abe\u0ab5\u0acb"
     },
     "bloody_stool": {
       "en": "Bloody Stool",
-      "hi": "Bloody Stool",
-      "gu": "Bloody Stool"
+      "hi": "\u092e\u0932 \u092e\u0947\u0902 \u0916\u0942\u0928 \u0906\u0928\u093e",
+      "gu": "\u0ab6\u0acc\u0a9a\u0aae\u0abe\u0a82 \u0ab2\u0acb\u0ab9\u0ac0 \u0a86\u0ab5\u0ab5\u0ac1\u0a82"
     },
     "irritation_in_anus": {
-      "en": "Irritation In Anus",
-      "hi": "Irritation In Anus",
-      "gu": "Irritation In Anus"
+      "en": "Irritation in Anus",
+      "hi": "\u0917\u0941\u0926\u093e \u092e\u0947\u0902 \u0916\u0941\u091c\u0932\u0940 / \u091c\u0932\u0928",
+      "gu": "\u0a97\u0ac1\u0aa6\u0abe\u0aae\u0abe\u0a82 \u0aac\u0ab3\u0aa4\u0ab0\u0abe / \u0a96\u0a82\u0a9c\u0ab5\u0abe\u0ab3"
     },
     "neck_pain": {
-      "en": "Neck pain",
-      "hi": "\u0917\u0930\u094d\u0926\u0928 \u092e\u0947\u0902 \u0926\u0930\u094d\u0926",
-      "gu": "\u0a97\u0ab0\u0aa6\u0aa8\u0aa8\u0acb \u0aa6\u0ac1\u0a96\u0abe\u0ab5\u0acb"
+      "en": "Neck Pain",
+      "hi": "\u0917\u0930\u094d\u0926\u0928 \u0915\u093e \u0926\u0930\u094d\u0926",
+      "gu": "\u0a97\u0ab3\u0abe\u0aa8\u0acb \u0aa6\u0ac1\u0a96\u0abe\u0ab5\u0acb / \u0a97\u0ab0\u0aa6\u0aa8\u0aa8\u0acb \u0aa6\u0ac1\u0a96\u0abe\u0ab5\u0acb"
     },
     "dizziness": {
-      "en": "Dizziness / Lightheadedness",
+      "en": "Dizziness",
       "hi": "\u091a\u0915\u094d\u0915\u0930 \u0906\u0928\u093e",
       "gu": "\u0a9a\u0a95\u0acd\u0a95\u0ab0 \u0a86\u0ab5\u0ab5\u0abe"
     },
     "cramps": {
-      "en": "Cramps",
-      "hi": "Cramps",
-      "gu": "Cramps"
+      "en": "Muscle Cramps",
+      "hi": "\u092e\u093e\u0902\u0938\u092a\u0947\u0936\u093f\u092f\u094b\u0902 \u092e\u0947\u0902 \u0910\u0902\u0920\u0928",
+      "gu": "\u0ab8\u0acd\u0aa8\u0abe\u0aaf\u0ac1\u0a93\u0aae\u0abe\u0a82 \u0a96\u0ac7\u0a82\u0a9a\u0abe\u0aa3 / \u0a95\u0acd\u0ab0\u0ac7\u0aae\u0acd\u0aaa\u0acd\u0ab8"
     },
     "bruising": {
       "en": "Bruising",
-      "hi": "Bruising",
-      "gu": "Bruising"
+      "hi": "\u0924\u094d\u0935\u091a\u093e \u092a\u0930 \u0928\u0940\u0932\u0947 \u0928\u093f\u0936\u093e\u0928",
+      "gu": "\u0a9a\u0abe\u0aae\u0aa1\u0ac0 \u0aaa\u0ab0 \u0a95\u0abe\u0ab3\u0abe-\u0ab5\u0abe\u0aa6\u0ab3\u0ac0 \u0aa1\u0abe\u0a98"
     },
     "obesity": {
       "en": "Obesity",
-      "hi": "Obesity",
-      "gu": "Obesity"
+      "hi": "\u092e\u094b\u091f\u093e\u092a\u093e",
+      "gu": "\u0aae\u0ac7\u0aa6\u0ab8\u0acd\u0ab5\u0ac0\u0aa4\u0abe / \u0ab5\u0a9c\u0aa8 \u0ab5\u0aa7\u0abe\u0ab0\u0ac7 \u0ab9\u0acb\u0ab5\u0ac1\u0a82"
     },
     "swollen_legs": {
       "en": "Swollen Legs",
-      "hi": "Swollen Legs",
-      "gu": "Swollen Legs"
+      "hi": "\u092a\u0948\u0930\u094b\u0902 \u092e\u0947\u0902 \u0938\u0942\u091c\u0928",
+      "gu": "\u0aaa\u0a97\u0aae\u0abe\u0a82 \u0ab8\u0acb\u0a9c\u0acb"
     },
     "swollen_blood_vessels": {
       "en": "Swollen Blood Vessels",
-      "hi": "Swollen Blood Vessels",
-      "gu": "Swollen Blood Vessels"
+      "hi": "\u0930\u0915\u094d\u0924 \u0935\u093e\u0939\u093f\u0915\u093e\u0913\u0902 \u092e\u0947\u0902 \u0938\u0942\u091c\u0928",
+      "gu": "\u0aa8\u0ab8\u0acb \u0aab\u0ac2\u0ab2\u0ac0 \u0a9c\u0ab5\u0ac0 / \u0ab8\u0acb\u0a9c\u0acb \u0a86\u0ab5\u0ab5\u0acb"
     },
     "puffy_face_and_eyes": {
-      "en": "Puffy Face And Eyes",
-      "hi": "Puffy Face And Eyes",
-      "gu": "Puffy Face And Eyes"
+      "en": "Puffy Face & Eyes",
+      "hi": "\u091a\u0947\u0939\u0930\u0947 \u0914\u0930 \u0906\u0902\u0916\u094b\u0902 \u092a\u0930 \u0938\u0942\u091c\u0928",
+      "gu": "\u0a9a\u0ab9\u0ac7\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a86\u0a82\u0a96\u0acb \u0aab\u0ac2\u0ab2\u0ac0 \u0a9c\u0ab5\u0ac0"
     },
     "enlarged_thyroid": {
       "en": "Enlarged Thyroid",
-      "hi": "Enlarged Thyroid",
-      "gu": "Enlarged Thyroid"
+      "hi": "\u0925\u093e\u092f\u0930\u093e\u0907\u0921 \u0915\u093e \u092c\u0922\u093c\u0928\u093e (\u0918\u0947\u0902\u0918\u093e)",
+      "gu": "\u0aa5\u0abe\u0a87\u0ab0\u0acb\u0a87\u0aa1 \u0a97\u0acd\u0ab0\u0a82\u0aa5\u0abf \u0aae\u0acb\u0a9f\u0ac0 \u0aa5\u0ab5\u0ac0"
     },
     "brittle_nails": {
       "en": "Brittle Nails",
-      "hi": "Brittle Nails",
-      "gu": "Brittle Nails"
+      "hi": "\u0915\u092e\u091c\u094b\u0930 \u0928\u093e\u0916\u0942\u0928",
+      "gu": "\u0aa8\u0a96 \u0aac\u0ab0\u0aa1 \u0aa5\u0ab5\u0abe / \u0ab8\u0ab0\u0ab3\u0aa4\u0abe\u0aa5\u0ac0 \u0aa4\u0ac2\u0a9f\u0ab5\u0abe"
     },
     "swollen_extremeties": {
-      "en": "Swollen Extremeties",
-      "hi": "Swollen Extremeties",
-      "gu": "Swollen Extremeties"
+      "en": "Swollen Extremities",
+      "hi": "\u0939\u093e\u0925-\u092a\u0948\u0930\u094b\u0902 \u0915\u0947 \u092a\u0902\u091c\u094b\u0902 \u092e\u0947\u0902 \u0938\u0942\u091c\u0928",
+      "gu": "\u0ab9\u0abe\u0aa5-\u0aaa\u0a97\u0aa8\u0abe \u0aaa\u0a82\u0a9c\u0abe\u0aae\u0abe\u0a82 \u0ab8\u0acb\u0a9c\u0acb"
     },
     "excessive_hunger": {
       "en": "Excessive Hunger",
-      "hi": "Excessive Hunger",
-      "gu": "Excessive Hunger"
+      "hi": "\u0905\u0924\u094d\u092f\u0927\u093f\u0915 \u092d\u0942\u0916 \u0932\u0917\u0928\u093e",
+      "gu": "\u0a85\u0aa4\u0abf\u0ab6\u0aaf \u0aad\u0ac2\u0a96 \u0ab2\u0abe\u0a97\u0ab5\u0ac0"
     },
     "extra_marital_contacts": {
-      "en": "Extra Marital Contacts",
-      "hi": "Extra Marital Contacts",
-      "gu": "Extra Marital Contacts"
+      "en": "High-Risk Exposure / Contacts",
+      "hi": "\u0905\u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924 \u0936\u093e\u0930\u0940\u0930\u093f\u0915 \u0938\u0902\u092a\u0930\u094d\u0915",
+      "gu": "\u0a85\u0ab8\u0ac1\u0ab0\u0a95\u0acd\u0ab7\u0abf\u0aa4 \u0ab6\u0abe\u0ab0\u0ac0\u0ab0\u0abf\u0a95 \u0ab8\u0a82\u0aac\u0a82\u0aa7\u0acb"
     },
     "drying_and_tingling_lips": {
-      "en": "Drying And Tingling Lips",
-      "hi": "Drying And Tingling Lips",
-      "gu": "Drying And Tingling Lips"
+      "en": "Dry & Tingling Lips",
+      "hi": "\u0939\u094b\u0902\u0920\u094b\u0902 \u0915\u093e \u0938\u0942\u0916\u0928\u093e \u0914\u0930 \u091d\u0941\u0928\u091d\u0941\u0928\u0940",
+      "gu": "\u0ab9\u0acb\u0aa0 \u0ab8\u0ac1\u0a95\u0abe\u0a88 \u0a9c\u0ab5\u0abe \u0a85\u0aa8\u0ac7 \u0a9d\u0aa3\u0a9d\u0aa3\u0abe\u0a9f\u0ac0 \u0aa5\u0ab5\u0ac0"
     },
     "slurred_speech": {
       "en": "Slurred Speech",
-      "hi": "Slurred Speech",
-      "gu": "Slurred Speech"
+      "hi": "\u0939\u0915\u0932\u093e\u0939\u091f / \u092c\u094b\u0932\u0940 \u092e\u0947\u0902 \u0932\u0921\u093c\u0916\u0921\u093c\u093e\u0939\u091f",
+      "gu": "\u0aac\u0acb\u0ab2\u0ab5\u0abe\u0aae\u0abe\u0a82 \u0ab2\u0aa5\u0aa1\u0abe\u0ab5\u0ac1\u0a82"
     },
     "knee_pain": {
-      "en": "Knee pain",
-      "hi": "\u0918\u0941\u091f\u0928\u0947 \u092e\u0947\u0902 \u0926\u0930\u094d\u0926",
+      "en": "Knee Pain",
+      "hi": "\u0918\u0941\u091f\u0928\u0947 \u0915\u093e \u0926\u0930\u094d\u0926",
       "gu": "\u0a98\u0ac2\u0a82\u0a9f\u0aa3\u0aa8\u0acb \u0aa6\u0ac1\u0a96\u0abe\u0ab5\u0acb"
     },
     "hip_joint_pain": {
       "en": "Hip Joint Pain",
-      "hi": "Hip Joint Pain",
-      "gu": "Hip Joint Pain"
+      "hi": "\u0915\u0942\u0932\u094d\u0939\u0947 \u0915\u093e \u0926\u0930\u094d\u0926",
+      "gu": "\u0aa8\u0abf\u0aa4\u0a82\u0aac\u0aa8\u0abe \u0ab8\u0abe\u0a82\u0aa7\u0abe\u0aa8\u0acb \u0aa6\u0ac1\u0a96\u0abe\u0ab5\u0acb"
     },
     "muscle_weakness": {
       "en": "Muscle Weakness",
-      "hi": "Muscle Weakness",
-      "gu": "Muscle Weakness"
+      "hi": "\u092e\u093e\u0902\u0938\u092a\u0947\u0936\u093f\u092f\u094b\u0902 \u092e\u0947\u0902 \u0915\u092e\u091c\u094b\u0930\u0940",
+      "gu": "\u0ab8\u0acd\u0aa8\u0abe\u0aaf\u0ac1\u0a93\u0aae\u0abe\u0a82 \u0aa8\u0aac\u0ab3\u0abe\u0a88"
     },
     "stiff_neck": {
       "en": "Stiff Neck",
-      "hi": "Stiff Neck",
-      "gu": "Stiff Neck"
+      "hi": "\u0917\u0930\u094d\u0926\u0928 \u092e\u0947\u0902 \u0905\u0915\u0921\u093c\u0928",
+      "gu": "\u0a97\u0ab0\u0aa6\u0aa8 \u0a85\u0a95\u0aa1\u0ac0 \u0a9c\u0ab5\u0ac0"
     },
     "swelling_joints": {
       "en": "Swelling Joints",
-      "hi": "Swelling Joints",
-      "gu": "Swelling Joints"
+      "hi": "\u091c\u094b\u0921\u093c\u094b\u0902 \u092e\u0947\u0902 \u0938\u0942\u091c\u0928",
+      "gu": "\u0ab8\u0abe\u0a82\u0aa7\u0abe\u0aae\u0abe\u0a82 \u0ab8\u0acb\u0a9c\u0acb"
     },
     "movement_stiffness": {
       "en": "Movement Stiffness",
-      "hi": "Movement Stiffness",
-      "gu": "Movement Stiffness"
+      "hi": "\u0939\u093f\u0932\u0928\u0947-\u0921\u0941\u0932\u0928\u0947 \u092e\u0947\u0902 \u0915\u0920\u093f\u0928\u093e\u0908",
+      "gu": "\u0ab9\u0ab2\u0aa8\u0a9a\u0ab2\u0aa8\u0aae\u0abe\u0a82 \u0a9c\u0a95\u0aa1\u0abe\u0a88 \u0a9c\u0ab5\u0ac1\u0a82"
     },
     "spinning_movements": {
-      "en": "Spinning Movements",
-      "hi": "Spinning Movements",
-      "gu": "Spinning Movements"
+      "en": "Spinning Movements / Vertigo",
+      "hi": "\u0938\u093f\u0930 \u0918\u0942\u092e\u0928\u093e / \u091a\u0915\u094d\u0915\u0930",
+      "gu": "\u0a9a\u0a95\u0acd\u0a95\u0ab0 \u0a86\u0ab5\u0ab5\u0abe / \u0a9a\u0a95\u0ab0\u0abe\u0ab5\u0acb"
     },
     "loss_of_balance": {
-      "en": "Loss Of Balance",
-      "hi": "Loss Of Balance",
-      "gu": "Loss Of Balance"
+      "en": "Loss of Balance",
+      "hi": "\u0938\u0902\u0924\u0941\u0932\u0928 \u0916\u094b\u0928\u093e",
+      "gu": "\u0ab8\u0a82\u0aa4\u0ac1\u0ab2\u0aa8 \u0a97\u0ac1\u0aae\u0abe\u0ab5\u0ab5\u0ac1\u0a82"
     },
     "unsteadiness": {
       "en": "Unsteadiness",
-      "hi": "Unsteadiness",
-      "gu": "Unsteadiness"
+      "hi": "\u0905\u0938\u094d\u0925\u093f\u0930\u0924\u093e",
+      "gu": "\u0a9a\u0abe\u0ab2\u0ab5\u0abe\u0aae\u0abe\u0a82 \u0a85\u0ab8\u0acd\u0aa5\u0abf\u0ab0\u0aa4\u0abe"
     },
     "weakness_of_one_body_side": {
-      "en": "Weakness Of One Body Side",
-      "hi": "Weakness Of One Body Side",
-      "gu": "Weakness Of One Body Side"
+      "en": "One-Sided Body Weakness",
+      "hi": "\u0936\u0930\u0940\u0930 \u0915\u0947 \u090f\u0915 \u0939\u093f\u0938\u094d\u0938\u0947 \u092e\u0947\u0902 \u0915\u092e\u091c\u094b\u0930\u0940",
+      "gu": "\u0ab6\u0ab0\u0ac0\u0ab0\u0aa8\u0ac0 \u0a8f\u0a95 \u0aac\u0abe\u0a9c\u0ac1 \u0aa8\u0aac\u0ab3\u0abe\u0a88"
     },
     "loss_of_smell": {
-      "en": "Loss Of Smell",
-      "hi": "Loss Of Smell",
-      "gu": "Loss Of Smell"
+      "en": "Loss of Smell",
+      "hi": "\u0938\u0942\u0902\u0918\u0928\u0947 \u0915\u0940 \u0915\u094d\u0937\u092e\u0924\u093e \u092e\u0947\u0902 \u0915\u092e\u0940",
+      "gu": "\u0ab8\u0ac2\u0a82\u0a98\u0ab5\u0abe\u0aa8\u0ac0 \u0ab6\u0a95\u0acd\u0aa4\u0abf \u0a97\u0ac1\u0aae\u0abe\u0ab5\u0ab5\u0ac0"
     },
     "bladder_discomfort": {
       "en": "Bladder Discomfort",
-      "hi": "Bladder Discomfort",
-      "gu": "Bladder Discomfort"
+      "hi": "\u092e\u0942\u0924\u094d\u0930\u093e\u0936\u092f \u092e\u0947\u0902 \u092c\u0947\u091a\u0948\u0928\u0940 / \u0926\u0930\u094d\u0926",
+      "gu": "\u0aae\u0ac2\u0aa4\u0acd\u0ab0\u0abe\u0ab6\u0aaf\u0aae\u0abe\u0a82 \u0a85\u0a97\u0ab5\u0aa1\u0aa4\u0abe"
     },
     "foul_smell_of urine": {
-      "en": "Foul Smell Of Urine",
-      "hi": "Foul Smell Of Urine",
-      "gu": "Foul Smell Of Urine"
+      "en": "Foul Smell of Urine",
+      "hi": "\u092a\u0947\u0936\u093e\u092c \u0938\u0947 \u0926\u0941\u0930\u094d\u0917\u0902\u0927 \u0906\u0928\u093e",
+      "gu": "\u0aaa\u0ac7\u0ab6\u0abe\u0aac\u0aae\u0abe\u0a82\u0aa5\u0ac0 \u0aa6\u0ac1\u0ab0\u0acd\u0a97\u0a82\u0aa7 \u0a86\u0ab5\u0ab5\u0ac0"
     },
     "continuous_feel_of_urine": {
-      "en": "Continuous Feel Of Urine",
-      "hi": "Continuous Feel Of Urine",
-      "gu": "Continuous Feel Of Urine"
+      "en": "Continuous Urge to Urinate",
+      "hi": "\u0932\u0917\u093e\u0924\u093e\u0930 \u092a\u0947\u0936\u093e\u092c \u092e\u0939\u0938\u0942\u0938 \u0939\u094b\u0928\u093e",
+      "gu": "\u0ab8\u0aa4\u0aa4 \u0aaa\u0ac7\u0ab6\u0abe\u0aac \u0ab2\u0abe\u0a97\u0ab5\u0abe\u0aa8\u0ac0 \u0ab2\u0abe\u0a97\u0aa3\u0ac0"
     },
     "passage_of_gases": {
-      "en": "Passage Of Gases",
-      "hi": "Passage Of Gases",
-      "gu": "Passage Of Gases"
+      "en": "Passage of Gases / Flatulence",
+      "hi": "\u0917\u0948\u0938 \u0928\u093f\u0915\u0932\u0928\u093e / \u0905\u092a\u093e\u0928 \u0935\u093e\u092f\u0941",
+      "gu": "\u0a97\u0ac7\u0ab8 \u0aaa\u0abe\u0ab8 \u0aa5\u0ab5\u0acb / \u0ab5\u0abe\u0aaf\u0ac1 \u0a9b\u0ac2\u0a9f\u0ab5\u0acb"
     },
     "internal_itching": {
       "en": "Internal Itching",
-      "hi": "Internal Itching",
-      "gu": "Internal Itching"
+      "hi": "\u0906\u0902\u0924\u0930\u093f\u0915 \u0905\u0902\u0917\u094b\u0902 \u092e\u0947\u0902 \u0916\u0941\u091c\u0932\u0940",
+      "gu": "\u0a86\u0a82\u0aa4\u0ab0\u0abf\u0a95 \u0aad\u0abe\u0a97\u0acb\u0aae\u0abe\u0a82 \u0a96\u0a82\u0a9c\u0ab5\u0abe\u0ab3"
     },
     "toxic_look_(typhos)": {
-      "en": "Toxic Look (Typhos)",
-      "hi": "Toxic Look (Typhos)",
-      "gu": "Toxic Look (Typhos)"
+      "en": "Toxic / Lethargic Look",
+      "hi": "\u0905\u0924\u094d\u092f\u0927\u093f\u0915 \u092c\u0940\u092e\u093e\u0930 \u0926\u093f\u0916\u0928\u093e",
+      "gu": "\u0a96\u0ac2\u0aac \u0a9c \u0aac\u0ac0\u0aae\u0abe\u0ab0 \u0aa6\u0ac7\u0a96\u0abe\u0ab5\u0ac1\u0a82"
     },
     "depression": {
       "en": "Depression",
-      "hi": "Depression",
-      "gu": "Depression"
+      "hi": "\u0909\u0926\u093e\u0938\u0940 / \u0905\u0935\u0938\u093e\u0926",
+      "gu": "\u0aa1\u0abf\u0aaa\u0acd\u0ab0\u0ac7\u0ab6\u0aa8 / \u0a89\u0aa6\u0abe\u0ab8\u0ac0"
     },
     "irritability": {
       "en": "Irritability",
-      "hi": "Irritability",
-      "gu": "Irritability"
+      "hi": "\u091a\u093f\u0921\u093c\u091a\u093f\u0921\u093c\u093e\u092a\u0928",
+      "gu": "\u0a9a\u0abf\u0aa1\u0abf\u0aaf\u0abe\u0aaa\u0aa3\u0ac1\u0a82"
     },
     "muscle_pain": {
       "en": "Muscle Pain",
-      "hi": "Muscle Pain",
-      "gu": "Muscle Pain"
+      "hi": "\u092e\u093e\u0902\u0938\u092a\u0947\u0936\u093f\u092f\u094b\u0902 \u0915\u093e \u0926\u0930\u094d\u0926",
+      "gu": "\u0ab8\u0acd\u0aa8\u0abe\u0aaf\u0ac1\u0a93\u0aa8\u0acb \u0aa6\u0ac1\u0a96\u0abe\u0ab5\u0acb"
     },
     "altered_sensorium": {
-      "en": "Altered Sensorium",
-      "hi": "Altered Sensorium",
-      "gu": "Altered Sensorium"
+      "en": "Altered Sensorium / Confusion",
+      "hi": "\u092d\u094d\u0930\u092e / \u092e\u093e\u0928\u0938\u093f\u0915 \u091a\u0947\u0924\u0928\u093e \u092e\u0947\u0902 \u092c\u0926\u0932\u093e\u0935",
+      "gu": "\u0aae\u0abe\u0aa8\u0ab8\u0abf\u0a95 \u0a85\u0ab8\u0acd\u0aa5\u0abf\u0ab0\u0aa4\u0abe / \u0aae\u0ac2\u0a82\u0a9d\u0ab5\u0aa3"
     },
     "red_spots_over_body": {
       "en": "Red Spots Over Body",
-      "hi": "Red Spots Over Body",
-      "gu": "Red Spots Over Body"
+      "hi": "\u0936\u0930\u0940\u0930 \u092a\u0930 \u0932\u093e\u0932 \u091a\u0915\u0924\u094d\u0924\u0947",
+      "gu": "\u0ab6\u0ab0\u0ac0\u0ab0 \u0aaa\u0ab0 \u0ab2\u0abe\u0ab2 \u0aa1\u0abe\u0a98\u0abe"
     },
     "belly_pain": {
       "en": "Belly Pain",
-      "hi": "Belly Pain",
-      "gu": "Belly Pain"
+      "hi": "\u092a\u0947\u091f \u0926\u0930\u094d\u0926",
+      "gu": "\u092a\u0947\u0902\u091f \u0915\u093e \u0926\u0930\u094d\u0926"
     },
     "abnormal_menstruation": {
       "en": "Abnormal Menstruation",
-      "hi": "Abnormal Menstruation",
-      "gu": "Abnormal Menstruation"
+      "hi": "\u0905\u0928\u093f\u092f\u092e\u093f\u0924 \u092e\u093e\u0938\u093f\u0915 \u0927\u0930\u094d\u092e",
+      "gu": "\u0a85\u0aa8\u0abf\u0aaf\u0aae\u0abf\u0aa4 \u0aae\u0abe\u0ab8\u0abf\u0a95 \u0aa7\u0ab0\u0acd\u0aae"
     },
     "dischromic _patches": {
-      "en": "Dischromic  Patches",
-      "hi": "Dischromic  Patches",
-      "gu": "Dischromic  Patches"
+      "en": "Discolored Skin Patches",
+      "hi": "\u0924\u094d\u0935\u091a\u093e \u0915\u093e \u0930\u0902\u0917 \u092c\u0926\u0932\u0928\u093e",
+      "gu": "\u0aa4\u0acd\u0ab5\u0a9a\u0abe\u0aa8\u0acb \u0ab0\u0a82\u0a97 \u0aac\u0aa6\u0ab2\u0abe\u0ab5\u0acb"
     },
     "watering_from_eyes": {
       "en": "Watering From Eyes",
-      "hi": "Watering From Eyes",
-      "gu": "Watering From Eyes"
+      "hi": "\u0906\u0902\u0915\u094b\u0902 \u0938\u0947 \u092a\u093e\u0928\u0940 \u0906\u0928\u093e",
+      "gu": "\u0a86\u0a82\u0a96\u0acb\u0aae\u0abe\u0a82\u0aa5\u0ac0 \u0aaa\u0abe\u0aa3\u0ac0 \u0a86\u0ab5\u0ab5\u0ac1\u0a82"
     },
     "increased_appetite": {
       "en": "Increased Appetite",
-      "hi": "Increased Appetite",
-      "gu": "Increased Appetite"
+      "hi": "\u0905\u0924\u094d\u092f\u0927\u093f\u0915 \u092d\u0942\u0916 \u0932\u0917\u0928\u093e",
+      "gu": "\u0aad\u0ac2\u0a96\u0aae\u0abe\u0a82 \u0ab5\u0aa7\u0abe\u0ab0\u0acb \u0aa5\u0ab5\u0acb"
     },
     "polyuria": {
-      "en": "Polyuria",
-      "hi": "Polyuria",
-      "gu": "Polyuria"
+      "en": "Excessive Urination (Polyuria)",
+      "hi": "\u0905\u0924\u094d\u092f\u0927\u093f\u0915 \u092a\u0947\u0936\u093e\u092c \u0906\u0928\u093e",
+      "gu": "\u0ab5\u0abe\u0ab0\u0a82\u0ab5\u0abe\u0ab0 \u0a85\u0aa8\u0ac7 \u0ab5\u0aa7\u0abe\u0ab0\u0ac7 \u0aaa\u0ac7\u0ab6\u0abe\u0aac \u0a86\u0ab5\u0ab5\u0acb"
     },
     "family_history": {
-      "en": "Family History",
-      "hi": "Family History",
-      "gu": "Family History"
+      "en": "Family History of Disease",
+      "hi": "\u092a\u0930\u093f\u0935\u093e\u0930 \u092e\u0947\u0902 \u092c\u0940\u092e\u093e\u0930\u0940 \u0915\u093e \u0907\u0924\u093f\u0939\u093e\u0938",
+      "gu": "\u0aac\u0ac0\u0aae\u0abe\u0ab0\u0ac0\u0aa8\u0acb \u0a95\u0acc\u0a9f\u0ac1\u0a82\u0aac\u0abf\u0a95 \u0a87\u0aa4\u0abf\u0ab9\u0abe\u0ab8"
     },
     "mucoid_sputum": {
       "en": "Mucoid Sputum",
-      "hi": "Mucoid Sputum",
-      "gu": "Mucoid Sputum"
+      "hi": "\u0932\u093e\u0930/\u092c\u0932\u0917\u092e \u0906\u0928\u093e",
+      "gu": "\u0a9a\u0ac0\u0a95\u0aa3\u0acb \u0a95\u0aab \u0a86\u0ab5\u0ab5\u0acb"
     },
     "rusty_sputum": {
       "en": "Rusty Sputum",
-      "hi": "Rusty Sputum",
-      "gu": "Rusty Sputum"
+      "hi": "\u091c\u0902\u0917 \u0915\u0947 \u0930\u0902\u0917 \u0915\u093e \u092c\u0932\u0917\u092e",
+      "gu": "\u0ab2\u0abe\u0ab2-\u0aad\u0ac2\u0ab0\u0acb \u0a95\u0aab \u0a86\u0ab5\u0ab5\u0acb"
     },
     "lack_of_concentration": {
-      "en": "Lack Of Concentration",
-      "hi": "Lack Of Concentration",
-      "gu": "Lack Of Concentration"
+      "en": "Lack of Concentration",
+      "hi": "\u090f\u0915\u093e\u0917\u094d\u0930\u0924\u093e \u092e\u0947\u0902 \u0915\u092e\u0940",
+      "gu": "\u0a8f\u0a95\u0abe\u0a97\u0acd\u0ab0\u0aa4\u0abe\u0aa8\u0acb \u0a85\u0aad\u0abe\u0ab5"
     },
     "visual_disturbances": {
       "en": "Visual Disturbances",
-      "hi": "Visual Disturbances",
-      "gu": "Visual Disturbances"
+      "hi": "\u0926\u0943\u0937\u094d\u091f\u093f \u092e\u0947\u0902 \u0917\u0921\u093c\u092c\u0921\u093c\u0940",
+      "gu": "\u0aa6\u0ac7\u0a96\u0abe\u0ab5\u0abe\u0aae\u0abe\u0a82 \u0aa4\u0a95\u0ab2\u0ac0\u0aab"
     },
     "receiving_blood_transfusion": {
-      "en": "Receiving Blood Transfusion",
-      "hi": "Receiving Blood Transfusion",
-      "gu": "Receiving Blood Transfusion"
+      "en": "Blood Transfusion History",
+      "hi": "\u0916\u0942\u0928 \u091a\u0922\u093c\u093e\u0928\u0947 \u0915\u093e \u0907\u0924\u093f\u0939\u093e\u0938",
+      "gu": "\u0ab2\u0acb\u0ab9\u0ac0 \u0a9a\u0aa2\u0abe\u0ab5\u0ab5\u0abe\u0aa8\u0acb \u0a87\u0aa4\u0abf\u0ab9\u0abe\u0ab8"
     },
     "receiving_unsterile_injections": {
-      "en": "Receiving Unsterile Injections",
-      "hi": "Receiving Unsterile Injections",
-      "gu": "Receiving Unsterile Injections"
+      "en": "Unsterile Injection History",
+      "hi": "\u0905\u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924 \u0938\u0941\u0908/\u0907\u0902\u091c\u0947\u0915\u094d\u0936\u0928 \u0915\u093e \u0907\u0924\u093f\u0939\u093e\u0938",
+      "gu": "\u0a85\u0ab8\u0ac1\u0ab0\u0a95\u0acd\u0ab7\u0abf\u0aa4 \u0a87\u0aa8\u0acd\u0a9c\u0ac7\u0a95\u0acd\u0ab6\u0aa8\u0aa8\u0acb \u0a87\u0aa4\u0abf\u0ab9\u0abe\u0ab8"
     },
     "coma": {
       "en": "Coma",
-      "hi": "Coma",
-      "gu": "Coma"
+      "hi": "\u0915\u094b\u092e\u093e / \u092c\u0947\u0939\u094b\u0936\u0940",
+      "gu": "\u0a95\u0acb\u0aae\u0abe / \u0a85\u0a9a\u0ac7\u0aa4\u0aa8 \u0a85\u0ab5\u0ab8\u0acd\u0aa5\u0abe"
     },
     "stomach_bleeding": {
       "en": "Stomach Bleeding",
-      "hi": "Stomach Bleeding",
-      "gu": "Stomach Bleeding"
+      "hi": "\u092a\u0947\u091f \u0938\u0947 \u0916\u0942\u0928 \u092c\u0939\u0928\u093e",
+      "gu": "\u0aaa\u0ac7\u0a9f\u0aae\u0abe\u0a82\u0aa5\u0ac0 \u0ab0\u0a95\u0acd\u0aa4\u0ab8\u0acd\u0ab0\u0abe\u0ab5"
     },
     "distention_of_abdomen": {
-      "en": "Distention Of Abdomen",
-      "hi": "Distention Of Abdomen",
-      "gu": "Distention Of Abdomen"
+      "en": "Distention of Abdomen",
+      "hi": "\u092a\u0947\u091f \u092b\u0942\u0932\u0928\u093e",
+      "gu": "\u0aaa\u0ac7\u0a9f \u0aab\u0ac2\u0ab2\u0ac0 \u0a9c\u0ab5\u0ac1\u0a82"
     },
     "history_of_alcohol_consumption": {
-      "en": "History Of Alcohol Consumption",
-      "hi": "History Of Alcohol Consumption",
-      "gu": "History Of Alcohol Consumption"
+      "en": "Alcohol Consumption History",
+      "hi": "\u0936\u0930\u093e\u092c \u092a\u0940\u0928\u0947 \u0915\u093e \u0907\u0924\u093f\u0939\u093e\u0938",
+      "gu": "\u0aa6\u0abe\u0ab0\u0ac2 \u0aaa\u0ac0\u0ab5\u0abe\u0aa8\u0ac0 \u0a9f\u0ac7\u0ab5"
     },
     "fluid_overload.1": {
-      "en": "Fluid Overload.1",
-      "hi": "Fluid Overload.1",
-      "gu": "Fluid Overload.1"
+      "en": "Fluid Accumulation",
+      "hi": "\u0924\u0930\u0932 \u0915\u093e \u091c\u092e\u093e\u0935",
+      "gu": "\u0aaa\u0acd\u0ab0\u0ab5\u0abe\u0ab9\u0ac0 \u0aad\u0ab0\u0abe\u0a88 \u0a9c\u0ab5\u0ac1\u0a82"
     },
     "blood_in_sputum": {
-      "en": "Blood In Sputum",
-      "hi": "Blood In Sputum",
-      "gu": "Blood In Sputum"
+      "en": "Blood in Sputum",
+      "hi": "\u092c\u0932\u0917\u092e \u092e\u0947\u0902 \u0916\u0942\u0928 \u0906\u0928\u093e",
+      "gu": "\u0a95\u0aab\u0aae\u0abe\u0a82 \u0ab2\u0acb\u0ab9\u0ac0 \u0a86\u0ab5\u0ab5\u0ac1\u0a82"
     },
     "prominent_veins_on_calf": {
-      "en": "Prominent Veins On Calf",
-      "hi": "Prominent Veins On Calf",
-      "gu": "Prominent Veins On Calf"
+      "en": "Prominent Veins on Calf",
+      "hi": "\u092a\u093f\u0902\u0921\u0932\u0940 \u092a\u0930 \u0909\u092d\u0930\u0940 \u0939\u0941\u0908 \u0928\u0938\u0947\u0902",
+      "gu": "\u0aaa\u0abf\u0a82\u0aa1\u0ab2\u0ac0 \u0aaa\u0ab0 \u0aab\u0ac2\u0ab2\u0ac7\u0ab2\u0ac0 \u0aa8\u0ab8\u0acb \u0aa6\u0ac7\u0a96\u0abe\u0ab5\u0ac0"
     },
     "palpitations": {
-      "en": "Heart palpitations",
-      "hi": "\u0926\u093f\u0932 \u0915\u0940 \u0927\u0921\u093c\u0915\u0928 \u0924\u0947\u091c \u0939\u094b\u0928\u093e",
-      "gu": "\u0ab9\u0ac3\u0aa6\u0aaf\u0aa8\u0abe \u0aa7\u0aac\u0a95\u0abe\u0ab0\u0abe \u0ab5\u0aa7\u0ab5\u0abe"
+      "en": "Palpitations",
+      "hi": "\u0918\u092c\u0930\u093e\u0939\u091f / \u0927\u0921\u093c\u0915\u0928 \u092e\u0939\u0938\u0942\u0938 \u0939\u094b\u0928\u093e",
+      "gu": "\u0aa7\u0aac\u0a95\u0abe\u0ab0\u0abe \u0ab5\u0aa7\u0ab5\u0abe"
     },
     "painful_walking": {
       "en": "Painful Walking",
-      "hi": "Painful Walking",
-      "gu": "Painful Walking"
+      "hi": "\u091a\u0932\u0928\u0947 \u092e\u0947\u0902 \u0926\u0930\u094d\u0926 \u0939\u094b\u0928\u093e",
+      "gu": "\u0a9a\u0abe\u0ab2\u0aa4\u0ac0 \u0ab5\u0a96\u0aa4\u0ac7 \u0aa6\u0ac1\u0a96\u0abe\u0ab5\u0acb \u0aa5\u0ab5\u0acb"
     },
     "pus_filled_pimples": {
-      "en": "Pus Filled Pimples",
-      "hi": "Pus Filled Pimples",
-      "gu": "Pus Filled Pimples"
+      "en": "Pus-Filled Pimples",
+      "hi": "\u092a\u0940\u092a \u0935\u093e\u0932\u0947 \u092e\u0941\u0939\u093e\u0902\u0938\u0947",
+      "gu": "\u0aaa\u0ab0\u0ac1\u0ab5\u0abe\u0ab3\u0abe \u0a96\u0ac0\u0ab2"
     },
     "blackheads": {
       "en": "Blackheads",
-      "hi": "Blackheads",
-      "gu": "Blackheads"
+      "hi": "\u092c\u094d\u0932\u0948\u0915\u0939\u0947\u0921\u094d\u0938",
+      "gu": "\u0aac\u0acd\u0ab2\u0ac7\u0a95\u0ab9\u0ac7\u0aa1\u0acd\u0ab8"
     },
     "scurring": {
-      "en": "Scurring",
-      "hi": "Scurring",
-      "gu": "Scurring"
+      "en": "Scarring",
+      "hi": "\u0926\u093e\u0917-\u0927\u092c\u094d\u092c\u0947 / \u0928\u093f\u0936\u093e\u0928",
+      "gu": "\u0a96\u0ac0\u0ab2\u0aa8\u0abe \u0aa1\u0abe\u0a98\u0abe"
     },
     "skin_peeling": {
       "en": "Skin Peeling",
-      "hi": "Skin Peeling",
-      "gu": "Skin Peeling"
+      "hi": "\u0924\u094d\u0935\u091a\u093e \u0915\u093e \u091b\u093f\u0932\u0928\u093e / \u0928\u093f\u0915\u0932\u0928\u093e",
+      "gu": "\u0aa4\u0acd\u0ab5\u0a9a\u0abe \u0a89\u0a96\u0aa1\u0ab5\u0ac0 / \u0a9b\u0acb\u0ab2\u0abe\u0a88 \u0a9c\u0ab5\u0ac0"
     },
     "silver_like_dusting": {
-      "en": "Silver Like Dusting",
-      "hi": "Silver Like Dusting",
-      "gu": "Silver Like Dusting"
+      "en": "Silver-Like Dusting",
+      "hi": "\u091a\u093e\u0902\u0926\u0940 \u091c\u0948\u0938\u0940 \u0924\u094d\u0935\u091a\u093e \u0915\u0940 \u092a\u092a\u0921\u093c\u0940",
+      "gu": "\u0ab0\u0ac2\u0aaa\u0ac7\u0ab0\u0ac0 \u0aad\u0ac0\u0a82\u0a97\u0aa1\u0abe \u0a9c\u0ac7\u0ab5\u0ac0 \u0aaa\u0aa4\u0ab0\u0ac0 \u0ab5\u0ab3\u0ab5\u0ac0"
     },
     "small_dents_in_nails": {
-      "en": "Small Dents In Nails",
-      "hi": "Small Dents In Nails",
-      "gu": "Small Dents In Nails"
+      "en": "Small Dents in Nails",
+      "hi": "\u0928\u093e\u0916\u0942\u0928\u094b\u0902 \u092e\u0947\u0902 \u091b\u094b\u091f\u0947 \u0917\u0921\u094d\u0922\u0947",
+      "gu": "\u0aa8\u0a96\u0aae\u0abe\u0a82 \u0aa8\u0abe\u0aa8\u0abe \u0a96\u0abe\u0aa1\u0abe \u0aaa\u0aa1\u0ab5\u0abe"
     },
     "inflammatory_nails": {
       "en": "Inflammatory Nails",
-      "hi": "Inflammatory Nails",
-      "gu": "Inflammatory Nails"
+      "hi": "\u0928\u093e\u0916\u0942\u0928\u094b\u0902 \u092e\u0947\u0902 \u0938\u0942\u091c\u0928 \u0914\u0930 \u0926\u0930\u094d\u0926",
+      "gu": "\u0aa8\u0a96\u0aa8\u0ac0 \u0a86\u0a9c\u0ac1\u0aac\u0abe\u0a9c\u0ac1 \u0ab8\u0acb\u0a9c\u0acb \u0a85\u0aa8\u0ac7 \u0aa6\u0ac1\u0a96\u0abe\u0ab5\u0acb"
     },
     "blister": {
-      "en": "Blister",
-      "hi": "Blister",
-      "gu": "Blister"
+      "en": "Blisters",
+      "hi": "\u091b\u093e\u0932\u0947 / \u092b\u092b\u094b\u0932\u0947",
+      "gu": "\u0aab\u0acb\u0ab2\u0acd\u0ab2\u0abe"
     },
     "red_sore_around_nose": {
       "en": "Red Sore Around Nose",
-      "hi": "Red Sore Around Nose",
-      "gu": "Red Sore Around Nose"
+      "hi": "\u0928\u093e\u0915 \u0915\u0947 \u092a\u093e\u0938 \u0932\u093e\u0932 \u0918\u093e\u0935",
+      "gu": "\u0aa8\u0abe\u0a95\u0aa8\u0ac0 \u0a86\u0ab8\u0aaa\u0abe\u0ab8 \u0ab2\u0abe\u0ab2 \u0a9a\u0abe\u0a82\u0aa6\u0abe"
     },
     "yellow_crust_ooze": {
       "en": "Yellow Crust Ooze",
-      "hi": "Yellow Crust Ooze",
-      "gu": "Yellow Crust Ooze"
+      "hi": "\u092a\u0940\u0932\u093e \u092a\u092a\u0921\u093c\u0940\u0926\u093e\u0930 \u0938\u094d\u0930\u093e\u0935",
+      "gu": "\u0aaa\u0ac0\u0ab3\u0acb \u0a9a\u0ac0\u0a95\u0aa3\u0acb \u0ab8\u0acd\u0aa4\u0acd\u0ab0\u0abe\u0ab5 \u0ab5\u0ab9\u0ac7\u0ab5\u0acb"
     }
   },
   "disease_urgency": {

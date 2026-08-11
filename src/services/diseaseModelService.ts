@@ -312,9 +312,9 @@ class DiseaseModelService {
   private diseases: string[] = modelData.diseases;
   private features: string[] = modelData.features;
   private featureLabels: Record<string, { en: string; hi: string; gu: string }> =
+    (modelData as any).feature_labels ||
     (modelData as any).symptom_translations ||
     (translationsData as any).symptoms ||
-    (modelData as any).feature_labels ||
     {};
   private pSGivenD: number[][] = (modelData as any).p_s_given_d || [];
   private pDisease: number[] = (modelData as any).p_disease || [];

@@ -471,7 +471,7 @@ export function selectBestAdaptiveQuestion(session: DiagnosticSession): {
 
     if (utility > maxUtility && ig >= 0.003) {
       maxUtility = utility;
-      const trans = symMeta?.label || {
+      const trans = (diseaseModelData as any).feature_labels?.[featId] || symMeta?.label || {
         en: featId.replace(/_/g, ' '),
         hi: featId.replace(/_/g, ' '),
         gu: featId.replace(/_/g, ' ')
@@ -482,10 +482,10 @@ export function selectBestAdaptiveQuestion(session: DiagnosticSession): {
         featureName: trans.en || featId,
         utility: Math.round(utility * 1000) / 1000,
         informationGain: Math.round(ig * 100) / 100,
-        question: symMeta?.question || {
-          en: `Do you have ${trans.en}?`,
-          hi: `क्या आपको ${trans.hi || trans.en} है?`,
-          gu: `શું તમને ${trans.gu || trans.en} છે?`
+        question: {
+          en: `Do you have ${trans.en.toLowerCase()}?`,
+          hi: `क्या आपको ${trans.hi} की समस्या है?`,
+          gu: `શું તમને ${trans.gu} ની તકલીફ છે?`
         },
         label: trans
       };
