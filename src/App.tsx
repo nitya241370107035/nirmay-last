@@ -58,14 +58,21 @@ const ClinicPortal = lazy(() =>
   import('./components/clinic/ClinicPortal').then((m) => ({ default: m.ClinicPortal }))
 );
 
-type ViewState = 'clinicPortal' | 'welcome' | 'selectFamily' | 'selectMember' | 'caseTaking' | 'evaluating' | 'result' | 'nearby' | 'roster' | 'followups' | 'mch' | 'outbreak' | 'schemes' | 'stories' | 'articles' | 'adherence_tracker' | 'chronic_care' | 'garden_advisor';
+import { PortalSelectionScreen } from './components/PortalSelectionScreen';
+
+type ViewState = 'welcome' | 'selectFamily' | 'selectMember' | 'caseTaking' | 'evaluating' | 'result' | 'nearby' | 'roster' | 'followups' | 'mch' | 'outbreak' | 'schemes' | 'stories' | 'articles' | 'adherence_tracker' | 'chronic_care' | 'garden_advisor';
 
 function MainApp() {
   const { i18n: i18nInst } = useTranslation();
   const currentLang = (i18nInst.language || 'en') as LanguageCode;
 
+  // Active Operating Portal: 'clinic' (150k Triage) or 'user' (Family Vault) or null (Gate)
+  const [activePortal, setActivePortal] = useState<'clinic' | 'user' | null>(() => {
+    return (localStorage.getItem('niramay_active_portal') as 'clinic' | 'user' | null) || null;
+  });
+
   const [userMode, setUserMode] = useState<'patient' | 'healthWorker'>('patient');
-  const [view, setView] = useState<ViewState>('clinicPortal');
+  const [view, setView] = useState<ViewState>('welcome');
   const [activePatient, setActivePatient] = useState<Patient | null>(null);
   const [selectedFamily, setSelectedFamily] = useState<Family | null>(null);
   const [familyMembers, setFamilyMembers] = useState<Patient[]>([]);
@@ -240,6 +247,43 @@ function MainApp() {
       ? 'नैदानिक मूल्यांकन एवं जोखिम विश्लेषण किया जा रहा है...'
       : 'Evaluating clinical protocol & triage risk matrix...';
 
+  if (!activePortal) {
+    return (
+      <PortalSelectionScreen
+        onSelectPortal={(portal) => {
+          localStorage.setItem('niramay_active_portal', portal);
+          setActivePortal(portal);
+        }}
+      />
+    );
+  }
+
+  if (activePortal === 'clinic') {
+    return (
+      <div className="min-h-screen bg-slate-900 text-slate-100 font-sans">
+        <Suspense
+          fallback={
+            <div className="min-h-screen flex flex-col items-center justify-center p-6 text-center space-y-3 font-sans bg-slate-900 text-white">
+              <div className="w-14 h-14 rounded-2xl bg-teal-800 text-teal-200 border border-teal-600 flex items-center justify-center animate-spin shadow-md">
+                <Hospital className="w-7 h-7 text-teal-200" />
+              </div>
+              <p className="text-base font-bold text-teal-200 font-display">
+                Loading Nirāmay Clinical Triage Portal (150k Encounter ML)...
+              </p>
+            </div>
+          }
+        >
+          <ClinicPortal
+            onSwitchPortal={() => {
+              localStorage.removeItem('niramay_active_portal');
+              setActivePortal(null);
+            }}
+          />
+        </Suspense>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-[#F4F7F6] text-[#1A2B2B] font-sans flex flex-col selection:bg-[#2E7D73] selection:text-white pb-16 md:pb-0">
       <OfflineBanner />
@@ -256,7 +300,10 @@ function MainApp() {
         onAdherenceTrackerClick={() => setView('adherence_tracker')}
         onChronicCareClick={() => setView('chronic_care')}
         onGardenClick={() => setView('garden_advisor')}
-        onClinicPortalClick={() => setView('clinicPortal')}
+        onSwitchPortal={() => {
+          localStorage.removeItem('niramay_active_portal');
+          setActivePortal(null);
+        }}
         currentView={view}
         activeFamily={selectedFamily}
         userMode={userMode}
@@ -264,23 +311,6 @@ function MainApp() {
       />
 
       <main className="flex-1">
-        {view === 'clinicPortal' && (
-          <Suspense
-            fallback={
-              <div className="min-h-[60vh] flex flex-col items-center justify-center p-6 text-center space-y-3 font-sans">
-                <div className="w-12 h-12 rounded-2xl bg-teal-800 text-teal-200 border border-teal-600 flex items-center justify-center animate-spin shadow-md">
-                  <Hospital className="w-6 h-6 text-teal-200" />
-                </div>
-                <p className="text-sm font-bold text-teal-900 font-display">
-                  Loading Nirāmay Clinical Triage Portal (150k Encounter ML)...
-                </p>
-              </div>
-            }
-          >
-            <ClinicPortal />
-          </Suspense>
-        )}
-
         {view === 'welcome' && (
           <WelcomeScreen
             onStartCaseTaking={() => {
@@ -290,7 +320,6 @@ function MainApp() {
                 setView('selectFamily');
               }
             }}
-            onOpenClinicPortal={() => setView('clinicPortal')}
             onOpenRoster={handleRosterClick}
             onOpenFollowUps={handleFollowUpsClick}
             onOpenMch={handleMchClick}

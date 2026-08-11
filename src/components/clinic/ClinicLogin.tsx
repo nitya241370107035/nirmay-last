@@ -31,9 +31,10 @@ export interface ClinicProfile {
 
 interface ClinicLoginProps {
   onLoginSuccess: (profile: ClinicProfile) => void;
+  onBackToPortalSelector?: () => void;
 }
 
-export function ClinicLogin({ onLoginSuccess }: ClinicLoginProps) {
+export function ClinicLogin({ onLoginSuccess, onBackToPortalSelector }: ClinicLoginProps) {
   const [formData, setFormData] = useState<ClinicProfile>({
     clinicName: '',
     facilityCode: `PHC-${Math.floor(1000 + Math.random() * 9000)}`,
@@ -137,24 +138,37 @@ export function ClinicLogin({ onLoginSuccess }: ClinicLoginProps) {
       <div className="w-full max-w-3xl bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden">
         {/* Header Strip */}
         <div className="bg-gradient-to-r from-teal-900 via-teal-800 to-cyan-900 text-white p-6 sm:p-8">
-          <div className="flex items-center gap-4">
-            <div className="p-3.5 bg-white/15 backdrop-blur-md rounded-2xl border border-white/20 shadow-inner">
-              <Hospital className="w-9 h-9 text-teal-200" />
-            </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <span className="text-xs uppercase tracking-widest font-extrabold bg-teal-400/20 text-teal-200 px-2.5 py-0.5 rounded-full border border-teal-300/30">
-                  Facility Verification
-                </span>
-                <span className="text-xs text-teal-200/80">Station Setup</span>
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex items-center gap-4">
+              <div className="p-3.5 bg-white/15 backdrop-blur-md rounded-2xl border border-white/20 shadow-inner">
+                <Hospital className="w-9 h-9 text-teal-200" />
               </div>
-              <h1 className="text-2xl sm:text-3xl font-black tracking-tight mt-1">
-                Clinic Portal Registration & Login
-              </h1>
-              <p className="text-teal-100 text-xs sm:text-sm mt-0.5">
-                Register clinic facility credentials for ML-powered disease-risk triage & official referral slips.
-              </p>
+              <div>
+                <div className="flex items-center gap-2">
+                  <span className="text-xs uppercase tracking-widest font-extrabold bg-teal-400/20 text-teal-200 px-2.5 py-0.5 rounded-full border border-teal-300/30">
+                    Facility Verification
+                  </span>
+                  <span className="text-xs text-teal-200/80">Station Setup</span>
+                </div>
+                <h1 className="text-2xl sm:text-3xl font-black tracking-tight mt-1">
+                  Clinic Portal Registration & Login
+                </h1>
+                <p className="text-teal-100 text-xs sm:text-sm mt-0.5">
+                  Register clinic facility credentials for ML-powered disease-risk triage & official referral slips.
+                </p>
+              </div>
             </div>
+
+            {onBackToPortalSelector && (
+              <button
+                type="button"
+                onClick={onBackToPortalSelector}
+                className="px-3 py-1.5 bg-white/10 hover:bg-white/20 active:bg-white/30 text-teal-100 hover:text-white rounded-xl border border-white/20 text-xs font-bold transition flex items-center gap-1.5 shrink-0"
+              >
+                <ArrowRight className="w-3.5 h-3.5 rotate-180" />
+                <span>Exit to Portal Selection</span>
+              </button>
+            )}
           </div>
 
           {/* Quick Preset Buttons */}

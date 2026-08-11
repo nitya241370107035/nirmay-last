@@ -22,7 +22,8 @@ import {
   X,
   FileText,
   Activity,
-  Hospital
+  Hospital,
+  Building2
 } from 'lucide-react';
 
 const LANGUAGES: { code: LanguageCode; label: string; script: string }[] = [
@@ -44,7 +45,7 @@ interface HeaderProps {
   onAdherenceTrackerClick?: () => void;
   onChronicCareClick?: () => void;
   onGardenClick?: () => void;
-  onClinicPortalClick?: () => void;
+  onSwitchPortal?: () => void;
   currentView?: string;
   activeFamily?: Family | null;
   userMode?: 'patient' | 'healthWorker';
@@ -64,7 +65,7 @@ export const Header: React.FC<HeaderProps> = ({
   onAdherenceTrackerClick,
   onChronicCareClick,
   onGardenClick,
-  onClinicPortalClick,
+  onSwitchPortal,
   currentView = 'welcome',
   activeFamily,
   userMode = 'patient',
@@ -215,18 +216,6 @@ export const Header: React.FC<HeaderProps> = ({
 
         {/* Center Primary Navigation Tabs (Desktop) */}
         <nav className="hidden lg:flex items-center gap-1 bg-[#092422]/80 p-1 rounded-2xl border border-[#1E6B63]/50 text-xs shadow-inner">
-          <button
-            onClick={onClinicPortalClick}
-            className={`px-3 py-1.5 rounded-xl text-xs transition-all cursor-pointer flex items-center gap-1.5 shrink-0 font-bold ${
-              currentView === 'clinicPortal'
-                ? 'bg-teal-600 text-white shadow-md border border-teal-400'
-                : 'bg-teal-900/60 text-teal-200 hover:bg-teal-700 hover:text-white border border-teal-700/50'
-            }`}
-          >
-            <Hospital className="w-3.5 h-3.5 text-teal-300" />
-            <span>🏥 Clinic Portal (150k ML)</span>
-          </button>
-
           <button
             onClick={onHomeClick}
             className={`px-3 py-1.5 rounded-xl text-xs transition-all cursor-pointer flex items-center gap-1.5 shrink-0 font-medium ${
@@ -382,8 +371,19 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
         </nav>
 
-        {/* Language Switcher & Mobile Menu Button */}
+        {/* Language Switcher & Portal Switcher & Mobile Menu Button */}
         <div className="flex items-center gap-2 shrink-0">
+          {onSwitchPortal && (
+            <button
+              onClick={onSwitchPortal}
+              className="px-2.5 py-1 rounded-xl bg-teal-900/70 hover:bg-teal-700 active:bg-teal-600 text-teal-200 hover:text-white border border-teal-600/50 text-xs font-bold transition flex items-center gap-1.5 cursor-pointer shadow-inner"
+              title="Exit to Portal Selection Screen"
+            >
+              <Building2 className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Switch Portal</span>
+            </button>
+          )}
+
           <div className="flex items-center gap-1 bg-[#092422] p-1 rounded-xl border border-[#1E6B63]/50 font-mono text-xs shadow-inner">
             {LANGUAGES.map((lang) => (
               <button

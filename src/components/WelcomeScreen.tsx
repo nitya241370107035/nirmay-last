@@ -225,40 +225,18 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
             ))}
           </div>
 
-          {/* Primary Action Buttons */}
+          {/* Primary Action Button */}
           <div className="pt-2 space-y-4 font-sans">
-            {onOpenClinicPortal && (
-              <button
-                onClick={onOpenClinicPortal}
-                className="w-full min-h-[64px] inline-flex items-center justify-between gap-3 bg-gradient-to-r from-teal-700 via-teal-800 to-cyan-900 hover:opacity-95 active:scale-[0.99] text-white font-extrabold text-base sm:text-lg px-6 py-4 rounded-2xl border-2 border-teal-400/40 transition-all cursor-pointer shadow-[0_10px_28px_rgba(15,118,110,0.4)] group"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center shrink-0 border border-white/30">
-                    <Hospital className="w-6 h-6 text-teal-200" />
-                  </div>
-                  <div className="text-left">
-                    <span className="block tracking-tight text-white font-black text-lg">
-                      🏥 Open Clinic Triage Portal (150k ML)
-                    </span>
-                    <span className="block text-xs text-teal-200 font-medium">
-                      Mandatory Vitals • Dynamic Context Inquiry • Risk Stratification (94.04% Acc)
-                    </span>
-                  </div>
-                </div>
-                <ArrowRight className="w-6 h-6 text-teal-200 group-hover:translate-x-1.5 transition-transform" />
-              </button>
-            )}
-
             <button
               onClick={onStartCaseTaking}
-              className="w-full min-h-[52px] inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#1E6B63] via-[#1B4D4A] to-[#0F3835] hover:opacity-95 active:scale-[0.99] text-white font-extrabold text-sm sm:text-base px-6 py-3.5 rounded-2xl border border-[#38A394]/40 transition-all cursor-pointer shadow-md group"
+              className="w-full min-h-[58px] inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#1E6B63] via-[#1B4D4A] to-[#0F3835] hover:opacity-95 active:scale-[0.99] text-white font-extrabold text-base sm:text-lg px-8 py-4 rounded-2xl border border-[#38A394]/40 transition-all cursor-pointer shadow-[0_8px_24px_rgba(30,107,99,0.35)] group"
               aria-label={texts.startButton}
             >
-              <div className="w-7 h-7 rounded-xl bg-white/15 flex items-center justify-center shrink-0">
-                <Stethoscope className="w-4 h-4 text-emerald-200" />
+              <div className="w-8 h-8 rounded-xl bg-white/15 flex items-center justify-center shrink-0">
+                <Stethoscope className="w-5 h-5 text-emerald-200" />
               </div>
               <span className="tracking-tight">{texts.startButton}</span>
-              <ArrowRight className="w-4 h-4 text-emerald-200 group-hover:translate-x-1.5 transition-transform" />
+              <ArrowRight className="w-5 h-5 text-emerald-200 group-hover:translate-x-1.5 transition-transform" />
             </button>
 
             {/* Core Medical & Community Feature Cards Grid */}

@@ -90,12 +90,15 @@ interface PredictionResult {
     color: string;
     timeframe: string;
   };
-  vitalsEvaluated: Record<string, any>;
   activeSymptomsCount: number;
   activeSymptoms: Array<{ id: string; name: string; category: string; is_red_flag: boolean }>;
 }
 
-export function ClinicPortal() {
+interface ClinicPortalProps {
+  onSwitchPortal?: () => void;
+}
+
+export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
   const { i18n } = useTranslation();
   const currentLang = (i18n.language || 'en') as LanguageCode;
 
@@ -396,7 +399,12 @@ export function ClinicPortal() {
 
   // Authentication Guard: Show Clinic Login if not logged in
   if (!clinicProfile || !clinicProfile.isLoggedIn) {
-    return <ClinicLogin onLoginSuccess={(profile) => setClinicProfile(profile)} />;
+    return (
+      <ClinicLogin
+        onLoginSuccess={(profile) => setClinicProfile(profile)}
+        onBackToPortalSelector={onSwitchPortal}
+      />
+    );
   }
 
   const handleClinicLogout = () => {
@@ -442,19 +450,29 @@ export function ClinicPortal() {
           <div className="flex items-center gap-2">
             <button
               onClick={handleReset}
-              className="flex items-center gap-1.5 px-3.5 py-2 bg-white/10 hover:bg-white/20 active:bg-white/30 text-white text-xs sm:text-sm font-semibold rounded-xl border border-white/20 backdrop-blur-sm transition"
+              className="flex items-center gap-1.5 px-3 py-2 bg-white/10 hover:bg-white/20 active:bg-white/30 text-white text-xs sm:text-sm font-semibold rounded-xl border border-white/20 backdrop-blur-sm transition cursor-pointer"
             >
               <RefreshCw className="w-3.5 h-3.5" />
-              New Patient
+              <span>New Patient</span>
             </button>
             <button
               onClick={handleClinicLogout}
-              className="flex items-center gap-1.5 px-3 py-2 bg-rose-500/20 hover:bg-rose-500/30 active:bg-rose-500/40 text-rose-200 text-xs sm:text-sm font-semibold rounded-xl border border-rose-400/30 backdrop-blur-sm transition"
-              title="Sign Out / Switch Facility"
+              className="flex items-center gap-1.5 px-3 py-2 bg-white/10 hover:bg-white/20 active:bg-white/30 text-teal-100 hover:text-white text-xs sm:text-sm font-semibold rounded-xl border border-white/20 backdrop-blur-sm transition cursor-pointer"
+              title="Sign Out / Switch Clinic Credentials"
             >
-              <LogOut className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">Switch Clinic</span>
+              <Edit3 className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Edit Clinic</span>
             </button>
+            {onSwitchPortal && (
+              <button
+                onClick={onSwitchPortal}
+                className="flex items-center gap-1.5 px-3 py-2 bg-rose-500/20 hover:bg-rose-500/30 active:bg-rose-500/40 text-rose-200 text-xs sm:text-sm font-semibold rounded-xl border border-rose-400/30 backdrop-blur-sm transition cursor-pointer"
+                title="Exit to Portal Selection Gate"
+              >
+                <LogOut className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">Switch Portal</span>
+              </button>
+            )}
           </div>
         </div>
 
