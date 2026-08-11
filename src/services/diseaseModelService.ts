@@ -929,7 +929,7 @@ class DiseaseModelService {
         maxProbability: Number((maxProb * 100).toFixed(1)),
         topCandidates: rankedCandidates.slice(0, 5),
         isStoppingCriteriaMet: true,
-        stoppingReason: 'rounds_completed',
+        stoppingReason: 'max_questions',
         stoppingMessage: {
           en: `Multi-Round Comprehensive Triage Complete (${questionTurn} questions answered). Proceeding to XGBoost evaluation.`,
           hi: `बहु-चरणीय व्यापक ट्राइएज पूर्ण (${questionTurn} प्रश्न उत्तरित)। XGBoost निदान पर आगे बढ़ रहे हैं।`,

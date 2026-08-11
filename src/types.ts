@@ -268,6 +268,15 @@ export interface OutbreakAlert {
   riskLevel: RiskLevel;
   status: 'active' | 'resolved';
   distanceKm?: number;
+  contributingFacility?: {
+    clinicName: string;
+    facilityCode: string;
+    doctorName?: string;
+    verifiedAt: string;
+  };
+  customGuidance?: MultilingualText;
+  weeklyGrowthPct?: number;
+  affectedAreas?: string[];
 }
 
 export interface SyncQueueItem {
