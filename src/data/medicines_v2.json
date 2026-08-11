@@ -1203,5 +1203,91 @@
         "isOTC": true
       }
     ]
+  },
+  "heart_attack": {
+    "allopathy": [
+      {
+        "id": "aspirin_emergency_300mg",
+        "name": { "en": "Dispersible Aspirin 300mg (Chew Immediately)", "hi": "एस्पिरिन 300mg (तुरंत चबाएं)", "gu": "એસ્પિરિન 300mg (તુરંત ચાવીને ગળવી)" },
+        "system": "allopathy",
+        "benefit": { "en": "CRITICAL FIRST AID! Prevents blood clot enlargement and reduces heart muscle damage during heart attack.", "hi": "जीवनरक्षक प्राथमिक उपचार! दिल के दौरे में रक्त के थक्के को बढ़ने से रोकता है।", "gu": "જીવનરક્ષક પ્રાથમિક ઉપચાર! હાર્ટ એટેકમાં લોહી ગંઠાઈ જતું અટકાવે છે અને હૃદયના સ્નાયુઓને નુકસાનથી બચાવે છે." },
+        "sideEffects": { "en": "Mild gastric discomfort; only chew 1 single dose immediately in emergency.", "hi": "हल्की पेट की जलन।", "gu": "હળવી એસિડિટી." },
+        "howToTake": { "en": "Chew 1 tablet (300mg) immediately with little water while calling ambulance 108.", "hi": "एंबुलेंस 108 बुलाते समय 1 गोली तुरंत चबाकर निगलें।", "gu": "108 એમ્બ્યુલન્સ બોલાવતી વખતે 1 ગોળી તુરંત ચાવીને ગળી જવી." },
+        "contraindications": { "en": "Known active bleeding peptic ulcer or severe aspirin allergy.", "hi": "सक्रिय आंतरिक रक्तस्राव या गंभीर एलर्जी में बचें।", "gu": "અંદરથી લોહી વહેવાની તકલીફ હોય તો ન આપવી." },
+        "ageRestriction": "adult",
+        "pregnancySafe": false,
+        "lactationSafe": false,
+        "isOTC": true
+      },
+      {
+        "id": "sorbitrate_sublingual_5mg",
+        "name": { "en": "Sorbitrate / Nitroglycerin 5mg (Under Tongue)", "hi": "सोरबिट्रेट 5mg (जीभ के नीचे)", "gu": "સોર્બિટ્રેટ / નાઇટ્રોગ્લિસરીન 5mg (જીભ નીચે)" },
+        "system": "allopathy",
+        "benefit": { "en": "Rapidly dilates coronary blood vessels to restore oxygenated blood flow to ischemic heart muscle.", "hi": "हृदय की धमनियों को फैलाकर सीने के तेज दर्द में तुरंत राहत देता है।", "gu": "હૃદયની ધમનીઓ ખોલી છાતીના અસહ્ય દુખાવામાં તુરંત રાહત આપે છે." },
+        "sideEffects": { "en": "Sudden headache, dizziness or transient drop in blood pressure.", "hi": "हल्का सिरदर्द या चक्कर आना।", "gu": "હળવો માથાનો દુખાવો કે ચક્કર આવવા." },
+        "howToTake": { "en": "Place 1 tablet under the tongue and let it dissolve without swallowing.", "hi": "1 गोली जीभ के नीचे रखें, पानी से निगलना नहीं है।", "gu": "1 ગોળી જીભ નીચે મૂકવી, પાણીથી ગળી જવી નહીં." },
+        "contraindications": { "en": "Very low blood pressure (Systolic < 90 mmHg).", "hi": "अत्यंत कम रक्तचाप (BP < 90) में न लें।", "gu": "ખૂબ લો બ્લડ પ્રેશર (BP < 90) હોય ત્યારે ન લેવી." },
+        "ageRestriction": "adult",
+        "pregnancySafe": false,
+        "lactationSafe": false,
+        "isOTC": true
+      }
+    ],
+    "ayurveda": [
+      {
+        "id": "arjunarishta_hridya",
+        "name": { "en": "Arjunarishta / Arjuna Kwath (Cardiac Tonic)", "hi": "अर्जुनारिष्ट / अर्जुन छाल काढ़ा", "gu": "અર્જુનારિષ્ટ / અર્જુન છાલનો ક્વાથ" },
+        "system": "ayurveda",
+        "benefit": { "en": "Premier classical Ayurvedic cardio-protective herb that nourishes cardiac muscle fibers and balances vascular pressure.", "hi": "हृदय की मांसपेशियों को पोषण देने और धड़कन को सामान्य करने में सर्वश्रेष्ठ औषधि।", "gu": "હૃદયના સ્નાયુઓને મજબૂત કરવા અને રક્તવાહિનીઓને પોષણ આપવા માટે શ્રેષ્ઠ આયુર્વેદિક ઔષધિ." },
+        "sideEffects": { "en": "None reported in recommended therapeutic dosage.", "hi": "कोई दुष्प्रभाव नहीं।", "gu": "કોઈ આડઅસર નથી." },
+        "howToTake": { "en": "15-20ml twice daily with equal quantity of lukewarm water after meals.", "hi": "15-20ml दिन में दो बार भोजन के बाद बराबर गुनगुने पानी के साथ।", "gu": "15-20ml દિવસમાં બે વાર જમ્યા પછી સરખા ભાગે નવશેકા પાણી સાથે." },
+        "contraindications": { "en": "Emergency hospital medical care must always precede home herbal therapy.", "hi": "आपातकाल में पहले अस्पताल ले जाएं।", "gu": "ઇમરજન્સીમાં પહેલા તબીબી સારવાર લેવી." },
+        "ageRestriction": "adult",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      },
+      {
+        "id": "hridyarnava_prabhakar_ras",
+        "name": { "en": "Prabhakar Vati / Hridyarnava Ras", "hi": "प्रभाकर वटी / हृदयार्णव रस", "gu": "પ્રભાકર વટી / હૃદયાર્ણવ રસ" },
+        "system": "ayurveda",
+        "benefit": { "en": "Strengthens heart contraction, calms palpitations, chest tightness and shortness of breath.", "hi": "दिल की घबराहट, सीने का भारीपन और सांस फूलने को नियंत्रित करता है।", "gu": "છાતીનો ભારોભાર દુખાવો, ગભરામણ અને ધબકારાને શાંત કરે છે." },
+        "sideEffects": { "en": "Take under qualified Ayurvedic physician supervision.", "hi": "वैद्य के परामर्श अनुसार लें।", "gu": "વૈદ્યની દેખરેખ હેઠળ લેવી." },
+        "howToTake": { "en": "1 tablet twice daily with honey or Arjuna decoction after food.", "hi": "1 गोली दिन में दो बार भोजन के बाद।", "gu": "1 ગોળી દિવસમાં બે વાર જમ્યા પછી." },
+        "contraindications": { "en": "Avoid unsupervised administration during pregnancy.", "hi": "गर्भावस्था में न लें।", "gu": "ગર્ભાવસ્થામાં ન લેવી." },
+        "ageRestriction": "adult",
+        "pregnancySafe": false,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ],
+    "homeopathy": [
+      {
+        "id": "crataegus_mother_tincture",
+        "name": { "en": "Crataegus Oxyacantha Mother Tincture Q", "hi": "क्रैटेगस ऑक्सीकैंथा Q (हार्ट टॉनिक)", "gu": "ક્રેટિગસ ઓક્સીકેન્થા Q (હાર્ટ ટોનિક)" },
+        "system": "homeopathy",
+        "benefit": { "en": "Renowned homeopathic heart tonic that improves myocardial blood supply and dissolves arterial deposits.", "hi": "दिल की धमनियों में रक्त संचार सुधारने और कमजोरी दूर करने का विश्व प्रसिद्ध टॉनिक।", "gu": "હૃદયની ધમનીઓમાં લોહીનો પ્રવાહ વધારવા અને હૃદયની નબળાઈ દૂર કરવાનું ઉત્તમ હોમિયોપેથીક ટોનિક." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "10 drops in half cup of lukewarm water 3 times a day.", "hi": "आधे कप गुनगुने पानी में 10 बूंदें दिन में 3 बार।", "gu": "અડધા કપ નવશેકા પાણીમાં 10 ટીંપા દિવસમાં 3 વાર." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": "adult",
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      },
+      {
+        "id": "aconite_cactus_cardiac",
+        "name": { "en": "Aconitum Napellus 30C + Cactus Grandiflorus 30C", "hi": "एकोनाइट 30C + कैक्टस ग्रैंडिफ्लोरस 30C", "gu": "એકોનાઇટ 30C + કેક્ટસ ગ્રેન્ડિફ્લોરસ 30C" },
+        "system": "homeopathy",
+        "benefit": { "en": "Relieves suffocative cardiac constriction (iron band feeling) and extreme fear of death/restlessness.", "hi": "सीने में लोहे की बेल्ट जैसी जकड़न और घबराहट में तुरंत शांति प्रदान करता है।", "gu": "છાતીમાં લોખંડનો પટ્ટો બંધાયો હોય તેવી જકડન અને ગભરામણમાં તુરંત શાંતિ આપે છે." },
+        "sideEffects": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "howToTake": { "en": "4 pills under tongue every 15-30 minutes in acute distress.", "hi": "4 गोलियां जीभ के नीचे हर 15-30 मिनट में।", "gu": "4 ગોળી જીભ નીચે દર 15-30 મિનિટે." },
+        "contraindications": { "en": "None.", "hi": "कोई नहीं।", "gu": "કોઈ નહીં." },
+        "ageRestriction": null,
+        "pregnancySafe": true,
+        "lactationSafe": true,
+        "isOTC": true
+      }
+    ]
   }
 }

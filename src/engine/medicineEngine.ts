@@ -64,10 +64,14 @@ const DISEASE_ALIAS_MAP: Record<string, string> = {
   'diabetic peripheral neuropathy': 'hypoglycemia',
 
   // Cardiovascular
-  'angina': 'hypertension_crisis',
-  'heart attack': 'hypertension_crisis',
-  'heart failure': 'hypertension_crisis',
-  'hypertensive heart disease': 'hypertension_crisis',
+  'angina': 'heart_attack',
+  'heart attack': 'heart_attack',
+  'heart_attack': 'heart_attack',
+  'acute myocardial infarction': 'heart_attack',
+  'acute_myocardial_infarction': 'heart_attack',
+  'heart failure': 'heart_attack',
+  'hypertensive heart disease': 'heart_attack',
+  'cardiac_emergency': 'heart_attack',
   'hypertension': 'hypertension_crisis',
   'hypertension_crisis': 'hypertension_crisis',
 
