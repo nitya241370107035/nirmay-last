@@ -150,7 +150,7 @@ export const Header: React.FC<HeaderProps> = ({
       </div>
 
       {/* Main Navigation Bar */}
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 py-2 flex items-center justify-between gap-3">
+      <div className="w-full px-3 sm:px-6 lg:px-8 py-2 flex items-center justify-between gap-2.5 sm:gap-4">
         {/* Brand Logo & Household Badge */}
         <div className="flex items-center gap-2.5 shrink-0">
           <button
@@ -180,7 +180,7 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Active Family / Health Worker Badge */}
           {userMode === 'patient' && activeFamily && (
-            <div className="hidden md:flex items-center gap-2 px-3 py-1 bg-[#143B38] border border-[#2E7D73] rounded-xl text-xs text-white shadow-inner">
+            <div className="hidden 2xl:flex items-center gap-2 px-3 py-1 bg-[#143B38] border border-[#2E7D73] rounded-xl text-xs text-white shadow-inner">
               <div className="flex items-center gap-1.5 font-bold text-emerald-200">
                 <Home className="w-3.5 h-3.5 text-emerald-300 shrink-0" />
                 <span className="max-w-[130px] truncate">{activeFamily.name}</span>
@@ -199,7 +199,7 @@ export const Header: React.FC<HeaderProps> = ({
           )}
 
           {userMode === 'healthWorker' && (
-            <div className="hidden md:flex items-center gap-2 px-3 py-1 bg-amber-950/70 border border-amber-500/50 rounded-xl text-xs text-amber-200 shadow-inner">
+            <div className="hidden 2xl:flex items-center gap-2 px-3 py-1 bg-amber-950/70 border border-amber-500/50 rounded-xl text-xs text-amber-200 shadow-inner">
               <div className="flex items-center gap-1.5 font-bold text-amber-300">
                 <ShieldAlert className="w-3.5 h-3.5 text-amber-300 shrink-0" />
                 <span>Health Worker</span>
@@ -221,7 +221,7 @@ export const Header: React.FC<HeaderProps> = ({
         <nav className="hidden xl:flex items-center gap-1 bg-[#092422]/90 px-1.5 py-1 rounded-2xl border border-[#1E6B63]/60 text-xs shadow-inner shrink-0">
           <button
             onClick={onHomeClick}
-            className={`px-3 py-1.5 rounded-xl text-xs transition-all cursor-pointer flex items-center gap-1.5 shrink-0 font-medium ${
+            className={`px-2.5 py-1.5 rounded-xl text-xs transition-all cursor-pointer flex items-center gap-1.5 shrink-0 font-medium ${
               currentView === 'welcome' || currentView === 'caseTaking' || currentView === 'result'
                 ? 'bg-[#1E6B63] text-white font-bold shadow-sm border border-[#38A394]/50'
                 : 'text-[#B2DFD8] hover:text-white hover:bg-[#1E6B63]/30'
@@ -233,7 +233,7 @@ export const Header: React.FC<HeaderProps> = ({
 
           <button
             onClick={onAdherenceTrackerClick}
-            className={`px-3 py-1.5 rounded-xl text-xs transition-all cursor-pointer flex items-center gap-1.5 shrink-0 font-medium ${
+            className={`px-2.5 py-1.5 rounded-xl text-xs transition-all cursor-pointer flex items-center gap-1.5 shrink-0 font-medium ${
               currentView === 'adherence_tracker'
                 ? 'bg-[#1E6B63] text-white font-bold shadow-sm border border-[#38A394]/50'
                 : 'text-[#B2DFD8] hover:text-white hover:bg-[#1E6B63]/30'
@@ -245,7 +245,7 @@ export const Header: React.FC<HeaderProps> = ({
 
           <button
             onClick={onRosterClick}
-            className={`px-3 py-1.5 rounded-xl text-xs transition-all cursor-pointer flex items-center gap-1.5 shrink-0 font-medium ${
+            className={`px-2.5 py-1.5 rounded-xl text-xs transition-all cursor-pointer flex items-center gap-1.5 shrink-0 font-medium ${
               currentView === 'roster'
                 ? 'bg-[#1E6B63] text-white font-bold shadow-sm border border-[#38A394]/50'
                 : 'text-[#B2DFD8] hover:text-white hover:bg-[#1E6B63]/30'
@@ -257,7 +257,7 @@ export const Header: React.FC<HeaderProps> = ({
 
           <button
             onClick={onFollowUpsClick}
-            className={`px-3 py-1.5 rounded-xl text-xs transition-all cursor-pointer flex items-center gap-1.5 shrink-0 relative font-medium ${
+            className={`px-2.5 py-1.5 rounded-xl text-xs transition-all cursor-pointer flex items-center gap-1.5 shrink-0 relative font-medium ${
               currentView === 'followups'
                 ? 'bg-[#1E6B63] text-white font-bold shadow-sm border border-[#38A394]/50'
                 : 'text-[#B2DFD8] hover:text-white hover:bg-[#1E6B63]/30'
@@ -274,7 +274,7 @@ export const Header: React.FC<HeaderProps> = ({
 
           <button
             onClick={onMchClick}
-            className={`px-3 py-1.5 rounded-xl text-xs transition-all cursor-pointer flex items-center gap-1.5 shrink-0 font-medium ${
+            className={`px-2.5 py-1.5 rounded-xl text-xs transition-all cursor-pointer flex items-center gap-1.5 shrink-0 font-medium ${
               currentView === 'mch'
                 ? 'bg-[#1E6B63] text-white font-bold shadow-sm border border-[#38A394]/50'
                 : 'text-[#B2DFD8] hover:text-white hover:bg-[#1E6B63]/30'
@@ -288,7 +288,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="relative" ref={moreMenuRef}>
             <button
               onClick={() => setShowMoreMenu(!showMoreMenu)}
-              className={`px-3 py-1.5 rounded-xl text-xs transition-all cursor-pointer flex items-center gap-1.5 shrink-0 font-medium ${
+              className={`px-2.5 py-1.5 rounded-xl text-xs transition-all cursor-pointer flex items-center gap-1.5 shrink-0 font-medium ${
                 isMoreActive
                   ? 'bg-[#1E6B63] text-white font-bold shadow-sm border border-[#38A394]/50'
                   : 'text-[#B2DFD8] hover:text-white hover:bg-[#1E6B63]/30'
@@ -385,7 +385,7 @@ export const Header: React.FC<HeaderProps> = ({
         </nav>
 
         {/* Right Controls: Switch Portal, Language Switcher & Mobile Menu Button */}
-        <div className="flex items-center gap-2.5 shrink-0 ml-auto xl:ml-0">
+        <div className="flex items-center gap-2 sm:gap-2.5 shrink-0 ml-auto xl:ml-0">
           {onSwitchPortal && (
             <button
               onClick={onSwitchPortal}
@@ -397,12 +397,12 @@ export const Header: React.FC<HeaderProps> = ({
             </button>
           )}
 
-          <div className="flex items-center gap-1 bg-[#092422] p-1 rounded-xl border border-[#1E6B63]/50 font-mono text-xs shadow-inner">
+          <div className="flex items-center gap-0.5 bg-[#092422] p-1 rounded-xl border border-[#1E6B63]/60 text-xs shadow-inner shrink-0">
             {LANGUAGES.map((lang) => (
               <button
                 key={lang.code}
                 onClick={() => handleLanguageChange(lang.code)}
-                className={`min-h-[26px] px-2 py-0.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                className={`min-h-[26px] px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                   currentLang === lang.code
                     ? 'bg-[#1E6B63] text-white shadow-xs'
                     : 'text-[#B2DFD8] hover:text-white hover:bg-[#1E6B63]/30'
