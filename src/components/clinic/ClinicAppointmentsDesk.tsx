@@ -142,8 +142,8 @@ export function ClinicAppointmentsDesk({
         <div className="flex items-center gap-1.5 overflow-x-auto text-xs">
           {[
             { id: 'all', label: `All (${appointments.length})` },
-            { id: 'pending', label: '⏳ Pending Review' },
-            { id: 'confirmed', label: '✅ Confirmed Slots' },
+            { id: 'pending', label: 'Pending Review' },
+            { id: 'confirmed', label: 'Confirmed Slots' },
             { id: 'completed', label: 'Completed' },
             { id: 'cancelled', label: 'Cancelled' }
           ].map((f) => (

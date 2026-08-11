@@ -137,10 +137,10 @@ export function MyAppointmentsTracker({ familyId, onOpenBookModal }: MyAppointme
                         : 'bg-amber-50 text-amber-800 border-amber-300'
                     }`}
                   >
-                    {app.status === 'Pending' && '⏳ Pending Clinic Review'}
-                    {app.status === 'Confirmed' && '✅ Slot Confirmed'}
-                    {app.status === 'Completed' && '🩺 Completed'}
-                    {app.status === 'Cancelled' && '❌ Cancelled'}
+                    {app.status === 'Pending' && 'Pending Clinic Review'}
+                    {app.status === 'Confirmed' && 'Slot Confirmed'}
+                    {app.status === 'Completed' && 'Completed'}
+                    {app.status === 'Cancelled' && 'Cancelled'}
                   </span>
                 </div>
 

@@ -387,7 +387,7 @@ export function DoctorStation({ clinicProfile }: DoctorStationProps) {
             { id: 'waiting', label: 'Waiting Doctor' },
             { id: 'in_consultation', label: 'In Consultation' },
             { id: 'completed', label: 'Completed' },
-            { id: 'high_risk', label: '🚨 High Risk Flagged' }
+            { id: 'high_risk', label: 'High Risk Flagged' }
           ].map((f) => (
             <button
               key={f.id}
@@ -468,9 +468,9 @@ export function DoctorStation({ clinicProfile }: DoctorStationProps) {
                           ? 'bg-purple-50 text-purple-800 border-purple-200'
                           : 'bg-slate-100 text-slate-700 border-slate-200'
                       }`}>
-                        {rec.entrySource === 'triage_ml' && '🤖 ML Triage'}
-                        {rec.entrySource === 'manual_entry' && '✍️ Manual Entry'}
-                        {rec.entrySource === 'appointment' && '📅 Online Booking'}
+                        {rec.entrySource === 'triage_ml' && 'ML Triage'}
+                        {rec.entrySource === 'manual_entry' && 'Manual Entry'}
+                        {rec.entrySource === 'appointment' && 'Online Booking'}
                       </span>
                     </td>
 
@@ -559,8 +559,8 @@ export function DoctorStation({ clinicProfile }: DoctorStationProps) {
                 <div>
                   <h3 className="text-lg sm:text-xl font-black">
                     {activeModal === 'manual_create'
-                      ? '✍️ Add Digital Clinical Record (Manual Intake)'
-                      : `🩺 Doctor Consultation & EMR Edit: ${formData.patientName}`}
+                      ? 'Add Digital Clinical Record (Manual Intake)'
+                      : `Doctor Consultation & EMR Edit: ${formData.patientName}`}
                   </h3>
                   <p className="text-xs text-teal-100">
                     {clinicProfile.clinicName} • Attending: Dr. {clinicProfile.doctorInCharge}

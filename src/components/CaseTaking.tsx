@@ -642,12 +642,12 @@ export const CaseTaking: React.FC<CaseTakingProps> = ({ onComplete, onCancel }) 
       let aiMessageText = '';
       if (data.success && data.primaryDiagnosis) {
         aiMessageText =
-          `⚡ **AI Clinical Co-Pilot Opinion:**\n` +
-          `• Primary Condition: **${data.primaryDiagnosis}** (${data.confidence || mlPred.formattedConfidence})\n` +
-          `• Urgency: ${data.urgency === 'red' ? '🚨 Emergency Red' : data.urgency === 'orange' ? '⚠️ Orange Consult' : '🟢 Green Home/Community Care'}\n` +
+          `[AI Clinical Co-Pilot Evaluation]\n` +
+          `• Primary Condition: ${data.primaryDiagnosis} (${data.confidence || mlPred.formattedConfidence})\n` +
+          `• Urgency: ${data.urgency === 'red' ? 'Critical / Emergency Red' : data.urgency === 'orange' ? 'Urgent / Priority Consult' : 'Routine Community Care'}\n` +
           `• Clinical Logic: ${data.reasoning || 'Symptom matching complete.'}`;
       } else {
-        aiMessageText = `🤖 AI Co-Pilot: Model evaluation points to **${mlPred.primaryDisease}** (${mlPred.formattedConfidence}).`;
+        aiMessageText = `AI Co-Pilot: Model evaluation points to ${mlPred.primaryDisease} (${mlPred.formattedConfidence}).`;
       }
 
       setChatHistory((prev) => [

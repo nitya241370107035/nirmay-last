@@ -549,7 +549,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
             }`}
           >
             <Activity className="w-4 h-4 text-emerald-600" />
-            <span>🏥 Triage Station (ML Intake)</span>
+            <span>Triage Station (ML Intake)</span>
           </button>
 
           <button
@@ -561,7 +561,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
             }`}
           >
             <Stethoscope className="w-4 h-4 text-teal-600" />
-            <span>🩺 Doctor Station & EMR</span>
+            <span>Doctor Station & EMR</span>
           </button>
 
           <button
@@ -573,7 +573,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
             }`}
           >
             <Calendar className="w-4 h-4 text-amber-400" />
-            <span>📅 Appointments Desk</span>
+            <span>Appointments Desk</span>
           </button>
         </div>
       </div>

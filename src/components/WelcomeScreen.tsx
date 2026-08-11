@@ -252,7 +252,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
                   </div>
                   <div>
                     <span className="block font-black text-sm text-white tracking-tight">
-                      📅 Book Clinic Appointment & OPD
+                      Book Clinic & OPD Appointment
                     </span>
                     <span className="block text-[11px] text-teal-100/90 font-normal">
                       Reserve consultation slots at Anand PHC, Civil Hospital & CHCs

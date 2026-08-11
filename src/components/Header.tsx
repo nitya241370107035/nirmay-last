@@ -307,7 +307,7 @@ export const Header: React.FC<HeaderProps> = ({
                   }`}
                 >
                   <Calendar className="w-4 h-4 text-teal-300" />
-                  <span>📅 OPD Appointments</span>
+                  <span>OPD Appointments</span>
                 </button>
 
                 <button
