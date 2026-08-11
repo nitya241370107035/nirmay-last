@@ -21,9 +21,14 @@ import {
   User,
   Wind,
   XCircle,
-  Zap
+  Zap,
+  Building2,
+  LogOut,
+  MapPin,
+  Edit3
 } from 'lucide-react';
 import { LanguageCode } from '../../types';
+import { ClinicLogin, ClinicProfile } from './ClinicLogin';
 
 interface PatientInfo {
   name: string;
@@ -93,6 +98,22 @@ interface PredictionResult {
 export function ClinicPortal() {
   const { i18n } = useTranslation();
   const currentLang = (i18n.language || 'en') as LanguageCode;
+
+  // Clinic Authentication & Profile State
+  const [clinicProfile, setClinicProfile] = useState<ClinicProfile | null>(() => {
+    const saved = localStorage.getItem('niramay_clinic_profile');
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (parsed && parsed.isLoggedIn && parsed.clinicName) {
+          return parsed;
+        }
+      } catch {
+        return null;
+      }
+    }
+    return null;
+  });
 
   // Wizard Stepper: 1: Vitals & Info, 2: Chief Complaint, 3: Dynamic Inquiry, 4: Triage Result
   const [step, setStep] = useState<1 | 2 | 3 | 4>(1);
@@ -373,35 +394,66 @@ export function ClinicPortal() {
     }
   ];
 
+  // Authentication Guard: Show Clinic Login if not logged in
+  if (!clinicProfile || !clinicProfile.isLoggedIn) {
+    return <ClinicLogin onLoginSuccess={(profile) => setClinicProfile(profile)} />;
+  }
+
+  const handleClinicLogout = () => {
+    localStorage.removeItem('niramay_clinic_profile');
+    setClinicProfile(null);
+    handleReset();
+  };
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-6 font-sans text-slate-800">
       {/* Top Clinic Header */}
-      <div className="bg-gradient-to-r from-teal-800 via-teal-700 to-cyan-800 text-white rounded-2xl shadow-xl p-6 mb-6">
+      <div className="bg-gradient-to-r from-teal-900 via-teal-800 to-cyan-900 text-white rounded-2xl shadow-xl p-6 mb-6">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="bg-white/15 p-3 rounded-xl backdrop-blur-sm border border-white/20">
+          <div className="flex items-center gap-3.5">
+            <div className="bg-white/15 p-3 rounded-2xl backdrop-blur-sm border border-white/20 shadow-inner">
               <Hospital className="w-8 h-8 text-teal-200" />
             </div>
             <div>
-              <div className="flex items-center gap-2">
-                <h1 className="text-2xl font-bold tracking-tight">Nirāmay Clinical Triage Portal</h1>
-                <span className="bg-emerald-400/20 text-emerald-200 text-xs px-2.5 py-0.5 rounded-full border border-emerald-400/30 font-medium">
-                  Clinic Edition
+              <div className="flex flex-wrap items-center gap-2">
+                <h1 className="text-xl sm:text-2xl font-black tracking-tight">{clinicProfile.clinicName}</h1>
+                <span className="bg-emerald-400/20 text-emerald-200 text-xs px-2.5 py-0.5 rounded-full border border-emerald-400/30 font-mono font-bold">
+                  {clinicProfile.facilityCode}
+                </span>
+                <span className="bg-cyan-400/20 text-cyan-200 text-xs px-2.5 py-0.5 rounded-full border border-cyan-400/30 font-medium">
+                  {clinicProfile.department}
                 </span>
               </div>
-              <p className="text-teal-100 text-sm mt-0.5">
-                AI-Driven Risk Stratification & Dynamic Inquiry Engine • 150,735 Encounter Model (94.04% Accuracy)
-              </p>
+              
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-teal-100/90 mt-1">
+                <span className="flex items-center gap-1">
+                  <MapPin className="w-3 h-3 text-teal-300" />
+                  {clinicProfile.address}, {clinicProfile.cityDistrict} ({clinicProfile.state})
+                </span>
+                <span className="text-teal-400/40 hidden sm:inline">•</span>
+                <span className="flex items-center gap-1">
+                  <Stethoscope className="w-3 h-3 text-teal-300" />
+                  MO: <strong>{clinicProfile.doctorInCharge}</strong> ({clinicProfile.doctorDegree})
+                </span>
+              </div>
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
             <button
               onClick={handleReset}
-              className="flex items-center gap-1.5 px-3.5 py-2 bg-white/10 hover:bg-white/20 active:bg-white/30 text-white text-sm font-medium rounded-xl border border-white/20 backdrop-blur-sm transition"
+              className="flex items-center gap-1.5 px-3.5 py-2 bg-white/10 hover:bg-white/20 active:bg-white/30 text-white text-xs sm:text-sm font-semibold rounded-xl border border-white/20 backdrop-blur-sm transition"
             >
-              <RefreshCw className="w-4 h-4" />
+              <RefreshCw className="w-3.5 h-3.5" />
               New Patient
+            </button>
+            <button
+              onClick={handleClinicLogout}
+              className="flex items-center gap-1.5 px-3 py-2 bg-rose-500/20 hover:bg-rose-500/30 active:bg-rose-500/40 text-rose-200 text-xs sm:text-sm font-semibold rounded-xl border border-rose-400/30 backdrop-blur-sm transition"
+              title="Sign Out / Switch Facility"
+            >
+              <LogOut className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Switch Clinic</span>
             </button>
           </div>
         </div>
@@ -1201,17 +1253,55 @@ export function ClinicPortal() {
                 Referral & Triage Slip
               </h3>
 
-              <div className="p-4 border border-dashed border-slate-300 rounded-xl bg-slate-50/70 text-xs space-y-2">
-                <div className="text-center pb-2 border-b border-slate-200">
-                  <h4 className="font-bold text-slate-800">NIRĀMAY SMART CLINIC</h4>
-                  <p className="text-[10px] text-slate-500">Triage Summary Slip • {new Date().toLocaleDateString()}</p>
+              <div className="p-4 border-2 border-dashed border-teal-300 rounded-2xl bg-slate-50/90 text-xs space-y-3 shadow-inner">
+                <div className="text-center pb-2.5 border-b border-slate-200">
+                  <span className="text-[10px] uppercase tracking-widest font-extrabold text-teal-800 bg-teal-100/80 px-2 py-0.5 rounded">
+                    Official Clinical Triage Slip
+                  </span>
+                  <h4 className="font-black text-slate-900 text-sm uppercase mt-1 tracking-tight">
+                    {clinicProfile.clinicName}
+                  </h4>
+                  <p className="text-[11px] text-slate-600 font-medium leading-tight mt-0.5">
+                    {clinicProfile.address}, {clinicProfile.cityDistrict}, {clinicProfile.state} - {clinicProfile.pincode}
+                  </p>
+                  <p className="text-[10px] text-slate-500 font-mono mt-0.5">
+                    Reg / Facility ID: <strong>{clinicProfile.facilityCode}</strong> • Dept: {clinicProfile.department} • Ph: {clinicProfile.phone}
+                  </p>
+                  <p className="text-[10px] text-slate-400 mt-0.5">
+                    Date & Time: {new Date().toLocaleString()}
+                  </p>
                 </div>
-                <p><strong>Patient:</strong> {patientInfo.name || 'Anonymous'} ({patientInfo.age}y / {patientInfo.gender})</p>
-                <p><strong>UHID:</strong> {patientInfo.uhid}</p>
-                <p><strong>Category:</strong> <span className="font-bold">{predictionResult.riskCategory} Risk</span></p>
-                <p><strong>Chief Complaint:</strong> {chiefComplaint.replace('cc_', '').toUpperCase()}</p>
-                <div className="pt-2 border-t border-slate-200 text-right text-[10px] text-slate-400">
-                  Doctor / Nurse Signature: ___________________
+
+                <div className="space-y-1 text-slate-700">
+                  <div className="flex justify-between">
+                    <span><strong>Patient:</strong> {patientInfo.name || 'Anonymous'}</span>
+                    <span><strong>Age/Sex:</strong> {patientInfo.age}y / {patientInfo.gender}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span><strong>UHID:</strong> {patientInfo.uhid}</span>
+                    <span><strong>SpO2:</strong> {predictionResult.vitalsEvaluated.oxygenSaturation}% | <strong>HR:</strong> {predictionResult.vitalsEvaluated.heartRate} bpm</span>
+                  </div>
+                  <div className="flex justify-between items-center pt-1">
+                    <span><strong>Chief Complaint:</strong> {chiefComplaint.replace('cc_', '').toUpperCase()}</span>
+                    <span className={`px-2 py-0.5 rounded font-black text-xs ${
+                      predictionResult.riskCategory === 'High' ? 'bg-red-100 text-red-800 border border-red-300' : predictionResult.riskCategory === 'Medium' ? 'bg-amber-100 text-amber-800 border border-amber-300' : 'bg-emerald-100 text-emerald-800 border border-emerald-300'
+                    }`}>
+                      {predictionResult.riskCategory} Risk
+                    </span>
+                  </div>
+                </div>
+
+                <div className="pt-2 border-t border-slate-200 flex justify-between items-end text-[10px] text-slate-600">
+                  <div>
+                    <p className="font-bold text-slate-800">Attending MO: {clinicProfile.doctorInCharge}</p>
+                    <p className="text-[9px] text-slate-500">{clinicProfile.doctorDegree}</p>
+                  </div>
+                  <div className="text-right">
+                    <div className="w-24 h-6 border border-dashed border-slate-300 rounded mb-0.5 flex items-center justify-center text-[8px] text-slate-400">
+                      Doctor's Seal
+                    </div>
+                    <span className="text-[9px] text-slate-500">Sign & Stamp</span>
+                  </div>
                 </div>
               </div>
 
