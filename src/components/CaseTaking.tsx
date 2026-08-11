@@ -23,7 +23,8 @@ import {
   RotateCcw,
   History
 } from 'lucide-react';
-import { CaseData, LanguageCode } from '../types';
+import { CaseData, LanguageCode, OutbreakAlert } from '../types';
+import { db } from '../db/db';
 import { extractSymptoms, extractDuration } from '../engine/nlp';
 import symptomLexiconData from '../data/symptom_lexicon.json';
 import { triageModelService, TriageTemplate } from '../services/triageModelService';
@@ -80,6 +81,7 @@ export const CaseTaking: React.FC<CaseTakingProps> = ({ onComplete, onCancel }) 
   const [activeAdaptiveQuestion, setActiveAdaptiveQuestion] = useState<AdaptiveQuestion | null>(null);
   const [currentEntropy, setCurrentEntropy] = useState<number>(3.58);
   const [candidateDiseases, setCandidateDiseases] = useState<{ diseaseId?: string; name: string; probability: number; formattedProbability: string }[]>([]);
+  const [activeOutbreakAlerts, setActiveOutbreakAlerts] = useState<OutbreakAlert[]>([]);
   const [questionTurn, setQuestionTurn] = useState<number>(1);
   const [stoppingEvaluation, setStoppingEvaluation] = useState<AdaptiveInquiryEvaluation | null>(null);
   const [showRevisionPanel, setShowRevisionPanel] = useState<boolean>(true);
@@ -115,6 +117,13 @@ export const CaseTaking: React.FC<CaseTakingProps> = ({ onComplete, onCancel }) 
 
   const fileInputRef = useRef<HTMLInputElement>(null);
   const chatEndRef = useRef<HTMLDivElement>(null);
+
+  // Load active local outbreaks for contextual awareness
+  useEffect(() => {
+    db.alerts.where('status').equals('active').toArray().then((alerts) => {
+      setActiveOutbreakAlerts(alerts);
+    }).catch(() => {});
+  }, []);
 
   // Initial Bot Greeting
   useEffect(() => {
@@ -810,6 +819,31 @@ export const CaseTaking: React.FC<CaseTakingProps> = ({ onComplete, onCancel }) 
         {/* STAGE 2: ADAPTIVE ACTIVE INQUIRY (ENTROPY REDUCTION & XG-BOOST INFERENCE) */}
         {stage === 'relevant_questions' && (
           <div className="bg-white rounded-2xl border-2 border-emerald-500/30 p-4 sm:p-5 shadow-md space-y-4 animate-in fade-in slide-in-from-bottom-2 duration-300">
+            {/* Contextual Local Outbreak Alert Notice (if symptom matches active epidemic) */}
+            {activeOutbreakAlerts.length > 0 && (
+              <div className="bg-gradient-to-r from-red-950 via-red-900 to-rose-900 text-white rounded-xl p-3 border border-red-500/40 text-xs flex items-center justify-between gap-2 shadow-xs">
+                <div className="flex items-center gap-2">
+                  <span className="text-base animate-pulse">🚨</span>
+                  <div>
+                    <span className="font-black text-red-200">
+                      {currentLang === 'gu' ? 'સ્થાનિક રોગચાળો ચેતવણી:' : currentLang === 'hi' ? 'स्थानीय प्रकोप चेतावनी:' : 'Local Community Outbreak:'}
+                    </span>{' '}
+                    <span className="font-semibold text-white">
+                      {activeOutbreakAlerts[0].diseaseName[currentLang] || activeOutbreakAlerts[0].diseaseName.en} ({activeOutbreakAlerts[0].center?.villageName || 'Sanand'})
+                    </span>
+                    {activeOutbreakAlerts[0].contributingFacility && (
+                      <span className="text-[10px] text-red-200 block">
+                        Verified by {activeOutbreakAlerts[0].contributingFacility.clinicName}
+                      </span>
+                    )}
+                  </div>
+                </div>
+                <span className="text-[10px] bg-red-600 px-2 py-0.5 rounded-full font-bold uppercase shrink-0">
+                  Active Notice
+                </span>
+              </div>
+            )}
+
             {/* Header Badge & Confidence + Entropy Meter */}
             <div className="border-b border-emerald-100 pb-3 space-y-2.5">
               <div className="flex items-center justify-between">

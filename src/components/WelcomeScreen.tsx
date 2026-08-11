@@ -21,6 +21,7 @@ import { getTranslations } from '../utils/translations';
 import { PulseLine } from './PulseLine';
 import { SeasonalAdvisoryCard } from './SeasonalAdvisoryCard';
 import { InAppReminderBanner } from './adherence/InAppReminderBanner';
+import { LiveCommunityOutbreakBanner } from './outbreak/LiveCommunityOutbreakBanner';
 
 interface WelcomeScreenProps {
   onStartCaseTaking: () => void;
@@ -157,6 +158,12 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
             onOpenTracker={onOpenAdherenceTracker}
           />
         )}
+
+        {/* Live Hospital-Verified Community Outbreak Alert Banner */}
+        <LiveCommunityOutbreakBanner
+          currentLang={currentLang}
+          onOpenOutbreaks={onOpenOutbreaks}
+        />
 
         {/* Main Hero Card in Elevated Glass Style */}
         <div className="glass-card p-6 sm:p-10 text-center space-y-6 relative overflow-hidden border border-[#D5E2DF]">

@@ -579,6 +579,12 @@ export const OutbreakScreen: React.FC = () => {
                               <span>{alert.distanceKm} km away {selectedRegion.isGps ? '(from GPS)' : ''}</span>
                             </span>
                           )}
+
+                          {alert.contributingFacility && (
+                            <span className="text-[10px] font-extrabold px-2.5 py-0.5 rounded-lg bg-teal-100 text-teal-800 border border-teal-300 inline-flex items-center gap-1">
+                              🛡️ Verified by {alert.contributingFacility.clinicName}
+                            </span>
+                          )}
                         </div>
 
                         <h4 className="font-bold text-base sm:text-lg text-[#1B4D4A] mt-1 font-display">
@@ -588,6 +594,16 @@ export const OutbreakScreen: React.FC = () => {
                         <p className="text-xs text-[#5F6D6C] font-sans">
                           Location Sector: <strong>{alert.center.villageName || 'Local Village Sector'}</strong> ({alert.radiusKm} km radius)
                         </p>
+
+                        {alert.affectedAreas && alert.affectedAreas.length > 0 && (
+                          <div className="flex flex-wrap gap-1 pt-1">
+                            {alert.affectedAreas.map((area, aIdx) => (
+                              <span key={aIdx} className="text-[10px] bg-slate-100 text-slate-700 font-semibold px-2 py-0.5 rounded-md border border-slate-200">
+                                📍 {area}
+                              </span>
+                            ))}
+                          </div>
+                        )}
                       </div>
 
                       <div className="text-right bg-[#EDF1F0] p-3 rounded-xl border border-[#DDE3E2] shrink-0">
@@ -597,8 +613,20 @@ export const OutbreakScreen: React.FC = () => {
                         <div className="text-[10px] text-[#5F6D6C] uppercase font-bold">
                           LAST 7 DAYS
                         </div>
+                        {alert.weeklyGrowthPct && alert.weeklyGrowthPct > 0 && (
+                          <div className="text-[10px] font-black text-red-600 mt-0.5">
+                            +{alert.weeklyGrowthPct}% Surge
+                          </div>
+                        )}
                       </div>
                     </div>
+
+                    {alert.customGuidance && (
+                      <div className="bg-teal-50/80 p-2.5 rounded-xl border border-teal-200 text-xs text-teal-950 leading-relaxed">
+                        💡 <strong>Hospital Advisory:</strong>{' '}
+                        {alert.customGuidance[currentLang] || alert.customGuidance.en}
+                      </div>
+                    )}
 
                     <div className="flex items-center justify-between pt-2 border-t border-[#DDE3E2]">
                       <div className="text-xs text-[#5F6D6C] font-mono">
