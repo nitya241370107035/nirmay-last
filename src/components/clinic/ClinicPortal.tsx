@@ -30,7 +30,7 @@ import {
   FileText
 } from 'lucide-react';
 import { LanguageCode } from '../../types';
-import { getTranslations, getChiefComplaintCategories, getChiefComplaintLabel } from '../../utils/translations';
+import { getTranslations, getChiefComplaintCategories, getChiefComplaintLabel, getRiskDetails } from '../../utils/translations';
 import { ClinicLogin, ClinicProfile } from './ClinicLogin';
 import { DoctorStation } from './DoctorStation';
 import { EMRRecordsStation } from './EMRRecordsStation';
@@ -1259,239 +1259,223 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
       )}
 
       {/* ================= STEP 4: CLINICAL TRIAGE DECISION & RISK RESULT ================= */}
-      {step === 4 && predictionResult && (
-        <div className="space-y-6">
-          {/* Main Risk Category Banner */}
-          <div className={`p-6 rounded-3xl border shadow-lg ${
-            predictionResult.riskCategory === 'High'
-              ? 'bg-gradient-to-r from-red-700 via-rose-700 to-red-800 text-white border-red-900 shadow-red-100'
-              : predictionResult.riskCategory === 'Medium'
-              ? 'bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-600 text-white border-amber-700 shadow-amber-100'
-              : 'bg-gradient-to-r from-emerald-700 via-teal-700 to-green-700 text-white border-emerald-800 shadow-emerald-100'
-          }`}>
-            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-              <div className="flex items-center gap-4">
-                <div className="p-3.5 bg-white/20 backdrop-blur-md rounded-2xl border border-white/30">
-                  <ShieldAlert className="w-10 h-10 text-white" />
-                </div>
-                <div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs uppercase tracking-widest font-extrabold bg-white/20 px-2.5 py-0.5 rounded-full">
-                      Triage Stratification
-                    </span>
-                    <span className="text-xs text-white/90">
-                      Confidence: {(predictionResult.confidence * 100).toFixed(1)}%
-                    </span>
+      {step === 4 && predictionResult && (() => {
+        const riskDetails = getRiskDetails(predictionResult.riskCategory, currentLang);
+        return (
+          <div className="space-y-6">
+            {/* Main Risk Category Banner */}
+            <div className={`p-6 rounded-3xl border shadow-lg ${
+              predictionResult.riskCategory === 'High'
+                ? 'bg-gradient-to-r from-red-700 via-rose-700 to-red-800 text-white border-red-900 shadow-red-100'
+                : predictionResult.riskCategory === 'Medium'
+                ? 'bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-600 text-white border-amber-700 shadow-amber-100'
+                : 'bg-gradient-to-r from-emerald-700 via-teal-700 to-green-700 text-white border-emerald-800 shadow-emerald-100'
+            }`}>
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div className="flex items-center gap-4">
+                  <div className="p-3.5 bg-white/20 backdrop-blur-md rounded-2xl border border-white/30">
+                    <ShieldAlert className="w-10 h-10 text-white" />
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-black tracking-tight mt-0.5">
-                    {predictionResult.riskCategory.toUpperCase()} RISK CATEGORY
-                  </h2>
-                  <p className="text-white/90 text-sm mt-1">
-                    {predictionResult.disposition.urgency} • {predictionResult.disposition.timeframe}
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-white/15 backdrop-blur-md p-4 rounded-2xl border border-white/20 text-center min-w-[160px]">
-                <span className="text-xs text-white/80 uppercase font-semibold">Risk Probabilities</span>
-                <div className="grid grid-cols-3 gap-2 mt-1 text-xs font-bold">
-                  <div className="p-1 rounded bg-white/10">
-                    <span className="text-[10px] block opacity-80">Low</span>
-                    {(predictionResult.probabilities.Low * 100).toFixed(0)}%
-                  </div>
-                  <div className="p-1 rounded bg-white/10">
-                    <span className="text-[10px] block opacity-80">Med</span>
-                    {(predictionResult.probabilities.Medium * 100).toFixed(0)}%
-                  </div>
-                  <div className="p-1 rounded bg-white/10">
-                    <span className="text-[10px] block opacity-80">High</span>
-                    {(predictionResult.probabilities.High * 100).toFixed(0)}%
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Critical Red Flags Box if any */}
-          {predictionResult.clinicalFlags && predictionResult.clinicalFlags.length > 0 && (
-            <div className="bg-red-50 border-2 border-red-300 rounded-2xl p-4">
-              <h3 className="text-sm font-bold text-red-900 flex items-center gap-2 mb-2">
-                <AlertTriangle className="w-4 h-4 text-red-600" />
-                Active Clinical Warning Flags Detected
-              </h3>
-              <ul className="space-y-1 text-xs text-red-800 font-medium list-disc list-inside">
-                {predictionResult.clinicalFlags.map((flag, idx) => (
-                  <li key={idx}>
-                    <strong className="font-bold">[{flag.level}]</strong> {flag.message}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-
-          {/* Disposition & Action Plan */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div className="lg:col-span-2 bg-white rounded-2xl border border-slate-200 p-6 shadow-sm space-y-4">
-              <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2 pb-3 border-b border-slate-100">
-                <Stethoscope className="w-5 h-5 text-teal-600" />
-                Clinical Action Plan & Triage Directives
-              </h3>
-
-              <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
-                <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Immediate Clinical Action</span>
-                <p className="text-base font-bold text-slate-800 mt-1">
-                  {predictionResult.disposition.action}
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-                <div className="p-3 bg-teal-50/60 border border-teal-200 rounded-xl">
-                  <span className="font-bold text-teal-900 block mb-1">Recommended Investigations</span>
-                  <ul className="list-disc list-inside text-teal-800 space-y-0.5">
-                    {predictionResult.riskCategory === 'High' ? (
-                      <>
-                        <li>12-Lead Electrocardiogram (ECG)</li>
-                        <li>Arterial Blood Gas (ABG) & Serum Lactate</li>
-                        <li>Complete Blood Count & Cardiac Troponin-I</li>
-                        <li>Immediate IV access & Continuous SpO2 Monitoring</li>
-                      </>
-                    ) : predictionResult.riskCategory === 'Medium' ? (
-                      <>
-                        <li>Vital sign monitoring every 30 minutes</li>
-                        <li>Blood Glucose & CBC with Differential</li>
-                        <li>Focused physical & chest auscultation</li>
-                        <li>Physician evaluation within 1 hour</li>
-                      </>
-                    ) : (
-                      <>
-                        <li>Standard vital sign checkup</li>
-                        <li>Symptomatic supportive treatment</li>
-                        <li>Oral rehydration & rest advice</li>
-                        <li>Follow up in 48 hours if worsening</li>
-                      </>
-                    )}
-                  </ul>
-                </div>
-
-                <div className="p-3 bg-slate-50 border border-slate-200 rounded-xl">
-                  <span className="font-bold text-slate-800 block mb-1">Patient Vitals Record</span>
-                  <div className="space-y-1 text-slate-600">
-                    <p><strong>SpO2:</strong> {predictionResult.vitalsEvaluated.oxygenSaturation}%</p>
-                    <p><strong>Heart Rate:</strong> {predictionResult.vitalsEvaluated.heartRate} bpm</p>
-                    <p><strong>BP:</strong> {predictionResult.vitalsEvaluated.systolicBp} / {predictionResult.vitalsEvaluated.diastolicBp} mmHg</p>
-                    <p><strong>Temperature:</strong> {predictionResult.vitalsEvaluated.bodyTemperature} °C</p>
-                    <p><strong>BMI:</strong> {predictionResult.vitalsEvaluated.derivedBmi} kg/m²</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Active Symptoms Tags */}
-              <div>
-                <span className="text-xs font-bold text-slate-700 block mb-2">Confirmed Symptoms ({predictionResult.activeSymptoms.length})</span>
-                <div className="flex flex-wrap gap-2">
-                  {predictionResult.activeSymptoms.map((s) => (
-                    <span
-                      key={s.id}
-                      className={`text-xs px-2.5 py-1 rounded-lg font-semibold flex items-center gap-1 border ${
-                        s.is_red_flag
-                          ? 'bg-rose-100 text-rose-800 border-rose-300'
-                          : 'bg-teal-50 text-teal-800 border-teal-200'
-                      }`}
-                    >
-                      {s.is_red_flag && <AlertTriangle className="w-3 h-3 text-rose-600" />}
-                      {s.name}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Right Column: Printable Slip Action */}
-            <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm space-y-4">
-              <h3 className="text-sm font-bold text-slate-800 pb-2 border-b border-slate-100 flex items-center gap-2">
-                <Printer className="w-4 h-4 text-teal-600" />
-                Referral & Triage Slip
-              </h3>
-
-              <div className="p-4 border-2 border-dashed border-teal-300 rounded-2xl bg-slate-50/90 text-xs space-y-3 shadow-inner">
-                <div className="text-center pb-2.5 border-b border-slate-200">
-                  <span className="text-[10px] uppercase tracking-widest font-extrabold text-teal-800 bg-teal-100/80 px-2 py-0.5 rounded">
-                    Official Clinical Triage Slip
-                  </span>
-                  <h4 className="font-black text-slate-900 text-sm uppercase mt-1 tracking-tight">
-                    {clinicProfile.clinicName}
-                  </h4>
-                  <p className="text-[11px] text-slate-600 font-medium leading-tight mt-0.5">
-                    {clinicProfile.address}, {clinicProfile.cityDistrict}, {clinicProfile.state} - {clinicProfile.pincode}
-                  </p>
-                  <p className="text-[10px] text-slate-500 font-mono mt-0.5">
-                    Reg / Facility ID: <strong>{clinicProfile.facilityCode}</strong> • Dept: {clinicProfile.department} • Ph: {clinicProfile.phone}
-                  </p>
-                  <p className="text-[10px] text-slate-400 mt-0.5">
-                    Date & Time: {new Date().toLocaleString()}
-                  </p>
-                </div>
-
-                <div className="space-y-1 text-slate-700">
-                  <div className="flex justify-between">
-                    <span><strong>Patient:</strong> {patientInfo.name || 'Anonymous'}</span>
-                    <span><strong>Age/Sex:</strong> {patientInfo.age}y / {patientInfo.gender}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span><strong>UHID:</strong> {patientInfo.uhid}</span>
-                    <span><strong>SpO2:</strong> {predictionResult.vitalsEvaluated.oxygenSaturation}% | <strong>HR:</strong> {predictionResult.vitalsEvaluated.heartRate} bpm</span>
-                  </div>
-                  <div className="flex justify-between items-center pt-1">
-                    <span><strong>Chief Complaint:</strong> {chiefComplaint.replace('cc_', '').toUpperCase()}</span>
-                    <span className={`px-2 py-0.5 rounded font-black text-xs ${
-                      predictionResult.riskCategory === 'High' ? 'bg-red-100 text-red-800 border border-red-300' : predictionResult.riskCategory === 'Medium' ? 'bg-amber-100 text-amber-800 border border-amber-300' : 'bg-emerald-100 text-emerald-800 border border-emerald-300'
-                    }`}>
-                      {predictionResult.riskCategory} Risk
-                    </span>
-                  </div>
-                </div>
-
-                <div className="pt-2 border-t border-slate-200 flex justify-between items-end text-[10px] text-slate-600">
                   <div>
-                    <p className="font-bold text-slate-800">Attending MO: {clinicProfile.doctorInCharge}</p>
-                    <p className="text-[9px] text-slate-500">{clinicProfile.doctorDegree}</p>
-                  </div>
-                  <div className="text-right">
-                    <div className="w-24 h-6 border border-dashed border-slate-300 rounded mb-0.5 flex items-center justify-center text-[8px] text-slate-400">
-                      Doctor's Seal
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs uppercase tracking-widest font-extrabold bg-white/20 px-2.5 py-0.5 rounded-full">
+                        {currentLang === 'gu' ? 'ટ્રાયજ વર્ગીકરણ' : currentLang === 'hi' ? 'ट्राइएज वर्गीकरण' : 'Triage Stratification'}
+                      </span>
+                      <span className="text-xs text-white/90">
+                        {currentLang === 'gu' ? 'વિશ્વસનીયતા' : currentLang === 'hi' ? 'विश्वसनीयता' : 'Confidence'}: {(predictionResult.confidence * 100).toFixed(1)}%
+                      </span>
                     </div>
-                    <span className="text-[9px] text-slate-500">Sign & Stamp</span>
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight mt-0.5">
+                      {riskDetails.categoryTitle}
+                    </h2>
+                    <p className="text-white/90 text-xs sm:text-sm mt-1">
+                      {riskDetails.categorySubtitle}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white/15 backdrop-blur-md p-4 rounded-2xl border border-white/20 text-center min-w-[160px]">
+                  <span className="text-xs text-white/80 uppercase font-semibold">{riskDetails.riskProbabilitiesLabel}</span>
+                  <div className="grid grid-cols-3 gap-2 mt-1 text-xs font-bold">
+                    <div className="p-1 rounded bg-white/10">
+                      <span className="text-[10px] block opacity-80">{riskDetails.lowLabel}</span>
+                      {(predictionResult.probabilities.Low * 100).toFixed(0)}%
+                    </div>
+                    <div className="p-1 rounded bg-white/10">
+                      <span className="text-[10px] block opacity-80">{riskDetails.medLabel}</span>
+                      {(predictionResult.probabilities.Medium * 100).toFixed(0)}%
+                    </div>
+                    <div className="p-1 rounded bg-white/10">
+                      <span className="text-[10px] block opacity-80">{riskDetails.highLabel}</span>
+                      {(predictionResult.probabilities.High * 100).toFixed(0)}%
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Critical Red Flags Box if any */}
+            {predictionResult.clinicalFlags && predictionResult.clinicalFlags.length > 0 && (
+              <div className="bg-red-50 border-2 border-red-300 rounded-2xl p-4">
+                <h3 className="text-sm font-bold text-red-900 flex items-center gap-2 mb-2">
+                  <AlertTriangle className="w-4 h-4 text-red-600" />
+                  {currentLang === 'gu' ? 'સક્રિય ક્લિનિકલ ચેતવણી ચિહ્નો મળ્યા' : currentLang === 'hi' ? 'सक्रिय क्लिनिकल चेतावनी संकेत' : 'Active Clinical Warning Flags Detected'}
+                </h3>
+                <ul className="space-y-1 text-xs text-red-800 font-medium list-disc list-inside">
+                  {predictionResult.clinicalFlags.map((flag, idx) => (
+                    <li key={idx}>
+                      <strong className="font-bold">[{flag.level}]</strong> {flag.message}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* Disposition & Action Plan */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              <div className="lg:col-span-2 bg-white rounded-2xl border border-slate-200 p-6 shadow-sm space-y-4">
+                <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2 pb-3 border-b border-slate-100">
+                  <Stethoscope className="w-5 h-5 text-teal-600" />
+                  {riskDetails.actionPlanTitle}
+                </h3>
+
+                <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
+                  <span className="text-xs font-bold uppercase tracking-wider text-slate-500">{riskDetails.immediateActionLabel}</span>
+                  <p className="text-base font-bold text-slate-800 mt-1">
+                    {riskDetails.immediateAction}
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                  <div className="p-3 bg-teal-50/60 border border-teal-200 rounded-xl">
+                    <span className="font-bold text-teal-900 block mb-1">{riskDetails.investigationsLabel}</span>
+                    <ul className="list-disc list-inside text-teal-800 space-y-0.5">
+                      {riskDetails.recommendedInvestigations.map((inv, i) => (
+                        <li key={i}>{inv}</li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="p-3 bg-slate-50 border border-slate-200 rounded-xl">
+                    <span className="font-bold text-slate-800 block mb-1">{riskDetails.vitalsRecordLabel}</span>
+                    <div className="space-y-1 text-slate-600">
+                      <p><strong>SpO2:</strong> {predictionResult.vitalsEvaluated.oxygenSaturation}%</p>
+                      <p><strong>{currentLang === 'gu' ? 'પલ્સ / ધબકારા' : currentLang === 'hi' ? 'हृदय गति' : 'Heart Rate'}:</strong> {predictionResult.vitalsEvaluated.heartRate} bpm</p>
+                      <p><strong>BP:</strong> {predictionResult.vitalsEvaluated.systolicBp} / {predictionResult.vitalsEvaluated.diastolicBp} mmHg</p>
+                      <p><strong>{currentLang === 'gu' ? 'તાપમાન' : currentLang === 'hi' ? 'तापमान' : 'Temperature'}:</strong> {predictionResult.vitalsEvaluated.bodyTemperature} °C</p>
+                      <p><strong>BMI:</strong> {predictionResult.vitalsEvaluated.derivedBmi} kg/m²</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Active Symptoms Tags */}
+                <div>
+                  <span className="text-xs font-bold text-slate-700 block mb-2">{riskDetails.confirmedSymptomsLabel} ({predictionResult.activeSymptoms.length})</span>
+                  <div className="flex flex-wrap gap-2">
+                    {predictionResult.activeSymptoms.map((s) => (
+                      <span
+                        key={s.id}
+                        className={`text-xs px-2.5 py-1 rounded-lg font-semibold flex items-center gap-1 border ${
+                          s.is_red_flag
+                            ? 'bg-rose-100 text-rose-800 border-rose-300'
+                            : 'bg-teal-50 text-teal-800 border-teal-200'
+                        }`}
+                      >
+                        {s.is_red_flag && <AlertTriangle className="w-3 h-3 text-rose-600" />}
+                        {getChiefComplaintLabel(s.id, currentLang) || s.name}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>
 
-              <button
-                onClick={() => window.print()}
-                className="w-full py-3 bg-slate-800 hover:bg-slate-900 text-white font-bold rounded-xl text-xs flex items-center justify-center gap-2 shadow transition"
-              >
-                <Printer className="w-4 h-4" />
-                Print Clinical Triage Slip
-              </button>
+              {/* Right Column: Printable Slip Action */}
+              <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm space-y-4">
+                <h3 className="text-sm font-bold text-slate-800 pb-2 border-b border-slate-100 flex items-center gap-2">
+                  <Printer className="w-4 h-4 text-teal-600" />
+                  {riskDetails.slipTitle}
+                </h3>
 
-              <button
-                onClick={() => setActiveTab('doctor_station')}
-                className="w-full py-3 bg-gradient-to-r from-teal-800 to-teal-900 hover:from-teal-700 hover:to-teal-800 text-white font-bold rounded-xl text-xs flex items-center justify-center gap-2 shadow-md transition cursor-pointer"
-              >
-                <Stethoscope className="w-4 h-4 text-teal-300" />
-                Open in Doctor Station (EMR & Prescriptions) →
-              </button>
+                <div className="p-4 border-2 border-dashed border-teal-300 rounded-2xl bg-slate-50/90 text-xs space-y-3 shadow-inner">
+                  <div className="text-center pb-2.5 border-b border-slate-200">
+                    <span className="text-[10px] uppercase tracking-widest font-extrabold text-teal-800 bg-teal-100/80 px-2 py-0.5 rounded">
+                      {riskDetails.slipHeader}
+                    </span>
+                    <h4 className="font-black text-slate-900 text-sm uppercase mt-1 tracking-tight">
+                      {clinicProfile.clinicName}
+                    </h4>
+                    <p className="text-[11px] text-slate-600 font-medium leading-tight mt-0.5">
+                      {clinicProfile.address}, {clinicProfile.cityDistrict}, {clinicProfile.state} - {clinicProfile.pincode}
+                    </p>
+                    <p className="text-[10px] text-slate-500 font-mono mt-0.5">
+                      Reg / Facility ID: <strong>{clinicProfile.facilityCode}</strong> • Dept: {clinicProfile.department} • Ph: {clinicProfile.phone}
+                    </p>
+                    <p className="text-[10px] text-slate-400 mt-0.5">
+                      {currentLang === 'gu' ? 'તારીખ અને સમય' : currentLang === 'hi' ? 'दिनांक एवं समय' : 'Date & Time'}: {new Date().toLocaleString()}
+                    </p>
+                  </div>
 
-              <button
-                onClick={handleReset}
-                className="w-full py-3 bg-teal-50 hover:bg-teal-100 text-teal-800 border border-teal-200 font-bold rounded-xl text-xs flex items-center justify-center gap-2 transition cursor-pointer"
-              >
-                <PlusCircle className="w-4 h-4" />
-                Intake Next Patient
-              </button>
+                  <div className="space-y-1 text-slate-700">
+                    <div className="flex justify-between">
+                      <span><strong>{riskDetails.patientLabel}:</strong> {patientInfo.name || (currentLang === 'gu' ? 'અનામી' : currentLang === 'hi' ? 'गुमनाम' : 'Anonymous')}</span>
+                      <span><strong>{riskDetails.ageSexLabel}:</strong> {patientInfo.age}y / {patientInfo.gender}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span><strong>{riskDetails.uhidLabel}:</strong> {patientInfo.uhid}</span>
+                      <span><strong>SpO2:</strong> {predictionResult.vitalsEvaluated.oxygenSaturation}% | <strong>HR:</strong> {predictionResult.vitalsEvaluated.heartRate} bpm</span>
+                    </div>
+                    <div className="flex justify-between items-center pt-1">
+                      <span><strong>{riskDetails.chiefComplaintLabel}:</strong> {getChiefComplaintLabel(chiefComplaint, currentLang)}</span>
+                      <span className={`px-2 py-0.5 rounded font-black text-xs ${
+                        predictionResult.riskCategory === 'High' ? 'bg-red-100 text-red-800 border border-red-300' : predictionResult.riskCategory === 'Medium' ? 'bg-amber-100 text-amber-800 border border-amber-300' : 'bg-emerald-100 text-emerald-800 border border-emerald-300'
+                      }`}>
+                        {riskDetails.riskBadgeLabel}
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="pt-2 border-t border-slate-200 flex justify-between items-end text-[10px] text-slate-600">
+                    <div>
+                      <p className="font-bold text-slate-800">{riskDetails.attendingMOLabel}: {clinicProfile.doctorInCharge}</p>
+                      <p className="text-[9px] text-slate-500">{clinicProfile.doctorDegree}</p>
+                    </div>
+                    <div className="text-right">
+                      <div className="w-24 h-6 border border-dashed border-slate-300 rounded mb-0.5 flex items-center justify-center text-[8px] text-slate-400">
+                        {riskDetails.doctorSealLabel}
+                      </div>
+                      <span className="text-[9px] text-slate-500">{riskDetails.signStampLabel}</span>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  onClick={() => window.print()}
+                  className="w-full py-3 bg-slate-800 hover:bg-slate-900 text-white font-bold rounded-xl text-xs flex items-center justify-center gap-2 shadow transition cursor-pointer"
+                >
+                  <Printer className="w-4 h-4" />
+                  {riskDetails.printSlipButton}
+                </button>
+
+                <button
+                  onClick={() => setActiveTab('doctor_station')}
+                  className="w-full py-3 bg-gradient-to-r from-teal-800 to-teal-900 hover:from-teal-700 hover:to-teal-800 text-white font-bold rounded-xl text-xs flex items-center justify-center gap-2 shadow-md transition cursor-pointer"
+                >
+                  <Stethoscope className="w-4 h-4 text-teal-300" />
+                  {riskDetails.openDoctorStationButton}
+                </button>
+
+                <button
+                  onClick={handleReset}
+                  className="w-full py-3 bg-teal-50 hover:bg-teal-100 text-teal-800 border border-teal-200 font-bold rounded-xl text-xs flex items-center justify-center gap-2 transition cursor-pointer"
+                >
+                  <PlusCircle className="w-4 h-4" />
+                  {riskDetails.intakeNextButton}
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        );
+      })()}
         </div>
       )}
     </div>

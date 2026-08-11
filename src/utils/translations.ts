@@ -849,3 +849,195 @@ export function getChiefComplaintLabel(id: string, lang: LanguageCode): string {
   }
   return id.replace('cc_', '').replace(/([A-Z])/g, ' $1').replace('/', ' / ');
 }
+
+export interface RiskDetailsData {
+  categoryTitle: string;
+  categorySubtitle: string;
+  immediateAction: string;
+  recommendedInvestigations: string[];
+  riskProbabilitiesLabel: string;
+  lowLabel: string;
+  medLabel: string;
+  highLabel: string;
+  actionPlanTitle: string;
+  immediateActionLabel: string;
+  investigationsLabel: string;
+  vitalsRecordLabel: string;
+  confirmedSymptomsLabel: string;
+  slipTitle: string;
+  slipHeader: string;
+  patientLabel: string;
+  ageSexLabel: string;
+  uhidLabel: string;
+  chiefComplaintLabel: string;
+  riskBadgeLabel: string;
+  attendingMOLabel: string;
+  doctorSealLabel: string;
+  signStampLabel: string;
+  printSlipButton: string;
+  openDoctorStationButton: string;
+  intakeNextButton: string;
+}
+
+export function getRiskDetails(riskCategory: 'High' | 'Medium' | 'Low' | string, lang: LanguageCode): RiskDetailsData {
+  if (lang === 'gu') {
+    return {
+      categoryTitle: riskCategory === 'High' ? 'ઉચ્ચ જોખમ વર્ગ (HIGH RISK EMERGENCY)' : riskCategory === 'Medium' ? 'મધ્યમ જોખમ વર્ગ (MEDIUM RISK URGENT)' : 'ઓછું જોખમ વર્ગ (LOW RISK ROUTINE)',
+      categorySubtitle: riskCategory === 'High' ? 'તાત્કાલિક ઇમરજન્સી અને રેફરલ કેર • તાત્કાલિક હોસ્પિટલ પહોંચો' : riskCategory === 'Medium' ? 'ઝડપી પ્રાથમિક કન્સલ્ટેશન • ૧ કલાકમાં ડૉક્ટર તપાસ' : 'સામાન્ય OPD સારવાર • નિયમિત ક્લિનિકલ કન્સલ્ટેશન',
+      immediateAction: riskCategory === 'High'
+        ? 'તાત્કાલિક ઇમરજન્સી સારવાર, ઓક્સિજન સપોર્ટ, IV એક્સેસ અને સિવિલ/ટ્રૉમા સેન્ટરમાં તાત્કાલિક રેફરલ.'
+        : riskCategory === 'Medium'
+        ? 'પ્રાથમિક તપાસ, 30 મિનિટમાં વાઇટલ્સ મોનિટરિંગ અને ડૉક્ટર દ્વારા ૧ કલાકમાં વિગતવાર નિદાન.'
+        : 'સામાન્ય OPD કન્સલ્ટેશન, લક્ષણો અનુસાર દવા, ઘરેલું આરામ અને જરૂર જણાયે ૪૮ કલાકમાં ફોલો-અપ.',
+      recommendedInvestigations: riskCategory === 'High'
+        ? [
+            '૧૨-લીડ ઇલેક્ટ્રોકાર્ડિયોગ્રામ (12-Lead ECG)',
+            'આર્ટેરિયલ બ્લડ ગેસ (ABG) અને સીરમ લેક્ટેટ',
+            'કમ્પ્લીટ બ્લડ કાઉન્ટ (CBC) અને કાર્ડિયાક ટ્રોપોનિન-I',
+            'તાત્કાલિક IV એક્સેસ અને સતત SpO2 મોનિટરિંગ'
+          ]
+        : riskCategory === 'Medium'
+        ? [
+            'દર ૩૦ મિનિટે વાઇટલ્સ સાઇન્સ મોનિટરિંગ',
+            'બ્લડ ગ્લુકોઝ (RBS) અને કમ્પ્લીટ બ્લડ કાઉન્ટ (CBC)',
+            'છાતી અને ફેફસાંની સ્ટેથોસ્કોપ તપાસ',
+            '૧ કલાકની અંદર મેડિકલ ઓફિસર દ્વારા મૂલ્યાંકન'
+          ]
+        : [
+            'સામાન્ય વાઇટલ્સ તપાસ (BP, SpO2, Temp)',
+            'લક્ષણો આધારિત સહાયક સારવાર',
+            'ઓરલ રીહાઇડ્રેશન (ORS) અને આરામની સલાહ',
+            'જો તકલીફ વધે તો ૪૮ કલાકમાં પુનઃ મુલાકાત'
+          ],
+      riskProbabilitiesLabel: 'જોખમ સંભાવનાઓ',
+      lowLabel: 'ઓછું',
+      medLabel: 'મધ્યમ',
+      highLabel: 'ઉચ્ચ',
+      actionPlanTitle: 'ક્લિનિકલ એક્શન પ્લાન અને ટ્રાયજ માર્ગદર્શિકા',
+      immediateActionLabel: 'તાત્કાલિક ક્લિનિકલ પગલાં',
+      investigationsLabel: 'સૂચવેલ લેબ અને તપાસ',
+      vitalsRecordLabel: 'દર્દીના નોંધાયેલા વાઇટલ્સ',
+      confirmedSymptomsLabel: 'પુષ્ટિ થયેલ લક્ષણો',
+      slipTitle: 'રેફરલ અને ટ્રાયજ સ્લિપ',
+      slipHeader: 'સત્તાવાર ક્લિનિકલ ટ્રાયજ સ્લિપ',
+      patientLabel: 'દર્દી',
+      ageSexLabel: 'ઉંમર/જાતિ',
+      uhidLabel: 'UHID',
+      chiefComplaintLabel: 'મુખ્ય તકલીફ',
+      riskBadgeLabel: riskCategory === 'High' ? 'ઉચ્ચ જોખમ' : riskCategory === 'Medium' ? 'મધ્યમ જોખમ' : 'ઓછું જોખમ',
+      attendingMOLabel: 'હાજર મેડિકલ ઓફિસર (MO)',
+      doctorSealLabel: 'ડૉક્ટર સિક્કો',
+      signStampLabel: 'સહી અને સિક્કો',
+      printSlipButton: 'ક્લિનિકલ ટ્રાયજ સ્લિપ પ્રિન્ટ કરો',
+      openDoctorStationButton: 'ડૉક્ટર સ્ટેશનમાં ખોલો (EMR અને દવાઓ) →',
+      intakeNextButton: '+ આગામી દર્દી દાખલ કરો'
+    };
+  }
+
+  if (lang === 'hi') {
+    return {
+      categoryTitle: riskCategory === 'High' ? 'उच्च जोखिम वर्ग (HIGH RISK EMERGENCY)' : riskCategory === 'Medium' ? 'मध्यम जोखिम वर्ग (MEDIUM RISK URGENT)' : 'निम्न जोखिम वर्ग (LOW RISK ROUTINE)',
+      categorySubtitle: riskCategory === 'High' ? 'तत्काल आपातकालीन देखभाल एवं रेफरल • तुरंत अस्पताल जाएं' : riskCategory === 'Medium' ? 'प्राथमिक परामर्श • 1 घंटे में डॉक्टर मूल्यांकन' : 'सामान्य OPD देखभाल • नियमित क्लिनिक परामर्श',
+      immediateAction: riskCategory === 'High'
+        ? 'तत्काल आपातकालीन उपचार, ऑक्सीजन सहायता, IV एक्सेस और ट्रॉमा सेंटर में रेफरल।'
+        : riskCategory === 'Medium'
+        ? 'प्राथमिक जांच, 30 मिनट में वाइटल्स की निगरानी और 1 घंटे में डॉक्टर मूल्यांकन।'
+        : 'मानक OPD परामर्श, लक्षण आधारित दवाएं, घरेलू देखभाल और फॉलो-अप।',
+      recommendedInvestigations: riskCategory === 'High'
+        ? [
+            '12-लीड इलेक्ट्रोकार्डियोग्राम (12-Lead ECG)',
+            'आर्टेरियल ब्लड गैस (ABG) एवं सीरम लैक्टेट',
+            'कम्प्लीट ब्लड काउंट (CBC) एवं कार्डियक ट्रोपोनिन-I',
+            'तत्काल IV एक्सेस और निरंतर SpO2 मॉनिटरिंग'
+          ]
+        : riskCategory === 'Medium'
+        ? [
+            'प्रत्येक 30 मिनट में वाइटल्स की निगरानी',
+            'ब्लड ग्लूकोज एवं कम्प्लीट ब्लड काउंट (CBC)',
+            'छाती एवं फेफड़ों की जांच',
+            '1 घंटे के भीतर डॉक्टर द्वारा मूल्यांकन'
+          ]
+        : [
+            'मानक वाइटल्स जांच (BP, SpO2, Temp)',
+            'लक्षण आधारित सहायक उपचार',
+            'ओआरएस एवं आराम की सलाह',
+            'स्थिति बिगड़ने पर 48 घंटों में पुनः जांच'
+          ],
+      riskProbabilitiesLabel: 'जोखिम संभावनाएं',
+      lowLabel: 'निम्न',
+      medLabel: 'मध्यम',
+      highLabel: 'उच्च',
+      actionPlanTitle: 'क्लिनिकल एक्शन प्लान एवं ट्राइएज निर्देश',
+      immediateActionLabel: 'तत्काल क्लिनिकल कदम',
+      investigationsLabel: 'अनुशंसित जांचें',
+      vitalsRecordLabel: 'मरीज के दर्ज वाइटल्स',
+      confirmedSymptomsLabel: 'पुष्ट लक्षण',
+      slipTitle: 'रेफरल एवं ट्राइएज पर्ची',
+      slipHeader: 'आधिकारिक क्लिनिकल ट्राइएज पर्ची',
+      patientLabel: 'मरीज',
+      ageSexLabel: 'आयु/लिंग',
+      uhidLabel: 'UHID',
+      chiefComplaintLabel: 'मुख्य समस्या',
+      riskBadgeLabel: riskCategory === 'High' ? 'उच्च जोखिम' : riskCategory === 'Medium' ? 'मध्यम जोखिम' : 'निम्न जोखिम',
+      attendingMOLabel: 'उपस्थित मेडिकल ऑफिसर (MO)',
+      doctorSealLabel: 'डॉक्टर मुहर',
+      signStampLabel: 'हस्ताक्षर एवं मुहर',
+      printSlipButton: 'क्लिनिकल ट्राइएज पर्ची प्रिंट करें',
+      openDoctorStationButton: 'डॉक्टर स्टेशन में खोलें (EMR और दवाएं) →',
+      intakeNextButton: '+ अगला मरीज भर्ती करें'
+    };
+  }
+
+  // English fallback
+  return {
+    categoryTitle: `${riskCategory.toUpperCase()} RISK CATEGORY`,
+    categorySubtitle: riskCategory === 'High' ? 'Emergency Resuscitation (Level 1-2) • Immediate physician intervention' : riskCategory === 'Medium' ? 'Urgent Care (Level 3) • Priority physician evaluation within 1 hour' : 'Routine Outpatient Care (Level 4-5) • Routine clinic appointment',
+    immediateAction: riskCategory === 'High'
+      ? 'Emergency resuscitation, immediate oxygen, IV access, and urgent hospital referral.'
+      : riskCategory === 'Medium'
+      ? 'Priority evaluation, frequent vital sign checks, and physician evaluation within 1 hour.'
+      : 'Standard outpatient consultation, symptomatic management, home care advisory and scheduled follow-up.',
+    recommendedInvestigations: riskCategory === 'High'
+      ? [
+          '12-Lead Electrocardiogram (ECG)',
+          'Arterial Blood Gas (ABG) & Serum Lactate',
+          'Complete Blood Count & Cardiac Troponin-I',
+          'Immediate IV access & Continuous SpO2 Monitoring'
+        ]
+      : riskCategory === 'Medium'
+      ? [
+          'Vital sign monitoring every 30 minutes',
+          'Blood Glucose & CBC with Differential',
+          'Focused physical & chest auscultation',
+          'Physician evaluation within 1 hour'
+        ]
+      : [
+          'Standard vital sign checkup',
+          'Symptomatic supportive treatment',
+          'Oral rehydration & rest advice',
+          'Follow up in 48 hours if worsening'
+        ],
+    riskProbabilitiesLabel: 'Risk Probabilities',
+    lowLabel: 'Low',
+    medLabel: 'Med',
+    highLabel: 'High',
+    actionPlanTitle: 'Clinical Action Plan & Triage Directives',
+    immediateActionLabel: 'Immediate Clinical Action',
+    investigationsLabel: 'Recommended Investigations',
+    vitalsRecordLabel: 'Patient Vitals Record',
+    confirmedSymptomsLabel: 'Confirmed Symptoms',
+    slipTitle: 'Referral & Triage Slip',
+    slipHeader: 'Official Clinical Triage Slip',
+    patientLabel: 'Patient',
+    ageSexLabel: 'Age/Sex',
+    uhidLabel: 'UHID',
+    chiefComplaintLabel: 'Chief Complaint',
+    riskBadgeLabel: `${riskCategory} Risk`,
+    attendingMOLabel: 'Attending MO',
+    doctorSealLabel: "Doctor's Seal",
+    signStampLabel: 'Sign & Stamp',
+    printSlipButton: 'Print Clinical Triage Slip',
+    openDoctorStationButton: 'Open in Doctor Station (EMR & Prescriptions) →',
+    intakeNextButton: '+ Intake Next Patient'
+  };
+}
