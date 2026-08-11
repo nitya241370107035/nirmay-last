@@ -275,6 +275,39 @@ function areSymptomsInterrelated(confirmed: string[], candidate: string, topProb
   return false;
 }
 
+function getFeaturesForSymptom(s: string, featuresList: string[]): string[] {
+  const norm = s.toLowerCase().trim().replace(/[\s_]+/g, '_');
+  if (featuresList.includes(norm)) {
+    return [norm];
+  }
+  if (norm === 'fever') {
+    return ['high_fever', 'mild_fever'];
+  }
+  if (norm === 'yellow_eyes' || norm === 'yellowing_of_eyes') {
+    return ['yellowing_of_eyes'];
+  }
+  if (norm === 'neck_stiffness' || norm === 'stiff_neck') {
+    return ['stiff_neck'];
+  }
+  if (norm === 'breathing_difficulty' || norm === 'difficulty_breathing') {
+    return ['breathlessness'];
+  }
+  if (norm === 'appetite_loss' || norm === 'loss_of_appetite') {
+    return ['loss_of_appetite'];
+  }
+  if (norm === 'burning_urination' || norm === 'painful_urination') {
+    return ['burning_micturition'];
+  }
+
+  const results = featuresList.filter(
+    (feat) => feat.includes(norm) || norm.includes(feat)
+  );
+  if (results.length > 0) {
+    return results;
+  }
+  return [norm];
+}
+
 class DiseaseModelService {
   private diseases: string[] = modelData.diseases;
   private features: string[] = modelData.features;
@@ -949,7 +982,8 @@ class DiseaseModelService {
       if (maxCandidateAssoc < 0.08) continue;
 
       // 0.5. Smart Question Relevance Filter: Candidate symptom MUST co-occur (P(S_j | S_i) >= 0.05) with at least one confirmed symptom
-      const confirmedSymptoms = Object.keys(symptomVector).filter((k) => symptomVector[k] === 1);
+      const confirmedRaw = Object.keys(symptomVector).filter((k) => symptomVector[k] === 1);
+      const confirmedSymptoms = confirmedRaw.flatMap((s) => getFeaturesForSymptom(s, this.features));
       if (confirmedSymptoms.length > 0) {
         const topProb = topCandidates[0]?.probability ?? 0.0;
         if (!areSymptomsInterrelated(confirmedSymptoms, feat, topProb / 100)) {
