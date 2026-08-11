@@ -121,8 +121,11 @@ export const Header: React.FC<HeaderProps> = ({
     articles: currentLang === 'gu' ? 'સ્વાસ્થ્ય આદતો' : currentLang === 'hi' ? 'स्वास्थ्य नियम' : 'Daily Habits',
     garden: currentLang === 'gu' ? 'ઔષધીય બગીચો' : currentLang === 'hi' ? 'औषधीय बगीचा' : 'Plant Garden',
     outbreaks: currentLang === 'gu' ? 'રોગચાળા એલર્ટ' : currentLang === 'hi' ? 'प्रकोप अलर्ट' : 'Outbreak Alert',
-    nearby: currentLang === 'gu' ? 'નજીકના કેન્દ્રો' : currentLang === 'hi' ? 'નિકટતમ કેન્દ્ર' : 'Nearby PHC',
-    more: currentLang === 'gu' ? 'વધુ સાધનો' : currentLang === 'hi' ? 'अधिक उपकरण' : 'More Modules'
+    nearby: currentLang === 'gu' ? 'નજીકના કેન્દ્રો' : currentLang === 'hi' ? 'निकटतम केंद्र' : 'Nearby PHC',
+    more: currentLang === 'gu' ? 'વધુ સાધનો' : currentLang === 'hi' ? 'अधिक उपकरण' : 'More Modules',
+    appointments: currentLang === 'gu' ? 'OPD એપોઇન્ટમેન્ટ' : currentLang === 'hi' ? 'OPD अपॉइंटमेंट' : 'OPD Appointments',
+    switchPortal: currentLang === 'gu' ? 'પોર્ટલ બદલો' : currentLang === 'hi' ? 'पोर्टल बदलें' : 'Switch Portal',
+    switchToClinic: currentLang === 'gu' ? 'ક્લિનિક પોર્ટલ પર જાઓ' : currentLang === 'hi' ? 'क्लिनिक पोर्टल पर जाएं' : 'Switch to Clinic Portal'
   };
 
   const isMoreActive = ['chronic_care', 'schemes', 'stories', 'articles', 'garden_advisor', 'outbreak', 'nearby'].includes(currentView);
@@ -307,7 +310,7 @@ export const Header: React.FC<HeaderProps> = ({
                   }`}
                 >
                   <Calendar className="w-4 h-4 text-teal-300" />
-                  <span>OPD Appointments</span>
+                  <span>{labels.appointments}</span>
                 </button>
 
                 <button
@@ -393,7 +396,7 @@ export const Header: React.FC<HeaderProps> = ({
               title="Exit to Portal Selection Screen"
             >
               <Building2 className="w-3.5 h-3.5 text-teal-300" />
-              <span>Switch Portal</span>
+              <span>{labels.switchPortal}</span>
             </button>
           )}
 
@@ -519,7 +522,7 @@ export const Header: React.FC<HeaderProps> = ({
                 className="w-full py-2.5 px-3 bg-gradient-to-r from-emerald-800 to-teal-800 text-white rounded-xl text-xs font-bold flex items-center justify-center gap-2 shadow"
               >
                 <Building2 className="w-4 h-4 text-teal-300" />
-                <span>Switch to Clinic Portal / Main Menu</span>
+                <span>{labels.switchToClinic}</span>
               </button>
             </div>
           )}
