@@ -13,8 +13,10 @@ import {
   PlusCircle,
   RefreshCw
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { db } from '../../db/db';
-import { ClinicAppointment } from '../../types';
+import { ClinicAppointment, LanguageCode } from '../../types';
+import { getTranslations } from '../../utils/translations';
 
 interface MyAppointmentsTrackerProps {
   familyId?: number;
@@ -22,6 +24,10 @@ interface MyAppointmentsTrackerProps {
 }
 
 export function MyAppointmentsTracker({ familyId, onOpenBookModal }: MyAppointmentsTrackerProps) {
+  const { i18n } = useTranslation();
+  const currentLang = (i18n.language || 'en') as LanguageCode;
+  const t = getTranslations(currentLang);
+
   const [appointments, setAppointments] = useState<ClinicAppointment[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
@@ -69,10 +75,10 @@ export function MyAppointmentsTracker({ familyId, onOpenBookModal }: MyAppointme
           </div>
           <div>
             <h3 className="font-black text-slate-900 text-base">
-              My Clinic & OPD Appointments
+              {t.myAppointmentsTitle}
             </h3>
             <p className="text-xs text-slate-500">
-              Live status of consultations requested at community and hospital clinics
+              {t.myAppointmentsSubtitle}
             </p>
           </div>
         </div>

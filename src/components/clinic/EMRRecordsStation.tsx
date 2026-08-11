@@ -19,8 +19,10 @@ import {
   Filter,
   X
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { db, saveClinicRecord, updateClinicRecord, searchClinicRecords } from '../../db/db';
-import { ClinicRecord, ClinicRecordVitals } from '../../types';
+import { ClinicRecord, ClinicRecordVitals, LanguageCode } from '../../types';
+import { getTranslations } from '../../utils/translations';
 import { ClinicProfile } from './ClinicLogin';
 
 interface EMRRecordsStationProps {
@@ -32,6 +34,10 @@ export function EMRRecordsStation({
   clinicProfile,
   onSendToDoctorConsultation
 }: EMRRecordsStationProps) {
+  const { i18n } = useTranslation();
+  const currentLang = (i18n.language || 'en') as LanguageCode;
+  const t = getTranslations(currentLang);
+
   const [records, setRecords] = useState<ClinicRecord[]>([]);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [filterSource, setFilterSource] = useState<string>('all');
@@ -242,10 +248,10 @@ export function EMRRecordsStation({
             </span>
           </div>
           <h2 className="text-2xl font-black text-slate-900 tracking-tight mt-1">
-            Digital Clinical Records (EMR)
+            {t.emrIntakeTitle}
           </h2>
           <p className="text-xs text-slate-500 mt-0.5">
-            Manually enter walk-in clinical details, record patient vitals & symptoms, and view all digital health records.
+            {t.emrIntakeSubtitle}
           </p>
         </div>
 
@@ -255,7 +261,7 @@ export function EMRRecordsStation({
             className="px-4 py-2.5 bg-gradient-to-r from-teal-700 to-teal-800 hover:from-teal-600 hover:to-teal-700 text-white rounded-2xl text-xs sm:text-sm font-bold shadow-md transition flex items-center gap-2 cursor-pointer active:scale-95"
           >
             <PlusCircle className="w-4 h-4" />
-            <span>+ Add Patient Record (Manual Entry)</span>
+            <span>{t.addPatientRecordManual}</span>
           </button>
         </div>
       </div>
@@ -268,17 +274,17 @@ export function EMRRecordsStation({
             type="text"
             value={searchQuery}
             onChange={(e) => handleSearch(e.target.value)}
-            placeholder="Search EMR by Patient Name, UHID, Phone, or Complaint..."
+            placeholder={t.searchRecordsPlaceholder}
             className="w-full pl-10 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm font-medium focus:ring-2 focus:ring-teal-500 focus:outline-none"
           />
         </div>
 
         <div className="flex items-center gap-1.5 overflow-x-auto text-xs">
           {[
-            { id: 'all', label: `All Records (${records.length})` },
-            { id: 'manual', label: 'Manual Intake' },
-            { id: 'triage', label: 'ML Triaged' },
-            { id: 'appointment', label: 'Online Bookings' }
+            { id: 'all', label: `${t.allRecords} (${records.length})` },
+            { id: 'manual', label: t.sourceManual },
+            { id: 'triage', label: t.sourceMLTriage },
+            { id: 'appointment', label: t.sourceOnlineBooking }
           ].map((f) => (
             <button
               key={f.id}

@@ -16,6 +16,7 @@ import {
   Building2
 } from 'lucide-react';
 import { LanguageCode } from '../types';
+import { getTranslations } from '../utils/translations';
 import { PulseLine } from './PulseLine';
 
 interface PortalSelectionScreenProps {
@@ -25,6 +26,7 @@ interface PortalSelectionScreenProps {
 export function PortalSelectionScreen({ onSelectPortal }: PortalSelectionScreenProps) {
   const { i18n } = useTranslation();
   const currentLang = (i18n.language || 'en') as LanguageCode;
+  const t = getTranslations(currentLang);
 
   const handleLanguageChange = (code: LanguageCode) => {
     i18n.changeLanguage(code);
@@ -117,7 +119,7 @@ export function PortalSelectionScreen({ onSelectPortal }: PortalSelectionScreenP
 
               <div>
                 <h3 className="text-2xl font-black text-white tracking-tight group-hover:text-teal-200 transition-colors">
-                  🏥 Clinic & Hospital Portal
+                  {t.clinicPortalCardTitle}
                 </h3>
                 <p className="text-xs uppercase tracking-wider font-bold text-teal-300 mt-1">
                   For Medical Officers, Triage Nurses & PHC Staff
@@ -125,7 +127,7 @@ export function PortalSelectionScreen({ onSelectPortal }: PortalSelectionScreenP
               </div>
 
               <p className="text-xs sm:text-sm text-teal-100/80 leading-relaxed">
-                Dedicated clinical workstation for rapid patient intake, mandatory vitals thresholding, context-aware adaptive questioning, and ML-driven Risk Category stratification (94.04% Accuracy).
+                {t.clinicPortalCardDesc}
               </p>
 
               <div className="space-y-2 pt-2 border-t border-teal-700/40 text-xs text-teal-200 font-medium">
@@ -147,9 +149,9 @@ export function PortalSelectionScreen({ onSelectPortal }: PortalSelectionScreenP
             <div className="mt-8 pt-4">
               <button
                 type="button"
-                className="w-full py-3.5 bg-gradient-to-r from-teal-600 to-teal-500 hover:from-teal-500 hover:to-teal-400 text-white font-extrabold rounded-2xl transition shadow-md flex items-center justify-center gap-2 text-sm sm:text-base group-hover:shadow-lg"
+                className="w-full py-3.5 bg-gradient-to-r from-teal-600 to-teal-500 hover:from-teal-500 hover:to-teal-400 text-white font-extrabold rounded-2xl transition shadow-md flex items-center justify-center gap-2 text-sm sm:text-base group-hover:shadow-lg cursor-pointer"
               >
-                <span>Enter Clinic Triage Portal</span>
+                <span>{t.enterClinicPortal}</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1.5 transition-transform" />
               </button>
             </div>
@@ -172,7 +174,7 @@ export function PortalSelectionScreen({ onSelectPortal }: PortalSelectionScreenP
 
               <div>
                 <h3 className="text-2xl font-black text-white tracking-tight group-hover:text-emerald-300 transition-colors">
-                  👨‍👩‍👧‍👦 Community & Family Portal
+                  {t.communityPortalCardTitle}
                 </h3>
                 <p className="text-xs uppercase tracking-wider font-bold text-emerald-300 mt-1">
                   For Citizens, Families & Community Health Workers
@@ -180,7 +182,7 @@ export function PortalSelectionScreen({ onSelectPortal }: PortalSelectionScreenP
               </div>
 
               <p className="text-xs sm:text-sm text-teal-100/80 leading-relaxed">
-                Comprehensive digital health vault for household members. Track daily medication adherence (DOT), family clinical histories, maternal care, and government schemes.
+                {t.communityPortalCardDesc}
               </p>
 
               <div className="space-y-2 pt-2 border-t border-teal-800/50 text-xs text-teal-200 font-medium">
@@ -202,9 +204,9 @@ export function PortalSelectionScreen({ onSelectPortal }: PortalSelectionScreenP
             <div className="mt-8 pt-4">
               <button
                 type="button"
-                className="w-full py-3.5 bg-gradient-to-r from-emerald-700 to-teal-600 hover:from-emerald-600 hover:to-teal-500 text-white font-extrabold rounded-2xl transition shadow-md flex items-center justify-center gap-2 text-sm sm:text-base group-hover:shadow-lg"
+                className="w-full py-3.5 bg-gradient-to-r from-emerald-700 to-teal-600 hover:from-emerald-600 hover:to-teal-500 text-white font-extrabold rounded-2xl transition shadow-md flex items-center justify-center gap-2 text-sm sm:text-base group-hover:shadow-lg cursor-pointer"
               >
-                <span>Enter Community User Portal</span>
+                <span>{t.enterCommunityPortal}</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1.5 transition-transform" />
               </button>
             </div>

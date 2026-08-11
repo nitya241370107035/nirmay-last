@@ -30,6 +30,7 @@ import {
   FileText
 } from 'lucide-react';
 import { LanguageCode } from '../../types';
+import { getTranslations } from '../../utils/translations';
 import { ClinicLogin, ClinicProfile } from './ClinicLogin';
 import { DoctorStation } from './DoctorStation';
 import { EMRRecordsStation } from './EMRRecordsStation';
@@ -107,6 +108,7 @@ interface ClinicPortalProps {
 export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
   const { i18n } = useTranslation();
   const currentLang = (i18n.language || 'en') as LanguageCode;
+  const t = getTranslations(currentLang);
 
   // Clinic Authentication & Profile State
   const [clinicProfile, setClinicProfile] = useState<ClinicProfile | null>(() => {
@@ -511,13 +513,34 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
             </div>
           </div>
 
-          <div className="flex items-center gap-2 shrink-0">
+          <div className="flex flex-wrap items-center gap-2 shrink-0">
+            {/* Direct Trilingual Language Switcher */}
+            <div className="flex items-center gap-1 bg-black/25 p-1 rounded-xl border border-white/20 shadow-xs">
+              {[
+                { code: 'gu', label: 'ગુજરાતી' },
+                { code: 'hi', label: 'हिन्दी' },
+                { code: 'en', label: 'EN' }
+              ].map((l) => (
+                <button
+                  key={l.code}
+                  onClick={() => i18n.changeLanguage(l.code)}
+                  className={`px-2.5 py-1 rounded-lg text-xs font-bold transition cursor-pointer ${
+                    currentLang === l.code
+                      ? 'bg-white text-teal-900 shadow-sm'
+                      : 'text-teal-100 hover:text-white hover:bg-white/15'
+                  }`}
+                >
+                  {l.label}
+                </button>
+              ))}
+            </div>
+
             <button
               onClick={handleReset}
               className="flex items-center gap-1.5 px-3.5 py-2 bg-white/15 hover:bg-white/25 active:scale-95 text-white text-xs sm:text-sm font-bold rounded-xl border border-white/20 shadow-xs transition cursor-pointer"
             >
               <RefreshCw className="w-3.5 h-3.5" />
-              <span>New Patient</span>
+              <span>{t.newPatient}</span>
             </button>
             <button
               onClick={handleClinicLogout}
@@ -525,7 +548,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
               title="Sign Out / Switch Clinic Credentials"
             >
               <Edit3 className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">Edit Clinic</span>
+              <span className="hidden sm:inline">{t.editClinic}</span>
             </button>
             {onSwitchPortal && (
               <button
@@ -534,7 +557,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
                 title="Exit to Portal Selection Gate"
               >
                 <LogOut className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">Switch Portal</span>
+                <span className="hidden sm:inline">{t.switchPortal}</span>
               </button>
             )}
           </div>
@@ -551,7 +574,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
             }`}
           >
             <Activity className="w-4 h-4 text-emerald-600" />
-            <span>Triage Station</span>
+            <span>{t.triageStationTab}</span>
           </button>
 
           <button
@@ -563,7 +586,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
             }`}
           >
             <FileText className="w-4 h-4 text-cyan-400" />
-            <span>Digital EMR Records</span>
+            <span>{t.emrRecordsTab}</span>
           </button>
 
           <button
@@ -575,7 +598,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
             }`}
           >
             <Stethoscope className="w-4 h-4 text-teal-300" />
-            <span>Doctor Consultation & Rx</span>
+            <span>{t.doctorStationTab}</span>
           </button>
 
           <button
@@ -587,7 +610,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
             }`}
           >
             <Calendar className="w-4 h-4 text-amber-400" />
-            <span>Appointments Desk</span>
+            <span>{t.appointmentsTab}</span>
           </button>
         </div>
       </div>
@@ -647,7 +670,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
               <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${step === 1 ? 'bg-teal-700 text-white' : 'bg-white/20 text-white'}`}>
                 1
               </span>
-              <span className="text-xs sm:text-sm truncate">Vitals & Demographics</span>
+              <span className="text-xs sm:text-sm truncate">{t.step1}</span>
             </button>
 
             <button
@@ -659,7 +682,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
               <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${step === 2 ? 'bg-teal-700 text-white' : 'bg-white/20 text-white'}`}>
                 2
               </span>
-              <span className="text-xs sm:text-sm truncate">Chief Complaint</span>
+              <span className="text-xs sm:text-sm truncate">{t.step2}</span>
             </button>
 
             <button
@@ -672,7 +695,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
               <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${step === 3 ? 'bg-teal-700 text-white' : 'bg-white/20 text-white'}`}>
                 3
               </span>
-              <span className="text-xs sm:text-sm truncate">Dynamic Inquiry</span>
+              <span className="text-xs sm:text-sm truncate">{t.step3}</span>
             </button>
 
             <button
@@ -685,7 +708,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
               <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${step === 4 ? 'bg-teal-700 text-white' : 'bg-white/20 text-white'}`}>
                 4
               </span>
-              <span className="text-xs sm:text-sm truncate">Triage Decision</span>
+              <span className="text-xs sm:text-sm truncate">{t.step4}</span>
             </button>
           </div>
 

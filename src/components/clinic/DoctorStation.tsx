@@ -27,8 +27,10 @@ import {
   ShieldCheck,
   Zap
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { db, saveClinicRecord, updateClinicRecord, searchClinicRecords } from '../../db/db';
-import { ClinicRecord, DoctorPrescription, ClinicRecordVitals } from '../../types';
+import { ClinicRecord, DoctorPrescription, ClinicRecordVitals, LanguageCode } from '../../types';
+import { getTranslations } from '../../utils/translations';
 import { ClinicProfile } from './ClinicLogin';
 
 interface DoctorStationProps {
@@ -65,6 +67,10 @@ const LAB_INVESTIGATIONS_LIST = [
 ];
 
 export function DoctorStation({ clinicProfile }: DoctorStationProps) {
+  const { i18n } = useTranslation();
+  const currentLang = (i18n.language || 'en') as LanguageCode;
+  const t = getTranslations(currentLang);
+
   const [records, setRecords] = useState<ClinicRecord[]>([]);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [filterStatus, setFilterStatus] = useState<string>('all');
@@ -341,10 +347,10 @@ export function DoctorStation({ clinicProfile }: DoctorStationProps) {
             </span>
           </div>
           <h2 className="text-2xl font-black text-slate-900 tracking-tight mt-1">
-            Doctor Consultation & Prescription Station
+            {t.doctorConsultationTitle}
           </h2>
           <p className="text-xs text-slate-500 mt-0.5">
-            Review patient EMR intake records, examine clinical vitals, formulate diagnoses, and write digital prescriptions (Rx).
+            {t.doctorConsultationSubtitle}
           </p>
         </div>
 
@@ -354,7 +360,7 @@ export function DoctorStation({ clinicProfile }: DoctorStationProps) {
             className="px-4 py-2.5 bg-gradient-to-r from-teal-700 to-teal-800 hover:from-teal-600 hover:to-teal-700 active:scale-95 text-white text-xs sm:text-sm font-bold rounded-2xl shadow-md transition flex items-center gap-2 cursor-pointer"
           >
             <PlusCircle className="w-4 h-4" />
-            <span>+ Direct Doctor Consultation</span>
+            <span>{t.directDoctorConsult}</span>
           </button>
         </div>
       </div>
@@ -367,7 +373,7 @@ export function DoctorStation({ clinicProfile }: DoctorStationProps) {
             type="text"
             value={searchQuery}
             onChange={(e) => handleSearch(e.target.value)}
-            placeholder="Search clinical records by Patient Name, UHID, Phone, or Diagnosis..."
+            placeholder={t.searchRecordsPlaceholder}
             className="w-full pl-10 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm font-medium focus:ring-2 focus:ring-teal-500 focus:outline-none"
           />
           {searchQuery && (
@@ -383,11 +389,11 @@ export function DoctorStation({ clinicProfile }: DoctorStationProps) {
         {/* Filter Pills */}
         <div className="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0 text-xs">
           {[
-            { id: 'all', label: `All (${records.length})` },
-            { id: 'waiting', label: 'Waiting Doctor' },
-            { id: 'in_consultation', label: 'In Consultation' },
-            { id: 'completed', label: 'Completed' },
-            { id: 'high_risk', label: 'High Risk Flagged' }
+            { id: 'all', label: `${t.allRecords} (${records.length})` },
+            { id: 'waiting', label: t.waitingDoctor },
+            { id: 'in_consultation', label: t.inConsultation },
+            { id: 'completed', label: t.completed },
+            { id: 'high_risk', label: t.highRiskFilter }
           ].map((f) => (
             <button
               key={f.id}

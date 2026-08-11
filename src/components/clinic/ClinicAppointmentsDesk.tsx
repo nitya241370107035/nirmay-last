@@ -18,8 +18,10 @@ import {
   CalendarX,
   FileText
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { db, getAppointmentsForClinic, updateClinicAppointmentStatus } from '../../db/db';
-import { ClinicAppointment } from '../../types';
+import { ClinicAppointment, LanguageCode } from '../../types';
+import { getTranslations } from '../../utils/translations';
 import { ClinicProfile } from './ClinicLogin';
 
 interface ClinicAppointmentsDeskProps {
@@ -33,6 +35,10 @@ export function ClinicAppointmentsDesk({
   onIntakePatientForTriage,
   onOpenDoctorStationForPatient
 }: ClinicAppointmentsDeskProps) {
+  const { i18n } = useTranslation();
+  const currentLang = (i18n.language || 'en') as LanguageCode;
+  const t = getTranslations(currentLang);
+
   const [appointments, setAppointments] = useState<ClinicAppointment[]>([]);
   const [filterStatus, setFilterStatus] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -110,10 +116,10 @@ export function ClinicAppointmentsDesk({
             </span>
           </div>
           <h2 className="text-2xl font-black text-slate-900 tracking-tight mt-1">
-            Online Appointment & Intake Manager
+            {t.appointmentsDeskTitle}
           </h2>
           <p className="text-xs text-slate-500 mt-0.5">
-            Review online appointment bookings from citizens, assign time slots, and start patient triage on arrival.
+            {t.appointmentsDeskSubtitle}
           </p>
         </div>
 
@@ -122,7 +128,7 @@ export function ClinicAppointmentsDesk({
           className="px-3.5 py-2 bg-slate-100 hover:bg-slate-200 active:scale-95 text-slate-700 font-bold rounded-xl text-xs flex items-center gap-1.5 transition cursor-pointer"
         >
           <RefreshCw className="w-3.5 h-3.5" />
-          <span>Refresh Queue</span>
+          <span>{t.refreshQueue}</span>
         </button>
       </div>
 
@@ -134,18 +140,18 @@ export function ClinicAppointmentsDesk({
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search appointments by Patient Name, ID, Phone, or Reason..."
+            placeholder={t.searchAppointmentsPlaceholder}
             className="w-full pl-10 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm font-medium focus:ring-2 focus:ring-teal-500 focus:outline-none"
           />
         </div>
 
         <div className="flex items-center gap-1.5 overflow-x-auto text-xs">
           {[
-            { id: 'all', label: `All (${appointments.length})` },
-            { id: 'pending', label: 'Pending Review' },
-            { id: 'confirmed', label: 'Confirmed Slots' },
-            { id: 'completed', label: 'Completed' },
-            { id: 'cancelled', label: 'Cancelled' }
+            { id: 'all', label: `${t.allRecords} (${appointments.length})` },
+            { id: 'pending', label: t.pendingReview },
+            { id: 'confirmed', label: t.confirmedSlots },
+            { id: 'completed', label: t.completed },
+            { id: 'cancelled', label: t.cancelled }
           ].map((f) => (
             <button
               key={f.id}

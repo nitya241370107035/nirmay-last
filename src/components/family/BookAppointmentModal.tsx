@@ -13,8 +13,10 @@ import {
   AlertCircle,
   Sparkles
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { db, bookClinicAppointment } from '../../db/db';
-import { EnrolledClinic, Patient } from '../../types';
+import { EnrolledClinic, Patient, LanguageCode } from '../../types';
+import { getTranslations } from '../../utils/translations';
 
 interface BookAppointmentModalProps {
   isOpen: boolean;
@@ -33,6 +35,10 @@ export function BookAppointmentModal({
   familyId,
   onAppointmentBooked
 }: BookAppointmentModalProps) {
+  const { i18n } = useTranslation();
+  const currentLang = (i18n.language || 'en') as LanguageCode;
+  const t = getTranslations(currentLang);
+
   const [clinics, setClinics] = useState<EnrolledClinic[]>([]);
   const [selectedClinic, setSelectedClinic] = useState<EnrolledClinic | null>(null);
   const [selectedPatient, setSelectedPatient] = useState<Patient | null>(null);
@@ -148,10 +154,10 @@ export function BookAppointmentModal({
             </div>
             <div>
               <h3 className="text-lg sm:text-xl font-black">
-                Book Clinic & Hospital Appointment
+                {t.bookAppointmentModalTitle}
               </h3>
               <p className="text-xs text-teal-100">
-                Direct OPD slot reservation with government & enrolled health centers
+                {t.bookAppointmentModalSubtitle}
               </p>
             </div>
           </div>

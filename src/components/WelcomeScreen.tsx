@@ -17,6 +17,7 @@ import {
   Sparkles
 } from 'lucide-react';
 import { Patient, Family, LanguageCode } from '../types';
+import { getTranslations } from '../utils/translations';
 import { PulseLine } from './PulseLine';
 import { SeasonalAdvisoryCard } from './SeasonalAdvisoryCard';
 import { InAppReminderBanner } from './adherence/InAppReminderBanner';
@@ -62,6 +63,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
 }) => {
   const { i18n } = useTranslation();
   const currentLang = (i18n.language || 'en') as LanguageCode;
+  const tClinical = getTranslations(currentLang);
 
   const handleLanguageChange = (code: LanguageCode) => {
     i18n.changeLanguage(code);
@@ -252,10 +254,10 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
                   </div>
                   <div>
                     <span className="block font-black text-sm text-white tracking-tight">
-                      Book Clinic & OPD Appointment
+                      {tClinical.bookAppointmentBannerTitle}
                     </span>
                     <span className="block text-[11px] text-teal-100/90 font-normal">
-                      Reserve consultation slots at Anand PHC, Civil Hospital & CHCs
+                      {tClinical.bookAppointmentBannerSubtitle}
                     </span>
                   </div>
                 </div>
