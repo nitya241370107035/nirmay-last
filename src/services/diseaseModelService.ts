@@ -906,7 +906,7 @@ class DiseaseModelService {
     const maxProb = rankedCandidates[0]?.probability ? rankedCandidates[0].probability / 100 : 0;
 
     // Check Stopping Conditions
-    if (maxProb >= 0.85) {
+    if (maxProb >= 0.95) {
       return {
         nextQuestion: null,
         currentEntropy: Number(currentEntropy.toFixed(3)),
@@ -915,14 +915,14 @@ class DiseaseModelService {
         isStoppingCriteriaMet: true,
         stoppingReason: 'high_confidence',
         stoppingMessage: {
-          en: `High Diagnostic Confidence Reached (≥ 85%) for ${rankedCandidates[0].name}.`,
-          hi: `${rankedCandidates[0].name} के लिए उच्च नैदानिक विश्वास (≥ 85%) प्राप्त हुआ।`,
-          gu: `${rankedCandidates[0].name} માટે ઉચ્ચ ડાયગ્નોસ્ટિક ચોકસાઈ (≥ ૮૫%) પ્રાપ્ત થઈ.`
+          en: `High Diagnostic Confidence Reached (≥ 95%) for ${rankedCandidates[0].name}.`,
+          hi: `${rankedCandidates[0].name} के लिए उच्च नैदानिक विश्वास (≥ 95%) प्राप्त हुआ।`,
+          gu: `${rankedCandidates[0].name} માટે ઉચ્ચ ડાયગ્નોસ્ટિક ચોકસાઈ (≥ ૯૫%) પ્રાપ્ત થઈ.`
         }
       };
     }
 
-    if (currentEntropy <= 0.5) {
+    if (currentEntropy <= 0.25) {
       return {
         nextQuestion: null,
         currentEntropy: Number(currentEntropy.toFixed(3)),
@@ -931,14 +931,14 @@ class DiseaseModelService {
         isStoppingCriteriaMet: true,
         stoppingReason: 'low_entropy',
         stoppingMessage: {
-          en: `Clinical Uncertainty Minimized (Entropy ≤ 0.50 bits).`,
-          hi: `नैदानिक अनिश्चितता न्यूनतम (Entropy ≤ 0.50 bits) हो गई है।`,
-          gu: `તબીબી અનિશ્ચિતતા ન્યૂનતમ (Entropy ≤ 0.50 bits) થઈ ગઈ છે.`
+          en: `Clinical Uncertainty Minimized (Entropy ≤ 0.25 bits).`,
+          hi: `नैदानिक अनिश्चितता न्यूनतम (Entropy ≤ 0.25 bits) हो गई है।`,
+          gu: `તબીબી અનિશ્ચિતતા ન્યૂનતમ (Entropy ≤ 0.25 bits) થઈ ગઈ છે.`
         }
       };
     }
 
-    if (questionTurn > 10) {
+    if (questionTurn > 14) {
       return {
         nextQuestion: null,
         currentEntropy: Number(currentEntropy.toFixed(3)),
@@ -947,9 +947,9 @@ class DiseaseModelService {
         isStoppingCriteriaMet: true,
         stoppingReason: 'max_questions',
         stoppingMessage: {
-          en: `Maximum question limit (10 turns) completed. Proceeding to XGBoost evaluation.`,
-          hi: `अधिकतम 10 प्रश्न पूरे हुए। XGBoost निदान पर आगे बढ़ रहे हैं।`,
-          gu: `મહત્તમ ૧૦ પ્રશ્નો પૂર્ણ થયા. XGBoost નિદાન માટે આગળ વધી રહ્યા છીએ.`
+          en: `Maximum question limit (14 turns) completed. Proceeding to XGBoost evaluation.`,
+          hi: `अधिकतम 14 प्रश्न पूरे हुए। XGBoost निदान पर आगे बढ़ रहे हैं।`,
+          gu: `મહત્તમ ૧૪ પ્રશ્નો પૂર્ણ થયા. XGBoost નિદાન માટે આગળ વધી રહ્યા છીએ.`
         }
       };
     }

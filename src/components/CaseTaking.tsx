@@ -1115,10 +1115,16 @@ export const CaseTaking: React.FC<CaseTakingProps> = ({ onComplete, onCancel }) 
               <div className="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-2">
                 <p className="text-[11px] font-bold text-slate-700 uppercase tracking-wider flex items-center justify-between">
                   <span>🎯 {currentLang === 'gu' ? 'નજીકના સંભવિત રોગો:' : currentLang === 'hi' ? 'संभावित रोग (Narrowing):' : 'Candidate Diseases:'}</span>
-                  <span className="text-[10px] text-slate-500 lowercase">live Bayesian</span>
+                  <span className="text-[10px] text-emerald-800 font-extrabold uppercase tracking-wider">XGBoost Calibrated</span>
                 </p>
                 <div className="space-y-1.5">
-                  {(candidateDiseases.length > 0 ? candidateDiseases.slice(0, 3) : (liveDiseasePrediction?.differentials?.slice(0, 3) || [])).map((cand, idx) => (
+                  {(liveDiseasePrediction 
+                    ? [
+                        { name: liveDiseasePrediction.primaryDisease, formattedProbability: liveDiseasePrediction.formattedConfidence },
+                        ...liveDiseasePrediction.differentials.map(d => ({ name: d.name, formattedProbability: d.formattedConfidence }))
+                      ].slice(0, 3)
+                    : candidateDiseases.slice(0, 3)
+                  ).map((cand, idx) => (
                     <div key={idx} className="flex items-center justify-between text-xs bg-white p-2 rounded-lg border border-slate-200">
                       <span className="font-bold text-slate-800 truncate pr-2">
                         {idx + 1}. {cand.name}

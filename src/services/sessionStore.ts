@@ -506,8 +506,8 @@ export function evaluateSessionStopping(session: DiagnosticSession): {
   const entropy = session.currentEntropy;
   const turn = session.questionCount;
 
-  // 1. High Certainty: max P(D) >= 0.85
-  if (topProb >= 0.85) {
+  // 1. High Certainty: max P(D) >= 0.95
+  if (topProb >= 0.95) {
     return {
       isStoppingMet: true,
       reason: {
@@ -518,8 +518,8 @@ export function evaluateSessionStopping(session: DiagnosticSession): {
     };
   }
 
-  // 2. Low Uncertainty: Shannon Entropy <= 0.50 bits
-  if (entropy <= 0.50) {
+  // 2. Low Uncertainty: Shannon Entropy <= 0.25 bits
+  if (entropy <= 0.25) {
     return {
       isStoppingMet: true,
       reason: {
@@ -530,14 +530,14 @@ export function evaluateSessionStopping(session: DiagnosticSession): {
     };
   }
 
-  // 3. Maximum 10 Questions Limit
-  if (turn >= 10) {
+  // 3. Maximum 14 Questions Limit
+  if (turn >= 14) {
     return {
       isStoppingMet: true,
       reason: {
-        en: `📋 Target Clinical Question Limit (10 Questions) Reached`,
-        hi: `📋 अधिकतम नैदानिक प्रश्न सीमा (10 प्रश्न) पूर्ण`,
-        gu: `📋 લક્ષ્યાંકિત તબીબી પ્રશ્ન મર્યાદા (૧૦ પ્રશ્નો) પૂર્ણ`
+        en: `📋 Target Clinical Question Limit (14 Questions) Reached`,
+        hi: `📋 अधिकतम नैदानिक प्रश्न सीमा (14 प्रश्न) पूर्ण`,
+        gu: `📋 લક્ષ્યાંકિત તબીબી પ્રશ્ન મર્યાદા (૧૪ પ્રશ્નો) પૂર્ણ`
       }
     };
   }
