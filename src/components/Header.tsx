@@ -275,18 +275,6 @@ export const Header: React.FC<HeaderProps> = ({
             )}
           </button>
 
-          <button
-            onClick={onMchClick}
-            className={`px-2.5 py-1.5 rounded-xl text-xs transition-all cursor-pointer flex items-center gap-1.5 shrink-0 font-medium ${
-              currentView === 'mch'
-                ? 'bg-[#1E6B63] text-white font-bold shadow-sm border border-[#38A394]/50'
-                : 'text-[#B2DFD8] hover:text-white hover:bg-[#1E6B63]/30'
-            }`}
-          >
-            <Baby className="w-3.5 h-3.5 text-rose-300" />
-            <span>{labels.mch}</span>
-          </button>
-
           {/* More Modules Dropdown Menu */}
           <div className="relative" ref={moreMenuRef}>
             <button
@@ -472,16 +460,6 @@ export const Header: React.FC<HeaderProps> = ({
             >
               <Clock className="w-4 h-4 text-orange-300" />
               <span>{labels.followups}</span>
-            </button>
-
-            <button
-              onClick={() => { onMchClick?.(); setMobileMenuOpen(false); }}
-              className={`p-2.5 rounded-xl flex items-center gap-2 font-semibold transition ${
-                currentView === 'mch' ? 'bg-[#1E6B63] text-white' : 'bg-[#143B38] text-[#B2DFD8]'
-              }`}
-            >
-              <Baby className="w-4 h-4 text-rose-300" />
-              <span>{labels.mch}</span>
             </button>
 
             <button

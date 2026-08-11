@@ -268,7 +268,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
             )}
 
             {/* Core Medical & Community Feature Cards Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1 text-left">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 text-left">
               {onOpenAdherenceTracker && (
                 <button
                   onClick={onOpenAdherenceTracker}
@@ -310,21 +310,6 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
                   <div>
                     <h4 className="text-xs font-bold text-[#0F3835]">{texts.followupsButton}</h4>
                     <p className="text-[10px] text-[#4A6360] font-normal leading-tight mt-0.5">Scheduled clinical reviews</p>
-                  </div>
-                </button>
-              )}
-
-              {onOpenMch && (
-                <button
-                  onClick={onOpenMch}
-                  className="p-3.5 bg-white hover:bg-[#F3F7F6] text-[#0F3835] font-bold rounded-2xl transition border border-[#D5E2DF] hover:border-[#1E6B63]/40 shadow-xs flex flex-col justify-between gap-2 cursor-pointer interactive-card group"
-                >
-                  <div className="w-8 h-8 rounded-xl bg-rose-500/10 text-rose-700 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Baby className="w-4 h-4 text-rose-600" />
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-bold text-[#0F3835]">{texts.mchButton}</h4>
-                    <p className="text-[10px] text-[#4A6360] font-normal leading-tight mt-0.5">Pregnancy & child care</p>
                   </div>
                 </button>
               )}

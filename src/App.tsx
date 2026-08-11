@@ -651,16 +651,6 @@ function MainApp() {
         </button>
 
         <button
-          onClick={handleMchClick}
-          className={`flex flex-col items-center gap-0.5 text-[10px] font-extrabold transition cursor-pointer ${
-            view === 'mch' ? 'text-[#1B4D4A] font-black' : 'text-[#5F6D6C] hover:text-[#1B4D4A]'
-          }`}
-        >
-          <Baby className="w-4 h-4 text-[#2E7D73]" />
-          <span>{bottomNavMch}</span>
-        </button>
-
-        <button
           onClick={handleOutbreakClick}
           className={`flex flex-col items-center gap-0.5 text-[10px] font-extrabold transition cursor-pointer ${
             view === 'outbreak' ? 'text-[#B71C1C] font-black' : 'text-[#5F6D6C] hover:text-[#1B4D4A]'

@@ -196,7 +196,7 @@ export function PortalSelectionScreen({ onSelectPortal }: PortalSelectionScreenP
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                  <span>MCH Care, Ayushman Schemes & Plant Garden</span>
+                  <span>Ayushman Schemes, Plant Garden & Health Habits</span>
                 </div>
               </div>
             </div>
