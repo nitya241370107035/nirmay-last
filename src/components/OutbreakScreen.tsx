@@ -582,7 +582,8 @@ export const OutbreakScreen: React.FC = () => {
 
                           {alert.contributingFacility && (
                             <span className="text-[10px] font-extrabold px-2.5 py-0.5 rounded-lg bg-teal-100 text-teal-800 border border-teal-300 inline-flex items-center gap-1">
-                              🛡️ Verified by {alert.contributingFacility.clinicName}
+                              <ShieldCheck className="w-3.5 h-3.5 text-teal-700" />
+                              <span>Verified by {alert.contributingFacility.clinicName}</span>
                             </span>
                           )}
                         </div>
@@ -598,8 +599,9 @@ export const OutbreakScreen: React.FC = () => {
                         {alert.affectedAreas && alert.affectedAreas.length > 0 && (
                           <div className="flex flex-wrap gap-1 pt-1">
                             {alert.affectedAreas.map((area, aIdx) => (
-                              <span key={aIdx} className="text-[10px] bg-slate-100 text-slate-700 font-semibold px-2 py-0.5 rounded-md border border-slate-200">
-                                📍 {area}
+                              <span key={aIdx} className="text-[10px] bg-slate-100 text-slate-700 font-semibold px-2 py-0.5 rounded-md border border-slate-200 inline-flex items-center gap-1">
+                                <MapPin className="w-3 h-3 text-slate-400" />
+                                <span>{area}</span>
                               </span>
                             ))}
                           </div>
@@ -622,9 +624,12 @@ export const OutbreakScreen: React.FC = () => {
                     </div>
 
                     {alert.customGuidance && (
-                      <div className="bg-teal-50/80 p-2.5 rounded-xl border border-teal-200 text-xs text-teal-950 leading-relaxed">
-                        💡 <strong>Hospital Advisory:</strong>{' '}
-                        {alert.customGuidance[currentLang] || alert.customGuidance.en}
+                      <div className="bg-teal-50/80 p-2.5 rounded-xl border border-teal-200 text-xs text-teal-950 leading-relaxed flex items-start gap-1.5">
+                        <Info className="w-4 h-4 text-teal-700 shrink-0 mt-0.5" />
+                        <div>
+                          <strong>Hospital Advisory:</strong>{' '}
+                          {alert.customGuidance[currentLang] || alert.customGuidance.en}
+                        </div>
                       </div>
                     )}
 

@@ -21,7 +21,8 @@ import {
   Stethoscope,
   HelpCircle,
   RotateCcw,
-  History
+  History,
+  Radio
 } from 'lucide-react';
 import { CaseData, LanguageCode, OutbreakAlert } from '../types';
 import { db } from '../db/db';
@@ -823,7 +824,7 @@ export const CaseTaking: React.FC<CaseTakingProps> = ({ onComplete, onCancel }) 
             {activeOutbreakAlerts.length > 0 && (
               <div className="bg-gradient-to-r from-red-950 via-red-900 to-rose-900 text-white rounded-xl p-3 border border-red-500/40 text-xs flex items-center justify-between gap-2 shadow-xs">
                 <div className="flex items-center gap-2">
-                  <span className="text-base animate-pulse">🚨</span>
+                  <Radio className="w-4 h-4 text-red-400 animate-pulse shrink-0" />
                   <div>
                     <span className="font-black text-red-200">
                       {currentLang === 'gu' ? 'સ્થાનિક રોગચાળો ચેતવણી:' : currentLang === 'hi' ? 'स्थानीय प्रकोप चेतावनी:' : 'Local Community Outbreak:'}
