@@ -194,31 +194,31 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
 
   // Vitals Health Status Helpers
   const getSpo2Status = (spo2: number) => {
-    if (spo2 < 90) return { label: 'Severe Hypoxia', color: 'text-red-700 bg-red-100 border-red-300' };
-    if (spo2 < 95) return { label: 'Mild Hypoxia', color: 'text-amber-700 bg-amber-100 border-amber-300' };
-    return { label: 'Normal', color: 'text-emerald-700 bg-emerald-100 border-emerald-300' };
+    if (spo2 < 90) return { label: currentLang === 'gu' ? 'ગંભીર હાઈપોક્સિયા' : currentLang === 'hi' ? 'गंभीर हाइपोक्सिया' : 'Critical Hypoxia', color: 'text-red-700 bg-red-100 border-red-300' };
+    if (spo2 < 95) return { label: currentLang === 'gu' ? 'ઓછું SpO2' : currentLang === 'hi' ? 'कम SpO2' : 'Low SpO2', color: 'text-amber-700 bg-amber-100 border-amber-300' };
+    return { label: currentLang === 'gu' ? 'સામાન્ય' : currentLang === 'hi' ? 'सामान्य' : 'Normal', color: 'text-emerald-700 bg-emerald-100 border-emerald-300' };
   };
 
   const getHrStatus = (hr: number) => {
-    if (hr > 120) return { label: 'Severe Tachycardia', color: 'text-red-700 bg-red-100 border-red-300' };
-    if (hr > 100) return { label: 'Tachycardia', color: 'text-amber-700 bg-amber-100 border-amber-300' };
-    if (hr < 50) return { label: 'Severe Bradycardia', color: 'text-red-700 bg-red-100 border-red-300' };
-    if (hr < 60) return { label: 'Bradycardia', color: 'text-amber-700 bg-amber-100 border-amber-300' };
-    return { label: 'Normal', color: 'text-emerald-700 bg-emerald-100 border-emerald-300' };
+    if (hr > 120) return { label: currentLang === 'gu' ? 'અતિ ઝડપી ધબકારા' : currentLang === 'hi' ? 'अत्यधिक तेज धड़कन' : 'Severe Tachycardia', color: 'text-red-700 bg-red-100 border-red-300' };
+    if (hr > 100) return { label: currentLang === 'gu' ? 'ઝડપી ધબકારા' : currentLang === 'hi' ? 'तेज धड़कन' : 'Tachycardia', color: 'text-amber-700 bg-amber-100 border-amber-300' };
+    if (hr < 50) return { label: currentLang === 'gu' ? 'અતિ ધીમા ધબકારા' : currentLang === 'hi' ? 'अत्यधिक धीमी धड़कन' : 'Severe Bradycardia', color: 'text-red-700 bg-red-100 border-red-300' };
+    if (hr < 60) return { label: currentLang === 'gu' ? 'ધીમા ધબકારા' : currentLang === 'hi' ? 'धीमी धड़कन' : 'Bradycardia', color: 'text-amber-700 bg-amber-100 border-amber-300' };
+    return { label: currentLang === 'gu' ? 'સામાન્ય' : currentLang === 'hi' ? 'सामान्य' : 'Normal', color: 'text-emerald-700 bg-emerald-100 border-emerald-300' };
   };
 
   const getBpStatus = (sbp: number, dbp: number) => {
-    if (sbp >= 180 || dbp >= 110) return { label: 'Crisis High BP', color: 'text-red-700 bg-red-100 border-red-300' };
-    if (sbp >= 140 || dbp >= 90) return { label: 'Hypertension', color: 'text-amber-700 bg-amber-100 border-amber-300' };
-    if (sbp < 90 || dbp < 50) return { label: 'Hypotension (Low BP)', color: 'text-red-700 bg-red-100 border-red-300' };
-    return { label: 'Normal BP', color: 'text-emerald-700 bg-emerald-100 border-emerald-300' };
+    if (sbp >= 180 || dbp >= 110) return { label: currentLang === 'gu' ? 'અતિ ઊંચું BP (કટોકટી)' : currentLang === 'hi' ? 'अत्यधिक उच्च BP (संकट)' : 'Crisis High BP', color: 'text-red-700 bg-red-100 border-red-300' };
+    if (sbp >= 140 || dbp >= 90) return { label: currentLang === 'gu' ? 'હાઈ બ્લડ પ્રેશર' : currentLang === 'hi' ? 'उच्च रक्तचाप' : 'Hypertension', color: 'text-amber-700 bg-amber-100 border-amber-300' };
+    if (sbp < 90 || dbp < 50) return { label: currentLang === 'gu' ? 'લો બ્લડ પ્રેશર' : currentLang === 'hi' ? 'कम रक्तचाप' : 'Hypotension (Low BP)', color: 'text-red-700 bg-red-100 border-red-300' };
+    return { label: currentLang === 'gu' ? 'સામાન્ય BP' : currentLang === 'hi' ? 'सामान्य BP' : 'Normal BP', color: 'text-emerald-700 bg-emerald-100 border-emerald-300' };
   };
 
   const getTempStatus = (tempC: number) => {
-    if (tempC >= 39.0) return { label: 'High Fever', color: 'text-red-700 bg-red-100 border-red-300' };
-    if (tempC >= 37.6) return { label: 'Fever', color: 'text-amber-700 bg-amber-100 border-amber-300' };
-    if (tempC < 35.5) return { label: 'Hypothermia', color: 'text-blue-700 bg-blue-100 border-blue-300' };
-    return { label: 'Normal', color: 'text-emerald-700 bg-emerald-100 border-emerald-300' };
+    if (tempC >= 39.0) return { label: currentLang === 'gu' ? 'તીવ્ર તાવ' : currentLang === 'hi' ? 'तेज बुखार' : 'High Fever', color: 'text-red-700 bg-red-100 border-red-300' };
+    if (tempC >= 37.6) return { label: currentLang === 'gu' ? 'તાવ' : currentLang === 'hi' ? 'बुखार' : 'Fever', color: 'text-amber-700 bg-amber-100 border-amber-300' };
+    if (tempC < 35.5) return { label: currentLang === 'gu' ? 'ઓછું તાપમાન (હાઇપોથર્મિયા)' : currentLang === 'hi' ? 'कम तापमान' : 'Hypothermia', color: 'text-blue-700 bg-blue-100 border-blue-300' };
+    return { label: currentLang === 'gu' ? 'સામાન્ય' : currentLang === 'hi' ? 'सामान्य' : 'Normal', color: 'text-emerald-700 bg-emerald-100 border-emerald-300' };
   };
 
   // Quick preset loader
@@ -669,32 +669,32 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
           <div className="bg-slate-50 border border-slate-200 rounded-xl p-3 flex flex-wrap items-center justify-between gap-2">
             <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
               <Zap className="w-3.5 h-3.5 text-amber-500" />
-              Quick Clinical Presets:
+              {currentLang === 'gu' ? 'ઝડપી ક્લિનિકલ પ્રીસેટ્સ:' : currentLang === 'hi' ? 'त्वरित क्लिनिकल प्रीसेट:' : 'Quick Clinical Presets:'}
             </span>
             <div className="flex flex-wrap gap-2">
               <button
                 onClick={() => loadPreset('normal')}
-                className="text-xs px-2.5 py-1 bg-white border border-slate-300 hover:border-teal-500 text-slate-700 rounded-lg hover:bg-teal-50 transition"
+                className="text-xs px-2.5 py-1 bg-white border border-slate-300 hover:border-teal-500 text-slate-700 rounded-lg hover:bg-teal-50 transition cursor-pointer"
               >
-                Routine Cold Checkup
+                {currentLang === 'gu' ? 'સામાન્ય શરદી તપાસ' : currentLang === 'hi' ? 'सामान्य सर्दी जांच' : 'Routine Cold Checkup'}
               </button>
               <button
                 onClick={() => loadPreset('fever_cold')}
-                className="text-xs px-2.5 py-1 bg-white border border-slate-300 hover:border-teal-500 text-slate-700 rounded-lg hover:bg-teal-50 transition"
+                className="text-xs px-2.5 py-1 bg-white border border-slate-300 hover:border-teal-500 text-slate-700 rounded-lg hover:bg-teal-50 transition cursor-pointer"
               >
-                High Fever Patient
+                {currentLang === 'gu' ? 'તીવ્ર તાવ દર્દી' : currentLang === 'hi' ? 'तेज बुखार मरीज' : 'High Fever Patient'}
               </button>
               <button
                 onClick={() => loadPreset('cardiac_emergency')}
-                className="text-xs px-2.5 py-1 bg-white border border-rose-300 hover:border-rose-500 text-rose-700 rounded-lg hover:bg-rose-50 transition"
+                className="text-xs px-2.5 py-1 bg-white border border-rose-300 hover:border-rose-500 text-rose-700 rounded-lg hover:bg-rose-50 transition cursor-pointer"
               >
-                Chest Pain & Hypoxia
+                {currentLang === 'gu' ? 'છાતીમાં દુખાવો અને હાઈપોક્સિયા' : currentLang === 'hi' ? 'सीने में दर्द एवं हाइपोक्सिया' : 'Chest Pain & Hypoxia'}
               </button>
               <button
                 onClick={() => loadPreset('acute_abdominal')}
-                className="text-xs px-2.5 py-1 bg-white border border-amber-300 hover:border-amber-500 text-amber-700 rounded-lg hover:bg-amber-50 transition"
+                className="text-xs px-2.5 py-1 bg-white border border-amber-300 hover:border-amber-500 text-amber-700 rounded-lg hover:bg-amber-50 transition cursor-pointer"
               >
-                Acute Abdominal Pain
+                {currentLang === 'gu' ? 'તીવ્ર પેટમાં દુખાવો' : currentLang === 'hi' ? 'तीव्र पेट दर्द' : 'Acute Abdominal Pain'}
               </button>
             </div>
           </div>
@@ -704,24 +704,24 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
             <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
               <h2 className="text-lg font-bold text-slate-900 flex items-center gap-2 mb-4 pb-3 border-b border-slate-100">
                 <User className="w-5 h-5 text-teal-600" />
-                Patient Registration
+                {t.patientRegistrationTitle}
               </h2>
 
               <div className="space-y-4">
                 <div>
-                  <label className="block text-xs font-semibold text-slate-600 mb-1">Full Patient Name</label>
+                  <label className="block text-xs font-semibold text-slate-600 mb-1">{t.patientNameLabel}</label>
                   <input
                     type="text"
                     value={patientInfo.name}
                     onChange={(e) => setPatientInfo({ ...patientInfo, name: e.target.value })}
-                    placeholder="e.g. Rahul Sharma"
+                    placeholder={t.patientNamePlaceholder}
                     className="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-xl focus:ring-2 focus:ring-teal-500 focus:outline-none text-sm"
                   />
                 </div>
 
                 <div className="grid grid-cols-2 gap-3">
                   <div>
-                    <label className="block text-xs font-semibold text-slate-600 mb-1">Age (Years) *</label>
+                    <label className="block text-xs font-semibold text-slate-600 mb-1">{t.ageLabel} *</label>
                     <input
                       type="number"
                       min={18}
@@ -733,21 +733,21 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-slate-600 mb-1">Gender *</label>
+                    <label className="block text-xs font-semibold text-slate-600 mb-1">{t.genderLabel} *</label>
                     <select
                       value={patientInfo.gender}
                       onChange={(e) => setPatientInfo({ ...patientInfo, gender: e.target.value as any })}
                       className="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-xl focus:ring-2 focus:ring-teal-500 focus:outline-none text-sm font-semibold"
                     >
-                      <option value="Male">Male</option>
-                      <option value="Female">Female</option>
+                      <option value="Male">{t.male}</option>
+                      <option value="Female">{t.female}</option>
                     </select>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-2 gap-3">
                   <div>
-                    <label className="block text-xs font-semibold text-slate-600 mb-1">Height (cm)</label>
+                    <label className="block text-xs font-semibold text-slate-600 mb-1">{t.height} (cm)</label>
                     <input
                       type="number"
                       value={vitals.heightCm || 168}
@@ -757,7 +757,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-slate-600 mb-1">Weight (kg)</label>
+                    <label className="block text-xs font-semibold text-slate-600 mb-1">{t.weight} (kg)</label>
                     <input
                       type="number"
                       value={vitals.weightKg || 65}
@@ -769,23 +769,23 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
 
                 <div className="bg-teal-50/70 border border-teal-200 rounded-xl p-3 flex items-center justify-between">
                   <div>
-                    <span className="text-xs font-semibold text-teal-800">Derived BMI</span>
+                    <span className="text-xs font-semibold text-teal-800">{t.derivedBmi}</span>
                     <p className="text-xl font-extrabold text-teal-900">{vitals.derivedBmi} <span className="text-xs font-normal text-teal-700">kg/m²</span></p>
                   </div>
                   <span className={`text-xs px-2.5 py-1 rounded-full font-bold ${
                     vitals.derivedBmi > 30 ? 'bg-amber-100 text-amber-800' : vitals.derivedBmi < 18.5 ? 'bg-blue-100 text-blue-800' : 'bg-emerald-100 text-emerald-800'
                   }`}>
-                    {vitals.derivedBmi > 30 ? 'Obese' : vitals.derivedBmi > 25 ? 'Overweight' : vitals.derivedBmi < 18.5 ? 'Underweight' : 'Normal BMI'}
+                    {vitals.derivedBmi > 30 ? (currentLang === 'gu' ? 'મેદસ્વીતા (Obese)' : currentLang === 'hi' ? 'मोटापा (Obese)' : 'Obese') : vitals.derivedBmi > 25 ? (currentLang === 'gu' ? 'વધારે વજન' : currentLang === 'hi' ? 'अधिक वजन' : 'Overweight') : vitals.derivedBmi < 18.5 ? (currentLang === 'gu' ? 'ઓછું વજન' : currentLang === 'hi' ? 'कम वजन' : 'Underweight') : (currentLang === 'gu' ? 'સામાન્ય BMI' : currentLang === 'hi' ? 'सामान्य BMI' : 'Normal BMI')}
                   </span>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-slate-600 mb-1">Encounter / UHID No.</label>
+                  <label className="block text-xs font-semibold text-slate-600 mb-1">{t.uhidLabel}</label>
                   <input
                     type="text"
                     value={patientInfo.uhid}
                     onChange={(e) => setPatientInfo({ ...patientInfo, uhid: e.target.value })}
-                    className="w-full px-3 py-2 bg-slate-50 border border-slate-200 text-slate-600 rounded-xl text-xs"
+                    className="w-full px-3 py-2 bg-slate-50 border border-slate-200 text-slate-600 rounded-xl text-xs font-mono"
                   />
                 </div>
               </div>
@@ -796,11 +796,11 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
               <div className="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
                 <h2 className="text-lg font-bold text-slate-900 flex items-center gap-2">
                   <Stethoscope className="w-5 h-5 text-teal-600" />
-                  Mandatory Clinical Vitals
+                  {t.mandatoryVitalsTitle}
                 </h2>
                 <span className="text-xs text-slate-500 font-medium flex items-center gap-1">
                   <Info className="w-3.5 h-3.5 text-teal-600" />
-                  Real-time clinical threshold evaluation
+                  {currentLang === 'gu' ? 'વાસ્તવિક સમયમાં ક્લિનિકલ થ્રેશોલ્ડ મૂલ્યાંકન' : currentLang === 'hi' ? 'रियल-टाइम क्लिनिकल सीमा मूल्यांकन' : 'Real-time clinical threshold evaluation'}
                 </span>
               </div>
 
@@ -810,7 +810,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-xs font-bold text-slate-700 flex items-center gap-1.5">
                       <Heart className="w-4 h-4 text-rose-500" />
-                      Heart Rate (Pulse)
+                      {t.heartRate}
                     </span>
                     {(() => {
                       const st = getHrStatus(vitals.heartRate);
@@ -826,7 +826,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
                     />
                     <span className="text-xs text-slate-500 font-semibold">bpm</span>
                   </div>
-                  <span className="text-[11px] text-slate-400 mt-1 block">Normal: 60 – 100 bpm</span>
+                  <span className="text-[11px] text-slate-400 mt-1 block">{t.normalRangeHeartRate}</span>
                 </div>
 
                 {/* SpO2 */}
@@ -834,7 +834,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-xs font-bold text-slate-700 flex items-center gap-1.5">
                       <Percent className="w-4 h-4 text-sky-500" />
-                      Oxygen Saturation (SpO2)
+                      {t.spo2}
                     </span>
                     {(() => {
                       const st = getSpo2Status(vitals.oxygenSaturation);
@@ -853,7 +853,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
                     />
                     <span className="text-xs text-slate-500 font-semibold">%</span>
                   </div>
-                  <span className="text-[11px] text-slate-400 mt-1 block">Normal: 95 – 100% (Critical: &lt;90%)</span>
+                  <span className="text-[11px] text-slate-400 mt-1 block">{t.normalRangeSpO2}</span>
                 </div>
 
                 {/* Blood Pressure (Systolic & Diastolic) */}
@@ -861,7 +861,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-xs font-bold text-slate-700 flex items-center gap-1.5">
                       <Activity className="w-4 h-4 text-indigo-500" />
-                      Blood Pressure (BP)
+                      {t.bloodPressure}
                     </span>
                     {(() => {
                       const st = getBpStatus(vitals.systolicBp, vitals.diastolicBp);
@@ -890,7 +890,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
                     </div>
                     <span className="text-xs text-slate-500 font-semibold">mmHg</span>
                   </div>
-                  <span className="text-[11px] text-slate-400 mt-1 block">Normal: 120 / 80 mmHg</span>
+                  <span className="text-[11px] text-slate-400 mt-1 block">{t.normalRangeBP}</span>
                 </div>
 
                 {/* Body Temperature */}
@@ -898,7 +898,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-xs font-bold text-slate-700 flex items-center gap-1.5">
                       <Thermometer className="w-4 h-4 text-amber-500" />
-                      Body Temperature
+                      {t.bodyTemp}
                     </span>
                     {(() => {
                       const st = getTempStatus(vitals.bodyTemperature);
@@ -923,7 +923,7 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
                       </button>
                     </div>
                   </div>
-                  <span className="text-[11px] text-slate-400 mt-1 block">Normal: 36.5 – 37.5 °C (97.7 – 99.5 °F)</span>
+                  <span className="text-[11px] text-slate-400 mt-1 block">{t.normalRangeTemp}</span>
                 </div>
 
                 {/* Respiratory Rate */}
@@ -931,12 +931,12 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-xs font-bold text-slate-700 flex items-center gap-1.5">
                       <Wind className="w-4 h-4 text-teal-600" />
-                      Respiratory Rate (Breaths per Minute)
+                      {currentLang === 'gu' ? 'શ્વસન દર (શ્વાસ પ્રતિ મિનિટ)' : currentLang === 'hi' ? 'श्वसन दर (सांसें प्रति मिनट)' : 'Respiratory Rate (Breaths per Minute)'}
                     </span>
                     <span className={`text-[11px] px-2 py-0.5 rounded-md font-bold border ${
                       vitals.respiratoryRate > 22 ? 'text-red-700 bg-red-100 border-red-300' : vitals.respiratoryRate < 12 ? 'text-amber-700 bg-amber-100 border-amber-300' : 'text-emerald-700 bg-emerald-100 border-emerald-300'
                     }`}>
-                      {vitals.respiratoryRate > 22 ? 'Tachypnea (Rapid)' : vitals.respiratoryRate < 12 ? 'Bradypnea' : 'Normal Rate'}
+                      {vitals.respiratoryRate > 22 ? (currentLang === 'gu' ? 'ઝડપી શ્વાસ (Tachypnea)' : currentLang === 'hi' ? 'तेज सांस (Tachypnea)' : 'Tachypnea (Rapid)') : vitals.respiratoryRate < 12 ? (currentLang === 'gu' ? 'ધીમો શ્વાસ (Bradypnea)' : currentLang === 'hi' ? 'धीमी सांस (Bradypnea)' : 'Bradypnea') : (currentLang === 'gu' ? 'સામાન્ય દર' : currentLang === 'hi' ? 'सामान्य दर' : 'Normal Rate')}
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
@@ -950,7 +950,9 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
                     />
                     <span className="text-lg font-bold text-slate-800 w-16 text-right">{vitals.respiratoryRate} <span className="text-xs font-normal text-slate-500">/min</span></span>
                   </div>
-                  <span className="text-[11px] text-slate-400 mt-1 block">Normal adult range: 12 – 20 breaths/min</span>
+                  <span className="text-[11px] text-slate-400 mt-1 block">
+                    {currentLang === 'gu' ? 'સામાન્ય પુખ્ત દર: ૧૨ – ૨૦ શ્વાસ/મિનિટ' : currentLang === 'hi' ? 'सामान्य वयस्क दर: 12 – 20 सांसें/मिनट' : 'Normal adult range: 12 – 20 breaths/min'}
+                  </span>
                 </div>
               </div>
 
@@ -958,9 +960,9 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
               <div className="mt-6 pt-4 border-t border-slate-100 flex justify-end">
                 <button
                   onClick={() => setStep(2)}
-                  className="flex items-center gap-2 px-6 py-3 bg-teal-700 hover:bg-teal-800 text-white font-bold rounded-xl shadow-md transition"
+                  className="flex items-center gap-2 px-6 py-3 bg-teal-700 hover:bg-teal-800 text-white font-bold rounded-xl shadow-md transition cursor-pointer"
                 >
-                  Proceed to Chief Complaint Selection
+                  {t.proceedToChiefComplaint}
                   <ChevronRight className="w-5 h-5" />
                 </button>
               </div>
@@ -1095,17 +1097,17 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
               <div className="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
                 <div className="flex items-center gap-2">
                   <span className="bg-teal-100 text-teal-800 text-xs px-2.5 py-1 rounded-full font-bold">
-                    Turn {questionHistory.length} of 5
+                    {currentLang === 'gu' ? 'પ્રશ્ન' : currentLang === 'hi' ? 'प्रश्न' : 'Question'} {questionHistory.length + 1}
                   </span>
                   <span className="text-xs text-slate-500 font-medium">
-                    Chief Complaint: <strong className="text-slate-800 capitalize">{chiefComplaint.replace('cc_', '')}</strong>
+                    {currentLang === 'gu' ? 'મુખ્ય તકલીફ' : currentLang === 'hi' ? 'मुख्य समस्या' : 'Chief Complaint'}: <strong className="text-slate-800 capitalize">{getChiefComplaintLabel(chiefComplaint, currentLang)}</strong>
                   </span>
                 </div>
 
                 {currentQuestion?.isRedFlag && (
                   <span className="bg-rose-100 text-rose-800 text-xs px-2.5 py-1 rounded-full font-bold flex items-center gap-1 border border-rose-200">
                     <ShieldAlert className="w-3.5 h-3.5 text-rose-600" />
-                    Critical Red-Flag Query
+                    {currentLang === 'gu' ? 'ક્રિટિકલ પ્રશ્ન' : currentLang === 'hi' ? 'क्रिटिकल प्रश्न' : 'Critical Red-Flag Query'}
                   </span>
                 )}
               </div>
@@ -1116,14 +1118,14 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
                   <div className="bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs text-slate-600 flex items-center gap-2">
                     <Layers className="w-4 h-4 text-teal-600 flex-shrink-0" />
                     <span>
-                      <strong>Clinical Context:</strong> {currentQuestion.clinicalReason}
+                      <strong>{currentLang === 'gu' ? 'ક્લિનિકલ સંદર્ભ:' : currentLang === 'hi' ? 'क्लिनिकल संदर्भ:' : 'Clinical Context:'}</strong> {currentQuestion.clinicalReason}
                     </span>
                   </div>
 
                   {/* Main Question Prompt */}
                   <div className="p-6 bg-gradient-to-br from-slate-50 to-teal-50/40 rounded-2xl border border-teal-100">
                     <span className="text-xs font-bold text-teal-700 uppercase tracking-wider block mb-1">
-                      Symptom Inquiry: {currentQuestion.symptomName}
+                      {currentLang === 'gu' ? 'લક્ષણ પ્રશ્નાવલી' : currentLang === 'hi' ? 'लक्षण जांच' : 'Symptom Inquiry'}: {getChiefComplaintLabel(currentQuestion.symptomId, currentLang) || currentQuestion.symptomName}
                     </span>
                     <h3 className="text-xl md:text-2xl font-extrabold text-slate-900 leading-snug">
                       {currentLang === 'hi'
@@ -1140,46 +1142,46 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
                       type="button"
                       disabled={isSubmitting}
                       onClick={() => handleAnswerQuestion(1)}
-                      className="p-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl font-bold shadow-md hover:shadow-lg transition flex flex-col items-center justify-center gap-1.5"
+                      className="p-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl font-bold shadow-md hover:shadow-lg transition flex flex-col items-center justify-center gap-1.5 cursor-pointer"
                     >
                       <CheckCircle2 className="w-6 h-6" />
-                      <span className="text-base">Yes (Present)</span>
-                      <span className="text-[11px] opacity-80">हा / હા</span>
+                      <span className="text-base">{currentLang === 'gu' ? 'હા (હાજર છે)' : currentLang === 'hi' ? 'हां (मौजूद है)' : 'Yes (Present)'}</span>
+                      <span className="text-[11px] opacity-80">हा / હા / Yes</span>
                     </button>
 
                     <button
                       type="button"
                       disabled={isSubmitting}
                       onClick={() => handleAnswerQuestion(0)}
-                      className="p-4 bg-rose-600 hover:bg-rose-700 text-white rounded-2xl font-bold shadow-md hover:shadow-lg transition flex flex-col items-center justify-center gap-1.5"
+                      className="p-4 bg-rose-600 hover:bg-rose-700 text-white rounded-2xl font-bold shadow-md hover:shadow-lg transition flex flex-col items-center justify-center gap-1.5 cursor-pointer"
                     >
                       <XCircle className="w-6 h-6" />
-                      <span className="text-base">No (Absent)</span>
-                      <span className="text-[11px] opacity-80">नहीं / ના</span>
+                      <span className="text-base">{currentLang === 'gu' ? 'ના (નથી)' : currentLang === 'hi' ? 'नहीं (अनुपस्थित)' : 'No (Absent)'}</span>
+                      <span className="text-[11px] opacity-80">नहीं / ના / No</span>
                     </button>
 
                     <button
                       type="button"
                       disabled={isSubmitting}
                       onClick={() => handleAnswerQuestion(null)}
-                      className="p-4 bg-slate-200 hover:bg-slate-300 text-slate-800 rounded-2xl font-bold transition flex flex-col items-center justify-center gap-1.5"
+                      className="p-4 bg-slate-200 hover:bg-slate-300 text-slate-800 rounded-2xl font-bold transition flex flex-col items-center justify-center gap-1.5 cursor-pointer"
                     >
                       <HelpCircle className="w-6 h-6 text-slate-600" />
-                      <span className="text-base">Unsure / Skip</span>
-                      <span className="text-[11px] text-slate-600">अस्पष्ट / અસ્પષ્ટ</span>
+                      <span className="text-base">{currentLang === 'gu' ? 'અસ્પષ્ટ / છોડો' : currentLang === 'hi' ? 'अस्पष्ट / छोड़ें' : 'Unsure / Skip'}</span>
+                      <span className="text-[11px] text-slate-600">अस्पष्ट / અસ્પષ્ટ / Skip</span>
                     </button>
                   </div>
                 </div>
               ) : (
                 <div className="text-center py-10">
                   <CheckCircle2 className="w-12 h-12 text-teal-600 mx-auto mb-3" />
-                  <h3 className="text-lg font-bold text-slate-800">Dynamic Inquiries Completed</h3>
-                  <p className="text-sm text-slate-500 mb-4">Sufficient clinical signal gathered for risk prediction.</p>
+                  <h3 className="text-lg font-bold text-slate-800">{currentLang === 'gu' ? 'ડાયનેમિક પ્રશ્નાવલી પૂર્ણ થઈ' : currentLang === 'hi' ? 'डायनेमिक प्रश्नावली पूर्ण हुई' : 'Dynamic Inquiries Completed'}</h3>
+                  <p className="text-sm text-slate-500 mb-4">{currentLang === 'gu' ? 'જોખમ મૂલ્યાંકન માટે પૂરતા ક્લિનિકલ સંકેતો મળી ગયા છે.' : currentLang === 'hi' ? 'जोखिम मूल्यांकन के लिए पर्याप्त क्लिनिकल संकेत प्राप्त हुए।' : 'Sufficient clinical signal gathered for risk prediction.'}</p>
                   <button
                     onClick={() => runFinalTriage()}
-                    className="px-6 py-3 bg-teal-700 text-white font-bold rounded-xl shadow hover:bg-teal-800 transition"
+                    className="px-6 py-3 bg-teal-700 text-white font-bold rounded-xl shadow hover:bg-teal-800 transition cursor-pointer"
                   >
-                    View Triage Assessment
+                    {currentLang === 'gu' ? 'ટ્રાયજ પરિણામ જુઓ' : currentLang === 'hi' ? 'ट्राइएज परिणाम देखें' : 'View Triage Assessment'}
                   </button>
                 </div>
               )}
@@ -1188,17 +1190,17 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
               <div className="pt-4 border-t border-slate-100 flex justify-between items-center">
                 <button
                   onClick={() => setStep(2)}
-                  className="text-xs text-slate-500 hover:text-slate-800 font-semibold"
+                  className="text-xs text-slate-500 hover:text-slate-800 font-semibold cursor-pointer"
                 >
-                  Change Chief Complaint
+                  {currentLang === 'gu' ? 'મુખ્ય તકલીફ બદલો' : currentLang === 'hi' ? 'मुख्य समस्या बदलें' : 'Change Chief Complaint'}
                 </button>
                 <button
                   onClick={() => runFinalTriage()}
                   disabled={isSubmitting}
-                  className="text-xs px-4 py-2 bg-slate-100 hover:bg-teal-100 text-teal-800 font-bold rounded-xl border border-slate-300 transition flex items-center gap-1.5"
+                  className="text-xs px-4 py-2 bg-slate-100 hover:bg-teal-100 text-teal-800 font-bold rounded-xl border border-slate-300 transition flex items-center gap-1.5 cursor-pointer"
                 >
                   <Zap className="w-3.5 h-3.5 text-amber-500" />
-                  Calculate Risk Now (Early Triage)
+                  {currentLang === 'gu' ? 'હમણાં જોખમ ગણો (ઝડપી ટ્રાયજ)' : currentLang === 'hi' ? 'अभी जोखिम गणना करें (त्वरित ट्राइएज)' : 'Calculate Risk Now (Early Triage)'}
                 </button>
               </div>
             </div>
@@ -1209,28 +1211,28 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
             <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
               <h3 className="text-sm font-bold text-slate-800 mb-3 pb-2 border-b border-slate-100 flex items-center gap-2">
                 <Stethoscope className="w-4 h-4 text-teal-600" />
-                Live Encounter Overview
+                {currentLang === 'gu' ? 'લાઇવ એન્કાઉન્ટર સારાંશ' : currentLang === 'hi' ? 'लाइव परामर्श अवलोकन' : 'Live Encounter Overview'}
               </h3>
 
               <div className="space-y-2 text-xs">
                 <div className="flex justify-between py-1 border-b border-slate-50">
-                  <span className="text-slate-500">Patient:</span>
-                  <span className="font-bold text-slate-800">{patientInfo.name || 'Unregistered'} ({patientInfo.age}y, {patientInfo.gender})</span>
+                  <span className="text-slate-500">{currentLang === 'gu' ? 'દર્દી' : currentLang === 'hi' ? 'मरीज' : 'Patient'}:</span>
+                  <span className="font-bold text-slate-800">{patientInfo.name || (currentLang === 'gu' ? 'અનામી' : currentLang === 'hi' ? 'गुमनाम' : 'Unregistered')} ({patientInfo.age}y, {patientInfo.gender})</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-slate-50">
                   <span className="text-slate-500">SpO2:</span>
                   <span className="font-bold text-slate-800">{vitals.oxygenSaturation}%</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-slate-50">
-                  <span className="text-slate-500">Heart Rate:</span>
+                  <span className="text-slate-500">{currentLang === 'gu' ? 'ધબકારા' : currentLang === 'hi' ? 'हृदय गति' : 'Heart Rate'}:</span>
                   <span className="font-bold text-slate-800">{vitals.heartRate} bpm</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-slate-50">
-                  <span className="text-slate-500">Blood Pressure:</span>
+                  <span className="text-slate-500">{currentLang === 'gu' ? 'બ્લડ પ્રેશર' : currentLang === 'hi' ? 'रक्तचाप' : 'Blood Pressure'}:</span>
                   <span className="font-bold text-slate-800">{vitals.systolicBp}/{vitals.diastolicBp} mmHg</span>
                 </div>
                 <div className="flex justify-between py-1">
-                  <span className="text-slate-500">Temperature:</span>
+                  <span className="text-slate-500">{currentLang === 'gu' ? 'તાપમાન' : currentLang === 'hi' ? 'तापमान' : 'Temperature'}:</span>
                   <span className="font-bold text-slate-800">{vitals.bodyTemperature}°C</span>
                 </div>
               </div>
@@ -1239,16 +1241,16 @@ export function ClinicPortal({ onSwitchPortal }: ClinicPortalProps) {
             {/* Answer History */}
             <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
               <h3 className="text-sm font-bold text-slate-800 mb-3 pb-2 border-b border-slate-100">
-                Question History ({questionHistory.length})
+                {currentLang === 'gu' ? 'પ્રશ્ન ઇતિહાસ' : currentLang === 'hi' ? 'प्रश्न इतिहास' : 'Question History'} ({questionHistory.length})
               </h3>
               <div className="space-y-2 max-h-64 overflow-y-auto pr-1">
                 {questionHistory.map((item, idx) => (
                   <div key={idx} className="p-2 bg-slate-50 rounded-xl border border-slate-200 text-xs flex items-center justify-between">
-                    <span className="font-medium text-slate-700 truncate mr-2">{item.symptomName}</span>
+                    <span className="font-medium text-slate-700 truncate mr-2">{getChiefComplaintLabel(item.symptomId, currentLang) || item.symptomName}</span>
                     <span className={`px-2 py-0.5 rounded font-bold text-[11px] ${
                       item.answer === 1 ? 'bg-emerald-100 text-emerald-800' : item.answer === 0 ? 'bg-rose-100 text-rose-800' : 'bg-slate-200 text-slate-600'
                     }`}>
-                      {item.answer === 1 ? 'Yes' : item.answer === 0 ? 'No' : 'Skip'}
+                      {item.answer === 1 ? (currentLang === 'gu' ? 'હા' : currentLang === 'hi' ? 'हां' : 'Yes') : item.answer === 0 ? (currentLang === 'gu' ? 'ના' : currentLang === 'hi' ? 'नहीं' : 'No') : (currentLang === 'gu' ? 'છોડો' : currentLang === 'hi' ? 'छोड़ें' : 'Skip')}
                     </span>
                   </div>
                 ))}
