@@ -905,8 +905,8 @@ class DiseaseModelService {
 
     const maxProb = rankedCandidates[0]?.probability ? rankedCandidates[0].probability / 100 : 0;
 
-    // Check Stopping Conditions
-    if (maxProb >= 0.95) {
+    // Check Stopping Conditions (Enforce minimum 6 questions before stopping)
+    if (questionTurn >= 6 && maxProb >= 0.95) {
       return {
         nextQuestion: null,
         currentEntropy: Number(currentEntropy.toFixed(3)),
@@ -922,23 +922,7 @@ class DiseaseModelService {
       };
     }
 
-    if (currentEntropy <= 0.25) {
-      return {
-        nextQuestion: null,
-        currentEntropy: Number(currentEntropy.toFixed(3)),
-        maxProbability: Number((maxProb * 100).toFixed(1)),
-        topCandidates: rankedCandidates.slice(0, 5),
-        isStoppingCriteriaMet: true,
-        stoppingReason: 'low_entropy',
-        stoppingMessage: {
-          en: `Clinical Uncertainty Minimized (Entropy ≤ 0.25 bits).`,
-          hi: `नैदानिक अनिश्चितता न्यूनतम (Entropy ≤ 0.25 bits) हो गई है।`,
-          gu: `તબીબી અનિશ્ચિતતા ન્યૂનતમ (Entropy ≤ 0.25 bits) થઈ ગઈ છે.`
-        }
-      };
-    }
-
-    if (questionTurn > 14) {
+    if (questionTurn >= 14) {
       return {
         nextQuestion: null,
         currentEntropy: Number(currentEntropy.toFixed(3)),
@@ -954,13 +938,69 @@ class DiseaseModelService {
       };
     }
 
-    // 3. Compute case-specific Information Gain IG(S_j) for candidate-associated features
-    let bestFeature: string | null = null;
-    let maxGain = -Infinity;
-    let bestEntropyRed = 0;
+    // 3. Hierarchical Candidate Disease Narrowing
+    const confirmedRaw = Object.keys(symptomVector).filter((k) => symptomVector[k] === 1);
+    const confirmedSymptoms = confirmedRaw.flatMap((s) => getFeaturesForSymptom(s, this.features));
 
-    // Active candidate disease pool (top diseases with probability >= 1.5% or top 5)
-    const topCandidates = rankedCandidates.filter((c, idx) => (c.probability / 100) >= 0.015 || idx < 5);
+    const excludedRaw = Object.keys(symptomVector).filter((k) => symptomVector[k] === 0);
+    const excludedSymptoms = excludedRaw.flatMap((s) => getFeaturesForSymptom(s, this.features));
+
+    let candidateDiseaseIndices: number[] = [];
+    for (let d = 0; d < this.diseases.length; d++) {
+      const pSList = this.pSGivenD[d] || [];
+      let hasAllConfirmed = true;
+      for (const cs of confirmedSymptoms) {
+        const fIdx = this.features.indexOf(cs);
+        if (fIdx !== -1 && (pSList[fIdx] || 0) < 0.10) {
+          hasAllConfirmed = false;
+          break;
+        }
+      }
+      if (!hasAllConfirmed) continue;
+
+      let hasExcluded = false;
+      for (const es of excludedSymptoms) {
+        const fIdx = this.features.indexOf(es);
+        if (fIdx !== -1 && (pSList[fIdx] || 0) >= 0.80) {
+          hasExcluded = true;
+          break;
+        }
+      }
+      if (!hasExcluded) {
+        candidateDiseaseIndices.push(d);
+      }
+    }
+
+    // Fallback: If no candidate perfectly satisfies strict subset, rank by matching score
+    if (candidateDiseaseIndices.length === 0) {
+      let maxMatchScore = -Infinity;
+      let scores: number[] = [];
+      for (let d = 0; d < this.diseases.length; d++) {
+        const pSList = this.pSGivenD[d] || [];
+        let cMatch = 0;
+        for (const cs of confirmedSymptoms) {
+          const fIdx = this.features.indexOf(cs);
+          if (fIdx !== -1 && (pSList[fIdx] || 0) >= 0.10) cMatch += 1;
+        }
+        let eMatch = 0;
+        for (const es of excludedSymptoms) {
+          const fIdx = this.features.indexOf(es);
+          if (fIdx !== -1 && (pSList[fIdx] || 0) >= 0.50) eMatch += 1;
+        }
+        const score = cMatch * 2 - eMatch;
+        scores.push(score);
+        if (score > maxMatchScore) maxMatchScore = score;
+      }
+      candidateDiseaseIndices = scores
+        .map((s, idx) => (s === maxMatchScore ? idx : -1))
+        .filter((idx) => idx !== -1);
+    }
+
+    // 4. Select best unasked symptom among remaining candidate diseases
+    let bestFeature: string | null = null;
+    let bestScore = -Infinity;
+    let bestEntropyRed = 0;
+    const numCandidates = candidateDiseaseIndices.length;
 
     for (let fIdx = 0; fIdx < this.features.length; fIdx++) {
       const feat = this.features[fIdx];
@@ -969,101 +1009,30 @@ class DiseaseModelService {
       if (symptomVector[feat] !== undefined && symptomVector[feat] !== null) continue;
       if (symptomVector[featLower] !== undefined && symptomVector[featLower] !== null) continue;
 
-      // Clinical Relevance Filter: Symptom MUST occur (P(S|D) >= 0.08) in at least one top candidate disease
-      let maxCandidateAssoc = 0.0;
-      for (const cand of topCandidates) {
-        const dIdx = this.diseases.indexOf(cand.diseaseId);
-        if (dIdx !== -1) {
-          const pS = this.pSGivenD[dIdx] ? (this.pSGivenD[dIdx][fIdx] || 0.0) : 0.0;
-          if (pS > maxCandidateAssoc) maxCandidateAssoc = pS;
+      let countInCandidates = 0;
+      for (const dIdx of candidateDiseaseIndices) {
+        if ((this.pSGivenD[dIdx]?.[fIdx] || 0) >= 0.10) {
+          countInCandidates++;
         }
       }
 
-      if (maxCandidateAssoc < 0.08) continue;
+      if (countInCandidates === 0) continue; // Skip symptoms unrelated to candidate diseases
 
-      // 0.5. Smart Question Relevance Filter: Candidate symptom MUST co-occur (P(S_j | S_i) >= 0.05) with at least one confirmed symptom
-      const confirmedRaw = Object.keys(symptomVector).filter((k) => symptomVector[k] === 1);
-      const confirmedSymptoms = confirmedRaw.flatMap((s) => getFeaturesForSymptom(s, this.features));
-      if (confirmedSymptoms.length > 0) {
-        const topProb = topCandidates[0]?.probability ?? 0.0;
-        if (!areSymptomsInterrelated(confirmedSymptoms, feat, topProb / 100)) {
-          continue;
-        }
-
-        let maxCoOccur = 0.0;
-        for (const cs of confirmedSymptoms) {
-          const csLower = cs.toLowerCase().trim();
-          const csMatrix = (modelData as any).symptom_co_occurrence?.[cs] || (modelData as any).symptom_co_occurrence?.[csLower];
-          if (csMatrix) {
-            const prob = csMatrix[feat] || csMatrix[featLower] || 0.0;
-            if (prob > maxCoOccur) maxCoOccur = prob;
-          }
-        }
-        if (maxCoOccur < 0.05) continue;
+      const ratio = countInCandidates / numCandidates;
+      let splitPower = 1.0;
+      if (numCandidates > 1) {
+        splitPower = 1.0 - Math.abs(ratio - 0.5) * 2.0;
       }
 
-      let pS1 = 0;
-      for (let d = 0; d < this.diseases.length; d++) {
-        const pS_given_d = this.pSGivenD[d] ? (this.pSGivenD[d][fIdx] || 1e-4) : 1e-4;
-        pS1 += posterior[d] * pS_given_d;
-      }
-      pS1 = Math.max(1e-4, Math.min(1.0 - 1e-4, pS1));
-      const pS0 = 1.0 - pS1;
-
-      // Hypothetical Posterior if S_j = 1
-      let hGivenS1 = 0;
-      let sumPost1 = 0;
-      const post1 = new Float64Array(this.diseases.length);
-      for (let d = 0; d < this.diseases.length; d++) {
-        const pS_given_d = this.pSGivenD[d] ? (this.pSGivenD[d][fIdx] || 1e-4) : 1e-4;
-        post1[d] = posterior[d] * pS_given_d;
-        sumPost1 += post1[d];
-      }
-      for (let d = 0; d < this.diseases.length; d++) {
-        const p = post1[d] / (sumPost1 || 1);
-        if (p > 1e-9) hGivenS1 -= p * Math.log2(p);
-      }
-
-      // Hypothetical Posterior if S_j = 0
-      let hGivenS0 = 0;
-      let sumPost0 = 0;
-      const post0 = new Float64Array(this.diseases.length);
-      for (let d = 0; d < this.diseases.length; d++) {
-        const pS_given_d = this.pSGivenD[d] ? (this.pSGivenD[d][fIdx] || 1e-4) : 1e-4;
-        post0[d] = posterior[d] * (1.0 - pS_given_d);
-        sumPost0 += post0[d];
-      }
-      for (let d = 0; d < this.diseases.length; d++) {
-        const p = post0[d] / (sumPost0 || 1);
-        if (p > 1e-9) hGivenS0 -= p * Math.log2(p);
-      }
-
-      const expectedConditionalEntropy = pS1 * hGivenS1 + pS0 * hGivenS0;
-      const rawInfoGain = currentEntropy - expectedConditionalEntropy;
-
-      // Differential Splitting Power
-      let maxDiffGap = 0.0;
-      if (topCandidates.length >= 2) {
-        const d1Idx = this.diseases.indexOf(topCandidates[0].diseaseId);
-        const p1 = d1Idx !== -1 && this.pSGivenD[d1Idx] ? (this.pSGivenD[d1Idx][fIdx] || 0.0) : 0.0;
-        for (let k = 1; k < Math.min(4, topCandidates.length); k++) {
-          const dkIdx = this.diseases.indexOf(topCandidates[k].diseaseId);
-          const pk = dkIdx !== -1 && this.pSGivenD[dkIdx] ? (this.pSGivenD[dkIdx][fIdx] || 0.0) : 0.0;
-          const gap = Math.abs(p1 - pk);
-          if (gap > maxDiffGap) maxDiffGap = gap;
-        }
-      }
-
-      const utility = rawInfoGain * (1.0 + 2.0 * maxDiffGap + 1.2 * maxCandidateAssoc);
-
-      if (utility > maxGain && rawInfoGain >= 0.003) {
-        maxGain = utility;
+      const score = splitPower * 10 + countInCandidates;
+      if (score > bestScore) {
+        bestScore = score;
         bestFeature = feat;
-        bestEntropyRed = rawInfoGain;
+        bestEntropyRed = splitPower;
       }
     }
 
-    if (!bestFeature || maxGain < 0.003) {
+    if (!bestFeature) {
       return {
         nextQuestion: null,
         currentEntropy: Number(currentEntropy.toFixed(3)),
@@ -1072,7 +1041,7 @@ class DiseaseModelService {
         isStoppingCriteriaMet: true,
         stoppingReason: 'pool_exhausted',
         stoppingMessage: {
-          en: `Candidate symptom pool exhausted (No further high-gain questions).`,
+          en: `Candidate symptom pool exhausted. Proceeding to XGBoost diagnosis.`,
           hi: `सभी प्रासंगिक प्रश्नों का विश्लेषण पूर्ण हो चुका है।`,
           gu: `બધા સંબંધિત પ્રશ્નોનું વિશ્લેષણ પૂર્ણ થઈ ગયું છે.`
         }
@@ -1094,7 +1063,7 @@ class DiseaseModelService {
         hi: `क्या आपको ${labels.hi} की समस्या है?`,
         gu: `શું તમને ${labels.gu} ની તકલીફ છે?`,
       },
-      informationGain: Number((maxGain * 100).toFixed(1)),
+      informationGain: Number((Math.max(1, bestScore) * 10).toFixed(1)),
       expectedEntropyReduction: Number((bestEntropyRed * 100).toFixed(1))
     };
 

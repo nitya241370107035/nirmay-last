@@ -282,37 +282,8 @@ const SYMPTOM_CATEGORIES: Record<string, string> = {
   'stiff_neck': 'musculo',
   'swelling_joints': 'musculo',
   'movement_stiffness': 'musculo',
-  'painful_walking': 'musculo',
-
-  // Neurological & Balance
-  'dizziness': 'neuro',
-  'loss_of_balance': 'neuro',
-  'unsteadiness': 'neuro',
-  'spinning_movements': 'neuro',
-  'slurred_speech': 'neuro',
-  'weakness_of_one_body_side': 'neuro',
-  'altered_sensorium': 'neuro',
-  'lack_of_concentration': 'neuro',
-  'visual_disturbances': 'neuro',
-  'coma': 'neuro'
+  'painful_walking': 'musculo'
 };
-
-function areSymptomsInterrelated(confirmed: string[], candidate: string, topProb: number): boolean {
-  if (confirmed.length === 0) return true;
-  if (topProb >= 0.50) return true;
-
-  const candCat = SYMPTOM_CATEGORIES[candidate.toLowerCase().trim()] || 'general';
-  if (candCat === 'infectious' || candCat === 'general') return true;
-
-  for (const cs of confirmed) {
-    const csCat = SYMPTOM_CATEGORIES[cs.toLowerCase().trim()] || 'general';
-    if (csCat === 'general' || csCat === candCat) {
-      return true;
-    }
-  }
-
-  return false;
-}
 
 function getFeaturesForSymptom(s: string): string[] {
   const norm = s.toLowerCase().trim().replace(/[\s_]+/g, '_');
@@ -348,7 +319,7 @@ function getFeaturesForSymptom(s: string): string[] {
 }
 
 /**
- * Expected Information Gain & Multi-Criteria Question Utility Engine
+ * Candidate Disease Narrowing & Hierarchical Splitting Question Engine
  */
 export function selectBestAdaptiveQuestion(session: DiagnosticSession): {
   featureId: string;
@@ -362,18 +333,72 @@ export function selectBestAdaptiveQuestion(session: DiagnosticSession): {
   const askedSet = new Set((session.askedSymptoms || []).map((s) => s.toLowerCase().trim()));
   const skippedSet = new Set((session.skippedSymptoms || []).map((s) => s.toLowerCase().trim()));
 
-  const { posterior, entropy: currentEntropy } = computeBayesianPosterior(vector);
-  const p_D = posterior.reduce((acc, item) => {
-    acc[item.diseaseId] = item.probability;
-    return acc;
-  }, {} as Record<string, number>);
+  const confirmedRaw = Object.keys(vector).filter((k) => vector[k] === 1);
+  const confirmedSymptoms = confirmedRaw.flatMap(getFeaturesForSymptom);
 
-  // Candidate disease differential (top conditions with >= 1.5% probability or top 5)
-  const topCandidateList = posterior.filter((d, idx) => d.probability >= 0.015 || idx < 5);
-  const topCandidateDiseases = new Set(topCandidateList.map((d) => d.diseaseId));
+  const excludedRaw = Object.keys(vector).filter((k) => vector[k] === 0);
+  const excludedSymptoms = excludedRaw.flatMap(getFeaturesForSymptom);
 
-  let bestQuestion: any = null;
-  let maxUtility = -Infinity;
+  // 1. Determine active candidate diseases that have all confirmed symptoms
+  let candidateDiseaseIndices: number[] = [];
+  for (let d = 0; d < CANONICAL_DISEASES.length; d++) {
+    const pSList = P_S_GIVEN_D[d] || [];
+    
+    // Check if disease has ALL confirmed symptoms
+    let hasAllConfirmed = true;
+    for (const cs of confirmedSymptoms) {
+      const fIdx = CANONICAL_FEATURES.indexOf(cs);
+      if (fIdx !== -1 && (pSList[fIdx] || 0) < 0.10) {
+        hasAllConfirmed = false;
+        break;
+      }
+    }
+    if (!hasAllConfirmed) continue;
+
+    // Check if disease has any strictly excluded symptom
+    let hasExcluded = false;
+    for (const es of excludedSymptoms) {
+      const fIdx = CANONICAL_FEATURES.indexOf(es);
+      if (fIdx !== -1 && (pSList[fIdx] || 0) >= 0.80) {
+        hasExcluded = true;
+        break;
+      }
+    }
+    if (!hasExcluded) {
+      candidateDiseaseIndices.push(d);
+    }
+  }
+
+  // Fallback: If no disease strictly satisfies all constraints, score by matching count
+  if (candidateDiseaseIndices.length === 0) {
+    let maxMatchScore = -Infinity;
+    let scores: number[] = [];
+    for (let d = 0; d < CANONICAL_DISEASES.length; d++) {
+      const pSList = P_S_GIVEN_D[d] || [];
+      let cMatch = 0;
+      for (const cs of confirmedSymptoms) {
+        const fIdx = CANONICAL_FEATURES.indexOf(cs);
+        if (fIdx !== -1 && (pSList[fIdx] || 0) >= 0.10) cMatch += 1;
+      }
+      let eMatch = 0;
+      for (const es of excludedSymptoms) {
+        const fIdx = CANONICAL_FEATURES.indexOf(es);
+        if (fIdx !== -1 && (pSList[fIdx] || 0) >= 0.50) eMatch += 1;
+      }
+      const score = cMatch * 2 - eMatch;
+      scores.push(score);
+      if (score > maxMatchScore) maxMatchScore = score;
+    }
+    candidateDiseaseIndices = scores
+      .map((s, idx) => (s === maxMatchScore ? idx : -1))
+      .filter((idx) => idx !== -1);
+  }
+
+  // 2. Rank unasked symptoms present among candidate diseases
+  let bestFeatureId: string | null = null;
+  let bestScore = -Infinity;
+  let bestCount = 0;
+  const numCandidates = candidateDiseaseIndices.length;
 
   for (let fIdx = 0; fIdx < CANONICAL_FEATURES.length; fIdx++) {
     const featId = CANONICAL_FEATURES[fIdx];
@@ -383,116 +408,57 @@ export function selectBestAdaptiveQuestion(session: DiagnosticSession): {
     if (askedSet.has(featLower) || askedSet.has(featId)) continue;
     if (skippedSet.has(featLower) || skippedSet.has(featId)) continue;
 
-    // 0. Clinical Relevance Filter: Symptom MUST be present (P(S|D) >= 0.08) in at least one candidate disease
-    let maxCandidateAssociation = 0.0;
-    for (const cand of topCandidateList) {
-      const dIdx = CANONICAL_DISEASES.indexOf(cand.diseaseId);
-      if (dIdx !== -1) {
-        const pS = P_S_GIVEN_D[dIdx]?.[fIdx] ?? 0.0;
-        if (pS > maxCandidateAssociation) {
-          maxCandidateAssociation = pS;
-        }
+    // Count how many candidate diseases have this symptom
+    let countInCandidates = 0;
+    for (const dIdx of candidateDiseaseIndices) {
+      if ((P_S_GIVEN_D[dIdx]?.[fIdx] || 0) >= 0.10) {
+        countInCandidates++;
       }
     }
 
-    // Skip symptoms with zero/negligible connection to the active differential pool
-    if (maxCandidateAssociation < 0.08) continue;
+    if (countInCandidates === 0) continue; // Not present in any candidate disease
 
-    // 0.5. Smart Question Relevance Filter: Candidate symptom MUST co-occur (P(S_j | S_i) >= 0.05) with at least one confirmed symptom
-    const confirmedRaw = Object.keys(vector).filter((k) => vector[k] === 1);
-    const confirmedSymptoms = confirmedRaw.flatMap(getFeaturesForSymptom);
-    if (confirmedSymptoms.length > 0) {
-      const topProb = topCandidateList[0]?.probability ?? 0.0;
-      if (!areSymptomsInterrelated(confirmedSymptoms, featId, topProb)) {
-        continue;
-      }
-
-      let maxCoOccur = 0.0;
-      for (const cs of confirmedSymptoms) {
-        const csLower = cs.toLowerCase().trim();
-        const matrix = diseaseModelData.symptom_co_occurrence as Record<string, Record<string, number>>;
-        const csMatrix = matrix[cs] || matrix[csLower];
-        if (csMatrix) {
-          const prob = csMatrix[featId] || csMatrix[featLower] || 0.0;
-          if (prob > maxCoOccur) maxCoOccur = prob;
-        }
-      }
-      if (maxCoOccur < 0.05) continue;
+    // Differentiating power: maximum when ratio = 0.5 (halves candidates)
+    const ratio = countInCandidates / numCandidates;
+    let splitPower = 1.0;
+    if (numCandidates > 1) {
+      splitPower = 1.0 - Math.abs(ratio - 0.5) * 2.0;
     }
 
-    // 1. Calculate case-specific P(S_j = 1 | Evidence)
-    let p_S1 = 0.0;
-    for (let d = 0; d < CANONICAL_DISEASES.length; d++) {
-      const disId = CANONICAL_DISEASES[d];
-      const pD = p_D[disId] || 0.0;
-      const pS_given_D = P_S_GIVEN_D[d]?.[fIdx] ?? 0.05;
-      p_S1 += pS_given_D * pD;
-    }
-    p_S1 = Math.max(0.01, Math.min(0.99, p_S1));
-    const p_S0 = 1.0 - p_S1;
-
-    // 2. Expected Entropy if S_j = 1
-    const vecYes = { ...vector, [featId]: 1 as TriState };
-    const { entropy: h_Yes } = computeBayesianPosterior(vecYes);
-
-    // 3. Expected Entropy if S_j = 0
-    const vecNo = { ...vector, [featId]: 0 as TriState };
-    const { entropy: h_No } = computeBayesianPosterior(vecNo);
-
-    // Expected Information Gain
-    const expectedEntropy = p_S1 * h_Yes + p_S0 * h_No;
-    const ig = Math.max(0.0, currentEntropy - expectedEntropy);
-
-    // Metadata lookups
-    const symMeta = (symptomsData as any[]).find((s) => s.id === featId);
-    const reliability = symMeta?.reliability ?? 0.95;
-    const answerability = symMeta?.answerability ?? 0.95;
-    
-    // Novelty / Skip penalty: If skipped previously ("Not Sure"), lower priority by 50%
-    const novelty = skippedSet.has(featId) ? 0.50 : 1.0;
-
-    // Differential Power: How strongly does this symptom split the leading conflicting candidates?
-    let maxDiffGap = 0.0;
-    if (topCandidateList.length >= 2) {
-      const d1Idx = CANONICAL_DISEASES.indexOf(topCandidateList[0].diseaseId);
-      const p1 = d1Idx !== -1 ? (P_S_GIVEN_D[d1Idx]?.[fIdx] ?? 0.0) : 0.0;
-      for (let k = 1; k < Math.min(4, topCandidateList.length); k++) {
-        const dkIdx = CANONICAL_DISEASES.indexOf(topCandidateList[k].diseaseId);
-        const pk = dkIdx !== -1 ? (P_S_GIVEN_D[dkIdx]?.[fIdx] ?? 0.0) : 0.0;
-        const gap = Math.abs(p1 - pk);
-        if (gap > maxDiffGap) maxDiffGap = gap;
-      }
-    }
-
-    const differentialAffinity = 1.0 + 2.0 * maxDiffGap + 1.2 * maxCandidateAssociation;
-
-    // Utility = IG × Reliability × Answerability × Novelty × DifferentialAffinity
-    const utility = ig * reliability * answerability * novelty * differentialAffinity;
-
-    if (utility > maxUtility && ig >= 0.003) {
-      maxUtility = utility;
-      const trans = (diseaseModelData as any).feature_labels?.[featId] || symMeta?.label || {
-        en: featId.replace(/_/g, ' '),
-        hi: featId.replace(/_/g, ' '),
-        gu: featId.replace(/_/g, ' ')
-      };
-
-      bestQuestion = {
-        featureId: featId,
-        featureName: trans.en || featId,
-        utility: Math.round(utility * 1000) / 1000,
-        informationGain: Math.round(ig * 100) / 100,
-        question: {
-          en: `Do you have ${trans.en.toLowerCase()}?`,
-          hi: `क्या आपको ${trans.hi} की समस्या है?`,
-          gu: `શું તમને ${trans.gu} ની તકલીફ છે?`
-        },
-        label: trans
-      };
+    const score = splitPower * 10 + countInCandidates;
+    if (score > bestScore) {
+      bestScore = score;
+      bestFeatureId = featId;
+      bestCount = countInCandidates;
     }
   }
 
-  return bestQuestion;
+  if (!bestFeatureId) {
+    return null;
+  }
+
+  const symMeta = (symptomsData as any[]).find((s) => s.id === bestFeatureId);
+  const trans = (diseaseModelData as any).feature_labels?.[bestFeatureId] || symMeta?.label || {
+    en: bestFeatureId.replace(/_/g, ' '),
+    hi: bestFeatureId.replace(/_/g, ' '),
+    gu: bestFeatureId.replace(/_/g, ' ')
+  };
+
+  const utility = Math.round(((bestCount / Math.max(1, numCandidates)) * 100)) / 100;
+  const informationGain = Math.round((Math.max(1, bestScore) * 10)) / 10;
+
+  return {
+    featureId: bestFeatureId,
+    featureName: trans.en || bestFeatureId,
+    utility,
+    informationGain,
+    question: {
+      en: `Do you have ${trans.en.toLowerCase()}?`,
+      hi: `क्या आपको ${trans.hi} की समस्या है?`,
+      gu: `શું તમને ${trans.gu} ની તકલીફ છે?`
+    },
+    label: trans
+  };
 }
 
 /**
@@ -503,11 +469,15 @@ export function evaluateSessionStopping(session: DiagnosticSession): {
   reason: { en: string; hi: string; gu: string } | null;
 } {
   const topProb = session.currentPosterior[0]?.probability ?? 0.0;
-  const entropy = session.currentEntropy;
   const turn = session.questionCount;
 
-  // 1. High Certainty: max P(D) >= 0.95
-  if (topProb >= 0.95) {
+  // Minimum Questions Enforcement: Never stop before at least 6 questions!
+  if (turn < 6) {
+    return { isStoppingMet: false, reason: null };
+  }
+
+  // 1. High Certainty: max P(D) >= 0.95 after at least 6 questions
+  if (topProb >= 0.95 && turn >= 6) {
     return {
       isStoppingMet: true,
       reason: {
@@ -518,19 +488,7 @@ export function evaluateSessionStopping(session: DiagnosticSession): {
     };
   }
 
-  // 2. Low Uncertainty: Shannon Entropy <= 0.25 bits
-  if (entropy <= 0.25) {
-    return {
-      isStoppingMet: true,
-      reason: {
-        en: `⚡ Diagnostic Uncertainty Minimized (Entropy: ${entropy} bits)`,
-        hi: `⚡ नैदानिक अनिश्चितता न्यूनतम (Entropy: ${entropy} bits)`,
-        gu: `⚡ નિદાન અનિશ્ચિતતા ન્યૂનતમ (Entropy: ${entropy} bits)`
-      }
-    };
-  }
-
-  // 3. Maximum 14 Questions Limit
+  // 2. Maximum 14 Questions Limit
   if (turn >= 14) {
     return {
       isStoppingMet: true,
